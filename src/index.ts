@@ -1,50 +1,8 @@
-import { EslintRules } from './rules/eslint';
-import { RuleConfig } from './rules/rule-config';
-
-/**
- *
- */
-export interface Env {
-  es6?: boolean;
-  node?: boolean;
-}
-
-/**
- *
- */
-export interface ParserOptions {
-  sourceType?: 'module' | '...';
-  ecmaVersion?: 2020;
-  project?: any;
-  warnOnUnsupportedTypeScriptVersion?: boolean;
-}
-
-/**
- *
- */
-export type Rules = Partial<EslintRules> & Partial<Record<string, RuleConfig>>;
-
-/**
- *
- */
-export interface Override {
-  files: string[];
-  rules: Rules;
-}
-
-/**
- *
- */
-export type Overrides = Array<Override>;
-
-/**
- *
- */
-export interface Settings {
-  jsdoc?: {
-    mode: string;
-  };
-}
+import type { Env } from './env';
+import type { Overrides } from './overrides';
+import type { ParserOptions } from './parser-options';
+import type { Rules } from './rules';
+import type { Settings } from './settings';
 
 /**
  *

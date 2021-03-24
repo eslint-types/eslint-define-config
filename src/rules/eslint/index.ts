@@ -1,6 +1,6 @@
-import { NoDebuggerRule } from './no-debugger';
-import { QuotesRule } from './quotes';
-import { SemiRule } from './semi';
+import type { NoDebuggerRule } from './no-debugger';
+import type { QuotesRule } from './quotes';
+import type { SemiRule } from './semi';
 
 /**
  *
