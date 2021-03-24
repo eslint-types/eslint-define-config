@@ -1,6 +1,12 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.0-alpha.2...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.0-alpha.3...main)
+
+# 1.0.0-alpha.3
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.0-alpha.2...1.0.0-alpha.3)
+
+- Export commonjs
 
 # 1.0.0-alpha.2
 

@@ -1,6 +1,6 @@
 {
   "name": "eslint-define-config",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "Provide a defineConfig function for .eslintrc.js files",
   "main": "dist/index.js",
   "scripts": {
