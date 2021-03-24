@@ -1,6 +1,12 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.0-alpha.1...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.0-alpha.2...main)
+
+# 1.0.0-alpha.2
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.0-alpha.1...1.0.0-alpha.2)
+
+- Define basic structure
 
 # 1.0.0-alpha.1
 
