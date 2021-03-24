@@ -1,4 +1,5 @@
 import type { Environments } from './env';
+import type { Extends } from './extends';
 import type { Overrides } from './overrides';
 import type { ParserOptions } from './parser-options';
 import type { Rules } from './rules';
@@ -16,7 +17,12 @@ export interface EslintConfig {
    * @see [Environments](https://eslint.org/docs/user-guide/configuring/language-options#specifying-environments)
    */
   env?: Environments;
-  extends?: string[];
+  /**
+   * Extending Configuration Files.
+   *
+   * @see [Extends](https://eslint.org/docs/user-guide/configuring/configuration-files#extending-configuration-files)
+   */
+  extends?: Extends;
   parser?: string;
   parserOptions?: ParserOptions;
   plugins?: string[];
