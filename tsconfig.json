@@ -8,7 +8,8 @@
     "moduleResolution": "Node",
     "rootDir": "src",
     "strict": true,
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
+    "declaration": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

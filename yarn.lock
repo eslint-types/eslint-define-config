@@ -343,6 +343,11 @@ eslint-config-prettier@~8.1.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.1.0.tgz#4ef1eaf97afe5176e6a75ddfb57c335121abc5a6"
   integrity sha512-oKMhGv3ihGbCIimCAjqkdzx2Q+jthoqnXSP+d86M9tptwugycmTFdVR4IpLgq2c4SHifbwO90z2fQ8/Aio73yw==
 
+eslint-define-config@~1.0.0-alpha.1:
+  version "1.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/eslint-define-config/-/eslint-define-config-1.0.0-alpha.1.tgz#c988c5ee4204635007881d287dea5d4fb8456168"
+  integrity sha512-jgY3rPui6+uEDWhiYMAwVXn4+KZehdqqJHPfoqL5oi2qb/urfGBPU86qA8IuCxgVS5a0P4VWDWiuZxPStqrw/Q==
+
 eslint-plugin-inclusive-language@~2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-inclusive-language/-/eslint-plugin-inclusive-language-2.1.1.tgz#74875a0a93da343587c735854c706cc22579fd4d"
