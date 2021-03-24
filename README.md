@@ -46,5 +46,6 @@ module.exports = defineConfig({
 
 # Credits
 
+- [Proposal Idea](https://github.com/eslint/eslint/issues/14249)
 - `Vite` and [Evan You](https://github.com/yyx990803) for the idea
 - [@antfu](https://github.com/antfu) and her [tweet](https://twitter.com/antfu7/status/1365907188338753536)
