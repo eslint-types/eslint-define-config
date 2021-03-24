@@ -1,4 +1,4 @@
-import type { Env } from './env';
+import type { Environments } from './env';
 import type { Overrides } from './overrides';
 import type { ParserOptions } from './parser-options';
 import type { Rules } from './rules';
@@ -10,7 +10,12 @@ import type { Settings } from './settings';
 export interface EslintConfig {
   root?: boolean;
   ignorePatterns?: string[];
-  env?: Env;
+  /**
+   * An environment provides predefined global variables.
+   *
+   * @see [Environments](https://eslint.org/docs/user-guide/configuring/language-options#specifying-environments)
+   */
+  env?: Environments;
   extends?: string[];
   parser?: string;
   parserOptions?: ParserOptions;

@@ -80,7 +80,23 @@ module.exports = defineConfig({
       'warn',
       {
         minLength: 3,
-        skipWords: ['backtick', 'backticks', 'ecma']
+        skipWords: [
+          'amd',
+          'applescript',
+          'atomtest',
+          'backtick',
+          'backticks',
+          'browserify',
+          'commonjs',
+          'ecma',
+          'embertest',
+          'globals',
+          'greasemonkey',
+          'nashorn',
+          'phantomjs',
+          'prototypejs',
+          'webextensions'
+        ]
       }
     ],
 

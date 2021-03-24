@@ -1,5 +1,19 @@
 {
-  "cSpell.words": ["Quadflieg", "backticks", "readonly", "typeof"],
+  "cSpell.words": [
+    "Quadflieg",
+    "applescript",
+    "atomtest",
+    "backticks",
+    "embertest",
+    "greasemonkey",
+    "nashorn",
+    "prototypejs",
+    "qunit",
+    "readonly",
+    "serviceworker",
+    "typeof",
+    "webextensions"
+  ],
   "eslint.validate": ["javascript", "typescript"],
   "typescript.tsdk": "node_modules/typescript/lib"
 }
