@@ -4,7 +4,6 @@
     "outDir": "dist",
     "strict": true,
     "noUncheckedIndexedAccess": true,
-    "inlineSourceMap": true,
     "declaration": true
   },
   "include": ["src/**/*"],
