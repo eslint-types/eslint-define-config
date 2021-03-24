@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "rootDir": ".",
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "noEmit": true
-  },
-  "exclude": ["node_modules"]
-}

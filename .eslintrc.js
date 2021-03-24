@@ -1,8 +1,7 @@
-// @ts-check
 const { defineConfig } = require('eslint-define-config');
 
 module.exports = defineConfig({
-  ignorePatterns: ['dist/', '.eslintrc.js'],
+  ignorePatterns: ['src/index.js', '.eslintrc.js'],
   env: {
     es6: true,
     node: true
@@ -16,7 +15,7 @@ module.exports = defineConfig({
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: ['./tsconfig.lint.json'],
+    project: ['./tsconfig.json'],
     warnOnUnsupportedTypeScriptVersion: false
   },
   plugins: ['@typescript-eslint', 'prettier', 'jsdoc', 'spellcheck', 'inclusive-language'],

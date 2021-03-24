@@ -2,13 +2,13 @@
   "name": "eslint-define-config",
   "version": "1.0.0-alpha.3",
   "description": "Provide a defineConfig function for .eslintrc.js files",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "scripts": {
     "clean": "rm -Rf dist yarn.lock node_modules",
-    "build": "tsc",
+    "check": "tsc",
     "format": "prettier --write .",
     "lint": "eslint .",
-    "prepublishOnly": "yarn clean && yarn install --cache-folder .yarn && yarn build"
+    "prepublishOnly": "yarn clean && yarn install --cache-folder .yarn && yarn check"
   },
   "keywords": [
     "eslint",
@@ -28,7 +28,6 @@
   "bugs": "https://github.com/Shinigami92/eslint-define-config/issues",
   "license": "MIT",
   "files": [
-    "dist",
     "src",
     "tsconfig.json"
   ],
