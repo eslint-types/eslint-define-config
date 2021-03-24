@@ -47,4 +47,4 @@ module.exports = defineConfig({
 # Credits
 
 - `Vite` and [Evan You](https://github.com/yyx990803) for the idea
-- @antfu and her [tweet](https://twitter.com/antfu7/status/1365907188338753536)
+- [@antfu](https://github.com/antfu) and her [tweet](https://twitter.com/antfu7/status/1365907188338753536)
