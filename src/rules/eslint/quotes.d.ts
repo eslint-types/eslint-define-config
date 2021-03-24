@@ -1,12 +1,12 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- *
+ * Options.
  */
 export type QuotesOption = 'double' | 'single' | 'backtick';
 
 /**
- *
+ * Config.
  */
 export interface QuotesConfig {
   /**
@@ -20,12 +20,16 @@ export interface QuotesConfig {
 }
 
 /**
+ * Enforce the consistent use of either backticks, double, or single quotes.
  *
+ * @see [quotes](https://eslint.org/docs/rules/quotes)
  */
 export type QuotesRuleConfig = RuleConfig<[QuotesOption, QuotesConfig]>;
 
 /**
+ * Enforce the consistent use of either backticks, double, or single quotes.
  *
+ * @see [quotes](https://eslint.org/docs/rules/quotes)
  */
 export interface QuotesRule {
   /**

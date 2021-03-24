@@ -26,6 +26,11 @@ export interface EslintConfig {
   parser?: string;
   parserOptions?: ParserOptions;
   plugins?: string[];
+  /**
+   * Rules.
+   *
+   * @see [Rules](https://eslint.org/docs/user-guide/configuring/rules)
+   */
   rules?: Rules;
   overrides?: Overrides;
   settings?: Settings;
