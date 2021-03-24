@@ -19,3 +19,32 @@
 # eslint-define-config
 
 Provide a `defineConfig` function for `.eslintrc.js` files.
+
+# Installation
+
+```bash
+# add eslint and eslint-define-config to project’s dev dependencies
+npm install --dev eslint eslint-define-config
+# or
+yarn add --dev eslint eslint-define-config
+```
+
+# Usage
+
+`.eslintrc.js`
+
+```ts
+const { defineConfig } = require('eslint-define-config');
+
+module.exports = defineConfig({
+  root: true,
+  rules: {
+    // rules...
+  }
+});
+```
+
+# Credits
+
+- `Vite` and [Evan You](https://github.com/yyx990803) for the idea
+- @antfu and her [tweet](https://twitter.com/antfu7/status/1365907188338753536)
