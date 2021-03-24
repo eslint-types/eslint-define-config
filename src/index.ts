@@ -9,6 +9,7 @@ import type { Settings } from './settings';
  */
 export interface EslintConfig {
   root?: boolean;
+  ignorePatterns?: string[];
   env?: Env;
   extends?: string[];
   parser?: string;

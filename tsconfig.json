@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
-    "module": "CommonJS",
-    "inlineSourceMap": true,
-    "lib": ["ES2018", "DOM"],
-    "outDir": "dist",
+    "target": "ESNext",
+    "module": "ESNext",
     "moduleResolution": "Node",
+    "inlineSourceMap": true,
+    "lib": ["ESNext"],
+    "outDir": "dist",
     "rootDir": "src",
     "strict": true,
     "noUncheckedIndexedAccess": true,
