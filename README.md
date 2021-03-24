@@ -1,2 +1,3 @@
 # eslint-define-config
-Provide a defineConfig function for .eslintrc.js files
+
+Provide a `defineConfig` function for `.eslintrc.js` files.
