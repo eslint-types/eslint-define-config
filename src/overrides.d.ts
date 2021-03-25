@@ -1,3 +1,4 @@
+import type { Environments } from './env';
 import type { Rules } from './rules';
 
 /**
@@ -5,7 +6,8 @@ import type { Rules } from './rules';
  */
 export interface Override {
   files: string[];
-  rules: Rules;
+  env?: Environments;
+  rules?: Rules;
 }
 
 /**
