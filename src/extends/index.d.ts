@@ -1,10 +1,11 @@
 import type { LiteralUnion } from '../utility-types';
 import type { EslintExtensions } from './eslint';
+import type { TypescriptEslintExtensions } from './typescript-eslint';
 
 /**
  * All known extensions.
  */
-export type KnownExtensions = LiteralUnion<EslintExtensions>;
+export type KnownExtensions = LiteralUnion<EslintExtensions | TypescriptEslintExtensions>;
 
 /**
  * Extending Configuration Files.
