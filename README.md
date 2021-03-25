@@ -44,6 +44,17 @@ module.exports = defineConfig({
 });
 ```
 
+# Why?
+
+Improve your eslint configuration experience with:
+
+- auto-suggestions
+- type checking
+- documentation
+- deprecation warnings
+
+![image](https://user-images.githubusercontent.com/7195563/112484789-8a416480-8d7a-11eb-9337-d8b5bc16de17.png)
+
 # Credits
 
 - [Proposal Idea](https://github.com/eslint/eslint/issues/14249)
