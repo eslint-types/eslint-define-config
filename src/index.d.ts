@@ -2,6 +2,7 @@ import type { Environments } from './env';
 import type { Extends } from './extends';
 import type { Overrides } from './overrides';
 import type { Parser, ParserOptions } from './parser-options';
+import type { Plugin } from './plugin';
 import type { Rules } from './rules';
 import type { Settings } from './settings';
 
@@ -52,7 +53,7 @@ export interface EslintConfig {
    *
    * @see [Configuring Plugins](https://eslint.org/docs/user-guide/configuring/plugins#configuring-plugins)
    */
-  plugins?: string[];
+  plugins?: Plugin[];
   /**
    * Rules.
    *
