@@ -1,6 +1,14 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.0...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.1...main)
+
+# 1.0.1
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.0...1.0.1)
+
+- Define `globals` property ([aeeb3ec])
+
+[aeeb3ec]: https://github.com/Shinigami92/eslint-define-config/commit/aeeb3ec0b133e4b6ad89d41676fe26bbb7e94888
 
 # 1.0.0
 
