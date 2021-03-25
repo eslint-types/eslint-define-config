@@ -6,10 +6,20 @@ import type { Rules } from './rules';
 import type { Settings } from './settings';
 
 /**
+ * ESLint Configuration.
  *
+ * @see [ESLint Configuration](https://eslint.org/docs/user-guide/configuring/)
  */
 export interface EslintConfig {
+  /**
+   * @see [Using Configuration Files](https://eslint.org/docs/user-guide/configuring/configuration-files#using-configuration-files)
+   */
   root?: boolean;
+  /**
+   * Tell ESLint to ignore specific files and directories.
+   *
+   * @see [Ignore Patterns](https://eslint.org/docs/user-guide/configuring/ignoring-code)
+   */
   ignorePatterns?: string[];
   /**
    * An environment provides predefined global variables.
@@ -23,8 +33,25 @@ export interface EslintConfig {
    * @see [Extends](https://eslint.org/docs/user-guide/configuring/configuration-files#extending-configuration-files)
    */
   extends?: Extends;
+  /**
+   * Parser.
+   *
+   * @see [Working with Custom Parsers](https://eslint.org/docs/developer-guide/working-with-custom-parsers)
+   * @see [Specifying Parser](https://eslint.org/docs/user-guide/configuring/plugins#specifying-parser)
+   */
   parser?: string;
+  /**
+   * Parser Options.
+   *
+   * @see [Working with Custom Parsers](https://eslint.org/docs/developer-guide/working-with-custom-parsers)
+   * @see [Specifying Parser Options](https://eslint.org/docs/user-guide/configuring/language-options#specifying-parser-options)
+   */
   parserOptions?: ParserOptions;
+  /**
+   * Which third-party plugins define additional rules, environments, configs, etc. for ESLint to use.
+   *
+   * @see [Configuring Plugins](https://eslint.org/docs/user-guide/configuring/plugins#configuring-plugins)
+   */
   plugins?: string[];
   /**
    * Rules.
@@ -32,7 +59,17 @@ export interface EslintConfig {
    * @see [Rules](https://eslint.org/docs/user-guide/configuring/rules)
    */
   rules?: Rules;
+  /**
+   * Overrides.
+   *
+   * @see [How do overrides work](https://eslint.org/docs/user-guide/configuring/configuration-files#how-do-overrides-work)
+   */
   overrides?: Overrides;
+  /**
+   * Settings.
+   *
+   * @see [Settings](https://eslint.org/docs/user-guide/configuring/configuration-files#adding-shared-settings)
+   */
   settings?: Settings;
 }
 
