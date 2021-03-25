@@ -1,6 +1,16 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.0-alpha.4...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.0...main)
+
+# 1.0.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.0-alpha.4...1.0.0)
+
+## Initial release
+
+Not every eslint core rule is currently typed, but any _unknown_ rule will just fall back to a basic typed rule.
+
+If you miss a rule or some other type definitions, feel free to create an issue or PR.
 
 # 1.0.0-alpha.4
 
