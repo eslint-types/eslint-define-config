@@ -103,13 +103,15 @@ module.exports = defineConfig({
           'phantomjs',
           'pragma',
           'prototypejs',
+          'readonly',
           'scripthost',
           'sharedmemory',
           'tsconfig',
           'typedarrays',
           'webextensions',
           'webworker',
-          'wellknown'
+          'wellknown',
+          'writeable'
         ]
       }
     ],
