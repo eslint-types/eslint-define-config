@@ -11,10 +11,14 @@
     "prepublishOnly": "yarn clean && yarn install --cache-folder .yarn && yarn check"
   },
   "keywords": [
-    "eslint",
-    "define-config",
     "config",
-    "typed"
+    "configuration",
+    "define-config",
+    "eslint-config",
+    "eslint",
+    "eslintconfig",
+    "typed",
+    "typescript"
   ],
   "author": {
     "name": "Christopher Quadflieg",
