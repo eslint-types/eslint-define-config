@@ -92,6 +92,7 @@ module.exports = defineConfig({
           'globals',
           'greasemonkey',
           'jsdoc',
+          'multiline',
           'nashorn',
           'phantomjs',
           'prototypejs',
