@@ -1,6 +1,14 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.1...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.2...main)
+
+# 1.0.2
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.1...1.0.2)
+
+- Add `extends` property to `Override` ([708c811])
+
+[708c811]: https://github.com/Shinigami92/eslint-define-config/commit/708c81101083332e62802602c421aa7ba9e85137
 
 # 1.0.1
 
