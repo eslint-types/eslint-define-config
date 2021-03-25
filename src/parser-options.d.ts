@@ -80,6 +80,9 @@ export type Lib = LiteralUnion<
 /** DebugLevel. */
 export type DebugLevel = boolean | Array<'eslint' | 'typescript' | 'typescript-eslint'>;
 
+/** Parser. */
+export type Parser = LiteralUnion<'@typescript-eslint/parser'>;
+
 /**
  * Parser options.
  *
@@ -129,7 +132,7 @@ export interface ParserOptions extends Partial<Record<string, unknown>> {
    * @see [Working with Custom Parsers](https://eslint.org/docs/developer-guide/working-with-custom-parsers)
    * @see [Specifying Parser](https://eslint.org/docs/user-guide/configuring/plugins#specifying-parser)
    */
-  parser?: string;
+  parser?: Parser;
   project?: string | string[];
   projectFolderIgnoreList?: Array<string | RegExp>;
   range?: boolean;

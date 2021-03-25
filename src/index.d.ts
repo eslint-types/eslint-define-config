@@ -1,7 +1,7 @@
 import type { Environments } from './env';
 import type { Extends } from './extends';
 import type { Overrides } from './overrides';
-import type { ParserOptions } from './parser-options';
+import type { Parser, ParserOptions } from './parser-options';
 import type { Rules } from './rules';
 import type { Settings } from './settings';
 
@@ -39,7 +39,7 @@ export interface EslintConfig {
    * @see [Working with Custom Parsers](https://eslint.org/docs/developer-guide/working-with-custom-parsers)
    * @see [Specifying Parser](https://eslint.org/docs/user-guide/configuring/plugins#specifying-parser)
    */
-  parser?: string;
+  parser?: Parser;
   /**
    * Parser Options.
    *
