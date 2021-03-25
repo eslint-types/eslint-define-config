@@ -26,7 +26,7 @@ Provide a `defineConfig` function for `.eslintrc.js` files.
 # add eslint and eslint-define-config to project’s dev dependencies
 npm install -D eslint eslint-define-config
 # or
-yarn add --dev eslint eslint-define-config
+yarn add -D eslint eslint-define-config
 ```
 
 # Usage
