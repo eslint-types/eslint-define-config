@@ -24,7 +24,7 @@ export interface QuotesConfig {
  *
  * @see [quotes](https://eslint.org/docs/rules/quotes)
  */
-export type QuotesRuleConfig = RuleConfig<[QuotesOption, QuotesConfig]>;
+export type QuotesRuleConfig = RuleConfig<[QuotesOption?, QuotesConfig?]>;
 
 /**
  * Enforce the consistent use of either backticks, double, or single quotes.

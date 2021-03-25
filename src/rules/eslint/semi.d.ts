@@ -13,7 +13,7 @@ export interface SemiAlwaysConfig {
 /**
  * Always Options.
  */
-export type SemiAlwaysOptions = ['always', SemiAlwaysConfig?];
+export type SemiAlwaysOptions = ['always'?, SemiAlwaysConfig?];
 
 /**
  * Never Config.
@@ -30,7 +30,7 @@ export interface SemiNeverConfig {
 /**
  * Never Options.
  */
-export type SemiNeverOptions = ['never', SemiNeverConfig?];
+export type SemiNeverOptions = ['never'?, SemiNeverConfig?];
 
 /**
  * Options.
