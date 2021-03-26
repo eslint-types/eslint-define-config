@@ -18,6 +18,7 @@
     "readonly",
     "scripthost",
     "serviceworker",
+    "shinigami",
     "typedarrays",
     "typeof",
     "weakref",
