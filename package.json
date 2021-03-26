@@ -35,9 +35,6 @@
     "src",
     "tsconfig.json"
   ],
-  "np": {
-    "message": "%s"
-  },
   "devDependencies": {
     "@types/node": "~14.14.36",
     "@typescript-eslint/eslint-plugin": "~4.19.0",
