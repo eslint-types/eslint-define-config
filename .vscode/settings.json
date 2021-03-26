@@ -12,6 +12,7 @@
     "importscripts",
     "linebreak",
     "nashorn",
+    "nocheck",
     "prototypejs",
     "qunit",
     "readonly",

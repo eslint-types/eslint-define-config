@@ -102,6 +102,7 @@ module.exports = defineConfig({
           'loc',
           'multiline',
           'nashorn',
+          'nocheck',
           'phantomjs',
           'pragma',
           'prototypejs',
