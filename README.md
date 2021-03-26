@@ -34,6 +34,7 @@ yarn add --dev eslint eslint-define-config
 `.eslintrc.js`
 
 ```ts
+// @ts-check
 const { defineConfig } = require('eslint-define-config');
 
 module.exports = defineConfig({
