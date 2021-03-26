@@ -118,11 +118,22 @@ export interface ParserOptions extends Partial<Record<string, unknown>> {
   };
   jsxPragma?: string;
   jsxFragmentName?: string | null;
+  /**
+   * @see [lib](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionslib)
+   */
   lib?: Lib[];
   comment?: boolean;
   debugLevel?: DebugLevel;
   errorOnTypeScriptSyntacticAndSemanticIssues?: boolean;
   errorOnUnknownASTType?: boolean;
+  /**
+   * This option allows you to provide one or more additional file extensions which should be considered in the TypeScript Program compilation.
+   *
+   * The default extensions are `.ts`, `.tsx`, `.js`, and `.jsx`. Add extensions starting with `.`, followed by the file extension.
+   * E.g. for a `.vue` file use `"extraFileExtensions: [".vue"]`.
+   *
+   * @see [extraFileExtensions](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionsextrafileextensions)
+   */
   extraFileExtensions?: string[];
   filePath?: string;
   loc?: boolean;
@@ -133,11 +144,29 @@ export interface ParserOptions extends Partial<Record<string, unknown>> {
    * @see [Specifying Parser](https://eslint.org/docs/user-guide/configuring/plugins#specifying-parser)
    */
   parser?: Parser;
+  /**
+   * @see [project](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionsproject)
+   */
   project?: string | string[];
+  /**
+   * @see [projectFolderIgnoreList](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionsprojectfolderignorelist)
+   */
   projectFolderIgnoreList?: Array<string | RegExp>;
   range?: boolean;
   tokens?: boolean;
+  /**
+   * This option allows you to provide the root directory for relative tsconfig paths specified in the `project` option above.
+   *
+   * @see [tsconfigRootDir](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionstsconfigrootdir)
+   */
   tsconfigRootDir?: string;
   useJSXTextNode?: boolean;
+  /**
+   * This option allows you to toggle the warning that the parser will give you if you use a version of TypeScript which is not explicitly supported.
+   *
+   * @default true
+   *
+   * @see [warnOnUnsupportedTypeScriptVersion](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionswarnonunsupportedtypescriptversion)
+   */
   warnOnUnsupportedTypeScriptVersion?: boolean;
 }
