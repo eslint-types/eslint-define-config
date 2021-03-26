@@ -97,6 +97,7 @@ module.exports = defineConfig({
           'greasemonkey',
           'jsdoc',
           'jsx',
+          'lang',
           'linebreak',
           'loc',
           'multiline',
