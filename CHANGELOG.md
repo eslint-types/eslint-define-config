@@ -1,6 +1,12 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.3...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.4...main)
+
+# 1.0.4
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.3...1.0.4)
+
+- Provide support for repo [vue-vben-admin](https://github.com/anncwb/vue-vben-admin)
 
 # 1.0.3
 

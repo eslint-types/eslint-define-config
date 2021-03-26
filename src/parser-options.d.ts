@@ -1,4 +1,4 @@
-import { LiteralUnion } from './utility-types';
+import type { LiteralUnion } from './utility-types';
 
 /**
  * Set to 3, 5 (default), 6, 7, 8, 9, 10, 11, or 12 to specify the version of ECMAScript syntax you want to use. You can also set to 2015 (same as 6), 2016 (same as 7), 2017 (same as 8), 2018 (same as 9), 2019 (same as 10), 2020 (same as 11), or 2021 (same as 12) to use the year-based naming.
@@ -11,6 +11,24 @@ export type EcmaVersion = 3 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 2015 | 2016 | 2
  * Set to "script" (default) or "module" if your code is in ECMAScript modules.
  */
 export type SourceType = 'script' | 'module';
+
+/**
+ * An object indicating which additional language features you'd like to use.
+ */
+export interface EcmaFeatures extends Partial<Record<string, boolean>> {
+  /**
+   * Allow `return` statements in the global scope.
+   */
+  globalReturn?: boolean;
+  /**
+   * Enable global [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) (if `ecmaVersion` is 5 or greater).
+   */
+  impliedStrict?: boolean;
+  /**
+   * Enable [JSX](https://facebook.github.io/jsx).
+   */
+  jsx?: boolean;
+}
 
 /** Lib. */
 export type Lib = LiteralUnion<
@@ -81,7 +99,7 @@ export type Lib = LiteralUnion<
 export type DebugLevel = boolean | Array<'eslint' | 'typescript' | 'typescript-eslint'>;
 
 /** Parser. */
-export type Parser = LiteralUnion<'@typescript-eslint/parser'>;
+export type Parser = LiteralUnion<'babel-eslint' | '@typescript-eslint/parser' | 'vue-eslint-parser'>;
 
 /**
  * Parser options.
@@ -102,20 +120,7 @@ export interface ParserOptions extends Partial<Record<string, unknown>> {
   /**
    * An object indicating which additional language features you'd like to use.
    */
-  ecmaFeatures?: {
-    /**
-     * Allow `return` statements in the global scope.
-     */
-    globalReturn?: boolean;
-    /**
-     * Enable global [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) (if `ecmaVersion` is 5 or greater).
-     */
-    impliedStrict?: boolean;
-    /**
-     * Enable [JSX](https://facebook.github.io/jsx/).
-     */
-    jsx?: boolean;
-  };
+  ecmaFeatures?: EcmaFeatures;
   jsxPragma?: string;
   jsxFragmentName?: string | null;
   /**
@@ -169,4 +174,25 @@ export interface ParserOptions extends Partial<Record<string, unknown>> {
    * @see [warnOnUnsupportedTypeScriptVersion](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionswarnonunsupportedtypescriptversion)
    */
   warnOnUnsupportedTypeScriptVersion?: boolean;
+  /**
+   * @see [vueFeatures](https://github.com/vuejs/vue-eslint-parser#parseroptionsvuefeatures)
+   */
+  vueFeatures?: {
+    /**
+     * You can use `parserOptions.vueFeatures.filter` property to specify whether to parse the Vue2 filter.
+     *
+     * If you specify `false`, the parser does not parse `|` as a filter.
+     *
+     * @see [filter](https://github.com/vuejs/vue-eslint-parser#parseroptionsvuefeaturesfilter)
+     */
+    filter?: boolean;
+    /**
+     * You can use `parserOptions.vueFeatures.interpolationAsNonHTML` property to specify whether to parse the interpolation as HTML.
+     *
+     * If you specify `true`, the parser handles the interpolation as non-HTML (However, you can use HTML escaping in the interpolation).
+     *
+     * @see [interpolationAsNonHTML](https://github.com/vuejs/vue-eslint-parser#parseroptionsvuefeaturesinterpolationasnonhtml)
+     */
+    interpolationAsNonHTML?: boolean;
+  };
 }

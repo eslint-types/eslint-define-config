@@ -112,6 +112,7 @@ module.exports = defineConfig({
           'tsconfig',
           'typedarrays',
           'unix',
+          'vue',
           'webextensions',
           'webworker',
           'wellknown',

@@ -50,7 +50,7 @@ module.exports = defineConfig({
 Improve your eslint configuration experience with:
 
 - auto-suggestions
-- type checking
+- type checking (Use `// @ts-check` at the first line in your `.eslintrc.js`)
 - documentation
 - deprecation warnings
 
