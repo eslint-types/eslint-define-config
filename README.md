@@ -56,6 +56,8 @@ Improve your eslint configuration experience with:
 
 ![image](https://user-images.githubusercontent.com/7195563/112484789-8a416480-8d7a-11eb-9337-d8b5bc16de17.png)
 
+https://user-images.githubusercontent.com/7195563/112726158-4a19e780-8f1c-11eb-8cc6-4ea6c100137f.mp4
+
 # Credits
 
 - [Proposal Idea](https://github.com/eslint/eslint/issues/14249)
