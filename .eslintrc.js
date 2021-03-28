@@ -95,6 +95,7 @@ module.exports = defineConfig({
           'esnext',
           'globals',
           'greasemonkey',
+          'inferrable',
           'jsdoc',
           'jsx',
           'lang',
