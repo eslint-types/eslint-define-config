@@ -7,6 +7,7 @@ import type { NoInferrableTypesRule } from './no-inferrable-types';
 import type { NoParameterPropertiesRule } from './no-parameter-properties';
 import type { NoUnsafeAssignmentRule } from './no-unsafe-assignment';
 import type { NoUnusedVarsRule } from './no-unused-vars';
+import type { PreferNullishCoalescingRule } from './prefer-nullish-coalescing';
 
 /**
  * All @typescript-eslint rules.
@@ -19,4 +20,5 @@ export type TypeScriptEslintRules = BanTsCommentRule &
   NoInferrableTypesRule &
   NoParameterPropertiesRule &
   NoUnsafeAssignmentRule &
-  NoUnusedVarsRule;
+  NoUnusedVarsRule &
+  PreferNullishCoalescingRule;
