@@ -19,7 +19,7 @@ export type MatchDescriptionOption = {
   /**
    * Set this to an array of strings representing the AST context where you wish the rule to be applied (e.g., `ClassDeclaration` for ES6 classes).
    *
-   * Overrides the default contexts (see below). Set to `"any"` if you want the rule to apply to any jsdoc block throughout your files.
+   * Set to `"any"` if you want the rule to apply to any jsdoc block throughout your files.
    *
    * @see [contexts](https://github.com/gajus/eslint-plugin-jsdoc#contexts-1)
    */
