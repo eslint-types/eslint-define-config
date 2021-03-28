@@ -9,6 +9,7 @@ import type { NoUnsafeAssignmentRule } from './no-unsafe-assignment';
 import type { NoUnusedVarsRule } from './no-unused-vars';
 import type { PreferNullishCoalescingRule } from './prefer-nullish-coalescing';
 import type { PreferOptionalChainRule } from './prefer-optional-chain';
+import type { PreferReadonlyRule } from './prefer-readonly';
 
 /**
  * All @typescript-eslint rules.
@@ -23,4 +24,5 @@ export type TypeScriptEslintRules = BanTsCommentRule &
   NoUnsafeAssignmentRule &
   NoUnusedVarsRule &
   PreferNullishCoalescingRule &
-  PreferOptionalChainRule;
+  PreferOptionalChainRule &
+  PreferReadonlyRule;
