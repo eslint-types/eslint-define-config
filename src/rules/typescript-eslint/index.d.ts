@@ -6,6 +6,7 @@ import type { NoExplicitAnyRule } from './no-explicit-any';
 import type { NoInferrableTypesRule } from './no-inferrable-types';
 import type { NoParameterPropertiesRule } from './no-parameter-properties';
 import type { NoUnsafeAssignmentRule } from './no-unsafe-assignment';
+import type { NoUnusedVarsRule } from './no-unused-vars';
 
 /**
  * All @typescript-eslint rules.
@@ -17,4 +18,5 @@ export type TypeScriptEslintRules = BanTsCommentRule &
   NoExplicitAnyRule &
   NoInferrableTypesRule &
   NoParameterPropertiesRule &
-  NoUnsafeAssignmentRule;
+  NoUnsafeAssignmentRule &
+  NoUnusedVarsRule;
