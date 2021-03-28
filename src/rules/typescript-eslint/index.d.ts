@@ -8,6 +8,7 @@ import type { NoParameterPropertiesRule } from './no-parameter-properties';
 import type { NoUnsafeAssignmentRule } from './no-unsafe-assignment';
 import type { NoUnusedVarsRule } from './no-unused-vars';
 import type { PreferNullishCoalescingRule } from './prefer-nullish-coalescing';
+import type { PreferOptionalChainRule } from './prefer-optional-chain';
 
 /**
  * All @typescript-eslint rules.
@@ -21,4 +22,5 @@ export type TypeScriptEslintRules = BanTsCommentRule &
   NoParameterPropertiesRule &
   NoUnsafeAssignmentRule &
   NoUnusedVarsRule &
-  PreferNullishCoalescingRule;
+  PreferNullishCoalescingRule &
+  PreferOptionalChainRule;
