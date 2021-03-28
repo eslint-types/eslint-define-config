@@ -11,6 +11,7 @@ import type { PreferNullishCoalescingRule } from './prefer-nullish-coalescing';
 import type { PreferOptionalChainRule } from './prefer-optional-chain';
 import type { PreferReadonlyRule } from './prefer-readonly';
 import type { RestrictTemplateExpressionsRule } from './restrict-template-expressions';
+import type { TypedefRule } from './typedef';
 
 /**
  * All @typescript-eslint rules.
@@ -27,4 +28,5 @@ export type TypeScriptEslintRules = BanTsCommentRule &
   PreferNullishCoalescingRule &
   PreferOptionalChainRule &
   PreferReadonlyRule &
-  RestrictTemplateExpressionsRule;
+  RestrictTemplateExpressionsRule &
+  TypedefRule;
