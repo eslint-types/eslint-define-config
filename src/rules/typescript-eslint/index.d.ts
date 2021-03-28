@@ -10,6 +10,7 @@ import type { NoUnusedVarsRule } from './no-unused-vars';
 import type { PreferNullishCoalescingRule } from './prefer-nullish-coalescing';
 import type { PreferOptionalChainRule } from './prefer-optional-chain';
 import type { PreferReadonlyRule } from './prefer-readonly';
+import type { RestrictTemplateExpressionsRule } from './restrict-template-expressions';
 
 /**
  * All @typescript-eslint rules.
@@ -25,4 +26,5 @@ export type TypeScriptEslintRules = BanTsCommentRule &
   NoUnusedVarsRule &
   PreferNullishCoalescingRule &
   PreferOptionalChainRule &
-  PreferReadonlyRule;
+  PreferReadonlyRule &
+  RestrictTemplateExpressionsRule;
