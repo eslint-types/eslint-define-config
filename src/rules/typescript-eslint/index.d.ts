@@ -4,6 +4,7 @@ import type { InterfaceNamePrefixRule } from './interface-name-prefix';
 import type { MemberOrderingRule } from './member-ordering';
 import type { NoExplicitAnyRule } from './no-explicit-any';
 import type { NoInferrableTypesRule } from './no-inferrable-types';
+import type { NoParameterPropertiesRule } from './no-parameter-properties';
 
 /**
  * All @typescript-eslint rules.
@@ -13,4 +14,5 @@ export type TypeScriptEslintRules = BanTsCommentRule &
   InterfaceNamePrefixRule &
   MemberOrderingRule &
   NoExplicitAnyRule &
-  NoInferrableTypesRule;
+  NoInferrableTypesRule &
+  NoParameterPropertiesRule;
