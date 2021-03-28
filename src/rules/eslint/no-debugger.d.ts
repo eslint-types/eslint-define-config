@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @see [no-debugger](https://eslint.org/docs/rules/no-debugger)
  */
-export type NoDebuggerRuleConfig = RuleConfig;
+export type NoDebuggerRuleConfig = RuleConfig<[]>;
 
 /**
  * Disallow the use of debugger.

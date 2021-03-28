@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @see [no-case-declarations](https://eslint.org/docs/rules/no-case-declarations)
  */
-export type NoCaseDeclarationsRuleConfig = RuleConfig;
+export type NoCaseDeclarationsRuleConfig = RuleConfig<[]>;
 
 /**
  * Disallow lexical declarations in case/default clauses.
