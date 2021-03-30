@@ -8,6 +8,7 @@
     "check": "tsc",
     "format": "prettier --write .",
     "lint": "eslint .",
+    "test": "echo \"No tests available\"",
     "prepublishOnly": "yarn clean && yarn install --cache-folder .yarn && yarn check",
     "generate": "node ./scripts/generate-rule.js"
   },
