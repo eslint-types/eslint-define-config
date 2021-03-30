@@ -9,13 +9,13 @@ export type NoExplicitAnyOption = {
    *
    * @default false
    */
-  fixToUnknown: boolean;
+  fixToUnknown?: boolean;
   /**
    * Specify if arrays from the rest operator are considered okay.
    *
    * @default false
    */
-  ignoreRestArgs: boolean;
+  ignoreRestArgs?: boolean;
 };
 
 /**
