@@ -5,6 +5,7 @@ import type { LinebreakStyleRule } from './linebreak-style';
 import type { MaxClassesPerFileRule } from './max-classes-per-file';
 import type { MaxLenRule } from './max-len';
 import type { NoCaseDeclarationsRule } from './no-case-declarations';
+import type { NoConstantConditionRule } from './no-constant-condition';
 import type { NoDebuggerRule } from './no-debugger';
 import type { QuotesRule } from './quotes';
 import type { SemiRule } from './semi';
@@ -19,6 +20,7 @@ export type EslintRules = CommaDangleRule &
   MaxClassesPerFileRule &
   MaxLenRule &
   NoCaseDeclarationsRule &
+  NoConstantConditionRule &
   NoDebuggerRule &
   QuotesRule &
   SemiRule;
