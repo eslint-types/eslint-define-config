@@ -1,4 +1,5 @@
 import type { AdjacentOverloadSignaturesRule } from './adjacent-overload-signatures';
+import type { ArrayTypeRule } from './array-type';
 import type { BanTsCommentRule } from './ban-ts-comment';
 import type { ExplicitFunctionReturnTypeRule } from './explicit-function-return-type';
 import type { InterfaceNamePrefixRule } from './interface-name-prefix';
@@ -18,6 +19,7 @@ import type { TypedefRule } from './typedef';
  * All @typescript-eslint rules.
  */
 export type TypeScriptEslintRules = AdjacentOverloadSignaturesRule &
+  ArrayTypeRule &
   BanTsCommentRule &
   ExplicitFunctionReturnTypeRule &
   InterfaceNamePrefixRule &
