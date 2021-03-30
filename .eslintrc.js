@@ -92,6 +92,7 @@ module.exports = defineConfig({
           'browserify',
           'cjs',
           'commonjs',
+          'declarator',
           'denylist',
           'dom',
           'ecma',

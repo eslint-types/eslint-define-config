@@ -2,6 +2,7 @@ import type { CommaDangleRule } from './comma-dangle';
 import type { CurlyRule } from './curly';
 import type { GroupedAccessorPairsRule } from './grouped-accessor-pairs';
 import type { IdDenylistRule } from './id-denylist';
+import type { IndentRule } from './indent';
 import type { LinebreakStyleRule } from './linebreak-style';
 import type { MaxClassesPerFileRule } from './max-classes-per-file';
 import type { MaxLenRule } from './max-len';
@@ -23,6 +24,7 @@ export type EslintRules = CommaDangleRule &
   CurlyRule &
   GroupedAccessorPairsRule &
   IdDenylistRule &
+  IndentRule &
   LinebreakStyleRule &
   MaxClassesPerFileRule &
   MaxLenRule &
