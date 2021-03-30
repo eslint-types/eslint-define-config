@@ -16,6 +16,7 @@ import type { PreferNullishCoalescingRule } from './prefer-nullish-coalescing';
 import type { PreferOptionalChainRule } from './prefer-optional-chain';
 import type { PreferReadonlyRule } from './prefer-readonly';
 import type { RestrictTemplateExpressionsRule } from './restrict-template-expressions';
+import type { SemiRule } from './semi';
 import type { TypedefRule } from './typedef';
 
 /**
@@ -39,4 +40,5 @@ export type TypeScriptEslintRules = AdjacentOverloadSignaturesRule &
   PreferOptionalChainRule &
   PreferReadonlyRule &
   RestrictTemplateExpressionsRule &
+  SemiRule &
   TypedefRule;
