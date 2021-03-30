@@ -1,6 +1,14 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.5...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.6...main)
+
+# 1.0.6
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.5...1.0.6)
+
+- Add more rules
+- Add more settings
+- Mark `id-blacklist` as deprecated
 
 # 1.0.5
 
