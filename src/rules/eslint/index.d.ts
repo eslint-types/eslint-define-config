@@ -8,6 +8,7 @@ import type { NoCaseDeclarationsRule } from './no-case-declarations';
 import type { NoConstantConditionRule } from './no-constant-condition';
 import type { NoDebuggerRule } from './no-debugger';
 import type { NoUnusedExpressionsRule } from './no-unused-expressions';
+import type { NoUselessConcatRule } from './no-useless-concat';
 import type { QuotesRule } from './quotes';
 import type { SemiRule } from './semi';
 
@@ -24,5 +25,6 @@ export type EslintRules = CommaDangleRule &
   NoConstantConditionRule &
   NoDebuggerRule &
   NoUnusedExpressionsRule &
+  NoUselessConcatRule &
   QuotesRule &
   SemiRule;
