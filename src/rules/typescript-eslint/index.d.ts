@@ -3,6 +3,7 @@ import type { ArrayTypeRule } from './array-type';
 import type { AwaitThenableRule } from './await-thenable';
 import type { BanTsCommentRule } from './ban-ts-comment';
 import type { BanTypesRule } from './ban-types';
+import type { ConsistentTypeAssertionsRule } from './consistent-type-assertions';
 import type { ExplicitFunctionReturnTypeRule } from './explicit-function-return-type';
 import type { InterfaceNamePrefixRule } from './interface-name-prefix';
 import type { MemberOrderingRule } from './member-ordering';
@@ -25,6 +26,7 @@ export type TypeScriptEslintRules = AdjacentOverloadSignaturesRule &
   AwaitThenableRule &
   BanTsCommentRule &
   BanTypesRule &
+  ConsistentTypeAssertionsRule &
   ExplicitFunctionReturnTypeRule &
   InterfaceNamePrefixRule &
   MemberOrderingRule &
