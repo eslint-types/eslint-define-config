@@ -8,7 +8,8 @@
     "check": "tsc",
     "format": "prettier --write .",
     "lint": "eslint .",
-    "prepublishOnly": "yarn clean && yarn install --cache-folder .yarn && yarn check"
+    "prepublishOnly": "yarn clean && yarn install --cache-folder .yarn && yarn check",
+    "generate": "node ./scripts/generate-rule.js"
   },
   "keywords": [
     "config",

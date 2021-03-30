@@ -82,6 +82,7 @@ module.exports = defineConfig({
         skipWords: [
           'amd',
           'applescript',
+          'argv',
           'asyncgenerator',
           'asynciterable',
           'atomtest',
