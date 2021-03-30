@@ -125,6 +125,7 @@ module.exports = defineConfig({
           'webextensions',
           'webworker',
           'wellknown',
+          'whitespace',
           'writeable'
         ]
       }
