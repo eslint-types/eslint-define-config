@@ -48,6 +48,9 @@ function generateRuleFileContent(name, provider) {
     case '@typescript-eslint':
       RuleLink = `https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/${kebabCase}.md`;
       break;
+    case 'import':
+      RuleLink = `https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/${kebabCase}.md`;
+      break;
   }
 
   provider = provider === 'eslint' ? '' : `${provider}/`;
@@ -95,5 +98,7 @@ export interface ${PascalCase}Rule {
 }
 `;
 }
+
+fs.mkdirSync(ruleProviderDir, { mode: 0o755, recursive: true });
 
 fs.writeFileSync(rulePath, generateRuleFileContent(ruleName, ruleProvider));
