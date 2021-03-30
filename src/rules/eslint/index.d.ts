@@ -10,6 +10,7 @@ import type { NoDebuggerRule } from './no-debugger';
 import type { NoUnusedExpressionsRule } from './no-unused-expressions';
 import type { NoUselessConcatRule } from './no-useless-concat';
 import type { PreferTemplateRule } from './prefer-template';
+import type { QuotePropsRule } from './quote-props';
 import type { QuotesRule } from './quotes';
 import type { SemiRule } from './semi';
 
@@ -28,5 +29,6 @@ export type EslintRules = CommaDangleRule &
   NoUnusedExpressionsRule &
   NoUselessConcatRule &
   PreferTemplateRule &
+  QuotePropsRule &
   QuotesRule &
   SemiRule;
