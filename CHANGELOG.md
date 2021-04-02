@@ -1,6 +1,13 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.6...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.7...main)
+
+# 1.0.7
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.6...1.0.7)
+
+- Add more rules
+- Fix missing config definition for `indent` rule
 
 # 1.0.6
 
