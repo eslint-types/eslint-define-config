@@ -255,9 +255,9 @@ ajv@^6.10.0, ajv@^6.12.4:
     uri-js "^4.2.2"
 
 ajv@^8.0.1:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.0.1.tgz#dac101898a87f8ebb57fea69617e8096523c628c"
-  integrity sha512-46ZA4TalFcLLqX1dEU3dhdY38wAtDydJ4e7QQTVekLUTzXkb1LfqU6VOBXC/a9wiv4T094WURqJH6ZitF92Kqw==
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.0.3.tgz#81f1b07003b329f000b7912e59a24f52392867b6"
+  integrity sha512-Df6NAivu9KpZw+q8ySijAgLvr1mUA5ihkRvCLCxpdYR21ann5yIuN+PpFxmweSj7i3yjJ0x5LN5KVs0RRzskAQ==
   dependencies:
     fast-deep-equal "^3.1.1"
     json-schema-traverse "^1.0.0"
@@ -799,10 +799,10 @@ eslint-config-prettier@~8.1.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.1.0.tgz#4ef1eaf97afe5176e6a75ddfb57c335121abc5a6"
   integrity sha512-oKMhGv3ihGbCIimCAjqkdzx2Q+jthoqnXSP+d86M9tptwugycmTFdVR4IpLgq2c4SHifbwO90z2fQ8/Aio73yw==
 
-eslint-define-config@~1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/eslint-define-config/-/eslint-define-config-1.0.5.tgz#e4799d27a75f51ab1ce151f00b6802f03948b1fc"
-  integrity sha512-kwBMdZ7UKpzTkymYnBZrTSOGbawoCnPOKVUjSbOype9dj7YRczT1nDKk0tPRawtcm7y7zfoGf5nBUrcYO60Avg==
+eslint-define-config@~1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/eslint-define-config/-/eslint-define-config-1.0.6.tgz#b2e47832dcefab62bb853ffb78cb4963524efc44"
+  integrity sha512-Kq/XwRSYm5N3KTdK1IKT6I8IZFjtTxxgBjOb47iPvKfzjqfAu3xcaEJYqN1QtnsJoJf8lPCKBDMmKXu2f9ayZw==
 
 eslint-plugin-inclusive-language@~2.1.1:
   version "2.1.1"
