@@ -120,6 +120,7 @@ module.exports = defineConfig({
           'readonly',
           'scripthost',
           'sharedmemory',
+          'singleline',
           'tsconfig',
           'typedarrays',
           'unix',

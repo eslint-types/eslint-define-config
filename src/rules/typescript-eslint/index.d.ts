@@ -10,6 +10,7 @@ import type { ExplicitFunctionReturnTypeRule } from './explicit-function-return-
 import type { ExplicitMemberAccessibilityRule } from './explicit-member-accessibility';
 import type { IndentRule } from './indent';
 import type { InterfaceNamePrefixRule } from './interface-name-prefix';
+import type { MemberDelimiterStyleRule } from './member-delimiter-style';
 import type { MemberOrderingRule } from './member-ordering';
 import type { NoExplicitAnyRule } from './no-explicit-any';
 import type { NoInferrableTypesRule } from './no-inferrable-types';
@@ -38,6 +39,7 @@ export type TypeScriptEslintRules = AdjacentOverloadSignaturesRule &
   ExplicitMemberAccessibilityRule &
   IndentRule &
   InterfaceNamePrefixRule &
+  MemberDelimiterStyleRule &
   MemberOrderingRule &
   NoExplicitAnyRule &
   NoInferrableTypesRule &
