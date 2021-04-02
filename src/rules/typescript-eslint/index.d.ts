@@ -14,6 +14,7 @@ import type { MemberDelimiterStyleRule } from './member-delimiter-style';
 import type { MemberOrderingRule } from './member-ordering';
 import type { NamingConventionRule } from './naming-convention';
 import type { NoEmptyFunctionRule } from './no-empty-function';
+import type { NoEmptyInterfaceRule } from './no-empty-interface';
 import type { NoExplicitAnyRule } from './no-explicit-any';
 import type { NoInferrableTypesRule } from './no-inferrable-types';
 import type { NoParameterPropertiesRule } from './no-parameter-properties';
@@ -45,6 +46,7 @@ export type TypeScriptEslintRules = AdjacentOverloadSignaturesRule &
   MemberOrderingRule &
   NamingConventionRule &
   NoEmptyFunctionRule &
+  NoEmptyInterfaceRule &
   NoExplicitAnyRule &
   NoInferrableTypesRule &
   NoParameterPropertiesRule &
