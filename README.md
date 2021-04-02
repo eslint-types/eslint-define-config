@@ -23,6 +23,12 @@
 
 Provide a `defineConfig` function for `.eslintrc.js` files.
 
+> This project is written by a human and not automatically generated!  
+> Unfortunately, this has the disadvantage that not everything is immediately defined. For example, if a rule is not defined, it falls back to a basic definition.  
+> However, the advantage is that you get documentation for pretty much everything in the code and usually get a direct link to the respective plugin or eslint rule. The types are also strictly typed.
+>
+> So if you are missing something like a rule or a plugin that should also be supported or a rule definition is e.g. out of date, feel free to open an issue or PR for it.
+
 # Installation
 
 ```bash
