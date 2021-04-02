@@ -4,6 +4,7 @@ import type { AwaitThenableRule } from './await-thenable';
 import type { BanTsCommentRule } from './ban-ts-comment';
 import type { BanTypesRule } from './ban-types';
 import type { ConsistentTypeAssertionsRule } from './consistent-type-assertions';
+import type { ConsistentTypeDefinitionsRule } from './consistent-type-definitions';
 import type { ExplicitFunctionReturnTypeRule } from './explicit-function-return-type';
 import type { IndentRule } from './indent';
 import type { InterfaceNamePrefixRule } from './interface-name-prefix';
@@ -31,6 +32,7 @@ export type TypeScriptEslintRules = AdjacentOverloadSignaturesRule &
   ConsistentTypeAssertionsRule &
   ExplicitFunctionReturnTypeRule &
   IndentRule &
+  ConsistentTypeDefinitionsRule &
   InterfaceNamePrefixRule &
   MemberOrderingRule &
   NoExplicitAnyRule &
