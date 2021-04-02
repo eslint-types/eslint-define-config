@@ -66,7 +66,7 @@ export type IndentOption = number | 'tab';
 /**
  * Options.
  */
-export type IndentOptions = [IndentOption?];
+export type IndentOptions = [IndentOption?, IndentConfig?];
 
 /**
  * Enforce consistent indentation.
