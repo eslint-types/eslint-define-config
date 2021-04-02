@@ -11,6 +11,7 @@ import type { MaxLinesRule } from './max-lines';
 import type { NoCaseDeclarationsRule } from './no-case-declarations';
 import type { NoConstantConditionRule } from './no-constant-condition';
 import type { NoDebuggerRule } from './no-debugger';
+import type { NoEmptyFunctionRule } from './no-empty-function';
 import type { NoUnusedExpressionsRule } from './no-unused-expressions';
 import type { NoUselessConcatRule } from './no-useless-concat';
 import type { PreferTemplateRule } from './prefer-template';
@@ -34,6 +35,7 @@ export type EslintRules = CommaDangleRule &
   NoCaseDeclarationsRule &
   NoConstantConditionRule &
   NoDebuggerRule &
+  NoEmptyFunctionRule &
   NoUnusedExpressionsRule &
   NoUselessConcatRule &
   PreferTemplateRule &
