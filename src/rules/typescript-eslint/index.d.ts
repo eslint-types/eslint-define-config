@@ -16,6 +16,7 @@ import type { NamingConventionRule } from './naming-convention';
 import type { NoEmptyFunctionRule } from './no-empty-function';
 import type { NoEmptyInterfaceRule } from './no-empty-interface';
 import type { NoExplicitAnyRule } from './no-explicit-any';
+import type { NoFloatingPromisesRule } from './no-floating-promises';
 import type { NoInferrableTypesRule } from './no-inferrable-types';
 import type { NoParameterPropertiesRule } from './no-parameter-properties';
 import type { NoUnsafeAssignmentRule } from './no-unsafe-assignment';
@@ -48,6 +49,7 @@ export type TypeScriptEslintRules = AdjacentOverloadSignaturesRule &
   NoEmptyFunctionRule &
   NoEmptyInterfaceRule &
   NoExplicitAnyRule &
+  NoFloatingPromisesRule &
   NoInferrableTypesRule &
   NoParameterPropertiesRule &
   NoUnsafeAssignmentRule &
