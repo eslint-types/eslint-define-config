@@ -81,6 +81,7 @@ module.exports = defineConfig({
         minLength: 3,
         skipWords: [
           'accessor',
+          'accessors',
           'amd',
           'applescript',
           'argv',

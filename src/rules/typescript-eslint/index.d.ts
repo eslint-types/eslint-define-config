@@ -7,6 +7,7 @@ import type { ConsistentTypeAssertionsRule } from './consistent-type-assertions'
 import type { ConsistentTypeDefinitionsRule } from './consistent-type-definitions';
 import type { DotNotationRule } from './dot-notation';
 import type { ExplicitFunctionReturnTypeRule } from './explicit-function-return-type';
+import type { ExplicitMemberAccessibilityRule } from './explicit-member-accessibility';
 import type { IndentRule } from './indent';
 import type { InterfaceNamePrefixRule } from './interface-name-prefix';
 import type { MemberOrderingRule } from './member-ordering';
@@ -34,6 +35,7 @@ export type TypeScriptEslintRules = AdjacentOverloadSignaturesRule &
   ConsistentTypeDefinitionsRule &
   DotNotationRule &
   ExplicitFunctionReturnTypeRule &
+  ExplicitMemberAccessibilityRule &
   IndentRule &
   InterfaceNamePrefixRule &
   MemberOrderingRule &
