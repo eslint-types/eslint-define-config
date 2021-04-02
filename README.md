@@ -14,6 +14,9 @@
   <a href="https://prettier.io" target="_blank">
     <img alt="Code Style: Prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg">
   </a>
+  <a href="https://www.paypal.com/donate?hosted_button_id=L7GY729FBKTZY" target="_blank">
+    <img alt="Donate: PayPal" src="https://img.shields.io/badge/Donate-PayPal-blue.svg">
+  </a>
 </p>
 
 # eslint-define-config
