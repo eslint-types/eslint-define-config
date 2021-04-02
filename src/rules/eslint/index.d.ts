@@ -1,5 +1,6 @@
 import type { CommaDangleRule } from './comma-dangle';
 import type { CurlyRule } from './curly';
+import type { DotNotationRule } from './dot-notation';
 import type { GroupedAccessorPairsRule } from './grouped-accessor-pairs';
 import type { IdDenylistRule } from './id-denylist';
 import type { IndentRule } from './indent';
@@ -22,6 +23,7 @@ import type { SemiRule } from './semi';
  */
 export type EslintRules = CommaDangleRule &
   CurlyRule &
+  DotNotationRule &
   GroupedAccessorPairsRule &
   IdDenylistRule &
   IndentRule &

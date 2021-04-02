@@ -5,6 +5,7 @@ import type { BanTsCommentRule } from './ban-ts-comment';
 import type { BanTypesRule } from './ban-types';
 import type { ConsistentTypeAssertionsRule } from './consistent-type-assertions';
 import type { ConsistentTypeDefinitionsRule } from './consistent-type-definitions';
+import type { DotNotationRule } from './dot-notation';
 import type { ExplicitFunctionReturnTypeRule } from './explicit-function-return-type';
 import type { IndentRule } from './indent';
 import type { InterfaceNamePrefixRule } from './interface-name-prefix';
@@ -30,9 +31,10 @@ export type TypeScriptEslintRules = AdjacentOverloadSignaturesRule &
   BanTsCommentRule &
   BanTypesRule &
   ConsistentTypeAssertionsRule &
+  ConsistentTypeDefinitionsRule &
+  DotNotationRule &
   ExplicitFunctionReturnTypeRule &
   IndentRule &
-  ConsistentTypeDefinitionsRule &
   InterfaceNamePrefixRule &
   MemberOrderingRule &
   NoExplicitAnyRule &
