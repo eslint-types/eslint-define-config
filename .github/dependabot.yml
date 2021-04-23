@@ -5,6 +5,7 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
+      day: 'friday'
     labels:
       - 'dependencies'
     reviewers:
