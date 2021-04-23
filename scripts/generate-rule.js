@@ -51,6 +51,9 @@ function generateRuleFileContent(name, provider) {
     case 'import':
       RuleLink = `https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/${kebabCase}.md`;
       break;
+    case 'node':
+      RuleLink = `https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/${kebabCase}.md`;
+      break;
   }
 
   provider = provider === 'eslint' ? '' : `${provider}/`;

@@ -12,8 +12,10 @@ import type { NoCaseDeclarationsRule } from './no-case-declarations';
 import type { NoConstantConditionRule } from './no-constant-condition';
 import type { NoDebuggerRule } from './no-debugger';
 import type { NoEmptyFunctionRule } from './no-empty-function';
+import type { NoProcessExitRule } from './no-process-exit';
 import type { NoUnusedExpressionsRule } from './no-unused-expressions';
 import type { NoUselessConcatRule } from './no-useless-concat';
+import type { PreferConstRule } from './prefer-const';
 import type { PreferTemplateRule } from './prefer-template';
 import type { QuotePropsRule } from './quote-props';
 import type { QuotesRule } from './quotes';
@@ -36,8 +38,10 @@ export type EslintRules = CommaDangleRule &
   NoConstantConditionRule &
   NoDebuggerRule &
   NoEmptyFunctionRule &
+  NoProcessExitRule &
   NoUnusedExpressionsRule &
   NoUselessConcatRule &
+  PreferConstRule &
   PreferTemplateRule &
   QuotePropsRule &
   QuotesRule &

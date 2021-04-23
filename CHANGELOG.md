@@ -1,6 +1,12 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.7...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.8...main)
+
+# 1.0.8
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.7...1.0.8)
+
+- Provide support for repo [Vite](https://github.com/vitejs/vite)
 
 # 1.0.7
 
