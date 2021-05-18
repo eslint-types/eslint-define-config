@@ -74,6 +74,7 @@ module.exports = defineConfig({
     ],
     'jsdoc/require-param-type': 'off',
     'jsdoc/require-returns-type': 'off',
+    'jsdoc/tag-lines': 'off',
 
     'spellcheck/spell-checker': [
       'warn',
