@@ -38,19 +38,19 @@
     "tsconfig.json"
   ],
   "devDependencies": {
-    "@types/node": "~15.3.0",
-    "@typescript-eslint/eslint-plugin": "~4.24.0",
-    "@typescript-eslint/parser": "~4.24.0",
-    "eslint": "~7.26.0",
+    "@types/node": "~15.6.1",
+    "@typescript-eslint/eslint-plugin": "~4.25.0",
+    "@typescript-eslint/parser": "~4.25.0",
+    "eslint": "~7.27.0",
     "eslint-config-prettier": "~8.3.0",
     "eslint-define-config": "~1.0.8",
     "eslint-plugin-inclusive-language": "~2.1.1",
-    "eslint-plugin-jsdoc": "~34.7.0",
+    "eslint-plugin-jsdoc": "~35.0.0",
     "eslint-plugin-prettier": "~3.4.0",
     "eslint-plugin-spellcheck": "~0.0.17",
     "np": "~7.5.0",
     "prettier": "2.3.0",
     "prettier-plugin-organize-imports": "~2.1.0",
-    "typescript": "~4.2.4"
+    "typescript": "~4.3.2"
   }
 }

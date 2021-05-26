@@ -2,6 +2,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "strict": true,
+    "noImplicitOverride": true,
     "noUncheckedIndexedAccess": true,
     "allowJs": true,
     "noEmit": true
