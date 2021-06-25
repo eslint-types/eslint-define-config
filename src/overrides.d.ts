@@ -25,6 +25,12 @@ export interface Override {
    * @see [Rules](https://eslint.org/docs/user-guide/configuring/rules)
    */
   rules?: Rules;
+  /**
+   * Specifying Processor.
+   *
+   * @see [processor](https://eslint.org/docs/user-guide/configuring/plugins#specifying-processor)
+   */
+  processor?: string;
 }
 
 /**
