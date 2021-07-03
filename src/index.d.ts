@@ -78,6 +78,12 @@ export interface EslintConfig {
    * @see [Settings](https://eslint.org/docs/user-guide/configuring/configuration-files#adding-shared-settings)
    */
   settings?: Settings;
+  /**
+   * Specifying Processor.
+   *
+   * @see [processor](https://eslint.org/docs/user-guide/configuring/plugins#specifying-processor)
+   */
+  processor?: string;
 }
 
 /**
