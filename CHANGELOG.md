@@ -1,6 +1,14 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.8...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.9...main)
+
+# 1.0.9
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.8...1.0.9)
+
+- Add `processor` ([#35])
+
+[#35]: https://github.com/Shinigami92/eslint-define-config/pull/35
 
 # 1.0.8
 
