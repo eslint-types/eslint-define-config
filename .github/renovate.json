@@ -1,0 +1,8 @@
+{
+  "extends": ["config:base"],
+  "schedule": ["after 9am on friday"],
+  "timezone": "Europe/Berlin",
+  "labels": ["dependencies"],
+  "reviewers": ["Shinigami92"],
+  "lockFileMaintenance": { "enabled": true }
+}
