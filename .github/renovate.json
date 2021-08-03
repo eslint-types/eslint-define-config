@@ -4,5 +4,7 @@
   "timezone": "Europe/Berlin",
   "labels": ["dependencies"],
   "reviewers": ["Shinigami92"],
-  "lockFileMaintenance": { "enabled": true }
+  "lockFileMaintenance": { "enabled": true },
+  "pin": false,
+  "rangeStrategy": "bump"
 }
