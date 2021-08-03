@@ -1,0 +1,10 @@
+{
+  "extends": ["config:base", "group:allNonMajor"],
+  "schedule": ["after 9am on friday"],
+  "timezone": "Europe/Berlin",
+  "labels": ["dependencies"],
+  "reviewers": ["Shinigami92"],
+  "lockFileMaintenance": { "enabled": true },
+  "pin": false,
+  "rangeStrategy": "bump"
+}
