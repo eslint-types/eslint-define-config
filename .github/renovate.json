@@ -1,5 +1,5 @@
 {
-  "extends": ["config:base"],
+  "extends": ["config:base", "group:allNonMajor"],
   "schedule": ["after 9am on friday"],
   "timezone": "Europe/Berlin",
   "labels": ["dependencies"],
