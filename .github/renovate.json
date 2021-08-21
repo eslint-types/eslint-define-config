@@ -1,10 +1,26 @@
 {
-  "extends": ["config:base", "group:allNonMajor"],
-  "schedule": ["after 9am on friday"],
+  "extends": ["config:base"],
+  "schedule": ["after 9am and before 7pm on friday"],
   "timezone": "Europe/Berlin",
   "labels": ["dependencies"],
   "reviewers": ["Shinigami92"],
   "lockFileMaintenance": { "enabled": true },
   "pin": false,
-  "rangeStrategy": "bump"
+  "rangeStrategy": "replace",
+  "postUpdateOptions": ["yarnDedupeHighest"],
+  "ignorePresets": ["workarounds:typesNodeVersioning"],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch"
+    },
+    {
+      "matchDepTypes": ["devDependencies"],
+      "groupName": "all devDependencies",
+      "groupSlug": "all-dev-dependencies",
+      "rangeStrategy": "bump"
+    }
+  ]
 }
