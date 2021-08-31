@@ -19,14 +19,42 @@ jobs:
         with:
           node-version: 14
 
+      - name: Fetch cached dependencies
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: |
+            **/.yarn/cache
+            **/node_modules
+          key: node-14-os-ubuntu-latest-yarn-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            node-14-os-ubuntu-latest-yarn-
+
       - name: Versions
-        run: yarn versions
+        run: |
+          echo "yarn: $(yarn --version)"
+          echo "npm : $(npm --version)"
+          echo "node: $(node --version)"
+          echo "process.versions:"
+          yarn node -p process.versions
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable
 
       - name: Lint
         run: yarn lint
 
       - name: Check
         run: yarn check
+
+      - name: Audit production
+        run: yarn npm audit --all --recursive --environment production
+
+      - name: Audit all
+        continue-on-error: true
+        run: yarn npm audit --all --recursive
+
+      - name: Check outdated dependencies
+        continue-on-error: true
+        if: github.ref == 'refs/heads/main'
+        run: yarn outdated --url
