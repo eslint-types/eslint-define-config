@@ -1,5 +1,5 @@
 // @ts-check
-const { defineConfig } = require('eslint-define-config');
+const { defineConfig } = require('./src');
 
 module.exports = defineConfig({
   ignorePatterns: ['src/index.js', '.eslintrc.js'],
