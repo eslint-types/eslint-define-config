@@ -7,22 +7,22 @@ export type RequireYieldsCheckOption = {
   /**
    * @see [require-yields-check](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-yields-check)
    */
-  checkGeneratorsOnly?: any;
+  checkGeneratorsOnly?: boolean;
 
   /**
    * @see [require-yields-check](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-yields-check)
    */
-  contexts?: any;
+  contexts?: any[];
 
   /**
    * @see [require-yields-check](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-yields-check)
    */
-  exemptedBy?: any;
+  exemptedBy?: any[];
 
   /**
    * @see [require-yields-check](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-yields-check)
    */
-  next?: any;
+  next?: boolean;
 };
 
 /**

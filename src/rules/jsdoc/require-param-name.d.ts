@@ -7,7 +7,7 @@ export type RequireParamNameOption = {
   /**
    * @see [require-param-name](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param-name)
    */
-  contexts?: any;
+  contexts?: any[];
 };
 
 /**

@@ -7,12 +7,12 @@ export type NoUselessMustachesOption = {
   /**
    * @see [no-useless-mustaches](https://eslint.vuejs.org/rules/no-useless-mustaches.html)
    */
-  ignoreIncludesComment?: any;
+  ignoreIncludesComment?: boolean;
 
   /**
    * @see [no-useless-mustaches](https://eslint.vuejs.org/rules/no-useless-mustaches.html)
    */
-  ignoreStringEscape?: any;
+  ignoreStringEscape?: boolean;
 };
 
 /**

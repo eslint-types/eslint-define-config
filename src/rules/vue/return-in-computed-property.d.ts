@@ -7,7 +7,7 @@ export type ReturnInComputedPropertyOption = {
   /**
    * @see [return-in-computed-property](https://eslint.vuejs.org/rules/return-in-computed-property.html)
    */
-  treatUndefinedAsUnspecified?: any;
+  treatUndefinedAsUnspecified?: boolean;
 };
 
 /**

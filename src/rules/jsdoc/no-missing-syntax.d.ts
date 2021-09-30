@@ -7,7 +7,7 @@ export type NoMissingSyntaxOption = {
   /**
    * @see [no-missing-syntax](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-missing-syntax)
    */
-  contexts?: any;
+  contexts?: any[];
 };
 
 /**

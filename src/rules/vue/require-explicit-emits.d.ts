@@ -7,7 +7,7 @@ export type RequireExplicitEmitsOption = {
   /**
    * @see [require-explicit-emits](https://eslint.vuejs.org/rules/require-explicit-emits.html)
    */
-  allowProps?: any;
+  allowProps?: boolean;
 };
 
 /**

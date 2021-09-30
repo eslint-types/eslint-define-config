@@ -7,17 +7,17 @@ export type CamelcaseOption = {
   /**
    * @see [camelcase](https://eslint.vuejs.org/rules/camelcase.html)
    */
-  ignoreDestructuring?: any;
+  ignoreDestructuring?: boolean;
 
   /**
    * @see [camelcase](https://eslint.vuejs.org/rules/camelcase.html)
    */
-  ignoreImports?: any;
+  ignoreImports?: boolean;
 
   /**
    * @see [camelcase](https://eslint.vuejs.org/rules/camelcase.html)
    */
-  ignoreGlobals?: any;
+  ignoreGlobals?: boolean;
 
   /**
    * @see [camelcase](https://eslint.vuejs.org/rules/camelcase.html)
@@ -27,7 +27,7 @@ export type CamelcaseOption = {
   /**
    * @see [camelcase](https://eslint.vuejs.org/rules/camelcase.html)
    */
-  allow?: any;
+  allow?: any[];
 };
 
 /**

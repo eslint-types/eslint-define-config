@@ -7,17 +7,17 @@ export type RequireDescriptionCompleteSentenceOption = {
   /**
    * @see [require-description-complete-sentence](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-description-complete-sentence)
    */
-  abbreviations?: any;
+  abbreviations?: any[];
 
   /**
    * @see [require-description-complete-sentence](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-description-complete-sentence)
    */
-  newlineBeforeCapsAssumesBadSentenceEnd?: any;
+  newlineBeforeCapsAssumesBadSentenceEnd?: boolean;
 
   /**
    * @see [require-description-complete-sentence](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-description-complete-sentence)
    */
-  tags?: any;
+  tags?: any[];
 };
 
 /**

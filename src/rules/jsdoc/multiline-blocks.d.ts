@@ -7,12 +7,12 @@ export type MultilineBlocksOption = {
   /**
    * @see [multiline-blocks](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-multiline-blocks)
    */
-  allowMultipleTags?: any;
+  allowMultipleTags?: boolean;
 
   /**
    * @see [multiline-blocks](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-multiline-blocks)
    */
-  minimumLengthForMultiline?: any;
+  minimumLengthForMultiline?: number;
 
   /**
    * @see [multiline-blocks](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-multiline-blocks)
@@ -22,27 +22,27 @@ export type MultilineBlocksOption = {
   /**
    * @see [multiline-blocks](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-multiline-blocks)
    */
-  noFinalLineText?: any;
+  noFinalLineText?: boolean;
 
   /**
    * @see [multiline-blocks](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-multiline-blocks)
    */
-  noMultilineBlocks?: any;
+  noMultilineBlocks?: boolean;
 
   /**
    * @see [multiline-blocks](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-multiline-blocks)
    */
-  noSingleLineBlocks?: any;
+  noSingleLineBlocks?: boolean;
 
   /**
    * @see [multiline-blocks](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-multiline-blocks)
    */
-  noZeroLineText?: any;
+  noZeroLineText?: boolean;
 
   /**
    * @see [multiline-blocks](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-multiline-blocks)
    */
-  singleLineTags?: any;
+  singleLineTags?: any[];
 };
 
 /**

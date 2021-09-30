@@ -7,87 +7,87 @@ export type CheckExamplesOption = {
   /**
    * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
    */
-  allowInlineConfig?: any;
+  allowInlineConfig?: boolean;
 
   /**
    * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
    */
-  baseConfig?: any;
+  baseConfig?: Record<string, any>;
 
   /**
    * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
    */
-  captionRequired?: any;
+  captionRequired?: boolean;
 
   /**
    * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
    */
-  checkDefaults?: any;
+  checkDefaults?: boolean;
 
   /**
    * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
    */
-  checkEslintrc?: any;
+  checkEslintrc?: boolean;
 
   /**
    * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
    */
-  checkParams?: any;
+  checkParams?: boolean;
 
   /**
    * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
    */
-  checkProperties?: any;
+  checkProperties?: boolean;
 
   /**
    * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
    */
-  configFile?: any;
+  configFile?: string;
 
   /**
    * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
    */
-  exampleCodeRegex?: any;
+  exampleCodeRegex?: string;
 
   /**
    * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
    */
-  matchingFileName?: any;
+  matchingFileName?: string;
 
   /**
    * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
    */
-  matchingFileNameDefaults?: any;
+  matchingFileNameDefaults?: string;
 
   /**
    * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
    */
-  matchingFileNameParams?: any;
+  matchingFileNameParams?: string;
 
   /**
    * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
    */
-  matchingFileNameProperties?: any;
+  matchingFileNameProperties?: string;
 
   /**
    * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
    */
-  noDefaultExampleRules?: any;
+  noDefaultExampleRules?: boolean;
 
   /**
    * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
    */
-  paddedIndent?: any;
+  paddedIndent?: number;
 
   /**
    * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
    */
-  rejectExampleCodeRegex?: any;
+  rejectExampleCodeRegex?: string;
 
   /**
    * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
    */
-  reportUnusedDisableDirectives?: any;
+  reportUnusedDisableDirectives?: boolean;
 };
 
 /**

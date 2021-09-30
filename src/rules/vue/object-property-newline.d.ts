@@ -7,12 +7,12 @@ export type ObjectPropertyNewlineOption = {
   /**
    * @see [object-property-newline](https://eslint.vuejs.org/rules/object-property-newline.html)
    */
-  allowAllPropertiesOnSameLine?: any;
+  allowAllPropertiesOnSameLine?: boolean;
 
   /**
    * @see [object-property-newline](https://eslint.vuejs.org/rules/object-property-newline.html)
    */
-  allowMultiplePropertiesPerLine?: any;
+  allowMultiplePropertiesPerLine?: boolean;
 };
 
 /**

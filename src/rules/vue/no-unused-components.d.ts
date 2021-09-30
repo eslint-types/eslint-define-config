@@ -7,7 +7,7 @@ export type NoUnusedComponentsOption = {
   /**
    * @see [no-unused-components](https://eslint.vuejs.org/rules/no-unused-components.html)
    */
-  ignoreWhenBindingPresent?: any;
+  ignoreWhenBindingPresent?: boolean;
 };
 
 /**

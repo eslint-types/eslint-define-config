@@ -7,12 +7,12 @@ export type MatchComponentFileNameOption = {
   /**
    * @see [match-component-file-name](https://eslint.vuejs.org/rules/match-component-file-name.html)
    */
-  extensions?: any;
+  extensions?: any[];
 
   /**
    * @see [match-component-file-name](https://eslint.vuejs.org/rules/match-component-file-name.html)
    */
-  shouldMatchCase?: any;
+  shouldMatchCase?: boolean;
 };
 
 /**

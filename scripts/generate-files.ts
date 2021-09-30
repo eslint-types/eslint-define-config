@@ -48,6 +48,31 @@ const generationMap: Record<string, Plugin> = {
 // Generating rule files
 const rulesDir: string = path.resolve(__dirname, '../src/rules');
 
+function generateType(propertyDefinition: JSONSchema4): string {
+  switch (propertyDefinition.type) {
+    case 'string':
+    case 'boolean':
+    case 'number':
+      return propertyDefinition.type;
+    case 'integer':
+      // TODO: Read further details
+      return 'number';
+    case 'array':
+      // TODO: Handle array
+      return 'any[]';
+    case 'object':
+      // TODO: Handle nested objects
+      return 'Record<string, any>';
+    case undefined:
+      // TODO: Could be an object
+      break;
+    default:
+      console.log(propertyDefinition.type);
+      break;
+  }
+  return 'any';
+}
+
 for (const pluginName in generationMap) {
   const { rules, name } = generationMap[pluginName]!;
 
@@ -80,7 +105,7 @@ export type ${ruleNamePascalCase}Option = {`;
   /**
    * ${seeDocLink}
    */
-  '${propertyName}'?: any;\n`;
+  '${propertyName}'?: ${generateType(propertyDefinition)};\n`;
       });
 
       ruleContent += `}

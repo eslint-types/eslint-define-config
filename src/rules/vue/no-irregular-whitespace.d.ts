@@ -7,32 +7,32 @@ export type NoIrregularWhitespaceOption = {
   /**
    * @see [no-irregular-whitespace](https://eslint.vuejs.org/rules/no-irregular-whitespace.html)
    */
-  skipComments?: any;
+  skipComments?: boolean;
 
   /**
    * @see [no-irregular-whitespace](https://eslint.vuejs.org/rules/no-irregular-whitespace.html)
    */
-  skipStrings?: any;
+  skipStrings?: boolean;
 
   /**
    * @see [no-irregular-whitespace](https://eslint.vuejs.org/rules/no-irregular-whitespace.html)
    */
-  skipTemplates?: any;
+  skipTemplates?: boolean;
 
   /**
    * @see [no-irregular-whitespace](https://eslint.vuejs.org/rules/no-irregular-whitespace.html)
    */
-  skipRegExps?: any;
+  skipRegExps?: boolean;
 
   /**
    * @see [no-irregular-whitespace](https://eslint.vuejs.org/rules/no-irregular-whitespace.html)
    */
-  skipHTMLAttributeValues?: any;
+  skipHTMLAttributeValues?: boolean;
 
   /**
    * @see [no-irregular-whitespace](https://eslint.vuejs.org/rules/no-irregular-whitespace.html)
    */
-  skipHTMLTextContents?: any;
+  skipHTMLTextContents?: boolean;
 };
 
 /**

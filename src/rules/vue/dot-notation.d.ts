@@ -7,12 +7,12 @@ export type DotNotationOption = {
   /**
    * @see [dot-notation](https://eslint.vuejs.org/rules/dot-notation.html)
    */
-  allowKeywords?: any;
+  allowKeywords?: boolean;
 
   /**
    * @see [dot-notation](https://eslint.vuejs.org/rules/dot-notation.html)
    */
-  allowPattern?: any;
+  allowPattern?: string;
 };
 
 /**

@@ -7,17 +7,17 @@ export type NoPotentialComponentOptionTypoOption = {
   /**
    * @see [no-potential-component-option-typo](https://eslint.vuejs.org/rules/no-potential-component-option-typo.html)
    */
-  presets?: any;
+  presets?: any[];
 
   /**
    * @see [no-potential-component-option-typo](https://eslint.vuejs.org/rules/no-potential-component-option-typo.html)
    */
-  custom?: any;
+  custom?: any[];
 
   /**
    * @see [no-potential-component-option-typo](https://eslint.vuejs.org/rules/no-potential-component-option-typo.html)
    */
-  threshold?: any;
+  threshold?: number;
 };
 
 /**

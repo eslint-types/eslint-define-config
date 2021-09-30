@@ -7,7 +7,7 @@ export type OrderInComponentsOption = {
   /**
    * @see [order-in-components](https://eslint.vuejs.org/rules/order-in-components.html)
    */
-  order?: any;
+  order?: any[];
 };
 
 /**

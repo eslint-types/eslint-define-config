@@ -7,7 +7,7 @@ export type SpaceInfixOpsOption = {
   /**
    * @see [space-infix-ops](https://eslint.vuejs.org/rules/space-infix-ops.html)
    */
-  int32Hint?: any;
+  int32Hint?: boolean;
 };
 
 /**

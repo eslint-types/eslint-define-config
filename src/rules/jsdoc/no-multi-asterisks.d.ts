@@ -7,12 +7,12 @@ export type NoMultiAsterisksOption = {
   /**
    * @see [no-multi-asterisks](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-multi-asterisks)
    */
-  preventAtEnd?: any;
+  preventAtEnd?: boolean;
 
   /**
    * @see [no-multi-asterisks](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-multi-asterisks)
    */
-  preventAtMiddleLines?: any;
+  preventAtMiddleLines?: boolean;
 };
 
 /**

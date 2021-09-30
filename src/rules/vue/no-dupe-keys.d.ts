@@ -7,7 +7,7 @@ export type NoDupeKeysOption = {
   /**
    * @see [no-dupe-keys](https://eslint.vuejs.org/rules/no-dupe-keys.html)
    */
-  groups?: any;
+  groups?: any[];
 };
 
 /**

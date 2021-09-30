@@ -7,12 +7,12 @@ export type CheckTagNamesOption = {
   /**
    * @see [check-tag-names](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-tag-names)
    */
-  definedTags?: any;
+  definedTags?: any[];
 
   /**
    * @see [check-tag-names](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-tag-names)
    */
-  jsxTags?: any;
+  jsxTags?: boolean;
 };
 
 /**

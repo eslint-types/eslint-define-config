@@ -7,12 +7,12 @@ export type NoUselessVBindOption = {
   /**
    * @see [no-useless-v-bind](https://eslint.vuejs.org/rules/no-useless-v-bind.html)
    */
-  ignoreIncludesComment?: any;
+  ignoreIncludesComment?: boolean;
 
   /**
    * @see [no-useless-v-bind](https://eslint.vuejs.org/rules/no-useless-v-bind.html)
    */
-  ignoreStringEscape?: any;
+  ignoreStringEscape?: boolean;
 };
 
 /**

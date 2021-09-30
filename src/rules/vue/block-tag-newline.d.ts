@@ -17,12 +17,12 @@ export type BlockTagNewlineOption = {
   /**
    * @see [block-tag-newline](https://eslint.vuejs.org/rules/block-tag-newline.html)
    */
-  maxEmptyLines?: any;
+  maxEmptyLines?: number;
 
   /**
    * @see [block-tag-newline](https://eslint.vuejs.org/rules/block-tag-newline.html)
    */
-  blocks?: any;
+  blocks?: Record<string, any>;
 };
 
 /**

@@ -7,7 +7,7 @@ export type CheckIndentationOption = {
   /**
    * @see [check-indentation](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-indentation)
    */
-  excludeTags?: any;
+  excludeTags?: any[];
 };
 
 /**

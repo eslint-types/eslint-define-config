@@ -7,17 +7,17 @@ export type SinglelineHtmlElementContentNewlineOption = {
   /**
    * @see [singleline-html-element-content-newline](https://eslint.vuejs.org/rules/singleline-html-element-content-newline.html)
    */
-  ignoreWhenNoAttributes?: any;
+  ignoreWhenNoAttributes?: boolean;
 
   /**
    * @see [singleline-html-element-content-newline](https://eslint.vuejs.org/rules/singleline-html-element-content-newline.html)
    */
-  ignoreWhenEmpty?: any;
+  ignoreWhenEmpty?: boolean;
 
   /**
    * @see [singleline-html-element-content-newline](https://eslint.vuejs.org/rules/singleline-html-element-content-newline.html)
    */
-  ignores?: any;
+  ignores?: any[];
 };
 
 /**

@@ -7,7 +7,7 @@ export type NoUseVIfWithVForOption = {
   /**
    * @see [no-use-v-if-with-v-for](https://eslint.vuejs.org/rules/no-use-v-if-with-v-for.html)
    */
-  allowUsingIterationVar?: any;
+  allowUsingIterationVar?: boolean;
 };
 
 /**

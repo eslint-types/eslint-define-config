@@ -7,17 +7,17 @@ export type CheckTypesOption = {
   /**
    * @see [check-types](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-types)
    */
-  exemptTagContexts?: any;
+  exemptTagContexts?: any[];
 
   /**
    * @see [check-types](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-types)
    */
-  noDefaults?: any;
+  noDefaults?: boolean;
 
   /**
    * @see [check-types](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-types)
    */
-  unifyParentAndChildTypeChecks?: any;
+  unifyParentAndChildTypeChecks?: boolean;
 };
 
 /**

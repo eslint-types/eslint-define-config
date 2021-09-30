@@ -7,7 +7,7 @@ export type ValidVOnOption = {
   /**
    * @see [valid-v-on](https://eslint.vuejs.org/rules/valid-v-on.html)
    */
-  modifiers?: any;
+  modifiers?: any[];
 };
 
 /**
