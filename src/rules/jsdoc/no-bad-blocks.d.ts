@@ -7,12 +7,12 @@ export type NoBadBlocksOption = {
   /**
    * @see [no-bad-blocks](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-bad-blocks)
    */
-  ignore?: any;
+  ignore?: any[];
 
   /**
    * @see [no-bad-blocks](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-bad-blocks)
    */
-  preventAllMultiAsteriskBlocks?: any;
+  preventAllMultiAsteriskBlocks?: boolean;
 };
 
 /**

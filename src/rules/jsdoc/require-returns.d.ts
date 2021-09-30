@@ -7,32 +7,32 @@ export type RequireReturnsOption = {
   /**
    * @see [require-returns](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns)
    */
-  checkConstructors?: any;
+  checkConstructors?: boolean;
 
   /**
    * @see [require-returns](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns)
    */
-  checkGetters?: any;
+  checkGetters?: boolean;
 
   /**
    * @see [require-returns](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns)
    */
-  contexts?: any;
+  contexts?: any[];
 
   /**
    * @see [require-returns](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns)
    */
-  exemptedBy?: any;
+  exemptedBy?: any[];
 
   /**
    * @see [require-returns](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns)
    */
-  forceRequireReturn?: any;
+  forceRequireReturn?: boolean;
 
   /**
    * @see [require-returns](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns)
    */
-  forceReturnsWithAsync?: any;
+  forceReturnsWithAsync?: boolean;
 };
 
 /**

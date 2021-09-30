@@ -7,17 +7,17 @@ export type HtmlButtonHasTypeOption = {
   /**
    * @see [html-button-has-type](https://eslint.vuejs.org/rules/html-button-has-type.html)
    */
-  button?: any;
+  button?: boolean;
 
   /**
    * @see [html-button-has-type](https://eslint.vuejs.org/rules/html-button-has-type.html)
    */
-  submit?: any;
+  submit?: boolean;
 
   /**
    * @see [html-button-has-type](https://eslint.vuejs.org/rules/html-button-has-type.html)
    */
-  reset?: any;
+  reset?: boolean;
 };
 
 /**

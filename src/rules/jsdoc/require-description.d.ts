@@ -7,32 +7,32 @@ export type RequireDescriptionOption = {
   /**
    * @see [require-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-description)
    */
-  checkConstructors?: any;
+  checkConstructors?: boolean;
 
   /**
    * @see [require-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-description)
    */
-  checkGetters?: any;
+  checkGetters?: boolean;
 
   /**
    * @see [require-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-description)
    */
-  checkSetters?: any;
+  checkSetters?: boolean;
 
   /**
    * @see [require-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-description)
    */
-  contexts?: any;
+  contexts?: any[];
 
   /**
    * @see [require-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-description)
    */
-  descriptionStyle?: any;
+  descriptionStyle?: string;
 
   /**
    * @see [require-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-description)
    */
-  exemptedBy?: any;
+  exemptedBy?: any[];
 };
 
 /**

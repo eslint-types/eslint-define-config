@@ -7,12 +7,12 @@ export type RequireThrowsOption = {
   /**
    * @see [require-throws](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns)
    */
-  contexts?: any;
+  contexts?: any[];
 
   /**
    * @see [require-throws](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns)
    */
-  exemptedBy?: any;
+  exemptedBy?: any[];
 };
 
 /**
@@ -21,20 +21,20 @@ export type RequireThrowsOption = {
 export type RequireThrowsOptions = [RequireThrowsOption?];
 
 /**
- * undefined
+ *
  *
  * @see [require-throws](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns)
  */
 export type RequireThrowsRuleConfig = RuleConfig<RequireThrowsOptions>;
 
 /**
- * undefined
+ *
  *
  * @see [require-throws](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns)
  */
 export interface RequireThrowsRule {
   /**
-   * undefined
+   *
    *
    * @see [require-throws](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns)
    */

@@ -7,12 +7,12 @@ export type AttributesOrderOption = {
   /**
    * @see [attributes-order](https://eslint.vuejs.org/rules/attributes-order.html)
    */
-  order?: any;
+  order?: any[];
 
   /**
    * @see [attributes-order](https://eslint.vuejs.org/rules/attributes-order.html)
    */
-  alphabetical?: any;
+  alphabetical?: boolean;
 };
 
 /**

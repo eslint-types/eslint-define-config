@@ -7,17 +7,17 @@ export type NoBareStringsInTemplateOption = {
   /**
    * @see [no-bare-strings-in-template](https://eslint.vuejs.org/rules/no-bare-strings-in-template.html)
    */
-  allowlist?: any;
+  allowlist?: any[];
 
   /**
    * @see [no-bare-strings-in-template](https://eslint.vuejs.org/rules/no-bare-strings-in-template.html)
    */
-  attributes?: any;
+  attributes?: Record<string, any>;
 
   /**
    * @see [no-bare-strings-in-template](https://eslint.vuejs.org/rules/no-bare-strings-in-template.html)
    */
-  directives?: any;
+  directives?: any[];
 };
 
 /**

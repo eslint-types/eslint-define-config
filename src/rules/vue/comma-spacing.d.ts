@@ -7,12 +7,12 @@ export type CommaSpacingOption = {
   /**
    * @see [comma-spacing](https://eslint.vuejs.org/rules/comma-spacing.html)
    */
-  before?: any;
+  before?: boolean;
 
   /**
    * @see [comma-spacing](https://eslint.vuejs.org/rules/comma-spacing.html)
    */
-  after?: any;
+  after?: boolean;
 };
 
 /**

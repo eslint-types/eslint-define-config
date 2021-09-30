@@ -7,17 +7,17 @@ export type NoUnusedPropertiesOption = {
   /**
    * @see [no-unused-properties](https://eslint.vuejs.org/rules/no-unused-properties.html)
    */
-  groups?: any;
+  groups?: any[];
 
   /**
    * @see [no-unused-properties](https://eslint.vuejs.org/rules/no-unused-properties.html)
    */
-  deepData?: any;
+  deepData?: boolean;
 
   /**
    * @see [no-unused-properties](https://eslint.vuejs.org/rules/no-unused-properties.html)
    */
-  ignorePublicMembers?: any;
+  ignorePublicMembers?: boolean;
 };
 
 /**

@@ -7,7 +7,7 @@ export type ComponentTagsOrderOption = {
   /**
    * @see [component-tags-order](https://eslint.vuejs.org/rules/component-tags-order.html)
    */
-  order?: any;
+  order?: any[];
 };
 
 /**

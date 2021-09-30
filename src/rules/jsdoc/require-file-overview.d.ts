@@ -7,7 +7,7 @@ export type RequireFileOverviewOption = {
   /**
    * @see [require-file-overview](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-file-overview)
    */
-  tags?: any;
+  tags?: Record<string, any>;
 };
 
 /**

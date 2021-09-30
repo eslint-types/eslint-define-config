@@ -7,7 +7,7 @@ export type NoTemplateTargetBlankOption = {
   /**
    * @see [no-template-target-blank](https://eslint.vuejs.org/rules/no-template-target-blank.html)
    */
-  allowReferrer?: any;
+  allowReferrer?: boolean;
 
   /**
    * @see [no-template-target-blank](https://eslint.vuejs.org/rules/no-template-target-blank.html)

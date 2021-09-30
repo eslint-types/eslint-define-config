@@ -7,7 +7,7 @@ export type CheckValuesOption = {
   /**
    * @see [check-values](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-values)
    */
-  allowedAuthors?: any;
+  allowedAuthors?: any[];
 
   /**
    * @see [check-values](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-values)
@@ -17,12 +17,12 @@ export type CheckValuesOption = {
   /**
    * @see [check-values](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-values)
    */
-  licensePattern?: any;
+  licensePattern?: string;
 
   /**
    * @see [check-values](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-values)
    */
-  numericOnlyVariation?: any;
+  numericOnlyVariation?: boolean;
 };
 
 /**

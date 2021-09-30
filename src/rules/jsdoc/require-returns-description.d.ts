@@ -7,7 +7,7 @@ export type RequireReturnsDescriptionOption = {
   /**
    * @see [require-returns-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns-description)
    */
-  contexts?: any;
+  contexts?: any[];
 };
 
 /**

@@ -7,12 +7,12 @@ export type NoDuplicateAttributesOption = {
   /**
    * @see [no-duplicate-attributes](https://eslint.vuejs.org/rules/no-duplicate-attributes.html)
    */
-  allowCoexistClass?: any;
+  allowCoexistClass?: boolean;
 
   /**
    * @see [no-duplicate-attributes](https://eslint.vuejs.org/rules/no-duplicate-attributes.html)
    */
-  allowCoexistStyle?: any;
+  allowCoexistStyle?: boolean;
 };
 
 /**

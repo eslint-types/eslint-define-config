@@ -7,77 +7,77 @@ export type RequireParamOption = {
   /**
    * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param)
    */
-  autoIncrementBase?: any;
+  autoIncrementBase?: number;
 
   /**
    * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param)
    */
-  checkConstructors?: any;
+  checkConstructors?: boolean;
 
   /**
    * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param)
    */
-  checkDestructured?: any;
+  checkDestructured?: boolean;
 
   /**
    * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param)
    */
-  checkDestructuredRoots?: any;
+  checkDestructuredRoots?: boolean;
 
   /**
    * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param)
    */
-  checkGetters?: any;
+  checkGetters?: boolean;
 
   /**
    * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param)
    */
-  checkRestProperty?: any;
+  checkRestProperty?: boolean;
 
   /**
    * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param)
    */
-  checkSetters?: any;
+  checkSetters?: boolean;
 
   /**
    * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param)
    */
-  checkTypesPattern?: any;
+  checkTypesPattern?: string;
 
   /**
    * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param)
    */
-  contexts?: any;
+  contexts?: any[];
 
   /**
    * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param)
    */
-  enableFixer?: any;
+  enableFixer?: boolean;
 
   /**
    * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param)
    */
-  enableRestElementFixer?: any;
+  enableRestElementFixer?: boolean;
 
   /**
    * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param)
    */
-  enableRootFixer?: any;
+  enableRootFixer?: boolean;
 
   /**
    * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param)
    */
-  exemptedBy?: any;
+  exemptedBy?: any[];
 
   /**
    * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param)
    */
-  unnamedRootBase?: any;
+  unnamedRootBase?: any[];
 
   /**
    * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param)
    */
-  useDefaultObjectProperties?: any;
+  useDefaultObjectProperties?: boolean;
 };
 
 /**

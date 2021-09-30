@@ -7,17 +7,17 @@ export type RequireReturnsCheckOption = {
   /**
    * @see [require-returns-check](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns-check)
    */
-  exemptAsync?: any;
+  exemptAsync?: boolean;
 
   /**
    * @see [require-returns-check](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns-check)
    */
-  exemptGenerators?: any;
+  exemptGenerators?: boolean;
 
   /**
    * @see [require-returns-check](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns-check)
    */
-  reportMissingReturnForUndefinedTypes?: any;
+  reportMissingReturnForUndefinedTypes?: boolean;
 };
 
 /**

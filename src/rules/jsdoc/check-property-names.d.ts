@@ -7,7 +7,7 @@ export type CheckPropertyNamesOption = {
   /**
    * @see [check-property-names](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-property-names)
    */
-  enableFixer?: any;
+  enableFixer?: boolean;
 };
 
 /**

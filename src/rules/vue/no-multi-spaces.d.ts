@@ -7,7 +7,7 @@ export type NoMultiSpacesOption = {
   /**
    * @see [no-multi-spaces](https://eslint.vuejs.org/rules/no-multi-spaces.html)
    */
-  ignoreProperties?: any;
+  ignoreProperties?: boolean;
 };
 
 /**

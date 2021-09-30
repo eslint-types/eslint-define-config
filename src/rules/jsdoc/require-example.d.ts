@@ -7,32 +7,32 @@ export type RequireExampleOption = {
   /**
    * @see [require-example](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-example)
    */
-  checkConstructors?: any;
+  checkConstructors?: boolean;
 
   /**
    * @see [require-example](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-example)
    */
-  checkGetters?: any;
+  checkGetters?: boolean;
 
   /**
    * @see [require-example](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-example)
    */
-  checkSetters?: any;
+  checkSetters?: boolean;
 
   /**
    * @see [require-example](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-example)
    */
-  contexts?: any;
+  contexts?: any[];
 
   /**
    * @see [require-example](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-example)
    */
-  exemptedBy?: any;
+  exemptedBy?: any[];
 
   /**
    * @see [require-example](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-example)
    */
-  exemptNoArguments?: any;
+  exemptNoArguments?: boolean;
 };
 
 /**

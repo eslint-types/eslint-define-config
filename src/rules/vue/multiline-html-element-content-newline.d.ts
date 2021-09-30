@@ -7,17 +7,17 @@ export type MultilineHtmlElementContentNewlineOption = {
   /**
    * @see [multiline-html-element-content-newline](https://eslint.vuejs.org/rules/multiline-html-element-content-newline.html)
    */
-  ignoreWhenEmpty?: any;
+  ignoreWhenEmpty?: boolean;
 
   /**
    * @see [multiline-html-element-content-newline](https://eslint.vuejs.org/rules/multiline-html-element-content-newline.html)
    */
-  ignores?: any;
+  ignores?: any[];
 
   /**
    * @see [multiline-html-element-content-newline](https://eslint.vuejs.org/rules/multiline-html-element-content-newline.html)
    */
-  allowEmptyLines?: any;
+  allowEmptyLines?: boolean;
 };
 
 /**

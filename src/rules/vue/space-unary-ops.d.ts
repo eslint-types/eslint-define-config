@@ -7,17 +7,17 @@ export type SpaceUnaryOpsOption = {
   /**
    * @see [space-unary-ops](https://eslint.vuejs.org/rules/space-unary-ops.html)
    */
-  words?: any;
+  words?: boolean;
 
   /**
    * @see [space-unary-ops](https://eslint.vuejs.org/rules/space-unary-ops.html)
    */
-  nonwords?: any;
+  nonwords?: boolean;
 
   /**
    * @see [space-unary-ops](https://eslint.vuejs.org/rules/space-unary-ops.html)
    */
-  overrides?: any;
+  overrides?: Record<string, any>;
 };
 
 /**

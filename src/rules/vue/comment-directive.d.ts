@@ -7,7 +7,7 @@ export type CommentDirectiveOption = {
   /**
    * @see [comment-directive](https://eslint.vuejs.org/rules/comment-directive.html)
    */
-  reportUnusedDisableDirectives?: any;
+  reportUnusedDisableDirectives?: boolean;
 };
 
 /**

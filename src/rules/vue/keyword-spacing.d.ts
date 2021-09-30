@@ -7,17 +7,17 @@ export type KeywordSpacingOption = {
   /**
    * @see [keyword-spacing](https://eslint.vuejs.org/rules/keyword-spacing.html)
    */
-  before?: any;
+  before?: boolean;
 
   /**
    * @see [keyword-spacing](https://eslint.vuejs.org/rules/keyword-spacing.html)
    */
-  after?: any;
+  after?: boolean;
 
   /**
    * @see [keyword-spacing](https://eslint.vuejs.org/rules/keyword-spacing.html)
    */
-  overrides?: any;
+  overrides?: Record<string, any>;
 };
 
 /**

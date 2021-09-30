@@ -7,7 +7,7 @@ export type NoUnusedVarsOption = {
   /**
    * @see [no-unused-vars](https://eslint.vuejs.org/rules/no-unused-vars.html)
    */
-  ignorePattern?: any;
+  ignorePattern?: string;
 };
 
 /**

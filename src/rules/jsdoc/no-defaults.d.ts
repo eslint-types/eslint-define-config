@@ -7,12 +7,12 @@ export type NoDefaultsOption = {
   /**
    * @see [no-defaults](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-defaults)
    */
-  contexts?: any;
+  contexts?: any[];
 
   /**
    * @see [no-defaults](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-defaults)
    */
-  noOptionalParamNames?: any;
+  noOptionalParamNames?: boolean;
 };
 
 /**

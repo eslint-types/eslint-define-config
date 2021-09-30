@@ -7,7 +7,7 @@ export type ValidTypesOption = {
   /**
    * @see [valid-types](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-valid-types)
    */
-  allowEmptyNamepaths?: any;
+  allowEmptyNamepaths?: boolean;
 };
 
 /**

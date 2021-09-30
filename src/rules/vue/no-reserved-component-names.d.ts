@@ -7,12 +7,12 @@ export type NoReservedComponentNamesOption = {
   /**
    * @see [no-reserved-component-names](https://eslint.vuejs.org/rules/no-reserved-component-names.html)
    */
-  disallowVueBuiltInComponents?: any;
+  disallowVueBuiltInComponents?: boolean;
 
   /**
    * @see [no-reserved-component-names](https://eslint.vuejs.org/rules/no-reserved-component-names.html)
    */
-  disallowVue3BuiltInComponents?: any;
+  disallowVue3BuiltInComponents?: boolean;
 };
 
 /**

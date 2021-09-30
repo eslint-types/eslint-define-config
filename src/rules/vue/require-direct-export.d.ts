@@ -7,7 +7,7 @@ export type RequireDirectExportOption = {
   /**
    * @see [require-direct-export](https://eslint.vuejs.org/rules/require-direct-export.html)
    */
-  disallowFunctionalComponentFunction?: any;
+  disallowFunctionalComponentFunction?: boolean;
 };
 
 /**

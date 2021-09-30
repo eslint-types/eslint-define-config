@@ -7,7 +7,7 @@ export type ValidVSlotOption = {
   /**
    * @see [valid-v-slot](https://eslint.vuejs.org/rules/valid-v-slot.html)
    */
-  allowModifiers?: any;
+  allowModifiers?: boolean;
 };
 
 /**

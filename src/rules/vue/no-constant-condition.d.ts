@@ -7,7 +7,7 @@ export type NoConstantConditionOption = {
   /**
    * @see [no-constant-condition](https://eslint.vuejs.org/rules/no-constant-condition.html)
    */
-  checkLoops?: any;
+  checkLoops?: boolean;
 };
 
 /**

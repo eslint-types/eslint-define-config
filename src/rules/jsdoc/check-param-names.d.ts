@@ -7,37 +7,37 @@ export type CheckParamNamesOption = {
   /**
    * @see [check-param-names](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-param-names)
    */
-  allowExtraTrailingParamDocs?: any;
+  allowExtraTrailingParamDocs?: boolean;
 
   /**
    * @see [check-param-names](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-param-names)
    */
-  checkDestructured?: any;
+  checkDestructured?: boolean;
 
   /**
    * @see [check-param-names](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-param-names)
    */
-  checkRestProperty?: any;
+  checkRestProperty?: boolean;
 
   /**
    * @see [check-param-names](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-param-names)
    */
-  checkTypesPattern?: any;
+  checkTypesPattern?: string;
 
   /**
    * @see [check-param-names](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-param-names)
    */
-  disableExtraPropertyReporting?: any;
+  disableExtraPropertyReporting?: boolean;
 
   /**
    * @see [check-param-names](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-param-names)
    */
-  enableFixer?: any;
+  enableFixer?: boolean;
 
   /**
    * @see [check-param-names](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-param-names)
    */
-  useDefaultObjectProperties?: any;
+  useDefaultObjectProperties?: boolean;
 };
 
 /**
