@@ -1,16 +1,22 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * disallow deprecated `v-is` directive (in Vue.js 3.1.0+)
  *
+ * @see [no-deprecated-v-is](https://eslint.vuejs.org/rules/no-deprecated-v-is.html)
  */
-export type NoDeprecatedVIsRuleConfig = RuleConfig;
+export type NoDeprecatedVIsRuleConfig = RuleConfig<[]>;
 
 /**
+ * disallow deprecated `v-is` directive (in Vue.js 3.1.0+)
  *
+ * @see [no-deprecated-v-is](https://eslint.vuejs.org/rules/no-deprecated-v-is.html)
  */
 export interface NoDeprecatedVIsRule {
   /**
+   * disallow deprecated `v-is` directive (in Vue.js 3.1.0+)
    *
+   * @see [no-deprecated-v-is](https://eslint.vuejs.org/rules/no-deprecated-v-is.html)
    */
   'vue/no-deprecated-v-is': NoDeprecatedVIsRuleConfig;
 }

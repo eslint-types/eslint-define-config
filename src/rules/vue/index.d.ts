@@ -191,7 +191,7 @@ import type { ValidVSlotRule } from './valid-v-slot';
 import type { ValidVTextRule } from './valid-v-text';
 
 /**
- * All @typescript-eslint rules.
+ * All vue rules.
  */
 export type VueRules = ArrayBracketNewlineRule &
   ArrayBracketSpacingRule &
