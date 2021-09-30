@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoWatchAfterAwaitRuleConfig = RuleConfig<[]>;
+export type NoWatchAfterAwaitRuleConfig = RuleConfig;
 
 /**
  *

@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoVModelArgumentRuleConfig = RuleConfig<[]>;
+export type NoVModelArgumentRuleConfig = RuleConfig;
 
 /**
  *

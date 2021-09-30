@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type ArrowSpacingRuleConfig = RuleConfig<[]>;
+export type ArrowSpacingRuleConfig = RuleConfig;
 
 /**
  *

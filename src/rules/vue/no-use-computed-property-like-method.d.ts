@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoUseComputedPropertyLikeMethodRuleConfig = RuleConfig<[]>;
+export type NoUseComputedPropertyLikeMethodRuleConfig = RuleConfig;
 
 /**
  *

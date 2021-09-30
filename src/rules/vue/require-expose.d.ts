@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type RequireExposeRuleConfig = RuleConfig<[]>;
+export type RequireExposeRuleConfig = RuleConfig;
 
 /**
  *

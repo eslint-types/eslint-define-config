@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type ComponentDefinitionNameCasingRuleConfig = RuleConfig<[]>;
+export type ComponentDefinitionNameCasingRuleConfig = RuleConfig;
 
 /**
  *

@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type RequireToggleInsideTransitionRuleConfig = RuleConfig<[]>;
+export type RequireToggleInsideTransitionRuleConfig = RuleConfig;
 
 /**
  *

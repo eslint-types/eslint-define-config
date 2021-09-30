@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoIrregularWhitespaceRuleConfig = RuleConfig<[]>;
+export type NoIrregularWhitespaceRuleConfig = RuleConfig;
 
 /**
  *

@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoDuplicateAttrInheritanceRuleConfig = RuleConfig<[]>;
+export type NoDuplicateAttrInheritanceRuleConfig = RuleConfig;
 
 /**
  *

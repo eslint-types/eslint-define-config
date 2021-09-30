@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoDeprecatedHtmlElementIsRuleConfig = RuleConfig<[]>;
+export type NoDeprecatedHtmlElementIsRuleConfig = RuleConfig;
 
 /**
  *

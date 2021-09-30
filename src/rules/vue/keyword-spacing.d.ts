@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type KeywordSpacingRuleConfig = RuleConfig<[]>;
+export type KeywordSpacingRuleConfig = RuleConfig;
 
 /**
  *

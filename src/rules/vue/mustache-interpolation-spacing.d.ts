@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type MustacheInterpolationSpacingRuleConfig = RuleConfig<[]>;
+export type MustacheInterpolationSpacingRuleConfig = RuleConfig;
 
 /**
  *

@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoConfusingVForVIfRuleConfig = RuleConfig<[]>;
+export type NoConfusingVForVIfRuleConfig = RuleConfig;
 
 /**
  *

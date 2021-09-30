@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoExportInScriptSetupRuleConfig = RuleConfig<[]>;
+export type NoExportInScriptSetupRuleConfig = RuleConfig;
 
 /**
  *

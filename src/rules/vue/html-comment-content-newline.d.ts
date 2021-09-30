@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type HtmlCommentContentNewlineRuleConfig = RuleConfig<[]>;
+export type HtmlCommentContentNewlineRuleConfig = RuleConfig;
 
 /**
  *

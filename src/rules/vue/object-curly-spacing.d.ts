@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type ObjectCurlySpacingRuleConfig = RuleConfig<[]>;
+export type ObjectCurlySpacingRuleConfig = RuleConfig;
 
 /**
  *

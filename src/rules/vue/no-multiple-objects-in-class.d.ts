@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoMultipleObjectsInClassRuleConfig = RuleConfig<[]>;
+export type NoMultipleObjectsInClassRuleConfig = RuleConfig;
 
 /**
  *

@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoDeprecatedPropsDefaultThisRuleConfig = RuleConfig<[]>;
+export type NoDeprecatedPropsDefaultThisRuleConfig = RuleConfig;
 
 /**
  *

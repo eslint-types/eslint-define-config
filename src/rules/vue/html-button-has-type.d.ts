@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type HtmlButtonHasTypeRuleConfig = RuleConfig<[]>;
+export type HtmlButtonHasTypeRuleConfig = RuleConfig;
 
 /**
  *

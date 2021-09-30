@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type CamelcaseRuleConfig = RuleConfig<[]>;
+export type CamelcaseRuleConfig = RuleConfig;
 
 /**
  *

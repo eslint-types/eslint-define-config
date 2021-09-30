@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoRestrictedCustomEventRuleConfig = RuleConfig<[]>;
+export type NoRestrictedCustomEventRuleConfig = RuleConfig;
 
 /**
  *

@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoDupeKeysRuleConfig = RuleConfig<[]>;
+export type NoDupeKeysRuleConfig = RuleConfig;
 
 /**
  *

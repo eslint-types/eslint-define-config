@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type FuncCallSpacingRuleConfig = RuleConfig<[]>;
+export type FuncCallSpacingRuleConfig = RuleConfig;
 
 /**
  *

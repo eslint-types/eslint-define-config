@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NewLineBetweenMultiLinePropertyRuleConfig = RuleConfig<[]>;
+export type NewLineBetweenMultiLinePropertyRuleConfig = RuleConfig;
 
 /**
  *

@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoSpacesAroundEqualSignsInAttributeRuleConfig = RuleConfig<[]>;
+export type NoSpacesAroundEqualSignsInAttributeRuleConfig = RuleConfig;
 
 /**
  *

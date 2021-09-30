@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type ComponentApiStyleRuleConfig = RuleConfig<[]>;
+export type ComponentApiStyleRuleConfig = RuleConfig;
 
 /**
  *

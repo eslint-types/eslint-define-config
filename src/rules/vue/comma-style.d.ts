@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type CommaStyleRuleConfig = RuleConfig<[]>;
+export type CommaStyleRuleConfig = RuleConfig;
 
 /**
  *

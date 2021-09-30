@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type ValidNextTickRuleConfig = RuleConfig<[]>;
+export type ValidNextTickRuleConfig = RuleConfig;
 
 /**
  *

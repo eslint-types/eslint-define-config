@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type HtmlCommentIndentRuleConfig = RuleConfig<[]>;
+export type HtmlCommentIndentRuleConfig = RuleConfig;
 
 /**
  *
