@@ -16,20 +16,20 @@ export type NoUnusedVarsOption = {
 export type NoUnusedVarsOptions = [NoUnusedVarsOption?];
 
 /**
- * disallow unused variable definitions of v-for directives or scope attributes
+ * Disallow unused variable definitions of v-for directives or scope attributes
  *
  * @see [no-unused-vars](https://eslint.vuejs.org/rules/no-unused-vars.html)
  */
 export type NoUnusedVarsRuleConfig = RuleConfig<NoUnusedVarsOptions>;
 
 /**
- * disallow unused variable definitions of v-for directives or scope attributes
+ * Disallow unused variable definitions of v-for directives or scope attributes
  *
  * @see [no-unused-vars](https://eslint.vuejs.org/rules/no-unused-vars.html)
  */
 export interface NoUnusedVarsRule {
   /**
-   * disallow unused variable definitions of v-for directives or scope attributes
+   * Disallow unused variable definitions of v-for directives or scope attributes
    *
    * @see [no-unused-vars](https://eslint.vuejs.org/rules/no-unused-vars.html)
    */

@@ -1198,6 +1198,7 @@ __metadata:
     prettier: 2.4.1
     prettier-plugin-organize-imports: ~2.3.4
     typescript: ~4.4.3
+    upper-case-first: ~2.0.2
   languageName: unknown
   linkType: soft
 
@@ -4087,7 +4088,7 @@ typescript@~4.4.3:
   languageName: node
   linkType: hard
 
-"upper-case-first@npm:^2.0.2":
+"upper-case-first@npm:^2.0.2, upper-case-first@npm:~2.0.2":
   version: 2.0.2
   resolution: "upper-case-first@npm:2.0.2"
   dependencies:

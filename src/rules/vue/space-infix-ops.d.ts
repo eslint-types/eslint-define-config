@@ -16,20 +16,20 @@ export type SpaceInfixOpsOption = {
 export type SpaceInfixOpsOptions = [SpaceInfixOpsOption?];
 
 /**
- * require spacing around infix operators
+ * Require spacing around infix operators
  *
  * @see [space-infix-ops](https://eslint.vuejs.org/rules/space-infix-ops.html)
  */
 export type SpaceInfixOpsRuleConfig = RuleConfig<SpaceInfixOpsOptions>;
 
 /**
- * require spacing around infix operators
+ * Require spacing around infix operators
  *
  * @see [space-infix-ops](https://eslint.vuejs.org/rules/space-infix-ops.html)
  */
 export interface SpaceInfixOpsRule {
   /**
-   * require spacing around infix operators
+   * Require spacing around infix operators
    *
    * @see [space-infix-ops](https://eslint.vuejs.org/rules/space-infix-ops.html)
    */

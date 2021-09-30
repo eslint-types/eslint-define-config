@@ -1,20 +1,20 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- * enforce valid `v-html` directives
+ * Enforce valid `v-html` directives
  *
  * @see [valid-v-html](https://eslint.vuejs.org/rules/valid-v-html.html)
  */
 export type ValidVHtmlRuleConfig = RuleConfig<[]>;
 
 /**
- * enforce valid `v-html` directives
+ * Enforce valid `v-html` directives
  *
  * @see [valid-v-html](https://eslint.vuejs.org/rules/valid-v-html.html)
  */
 export interface ValidVHtmlRule {
   /**
-   * enforce valid `v-html` directives
+   * Enforce valid `v-html` directives
    *
    * @see [valid-v-html](https://eslint.vuejs.org/rules/valid-v-html.html)
    */

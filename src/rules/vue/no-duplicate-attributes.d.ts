@@ -21,20 +21,20 @@ export type NoDuplicateAttributesOption = {
 export type NoDuplicateAttributesOptions = [NoDuplicateAttributesOption?];
 
 /**
- * disallow duplication of attributes
+ * Disallow duplication of attributes
  *
  * @see [no-duplicate-attributes](https://eslint.vuejs.org/rules/no-duplicate-attributes.html)
  */
 export type NoDuplicateAttributesRuleConfig = RuleConfig<NoDuplicateAttributesOptions>;
 
 /**
- * disallow duplication of attributes
+ * Disallow duplication of attributes
  *
  * @see [no-duplicate-attributes](https://eslint.vuejs.org/rules/no-duplicate-attributes.html)
  */
 export interface NoDuplicateAttributesRule {
   /**
-   * disallow duplication of attributes
+   * Disallow duplication of attributes
    *
    * @see [no-duplicate-attributes](https://eslint.vuejs.org/rules/no-duplicate-attributes.html)
    */

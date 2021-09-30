@@ -21,20 +21,20 @@ export type CommaSpacingOption = {
 export type CommaSpacingOptions = [CommaSpacingOption?];
 
 /**
- * enforce consistent spacing before and after commas
+ * Enforce consistent spacing before and after commas
  *
  * @see [comma-spacing](https://eslint.vuejs.org/rules/comma-spacing.html)
  */
 export type CommaSpacingRuleConfig = RuleConfig<CommaSpacingOptions>;
 
 /**
- * enforce consistent spacing before and after commas
+ * Enforce consistent spacing before and after commas
  *
  * @see [comma-spacing](https://eslint.vuejs.org/rules/comma-spacing.html)
  */
 export interface CommaSpacingRule {
   /**
-   * enforce consistent spacing before and after commas
+   * Enforce consistent spacing before and after commas
    *
    * @see [comma-spacing](https://eslint.vuejs.org/rules/comma-spacing.html)
    */

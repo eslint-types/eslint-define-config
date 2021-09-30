@@ -21,20 +21,20 @@ export type AttributesOrderOption = {
 export type AttributesOrderOptions = [AttributesOrderOption?];
 
 /**
- * enforce order of attributes
+ * Enforce order of attributes
  *
  * @see [attributes-order](https://eslint.vuejs.org/rules/attributes-order.html)
  */
 export type AttributesOrderRuleConfig = RuleConfig<AttributesOrderOptions>;
 
 /**
- * enforce order of attributes
+ * Enforce order of attributes
  *
  * @see [attributes-order](https://eslint.vuejs.org/rules/attributes-order.html)
  */
 export interface AttributesOrderRule {
   /**
-   * enforce order of attributes
+   * Enforce order of attributes
    *
    * @see [attributes-order](https://eslint.vuejs.org/rules/attributes-order.html)
    */

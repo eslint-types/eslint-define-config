@@ -21,20 +21,20 @@ export type ArrowSpacingOption = {
 export type ArrowSpacingOptions = [ArrowSpacingOption?];
 
 /**
- * enforce consistent spacing before and after the arrow in arrow functions
+ * Enforce consistent spacing before and after the arrow in arrow functions
  *
  * @see [arrow-spacing](https://eslint.vuejs.org/rules/arrow-spacing.html)
  */
 export type ArrowSpacingRuleConfig = RuleConfig<ArrowSpacingOptions>;
 
 /**
- * enforce consistent spacing before and after the arrow in arrow functions
+ * Enforce consistent spacing before and after the arrow in arrow functions
  *
  * @see [arrow-spacing](https://eslint.vuejs.org/rules/arrow-spacing.html)
  */
 export interface ArrowSpacingRule {
   /**
-   * enforce consistent spacing before and after the arrow in arrow functions
+   * Enforce consistent spacing before and after the arrow in arrow functions
    *
    * @see [arrow-spacing](https://eslint.vuejs.org/rules/arrow-spacing.html)
    */

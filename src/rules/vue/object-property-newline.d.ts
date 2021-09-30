@@ -21,20 +21,20 @@ export type ObjectPropertyNewlineOption = {
 export type ObjectPropertyNewlineOptions = [ObjectPropertyNewlineOption?];
 
 /**
- * enforce placing object properties on separate lines
+ * Enforce placing object properties on separate lines
  *
  * @see [object-property-newline](https://eslint.vuejs.org/rules/object-property-newline.html)
  */
 export type ObjectPropertyNewlineRuleConfig = RuleConfig<ObjectPropertyNewlineOptions>;
 
 /**
- * enforce placing object properties on separate lines
+ * Enforce placing object properties on separate lines
  *
  * @see [object-property-newline](https://eslint.vuejs.org/rules/object-property-newline.html)
  */
 export interface ObjectPropertyNewlineRule {
   /**
-   * enforce placing object properties on separate lines
+   * Enforce placing object properties on separate lines
    *
    * @see [object-property-newline](https://eslint.vuejs.org/rules/object-property-newline.html)
    */

@@ -21,20 +21,20 @@ export type NoReservedKeysOption = {
 export type NoReservedKeysOptions = [NoReservedKeysOption?];
 
 /**
- * disallow overwriting reserved keys
+ * Disallow overwriting reserved keys
  *
  * @see [no-reserved-keys](https://eslint.vuejs.org/rules/no-reserved-keys.html)
  */
 export type NoReservedKeysRuleConfig = RuleConfig<NoReservedKeysOptions>;
 
 /**
- * disallow overwriting reserved keys
+ * Disallow overwriting reserved keys
  *
  * @see [no-reserved-keys](https://eslint.vuejs.org/rules/no-reserved-keys.html)
  */
 export interface NoReservedKeysRule {
   /**
-   * disallow overwriting reserved keys
+   * Disallow overwriting reserved keys
    *
    * @see [no-reserved-keys](https://eslint.vuejs.org/rules/no-reserved-keys.html)
    */

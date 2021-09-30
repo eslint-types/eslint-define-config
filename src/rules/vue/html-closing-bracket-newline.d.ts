@@ -21,20 +21,20 @@ export type HtmlClosingBracketNewlineOption = {
 export type HtmlClosingBracketNewlineOptions = [HtmlClosingBracketNewlineOption?];
 
 /**
- * require or disallow a line break before tag's closing brackets
+ * Require or disallow a line break before tag's closing brackets
  *
  * @see [html-closing-bracket-newline](https://eslint.vuejs.org/rules/html-closing-bracket-newline.html)
  */
 export type HtmlClosingBracketNewlineRuleConfig = RuleConfig<HtmlClosingBracketNewlineOptions>;
 
 /**
- * require or disallow a line break before tag's closing brackets
+ * Require or disallow a line break before tag's closing brackets
  *
  * @see [html-closing-bracket-newline](https://eslint.vuejs.org/rules/html-closing-bracket-newline.html)
  */
 export interface HtmlClosingBracketNewlineRule {
   /**
-   * require or disallow a line break before tag's closing brackets
+   * Require or disallow a line break before tag's closing brackets
    *
    * @see [html-closing-bracket-newline](https://eslint.vuejs.org/rules/html-closing-bracket-newline.html)
    */

@@ -26,20 +26,20 @@ export type NoUnusedPropertiesOption = {
 export type NoUnusedPropertiesOptions = [NoUnusedPropertiesOption?];
 
 /**
- * disallow unused properties
+ * Disallow unused properties
  *
  * @see [no-unused-properties](https://eslint.vuejs.org/rules/no-unused-properties.html)
  */
 export type NoUnusedPropertiesRuleConfig = RuleConfig<NoUnusedPropertiesOptions>;
 
 /**
- * disallow unused properties
+ * Disallow unused properties
  *
  * @see [no-unused-properties](https://eslint.vuejs.org/rules/no-unused-properties.html)
  */
 export interface NoUnusedPropertiesRule {
   /**
-   * disallow unused properties
+   * Disallow unused properties
    *
    * @see [no-unused-properties](https://eslint.vuejs.org/rules/no-unused-properties.html)
    */

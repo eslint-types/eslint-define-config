@@ -1,20 +1,20 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- * disallow using deprecated `$listeners` (in Vue.js 3.0.0+)
+ * Disallow using deprecated `$listeners` (in Vue.js 3.0.0+)
  *
  * @see [no-deprecated-dollar-listeners-api](https://eslint.vuejs.org/rules/no-deprecated-dollar-listeners-api.html)
  */
 export type NoDeprecatedDollarListenersApiRuleConfig = RuleConfig<[]>;
 
 /**
- * disallow using deprecated `$listeners` (in Vue.js 3.0.0+)
+ * Disallow using deprecated `$listeners` (in Vue.js 3.0.0+)
  *
  * @see [no-deprecated-dollar-listeners-api](https://eslint.vuejs.org/rules/no-deprecated-dollar-listeners-api.html)
  */
 export interface NoDeprecatedDollarListenersApiRule {
   /**
-   * disallow using deprecated `$listeners` (in Vue.js 3.0.0+)
+   * Disallow using deprecated `$listeners` (in Vue.js 3.0.0+)
    *
    * @see [no-deprecated-dollar-listeners-api](https://eslint.vuejs.org/rules/no-deprecated-dollar-listeners-api.html)
    */

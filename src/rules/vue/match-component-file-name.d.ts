@@ -21,20 +21,20 @@ export type MatchComponentFileNameOption = {
 export type MatchComponentFileNameOptions = [MatchComponentFileNameOption?];
 
 /**
- * require component name property to match its file name
+ * Require component name property to match its file name
  *
  * @see [match-component-file-name](https://eslint.vuejs.org/rules/match-component-file-name.html)
  */
 export type MatchComponentFileNameRuleConfig = RuleConfig<MatchComponentFileNameOptions>;
 
 /**
- * require component name property to match its file name
+ * Require component name property to match its file name
  *
  * @see [match-component-file-name](https://eslint.vuejs.org/rules/match-component-file-name.html)
  */
 export interface MatchComponentFileNameRule {
   /**
-   * require component name property to match its file name
+   * Require component name property to match its file name
    *
    * @see [match-component-file-name](https://eslint.vuejs.org/rules/match-component-file-name.html)
    */

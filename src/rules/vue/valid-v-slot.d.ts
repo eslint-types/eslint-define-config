@@ -16,20 +16,20 @@ export type ValidVSlotOption = {
 export type ValidVSlotOptions = [ValidVSlotOption?];
 
 /**
- * enforce valid `v-slot` directives
+ * Enforce valid `v-slot` directives
  *
  * @see [valid-v-slot](https://eslint.vuejs.org/rules/valid-v-slot.html)
  */
 export type ValidVSlotRuleConfig = RuleConfig<ValidVSlotOptions>;
 
 /**
- * enforce valid `v-slot` directives
+ * Enforce valid `v-slot` directives
  *
  * @see [valid-v-slot](https://eslint.vuejs.org/rules/valid-v-slot.html)
  */
 export interface ValidVSlotRule {
   /**
-   * enforce valid `v-slot` directives
+   * Enforce valid `v-slot` directives
    *
    * @see [valid-v-slot](https://eslint.vuejs.org/rules/valid-v-slot.html)
    */

@@ -26,20 +26,20 @@ export type SinglelineHtmlElementContentNewlineOption = {
 export type SinglelineHtmlElementContentNewlineOptions = [SinglelineHtmlElementContentNewlineOption?];
 
 /**
- * require a line break before and after the contents of a singleline element
+ * Require a line break before and after the contents of a singleline element
  *
  * @see [singleline-html-element-content-newline](https://eslint.vuejs.org/rules/singleline-html-element-content-newline.html)
  */
 export type SinglelineHtmlElementContentNewlineRuleConfig = RuleConfig<SinglelineHtmlElementContentNewlineOptions>;
 
 /**
- * require a line break before and after the contents of a singleline element
+ * Require a line break before and after the contents of a singleline element
  *
  * @see [singleline-html-element-content-newline](https://eslint.vuejs.org/rules/singleline-html-element-content-newline.html)
  */
 export interface SinglelineHtmlElementContentNewlineRule {
   /**
-   * require a line break before and after the contents of a singleline element
+   * Require a line break before and after the contents of a singleline element
    *
    * @see [singleline-html-element-content-newline](https://eslint.vuejs.org/rules/singleline-html-element-content-newline.html)
    */

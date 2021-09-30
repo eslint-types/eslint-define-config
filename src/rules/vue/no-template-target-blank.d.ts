@@ -21,20 +21,20 @@ export type NoTemplateTargetBlankOption = {
 export type NoTemplateTargetBlankOptions = [NoTemplateTargetBlankOption?];
 
 /**
- * disallow target="_blank" attribute without rel="noopener noreferrer"
+ * Disallow target="_blank" attribute without rel="noopener noreferrer"
  *
  * @see [no-template-target-blank](https://eslint.vuejs.org/rules/no-template-target-blank.html)
  */
 export type NoTemplateTargetBlankRuleConfig = RuleConfig<NoTemplateTargetBlankOptions>;
 
 /**
- * disallow target="_blank" attribute without rel="noopener noreferrer"
+ * Disallow target="_blank" attribute without rel="noopener noreferrer"
  *
  * @see [no-template-target-blank](https://eslint.vuejs.org/rules/no-template-target-blank.html)
  */
 export interface NoTemplateTargetBlankRule {
   /**
-   * disallow target="_blank" attribute without rel="noopener noreferrer"
+   * Disallow target="_blank" attribute without rel="noopener noreferrer"
    *
    * @see [no-template-target-blank](https://eslint.vuejs.org/rules/no-template-target-blank.html)
    */
