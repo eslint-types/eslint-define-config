@@ -19,7 +19,6 @@ export type SemiAlwaysOptions = ['always'?, SemiAlwaysConfig?];
  * Never Config.
  */
 export interface SemiNeverConfig {
-  // eslint-disable-next-line jsdoc/match-description
   /**
    * - `'any'` - Ignores semicolons (or lacking semicolon) at the end of statements if the next line starts with `[`, `(`, `/`, `+`, or `-`.
    * - `'always'` - Requires semicolons at the end of statements if the next line starts with `[`, `(`, `/`, `+`, or `-`.
