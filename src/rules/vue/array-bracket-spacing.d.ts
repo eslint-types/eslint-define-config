@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type ArrayBracketSpacingRuleConfig = RuleConfig<[]>;
+export type ArrayBracketSpacingRuleConfig = RuleConfig;
 
 /**
  *

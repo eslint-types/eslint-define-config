@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoUnusedPropertiesRuleConfig = RuleConfig<[]>;
+export type NoUnusedPropertiesRuleConfig = RuleConfig;
 
 /**
  *

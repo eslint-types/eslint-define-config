@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type RequireComponentIsRuleConfig = RuleConfig<[]>;
+export type RequireComponentIsRuleConfig = RuleConfig;
 
 /**
  *

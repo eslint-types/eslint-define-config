@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoConstantConditionRuleConfig = RuleConfig<[]>;
+export type NoConstantConditionRuleConfig = RuleConfig;
 
 /**
  *

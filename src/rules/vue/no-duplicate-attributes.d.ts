@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoDuplicateAttributesRuleConfig = RuleConfig<[]>;
+export type NoDuplicateAttributesRuleConfig = RuleConfig;
 
 /**
  *

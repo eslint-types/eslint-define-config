@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type ValidDefineEmitsRuleConfig = RuleConfig<[]>;
+export type ValidDefineEmitsRuleConfig = RuleConfig;
 
 /**
  *

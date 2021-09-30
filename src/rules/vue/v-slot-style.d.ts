@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type VSlotStyleRuleConfig = RuleConfig<[]>;
+export type VSlotStyleRuleConfig = RuleConfig;
 
 /**
  *

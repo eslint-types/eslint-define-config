@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoArrowFunctionsInWatchRuleConfig = RuleConfig<[]>;
+export type NoArrowFunctionsInWatchRuleConfig = RuleConfig;
 
 /**
  *

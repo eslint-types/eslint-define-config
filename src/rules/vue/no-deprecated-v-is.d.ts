@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoDeprecatedVIsRuleConfig = RuleConfig<[]>;
+export type NoDeprecatedVIsRuleConfig = RuleConfig;
 
 /**
  *

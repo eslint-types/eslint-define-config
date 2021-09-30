@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoDeprecatedFilterRuleConfig = RuleConfig<[]>;
+export type NoDeprecatedFilterRuleConfig = RuleConfig;
 
 /**
  *

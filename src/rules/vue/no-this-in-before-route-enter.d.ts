@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoThisInBeforeRouteEnterRuleConfig = RuleConfig<[]>;
+export type NoThisInBeforeRouteEnterRuleConfig = RuleConfig;
 
 /**
  *

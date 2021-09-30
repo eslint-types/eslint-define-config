@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type VBindStyleRuleConfig = RuleConfig<[]>;
+export type VBindStyleRuleConfig = RuleConfig;
 
 /**
  *

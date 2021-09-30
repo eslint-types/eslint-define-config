@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type BlockTagNewlineRuleConfig = RuleConfig<[]>;
+export type BlockTagNewlineRuleConfig = RuleConfig;
 
 /**
  *

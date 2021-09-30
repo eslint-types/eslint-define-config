@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoRestrictedSyntaxRuleConfig = RuleConfig<[]>;
+export type NoRestrictedSyntaxRuleConfig = RuleConfig;
 
 /**
  *

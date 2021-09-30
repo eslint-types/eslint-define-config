@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoAsyncInComputedPropertiesRuleConfig = RuleConfig<[]>;
+export type NoAsyncInComputedPropertiesRuleConfig = RuleConfig;
 
 /**
  *

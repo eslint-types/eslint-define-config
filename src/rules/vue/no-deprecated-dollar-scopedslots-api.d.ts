@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoDeprecatedDollarScopedslotsApiRuleConfig = RuleConfig<[]>;
+export type NoDeprecatedDollarScopedslotsApiRuleConfig = RuleConfig;
 
 /**
  *

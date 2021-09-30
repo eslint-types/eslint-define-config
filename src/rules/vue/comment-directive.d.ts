@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type CommentDirectiveRuleConfig = RuleConfig<[]>;
+export type CommentDirectiveRuleConfig = RuleConfig;
 
 /**
  *

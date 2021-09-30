@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type OperatorLinebreakRuleConfig = RuleConfig<[]>;
+export type OperatorLinebreakRuleConfig = RuleConfig;
 
 /**
  *

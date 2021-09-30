@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type ComponentTagsOrderRuleConfig = RuleConfig<[]>;
+export type ComponentTagsOrderRuleConfig = RuleConfig;
 
 /**
  *

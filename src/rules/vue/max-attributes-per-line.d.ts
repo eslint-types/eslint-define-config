@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type MaxAttributesPerLineRuleConfig = RuleConfig<[]>;
+export type MaxAttributesPerLineRuleConfig = RuleConfig;
 
 /**
  *

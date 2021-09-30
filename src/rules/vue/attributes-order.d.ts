@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type AttributesOrderRuleConfig = RuleConfig<[]>;
+export type AttributesOrderRuleConfig = RuleConfig;
 
 /**
  *

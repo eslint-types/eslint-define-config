@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoVForTemplateKeyOnChildRuleConfig = RuleConfig<[]>;
+export type NoVForTemplateKeyOnChildRuleConfig = RuleConfig;
 
 /**
  *

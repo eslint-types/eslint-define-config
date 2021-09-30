@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type RequireVForKeyRuleConfig = RuleConfig<[]>;
+export type RequireVForKeyRuleConfig = RuleConfig;
 
 /**
  *

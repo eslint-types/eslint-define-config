@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type VOnStyleRuleConfig = RuleConfig<[]>;
+export type VOnStyleRuleConfig = RuleConfig;
 
 /**
  *

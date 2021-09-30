@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoUselessConcatRuleConfig = RuleConfig<[]>;
+export type NoUselessConcatRuleConfig = RuleConfig;
 
 /**
  *

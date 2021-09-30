@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoSideEffectsInComputedPropertiesRuleConfig = RuleConfig<[]>;
+export type NoSideEffectsInComputedPropertiesRuleConfig = RuleConfig;
 
 /**
  *

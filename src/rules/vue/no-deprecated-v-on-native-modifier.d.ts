@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoDeprecatedVOnNativeModifierRuleConfig = RuleConfig<[]>;
+export type NoDeprecatedVOnNativeModifierRuleConfig = RuleConfig;
 
 /**
  *

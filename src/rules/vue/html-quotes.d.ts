@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type HtmlQuotesRuleConfig = RuleConfig<[]>;
+export type HtmlQuotesRuleConfig = RuleConfig;
 
 /**
  *

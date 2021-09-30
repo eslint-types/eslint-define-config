@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type ValidVModelRuleConfig = RuleConfig<[]>;
+export type ValidVModelRuleConfig = RuleConfig;
 
 /**
  *

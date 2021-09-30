@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type HtmlCommentContentSpacingRuleConfig = RuleConfig<[]>;
+export type HtmlCommentContentSpacingRuleConfig = RuleConfig;
 
 /**
  *

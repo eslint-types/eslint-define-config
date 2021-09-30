@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoRestrictedVBindRuleConfig = RuleConfig<[]>;
+export type NoRestrictedVBindRuleConfig = RuleConfig;
 
 /**
  *

@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type ObjectCurlyNewlineRuleConfig = RuleConfig<[]>;
+export type ObjectCurlyNewlineRuleConfig = RuleConfig;
 
 /**
  *

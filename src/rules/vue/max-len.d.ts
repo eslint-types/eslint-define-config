@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type MaxLenRuleConfig = RuleConfig<[]>;
+export type MaxLenRuleConfig = RuleConfig;
 
 /**
  *

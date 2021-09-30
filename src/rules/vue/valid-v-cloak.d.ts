@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type ValidVCloakRuleConfig = RuleConfig<[]>;
+export type ValidVCloakRuleConfig = RuleConfig;
 
 /**
  *

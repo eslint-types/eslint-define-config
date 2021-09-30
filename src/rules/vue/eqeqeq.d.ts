@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type EqeqeqRuleConfig = RuleConfig<[]>;
+export type EqeqeqRuleConfig = RuleConfig;
 
 /**
  *

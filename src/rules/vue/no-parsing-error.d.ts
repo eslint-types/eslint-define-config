@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoParsingErrorRuleConfig = RuleConfig<[]>;
+export type NoParsingErrorRuleConfig = RuleConfig;
 
 /**
  *

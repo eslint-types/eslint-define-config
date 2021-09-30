@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoRestrictedStaticAttributeRuleConfig = RuleConfig<[]>;
+export type NoRestrictedStaticAttributeRuleConfig = RuleConfig;
 
 /**
  *

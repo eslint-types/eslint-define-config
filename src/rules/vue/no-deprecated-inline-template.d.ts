@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoDeprecatedInlineTemplateRuleConfig = RuleConfig<[]>;
+export type NoDeprecatedInlineTemplateRuleConfig = RuleConfig;
 
 /**
  *

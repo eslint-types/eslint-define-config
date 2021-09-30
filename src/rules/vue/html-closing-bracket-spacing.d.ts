@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type HtmlClosingBracketSpacingRuleConfig = RuleConfig<[]>;
+export type HtmlClosingBracketSpacingRuleConfig = RuleConfig;
 
 /**
  *

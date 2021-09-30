@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoUselessMustachesRuleConfig = RuleConfig<[]>;
+export type NoUselessMustachesRuleConfig = RuleConfig;
 
 /**
  *

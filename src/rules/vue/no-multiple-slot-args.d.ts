@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoMultipleSlotArgsRuleConfig = RuleConfig<[]>;
+export type NoMultipleSlotArgsRuleConfig = RuleConfig;
 
 /**
  *

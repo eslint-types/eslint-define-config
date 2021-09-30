@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type AttributeHyphenationRuleConfig = RuleConfig<[]>;
+export type AttributeHyphenationRuleConfig = RuleConfig;
 
 /**
  *

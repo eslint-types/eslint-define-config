@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoSetupPropsDestructureRuleConfig = RuleConfig<[]>;
+export type NoSetupPropsDestructureRuleConfig = RuleConfig;
 
 /**
  *

@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type ReturnInComputedPropertyRuleConfig = RuleConfig<[]>;
+export type ReturnInComputedPropertyRuleConfig = RuleConfig;
 
 /**
  *

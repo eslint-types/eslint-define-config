@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type RequirePropTypeConstructorRuleConfig = RuleConfig<[]>;
+export type RequirePropTypeConstructorRuleConfig = RuleConfig;
 
 /**
  *

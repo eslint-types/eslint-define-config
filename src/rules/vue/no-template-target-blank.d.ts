@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoTemplateTargetBlankRuleConfig = RuleConfig<[]>;
+export type NoTemplateTargetBlankRuleConfig = RuleConfig;
 
 /**
  *

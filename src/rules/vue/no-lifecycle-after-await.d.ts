@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoLifecycleAfterAwaitRuleConfig = RuleConfig<[]>;
+export type NoLifecycleAfterAwaitRuleConfig = RuleConfig;
 
 /**
  *

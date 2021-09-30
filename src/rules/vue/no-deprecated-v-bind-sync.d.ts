@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoDeprecatedVBindSyncRuleConfig = RuleConfig<[]>;
+export type NoDeprecatedVBindSyncRuleConfig = RuleConfig;
 
 /**
  *

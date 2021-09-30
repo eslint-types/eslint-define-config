@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoVTextRuleConfig = RuleConfig<[]>;
+export type NoVTextRuleConfig = RuleConfig;
 
 /**
  *

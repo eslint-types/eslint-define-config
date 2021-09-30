@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type SpaceInfixOpsRuleConfig = RuleConfig<[]>;
+export type SpaceInfixOpsRuleConfig = RuleConfig;
 
 /**
  *

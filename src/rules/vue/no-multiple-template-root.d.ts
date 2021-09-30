@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoMultipleTemplateRootRuleConfig = RuleConfig<[]>;
+export type NoMultipleTemplateRootRuleConfig = RuleConfig;
 
 /**
  *

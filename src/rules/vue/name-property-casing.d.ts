@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NamePropertyCasingRuleConfig = RuleConfig<[]>;
+export type NamePropertyCasingRuleConfig = RuleConfig;
 
 /**
  *

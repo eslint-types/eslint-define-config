@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoStaticInlineStylesRuleConfig = RuleConfig<[]>;
+export type NoStaticInlineStylesRuleConfig = RuleConfig;
 
 /**
  *

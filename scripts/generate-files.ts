@@ -37,7 +37,7 @@ Object.entries((eslintPluginVue as Plugin).rules).forEach(([name, { meta }]) => 
   /**
    *
    */
-  export type ${pascalCase(name)}RuleConfig = RuleConfig<[]>;
+  export type ${pascalCase(name)}RuleConfig = RuleConfig;
 
   /**
    *

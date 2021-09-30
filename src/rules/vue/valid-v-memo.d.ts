@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type ValidVMemoRuleConfig = RuleConfig<[]>;
+export type ValidVMemoRuleConfig = RuleConfig;
 
 /**
  *

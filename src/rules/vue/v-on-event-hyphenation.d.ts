@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type VOnEventHyphenationRuleConfig = RuleConfig<[]>;
+export type VOnEventHyphenationRuleConfig = RuleConfig;
 
 /**
  *

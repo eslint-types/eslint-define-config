@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  *
  */
-export type NoDeprecatedDataObjectDeclarationRuleConfig = RuleConfig<[]>;
+export type NoDeprecatedDataObjectDeclarationRuleConfig = RuleConfig;
 
 /**
  *
