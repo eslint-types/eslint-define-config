@@ -48,9 +48,9 @@ import type { TagLinesRule } from './tag-lines';
 import type { ValidTypesRule } from './valid-types';
 
 /**
- * All jsdoc rules.
+ * All JSDoc rules.
  */
-export type JsdocRules = CheckAccessRule &
+export type JSDocRules = CheckAccessRule &
   CheckAlignmentRule &
   CheckExamplesRule &
   CheckIndentationRule &
