@@ -3,12 +3,15 @@ import type { Rule } from 'eslint';
 // @ts-expect-error
 import eslintPluginJSDoc from 'eslint-plugin-jsdoc';
 // @ts-expect-error
+import eslintPluginSpellcheck from 'eslint-plugin-spellcheck';
+// @ts-expect-error
 import eslintPluginVue from 'eslint-plugin-vue';
 import * as fs from 'fs';
 import type { JSONSchema4 } from 'json-schema';
 import * as path from 'path';
 import type { Options } from 'prettier';
 import { format } from 'prettier';
+import { upperCaseFirst } from 'upper-case-first';
 
 interface Plugin {
   name: string;
@@ -32,6 +35,10 @@ const generationMap: Record<string, Plugin> = {
     name: 'JSDoc',
     rules: (eslintPluginJSDoc as Plugin).rules
   },
+  spellcheck: {
+    name: 'Spellcheck',
+    rules: (eslintPluginSpellcheck as Plugin).rules
+  },
   vue: {
     name: 'Vue',
     rules: (eslintPluginVue as Plugin).rules
@@ -52,6 +59,11 @@ for (const pluginName in generationMap) {
     const rulePath: string = path.resolve(ruleProviderDir, `${ruleName}.d.ts`);
     let ruleContent: string = "import type { RuleConfig } from '../rule-config';";
 
+    const ruleNamePascalCase: string = pascalCase(ruleName);
+
+    const description: string = upperCaseFirst(meta?.docs?.description ?? '');
+    const seeDocLink: string = meta?.docs?.url ? `@see [${ruleName}](${meta.docs.url})` : '';
+
     const schema: JSONSchema4 | JSONSchema4[] | undefined = meta?.schema;
     const mainSchema: JSONSchema4 | undefined = Array.isArray(schema) ? schema[0] : schema;
     const hasOptionProperties: boolean = !!mainSchema?.properties;
@@ -61,12 +73,12 @@ for (const pluginName in generationMap) {
 /**
  * Option.
  */
-export type ${pascalCase(ruleName)}Option = {`;
+export type ${ruleNamePascalCase}Option = {`;
 
       Object.entries(mainSchema.properties).forEach(([propertyName, propertyDefinition]) => {
         ruleContent += `
   /**
-   * @see [${ruleName}](${meta?.docs?.url})
+   * ${seeDocLink}
    */
   '${propertyName}'?: any;\n`;
       });
@@ -76,32 +88,32 @@ export type ${pascalCase(ruleName)}Option = {`;
 /**
  * Options.
  */
-export type ${pascalCase(ruleName)}Options = [${pascalCase(ruleName)}Option?];`;
+export type ${ruleNamePascalCase}Options = [${ruleNamePascalCase}Option?];`;
     }
 
     ruleContent += `
 
   /**
-   * ${meta?.docs?.description}
+   * ${description}
    *
-   * @see [${ruleName}](${meta?.docs?.url})
+   * ${seeDocLink}
    */
-  export type ${pascalCase(ruleName)}RuleConfig = RuleConfig<${
-      hasOptionProperties ? `${pascalCase(ruleName)}Options` : '[]'
+  export type ${ruleNamePascalCase}RuleConfig = RuleConfig<${
+      hasOptionProperties ? `${ruleNamePascalCase}Options` : '[]'
     }>;
 
   /**
-   * ${meta?.docs?.description}
+   * ${description}
    *
-   * @see [${ruleName}](${meta?.docs?.url})
+   * ${seeDocLink}
    */
-  export interface ${pascalCase(ruleName)}Rule {
+  export interface ${ruleNamePascalCase}Rule {
     /**
-     * ${meta?.docs?.description}
+     * ${description}
      *
-     * @see [${ruleName}](${meta?.docs?.url})
+     * ${seeDocLink}
      */
-    '${camelCase(pluginName)}/${ruleName}': ${pascalCase(ruleName)}RuleConfig;
+    '${camelCase(pluginName)}/${ruleName}': ${ruleNamePascalCase}RuleConfig;
   }
   `;
     ruleContent = format(ruleContent, PRETTIER_OPTIONS);

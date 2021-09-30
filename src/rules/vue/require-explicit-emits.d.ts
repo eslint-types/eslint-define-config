@@ -16,20 +16,20 @@ export type RequireExplicitEmitsOption = {
 export type RequireExplicitEmitsOptions = [RequireExplicitEmitsOption?];
 
 /**
- * require `emits` option with name triggered by `$emit()`
+ * Require `emits` option with name triggered by `$emit()`
  *
  * @see [require-explicit-emits](https://eslint.vuejs.org/rules/require-explicit-emits.html)
  */
 export type RequireExplicitEmitsRuleConfig = RuleConfig<RequireExplicitEmitsOptions>;
 
 /**
- * require `emits` option with name triggered by `$emit()`
+ * Require `emits` option with name triggered by `$emit()`
  *
  * @see [require-explicit-emits](https://eslint.vuejs.org/rules/require-explicit-emits.html)
  */
 export interface RequireExplicitEmitsRule {
   /**
-   * require `emits` option with name triggered by `$emit()`
+   * Require `emits` option with name triggered by `$emit()`
    *
    * @see [require-explicit-emits](https://eslint.vuejs.org/rules/require-explicit-emits.html)
    */

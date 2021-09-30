@@ -16,20 +16,20 @@ export type NoLoneTemplateOption = {
 export type NoLoneTemplateOptions = [NoLoneTemplateOption?];
 
 /**
- * disallow unnecessary `<template>`
+ * Disallow unnecessary `<template>`
  *
  * @see [no-lone-template](https://eslint.vuejs.org/rules/no-lone-template.html)
  */
 export type NoLoneTemplateRuleConfig = RuleConfig<NoLoneTemplateOptions>;
 
 /**
- * disallow unnecessary `<template>`
+ * Disallow unnecessary `<template>`
  *
  * @see [no-lone-template](https://eslint.vuejs.org/rules/no-lone-template.html)
  */
 export interface NoLoneTemplateRule {
   /**
-   * disallow unnecessary `<template>`
+   * Disallow unnecessary `<template>`
    *
    * @see [no-lone-template](https://eslint.vuejs.org/rules/no-lone-template.html)
    */

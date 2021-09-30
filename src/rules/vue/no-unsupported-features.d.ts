@@ -21,20 +21,20 @@ export type NoUnsupportedFeaturesOption = {
 export type NoUnsupportedFeaturesOptions = [NoUnsupportedFeaturesOption?];
 
 /**
- * disallow unsupported Vue.js syntax on the specified version
+ * Disallow unsupported Vue.js syntax on the specified version
  *
  * @see [no-unsupported-features](https://eslint.vuejs.org/rules/no-unsupported-features.html)
  */
 export type NoUnsupportedFeaturesRuleConfig = RuleConfig<NoUnsupportedFeaturesOptions>;
 
 /**
- * disallow unsupported Vue.js syntax on the specified version
+ * Disallow unsupported Vue.js syntax on the specified version
  *
  * @see [no-unsupported-features](https://eslint.vuejs.org/rules/no-unsupported-features.html)
  */
 export interface NoUnsupportedFeaturesRule {
   /**
-   * disallow unsupported Vue.js syntax on the specified version
+   * Disallow unsupported Vue.js syntax on the specified version
    *
    * @see [no-unsupported-features](https://eslint.vuejs.org/rules/no-unsupported-features.html)
    */

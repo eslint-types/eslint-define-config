@@ -16,20 +16,20 @@ export type ValidVOnOption = {
 export type ValidVOnOptions = [ValidVOnOption?];
 
 /**
- * enforce valid `v-on` directives
+ * Enforce valid `v-on` directives
  *
  * @see [valid-v-on](https://eslint.vuejs.org/rules/valid-v-on.html)
  */
 export type ValidVOnRuleConfig = RuleConfig<ValidVOnOptions>;
 
 /**
- * enforce valid `v-on` directives
+ * Enforce valid `v-on` directives
  *
  * @see [valid-v-on](https://eslint.vuejs.org/rules/valid-v-on.html)
  */
 export interface ValidVOnRule {
   /**
-   * enforce valid `v-on` directives
+   * Enforce valid `v-on` directives
    *
    * @see [valid-v-on](https://eslint.vuejs.org/rules/valid-v-on.html)
    */

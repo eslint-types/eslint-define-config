@@ -16,20 +16,20 @@ export type NoMultiSpacesOption = {
 export type NoMultiSpacesOptions = [NoMultiSpacesOption?];
 
 /**
- * disallow multiple spaces
+ * Disallow multiple spaces
  *
  * @see [no-multi-spaces](https://eslint.vuejs.org/rules/no-multi-spaces.html)
  */
 export type NoMultiSpacesRuleConfig = RuleConfig<NoMultiSpacesOptions>;
 
 /**
- * disallow multiple spaces
+ * Disallow multiple spaces
  *
  * @see [no-multi-spaces](https://eslint.vuejs.org/rules/no-multi-spaces.html)
  */
 export interface NoMultiSpacesRule {
   /**
-   * disallow multiple spaces
+   * Disallow multiple spaces
    *
    * @see [no-multi-spaces](https://eslint.vuejs.org/rules/no-multi-spaces.html)
    */

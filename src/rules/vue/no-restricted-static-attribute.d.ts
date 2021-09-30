@@ -1,20 +1,20 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- * disallow specific attribute
+ * Disallow specific attribute
  *
  * @see [no-restricted-static-attribute](https://eslint.vuejs.org/rules/no-restricted-static-attribute.html)
  */
 export type NoRestrictedStaticAttributeRuleConfig = RuleConfig<[]>;
 
 /**
- * disallow specific attribute
+ * Disallow specific attribute
  *
  * @see [no-restricted-static-attribute](https://eslint.vuejs.org/rules/no-restricted-static-attribute.html)
  */
 export interface NoRestrictedStaticAttributeRule {
   /**
-   * disallow specific attribute
+   * Disallow specific attribute
    *
    * @see [no-restricted-static-attribute](https://eslint.vuejs.org/rules/no-restricted-static-attribute.html)
    */

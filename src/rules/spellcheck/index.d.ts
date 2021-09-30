@@ -1,6 +1,6 @@
 import type { SpellCheckerRule } from './spell-checker';
 
 /**
- * All spellcheck rules.
+ * All Spellcheck rules.
  */
 export type SpellcheckRules = SpellCheckerRule;

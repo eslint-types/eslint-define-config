@@ -36,20 +36,20 @@ export type CamelcaseOption = {
 export type CamelcaseOptions = [CamelcaseOption?];
 
 /**
- * enforce camelcase naming convention
+ * Enforce camelcase naming convention
  *
  * @see [camelcase](https://eslint.vuejs.org/rules/camelcase.html)
  */
 export type CamelcaseRuleConfig = RuleConfig<CamelcaseOptions>;
 
 /**
- * enforce camelcase naming convention
+ * Enforce camelcase naming convention
  *
  * @see [camelcase](https://eslint.vuejs.org/rules/camelcase.html)
  */
 export interface CamelcaseRule {
   /**
-   * enforce camelcase naming convention
+   * Enforce camelcase naming convention
    *
    * @see [camelcase](https://eslint.vuejs.org/rules/camelcase.html)
    */

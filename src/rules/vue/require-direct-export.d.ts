@@ -16,20 +16,20 @@ export type RequireDirectExportOption = {
 export type RequireDirectExportOptions = [RequireDirectExportOption?];
 
 /**
- * require the component to be directly exported
+ * Require the component to be directly exported
  *
  * @see [require-direct-export](https://eslint.vuejs.org/rules/require-direct-export.html)
  */
 export type RequireDirectExportRuleConfig = RuleConfig<RequireDirectExportOptions>;
 
 /**
- * require the component to be directly exported
+ * Require the component to be directly exported
  *
  * @see [require-direct-export](https://eslint.vuejs.org/rules/require-direct-export.html)
  */
 export interface RequireDirectExportRule {
   /**
-   * require the component to be directly exported
+   * Require the component to be directly exported
    *
    * @see [require-direct-export](https://eslint.vuejs.org/rules/require-direct-export.html)
    */

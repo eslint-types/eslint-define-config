@@ -41,20 +41,20 @@ export type NoIrregularWhitespaceOption = {
 export type NoIrregularWhitespaceOptions = [NoIrregularWhitespaceOption?];
 
 /**
- * disallow irregular whitespace
+ * Disallow irregular whitespace
  *
  * @see [no-irregular-whitespace](https://eslint.vuejs.org/rules/no-irregular-whitespace.html)
  */
 export type NoIrregularWhitespaceRuleConfig = RuleConfig<NoIrregularWhitespaceOptions>;
 
 /**
- * disallow irregular whitespace
+ * Disallow irregular whitespace
  *
  * @see [no-irregular-whitespace](https://eslint.vuejs.org/rules/no-irregular-whitespace.html)
  */
 export interface NoIrregularWhitespaceRule {
   /**
-   * disallow irregular whitespace
+   * Disallow irregular whitespace
    *
    * @see [no-irregular-whitespace](https://eslint.vuejs.org/rules/no-irregular-whitespace.html)
    */

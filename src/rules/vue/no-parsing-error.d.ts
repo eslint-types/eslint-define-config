@@ -191,20 +191,20 @@ export type NoParsingErrorOption = {
 export type NoParsingErrorOptions = [NoParsingErrorOption?];
 
 /**
- * disallow parsing errors in `<template>`
+ * Disallow parsing errors in `<template>`
  *
  * @see [no-parsing-error](https://eslint.vuejs.org/rules/no-parsing-error.html)
  */
 export type NoParsingErrorRuleConfig = RuleConfig<NoParsingErrorOptions>;
 
 /**
- * disallow parsing errors in `<template>`
+ * Disallow parsing errors in `<template>`
  *
  * @see [no-parsing-error](https://eslint.vuejs.org/rules/no-parsing-error.html)
  */
 export interface NoParsingErrorRule {
   /**
-   * disallow parsing errors in `<template>`
+   * Disallow parsing errors in `<template>`
    *
    * @see [no-parsing-error](https://eslint.vuejs.org/rules/no-parsing-error.html)
    */

@@ -16,20 +16,20 @@ export type NoConstantConditionOption = {
 export type NoConstantConditionOptions = [NoConstantConditionOption?];
 
 /**
- * disallow constant expressions in conditions
+ * Disallow constant expressions in conditions
  *
  * @see [no-constant-condition](https://eslint.vuejs.org/rules/no-constant-condition.html)
  */
 export type NoConstantConditionRuleConfig = RuleConfig<NoConstantConditionOptions>;
 
 /**
- * disallow constant expressions in conditions
+ * Disallow constant expressions in conditions
  *
  * @see [no-constant-condition](https://eslint.vuejs.org/rules/no-constant-condition.html)
  */
 export interface NoConstantConditionRule {
   /**
-   * disallow constant expressions in conditions
+   * Disallow constant expressions in conditions
    *
    * @see [no-constant-condition](https://eslint.vuejs.org/rules/no-constant-condition.html)
    */

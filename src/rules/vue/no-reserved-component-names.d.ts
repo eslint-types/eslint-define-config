@@ -21,20 +21,20 @@ export type NoReservedComponentNamesOption = {
 export type NoReservedComponentNamesOptions = [NoReservedComponentNamesOption?];
 
 /**
- * disallow the use of reserved names in component definitions
+ * Disallow the use of reserved names in component definitions
  *
  * @see [no-reserved-component-names](https://eslint.vuejs.org/rules/no-reserved-component-names.html)
  */
 export type NoReservedComponentNamesRuleConfig = RuleConfig<NoReservedComponentNamesOptions>;
 
 /**
- * disallow the use of reserved names in component definitions
+ * Disallow the use of reserved names in component definitions
  *
  * @see [no-reserved-component-names](https://eslint.vuejs.org/rules/no-reserved-component-names.html)
  */
 export interface NoReservedComponentNamesRule {
   /**
-   * disallow the use of reserved names in component definitions
+   * Disallow the use of reserved names in component definitions
    *
    * @see [no-reserved-component-names](https://eslint.vuejs.org/rules/no-reserved-component-names.html)
    */

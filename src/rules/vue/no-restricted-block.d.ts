@@ -1,20 +1,20 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- * disallow specific block
+ * Disallow specific block
  *
  * @see [no-restricted-block](https://eslint.vuejs.org/rules/no-restricted-block.html)
  */
 export type NoRestrictedBlockRuleConfig = RuleConfig<[]>;
 
 /**
- * disallow specific block
+ * Disallow specific block
  *
  * @see [no-restricted-block](https://eslint.vuejs.org/rules/no-restricted-block.html)
  */
 export interface NoRestrictedBlockRule {
   /**
-   * disallow specific block
+   * Disallow specific block
    *
    * @see [no-restricted-block](https://eslint.vuejs.org/rules/no-restricted-block.html)
    */

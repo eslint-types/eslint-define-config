@@ -26,20 +26,20 @@ export type KeywordSpacingOption = {
 export type KeywordSpacingOptions = [KeywordSpacingOption?];
 
 /**
- * enforce consistent spacing before and after keywords
+ * Enforce consistent spacing before and after keywords
  *
  * @see [keyword-spacing](https://eslint.vuejs.org/rules/keyword-spacing.html)
  */
 export type KeywordSpacingRuleConfig = RuleConfig<KeywordSpacingOptions>;
 
 /**
- * enforce consistent spacing before and after keywords
+ * Enforce consistent spacing before and after keywords
  *
  * @see [keyword-spacing](https://eslint.vuejs.org/rules/keyword-spacing.html)
  */
 export interface KeywordSpacingRule {
   /**
-   * enforce consistent spacing before and after keywords
+   * Enforce consistent spacing before and after keywords
    *
    * @see [keyword-spacing](https://eslint.vuejs.org/rules/keyword-spacing.html)
    */
