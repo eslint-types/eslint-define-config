@@ -1,16 +1,37 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- *
+ * Option.
  */
-export type NoUnusedVarsRuleConfig = RuleConfig;
+export type NoUnusedVarsOption = {
+  /**
+   * @see [no-unused-vars](https://eslint.vuejs.org/rules/no-unused-vars.html)
+   */
+  ignorePattern?: any;
+};
 
 /**
+ * Options.
+ */
+export type NoUnusedVarsOptions = [NoUnusedVarsOption?];
+
+/**
+ * disallow unused variable definitions of v-for directives or scope attributes
  *
+ * @see [no-unused-vars](https://eslint.vuejs.org/rules/no-unused-vars.html)
+ */
+export type NoUnusedVarsRuleConfig = RuleConfig<NoUnusedVarsOptions>;
+
+/**
+ * disallow unused variable definitions of v-for directives or scope attributes
+ *
+ * @see [no-unused-vars](https://eslint.vuejs.org/rules/no-unused-vars.html)
  */
 export interface NoUnusedVarsRule {
   /**
+   * disallow unused variable definitions of v-for directives or scope attributes
    *
+   * @see [no-unused-vars](https://eslint.vuejs.org/rules/no-unused-vars.html)
    */
   'vue/no-unused-vars': NoUnusedVarsRuleConfig;
 }
