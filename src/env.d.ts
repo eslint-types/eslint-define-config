@@ -68,7 +68,6 @@ export interface Environments extends Partial<Record<string, boolean>> {
    * QUnit global variables.
    */
   qunit?: boolean;
-  // eslint-disable-next-line jsdoc/match-description
   /**
    * jQuery global variables.
    */

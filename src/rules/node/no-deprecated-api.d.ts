@@ -3,7 +3,6 @@ import type { RuleConfig } from '../rule-config';
 
 /** NoDeprecatedApiModuleItem. */
 export type NoDeprecatedApiModuleItem =
-  /* eslint-disable spellcheck/spell-checker */
   | '_linklist'
   | '_stream_wrap'
   | 'async_hooks.currentId'
@@ -85,7 +84,6 @@ export type NoDeprecatedApiModuleItem =
   | 'util.puts'
   | 'util._extend'
   | 'vm.runInDebugContext';
-/* eslint-enable spellcheck/spell-checker */
 
 /** NoDeprecatedApiGlobalItem. */
 export type NoDeprecatedApiGlobalItem =

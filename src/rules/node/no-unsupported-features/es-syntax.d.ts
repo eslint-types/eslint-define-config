@@ -3,7 +3,6 @@ import type { RuleConfig } from '../../rule-config';
 
 /** IgnoreValue. */
 export type IgnoreValue =
-  /* eslint-disable spellcheck/spell-checker */
   // ES2020:
   | 'bigint'
   | 'dynamicImport'
@@ -45,7 +44,6 @@ export type IgnoreValue =
   | 'spreadElements'
   | 'templateLiterals'
   | 'unicodeCodePointEscapes';
-/* eslint-enable spellcheck/spell-checker */
 
 /**
  * Option.
