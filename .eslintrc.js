@@ -11,7 +11,6 @@ module.exports = defineConfig({
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'plugin:jsdoc/recommended',
     'plugin:prettier/recommended'
   ],
   parser: '@typescript-eslint/parser',
@@ -19,7 +18,7 @@ module.exports = defineConfig({
     project: ['./tsconfig.json'],
     warnOnUnsupportedTypeScriptVersion: false
   },
-  plugins: ['@typescript-eslint', 'prettier', 'jsdoc', 'spellcheck', 'inclusive-language'],
+  plugins: ['@typescript-eslint', 'prettier'],
   rules: {
     curly: ['error'],
     'linebreak-style': ['error', 'unix'],
@@ -40,123 +39,6 @@ module.exports = defineConfig({
     '@typescript-eslint/prefer-optional-chain': 'warn',
     '@typescript-eslint/prefer-readonly': ['warn'],
     '@typescript-eslint/restrict-template-expressions': 'off',
-    '@typescript-eslint/typedef': ['warn', { memberVariableDeclaration: true, variableDeclaration: true }],
-
-    'jsdoc/match-description': [
-      'warn',
-      {
-        mainDescription: '/^[A-Z`].+?(\\.|:)(\\n\\n.*((\\n{1,2}- .+)|(_.+_)|`.+`|\\n\\n---))?$/us',
-        matchDescription: '^[A-Z`].+(\\.|`.+`)$',
-        contexts: ['any'],
-        tags: {
-          param: true,
-          returns: true
-        }
-      }
-    ],
-    'jsdoc/no-types': 'error',
-    'jsdoc/require-jsdoc': [
-      'warn',
-      {
-        contexts: [
-          'ClassDeclaration',
-          "ClassProperty:not([accessibility='private'])",
-          'ExportNamedDeclaration:has(VariableDeclaration)',
-          'FunctionExpression',
-          "MethodDefinition:not([accessibility='private']) > FunctionExpression",
-          'TSEnumDeclaration',
-          'TSInterfaceDeclaration',
-          'TSMethodSignature',
-          // 'TSPropertySignature',
-          'TSTypeAliasDeclaration'
-        ]
-      }
-    ],
-    'jsdoc/require-param-type': 'off',
-    'jsdoc/require-returns-type': 'off',
-    'jsdoc/tag-lines': 'off',
-
-    'spellcheck/spell-checker': [
-      'warn',
-      {
-        minLength: 3,
-        skipWords: [
-          'accessor',
-          'accessors',
-          'amd',
-          'applescript',
-          'argv',
-          'asyncgenerator',
-          'asynciterable',
-          'atomtest',
-          'backtick',
-          'backticks',
-          'browserify',
-          'cjs',
-          'commonjs',
-          'declarator',
-          'denylist',
-          'dom',
-          'ecma',
-          'embertest',
-          'esm',
-          'esnext',
-          'getters',
-          'globals',
-          'greasemonkey',
-          'inferrable',
-          'jsdoc',
-          'jsx',
-          'lang',
-          'len',
-          'linebreak',
-          'loc',
-          'multiline',
-          'nashorn',
-          'nocheck',
-          'nullish',
-          'phantomjs',
-          'pragma',
-          'prototypejs',
-          'readonly',
-          'scripthost',
-          'sharedmemory',
-          'singleline',
-          'tsconfig',
-          'typedarrays',
-          'unix',
-          'urls',
-          'vue',
-          'webextensions',
-          'webworker',
-          'wellknown',
-          'whitespace',
-          'writeable'
-        ]
-      }
-    ],
-
-    'inclusive-language/use-inclusive-words': [
-      'warn',
-      {
-        allowedTerms: [
-          {
-            term: '/master',
-            allowPartialMatches: true
-          }
-        ],
-        words: [
-          {
-            word: 'guys',
-            suggestions: ['folks']
-          }
-        ]
-      }
-    ]
-  },
-  settings: {
-    jsdoc: {
-      mode: 'typescript'
-    }
+    '@typescript-eslint/typedef': ['warn', { memberVariableDeclaration: true, variableDeclaration: true }]
   }
 });
