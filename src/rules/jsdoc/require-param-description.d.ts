@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type RequireParamDescriptionOption = {
-  /**
-   * @see [require-param-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param-description)
-   */
   contexts?: any[];
 };
 

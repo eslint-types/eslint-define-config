@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NewLineBetweenMultiLinePropertyOption = {
-  /**
-   * @see [new-line-between-multi-line-property](https://eslint.vuejs.org/rules/new-line-between-multi-line-property.html)
-   */
   minLineOfMultilineProperty?: number;
 };
 

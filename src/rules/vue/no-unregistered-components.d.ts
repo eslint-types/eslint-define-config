@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoUnregisteredComponentsOption = {
-  /**
-   * @see [no-unregistered-components](https://eslint.vuejs.org/rules/no-unregistered-components.html)
-   */
   ignorePatterns?: any[];
 };
 

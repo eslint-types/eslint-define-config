@@ -1,11 +1,21 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Option.
+ */
+export type VOnEventHyphenationOption = 'always' | 'never';
+
+/**
+ * Options.
+ */
+export type VOnEventHyphenationOptions = [VOnEventHyphenationOption?];
+
+/**
  * Enforce v-on event naming style on custom components in template
  *
  * @see [v-on-event-hyphenation](https://eslint.vuejs.org/rules/v-on-event-hyphenation.html)
  */
-export type VOnEventHyphenationRuleConfig = RuleConfig<[]>;
+export type VOnEventHyphenationRuleConfig = RuleConfig<VOnEventHyphenationOptions>;
 
 /**
  * Enforce v-on event naming style on custom components in template

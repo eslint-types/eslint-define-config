@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type RequireReturnsDescriptionOption = {
-  /**
-   * @see [require-returns-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns-description)
-   */
   contexts?: any[];
 };
 

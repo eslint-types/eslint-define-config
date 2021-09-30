@@ -4,19 +4,8 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type MultilineHtmlElementContentNewlineOption = {
-  /**
-   * @see [multiline-html-element-content-newline](https://eslint.vuejs.org/rules/multiline-html-element-content-newline.html)
-   */
   ignoreWhenEmpty?: boolean;
-
-  /**
-   * @see [multiline-html-element-content-newline](https://eslint.vuejs.org/rules/multiline-html-element-content-newline.html)
-   */
   ignores?: any[];
-
-  /**
-   * @see [multiline-html-element-content-newline](https://eslint.vuejs.org/rules/multiline-html-element-content-newline.html)
-   */
   allowEmptyLines?: boolean;
 };
 

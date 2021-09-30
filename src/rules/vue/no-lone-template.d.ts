@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoLoneTemplateOption = {
-  /**
-   * @see [no-lone-template](https://eslint.vuejs.org/rules/no-lone-template.html)
-   */
   ignoreAccessible?: boolean;
 };
 

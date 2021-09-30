@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoUnusedComponentsOption = {
-  /**
-   * @see [no-unused-components](https://eslint.vuejs.org/rules/no-unused-components.html)
-   */
   ignoreWhenBindingPresent?: boolean;
 };
 

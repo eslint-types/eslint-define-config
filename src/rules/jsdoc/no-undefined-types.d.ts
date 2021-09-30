@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoUndefinedTypesOption = {
-  /**
-   * @see [no-undefined-types](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-undefined-types)
-   */
   definedTypes?: any[];
 };
 

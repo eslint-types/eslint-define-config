@@ -4,14 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoDuplicateAttributesOption = {
-  /**
-   * @see [no-duplicate-attributes](https://eslint.vuejs.org/rules/no-duplicate-attributes.html)
-   */
   allowCoexistClass?: boolean;
-
-  /**
-   * @see [no-duplicate-attributes](https://eslint.vuejs.org/rules/no-duplicate-attributes.html)
-   */
   allowCoexistStyle?: boolean;
 };
 

@@ -1,11 +1,21 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Option.
+ */
+export type EqeqeqOption = any;
+
+/**
+ * Options.
+ */
+export type EqeqeqOptions = [EqeqeqOption?];
+
+/**
  * Require the use of `===` and `!==`
  *
  * @see [eqeqeq](https://eslint.vuejs.org/rules/eqeqeq.html)
  */
-export type EqeqeqRuleConfig = RuleConfig<[]>;
+export type EqeqeqRuleConfig = RuleConfig<EqeqeqOptions>;
 
 /**
  * Require the use of `===` and `!==`

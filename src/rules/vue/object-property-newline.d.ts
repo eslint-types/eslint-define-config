@@ -4,14 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type ObjectPropertyNewlineOption = {
-  /**
-   * @see [object-property-newline](https://eslint.vuejs.org/rules/object-property-newline.html)
-   */
   allowAllPropertiesOnSameLine?: boolean;
-
-  /**
-   * @see [object-property-newline](https://eslint.vuejs.org/rules/object-property-newline.html)
-   */
   allowMultiplePropertiesPerLine?: boolean;
 };
 

@@ -4,14 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoMultiAsterisksOption = {
-  /**
-   * @see [no-multi-asterisks](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-multi-asterisks)
-   */
   preventAtEnd?: boolean;
-
-  /**
-   * @see [no-multi-asterisks](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-multi-asterisks)
-   */
   preventAtMiddleLines?: boolean;
 };
 

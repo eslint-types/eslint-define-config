@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type ValidVOnOption = {
-  /**
-   * @see [valid-v-on](https://eslint.vuejs.org/rules/valid-v-on.html)
-   */
   modifiers?: any[];
 };
 

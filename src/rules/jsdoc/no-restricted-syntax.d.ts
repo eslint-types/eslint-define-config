@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoRestrictedSyntaxOption = {
-  /**
-   * @see [no-restricted-syntax](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-restricted-syntax)
-   */
   contexts?: any[];
 };
 

@@ -1,11 +1,21 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Option.
+ */
+export type NoRestrictedSyntaxOption = any[];
+
+/**
+ * Options.
+ */
+export type NoRestrictedSyntaxOptions = [NoRestrictedSyntaxOption?];
+
+/**
  * Disallow specified syntax
  *
  * @see [no-restricted-syntax](https://eslint.vuejs.org/rules/no-restricted-syntax.html)
  */
-export type NoRestrictedSyntaxRuleConfig = RuleConfig<[]>;
+export type NoRestrictedSyntaxRuleConfig = RuleConfig<NoRestrictedSyntaxOptions>;
 
 /**
  * Disallow specified syntax

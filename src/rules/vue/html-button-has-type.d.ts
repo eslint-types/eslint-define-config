@@ -4,19 +4,8 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type HtmlButtonHasTypeOption = {
-  /**
-   * @see [html-button-has-type](https://eslint.vuejs.org/rules/html-button-has-type.html)
-   */
   button?: boolean;
-
-  /**
-   * @see [html-button-has-type](https://eslint.vuejs.org/rules/html-button-has-type.html)
-   */
   submit?: boolean;
-
-  /**
-   * @see [html-button-has-type](https://eslint.vuejs.org/rules/html-button-has-type.html)
-   */
   reset?: boolean;
 };
 

@@ -1,11 +1,21 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Option.
+ */
+export type NoRestrictedPropsOption = any[];
+
+/**
+ * Options.
+ */
+export type NoRestrictedPropsOptions = [NoRestrictedPropsOption?];
+
+/**
  * Disallow specific props
  *
  * @see [no-restricted-props](https://eslint.vuejs.org/rules/no-restricted-props.html)
  */
-export type NoRestrictedPropsRuleConfig = RuleConfig<[]>;
+export type NoRestrictedPropsRuleConfig = RuleConfig<NoRestrictedPropsOptions>;
 
 /**
  * Disallow specific props

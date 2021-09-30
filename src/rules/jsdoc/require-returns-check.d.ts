@@ -4,19 +4,8 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type RequireReturnsCheckOption = {
-  /**
-   * @see [require-returns-check](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns-check)
-   */
   exemptAsync?: boolean;
-
-  /**
-   * @see [require-returns-check](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns-check)
-   */
   exemptGenerators?: boolean;
-
-  /**
-   * @see [require-returns-check](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns-check)
-   */
   reportMissingReturnForUndefinedTypes?: boolean;
 };
 

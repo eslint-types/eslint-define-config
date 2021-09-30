@@ -4,24 +4,9 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type BlockTagNewlineOption = {
-  /**
-   * @see [block-tag-newline](https://eslint.vuejs.org/rules/block-tag-newline.html)
-   */
   singleline?: any;
-
-  /**
-   * @see [block-tag-newline](https://eslint.vuejs.org/rules/block-tag-newline.html)
-   */
   multiline?: any;
-
-  /**
-   * @see [block-tag-newline](https://eslint.vuejs.org/rules/block-tag-newline.html)
-   */
   maxEmptyLines?: number;
-
-  /**
-   * @see [block-tag-newline](https://eslint.vuejs.org/rules/block-tag-newline.html)
-   */
   blocks?: Record<string, any>;
 };
 

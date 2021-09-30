@@ -1,11 +1,21 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Option.
+ */
+export type VOnFunctionCallOption = 'always' | 'never';
+
+/**
+ * Options.
+ */
+export type VOnFunctionCallOptions = [VOnFunctionCallOption?];
+
+/**
  * Enforce or forbid parentheses after method calls without arguments in `v-on` directives
  *
  * @see [v-on-function-call](https://eslint.vuejs.org/rules/v-on-function-call.html)
  */
-export type VOnFunctionCallRuleConfig = RuleConfig<[]>;
+export type VOnFunctionCallRuleConfig = RuleConfig<VOnFunctionCallOptions>;
 
 /**
  * Enforce or forbid parentheses after method calls without arguments in `v-on` directives

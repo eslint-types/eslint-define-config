@@ -4,14 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoDefaultsOption = {
-  /**
-   * @see [no-defaults](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-defaults)
-   */
   contexts?: any[];
-
-  /**
-   * @see [no-defaults](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-defaults)
-   */
   noOptionalParamNames?: boolean;
 };
 

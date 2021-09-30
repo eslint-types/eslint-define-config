@@ -4,14 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type ArrowSpacingOption = {
-  /**
-   * @see [arrow-spacing](https://eslint.vuejs.org/rules/arrow-spacing.html)
-   */
   before?: boolean;
-
-  /**
-   * @see [arrow-spacing](https://eslint.vuejs.org/rules/arrow-spacing.html)
-   */
   after?: boolean;
 };
 

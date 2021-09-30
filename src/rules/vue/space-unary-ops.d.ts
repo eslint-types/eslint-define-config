@@ -4,19 +4,8 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type SpaceUnaryOpsOption = {
-  /**
-   * @see [space-unary-ops](https://eslint.vuejs.org/rules/space-unary-ops.html)
-   */
   words?: boolean;
-
-  /**
-   * @see [space-unary-ops](https://eslint.vuejs.org/rules/space-unary-ops.html)
-   */
   nonwords?: boolean;
-
-  /**
-   * @see [space-unary-ops](https://eslint.vuejs.org/rules/space-unary-ops.html)
-   */
   overrides?: Record<string, any>;
 };
 

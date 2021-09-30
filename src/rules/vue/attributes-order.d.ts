@@ -4,14 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type AttributesOrderOption = {
-  /**
-   * @see [attributes-order](https://eslint.vuejs.org/rules/attributes-order.html)
-   */
   order?: any[];
-
-  /**
-   * @see [attributes-order](https://eslint.vuejs.org/rules/attributes-order.html)
-   */
   alphabetical?: boolean;
 };
 

@@ -4,19 +4,8 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type SinglelineHtmlElementContentNewlineOption = {
-  /**
-   * @see [singleline-html-element-content-newline](https://eslint.vuejs.org/rules/singleline-html-element-content-newline.html)
-   */
   ignoreWhenNoAttributes?: boolean;
-
-  /**
-   * @see [singleline-html-element-content-newline](https://eslint.vuejs.org/rules/singleline-html-element-content-newline.html)
-   */
   ignoreWhenEmpty?: boolean;
-
-  /**
-   * @see [singleline-html-element-content-newline](https://eslint.vuejs.org/rules/singleline-html-element-content-newline.html)
-   */
   ignores?: any[];
 };
 

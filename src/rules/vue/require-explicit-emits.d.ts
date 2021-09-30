@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type RequireExplicitEmitsOption = {
-  /**
-   * @see [require-explicit-emits](https://eslint.vuejs.org/rules/require-explicit-emits.html)
-   */
   allowProps?: boolean;
 };
 

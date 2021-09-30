@@ -4,24 +4,9 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type CheckValuesOption = {
-  /**
-   * @see [check-values](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-values)
-   */
   allowedAuthors?: any[];
-
-  /**
-   * @see [check-values](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-values)
-   */
   allowedLicenses?: any;
-
-  /**
-   * @see [check-values](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-values)
-   */
   licensePattern?: string;
-
-  /**
-   * @see [check-values](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-values)
-   */
   numericOnlyVariation?: boolean;
 };
 

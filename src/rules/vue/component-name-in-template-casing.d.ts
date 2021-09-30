@@ -1,11 +1,21 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Option.
+ */
+export type ComponentNameInTemplateCasingOption = 'PascalCase' | 'kebab-case';
+
+/**
+ * Options.
+ */
+export type ComponentNameInTemplateCasingOptions = [ComponentNameInTemplateCasingOption?];
+
+/**
  * Enforce specific casing for the component naming style in template
  *
  * @see [component-name-in-template-casing](https://eslint.vuejs.org/rules/component-name-in-template-casing.html)
  */
-export type ComponentNameInTemplateCasingRuleConfig = RuleConfig<[]>;
+export type ComponentNameInTemplateCasingRuleConfig = RuleConfig<ComponentNameInTemplateCasingOptions>;
 
 /**
  * Enforce specific casing for the component naming style in template

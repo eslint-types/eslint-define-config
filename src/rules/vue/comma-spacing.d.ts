@@ -4,14 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type CommaSpacingOption = {
-  /**
-   * @see [comma-spacing](https://eslint.vuejs.org/rules/comma-spacing.html)
-   */
   before?: boolean;
-
-  /**
-   * @see [comma-spacing](https://eslint.vuejs.org/rules/comma-spacing.html)
-   */
   after?: boolean;
 };
 

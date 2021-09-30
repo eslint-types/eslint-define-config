@@ -1,11 +1,21 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Option.
+ */
+export type NoRestrictedBlockOption = any[];
+
+/**
+ * Options.
+ */
+export type NoRestrictedBlockOptions = [NoRestrictedBlockOption?];
+
+/**
  * Disallow specific block
  *
  * @see [no-restricted-block](https://eslint.vuejs.org/rules/no-restricted-block.html)
  */
-export type NoRestrictedBlockRuleConfig = RuleConfig<[]>;
+export type NoRestrictedBlockRuleConfig = RuleConfig<NoRestrictedBlockOptions>;
 
 /**
  * Disallow specific block

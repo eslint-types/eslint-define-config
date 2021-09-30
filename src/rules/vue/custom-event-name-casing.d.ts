@@ -1,11 +1,21 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Option.
+ */
+export type CustomEventNameCasingOption = any;
+
+/**
+ * Options.
+ */
+export type CustomEventNameCasingOptions = [CustomEventNameCasingOption?];
+
+/**
  * Enforce specific casing for custom event name
  *
  * @see [custom-event-name-casing](https://eslint.vuejs.org/rules/custom-event-name-casing.html)
  */
-export type CustomEventNameCasingRuleConfig = RuleConfig<[]>;
+export type CustomEventNameCasingRuleConfig = RuleConfig<CustomEventNameCasingOptions>;
 
 /**
  * Enforce specific casing for custom event name
