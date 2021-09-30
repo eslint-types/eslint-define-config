@@ -5,6 +5,7 @@ import type { NodeRules } from './node';
 import type { RuleConfig } from './rule-config';
 import type { SpellcheckRules } from './spellcheck';
 import type { TypeScriptEslintRules } from './typescript-eslint';
+import type { VueRules } from './vue';
 
 /**
  * Rules.
@@ -18,5 +19,6 @@ export type Rules = Partial<
     ImportRules &
     JSDocRules &
     SpellcheckRules &
+    VueRules &
     Record<string, RuleConfig>
 >;
