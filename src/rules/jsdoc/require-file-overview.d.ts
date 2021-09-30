@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type RequireFileOverviewOption = {
-  /**
-   * @see [require-file-overview](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-file-overview)
-   */
   tags?: Record<string, any>;
 };
 

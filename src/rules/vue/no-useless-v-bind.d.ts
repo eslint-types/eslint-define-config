@@ -4,14 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoUselessVBindOption = {
-  /**
-   * @see [no-useless-v-bind](https://eslint.vuejs.org/rules/no-useless-v-bind.html)
-   */
   ignoreIncludesComment?: boolean;
-
-  /**
-   * @see [no-useless-v-bind](https://eslint.vuejs.org/rules/no-useless-v-bind.html)
-   */
   ignoreStringEscape?: boolean;
 };
 

@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoMultiSpacesOption = {
-  /**
-   * @see [no-multi-spaces](https://eslint.vuejs.org/rules/no-multi-spaces.html)
-   */
   ignoreProperties?: boolean;
 };
 

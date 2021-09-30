@@ -1,11 +1,21 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Option.
+ */
+export type ArrayBracketNewlineOption = any;
+
+/**
+ * Options.
+ */
+export type ArrayBracketNewlineOptions = [ArrayBracketNewlineOption?];
+
+/**
  * Enforce linebreaks after opening and before closing array brackets
  *
  * @see [array-bracket-newline](https://eslint.vuejs.org/rules/array-bracket-newline.html)
  */
-export type ArrayBracketNewlineRuleConfig = RuleConfig<[]>;
+export type ArrayBracketNewlineRuleConfig = RuleConfig<ArrayBracketNewlineOptions>;
 
 /**
  * Enforce linebreaks after opening and before closing array brackets

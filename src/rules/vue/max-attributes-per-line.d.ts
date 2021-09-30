@@ -4,14 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type MaxAttributesPerLineOption = {
-  /**
-   * @see [max-attributes-per-line](https://eslint.vuejs.org/rules/max-attributes-per-line.html)
-   */
   singleline?: any;
-
-  /**
-   * @see [max-attributes-per-line](https://eslint.vuejs.org/rules/max-attributes-per-line.html)
-   */
   multiline?: any;
 };
 

@@ -4,19 +4,8 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type CheckTypesOption = {
-  /**
-   * @see [check-types](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-types)
-   */
   exemptTagContexts?: any[];
-
-  /**
-   * @see [check-types](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-types)
-   */
   noDefaults?: boolean;
-
-  /**
-   * @see [check-types](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-types)
-   */
   unifyParentAndChildTypeChecks?: boolean;
 };
 

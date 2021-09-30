@@ -1,11 +1,21 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Option.
+ */
+export type AttributeHyphenationOption = 'always' | 'never';
+
+/**
+ * Options.
+ */
+export type AttributeHyphenationOptions = [AttributeHyphenationOption?];
+
+/**
  * Enforce attribute naming style on custom components in template
  *
  * @see [attribute-hyphenation](https://eslint.vuejs.org/rules/attribute-hyphenation.html)
  */
-export type AttributeHyphenationRuleConfig = RuleConfig<[]>;
+export type AttributeHyphenationRuleConfig = RuleConfig<AttributeHyphenationOptions>;
 
 /**
  * Enforce attribute naming style on custom components in template

@@ -4,39 +4,12 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type RequireYieldsOption = {
-  /**
-   * @see [require-yields](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-yields)
-   */
   contexts?: any[];
-
-  /**
-   * @see [require-yields](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-yields)
-   */
   exemptedBy?: any[];
-
-  /**
-   * @see [require-yields](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-yields)
-   */
   forceRequireNext?: boolean;
-
-  /**
-   * @see [require-yields](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-yields)
-   */
   forceRequireYields?: boolean;
-
-  /**
-   * @see [require-yields](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-yields)
-   */
   next?: boolean;
-
-  /**
-   * @see [require-yields](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-yields)
-   */
   nextWithGeneratorTag?: boolean;
-
-  /**
-   * @see [require-yields](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-yields)
-   */
   withGeneratorTag?: boolean;
 };
 

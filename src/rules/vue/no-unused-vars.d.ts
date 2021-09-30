@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoUnusedVarsOption = {
-  /**
-   * @see [no-unused-vars](https://eslint.vuejs.org/rules/no-unused-vars.html)
-   */
   ignorePattern?: string;
 };
 

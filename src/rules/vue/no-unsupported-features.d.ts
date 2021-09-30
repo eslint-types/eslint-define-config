@@ -4,14 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoUnsupportedFeaturesOption = {
-  /**
-   * @see [no-unsupported-features](https://eslint.vuejs.org/rules/no-unsupported-features.html)
-   */
   version?: string;
-
-  /**
-   * @see [no-unsupported-features](https://eslint.vuejs.org/rules/no-unsupported-features.html)
-   */
   ignores?: any[];
 };
 

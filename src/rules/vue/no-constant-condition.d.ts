@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoConstantConditionOption = {
-  /**
-   * @see [no-constant-condition](https://eslint.vuejs.org/rules/no-constant-condition.html)
-   */
   checkLoops?: boolean;
 };
 

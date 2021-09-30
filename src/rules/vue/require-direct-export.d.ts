@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type RequireDirectExportOption = {
-  /**
-   * @see [require-direct-export](https://eslint.vuejs.org/rules/require-direct-export.html)
-   */
   disallowFunctionalComponentFunction?: boolean;
 };
 

@@ -4,19 +4,8 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type KeywordSpacingOption = {
-  /**
-   * @see [keyword-spacing](https://eslint.vuejs.org/rules/keyword-spacing.html)
-   */
   before?: boolean;
-
-  /**
-   * @see [keyword-spacing](https://eslint.vuejs.org/rules/keyword-spacing.html)
-   */
   after?: boolean;
-
-  /**
-   * @see [keyword-spacing](https://eslint.vuejs.org/rules/keyword-spacing.html)
-   */
   overrides?: Record<string, any>;
 };
 

@@ -4,19 +4,8 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoUnusedPropertiesOption = {
-  /**
-   * @see [no-unused-properties](https://eslint.vuejs.org/rules/no-unused-properties.html)
-   */
   groups?: any[];
-
-  /**
-   * @see [no-unused-properties](https://eslint.vuejs.org/rules/no-unused-properties.html)
-   */
   deepData?: boolean;
-
-  /**
-   * @see [no-unused-properties](https://eslint.vuejs.org/rules/no-unused-properties.html)
-   */
   ignorePublicMembers?: boolean;
 };
 

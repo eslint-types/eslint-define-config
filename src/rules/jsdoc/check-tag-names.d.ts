@@ -4,14 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type CheckTagNamesOption = {
-  /**
-   * @see [check-tag-names](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-tag-names)
-   */
   definedTags?: any[];
-
-  /**
-   * @see [check-tag-names](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-tag-names)
-   */
   jsxTags?: boolean;
 };
 

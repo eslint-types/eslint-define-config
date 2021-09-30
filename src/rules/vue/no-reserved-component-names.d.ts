@@ -4,14 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoReservedComponentNamesOption = {
-  /**
-   * @see [no-reserved-component-names](https://eslint.vuejs.org/rules/no-reserved-component-names.html)
-   */
   disallowVueBuiltInComponents?: boolean;
-
-  /**
-   * @see [no-reserved-component-names](https://eslint.vuejs.org/rules/no-reserved-component-names.html)
-   */
   disallowVue3BuiltInComponents?: boolean;
 };
 

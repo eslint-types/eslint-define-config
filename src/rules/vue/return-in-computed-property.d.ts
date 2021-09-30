@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type ReturnInComputedPropertyOption = {
-  /**
-   * @see [return-in-computed-property](https://eslint.vuejs.org/rules/return-in-computed-property.html)
-   */
   treatUndefinedAsUnspecified?: boolean;
 };
 

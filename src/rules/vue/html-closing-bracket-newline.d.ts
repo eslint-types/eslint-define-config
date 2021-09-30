@@ -4,14 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type HtmlClosingBracketNewlineOption = {
-  /**
-   * @see [html-closing-bracket-newline](https://eslint.vuejs.org/rules/html-closing-bracket-newline.html)
-   */
   singleline?: any;
-
-  /**
-   * @see [html-closing-bracket-newline](https://eslint.vuejs.org/rules/html-closing-bracket-newline.html)
-   */
   multiline?: any;
 };
 

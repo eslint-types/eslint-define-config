@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type EmptyTagsOption = {
-  /**
-   * @see [empty-tags](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-empty-tags)
-   */
   tags?: any[];
 };
 

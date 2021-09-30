@@ -4,14 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoTemplateTargetBlankOption = {
-  /**
-   * @see [no-template-target-blank](https://eslint.vuejs.org/rules/no-template-target-blank.html)
-   */
   allowReferrer?: boolean;
-
-  /**
-   * @see [no-template-target-blank](https://eslint.vuejs.org/rules/no-template-target-blank.html)
-   */
   enforceDynamicLinks?: any;
 };
 

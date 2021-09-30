@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type MatchNameOption = {
-  /**
-   * @see [match-name](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-match-name)
-   */
   match?: any[];
 };
 

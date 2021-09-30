@@ -1,11 +1,21 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Option.
+ */
+export type NoRestrictedStaticAttributeOption = any[];
+
+/**
+ * Options.
+ */
+export type NoRestrictedStaticAttributeOptions = [NoRestrictedStaticAttributeOption?];
+
+/**
  * Disallow specific attribute
  *
  * @see [no-restricted-static-attribute](https://eslint.vuejs.org/rules/no-restricted-static-attribute.html)
  */
-export type NoRestrictedStaticAttributeRuleConfig = RuleConfig<[]>;
+export type NoRestrictedStaticAttributeRuleConfig = RuleConfig<NoRestrictedStaticAttributeOptions>;
 
 /**
  * Disallow specific attribute

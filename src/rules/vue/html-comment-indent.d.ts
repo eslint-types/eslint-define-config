@@ -1,11 +1,21 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Option.
+ */
+export type HtmlCommentIndentOption = any;
+
+/**
+ * Options.
+ */
+export type HtmlCommentIndentOptions = [HtmlCommentIndentOption?];
+
+/**
  * Enforce consistent indentation in HTML comments
  *
  * @see [html-comment-indent](https://eslint.vuejs.org/rules/html-comment-indent.html)
  */
-export type HtmlCommentIndentRuleConfig = RuleConfig<[]>;
+export type HtmlCommentIndentRuleConfig = RuleConfig<HtmlCommentIndentOptions>;
 
 /**
  * Enforce consistent indentation in HTML comments

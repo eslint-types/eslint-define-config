@@ -4,19 +4,8 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoPotentialComponentOptionTypoOption = {
-  /**
-   * @see [no-potential-component-option-typo](https://eslint.vuejs.org/rules/no-potential-component-option-typo.html)
-   */
   presets?: any[];
-
-  /**
-   * @see [no-potential-component-option-typo](https://eslint.vuejs.org/rules/no-potential-component-option-typo.html)
-   */
   custom?: any[];
-
-  /**
-   * @see [no-potential-component-option-typo](https://eslint.vuejs.org/rules/no-potential-component-option-typo.html)
-   */
   threshold?: number;
 };
 

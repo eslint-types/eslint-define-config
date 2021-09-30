@@ -1,11 +1,21 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Option.
+ */
+export type NoRestrictedCallAfterAwaitOption = any[];
+
+/**
+ * Options.
+ */
+export type NoRestrictedCallAfterAwaitOptions = [NoRestrictedCallAfterAwaitOption?];
+
+/**
  * Disallow asynchronously called restricted methods
  *
  * @see [no-restricted-call-after-await](https://eslint.vuejs.org/rules/no-restricted-call-after-await.html)
  */
-export type NoRestrictedCallAfterAwaitRuleConfig = RuleConfig<[]>;
+export type NoRestrictedCallAfterAwaitRuleConfig = RuleConfig<NoRestrictedCallAfterAwaitOptions>;
 
 /**
  * Disallow asynchronously called restricted methods

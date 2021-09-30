@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoStaticInlineStylesOption = {
-  /**
-   * @see [no-static-inline-styles](https://eslint.vuejs.org/rules/no-static-inline-styles.html)
-   */
   allowBinding?: boolean;
 };
 

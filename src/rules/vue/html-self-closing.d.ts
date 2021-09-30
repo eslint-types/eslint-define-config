@@ -1,11 +1,21 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Option.
+ */
+export type HtmlSelfClosingOption = any[];
+
+/**
+ * Options.
+ */
+export type HtmlSelfClosingOptions = [HtmlSelfClosingOption?];
+
+/**
  * Enforce self-closing style
  *
  * @see [html-self-closing](https://eslint.vuejs.org/rules/html-self-closing.html)
  */
-export type HtmlSelfClosingRuleConfig = RuleConfig<[]>;
+export type HtmlSelfClosingRuleConfig = RuleConfig<HtmlSelfClosingOptions>;
 
 /**
  * Enforce self-closing style

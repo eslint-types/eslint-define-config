@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type CommentDirectiveOption = {
-  /**
-   * @see [comment-directive](https://eslint.vuejs.org/rules/comment-directive.html)
-   */
   reportUnusedDisableDirectives?: boolean;
 };
 

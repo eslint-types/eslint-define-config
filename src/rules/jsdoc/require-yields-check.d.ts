@@ -4,24 +4,9 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type RequireYieldsCheckOption = {
-  /**
-   * @see [require-yields-check](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-yields-check)
-   */
   checkGeneratorsOnly?: boolean;
-
-  /**
-   * @see [require-yields-check](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-yields-check)
-   */
   contexts?: any[];
-
-  /**
-   * @see [require-yields-check](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-yields-check)
-   */
   exemptedBy?: any[];
-
-  /**
-   * @see [require-yields-check](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-yields-check)
-   */
   next?: boolean;
 };
 

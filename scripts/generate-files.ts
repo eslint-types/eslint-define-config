@@ -73,6 +73,45 @@ function generateType(propertyDefinition: JSONSchema4): string {
   return 'any';
 }
 
+function generateOptionType(schema: JSONSchema4): string {
+  let result: string = 'any';
+
+  switch (schema.type) {
+    case 'object':
+      if (schema.properties) {
+        result = '{\n';
+        result += Object.entries(schema.properties)
+          .map(([propertyName, propertyDefinition]) => `'${propertyName}'?: ${generateType(propertyDefinition)};`)
+          .join('\n');
+        result += '}';
+      } else {
+        // TODO: Identify further
+        result = 'Record<string, any>;';
+      }
+      break;
+    case 'string':
+      result = 'string;';
+      if (schema.enum) {
+        result = `'${schema.enum.join("' | '")}';`;
+      }
+      break;
+    case 'array':
+      result = 'any[];';
+      break;
+    case undefined:
+      if (schema.enum) {
+        result = `'${schema.enum.join("' | '")}';`;
+      }
+      // TODO: Identify further
+      break;
+    default:
+      // TODO: Something else?
+      break;
+  }
+
+  return result;
+}
+
 for (const pluginName in generationMap) {
   const { rules, name } = generationMap[pluginName]!;
 
@@ -91,30 +130,27 @@ for (const pluginName in generationMap) {
 
     const schema: JSONSchema4 | JSONSchema4[] | undefined = meta?.schema;
     const mainSchema: JSONSchema4 | undefined = Array.isArray(schema) ? schema[0] : schema;
-    const hasOptionProperties: boolean = !!mainSchema?.properties;
-    if (mainSchema?.properties) {
+    const sideSchema: JSONSchema4 | undefined =
+      schema && Array.isArray(schema) && schema.length > 1 ? schema[1] : undefined;
+    if (sideSchema) {
+      // console.log(pluginName, ruleName, mainSchema, sideSchema);
+    }
+    // TODO: vue/max-len has also a third schema
+    if (mainSchema) {
       ruleContent += `
 
 /**
  * Option.
  */
-export type ${ruleNamePascalCase}Option = {`;
-
-      Object.entries(mainSchema.properties).forEach(([propertyName, propertyDefinition]) => {
-        ruleContent += `
-  /**
-   * ${seeDocLink}
-   */
-  '${propertyName}'?: ${generateType(propertyDefinition)};\n`;
-      });
-
-      ruleContent += `}
+export type ${ruleNamePascalCase}Option = ${generateOptionType(mainSchema)}
 
 /**
  * Options.
  */
 export type ${ruleNamePascalCase}Options = [${ruleNamePascalCase}Option?];`;
     }
+
+    // TODO: Add side and third option
 
     ruleContent += `
 
@@ -123,9 +159,7 @@ export type ${ruleNamePascalCase}Options = [${ruleNamePascalCase}Option?];`;
    *
    * ${seeDocLink}
    */
-  export type ${ruleNamePascalCase}RuleConfig = RuleConfig<${
-      hasOptionProperties ? `${ruleNamePascalCase}Options` : '[]'
-    }>;
+  export type ${ruleNamePascalCase}RuleConfig = RuleConfig<${mainSchema ? `${ruleNamePascalCase}Options` : '[]'}>;
 
   /**
    * ${description}
