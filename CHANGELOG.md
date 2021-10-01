@@ -1,6 +1,19 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.9...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.1.0...main)
+
+# 1.1.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.0.9...1.1.0)
+
+- Automatically generate rule definitions for: ([#69])
+    - `eslint`
+    - `@typescript-eslint`
+    - `jsdoc`
+    - `spellcheck`
+    - `vue`
+
+[#69]: https://github.com/Shinigami92/eslint-define-config/pull/69
 
 # 1.0.9
 
