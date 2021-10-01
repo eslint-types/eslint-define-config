@@ -3,10 +3,10 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type CommaSpacingOption = {
+export interface CommaSpacingOption {
   before?: boolean;
   after?: boolean;
-};
+}
 
 /**
  * Options.

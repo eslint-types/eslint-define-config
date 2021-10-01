@@ -3,9 +3,16 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoRestrictedSyntaxOption = {
-  contexts?: any[];
-};
+export interface NoRestrictedSyntaxOption {
+  contexts: (
+    | string
+    | {
+        comment?: string;
+        context?: string;
+        message?: string;
+      }
+  )[];
+}
 
 /**
  * Options.

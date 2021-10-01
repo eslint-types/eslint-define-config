@@ -3,14 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type RequireReturnsOption = {
+export interface RequireReturnsOption {
   checkConstructors?: boolean;
   checkGetters?: boolean;
-  contexts?: any[];
+  contexts?: (
+    | string
+    | {
+        comment?: string;
+        context?: string;
+      }
+  )[];
   exemptedBy?: string[];
   forceRequireReturn?: boolean;
   forceReturnsWithAsync?: boolean;
-};
+}
 
 /**
  * Options.

@@ -3,10 +3,10 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoBadBlocksOption = {
+export interface NoBadBlocksOption {
   ignore?: string[];
   preventAllMultiAsteriskBlocks?: boolean;
-};
+}
 
 /**
  * Options.

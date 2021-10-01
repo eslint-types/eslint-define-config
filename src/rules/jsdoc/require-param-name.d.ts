@@ -3,9 +3,15 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type RequireParamNameOption = {
-  contexts?: any[];
-};
+export interface RequireParamNameOption {
+  contexts?: (
+    | string
+    | {
+        comment?: string;
+        context?: string;
+      }
+  )[];
+}
 
 /**
  * Options.

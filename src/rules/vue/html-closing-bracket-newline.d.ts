@@ -3,10 +3,10 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type HtmlClosingBracketNewlineOption = {
-  singleline?: any;
-  multiline?: any;
-};
+export interface HtmlClosingBracketNewlineOption {
+  singleline?: 'always' | 'never';
+  multiline?: 'always' | 'never';
+}
 
 /**
  * Options.

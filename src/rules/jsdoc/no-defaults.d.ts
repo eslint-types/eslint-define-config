@@ -3,10 +3,16 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoDefaultsOption = {
-  contexts?: any[];
+export interface NoDefaultsOption {
+  contexts?: (
+    | string
+    | {
+        comment?: string;
+        context?: string;
+      }
+  )[];
   noOptionalParamNames?: boolean;
-};
+}
 
 /**
  * Options.

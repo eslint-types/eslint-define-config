@@ -51,6 +51,7 @@
     "eslint-plugin-prettier": "~4.0.0",
     "eslint-plugin-spellcheck": "~0.0.19",
     "eslint-plugin-vue": "~7.18.0",
+    "json-schema-to-typescript": "~10.1.5",
     "np": "~7.5.0",
     "prettier": "2.4.1",
     "prettier-plugin-organize-imports": "~2.3.4",

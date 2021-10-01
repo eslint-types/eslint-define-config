@@ -3,11 +3,11 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type MultilineHtmlElementContentNewlineOption = {
+export interface MultilineHtmlElementContentNewlineOption {
   ignoreWhenEmpty?: boolean;
   ignores?: string[];
   allowEmptyLines?: boolean;
-};
+}
 
 /**
  * Options.

@@ -3,7 +3,17 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type EqeqeqOption = any;
+export type EqeqeqOption =
+  | []
+  | ['always']
+  | [
+      'always',
+      {
+        null?: 'always' | 'never' | 'ignore';
+      }
+    ]
+  | []
+  | ['smart' | 'allow-null'];
 
 /**
  * Options.

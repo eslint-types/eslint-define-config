@@ -3,9 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type EmptyTagsOption = {
+export interface EmptyTagsOption {
   tags?: string[];
-};
+}
 
 /**
  * Options.

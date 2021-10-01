@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type HtmlCommentIndentOption = any;
+export type HtmlCommentIndentOption = number | 'tab';
 
 /**
  * Options.

@@ -3,12 +3,18 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoTypesOption = {
+export interface NoTypesOption {
   /**
    * @see [contexts](https://github.com/gajus/eslint-plugin-jsdoc#contexts-3)
    */
-  contexts?: string[];
-};
+  contexts?: (
+    | string
+    | {
+        comment?: string;
+        context?: string;
+      }
+  )[];
+}
 
 /**
  * Options.
@@ -18,8 +24,6 @@ export type NoTypesOptions = [NoTypesOption?];
 /**
  * This rule reports types being used on `@param` or `@returns`.
  *
- * The rule is intended to prevent the indication of types on tags where the type information would be redundant with TypeScript.
- *
  * @see [no-types](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-types)
  */
 export type NoTypesRuleConfig = RuleConfig<NoTypesOptions>;
@@ -27,15 +31,11 @@ export type NoTypesRuleConfig = RuleConfig<NoTypesOptions>;
 /**
  * This rule reports types being used on `@param` or `@returns`.
  *
- * The rule is intended to prevent the indication of types on tags where the type information would be redundant with TypeScript.
- *
  * @see [no-types](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-types)
  */
 export interface NoTypesRule {
   /**
    * This rule reports types being used on `@param` or `@returns`.
-   *
-   * The rule is intended to prevent the indication of types on tags where the type information would be redundant with TypeScript.
    *
    * @see [no-types](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-types)
    */

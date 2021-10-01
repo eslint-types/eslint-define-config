@@ -3,10 +3,10 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type ArrowSpacingOption = {
+export interface ArrowSpacingOption {
   before?: boolean;
   after?: boolean;
-};
+}
 
 /**
  * Options.

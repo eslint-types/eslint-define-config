@@ -3,7 +3,17 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type FuncCallSpacingOption = any;
+export type FuncCallSpacingOption =
+  | []
+  | ['never']
+  | []
+  | ['always']
+  | [
+      'always',
+      {
+        allowNewlines?: boolean;
+      }
+    ];
 
 /**
  * Options.

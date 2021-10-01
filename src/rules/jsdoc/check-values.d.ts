@@ -3,12 +3,12 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type CheckValuesOption = {
+export interface CheckValuesOption {
   allowedAuthors?: string[];
-  allowedLicenses?: any;
+  allowedLicenses?: string[] | boolean;
   licensePattern?: string;
   numericOnlyVariation?: boolean;
-};
+}
 
 /**
  * Options.

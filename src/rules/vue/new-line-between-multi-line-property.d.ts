@@ -3,9 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NewLineBetweenMultiLinePropertyOption = {
+export interface NewLineBetweenMultiLinePropertyOption {
   minLineOfMultilineProperty?: number;
-};
+}
 
 /**
  * Options.

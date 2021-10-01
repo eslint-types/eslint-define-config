@@ -3,12 +3,18 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type RequireYieldsCheckOption = {
+export interface RequireYieldsCheckOption {
   checkGeneratorsOnly?: boolean;
-  contexts?: any[];
+  contexts?: (
+    | string
+    | {
+        comment?: string;
+        context?: string;
+      }
+  )[];
   exemptedBy?: string[];
   next?: boolean;
-};
+}
 
 /**
  * Options.

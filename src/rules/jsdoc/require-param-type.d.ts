@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type RequireParamTypeOption = {
+export interface RequireParamTypeOption {
   /**
    * Set this to an array of strings representing the AST context where you wish the rule to be applied.
    *
@@ -13,8 +13,14 @@ export type RequireParamTypeOption = {
    *
    * @see [contexts](https://github.com/gajus/eslint-plugin-jsdoc#contexts-8)
    */
-  contexts?: string[];
-};
+  contexts?: (
+    | string
+    | {
+        comment?: string;
+        context?: string;
+      }
+  )[];
+}
 
 /**
  * Options.

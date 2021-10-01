@@ -3,12 +3,18 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type BlockTagNewlineOption = {
-  singleline?: any;
-  multiline?: any;
+export interface BlockTagNewlineOption {
+  singleline?: 'always' | 'never' | 'consistent' | 'ignore';
+  multiline?: 'always' | 'never' | 'consistent' | 'ignore';
   maxEmptyLines?: number;
-  blocks?: Record<string, any>;
-};
+  blocks?: {
+    [k: string]: {
+      singleline?: 'always' | 'never' | 'consistent' | 'ignore';
+      multiline?: 'always' | 'never' | 'consistent' | 'ignore';
+      maxEmptyLines?: number;
+    };
+  };
+}
 
 /**
  * Options.

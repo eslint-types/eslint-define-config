@@ -3,15 +3,21 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type RequireYieldsOption = {
-  contexts?: any[];
+export interface RequireYieldsOption {
+  contexts?: (
+    | string
+    | {
+        comment?: string;
+        context?: string;
+      }
+  )[];
   exemptedBy?: string[];
   forceRequireNext?: boolean;
   forceRequireYields?: boolean;
   next?: boolean;
   nextWithGeneratorTag?: boolean;
   withGeneratorTag?: boolean;
-};
+}
 
 /**
  * Options.

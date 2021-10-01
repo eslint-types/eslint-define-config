@@ -3,9 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type CheckIndentationOption = {
+export interface CheckIndentationOption {
   excludeTags?: string[];
-};
+}
 
 /**
  * Options.

@@ -3,9 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type CheckPropertyNamesOption = {
+export interface CheckPropertyNamesOption {
   enableFixer?: boolean;
-};
+}
 
 /**
  * Options.

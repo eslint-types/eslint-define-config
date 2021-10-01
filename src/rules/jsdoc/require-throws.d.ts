@@ -3,10 +3,16 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type RequireThrowsOption = {
-  contexts?: any[];
+export interface RequireThrowsOption {
+  contexts?: (
+    | string
+    | {
+        comment?: string;
+        context?: string;
+      }
+  )[];
   exemptedBy?: string[];
-};
+}
 
 /**
  * Options.

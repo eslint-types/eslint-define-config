@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type RequireReturnsTypeOption = {
+export interface RequireReturnsTypeOption {
   /**
    * Set this to an array of strings representing the AST context where you wish the rule to be applied.
    *
@@ -13,8 +13,14 @@ export type RequireReturnsTypeOption = {
    *
    * @see [contexts](https://github.com/gajus/eslint-plugin-jsdoc#contexts-3)
    */
-  contexts?: string[];
-};
+  contexts?: (
+    | string
+    | {
+        comment?: string;
+        context?: string;
+      }
+  )[];
+}
 
 /**
  * Options.

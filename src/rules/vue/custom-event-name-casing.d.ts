@@ -3,7 +3,21 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type CustomEventNameCasingOption = any;
+export type CustomEventNameCasingOption =
+  | []
+  | ['kebab-case' | 'camelCase']
+  | [
+      'kebab-case' | 'camelCase',
+      {
+        ignores?: string[];
+      }
+    ]
+  | []
+  | [
+      {
+        ignores?: string[];
+      }
+    ];
 
 /**
  * Options.

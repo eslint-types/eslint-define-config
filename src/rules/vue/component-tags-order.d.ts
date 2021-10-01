@@ -3,9 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type ComponentTagsOrderOption = {
-  order?: any[];
-};
+export interface ComponentTagsOrderOption {
+  order?: (string | string[])[];
+}
 
 /**
  * Options.

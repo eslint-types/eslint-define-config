@@ -3,10 +3,10 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type MatchComponentFileNameOption = {
+export interface MatchComponentFileNameOption {
   extensions?: string[];
   shouldMatchCase?: boolean;
-};
+}
 
 /**
  * Options.

@@ -3,9 +3,17 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoMissingSyntaxOption = {
-  contexts?: any[];
-};
+export interface NoMissingSyntaxOption {
+  contexts?: (
+    | string
+    | {
+        comment?: string;
+        context?: string;
+        message?: string;
+        minimum?: number;
+      }
+  )[];
+}
 
 /**
  * Options.
