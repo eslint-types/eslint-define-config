@@ -49,78 +49,6 @@ const generationMap: Record<string, Plugin> = {
 // Generating rule files
 const rulesDir: string = path.resolve(__dirname, '../src/rules');
 
-function generateType(propertyDefinition: JSONSchema4): string {
-  switch (propertyDefinition.type) {
-    case 'string':
-    case 'boolean':
-    case 'number':
-      return propertyDefinition.type;
-    case 'integer':
-      // TODO: Read further details
-      return 'number';
-    case 'array': {
-      const items: JSONSchema4 | JSONSchema4[] | undefined = propertyDefinition.items;
-      if (items && !Array.isArray(items)) {
-        if (items.type === 'string') {
-          return 'string[]';
-        }
-        // TODO: Could be enum or something else
-      }
-      // TODO: Handle array
-      return 'any[]';
-    }
-    case 'object':
-      // TODO: Handle nested objects
-      return 'Record<string, any>';
-    case undefined:
-      // TODO: Could be an object
-      break;
-    default:
-      console.log(propertyDefinition.type);
-      break;
-  }
-  return 'any';
-}
-
-function generateOptionType(schema: JSONSchema4): string {
-  let result: string = 'any';
-
-  switch (schema.type) {
-    case 'object':
-      if (schema.properties) {
-        result = '{\n';
-        result += Object.entries(schema.properties)
-          .map(([propertyName, propertyDefinition]) => `'${propertyName}'?: ${generateType(propertyDefinition)};`)
-          .join('\n');
-        result += '}';
-      } else {
-        // TODO: Identify further
-        result = 'Record<string, any>;';
-      }
-      break;
-    case 'string':
-      result = 'string;';
-      if (schema.enum) {
-        result = `'${schema.enum.join("' | '")}';`;
-      }
-      break;
-    case 'array':
-      result = 'any[];';
-      break;
-    case undefined:
-      if (schema.enum) {
-        result = `'${schema.enum.join("' | '")}';`;
-      }
-      // TODO: Identify further
-      break;
-    default:
-      // TODO: Something else?
-      break;
-  }
-
-  return result;
-}
-
 async function main(): Promise<void> {
   for (const pluginName in generationMap) {
     const { rules, name } = generationMap[pluginName]!;
@@ -145,12 +73,25 @@ async function main(): Promise<void> {
       // TODO: vue/max-len has also a third schema
       if (mainSchema) {
         if (sideSchema) {
+          const ruleConfig: string = await compile(sideSchema, `${ruleNamePascalCase}Config`, {
+            bannerComment: '',
+            style: {
+              bracketSpacing: true,
+              printWidth: 120,
+              semi: true,
+              singleQuote: true,
+              tabWidth: 2,
+              trailingComma: 'none',
+              useTabs: false
+            },
+            unknownAny: false
+          });
           ruleContent += `
 
 /**
  * Config.
  */
-export type ${ruleNamePascalCase}Config = ${generateOptionType(sideSchema)}`;
+${ruleConfig}`;
         }
 
         const ruleOption: string = await compile(mainSchema, `${ruleNamePascalCase}Option`, {

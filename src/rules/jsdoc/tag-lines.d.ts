@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Config.
  */
-export type TagLinesConfig = {
+export interface TagLinesConfig {
   /**
    * Use with "always" to indicate the number of lines to require be present.
    *
@@ -20,8 +20,14 @@ export type TagLinesConfig = {
    * @see [noEndLines](https://github.com/gajus/eslint-plugin-jsdoc#noendlines-defaults-to-false)
    */
   noEndLines?: boolean;
-  tags?: Record<string, any>;
-};
+  tags?: {
+    [k: string]: {
+      count?: number;
+      lines?: 'always' | 'never' | 'any';
+    };
+  };
+  [k: string]: any;
+}
 
 /**
  * Option.

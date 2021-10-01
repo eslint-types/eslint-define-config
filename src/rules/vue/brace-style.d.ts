@@ -3,9 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Config.
  */
-export type BraceStyleConfig = {
+export interface BraceStyleConfig {
   allowSingleLine?: boolean;
-};
+}
 
 /**
  * Option.

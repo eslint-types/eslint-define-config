@@ -3,9 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Config.
  */
-export type HtmlCommentContentNewlineConfig = {
+export interface HtmlCommentContentNewlineConfig {
   exceptions?: string[];
-};
+}
 
 /**
  * Option.

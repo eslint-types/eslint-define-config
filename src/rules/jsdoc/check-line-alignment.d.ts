@@ -3,11 +3,16 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Config.
  */
-export type CheckLineAlignmentConfig = {
-  customSpacings?: any;
+export interface CheckLineAlignmentConfig {
+  customSpacings?: {
+    postDelimiter?: number;
+    postName?: number;
+    postTag?: number;
+    postType?: number;
+  };
   preserveMainDescriptionPostDelimiter?: boolean;
   tags?: string[];
-};
+}
 
 /**
  * Option.

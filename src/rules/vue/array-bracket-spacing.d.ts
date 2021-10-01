@@ -3,11 +3,11 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Config.
  */
-export type ArrayBracketSpacingConfig = {
+export interface ArrayBracketSpacingConfig {
   singleValue?: boolean;
   objectsInArrays?: boolean;
   arraysInArrays?: boolean;
-};
+}
 
 /**
  * Option.

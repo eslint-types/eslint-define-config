@@ -3,9 +3,13 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Config.
  */
-export type RequireHyphenBeforeParamDescriptionConfig = {
-  tags?: any;
-};
+export interface RequireHyphenBeforeParamDescriptionConfig {
+  tags?:
+    | {
+        [k: string]: 'always' | 'never';
+      }
+    | 'any';
+}
 
 /**
  * Option.

@@ -3,14 +3,24 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Config.
  */
-export type HtmlIndentConfig = {
+export interface HtmlIndentConfig {
   attribute?: number;
   baseIndent?: number;
-  closeBracket?: any;
+  closeBracket?:
+    | number
+    | {
+        startTag?: number;
+        endTag?: number;
+        selfClosingTag?: number;
+      };
   switchCase?: number;
   alignAttributesVertically?: boolean;
-  ignores?: any[];
-};
+  ignores?: (string & {
+    [k: string]: any;
+  } & {
+    [k: string]: any;
+  })[];
+}
 
 /**
  * Option.
