@@ -70,9 +70,31 @@ async function main(): Promise<void> {
       const mainSchema: JSONSchema4 | undefined = Array.isArray(schema) ? schema[0] : schema;
       const sideSchema: JSONSchema4 | undefined =
         schema && Array.isArray(schema) && schema.length > 1 ? schema[1] : undefined;
-      // TODO: vue/max-len has also a third schema
+      const thirdSchema: JSONSchema4 | undefined =
+        schema && Array.isArray(schema) && schema.length > 2 ? schema[2] : undefined;
       if (mainSchema) {
         if (sideSchema) {
+          if (thirdSchema) {
+            const ruleSetting: string = await compile(thirdSchema, `${ruleNamePascalCase}Setting`, {
+              bannerComment: '',
+              style: {
+                bracketSpacing: true,
+                printWidth: 120,
+                semi: true,
+                singleQuote: true,
+                tabWidth: 2,
+                trailingComma: 'none',
+                useTabs: false
+              },
+              unknownAny: false
+            });
+            ruleContent += `
+
+/**
+ * Setting.
+ */
+${ruleSetting}`;
+          }
           const ruleConfig: string = await compile(sideSchema, `${ruleNamePascalCase}Config`, {
             bannerComment: '',
             style: {
@@ -119,7 +141,7 @@ ${ruleOption}
  * Options.
  */
 export type ${ruleNamePascalCase}Options = [${ruleNamePascalCase}Option?${
-          sideSchema ? `, ${ruleNamePascalCase}Config?` : ''
+          sideSchema ? `, ${ruleNamePascalCase}Config?${thirdSchema ? `, ${ruleNamePascalCase}Setting?` : ''}` : ''
         }];`;
       }
 
