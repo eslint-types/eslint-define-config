@@ -12,7 +12,7 @@ export type NoRestrictedCallAfterAwaitOption = {
 /**
  * Options.
  */
-export type NoRestrictedCallAfterAwaitOptions = [NoRestrictedCallAfterAwaitOption?];
+export type NoRestrictedCallAfterAwaitOptions = NoRestrictedCallAfterAwaitOption;
 
 /**
  * Disallow asynchronously called restricted methods.

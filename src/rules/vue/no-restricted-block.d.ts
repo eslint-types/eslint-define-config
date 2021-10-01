@@ -14,7 +14,7 @@ export type NoRestrictedBlockOption = (
 /**
  * Options.
  */
-export type NoRestrictedBlockOptions = [NoRestrictedBlockOption?];
+export type NoRestrictedBlockOptions = NoRestrictedBlockOption;
 
 /**
  * Disallow specific block.

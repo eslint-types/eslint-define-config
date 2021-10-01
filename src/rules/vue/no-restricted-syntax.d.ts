@@ -14,7 +14,7 @@ export type NoRestrictedSyntaxOption = (
 /**
  * Options.
  */
-export type NoRestrictedSyntaxOptions = [NoRestrictedSyntaxOption?];
+export type NoRestrictedSyntaxOptions = NoRestrictedSyntaxOption;
 
 /**
  * Disallow specified syntax.

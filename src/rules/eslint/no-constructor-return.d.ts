@@ -1,16 +1,9 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- * Option.
- */
-export interface NoConstructorReturnOption {
-  [k: string]: any;
-}
-
-/**
  * Options.
  */
-export type NoConstructorReturnOptions = [NoConstructorReturnOption?];
+export type NoConstructorReturnOptions = [];
 
 /**
  * Disallow returning value from constructor.

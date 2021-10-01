@@ -13,7 +13,7 @@ export type CurlyOption =
 /**
  * Options.
  */
-export type CurlyOptions = [CurlyOption?];
+export type CurlyOptions = CurlyOption;
 
 /**
  * Enforce consistent brace style for all control statements.

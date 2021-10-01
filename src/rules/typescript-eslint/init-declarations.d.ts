@@ -18,7 +18,7 @@ export type InitDeclarationsOption =
 /**
  * Options.
  */
-export type InitDeclarationsOptions = [InitDeclarationsOption?];
+export type InitDeclarationsOptions = InitDeclarationsOption;
 
 /**
  * Require or disallow initialization in variable declarations.

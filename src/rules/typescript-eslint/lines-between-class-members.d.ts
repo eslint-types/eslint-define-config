@@ -1,16 +1,19 @@
+import type {
+  LinesBetweenClassMembersConfig as BaseConfig,
+  LinesBetweenClassMembersOption
+} from '../eslint/lines-between-class-members';
 import type { RuleConfig } from '../rule-config';
 
 /**
- * Option.
+ * Config.
  */
-export interface LinesBetweenClassMembersOption {
-  [k: string]: any;
+export interface LinesBetweenClassMembersConfig extends BaseConfig {
+  exceptAfterOverload?: boolean;
 }
-
 /**
  * Options.
  */
-export type LinesBetweenClassMembersOptions = [LinesBetweenClassMembersOption?];
+export type LinesBetweenClassMembersOptions = [LinesBetweenClassMembersOption?, LinesBetweenClassMembersConfig?];
 
 /**
  * Require or disallow an empty line between class members.

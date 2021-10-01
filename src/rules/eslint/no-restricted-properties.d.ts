@@ -19,7 +19,7 @@ export type NoRestrictedPropertiesOption = (
 /**
  * Options.
  */
-export type NoRestrictedPropertiesOptions = [NoRestrictedPropertiesOption?];
+export type NoRestrictedPropertiesOptions = NoRestrictedPropertiesOption;
 
 /**
  * Disallow certain properties on certain objects.

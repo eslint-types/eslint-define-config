@@ -136,7 +136,7 @@ export type PaddingLineBetweenStatementsOption = {
 /**
  * Options.
  */
-export type PaddingLineBetweenStatementsOptions = [PaddingLineBetweenStatementsOption?];
+export type PaddingLineBetweenStatementsOptions = PaddingLineBetweenStatementsOption;
 
 /**
  * Require or disallow padding lines between statements.

@@ -25,7 +25,7 @@ export type NoRestrictedModulesOption =
 /**
  * Options.
  */
-export type NoRestrictedModulesOptions = [NoRestrictedModulesOption?];
+export type NoRestrictedModulesOptions = NoRestrictedModulesOption;
 
 /**
  * Disallow specified modules when loaded by `require`.

@@ -16,7 +16,7 @@ export type NoRestrictedVBindOption = (
 /**
  * Options.
  */
-export type NoRestrictedVBindOptions = [NoRestrictedVBindOption?];
+export type NoRestrictedVBindOptions = NoRestrictedVBindOption;
 
 /**
  * Disallow specific argument in `v-bind`.

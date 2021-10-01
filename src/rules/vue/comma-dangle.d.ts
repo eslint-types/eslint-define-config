@@ -21,7 +21,7 @@ export type ValueWithIgnore = 'always-multiline' | 'always' | 'ignore' | 'never'
 /**
  * Options.
  */
-export type CommaDangleOptions = [CommaDangleOption?];
+export type CommaDangleOptions = CommaDangleOption;
 
 /**
  * Require or disallow trailing commas.

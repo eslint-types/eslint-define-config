@@ -17,7 +17,7 @@ export type Value = 'always' | 'as-needed' | 'never';
 /**
  * Options.
  */
-export type FuncNamesOptions = [FuncNamesOption?];
+export type FuncNamesOptions = FuncNamesOption;
 
 /**
  * Require or disallow named `function` expressions.

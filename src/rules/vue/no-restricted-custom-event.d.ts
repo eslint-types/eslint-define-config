@@ -15,7 +15,7 @@ export type NoRestrictedCustomEventOption = (
 /**
  * Options.
  */
-export type NoRestrictedCustomEventOptions = [NoRestrictedCustomEventOption?];
+export type NoRestrictedCustomEventOptions = NoRestrictedCustomEventOption;
 
 /**
  * Disallow specific custom event.
