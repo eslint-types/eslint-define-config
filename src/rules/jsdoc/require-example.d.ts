@@ -8,7 +8,7 @@ export type RequireExampleOption = {
   checkGetters?: boolean;
   checkSetters?: boolean;
   contexts?: any[];
-  exemptedBy?: any[];
+  exemptedBy?: string[];
   exemptNoArguments?: boolean;
 };
 

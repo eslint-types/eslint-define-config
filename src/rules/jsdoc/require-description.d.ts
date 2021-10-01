@@ -9,7 +9,7 @@ export type RequireDescriptionOption = {
   checkSetters?: boolean;
   contexts?: any[];
   descriptionStyle?: string;
-  exemptedBy?: any[];
+  exemptedBy?: string[];
 };
 
 /**

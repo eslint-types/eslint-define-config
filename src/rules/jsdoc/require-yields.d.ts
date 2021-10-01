@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  */
 export type RequireYieldsOption = {
   contexts?: any[];
-  exemptedBy?: any[];
+  exemptedBy?: string[];
   forceRequireNext?: boolean;
   forceRequireYields?: boolean;
   next?: boolean;

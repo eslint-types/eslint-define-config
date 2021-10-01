@@ -4,7 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type CheckTagNamesOption = {
-  definedTags?: any[];
+  definedTags?: string[];
   jsxTags?: boolean;
 };
 

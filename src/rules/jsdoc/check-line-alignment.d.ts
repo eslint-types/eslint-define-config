@@ -6,7 +6,7 @@ import type { RuleConfig } from '../rule-config';
 export type CheckLineAlignmentConfig = {
   customSpacings?: any;
   preserveMainDescriptionPostDelimiter?: boolean;
-  tags?: any[];
+  tags?: string[];
 };
 
 /**

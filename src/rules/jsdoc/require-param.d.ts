@@ -16,8 +16,8 @@ export type RequireParamOption = {
   enableFixer?: boolean;
   enableRestElementFixer?: boolean;
   enableRootFixer?: boolean;
-  exemptedBy?: any[];
-  unnamedRootBase?: any[];
+  exemptedBy?: string[];
+  unnamedRootBase?: string[];
   useDefaultObjectProperties?: boolean;
 };
 

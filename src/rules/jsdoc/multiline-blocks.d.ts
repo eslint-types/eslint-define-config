@@ -11,7 +11,7 @@ export type MultilineBlocksOption = {
   noMultilineBlocks?: boolean;
   noSingleLineBlocks?: boolean;
   noZeroLineText?: boolean;
-  singleLineTags?: any[];
+  singleLineTags?: string[];
 };
 
 /**

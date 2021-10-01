@@ -6,7 +6,7 @@ import type { RuleConfig } from '../rule-config';
 export type RequireYieldsCheckOption = {
   checkGeneratorsOnly?: boolean;
   contexts?: any[];
-  exemptedBy?: any[];
+  exemptedBy?: string[];
   next?: boolean;
 };
 

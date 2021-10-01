@@ -4,7 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type MatchComponentFileNameOption = {
-  extensions?: any[];
+  extensions?: string[];
   shouldMatchCase?: boolean;
 };
 

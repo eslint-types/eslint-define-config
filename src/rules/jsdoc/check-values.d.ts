@@ -4,7 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type CheckValuesOption = {
-  allowedAuthors?: any[];
+  allowedAuthors?: string[];
   allowedLicenses?: any;
   licensePattern?: string;
   numericOnlyVariation?: boolean;

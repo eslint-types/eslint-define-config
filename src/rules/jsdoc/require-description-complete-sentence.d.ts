@@ -4,9 +4,9 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type RequireDescriptionCompleteSentenceOption = {
-  abbreviations?: any[];
+  abbreviations?: string[];
   newlineBeforeCapsAssumesBadSentenceEnd?: boolean;
-  tags?: any[];
+  tags?: string[];
 };
 
 /**

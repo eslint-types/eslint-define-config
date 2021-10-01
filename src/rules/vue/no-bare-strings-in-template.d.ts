@@ -4,9 +4,9 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoBareStringsInTemplateOption = {
-  allowlist?: any[];
+  allowlist?: string[];
   attributes?: Record<string, any>;
-  directives?: any[];
+  directives?: string[];
 };
 
 /**
