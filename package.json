@@ -1,6 +1,6 @@
 {
   "name": "eslint-define-config",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Provide a defineConfig function for .eslintrc.js files",
   "main": "src/index.js",
   "scripts": {
@@ -49,6 +49,7 @@
     "eslint-config-prettier": "~8.3.0",
     "eslint-plugin-inclusive-language": "~2.1.1",
     "eslint-plugin-jsdoc": "~36.1.0",
+    "eslint-plugin-node": "~11.1.0",
     "eslint-plugin-prettier": "~4.0.0",
     "eslint-plugin-spellcheck": "~0.0.19",
     "eslint-plugin-unicorn": "~36.0.0",

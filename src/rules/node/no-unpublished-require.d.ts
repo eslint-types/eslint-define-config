@@ -3,21 +3,35 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoUnpublishedRequireOption = {
+export interface NoUnpublishedRequireOption {
   /**
    * Some platforms have additional embedded modules. For example, Electron has `electron` module.
    *
    * @see [allowModules](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md#allowmodules)
    */
-  allowModules?: [];
+  allowModules?: string[];
   /**
    * Some platforms have additional embedded modules. For example, Electron has `electron` module.
    *
    * @see [convertPath](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md#convertpath)
    */
   convertPath?:
-    | Record<string, [fromRegExp: string, toString: string]>
-    | { include: string[]; exclude: string[]; replace: [fromRegExp: string, toString: string] };
+    | {
+        [k: string]: [string, string];
+      }
+    | [
+        {
+          include: [string, ...string[]];
+          exclude?: string[];
+          replace: [string, string];
+        },
+        ...{
+          include: [string, ...string[]];
+          exclude?: string[];
+          replace: [string, string];
+        }[]
+      ];
+  resolvePaths?: string[];
   /**
    * When an import path does not exist, this rule checks whether or not any of `path.js`, `path.json`, and `path.node` exists.
    *
@@ -28,7 +42,7 @@ export type NoUnpublishedRequireOption = {
    * @see [tryExtensions](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md#tryextensions)
    */
   tryExtensions?: string[];
-};
+}
 
 /**
  * Options.
@@ -43,7 +57,7 @@ export type NoUnpublishedRequireOptions = [NoUnpublishedRequireOption?];
  *
  * Then this rule warns `require()` expressions in *published* files if the `require()` expression imports *unpublished* files or the packages of `devDependencies`.
  *
- * @see [no-unpublished-require](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md)
+ * @see [no-unpublished-require](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-unpublished-require.md)
  */
 export type NoUnpublishedRequireRuleConfig = RuleConfig<NoUnpublishedRequireOptions>;
 
@@ -55,7 +69,7 @@ export type NoUnpublishedRequireRuleConfig = RuleConfig<NoUnpublishedRequireOpti
  *
  * Then this rule warns `require()` expressions in *published* files if the `require()` expression imports *unpublished* files or the packages of `devDependencies`.
  *
- * @see [no-unpublished-require](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md)
+ * @see [no-unpublished-require](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-unpublished-require.md)
  */
 export interface NoUnpublishedRequireRule {
   /**
@@ -66,7 +80,7 @@ export interface NoUnpublishedRequireRule {
    *
    * Then this rule warns `require()` expressions in *published* files if the `require()` expression imports *unpublished* files or the packages of `devDependencies`.
    *
-   * @see [no-unpublished-require](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unpublished-require.md)
+   * @see [no-unpublished-require](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-unpublished-require.md)
    */
   'node/no-unpublished-require': NoUnpublishedRequireRuleConfig;
 }

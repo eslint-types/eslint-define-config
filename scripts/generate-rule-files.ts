@@ -6,6 +6,8 @@ import * as eslint from 'eslint';
 // @ts-expect-error
 import eslintPluginJSDoc from 'eslint-plugin-jsdoc';
 // @ts-expect-error
+import eslintPluginNode from 'eslint-plugin-node';
+// @ts-expect-error
 import eslintPluginSpellcheck from 'eslint-plugin-spellcheck';
 // @ts-expect-error
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
@@ -50,6 +52,10 @@ const generationMap: Record<string, Plugin> = {
   jsdoc: {
     name: 'JSDoc',
     rules: (eslintPluginJSDoc as Plugin).rules
+  },
+  node: {
+    name: 'Node',
+    rules: (eslintPluginNode as Plugin).rules
   },
   spellcheck: {
     name: 'Spellcheck',

@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoExtraneousImportOption = {
+export interface NoExtraneousImportOption {
   /**
    * Some platforms have additional embedded modules. For example, Electron has `electron` module.
    *
@@ -12,6 +12,22 @@ export type NoExtraneousImportOption = {
    * @see [allowModules](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-extraneous-import.md#allowmodules)
    */
   allowModules?: string[];
+  convertPath?:
+    | {
+        [k: string]: [string, string];
+      }
+    | [
+        {
+          include: [string, ...string[]];
+          exclude?: string[];
+          replace: [string, string];
+        },
+        ...{
+          include: [string, ...string[]];
+          exclude?: string[];
+          replace: [string, string];
+        }[]
+      ];
   /**
    * Adds additional paths to try for when resolving imports.
    *
@@ -32,7 +48,7 @@ export type NoExtraneousImportOption = {
    * @see [tryExtensions](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-extraneous-import.md#tryextensions)
    */
   tryExtensions?: string[];
-};
+}
 
 /**
  * Options.
@@ -40,22 +56,22 @@ export type NoExtraneousImportOption = {
 export type NoExtraneousImportOptions = [NoExtraneousImportOption?];
 
 /**
- * This rule warns `import` declarations of extraneous modules..
+ * Disallow `import` declarations which import extraneous modules.
  *
- * @see [no-extraneous-import](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-extraneous-import.md)
+ * @see [no-extraneous-import](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-extraneous-import.md)
  */
 export type NoExtraneousImportRuleConfig = RuleConfig<NoExtraneousImportOptions>;
 
 /**
- * This rule warns `import` declarations of extraneous modules..
+ * Disallow `import` declarations which import extraneous modules.
  *
- * @see [no-extraneous-import](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-extraneous-import.md)
+ * @see [no-extraneous-import](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-extraneous-import.md)
  */
 export interface NoExtraneousImportRule {
   /**
-   * This rule warns `import` declarations of extraneous modules..
+   * Disallow `import` declarations which import extraneous modules.
    *
-   * @see [no-extraneous-import](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-extraneous-import.md)
+   * @see [no-extraneous-import](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-extraneous-import.md)
    */
   'node/no-extraneous-import': NoExtraneousImportRuleConfig;
 }

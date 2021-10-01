@@ -1,6 +1,13 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.1.0...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.1.1...main)
+
+# 1.1.1
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.1.0...1.1.1)
+
+- Automatically generate rule definitions for `node`
+- Fix rules JSDoc hovering
 
 # 1.1.0
 
@@ -11,6 +18,7 @@
   - `@typescript-eslint`
   - `jsdoc`
   - `spellcheck`
+  - `unicorn`
   - `vue`
 
 [#69]: https://github.com/Shinigami92/eslint-define-config/pull/69

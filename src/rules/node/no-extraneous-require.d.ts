@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoExtraneousRequireOption = {
+export interface NoExtraneousRequireOption {
   /**
    * Some platforms have additional embedded modules. For example, Electron has `electron` module.
    *
@@ -12,6 +12,22 @@ export type NoExtraneousRequireOption = {
    * @see [allowModules](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-extraneous-require.md#allowmodules)
    */
   allowModules?: string[];
+  convertPath?:
+    | {
+        [k: string]: [string, string];
+      }
+    | [
+        {
+          include: [string, ...string[]];
+          exclude?: string[];
+          replace: [string, string];
+        },
+        ...{
+          include: [string, ...string[]];
+          exclude?: string[];
+          replace: [string, string];
+        }[]
+      ];
   /**
    * Adds additional paths to try for when resolving a require.
    *
@@ -32,7 +48,7 @@ export type NoExtraneousRequireOption = {
    * @see [tryExtensions](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-extraneous-require.md#tryextensions)
    */
   tryExtensions?: string[];
-};
+}
 
 /**
  * Options.
@@ -40,22 +56,22 @@ export type NoExtraneousRequireOption = {
 export type NoExtraneousRequireOptions = [NoExtraneousRequireOption?];
 
 /**
- * This rule warns `require()` of extraneous modules.
+ * Disallow `require()` expressions which import extraneous modules.
  *
- * @see [no-extraneous-require](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-extraneous-require.md)
+ * @see [no-extraneous-require](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-extraneous-require.md)
  */
 export type NoExtraneousRequireRuleConfig = RuleConfig<NoExtraneousRequireOptions>;
 
 /**
- * This rule warns `require()` of extraneous modules.
+ * Disallow `require()` expressions which import extraneous modules.
  *
- * @see [no-extraneous-require](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-extraneous-require.md)
+ * @see [no-extraneous-require](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-extraneous-require.md)
  */
 export interface NoExtraneousRequireRule {
   /**
-   * This rule warns `require()` of extraneous modules.
+   * Disallow `require()` expressions which import extraneous modules.
    *
-   * @see [no-extraneous-require](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-extraneous-require.md)
+   * @see [no-extraneous-require](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-extraneous-require.md)
    */
   'node/no-extraneous-require': NoExtraneousRequireRuleConfig;
 }

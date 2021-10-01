@@ -1,54 +1,10 @@
 import type { LiteralUnion } from '../../../utility-types';
 import type { RuleConfig } from '../../rule-config';
 
-/** IgnoreValue. */
-export type IgnoreValue =
-  // ES2020:
-  | 'bigint'
-  | 'dynamicImport'
-  // ES2019:
-  | 'jsonSuperset'
-  | 'optionalCatchBinding'
-  // ES2018:
-  | 'asyncIteration'
-  | 'malformedTemplateLiterals'
-  | 'regexpLookbehind'
-  | 'regexpNamedCaptureGroups'
-  | 'regexpS'
-  | 'regexpUnicodeProperties'
-  | 'restSpreadProperties'
-  // ES2017:
-  | 'asyncFunctions'
-  | 'trailingCommasInFunctions'
-  // ES2016:
-  | 'exponentialOperators'
-  // ES2015:
-  | 'arrowFunctions'
-  | 'binaryNumericLiterals'
-  | 'blockScopedFunctions'
-  | 'blockScopedVariables'
-  | 'classes'
-  | 'computedProperties'
-  | 'defaultParameters'
-  | 'destructuring'
-  | 'forOfLoops'
-  | 'generators'
-  | 'modules'
-  | 'new.target'
-  | 'objectSuperProperties'
-  | 'octalNumericLiterals'
-  | 'propertyShorthands'
-  | 'regexpU'
-  | 'regexpY'
-  | 'restParameters'
-  | 'spreadElements'
-  | 'templateLiterals'
-  | 'unicodeCodePointEscapes';
-
 /**
  * Option.
  */
-export type NoUnsupportedFeaturesEsSyntaxRuleOption = {
+export interface NoUnsupportedFeaturesEsSyntaxOption {
   /**
    * As mentioned above, this rule reads the [engines](https://docs.npmjs.com/cli/v7/configuring-npm/package-json) field of `package.json`. But, you can overwrite the version by `version` option.
    *
@@ -62,25 +18,67 @@ export type NoUnsupportedFeaturesEsSyntaxRuleOption = {
    *
    * @see [ignores](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-syntax.md#ignores)
    */
-  ignores?: Array<LiteralUnion<IgnoreValue>>;
-};
+  ignores?: LiteralUnion<
+    | 'arrowFunctions'
+    | 'binaryNumericLiterals'
+    | 'blockScopedFunctions'
+    | 'blockScopedVariables'
+    | 'classes'
+    | 'computedProperties'
+    | 'defaultParameters'
+    | 'destructuring'
+    | 'forOfLoops'
+    | 'generators'
+    | 'modules'
+    | 'new.target'
+    | 'objectSuperProperties'
+    | 'octalNumericLiterals'
+    | 'propertyShorthands'
+    | 'regexpU'
+    | 'regexpY'
+    | 'restParameters'
+    | 'spreadElements'
+    | 'templateLiterals'
+    | 'unicodeCodePointEscapes'
+    | 'exponentialOperators'
+    | 'asyncFunctions'
+    | 'trailingCommasInFunctions'
+    | 'asyncIteration'
+    | 'malformedTemplateLiterals'
+    | 'regexpLookbehind'
+    | 'regexpNamedCaptureGroups'
+    | 'regexpS'
+    | 'regexpUnicodeProperties'
+    | 'restSpreadProperties'
+    | 'jsonSuperset'
+    | 'optionalCatchBinding'
+    | 'bigint'
+    | 'dynamicImport'
+  >[];
+}
 
 /**
  * Options.
  */
-export type NoUnsupportedFeaturesEsSyntaxRuleOptions = [NoUnsupportedFeaturesEsSyntaxRuleOption?];
+export type NoUnsupportedFeaturesEsSyntaxOptions = [NoUnsupportedFeaturesEsSyntaxOption?];
 
 /**
- * @see [node/no-unsupported-features/es-syntax](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-syntax.md)
+ * Disallow unsupported ECMAScript syntax on the specified version.
+ *
+ * @see [no-unsupported-features/es-syntax](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-unsupported-features/es-syntax.md)
  */
-export type NoUnsupportedFeaturesEsSyntaxRuleConfig = RuleConfig<NoUnsupportedFeaturesEsSyntaxRuleOptions>;
+export type NoUnsupportedFeaturesEsSyntaxRuleConfig = RuleConfig<NoUnsupportedFeaturesEsSyntaxOptions>;
 
 /**
- * @see [node/no-unsupported-features/es-syntax](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-syntax.md)
+ * Disallow unsupported ECMAScript syntax on the specified version.
+ *
+ * @see [no-unsupported-features/es-syntax](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-unsupported-features/es-syntax.md)
  */
 export interface NoUnsupportedFeaturesEsSyntaxRule {
   /**
-   * @see [node/no-unsupported-features/es-syntax](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-unsupported-features/es-syntax.md)
+   * Disallow unsupported ECMAScript syntax on the specified version.
+   *
+   * @see [no-unsupported-features/es-syntax](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-unsupported-features/es-syntax.md)
    */
   'node/no-unsupported-features/es-syntax': NoUnsupportedFeaturesEsSyntaxRuleConfig;
 }
