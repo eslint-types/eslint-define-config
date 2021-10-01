@@ -3,9 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoLoneTemplateOption = {
+export interface NoLoneTemplateOption {
   ignoreAccessible?: boolean;
-};
+}
 
 /**
  * Options.
@@ -13,20 +13,20 @@ export type NoLoneTemplateOption = {
 export type NoLoneTemplateOptions = [NoLoneTemplateOption?];
 
 /**
- * Disallow unnecessary `<template>`
+ * Disallow unnecessary `<template>`.
  *
  * @see [no-lone-template](https://eslint.vuejs.org/rules/no-lone-template.html)
  */
 export type NoLoneTemplateRuleConfig = RuleConfig<NoLoneTemplateOptions>;
 
 /**
- * Disallow unnecessary `<template>`
+ * Disallow unnecessary `<template>`.
  *
  * @see [no-lone-template](https://eslint.vuejs.org/rules/no-lone-template.html)
  */
 export interface NoLoneTemplateRule {
   /**
-   * Disallow unnecessary `<template>`
+   * Disallow unnecessary `<template>`.
    *
    * @see [no-lone-template](https://eslint.vuejs.org/rules/no-lone-template.html)
    */

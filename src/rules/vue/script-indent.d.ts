@@ -3,16 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Config.
  */
-export type ScriptIndentConfig = {
+export interface ScriptIndentConfig {
   baseIndent?: number;
   switchCase?: number;
-  ignores?: any[];
-};
+  ignores?: (string & {
+    [k: string]: any;
+  } & {
+    [k: string]: any;
+  })[];
+}
 
 /**
  * Option.
  */
-export type ScriptIndentOption = any;
+export type ScriptIndentOption = number | 'tab';
 
 /**
  * Options.
@@ -20,20 +24,20 @@ export type ScriptIndentOption = any;
 export type ScriptIndentOptions = [ScriptIndentOption?, ScriptIndentConfig?];
 
 /**
- * Enforce consistent indentation in `<script>`
+ * Enforce consistent indentation in `<script>`.
  *
  * @see [script-indent](https://eslint.vuejs.org/rules/script-indent.html)
  */
 export type ScriptIndentRuleConfig = RuleConfig<ScriptIndentOptions>;
 
 /**
- * Enforce consistent indentation in `<script>`
+ * Enforce consistent indentation in `<script>`.
  *
  * @see [script-indent](https://eslint.vuejs.org/rules/script-indent.html)
  */
 export interface ScriptIndentRule {
   /**
-   * Enforce consistent indentation in `<script>`
+   * Enforce consistent indentation in `<script>`.
    *
    * @see [script-indent](https://eslint.vuejs.org/rules/script-indent.html)
    */

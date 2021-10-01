@@ -3,7 +3,15 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoRestrictedStaticAttributeOption = any[];
+export type NoRestrictedStaticAttributeOption = (
+  | string
+  | {
+      key: string;
+      value?: string | true;
+      element?: string;
+      message?: string;
+    }
+)[];
 
 /**
  * Options.
@@ -11,20 +19,20 @@ export type NoRestrictedStaticAttributeOption = any[];
 export type NoRestrictedStaticAttributeOptions = [NoRestrictedStaticAttributeOption?];
 
 /**
- * Disallow specific attribute
+ * Disallow specific attribute.
  *
  * @see [no-restricted-static-attribute](https://eslint.vuejs.org/rules/no-restricted-static-attribute.html)
  */
 export type NoRestrictedStaticAttributeRuleConfig = RuleConfig<NoRestrictedStaticAttributeOptions>;
 
 /**
- * Disallow specific attribute
+ * Disallow specific attribute.
  *
  * @see [no-restricted-static-attribute](https://eslint.vuejs.org/rules/no-restricted-static-attribute.html)
  */
 export interface NoRestrictedStaticAttributeRule {
   /**
-   * Disallow specific attribute
+   * Disallow specific attribute.
    *
    * @see [no-restricted-static-attribute](https://eslint.vuejs.org/rules/no-restricted-static-attribute.html)
    */

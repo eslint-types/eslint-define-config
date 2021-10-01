@@ -3,14 +3,14 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoIrregularWhitespaceOption = {
+export interface NoIrregularWhitespaceOption {
   skipComments?: boolean;
   skipStrings?: boolean;
   skipTemplates?: boolean;
   skipRegExps?: boolean;
   skipHTMLAttributeValues?: boolean;
   skipHTMLTextContents?: boolean;
-};
+}
 
 /**
  * Options.
@@ -18,20 +18,20 @@ export type NoIrregularWhitespaceOption = {
 export type NoIrregularWhitespaceOptions = [NoIrregularWhitespaceOption?];
 
 /**
- * Disallow irregular whitespace
+ * Disallow irregular whitespace.
  *
  * @see [no-irregular-whitespace](https://eslint.vuejs.org/rules/no-irregular-whitespace.html)
  */
 export type NoIrregularWhitespaceRuleConfig = RuleConfig<NoIrregularWhitespaceOptions>;
 
 /**
- * Disallow irregular whitespace
+ * Disallow irregular whitespace.
  *
  * @see [no-irregular-whitespace](https://eslint.vuejs.org/rules/no-irregular-whitespace.html)
  */
 export interface NoIrregularWhitespaceRule {
   /**
-   * Disallow irregular whitespace
+   * Disallow irregular whitespace.
    *
    * @see [no-irregular-whitespace](https://eslint.vuejs.org/rules/no-irregular-whitespace.html)
    */

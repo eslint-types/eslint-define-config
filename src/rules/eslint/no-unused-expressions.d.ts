@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoUnusedExpressionsOption = {
+export interface NoUnusedExpressionsOption {
   /**
    * Set to `true` will allow you to use short circuit evaluations in your expressions.
    *
@@ -36,7 +36,7 @@ export type NoUnusedExpressionsOption = {
    * @see [enforceForJSX](https://eslint.org/docs/rules/no-unused-expressions#enforceforjsx)
    */
   enforceForJSX?: boolean;
-};
+}
 
 /**
  * Options.

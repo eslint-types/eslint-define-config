@@ -11,20 +11,20 @@ export type ThisInTemplateOption = 'always' | 'never';
 export type ThisInTemplateOptions = [ThisInTemplateOption?];
 
 /**
- * Disallow usage of `this` in template
+ * Disallow usage of `this` in template.
  *
  * @see [this-in-template](https://eslint.vuejs.org/rules/this-in-template.html)
  */
 export type ThisInTemplateRuleConfig = RuleConfig<ThisInTemplateOptions>;
 
 /**
- * Disallow usage of `this` in template
+ * Disallow usage of `this` in template.
  *
  * @see [this-in-template](https://eslint.vuejs.org/rules/this-in-template.html)
  */
 export interface ThisInTemplateRule {
   /**
-   * Disallow usage of `this` in template
+   * Disallow usage of `this` in template.
    *
    * @see [this-in-template](https://eslint.vuejs.org/rules/this-in-template.html)
    */

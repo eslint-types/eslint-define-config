@@ -3,14 +3,16 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Config.
  */
-export type OperatorLinebreakConfig = {
-  overrides?: Record<string, any>;
-};
+export interface OperatorLinebreakConfig {
+  overrides?: {
+    [k: string]: 'after' | 'before' | 'none' | 'ignore';
+  };
+}
 
 /**
  * Option.
  */
-export type OperatorLinebreakOption = 'after' | 'before' | 'none' | '';
+export type OperatorLinebreakOption = 'after' | 'before' | 'none' | null;
 
 /**
  * Options.
@@ -18,20 +20,20 @@ export type OperatorLinebreakOption = 'after' | 'before' | 'none' | '';
 export type OperatorLinebreakOptions = [OperatorLinebreakOption?, OperatorLinebreakConfig?];
 
 /**
- * Enforce consistent linebreak style for operators
+ * Enforce consistent linebreak style for operators.
  *
  * @see [operator-linebreak](https://eslint.vuejs.org/rules/operator-linebreak.html)
  */
 export type OperatorLinebreakRuleConfig = RuleConfig<OperatorLinebreakOptions>;
 
 /**
- * Enforce consistent linebreak style for operators
+ * Enforce consistent linebreak style for operators.
  *
  * @see [operator-linebreak](https://eslint.vuejs.org/rules/operator-linebreak.html)
  */
 export interface OperatorLinebreakRule {
   /**
-   * Enforce consistent linebreak style for operators
+   * Enforce consistent linebreak style for operators.
    *
    * @see [operator-linebreak](https://eslint.vuejs.org/rules/operator-linebreak.html)
    */

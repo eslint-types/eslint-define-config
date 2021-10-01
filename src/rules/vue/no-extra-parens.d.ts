@@ -3,7 +3,24 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoExtraParensOption = any;
+export type NoExtraParensOption =
+  | []
+  | ['functions']
+  | []
+  | ['all']
+  | [
+      'all',
+      {
+        conditionalAssign?: boolean;
+        nestedBinaryExpressions?: boolean;
+        returnAssign?: boolean;
+        ignoreJSX?: 'none' | 'all' | 'single-line' | 'multi-line';
+        enforceForArrowConditionals?: boolean;
+        enforceForSequenceExpressions?: boolean;
+        enforceForNewInMemberExpressions?: boolean;
+        enforceForFunctionPrototypeMethods?: boolean;
+      }
+    ];
 
 /**
  * Options.
@@ -11,20 +28,20 @@ export type NoExtraParensOption = any;
 export type NoExtraParensOptions = [NoExtraParensOption?];
 
 /**
- * Disallow unnecessary parentheses
+ * Disallow unnecessary parentheses.
  *
  * @see [no-extra-parens](https://eslint.vuejs.org/rules/no-extra-parens.html)
  */
 export type NoExtraParensRuleConfig = RuleConfig<NoExtraParensOptions>;
 
 /**
- * Disallow unnecessary parentheses
+ * Disallow unnecessary parentheses.
  *
  * @see [no-extra-parens](https://eslint.vuejs.org/rules/no-extra-parens.html)
  */
 export interface NoExtraParensRule {
   /**
-   * Disallow unnecessary parentheses
+   * Disallow unnecessary parentheses.
    *
    * @see [no-extra-parens](https://eslint.vuejs.org/rules/no-extra-parens.html)
    */

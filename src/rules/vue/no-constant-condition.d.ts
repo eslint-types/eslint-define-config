@@ -3,9 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoConstantConditionOption = {
+export interface NoConstantConditionOption {
   checkLoops?: boolean;
-};
+}
 
 /**
  * Options.
@@ -13,20 +13,20 @@ export type NoConstantConditionOption = {
 export type NoConstantConditionOptions = [NoConstantConditionOption?];
 
 /**
- * Disallow constant expressions in conditions
+ * Disallow constant expressions in conditions.
  *
  * @see [no-constant-condition](https://eslint.vuejs.org/rules/no-constant-condition.html)
  */
 export type NoConstantConditionRuleConfig = RuleConfig<NoConstantConditionOptions>;
 
 /**
- * Disallow constant expressions in conditions
+ * Disallow constant expressions in conditions.
  *
  * @see [no-constant-condition](https://eslint.vuejs.org/rules/no-constant-condition.html)
  */
 export interface NoConstantConditionRule {
   /**
-   * Disallow constant expressions in conditions
+   * Disallow constant expressions in conditions.
    *
    * @see [no-constant-condition](https://eslint.vuejs.org/rules/no-constant-condition.html)
    */

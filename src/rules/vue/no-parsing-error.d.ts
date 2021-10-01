@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoParsingErrorOption = {
+export interface NoParsingErrorOption {
   'abrupt-closing-of-empty-comment'?: boolean;
   'absence-of-digits-in-numeric-character-reference'?: boolean;
   'cdata-in-html-content'?: boolean;
@@ -40,7 +40,7 @@ export type NoParsingErrorOption = {
   'non-void-html-element-start-tag-with-trailing-solidus'?: boolean;
   'x-invalid-end-tag'?: boolean;
   'x-invalid-namespace'?: boolean;
-};
+}
 
 /**
  * Options.
@@ -48,20 +48,20 @@ export type NoParsingErrorOption = {
 export type NoParsingErrorOptions = [NoParsingErrorOption?];
 
 /**
- * Disallow parsing errors in `<template>`
+ * Disallow parsing errors in `<template>`.
  *
  * @see [no-parsing-error](https://eslint.vuejs.org/rules/no-parsing-error.html)
  */
 export type NoParsingErrorRuleConfig = RuleConfig<NoParsingErrorOptions>;
 
 /**
- * Disallow parsing errors in `<template>`
+ * Disallow parsing errors in `<template>`.
  *
  * @see [no-parsing-error](https://eslint.vuejs.org/rules/no-parsing-error.html)
  */
 export interface NoParsingErrorRule {
   /**
-   * Disallow parsing errors in `<template>`
+   * Disallow parsing errors in `<template>`.
    *
    * @see [no-parsing-error](https://eslint.vuejs.org/rules/no-parsing-error.html)
    */
