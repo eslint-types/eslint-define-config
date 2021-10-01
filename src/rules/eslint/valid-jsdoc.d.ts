@@ -26,6 +26,8 @@ export type ValidJsdocOptions = [ValidJsdocOption?];
 /**
  * Enforce valid JSDoc comments.
  *
+ * @deprecated
+ *
  * @see [valid-jsdoc](https://eslint.org/docs/rules/valid-jsdoc)
  */
 export type ValidJsdocRuleConfig = RuleConfig<ValidJsdocOptions>;
@@ -33,11 +35,15 @@ export type ValidJsdocRuleConfig = RuleConfig<ValidJsdocOptions>;
 /**
  * Enforce valid JSDoc comments.
  *
+ * @deprecated
+ *
  * @see [valid-jsdoc](https://eslint.org/docs/rules/valid-jsdoc)
  */
 export interface ValidJsdocRule {
   /**
    * Enforce valid JSDoc comments.
+   *
+   * @deprecated
    *
    * @see [valid-jsdoc](https://eslint.org/docs/rules/valid-jsdoc)
    */

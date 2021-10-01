@@ -13,6 +13,8 @@ export type HandleCallbackErrOptions = [HandleCallbackErrOption?];
 /**
  * Require error handling in callbacks.
  *
+ * @deprecated
+ *
  * @see [handle-callback-err](https://eslint.org/docs/rules/handle-callback-err)
  */
 export type HandleCallbackErrRuleConfig = RuleConfig<HandleCallbackErrOptions>;
@@ -20,11 +22,15 @@ export type HandleCallbackErrRuleConfig = RuleConfig<HandleCallbackErrOptions>;
 /**
  * Require error handling in callbacks.
  *
+ * @deprecated
+ *
  * @see [handle-callback-err](https://eslint.org/docs/rules/handle-callback-err)
  */
 export interface HandleCallbackErrRule {
   /**
    * Require error handling in callbacks.
+   *
+   * @deprecated
    *
    * @see [handle-callback-err](https://eslint.org/docs/rules/handle-callback-err)
    */
