@@ -13,6 +13,8 @@ export type CallbackReturnOptions = [CallbackReturnOption?];
 /**
  * Require `return` statements after callbacks.
  *
+ * @deprecated
+ *
  * @see [callback-return](https://eslint.org/docs/rules/callback-return)
  */
 export type CallbackReturnRuleConfig = RuleConfig<CallbackReturnOptions>;
@@ -20,11 +22,15 @@ export type CallbackReturnRuleConfig = RuleConfig<CallbackReturnOptions>;
 /**
  * Require `return` statements after callbacks.
  *
+ * @deprecated
+ *
  * @see [callback-return](https://eslint.org/docs/rules/callback-return)
  */
 export interface CallbackReturnRule {
   /**
    * Require `return` statements after callbacks.
+   *
+   * @deprecated
    *
    * @see [callback-return](https://eslint.org/docs/rules/callback-return)
    */

@@ -84,6 +84,8 @@ async function main(): Promise<void> {
         }
         const seeDocLink: string = meta?.docs?.url ? `@see [${ruleName}](${meta.docs.url})` : '';
 
+        const deprecated: boolean | undefined = meta?.deprecated;
+
         const schema: JSONSchema4 | JSONSchema4[] | undefined = meta?.schema;
         const mainSchema: JSONSchema4 | undefined = Array.isArray(schema) ? schema[0] : schema;
         const sideSchema: JSONSchema4 | undefined =
@@ -168,20 +170,38 @@ export type ${ruleNamePascalCase}Options = [${ruleNamePascalCase}Option?${
         ruleContent += `
 
   /**
-   * ${description}
+   * ${description}${
+          deprecated
+            ? `
+   *
+   * @deprecated`
+            : ''
+        }
    *
    * ${seeDocLink}
    */
   export type ${ruleNamePascalCase}RuleConfig = RuleConfig<${mainSchema ? `${ruleNamePascalCase}Options` : '[]'}>;
 
   /**
-   * ${description}
+   * ${description}${
+          deprecated
+            ? `
+   *
+   * @deprecated`
+            : ''
+        }
    *
    * ${seeDocLink}
    */
   export interface ${ruleNamePascalCase}Rule {
     /**
-     * ${description}
+     * ${description}${
+          deprecated
+            ? `
+     *
+     * @deprecated`
+            : ''
+        }
      *
      * ${seeDocLink}
      */
@@ -193,7 +213,9 @@ export type ${ruleNamePascalCase}Options = [${ruleNamePascalCase}Option?${
         ruleContent = format(ruleContent, PRETTIER_OPTIONS);
         fs.writeFileSync(rulePath, ruleContent);
       } catch (error) {
-        console.log(`Failed to generate rule ${ruleName} for ${name}`, error);
+        if (error instanceof Error) {
+          console.error(`Failed to generate rule '${ruleName}' for ${name}.\n`, error.stack, '\n');
+        }
         failedRules.push(ruleName);
       }
     }

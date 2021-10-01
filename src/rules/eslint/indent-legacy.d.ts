@@ -46,6 +46,8 @@ export type IndentLegacyOptions = [IndentLegacyOption?, IndentLegacyConfig?];
 /**
  * Enforce consistent indentation.
  *
+ * @deprecated
+ *
  * @see [indent-legacy](https://eslint.org/docs/rules/indent-legacy)
  */
 export type IndentLegacyRuleConfig = RuleConfig<IndentLegacyOptions>;
@@ -53,11 +55,15 @@ export type IndentLegacyRuleConfig = RuleConfig<IndentLegacyOptions>;
 /**
  * Enforce consistent indentation.
  *
+ * @deprecated
+ *
  * @see [indent-legacy](https://eslint.org/docs/rules/indent-legacy)
  */
 export interface IndentLegacyRule {
   /**
    * Enforce consistent indentation.
+   *
+   * @deprecated
    *
    * @see [indent-legacy](https://eslint.org/docs/rules/indent-legacy)
    */

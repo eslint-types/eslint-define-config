@@ -13,6 +13,8 @@ export type NewlineAfterVarOptions = [NewlineAfterVarOption?];
 /**
  * Require or disallow an empty line after variable declarations.
  *
+ * @deprecated
+ *
  * @see [newline-after-var](https://eslint.org/docs/rules/newline-after-var)
  */
 export type NewlineAfterVarRuleConfig = RuleConfig<NewlineAfterVarOptions>;
@@ -20,11 +22,15 @@ export type NewlineAfterVarRuleConfig = RuleConfig<NewlineAfterVarOptions>;
 /**
  * Require or disallow an empty line after variable declarations.
  *
+ * @deprecated
+ *
  * @see [newline-after-var](https://eslint.org/docs/rules/newline-after-var)
  */
 export interface NewlineAfterVarRule {
   /**
    * Require or disallow an empty line after variable declarations.
+   *
+   * @deprecated
    *
    * @see [newline-after-var](https://eslint.org/docs/rules/newline-after-var)
    */

@@ -18,6 +18,8 @@ export type NoMixedRequiresOptions = [NoMixedRequiresOption?];
 /**
  * Disallow `require` calls to be mixed with regular variable declarations.
  *
+ * @deprecated
+ *
  * @see [no-mixed-requires](https://eslint.org/docs/rules/no-mixed-requires)
  */
 export type NoMixedRequiresRuleConfig = RuleConfig<NoMixedRequiresOptions>;
@@ -25,11 +27,15 @@ export type NoMixedRequiresRuleConfig = RuleConfig<NoMixedRequiresOptions>;
 /**
  * Disallow `require` calls to be mixed with regular variable declarations.
  *
+ * @deprecated
+ *
  * @see [no-mixed-requires](https://eslint.org/docs/rules/no-mixed-requires)
  */
 export interface NoMixedRequiresRule {
   /**
    * Disallow `require` calls to be mixed with regular variable declarations.
+   *
+   * @deprecated
    *
    * @see [no-mixed-requires](https://eslint.org/docs/rules/no-mixed-requires)
    */

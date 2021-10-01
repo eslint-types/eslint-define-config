@@ -15,6 +15,8 @@ export type NoSyncOptions = [NoSyncOption?];
 /**
  * Disallow synchronous methods.
  *
+ * @deprecated
+ *
  * @see [no-sync](https://eslint.org/docs/rules/no-sync)
  */
 export type NoSyncRuleConfig = RuleConfig<NoSyncOptions>;
@@ -22,11 +24,15 @@ export type NoSyncRuleConfig = RuleConfig<NoSyncOptions>;
 /**
  * Disallow synchronous methods.
  *
+ * @deprecated
+ *
  * @see [no-sync](https://eslint.org/docs/rules/no-sync)
  */
 export interface NoSyncRule {
   /**
    * Disallow synchronous methods.
+   *
+   * @deprecated
    *
    * @see [no-sync](https://eslint.org/docs/rules/no-sync)
    */

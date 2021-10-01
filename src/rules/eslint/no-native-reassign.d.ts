@@ -15,6 +15,8 @@ export type NoNativeReassignOptions = [NoNativeReassignOption?];
 /**
  * Disallow assignments to native objects or read-only global variables.
  *
+ * @deprecated
+ *
  * @see [no-native-reassign](https://eslint.org/docs/rules/no-native-reassign)
  */
 export type NoNativeReassignRuleConfig = RuleConfig<NoNativeReassignOptions>;
@@ -22,11 +24,15 @@ export type NoNativeReassignRuleConfig = RuleConfig<NoNativeReassignOptions>;
 /**
  * Disallow assignments to native objects or read-only global variables.
  *
+ * @deprecated
+ *
  * @see [no-native-reassign](https://eslint.org/docs/rules/no-native-reassign)
  */
 export interface NoNativeReassignRule {
   /**
    * Disallow assignments to native objects or read-only global variables.
+   *
+   * @deprecated
    *
    * @see [no-native-reassign](https://eslint.org/docs/rules/no-native-reassign)
    */
