@@ -4,7 +4,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type DotNotationOption = BaseDotNotationOption & {
+export interface DotNotationOption extends BaseDotNotationOption {
   /**
    * @default false
    *
@@ -17,7 +17,8 @@ export type DotNotationOption = BaseDotNotationOption & {
    * @see [allowProtectedClassPropertyAccess](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/dot-notation.md#allowprotectedclasspropertyaccess)
    */
   allowProtectedClassPropertyAccess?: boolean;
-};
+  allowIndexSignaturePropertyAccess?: boolean;
+}
 
 /**
  * Options.
@@ -27,20 +28,20 @@ export type DotNotationOptions = [DotNotationOption?];
 /**
  * Enforce dot notation whenever possible.
  *
- * @see [dot-notation](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/dot-notation.md)
+ * @see [dot-notation](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/dot-notation.md)
  */
 export type DotNotationRuleConfig = RuleConfig<DotNotationOptions>;
 
 /**
  * Enforce dot notation whenever possible.
  *
- * @see [dot-notation](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/dot-notation.md)
+ * @see [dot-notation](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/dot-notation.md)
  */
 export interface DotNotationRule {
   /**
    * Enforce dot notation whenever possible.
    *
-   * @see [dot-notation](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/dot-notation.md)
+   * @see [dot-notation](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/dot-notation.md)
    */
   '@typescript-eslint/dot-notation': DotNotationRuleConfig;
 }

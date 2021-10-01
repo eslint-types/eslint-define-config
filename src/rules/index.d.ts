@@ -4,7 +4,7 @@ import type { JSDocRules } from './jsdoc';
 import type { NodeRules } from './node';
 import type { RuleConfig } from './rule-config';
 import type { SpellcheckRules } from './spellcheck';
-import type { TypeScriptEslintRules } from './typescript-eslint';
+import type { TypeScriptRules } from './typescript-eslint';
 import type { VueRules } from './vue';
 
 /**
@@ -14,7 +14,7 @@ import type { VueRules } from './vue';
  */
 export type Rules = Partial<
   EslintRules &
-    TypeScriptEslintRules &
+    TypeScriptRules &
     NodeRules &
     ImportRules &
     JSDocRules &

@@ -35,20 +35,20 @@ export type MaxLenOption = MaxLenSetting | number;
 export type MaxLenOptions = [MaxLenOption?, MaxLenConfig?, MaxLenSetting?];
 
 /**
- * Enforce a maximum line length
+ * Enforce a maximum line length.
  *
  * @see [max-len](https://eslint.vuejs.org/rules/max-len.html)
  */
 export type MaxLenRuleConfig = RuleConfig<MaxLenOptions>;
 
 /**
- * Enforce a maximum line length
+ * Enforce a maximum line length.
  *
  * @see [max-len](https://eslint.vuejs.org/rules/max-len.html)
  */
 export interface MaxLenRule {
   /**
-   * Enforce a maximum line length
+   * Enforce a maximum line length.
    *
    * @see [max-len](https://eslint.vuejs.org/rules/max-len.html)
    */

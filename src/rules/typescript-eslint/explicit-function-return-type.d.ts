@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type ExplicitFunctionReturnTypeOption = {
+export interface ExplicitFunctionReturnTypeOption {
   /**
    * If `true`, only functions which are part of a declaration will be checked.
    *
@@ -34,7 +34,7 @@ export type ExplicitFunctionReturnTypeOption = {
    * @default false
    */
   allowConciseArrowFunctionExpressionsStartingWithVoid?: boolean;
-};
+}
 
 /**
  * Options.
@@ -44,20 +44,20 @@ export type ExplicitFunctionReturnTypeOptions = [ExplicitFunctionReturnTypeOptio
 /**
  * Require explicit return types on functions and class methods.
  *
- * @see [explicit-function-return-type](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md)
+ * @see [explicit-function-return-type](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/explicit-function-return-type.md)
  */
 export type ExplicitFunctionReturnTypeRuleConfig = RuleConfig<ExplicitFunctionReturnTypeOptions>;
 
 /**
  * Require explicit return types on functions and class methods.
  *
- * @see [explicit-function-return-type](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md)
+ * @see [explicit-function-return-type](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/explicit-function-return-type.md)
  */
 export interface ExplicitFunctionReturnTypeRule {
   /**
    * Require explicit return types on functions and class methods.
    *
-   * @see [explicit-function-return-type](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-function-return-type.md)
+   * @see [explicit-function-return-type](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/explicit-function-return-type.md)
    */
   '@typescript-eslint/explicit-function-return-type': ExplicitFunctionReturnTypeRuleConfig;
 }

@@ -14,20 +14,20 @@ export interface DotNotationOption {
 export type DotNotationOptions = [DotNotationOption?];
 
 /**
- * Enforce dot notation whenever possible
+ * Enforce dot notation whenever possible.
  *
  * @see [dot-notation](https://eslint.vuejs.org/rules/dot-notation.html)
  */
 export type DotNotationRuleConfig = RuleConfig<DotNotationOptions>;
 
 /**
- * Enforce dot notation whenever possible
+ * Enforce dot notation whenever possible.
  *
  * @see [dot-notation](https://eslint.vuejs.org/rules/dot-notation.html)
  */
 export interface DotNotationRule {
   /**
-   * Enforce dot notation whenever possible
+   * Enforce dot notation whenever possible.
    *
    * @see [dot-notation](https://eslint.vuejs.org/rules/dot-notation.html)
    */

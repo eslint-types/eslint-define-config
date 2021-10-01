@@ -5,7 +5,12 @@ import type { RuleConfig } from '../rule-config';
  */
 export type ConsistentTypeAssertionsOption =
   | {
-      /* Empty option */
+      /**
+       * This option defines the expected assertion style.
+       *
+       * @see [assertionStyle](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-assertions.md#assertionstyle)
+       */
+      assertionStyle: 'never';
     }
   | {
       /**
@@ -26,14 +31,6 @@ export type ConsistentTypeAssertionsOption =
        * @see [objectLiteralTypeAssertions](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-assertions.md#objectliteraltypeassertions)
        */
       objectLiteralTypeAssertions?: 'allow' | 'allow-as-parameter' | 'never';
-    }
-  | {
-      /**
-       * This option defines the expected assertion style.
-       *
-       * @see [assertionStyle](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-assertions.md#assertionstyle)
-       */
-      assertionStyle: 'never';
     };
 
 /**
@@ -44,20 +41,20 @@ export type ConsistentTypeAssertionsOptions = [ConsistentTypeAssertionsOption?];
 /**
  * Enforces consistent usage of type assertions.
  *
- * @see [consistent-type-assertions](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-assertions.md)
+ * @see [consistent-type-assertions](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/consistent-type-assertions.md)
  */
 export type ConsistentTypeAssertionsRuleConfig = RuleConfig<ConsistentTypeAssertionsOptions>;
 
 /**
  * Enforces consistent usage of type assertions.
  *
- * @see [consistent-type-assertions](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-assertions.md)
+ * @see [consistent-type-assertions](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/consistent-type-assertions.md)
  */
 export interface ConsistentTypeAssertionsRule {
   /**
    * Enforces consistent usage of type assertions.
    *
-   * @see [consistent-type-assertions](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-assertions.md)
+   * @see [consistent-type-assertions](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/consistent-type-assertions.md)
    */
   '@typescript-eslint/consistent-type-assertions': ConsistentTypeAssertionsRuleConfig;
 }
