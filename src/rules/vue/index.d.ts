@@ -45,7 +45,6 @@ import type { NewLineBetweenMultiLinePropertyRule } from './new-line-between-mul
 import type { NextTickStyleRule } from './next-tick-style';
 import type { NoArrowFunctionsInWatchRule } from './no-arrow-functions-in-watch';
 import type { NoAsyncInComputedPropertiesRule } from './no-async-in-computed-properties';
-import type { NoBareStringsInTemplateRule } from './no-bare-strings-in-template';
 import type { NoBooleanDefaultRule } from './no-boolean-default';
 import type { NoConfusingVForVIfRule } from './no-confusing-v-for-v-if';
 import type { NoConstantConditionRule } from './no-constant-condition';
@@ -240,7 +239,6 @@ export type VueRules = ArrayBracketNewlineRule &
   NextTickStyleRule &
   NoArrowFunctionsInWatchRule &
   NoAsyncInComputedPropertiesRule &
-  NoBareStringsInTemplateRule &
   NoBooleanDefaultRule &
   NoConfusingVForVIfRule &
   NoConstantConditionRule &

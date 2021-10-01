@@ -3,28 +3,33 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type CurlyOption = 'all' | 'multi' | 'multi-line' | 'multi-or-nest' | 'ignore';
+export type CurlyOption =
+  | []
+  | ['all']
+  | []
+  | ['multi' | 'multi-line' | 'multi-or-nest']
+  | ['multi' | 'multi-line' | 'multi-or-nest', 'consistent'];
 
 /**
  * Options.
  */
-export type CurlyOptions = [CurlyOption?] | [('multi' | 'multi-line' | 'multi-or-nest')?, 'consistent'?];
+export type CurlyOptions = [CurlyOption?];
 
 /**
- * Require Following Curly Brace Conventions.
+ * Enforce consistent brace style for all control statements.
  *
  * @see [curly](https://eslint.org/docs/rules/curly)
  */
 export type CurlyRuleConfig = RuleConfig<CurlyOptions>;
 
 /**
- * Require Following Curly Brace Conventions.
+ * Enforce consistent brace style for all control statements.
  *
  * @see [curly](https://eslint.org/docs/rules/curly)
  */
 export interface CurlyRule {
   /**
-   * Require Following Curly Brace Conventions.
+   * Enforce consistent brace style for all control statements.
    *
    * @see [curly](https://eslint.org/docs/rules/curly)
    */

@@ -3,10 +3,10 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Config.
  */
-export type ObjectCurlySpacingConfig = {
+export interface ObjectCurlySpacingConfig {
   arraysInObjects?: boolean;
   objectsInObjects?: boolean;
-};
+}
 
 /**
  * Option.
@@ -19,20 +19,20 @@ export type ObjectCurlySpacingOption = 'always' | 'never';
 export type ObjectCurlySpacingOptions = [ObjectCurlySpacingOption?, ObjectCurlySpacingConfig?];
 
 /**
- * Enforce consistent spacing inside braces
+ * Enforce consistent spacing inside braces.
  *
  * @see [object-curly-spacing](https://eslint.vuejs.org/rules/object-curly-spacing.html)
  */
 export type ObjectCurlySpacingRuleConfig = RuleConfig<ObjectCurlySpacingOptions>;
 
 /**
- * Enforce consistent spacing inside braces
+ * Enforce consistent spacing inside braces.
  *
  * @see [object-curly-spacing](https://eslint.vuejs.org/rules/object-curly-spacing.html)
  */
 export interface ObjectCurlySpacingRule {
   /**
-   * Enforce consistent spacing inside braces
+   * Enforce consistent spacing inside braces.
    *
    * @see [object-curly-spacing](https://eslint.vuejs.org/rules/object-curly-spacing.html)
    */

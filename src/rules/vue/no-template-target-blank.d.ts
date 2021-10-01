@@ -3,10 +3,10 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoTemplateTargetBlankOption = {
+export interface NoTemplateTargetBlankOption {
   allowReferrer?: boolean;
-  enforceDynamicLinks?: any;
-};
+  enforceDynamicLinks?: 'always' | 'never';
+}
 
 /**
  * Options.
@@ -14,20 +14,20 @@ export type NoTemplateTargetBlankOption = {
 export type NoTemplateTargetBlankOptions = [NoTemplateTargetBlankOption?];
 
 /**
- * Disallow target="_blank" attribute without rel="noopener noreferrer"
+ * Disallow target="_blank" attribute without rel="noopener noreferrer".
  *
  * @see [no-template-target-blank](https://eslint.vuejs.org/rules/no-template-target-blank.html)
  */
 export type NoTemplateTargetBlankRuleConfig = RuleConfig<NoTemplateTargetBlankOptions>;
 
 /**
- * Disallow target="_blank" attribute without rel="noopener noreferrer"
+ * Disallow target="_blank" attribute without rel="noopener noreferrer".
  *
  * @see [no-template-target-blank](https://eslint.vuejs.org/rules/no-template-target-blank.html)
  */
 export interface NoTemplateTargetBlankRule {
   /**
-   * Disallow target="_blank" attribute without rel="noopener noreferrer"
+   * Disallow target="_blank" attribute without rel="noopener noreferrer".
    *
    * @see [no-template-target-blank](https://eslint.vuejs.org/rules/no-template-target-blank.html)
    */

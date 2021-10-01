@@ -1,11 +1,21 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Option.
+ */
+export type IdDenylistOption = string[];
+
+/**
+ * Options.
+ */
+export type IdDenylistOptions = [IdDenylistOption?];
+
+/**
  * Disallow specified identifiers.
  *
  * @see [id-denylist](https://eslint.org/docs/rules/id-denylist)
  */
-export type IdDenylistRuleConfig = RuleConfig<string[]>;
+export type IdDenylistRuleConfig = RuleConfig<IdDenylistOptions>;
 
 /**
  * Disallow specified identifiers.
@@ -19,8 +29,4 @@ export interface IdDenylistRule {
    * @see [id-denylist](https://eslint.org/docs/rules/id-denylist)
    */
   'id-denylist': IdDenylistRuleConfig;
-  /**
-   * @deprecated Use `id-denylist` instead.
-   */
-  'id-blacklist'?: IdDenylistRuleConfig;
 }

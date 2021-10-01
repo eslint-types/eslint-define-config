@@ -1,20 +1,20 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- * Require template literals instead of string concatenation
+ * Require template literals instead of string concatenation.
  *
  * @see [prefer-template](https://eslint.vuejs.org/rules/prefer-template.html)
  */
 export type PreferTemplateRuleConfig = RuleConfig<[]>;
 
 /**
- * Require template literals instead of string concatenation
+ * Require template literals instead of string concatenation.
  *
  * @see [prefer-template](https://eslint.vuejs.org/rules/prefer-template.html)
  */
 export interface PreferTemplateRule {
   /**
-   * Require template literals instead of string concatenation
+   * Require template literals instead of string concatenation.
    *
    * @see [prefer-template](https://eslint.vuejs.org/rules/prefer-template.html)
    */

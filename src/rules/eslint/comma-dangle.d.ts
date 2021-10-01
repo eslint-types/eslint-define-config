@@ -1,29 +1,34 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- * Values for comma dangle.
+ * Option.
  */
-export type CommaDangleOptionValue = 'never' | 'always' | 'always-multiline' | 'only-multiline' | 'ignore';
+export type CommaDangleOption =
+  | []
+  | [
+      | Value
+      | {
+          arrays?: ValueWithIgnore;
+          objects?: ValueWithIgnore;
+          imports?: ValueWithIgnore;
+          exports?: ValueWithIgnore;
+          functions?: ValueWithIgnore;
+        }
+    ];
+export type Value = 'always-multiline' | 'always' | 'never' | 'only-multiline';
+export type ValueWithIgnore = 'always-multiline' | 'always' | 'ignore' | 'never' | 'only-multiline';
 
 /**
  * Options.
  */
-export type CommaDangleOption =
-  | CommaDangleOptionValue
-  | {
-      arrays?: CommaDangleOptionValue;
-      objects?: CommaDangleOptionValue;
-      imports?: CommaDangleOptionValue;
-      exports?: CommaDangleOptionValue;
-      functions?: CommaDangleOptionValue;
-    };
+export type CommaDangleOptions = [CommaDangleOption?];
 
 /**
  * Require or disallow trailing commas.
  *
  * @see [comma-dangle](https://eslint.org/docs/rules/comma-dangle)
  */
-export type CommaDangleRuleConfig = RuleConfig<[CommaDangleOption?]>;
+export type CommaDangleRuleConfig = RuleConfig<CommaDangleOptions>;
 
 /**
  * Require or disallow trailing commas.

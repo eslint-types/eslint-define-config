@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type PreferConstOption = {
+export interface PreferConstOption {
   /**
    * The kind of the way to address variables in destructuring.
    *
@@ -22,7 +22,7 @@ export type PreferConstOption = {
    * @see [ignoreReadBeforeAssign](https://eslint.org/docs/rules/prefer-const#ignorereadbeforeassign)
    */
   ignoreReadBeforeAssign?: boolean;
-};
+}
 
 /**
  * Options.
@@ -30,20 +30,20 @@ export type PreferConstOption = {
 export type PreferConstOptions = [PreferConstOption?];
 
 /**
- * Suggest using `const`.
+ * Require `const` declarations for variables that are never reassigned after declared.
  *
  * @see [prefer-const](https://eslint.org/docs/rules/prefer-const)
  */
 export type PreferConstRuleConfig = RuleConfig<PreferConstOptions>;
 
 /**
- * Suggest using `const`.
+ * Require `const` declarations for variables that are never reassigned after declared.
  *
  * @see [prefer-const](https://eslint.org/docs/rules/prefer-const)
  */
 export interface PreferConstRule {
   /**
-   * Suggest using `const`.
+   * Require `const` declarations for variables that are never reassigned after declared.
    *
    * @see [prefer-const](https://eslint.org/docs/rules/prefer-const)
    */

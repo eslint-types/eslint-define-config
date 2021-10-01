@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type GroupedAccessorPairsOption = 'getBeforeSet' | 'setBeforeGet';
+export type GroupedAccessorPairsOption = 'anyOrder' | 'getBeforeSet' | 'setBeforeGet';
 
 /**
  * Options.

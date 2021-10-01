@@ -1,9 +1,14 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Option.
+ */
+export type MaxClassesPerFileOption = number;
+
+/**
  * Options.
  */
-export type MaxClassesPerFileOptions = [number?];
+export type MaxClassesPerFileOptions = [MaxClassesPerFileOption?];
 
 /**
  * Enforce a maximum number of classes per file.

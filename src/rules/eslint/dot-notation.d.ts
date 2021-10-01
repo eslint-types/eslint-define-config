@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type DotNotationOption = {
+export interface DotNotationOption {
   /**
    * Set to `false` to follow ECMAScript version 3 compatible style, avoiding dot notation for reserved word properties.
    *
@@ -19,8 +19,8 @@ export type DotNotationOption = {
    *
    * @see [allowPattern](https://eslint.org/docs/rules/dot-notation#allowpattern)
    */
-  allowPattern?: boolean;
-};
+  allowPattern?: string;
+}
 
 /**
  * Options.
@@ -28,20 +28,20 @@ export type DotNotationOption = {
 export type DotNotationOptions = [DotNotationOption?];
 
 /**
- * Require Dot Notation.
+ * Enforce dot notation whenever possible.
  *
  * @see [dot-notation](https://eslint.org/docs/rules/dot-notation)
  */
 export type DotNotationRuleConfig = RuleConfig<DotNotationOptions>;
 
 /**
- * Require Dot Notation.
+ * Enforce dot notation whenever possible.
  *
  * @see [dot-notation](https://eslint.org/docs/rules/dot-notation)
  */
 export interface DotNotationRule {
   /**
-   * Require Dot Notation.
+   * Enforce dot notation whenever possible.
    *
    * @see [dot-notation](https://eslint.org/docs/rules/dot-notation)
    */

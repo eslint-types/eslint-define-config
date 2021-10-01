@@ -11,20 +11,20 @@ export type NoBooleanDefaultOption = 'default-false' | 'no-default';
 export type NoBooleanDefaultOptions = [NoBooleanDefaultOption?];
 
 /**
- * Disallow boolean defaults
+ * Disallow boolean defaults.
  *
  * @see [no-boolean-default](https://eslint.vuejs.org/rules/no-boolean-default.html)
  */
 export type NoBooleanDefaultRuleConfig = RuleConfig<NoBooleanDefaultOptions>;
 
 /**
- * Disallow boolean defaults
+ * Disallow boolean defaults.
  *
  * @see [no-boolean-default](https://eslint.vuejs.org/rules/no-boolean-default.html)
  */
 export interface NoBooleanDefaultRule {
   /**
-   * Disallow boolean defaults
+   * Disallow boolean defaults.
    *
    * @see [no-boolean-default](https://eslint.vuejs.org/rules/no-boolean-default.html)
    */

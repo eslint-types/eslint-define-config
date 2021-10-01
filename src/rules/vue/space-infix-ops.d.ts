@@ -3,9 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type SpaceInfixOpsOption = {
+export interface SpaceInfixOpsOption {
   int32Hint?: boolean;
-};
+}
 
 /**
  * Options.
@@ -13,20 +13,20 @@ export type SpaceInfixOpsOption = {
 export type SpaceInfixOpsOptions = [SpaceInfixOpsOption?];
 
 /**
- * Require spacing around infix operators
+ * Require spacing around infix operators.
  *
  * @see [space-infix-ops](https://eslint.vuejs.org/rules/space-infix-ops.html)
  */
 export type SpaceInfixOpsRuleConfig = RuleConfig<SpaceInfixOpsOptions>;
 
 /**
- * Require spacing around infix operators
+ * Require spacing around infix operators.
  *
  * @see [space-infix-ops](https://eslint.vuejs.org/rules/space-infix-ops.html)
  */
 export interface SpaceInfixOpsRule {
   /**
-   * Require spacing around infix operators
+   * Require spacing around infix operators.
    *
    * @see [space-infix-ops](https://eslint.vuejs.org/rules/space-infix-ops.html)
    */

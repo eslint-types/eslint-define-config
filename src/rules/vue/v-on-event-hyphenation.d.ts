@@ -3,10 +3,14 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Config.
  */
-export type VOnEventHyphenationConfig = {
+export interface VOnEventHyphenationConfig {
   autofix?: boolean;
-  ignore?: any[];
-};
+  ignore?: (string & {
+    [k: string]: any;
+  } & {
+    [k: string]: any;
+  })[];
+}
 
 /**
  * Option.
@@ -19,20 +23,20 @@ export type VOnEventHyphenationOption = 'always' | 'never';
 export type VOnEventHyphenationOptions = [VOnEventHyphenationOption?, VOnEventHyphenationConfig?];
 
 /**
- * Enforce v-on event naming style on custom components in template
+ * Enforce v-on event naming style on custom components in template.
  *
  * @see [v-on-event-hyphenation](https://eslint.vuejs.org/rules/v-on-event-hyphenation.html)
  */
 export type VOnEventHyphenationRuleConfig = RuleConfig<VOnEventHyphenationOptions>;
 
 /**
- * Enforce v-on event naming style on custom components in template
+ * Enforce v-on event naming style on custom components in template.
  *
  * @see [v-on-event-hyphenation](https://eslint.vuejs.org/rules/v-on-event-hyphenation.html)
  */
 export interface VOnEventHyphenationRule {
   /**
-   * Enforce v-on event naming style on custom components in template
+   * Enforce v-on event naming style on custom components in template.
    *
    * @see [v-on-event-hyphenation](https://eslint.vuejs.org/rules/v-on-event-hyphenation.html)
    */
