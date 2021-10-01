@@ -1,51 +1,38 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Setting.
+ */
+export interface MaxLenSetting {
+  code?: number;
+  template?: number;
+  comments?: number;
+  tabWidth?: number;
+  ignorePattern?: string;
+  ignoreComments?: boolean;
+  ignoreTrailingComments?: boolean;
+  ignoreUrls?: boolean;
+  ignoreStrings?: boolean;
+  ignoreTemplateLiterals?: boolean;
+  ignoreRegExpLiterals?: boolean;
+  ignoreHTMLAttributeValues?: boolean;
+  ignoreHTMLTextContents?: boolean;
+}
+
+/**
  * Config.
  */
-export type MaxLenConfig =
-  | {
-      code?: number;
-      template?: number;
-      comments?: number;
-      tabWidth?: number;
-      ignorePattern?: string;
-      ignoreComments?: boolean;
-      ignoreTrailingComments?: boolean;
-      ignoreUrls?: boolean;
-      ignoreStrings?: boolean;
-      ignoreTemplateLiterals?: boolean;
-      ignoreRegExpLiterals?: boolean;
-      ignoreHTMLAttributeValues?: boolean;
-      ignoreHTMLTextContents?: boolean;
-    }
-  | number;
+export type MaxLenConfig = MaxLenSetting | number;
 
 /**
  * Option.
  */
-export type MaxLenOption =
-  | {
-      code?: number;
-      template?: number;
-      comments?: number;
-      tabWidth?: number;
-      ignorePattern?: string;
-      ignoreComments?: boolean;
-      ignoreTrailingComments?: boolean;
-      ignoreUrls?: boolean;
-      ignoreStrings?: boolean;
-      ignoreTemplateLiterals?: boolean;
-      ignoreRegExpLiterals?: boolean;
-      ignoreHTMLAttributeValues?: boolean;
-      ignoreHTMLTextContents?: boolean;
-    }
-  | number;
+export type MaxLenOption = MaxLenSetting | number;
 
 /**
  * Options.
  */
-export type MaxLenOptions = [MaxLenOption?, MaxLenConfig?];
+export type MaxLenOptions = [MaxLenOption?, MaxLenConfig?, MaxLenSetting?];
 
 /**
  * Enforce a maximum line length
