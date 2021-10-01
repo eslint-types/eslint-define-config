@@ -5,6 +5,7 @@ import type { NodeRules } from './node';
 import type { RuleConfig } from './rule-config';
 import type { SpellcheckRules } from './spellcheck';
 import type { TypeScriptRules } from './typescript-eslint';
+import type { UnicornRules } from './unicorn';
 import type { VueRules } from './vue';
 
 /**
@@ -14,11 +15,12 @@ import type { VueRules } from './vue';
  */
 export type Rules = Partial<
   EslintRules &
-    TypeScriptRules &
-    NodeRules &
     ImportRules &
     JSDocRules &
+    NodeRules &
     SpellcheckRules &
+    TypeScriptRules &
+    UnicornRules &
     VueRules &
     Record<string, RuleConfig>
 >;

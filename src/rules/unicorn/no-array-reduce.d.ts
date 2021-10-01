@@ -1,0 +1,35 @@
+import type { RuleConfig } from '../rule-config';
+
+/**
+ * Option.
+ */
+export interface NoArrayReduceOption {
+  allowSimpleOperations?: boolean;
+  [k: string]: any;
+}
+
+/**
+ * Options.
+ */
+export type NoArrayReduceOptions = [NoArrayReduceOption?];
+
+/**
+ * Disallow `Array#reduce()` and `Array#reduceRight()`.
+ *
+ * @see [no-array-reduce](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v36.0.0/docs/rules/no-array-reduce.md)
+ */
+export type NoArrayReduceRuleConfig = RuleConfig<NoArrayReduceOptions>;
+
+/**
+ * Disallow `Array#reduce()` and `Array#reduceRight()`.
+ *
+ * @see [no-array-reduce](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v36.0.0/docs/rules/no-array-reduce.md)
+ */
+export interface NoArrayReduceRule {
+  /**
+   * Disallow `Array#reduce()` and `Array#reduceRight()`.
+   *
+   * @see [no-array-reduce](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v36.0.0/docs/rules/no-array-reduce.md)
+   */
+  'unicorn/no-array-reduce': NoArrayReduceRuleConfig;
+}

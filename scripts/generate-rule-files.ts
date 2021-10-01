@@ -8,6 +8,8 @@ import eslintPluginJSDoc from 'eslint-plugin-jsdoc';
 // @ts-expect-error
 import eslintPluginSpellcheck from 'eslint-plugin-spellcheck';
 // @ts-expect-error
+import eslintPluginUnicorn from 'eslint-plugin-unicorn';
+// @ts-expect-error
 import eslintPluginVue from 'eslint-plugin-vue';
 import * as fs from 'fs';
 import type { JSONSchema4 } from 'json-schema';
@@ -40,6 +42,11 @@ const generationMap: Record<string, Plugin> = {
     name: 'Eslint',
     rules: Object.fromEntries(new eslint.Linter().getRules().entries())
   },
+  'typescript-eslint': {
+    name: 'TypeScript',
+    prefix: '@typescript-eslint',
+    rules: (eslintPluginTypeScript as Plugin).rules
+  },
   jsdoc: {
     name: 'JSDoc',
     rules: (eslintPluginJSDoc as Plugin).rules
@@ -48,10 +55,9 @@ const generationMap: Record<string, Plugin> = {
     name: 'Spellcheck',
     rules: (eslintPluginSpellcheck as Plugin).rules
   },
-  'typescript-eslint': {
-    name: 'TypeScript',
-    prefix: '@typescript-eslint',
-    rules: (eslintPluginTypeScript as Plugin).rules
+  unicorn: {
+    name: 'Unicorn',
+    rules: (eslintPluginUnicorn as Plugin).rules
   },
   vue: {
     name: 'Vue',

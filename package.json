@@ -51,6 +51,7 @@
     "eslint-plugin-jsdoc": "~36.1.0",
     "eslint-plugin-prettier": "~4.0.0",
     "eslint-plugin-spellcheck": "~0.0.19",
+    "eslint-plugin-unicorn": "~36.0.0",
     "eslint-plugin-vue": "~7.18.0",
     "esno": "~0.10.0",
     "json-schema-to-typescript": "~10.1.5",
