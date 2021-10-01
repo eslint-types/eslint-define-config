@@ -1,6 +1,18 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Config.
+ */
+export type HtmlIndentConfig = {
+  attribute?: number;
+  baseIndent?: number;
+  closeBracket?: any;
+  switchCase?: number;
+  alignAttributesVertically?: boolean;
+  ignores?: any[];
+};
+
+/**
  * Option.
  */
 export type HtmlIndentOption = any;
@@ -8,7 +20,7 @@ export type HtmlIndentOption = any;
 /**
  * Options.
  */
-export type HtmlIndentOptions = [HtmlIndentOption?];
+export type HtmlIndentOptions = [HtmlIndentOption?, HtmlIndentConfig?];
 
 /**
  * Enforce consistent indentation in `<template>`

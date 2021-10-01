@@ -1,6 +1,13 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Config.
+ */
+export type AttributeHyphenationConfig = {
+  ignore?: any[];
+};
+
+/**
  * Option.
  */
 export type AttributeHyphenationOption = 'always' | 'never';
@@ -8,7 +15,7 @@ export type AttributeHyphenationOption = 'always' | 'never';
 /**
  * Options.
  */
-export type AttributeHyphenationOptions = [AttributeHyphenationOption?];
+export type AttributeHyphenationOptions = [AttributeHyphenationOption?, AttributeHyphenationConfig?];
 
 /**
  * Enforce attribute naming style on custom components in template

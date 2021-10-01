@@ -1,6 +1,14 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Config.
+ */
+export type ObjectCurlySpacingConfig = {
+  arraysInObjects?: boolean;
+  objectsInObjects?: boolean;
+};
+
+/**
  * Option.
  */
 export type ObjectCurlySpacingOption = 'always' | 'never';
@@ -8,7 +16,7 @@ export type ObjectCurlySpacingOption = 'always' | 'never';
 /**
  * Options.
  */
-export type ObjectCurlySpacingOptions = [ObjectCurlySpacingOption?];
+export type ObjectCurlySpacingOptions = [ObjectCurlySpacingOption?, ObjectCurlySpacingConfig?];
 
 /**
  * Enforce consistent spacing inside braces

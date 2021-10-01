@@ -1,6 +1,15 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Config.
+ */
+export type ScriptIndentConfig = {
+  baseIndent?: number;
+  switchCase?: number;
+  ignores?: any[];
+};
+
+/**
  * Option.
  */
 export type ScriptIndentOption = any;
@@ -8,7 +17,7 @@ export type ScriptIndentOption = any;
 /**
  * Options.
  */
-export type ScriptIndentOptions = [ScriptIndentOption?];
+export type ScriptIndentOptions = [ScriptIndentOption?, ScriptIndentConfig?];
 
 /**
  * Enforce consistent indentation in `<script>`

@@ -20,17 +20,13 @@ export type TagLinesConfig = {
    * @see [noEndLines](https://github.com/gajus/eslint-plugin-jsdoc#noendlines-defaults-to-false)
    */
   noEndLines?: boolean;
+  tags?: Record<string, any>;
 };
-
-/**
- * Values for tag lines.
- */
-export type TagLinesOptionValue = 'always' | 'never';
 
 /**
  * Option.
  */
-export type TagLinesOption = TagLinesOptionValue;
+export type TagLinesOption = 'always' | 'any' | 'never';
 
 /**
  * Options.

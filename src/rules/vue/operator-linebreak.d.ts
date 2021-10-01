@@ -1,6 +1,13 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Config.
+ */
+export type OperatorLinebreakConfig = {
+  overrides?: Record<string, any>;
+};
+
+/**
  * Option.
  */
 export type OperatorLinebreakOption = 'after' | 'before' | 'none' | '';
@@ -8,7 +15,7 @@ export type OperatorLinebreakOption = 'after' | 'before' | 'none' | '';
 /**
  * Options.
  */
-export type OperatorLinebreakOptions = [OperatorLinebreakOption?];
+export type OperatorLinebreakOptions = [OperatorLinebreakOption?, OperatorLinebreakConfig?];
 
 /**
  * Enforce consistent linebreak style for operators

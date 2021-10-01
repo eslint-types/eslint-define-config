@@ -1,6 +1,15 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Config.
+ */
+export type CheckLineAlignmentConfig = {
+  customSpacings?: any;
+  preserveMainDescriptionPostDelimiter?: boolean;
+  tags?: any[];
+};
+
+/**
  * Option.
  */
 export type CheckLineAlignmentOption = 'always' | 'never';
@@ -8,7 +17,7 @@ export type CheckLineAlignmentOption = 'always' | 'never';
 /**
  * Options.
  */
-export type CheckLineAlignmentOptions = [CheckLineAlignmentOption?];
+export type CheckLineAlignmentOptions = [CheckLineAlignmentOption?, CheckLineAlignmentConfig?];
 
 /**
  * Reports invalid alignment of JSDoc block lines.

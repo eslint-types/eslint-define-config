@@ -1,6 +1,14 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Config.
+ */
+export type ComponentNameInTemplateCasingConfig = {
+  ignores?: any[];
+  registeredComponentsOnly?: boolean;
+};
+
+/**
  * Option.
  */
 export type ComponentNameInTemplateCasingOption = 'PascalCase' | 'kebab-case';
@@ -8,7 +16,10 @@ export type ComponentNameInTemplateCasingOption = 'PascalCase' | 'kebab-case';
 /**
  * Options.
  */
-export type ComponentNameInTemplateCasingOptions = [ComponentNameInTemplateCasingOption?];
+export type ComponentNameInTemplateCasingOptions = [
+  ComponentNameInTemplateCasingOption?,
+  ComponentNameInTemplateCasingConfig?
+];
 
 /**
  * Enforce specific casing for the component naming style in template

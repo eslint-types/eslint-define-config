@@ -1,6 +1,14 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Config.
+ */
+export type VOnEventHyphenationConfig = {
+  autofix?: boolean;
+  ignore?: any[];
+};
+
+/**
  * Option.
  */
 export type VOnEventHyphenationOption = 'always' | 'never';
@@ -8,7 +16,7 @@ export type VOnEventHyphenationOption = 'always' | 'never';
 /**
  * Options.
  */
-export type VOnEventHyphenationOptions = [VOnEventHyphenationOption?];
+export type VOnEventHyphenationOptions = [VOnEventHyphenationOption?, VOnEventHyphenationConfig?];
 
 /**
  * Enforce v-on event naming style on custom components in template

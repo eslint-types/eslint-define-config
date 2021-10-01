@@ -1,4 +1,4 @@
-import { LiteralUnion } from '../../utility-types';
+import type { LiteralUnion } from '../../utility-types';
 import type { RuleConfig } from '../rule-config';
 
 /**
@@ -25,6 +25,7 @@ export type SpellCheckerOption = {
    * Options are: "en_US", "en_CA", "en_AU", and "en_GB".
    */
   lang?: LiteralUnion<'en_US' | 'en_CA' | 'en_AU' | 'en_GB'>;
+  langDir?: string;
   /** Array of words that will not be checked. */
   skipWords?: string[];
   /**

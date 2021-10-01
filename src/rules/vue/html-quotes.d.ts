@@ -1,6 +1,13 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Config.
+ */
+export type HtmlQuotesConfig = {
+  avoidEscape?: boolean;
+};
+
+/**
  * Option.
  */
 export type HtmlQuotesOption = 'double' | 'single';
@@ -8,7 +15,7 @@ export type HtmlQuotesOption = 'double' | 'single';
 /**
  * Options.
  */
-export type HtmlQuotesOptions = [HtmlQuotesOption?];
+export type HtmlQuotesOptions = [HtmlQuotesOption?, HtmlQuotesConfig?];
 
 /**
  * Enforce quotes style of HTML attributes

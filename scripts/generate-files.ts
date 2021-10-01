@@ -137,6 +137,15 @@ for (const pluginName in generationMap) {
     }
     // TODO: vue/max-len has also a third schema
     if (mainSchema) {
+      if (sideSchema) {
+        ruleContent += `
+
+/**
+ * Config.
+ */
+export type ${ruleNamePascalCase}Config = ${generateOptionType(sideSchema)}`;
+      }
+
       ruleContent += `
 
 /**
@@ -147,7 +156,9 @@ export type ${ruleNamePascalCase}Option = ${generateOptionType(mainSchema)}
 /**
  * Options.
  */
-export type ${ruleNamePascalCase}Options = [${ruleNamePascalCase}Option?];`;
+export type ${ruleNamePascalCase}Options = [${ruleNamePascalCase}Option?${
+        sideSchema ? `, ${ruleNamePascalCase}Config?` : ''
+      }];`;
     }
 
     // TODO: Add side and third option

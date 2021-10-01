@@ -1,6 +1,11 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Config.
+ */
+export type MaxLenConfig = any;
+
+/**
  * Option.
  */
 export type MaxLenOption = any;
@@ -8,7 +13,7 @@ export type MaxLenOption = any;
 /**
  * Options.
  */
-export type MaxLenOptions = [MaxLenOption?];
+export type MaxLenOptions = [MaxLenOption?, MaxLenConfig?];
 
 /**
  * Enforce a maximum line length
