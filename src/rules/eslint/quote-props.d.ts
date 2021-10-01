@@ -41,7 +41,7 @@ export type QuotePropsOption =
 /**
  * Options.
  */
-export type QuotePropsOptions = [QuotePropsOption?];
+export type QuotePropsOptions = QuotePropsOption;
 
 /**
  * Require quotes around object literal property names.

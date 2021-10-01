@@ -16,7 +16,7 @@ export type NoRestrictedStaticAttributeOption = (
 /**
  * Options.
  */
-export type NoRestrictedStaticAttributeOptions = [NoRestrictedStaticAttributeOption?];
+export type NoRestrictedStaticAttributeOptions = NoRestrictedStaticAttributeOption;
 
 /**
  * Disallow specific attribute.

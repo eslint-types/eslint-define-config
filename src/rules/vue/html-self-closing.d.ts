@@ -21,7 +21,7 @@ export type OptionValue = 'always' | 'never' | 'any';
 /**
  * Options.
  */
-export type HtmlSelfClosingOptions = [HtmlSelfClosingOption?];
+export type HtmlSelfClosingOptions = HtmlSelfClosingOption;
 
 /**
  * Enforce self-closing style.

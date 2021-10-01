@@ -87,6 +87,7 @@ async function main(): Promise<void> {
         const deprecated: boolean | undefined = meta?.deprecated;
 
         const schema: JSONSchema4 | JSONSchema4[] | undefined = meta?.schema;
+        const schemaIsObject: boolean = !Array.isArray(schema);
         const mainSchema: JSONSchema4 | undefined = Array.isArray(schema) ? schema[0] : schema;
         const sideSchema: JSONSchema4 | undefined =
           schema && Array.isArray(schema) && schema.length > 1 ? schema[1] : undefined;
@@ -160,9 +161,15 @@ ${ruleOption}
 /**
  * Options.
  */
-export type ${ruleNamePascalCase}Options = [${ruleNamePascalCase}Option?${
-            sideSchema ? `, ${ruleNamePascalCase}Config?${thirdSchema ? `, ${ruleNamePascalCase}Setting?` : ''}` : ''
-          }];`;
+export type ${ruleNamePascalCase}Options = ${
+            schemaIsObject
+              ? `${ruleNamePascalCase}Option`
+              : `[${ruleNamePascalCase}Option?${
+                  sideSchema
+                    ? `, ${ruleNamePascalCase}Config?${thirdSchema ? `, ${ruleNamePascalCase}Setting?` : ''}`
+                    : ''
+                }]`
+          };`;
         }
 
         // TODO: Add third option

@@ -28,7 +28,7 @@ export type ObjectShorthandOption =
 /**
  * Options.
  */
-export type ObjectShorthandOptions = [ObjectShorthandOption?];
+export type ObjectShorthandOptions = ObjectShorthandOption;
 
 /**
  * Require or disallow method and property shorthand syntax for object literals.

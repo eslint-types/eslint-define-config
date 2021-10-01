@@ -22,7 +22,7 @@ export type CustomEventNameCasingOption =
 /**
  * Options.
  */
-export type CustomEventNameCasingOptions = [CustomEventNameCasingOption?];
+export type CustomEventNameCasingOptions = CustomEventNameCasingOption;
 
 /**
  * Enforce specific casing for custom event name.

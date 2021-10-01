@@ -8,7 +8,7 @@ export type IdDenylistOption = string[];
 /**
  * Options.
  */
-export type IdDenylistOptions = [IdDenylistOption?];
+export type IdDenylistOptions = IdDenylistOption;
 
 /**
  * Disallow specified identifiers.

@@ -25,7 +25,7 @@ export type NoExtraParensOption =
 /**
  * Options.
  */
-export type NoExtraParensOptions = [NoExtraParensOption?];
+export type NoExtraParensOptions = NoExtraParensOption;
 
 /**
  * Disallow unnecessary parentheses.

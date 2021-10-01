@@ -22,7 +22,7 @@ export type BasicConfig =
 /**
  * Options.
  */
-export type ArrayElementNewlineOptions = [ArrayElementNewlineOption?];
+export type ArrayElementNewlineOptions = ArrayElementNewlineOption;
 
 /**
  * Enforce line breaks after each array element.

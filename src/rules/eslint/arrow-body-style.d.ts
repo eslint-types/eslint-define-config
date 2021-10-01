@@ -18,7 +18,7 @@ export type ArrowBodyStyleOption =
 /**
  * Options.
  */
-export type ArrowBodyStyleOptions = [ArrowBodyStyleOption?];
+export type ArrowBodyStyleOptions = ArrowBodyStyleOption;
 
 /**
  * Require braces around arrow function bodies.

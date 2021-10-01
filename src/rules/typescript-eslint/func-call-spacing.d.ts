@@ -18,7 +18,7 @@ export type FuncCallSpacingOption =
 /**
  * Options.
  */
-export type FuncCallSpacingOptions = [FuncCallSpacingOption?];
+export type FuncCallSpacingOptions = FuncCallSpacingOption;
 
 /**
  * Require or disallow spacing between function identifiers and their invocations.

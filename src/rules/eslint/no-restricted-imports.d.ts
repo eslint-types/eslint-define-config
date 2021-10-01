@@ -35,7 +35,7 @@ export type NoRestrictedImportsOption =
 /**
  * Options.
  */
-export type NoRestrictedImportsOptions = [NoRestrictedImportsOption?];
+export type NoRestrictedImportsOptions = NoRestrictedImportsOption;
 
 /**
  * Disallow specified modules when loaded by `import`.

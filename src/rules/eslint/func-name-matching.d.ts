@@ -24,7 +24,7 @@ export type FuncNameMatchingOption =
 /**
  * Options.
  */
-export type FuncNameMatchingOptions = [FuncNameMatchingOption?];
+export type FuncNameMatchingOptions = FuncNameMatchingOption;
 
 /**
  * Require function names to match the name of the variable or property to which they are assigned.

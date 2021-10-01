@@ -15,7 +15,7 @@ export type NoRestrictedComponentOptionsOption = (
 /**
  * Options.
  */
-export type NoRestrictedComponentOptionsOptions = [NoRestrictedComponentOptionsOption?];
+export type NoRestrictedComponentOptionsOptions = NoRestrictedComponentOptionsOption;
 
 /**
  * Disallow specific component option.

@@ -14,7 +14,7 @@ export type NoRestrictedGlobalsOption = (
 /**
  * Options.
  */
-export type NoRestrictedGlobalsOptions = [NoRestrictedGlobalsOption?];
+export type NoRestrictedGlobalsOptions = NoRestrictedGlobalsOption;
 
 /**
  * Disallow specified global variables.

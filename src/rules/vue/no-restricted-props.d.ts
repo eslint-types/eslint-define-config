@@ -15,7 +15,7 @@ export type NoRestrictedPropsOption = (
 /**
  * Options.
  */
-export type NoRestrictedPropsOptions = [NoRestrictedPropsOption?];
+export type NoRestrictedPropsOptions = NoRestrictedPropsOption;
 
 /**
  * Disallow specific props.

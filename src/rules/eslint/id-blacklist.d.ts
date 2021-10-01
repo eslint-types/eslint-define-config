@@ -8,7 +8,7 @@ export type IdBlacklistOption = string[];
 /**
  * Options.
  */
-export type IdBlacklistOptions = [IdBlacklistOption?];
+export type IdBlacklistOptions = IdBlacklistOption;
 
 /**
  * Disallow specified identifiers.

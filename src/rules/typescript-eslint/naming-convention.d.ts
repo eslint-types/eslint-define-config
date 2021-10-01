@@ -644,7 +644,7 @@ export type NamingConventionOption = (
 /**
  * Options.
  */
-export type NamingConventionOptions = [NamingConventionOption?];
+export type NamingConventionOptions = NamingConventionOption;
 
 /**
  * Enforces naming conventions for everything across a codebase.

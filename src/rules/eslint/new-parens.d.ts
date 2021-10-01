@@ -8,7 +8,7 @@ export type NewParensOption = [] | ['always' | 'never'];
 /**
  * Options.
  */
-export type NewParensOptions = [NewParensOption?];
+export type NewParensOptions = NewParensOption;
 
 /**
  * Enforce or disallow parentheses when invoking a constructor with no arguments.

@@ -18,7 +18,7 @@ export type EqeqeqOption =
 /**
  * Options.
  */
-export type EqeqeqOptions = [EqeqeqOption?];
+export type EqeqeqOptions = EqeqeqOption;
 
 /**
  * Require the use of `===` and `!==`.

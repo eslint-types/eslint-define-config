@@ -8,7 +8,7 @@ export type ConsistentThisOption = string[];
 /**
  * Options.
  */
-export type ConsistentThisOptions = [ConsistentThisOption?];
+export type ConsistentThisOptions = ConsistentThisOption;
 
 /**
  * Enforce consistent naming when capturing the current execution context.

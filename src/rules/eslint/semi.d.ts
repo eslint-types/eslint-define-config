@@ -32,7 +32,7 @@ export type SemiOption =
 /**
  * Options.
  */
-export type SemiOptions = [SemiOption?];
+export type SemiOptions = SemiOption;
 
 /**
  * Require or disallow semicolons instead of ASI.
