@@ -10,6 +10,7 @@
     "lint": "eslint .",
     "test": "echo \"No tests available\"",
     "prepublishOnly": "yarn clean && yarn install && yarn check",
+    "generate:rules": "esno ./scripts/generate-rule-files.ts",
     "generate": "node ./scripts/generate-rule.js"
   },
   "keywords": [
@@ -51,6 +52,7 @@
     "eslint-plugin-prettier": "~4.0.0",
     "eslint-plugin-spellcheck": "~0.0.19",
     "eslint-plugin-vue": "~7.18.0",
+    "esno": "~0.10.0",
     "json-schema-to-typescript": "~10.1.5",
     "np": "~7.5.0",
     "prettier": "2.4.1",
