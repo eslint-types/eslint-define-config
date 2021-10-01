@@ -33,9 +33,11 @@ Provide a `defineConfig` function for `.eslintrc.js` files.
 
 ```bash
 # add eslint and eslint-define-config to project’s dev dependencies
-npm install --save-dev eslint eslint-define-config
+npm add --save-dev eslint eslint-define-config
 # or
 yarn add --dev eslint eslint-define-config
+# or
+pnpm add --save-dev eslint eslint-define-config
 ```
 
 # Usage

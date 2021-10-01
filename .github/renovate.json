@@ -7,7 +7,6 @@
   "lockFileMaintenance": { "enabled": true },
   "pin": false,
   "rangeStrategy": "replace",
-  "postUpdateOptions": ["yarnDedupeHighest"],
   "ignorePresets": ["workarounds:typesNodeVersioning"],
   "packageRules": [
     {

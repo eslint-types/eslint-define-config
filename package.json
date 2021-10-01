@@ -4,12 +4,12 @@
   "description": "Provide a defineConfig function for .eslintrc.js files",
   "main": "src/index.js",
   "scripts": {
-    "clean": "rm -Rf dist yarn.lock node_modules",
+    "clean": "rm -Rf dist pnpm-lock.yaml node_modules",
     "check": "tsc",
     "format": "prettier --write .",
     "lint": "eslint .",
     "test": "echo \"No tests available\"",
-    "prepublishOnly": "yarn clean && yarn install && yarn check",
+    "prepublishOnly": "pnpm run clean && pnpm install && pnpm run check",
     "generate:rules": "esno ./scripts/generate-rule-files.ts",
     "generate": "node ./scripts/generate-rule.js"
   },
