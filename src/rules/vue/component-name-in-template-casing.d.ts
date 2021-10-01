@@ -4,7 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Config.
  */
 export type ComponentNameInTemplateCasingConfig = {
-  ignores?: any[];
+  ignores?: string[];
   registeredComponentsOnly?: boolean;
 };
 

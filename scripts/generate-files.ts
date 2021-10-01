@@ -57,9 +57,17 @@ function generateType(propertyDefinition: JSONSchema4): string {
     case 'integer':
       // TODO: Read further details
       return 'number';
-    case 'array':
+    case 'array': {
+      const items: JSONSchema4 | JSONSchema4[] | undefined = propertyDefinition.items;
+      if (items && !Array.isArray(items)) {
+        if (items.type === 'string') {
+          return 'string[]';
+        }
+        // TODO: Could be enum or something else
+      }
       // TODO: Handle array
       return 'any[]';
+    }
     case 'object':
       // TODO: Handle nested objects
       return 'Record<string, any>';
@@ -132,9 +140,6 @@ for (const pluginName in generationMap) {
     const mainSchema: JSONSchema4 | undefined = Array.isArray(schema) ? schema[0] : schema;
     const sideSchema: JSONSchema4 | undefined =
       schema && Array.isArray(schema) && schema.length > 1 ? schema[1] : undefined;
-    if (sideSchema) {
-      // console.log(pluginName, ruleName, mainSchema, sideSchema);
-    }
     // TODO: vue/max-len has also a third schema
     if (mainSchema) {
       if (sideSchema) {
@@ -161,7 +166,7 @@ export type ${ruleNamePascalCase}Options = [${ruleNamePascalCase}Option?${
       }];`;
     }
 
-    // TODO: Add side and third option
+    // TODO: Add third option
 
     ruleContent += `
 

@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  */
 export type MultilineHtmlElementContentNewlineOption = {
   ignoreWhenEmpty?: boolean;
-  ignores?: any[];
+  ignores?: string[];
   allowEmptyLines?: boolean;
 };
 

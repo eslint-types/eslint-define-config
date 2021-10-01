@@ -4,8 +4,8 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoPotentialComponentOptionTypoOption = {
-  presets?: any[];
-  custom?: any[];
+  presets?: string[];
+  custom?: string[];
   threshold?: number;
 };
 

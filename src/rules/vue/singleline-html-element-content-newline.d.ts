@@ -6,7 +6,7 @@ import type { RuleConfig } from '../rule-config';
 export type SinglelineHtmlElementContentNewlineOption = {
   ignoreWhenNoAttributes?: boolean;
   ignoreWhenEmpty?: boolean;
-  ignores?: any[];
+  ignores?: string[];
 };
 
 /**

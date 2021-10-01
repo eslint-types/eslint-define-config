@@ -4,7 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type NoUndefinedTypesOption = {
-  definedTypes?: any[];
+  definedTypes?: string[];
 };
 
 /**

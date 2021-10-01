@@ -7,7 +7,7 @@ export type RequireReturnsOption = {
   checkConstructors?: boolean;
   checkGetters?: boolean;
   contexts?: any[];
-  exemptedBy?: any[];
+  exemptedBy?: string[];
   forceRequireReturn?: boolean;
   forceReturnsWithAsync?: boolean;
 };

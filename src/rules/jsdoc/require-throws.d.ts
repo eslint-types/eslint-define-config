@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  */
 export type RequireThrowsOption = {
   contexts?: any[];
-  exemptedBy?: any[];
+  exemptedBy?: string[];
 };
 
 /**
