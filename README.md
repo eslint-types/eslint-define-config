@@ -23,7 +23,8 @@
 
 Provide a `defineConfig` function for `.eslintrc.js` files.
 
-> This project is written by a human and not automatically generated!  
+> This project is written by a human and only partially automatically generated!  
+> Some rules are even enhanced by hand!  
 > Unfortunately, this has the disadvantage that not everything is immediately defined. For example, if a rule is not defined, it falls back to a basic definition.  
 > However, the advantage is that you get documentation for pretty much everything in the code and usually get a direct link to the respective plugin or eslint rule. The types are also strictly typed.
 >
