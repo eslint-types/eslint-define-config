@@ -3,10 +3,39 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type AttributesOrderOption = {
-  order?: any[];
+export interface AttributesOrderOption {
+  order?: (
+    | (
+        | 'DEFINITION'
+        | 'LIST_RENDERING'
+        | 'CONDITIONALS'
+        | 'RENDER_MODIFIERS'
+        | 'GLOBAL'
+        | 'UNIQUE'
+        | 'SLOT'
+        | 'TWO_WAY_BINDING'
+        | 'OTHER_DIRECTIVES'
+        | 'OTHER_ATTR'
+        | 'EVENTS'
+        | 'CONTENT'
+      )
+    | (
+        | 'DEFINITION'
+        | 'LIST_RENDERING'
+        | 'CONDITIONALS'
+        | 'RENDER_MODIFIERS'
+        | 'GLOBAL'
+        | 'UNIQUE'
+        | 'SLOT'
+        | 'TWO_WAY_BINDING'
+        | 'OTHER_DIRECTIVES'
+        | 'OTHER_ATTR'
+        | 'EVENTS'
+        | 'CONTENT'
+      )[]
+  )[];
   alphabetical?: boolean;
-};
+}
 
 /**
  * Options.

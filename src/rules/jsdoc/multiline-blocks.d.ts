@@ -3,16 +3,17 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type MultilineBlocksOption = {
+export interface MultilineBlocksOption {
   allowMultipleTags?: boolean;
   minimumLengthForMultiline?: number;
-  multilineTags?: any;
+  multilineTags?: '*' | string[];
   noFinalLineText?: boolean;
   noMultilineBlocks?: boolean;
   noSingleLineBlocks?: boolean;
   noZeroLineText?: boolean;
   singleLineTags?: string[];
-};
+  [k: string]: any;
+}
 
 /**
  * Options.

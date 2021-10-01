@@ -3,13 +3,13 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type CamelcaseOption = {
+export interface CamelcaseOption {
   ignoreDestructuring?: boolean;
   ignoreImports?: boolean;
   ignoreGlobals?: boolean;
-  properties?: any;
-  allow?: any[];
-};
+  properties?: 'always' | 'never';
+  allow?: [] | [string];
+}
 
 /**
  * Options.

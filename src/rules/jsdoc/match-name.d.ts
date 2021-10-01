@@ -3,9 +3,18 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type MatchNameOption = {
-  match?: any[];
-};
+export interface MatchNameOption {
+  match: {
+    allowName?: string;
+    comment?: string;
+    context?: string;
+    disallowName?: string;
+    message?: string;
+    tags?: string[];
+    [k: string]: any;
+  }[];
+  [k: string]: any;
+}
 
 /**
  * Options.

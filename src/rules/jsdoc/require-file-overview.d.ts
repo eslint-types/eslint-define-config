@@ -3,9 +3,15 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type RequireFileOverviewOption = {
-  tags?: Record<string, any>;
-};
+export interface RequireFileOverviewOption {
+  tags?: {
+    [k: string]: {
+      initialCommentsOnly?: boolean;
+      mustExist?: boolean;
+      preventDuplicates?: boolean;
+    };
+  };
+}
 
 /**
  * Options.

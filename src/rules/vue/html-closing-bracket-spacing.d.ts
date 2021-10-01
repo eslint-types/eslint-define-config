@@ -3,11 +3,11 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type HtmlClosingBracketSpacingOption = {
-  startTag?: any;
-  endTag?: any;
-  selfClosingTag?: any;
-};
+export interface HtmlClosingBracketSpacingOption {
+  startTag?: 'always' | 'never';
+  endTag?: 'always' | 'never';
+  selfClosingTag?: 'always' | 'never';
+}
 
 /**
  * Options.

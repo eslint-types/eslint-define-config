@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type RequireParamOption = {
+export interface RequireParamOption {
   autoIncrementBase?: number;
   checkConstructors?: boolean;
   checkDestructured?: boolean;
@@ -12,14 +12,20 @@ export type RequireParamOption = {
   checkRestProperty?: boolean;
   checkSetters?: boolean;
   checkTypesPattern?: string;
-  contexts?: any[];
+  contexts?: (
+    | string
+    | {
+        comment?: string;
+        context?: string;
+      }
+  )[];
   enableFixer?: boolean;
   enableRestElementFixer?: boolean;
   enableRootFixer?: boolean;
   exemptedBy?: string[];
   unnamedRootBase?: string[];
   useDefaultObjectProperties?: boolean;
-};
+}
 
 /**
  * Options.

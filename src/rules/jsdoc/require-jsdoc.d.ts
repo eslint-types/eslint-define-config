@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type RequireJsdocOption = {
+export interface RequireJsdocOption {
   /**
    * A value indicating whether `constructors` should be checked.
    *
@@ -23,7 +23,7 @@ export type RequireJsdocOption = {
    *
    * @see [checkGetters](https://github.com/gajus/eslint-plugin-jsdoc#checkgetters)
    */
-  checkGetters?: boolean;
+  checkGetters?: boolean | 'no-setter';
   /**
    * A value indicating whether setters should be checked.
    *
@@ -33,7 +33,7 @@ export type RequireJsdocOption = {
    *
    * @see [checkSetters](https://github.com/gajus/eslint-plugin-jsdoc#checksetters)
    */
-  checkSetters?: boolean;
+  checkSetters?: boolean | 'no-getter';
   /**
    * Set this to an array of strings or objects representing the additional AST contexts where you wish the rule to be applied (e.g., `Property` for properties).
    *
@@ -47,13 +47,13 @@ export type RequireJsdocOption = {
    *
    * @see [contexts](https://github.com/gajus/eslint-plugin-jsdoc#contexts-5)
    */
-  contexts?: Array<
+  contexts?: (
     | string
     | {
-        context: string;
+        context?: string;
         inlineCommentBlock?: boolean;
       }
-  >;
+  )[];
   /**
    * A boolean on whether to enable the fixer (which adds an empty jsdoc block).
    *
@@ -82,32 +82,34 @@ export type RequireJsdocOption = {
   /**
    * @see [publicOnly](https://github.com/gajus/eslint-plugin-jsdoc#publiconly)
    */
-  publicOnly?: {
-    /**
-     * Only check node ancestors to check if node is exported.
-     *
-     * @default false
-     */
-    ancestorsOnly?: boolean;
-    /**
-     * ESM exports are checked for JSDoc comments.
-     *
-     * @default true
-     */
-    esm?: boolean;
-    /**
-     * CommonJS exports are checked for JSDoc comments.
-     *
-     * @default true
-     */
-    cjs?: boolean;
-    /**
-     * Window global exports are checked for JSDoc comments.
-     *
-     * @default false
-     */
-    window?: boolean;
-  };
+  publicOnly?:
+    | boolean
+    | {
+        /**
+         * Only check node ancestors to check if node is exported.
+         *
+         * @default false
+         */
+        ancestorsOnly?: boolean;
+        /**
+         * CommonJS exports are checked for JSDoc comments.
+         *
+         * @default true
+         */
+        cjs?: boolean;
+        /**
+         * ESM exports are checked for JSDoc comments.
+         *
+         * @default true
+         */
+        esm?: boolean;
+        /**
+         * Window global exports are checked for JSDoc comments.
+         *
+         * @default false
+         */
+        window?: boolean;
+      };
   /**
    * An object with the following optional boolean keys which all default to `false` except as noted, indicating the contexts where the rule will apply.
    *
@@ -139,7 +141,7 @@ export type RequireJsdocOption = {
      */
     MethodDefinition?: boolean;
   };
-};
+}
 
 /**
  * Options.

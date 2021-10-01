@@ -3,9 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoUndefinedTypesOption = {
+export interface NoUndefinedTypesOption {
   definedTypes?: string[];
-};
+}
 
 /**
  * Options.

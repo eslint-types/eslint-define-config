@@ -3,7 +3,10 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type ComponentApiStyleOption = any[];
+export type ComponentApiStyleOption = [
+  'script-setup' | 'composition' | 'options',
+  ...('script-setup' | 'composition' | 'options')[]
+];
 
 /**
  * Options.

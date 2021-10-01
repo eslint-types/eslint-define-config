@@ -3,10 +3,10 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type DotNotationOption = {
+export interface DotNotationOption {
   allowKeywords?: boolean;
   allowPattern?: string;
-};
+}
 
 /**
  * Options.

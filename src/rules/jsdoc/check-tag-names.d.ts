@@ -3,10 +3,10 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type CheckTagNamesOption = {
+export interface CheckTagNamesOption {
   definedTags?: string[];
   jsxTags?: boolean;
-};
+}
 
 /**
  * Options.

@@ -3,14 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type RequireDescriptionOption = {
+export interface RequireDescriptionOption {
   checkConstructors?: boolean;
   checkGetters?: boolean;
   checkSetters?: boolean;
-  contexts?: any[];
-  descriptionStyle?: string;
+  contexts?: (
+    | string
+    | {
+        comment?: string;
+        context?: string;
+      }
+  )[];
+  descriptionStyle?: 'body' | 'tag' | 'any';
   exemptedBy?: string[];
-};
+}
 
 /**
  * Options.

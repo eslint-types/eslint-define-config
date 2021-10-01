@@ -3,11 +3,11 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type RequireReturnsCheckOption = {
+export interface RequireReturnsCheckOption {
   exemptAsync?: boolean;
   exemptGenerators?: boolean;
   reportMissingReturnForUndefinedTypes?: boolean;
-};
+}
 
 /**
  * Options.

@@ -8,7 +8,23 @@ export type MaxLenConfig = any;
 /**
  * Option.
  */
-export type MaxLenOption = any;
+export type MaxLenOption =
+  | {
+      code?: number;
+      template?: number;
+      comments?: number;
+      tabWidth?: number;
+      ignorePattern?: string;
+      ignoreComments?: boolean;
+      ignoreTrailingComments?: boolean;
+      ignoreUrls?: boolean;
+      ignoreStrings?: boolean;
+      ignoreTemplateLiterals?: boolean;
+      ignoreRegExpLiterals?: boolean;
+      ignoreHTMLAttributeValues?: boolean;
+      ignoreHTMLTextContents?: boolean;
+    }
+  | number;
 
 /**
  * Options.

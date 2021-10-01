@@ -3,7 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type CommaDangleOption = any[];
+export type CommaDangleOption =
+  | []
+  | [
+      | Value
+      | {
+          arrays?: ValueWithIgnore;
+          objects?: ValueWithIgnore;
+          imports?: ValueWithIgnore;
+          exports?: ValueWithIgnore;
+          functions?: ValueWithIgnore;
+        }
+    ];
+export type Value = 'always-multiline' | 'always' | 'never' | 'only-multiline';
+export type ValueWithIgnore = 'always-multiline' | 'always' | 'ignore' | 'never' | 'only-multiline';
 
 /**
  * Options.

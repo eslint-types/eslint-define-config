@@ -3,7 +3,12 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type BlockLangOption = Record<string, any>;
+export interface BlockLangOption {
+  [k: string]: {
+    lang?: string | string[];
+    allowNoLang?: boolean;
+  };
+}
 
 /**
  * Options.

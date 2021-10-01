@@ -3,9 +3,15 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type RequireReturnsDescriptionOption = {
-  contexts?: any[];
-};
+export interface RequireReturnsDescriptionOption {
+  contexts?: (
+    | string
+    | {
+        comment?: string;
+        context?: string;
+      }
+  )[];
+}
 
 /**
  * Options.

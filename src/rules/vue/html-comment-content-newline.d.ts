@@ -10,7 +10,12 @@ export type HtmlCommentContentNewlineConfig = {
 /**
  * Option.
  */
-export type HtmlCommentContentNewlineOption = any;
+export type HtmlCommentContentNewlineOption =
+  | ('always' | 'never')
+  | {
+      singleline?: 'always' | 'never' | 'ignore';
+      multiline?: 'always' | 'never' | 'ignore';
+    };
 
 /**
  * Options.

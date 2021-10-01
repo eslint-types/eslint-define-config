@@ -3,10 +3,11 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoMultiAsterisksOption = {
+export interface NoMultiAsterisksOption {
   preventAtEnd?: boolean;
   preventAtMiddleLines?: boolean;
-};
+  [k: string]: any;
+}
 
 /**
  * Options.

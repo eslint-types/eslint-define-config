@@ -15,7 +15,7 @@ export type HtmlIndentConfig = {
 /**
  * Option.
  */
-export type HtmlIndentOption = any;
+export type HtmlIndentOption = number | 'tab';
 
 /**
  * Options.

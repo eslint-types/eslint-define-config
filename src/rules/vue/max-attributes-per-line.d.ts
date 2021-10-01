@@ -3,10 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type MaxAttributesPerLineOption = {
-  singleline?: any;
-  multiline?: any;
-};
+export interface MaxAttributesPerLineOption {
+  singleline?:
+    | number
+    | {
+        max?: number;
+        allowFirstLine?: boolean;
+      };
+  multiline?:
+    | number
+    | {
+        max?: number;
+        allowFirstLine?: boolean;
+      };
+}
 
 /**
  * Options.

@@ -4,7 +4,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type SpellCheckerOption = {
+export interface SpellCheckerOption {
   /** Check Spelling inside comments. */
   comments?: boolean;
   /** Check Spelling inside strings. */
@@ -43,7 +43,7 @@ export type SpellCheckerOption = {
   skipWordIfMatch?: string[];
   /** Words with a character-amount of less than the minLength will not be spell-checked. */
   minLength?: number;
-};
+}
 
 /**
  * Options.

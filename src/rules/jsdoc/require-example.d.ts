@@ -3,14 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type RequireExampleOption = {
+export interface RequireExampleOption {
   checkConstructors?: boolean;
   checkGetters?: boolean;
   checkSetters?: boolean;
-  contexts?: any[];
+  contexts?: (
+    | string
+    | {
+        comment?: string;
+        context?: string;
+      }
+  )[];
   exemptedBy?: string[];
   exemptNoArguments?: boolean;
-};
+}
 
 /**
  * Options.

@@ -3,11 +3,11 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type HtmlButtonHasTypeOption = {
+export interface HtmlButtonHasTypeOption {
   button?: boolean;
   submit?: boolean;
   reset?: boolean;
-};
+}
 
 /**
  * Options.

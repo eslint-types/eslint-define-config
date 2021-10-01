@@ -8,6 +8,7 @@ import eslintPluginSpellcheck from 'eslint-plugin-spellcheck';
 import eslintPluginVue from 'eslint-plugin-vue';
 import * as fs from 'fs';
 import type { JSONSchema4 } from 'json-schema';
+import { compile } from 'json-schema-to-typescript';
 import * as path from 'path';
 import type { Options } from 'prettier';
 import { format } from 'prettier';
@@ -120,55 +121,70 @@ function generateOptionType(schema: JSONSchema4): string {
   return result;
 }
 
-for (const pluginName in generationMap) {
-  const { rules, name } = generationMap[pluginName]!;
+async function main(): Promise<void> {
+  for (const pluginName in generationMap) {
+    const { rules, name } = generationMap[pluginName]!;
 
-  const ruleProviderDir: string = path.resolve(rulesDir, pluginName);
+    const ruleProviderDir: string = path.resolve(rulesDir, pluginName);
 
-  fs.mkdirSync(ruleProviderDir, { mode: 0o755, recursive: true });
+    fs.mkdirSync(ruleProviderDir, { mode: 0o755, recursive: true });
 
-  Object.entries(rules).forEach(([ruleName, { meta }]) => {
-    const rulePath: string = path.resolve(ruleProviderDir, `${ruleName}.d.ts`);
-    let ruleContent: string = "import type { RuleConfig } from '../rule-config';";
+    for (const [ruleName, { meta }] of Object.entries(rules)) {
+      const rulePath: string = path.resolve(ruleProviderDir, `${ruleName}.d.ts`);
+      let ruleContent: string = "import type { RuleConfig } from '../rule-config';";
 
-    const ruleNamePascalCase: string = pascalCase(ruleName);
+      const ruleNamePascalCase: string = pascalCase(ruleName);
 
-    const description: string = upperCaseFirst(meta?.docs?.description ?? '');
-    const seeDocLink: string = meta?.docs?.url ? `@see [${ruleName}](${meta.docs.url})` : '';
+      const description: string = upperCaseFirst(meta?.docs?.description ?? '');
+      const seeDocLink: string = meta?.docs?.url ? `@see [${ruleName}](${meta.docs.url})` : '';
 
-    const schema: JSONSchema4 | JSONSchema4[] | undefined = meta?.schema;
-    const mainSchema: JSONSchema4 | undefined = Array.isArray(schema) ? schema[0] : schema;
-    const sideSchema: JSONSchema4 | undefined =
-      schema && Array.isArray(schema) && schema.length > 1 ? schema[1] : undefined;
-    // TODO: vue/max-len has also a third schema
-    if (mainSchema) {
-      if (sideSchema) {
-        ruleContent += `
+      const schema: JSONSchema4 | JSONSchema4[] | undefined = meta?.schema;
+      const mainSchema: JSONSchema4 | undefined = Array.isArray(schema) ? schema[0] : schema;
+      const sideSchema: JSONSchema4 | undefined =
+        schema && Array.isArray(schema) && schema.length > 1 ? schema[1] : undefined;
+      // TODO: vue/max-len has also a third schema
+      if (mainSchema) {
+        if (sideSchema) {
+          ruleContent += `
 
 /**
  * Config.
  */
 export type ${ruleNamePascalCase}Config = ${generateOptionType(sideSchema)}`;
-      }
+        }
 
-      ruleContent += `
+        const ruleOption: string = await compile(mainSchema, `${ruleNamePascalCase}Option`, {
+          bannerComment: '',
+          style: {
+            bracketSpacing: true,
+            printWidth: 120,
+            semi: true,
+            singleQuote: true,
+            tabWidth: 2,
+            trailingComma: 'none',
+            useTabs: false
+          },
+          unknownAny: false
+        });
+
+        ruleContent += `
 
 /**
  * Option.
  */
-export type ${ruleNamePascalCase}Option = ${generateOptionType(mainSchema)}
+${ruleOption}
 
 /**
  * Options.
  */
 export type ${ruleNamePascalCase}Options = [${ruleNamePascalCase}Option?${
-        sideSchema ? `, ${ruleNamePascalCase}Config?` : ''
-      }];`;
-    }
+          sideSchema ? `, ${ruleNamePascalCase}Config?` : ''
+        }];`;
+      }
 
-    // TODO: Add third option
+      // TODO: Add third option
 
-    ruleContent += `
+      ruleContent += `
 
   /**
    * ${description}
@@ -191,27 +207,36 @@ export type ${ruleNamePascalCase}Options = [${ruleNamePascalCase}Option?${
     '${camelCase(pluginName)}/${ruleName}': ${ruleNamePascalCase}RuleConfig;
   }
   `;
-    ruleContent = format(ruleContent, PRETTIER_OPTIONS);
-    fs.writeFileSync(rulePath, ruleContent);
-  });
+      ruleContent = format(ruleContent, PRETTIER_OPTIONS);
+      fs.writeFileSync(rulePath, ruleContent);
+    }
 
-  // Generating index.d.ts for rules
-  const indexPath: string = path.resolve(ruleProviderDir, 'index.d.ts');
-  let indexContent: string = Object.keys(rules)
-    .map((name) => `import type { ${pascalCase(name)}Rule } from './${name}';`)
-    .join('\n');
+    // Generating index.d.ts for rules
+    const indexPath: string = path.resolve(ruleProviderDir, 'index.d.ts');
+    let indexContent: string = Object.keys(rules)
+      .map((name) => `import type { ${pascalCase(name)}Rule } from './${name}';`)
+      .join('\n');
 
-  indexContent += `
+    indexContent += `
 
 /**
  * All ${name} rules.
  */
 export type ${name}Rules = ${Object.keys(rules)
-    .map((name) => `${pascalCase(name)}Rule`)
-    .join(' & ')}
+      .map((name) => `${pascalCase(name)}Rule`)
+      .join(' & ')}
 `;
 
-  indexContent = format(indexContent, PRETTIER_OPTIONS);
+    indexContent = format(indexContent, PRETTIER_OPTIONS);
 
-  fs.writeFileSync(indexPath, indexContent);
+    fs.writeFileSync(indexPath, indexContent);
+  }
 }
+
+main()
+  .then(() => {
+    //
+  })
+  .catch(() => {
+    //
+  });

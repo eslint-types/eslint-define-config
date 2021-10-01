@@ -3,11 +3,14 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type CheckTypesOption = {
-  exemptTagContexts?: any[];
+export interface CheckTypesOption {
+  exemptTagContexts?: {
+    tag?: string;
+    types?: boolean | string[];
+  }[];
   noDefaults?: boolean;
   unifyParentAndChildTypeChecks?: boolean;
-};
+}
 
 /**
  * Options.

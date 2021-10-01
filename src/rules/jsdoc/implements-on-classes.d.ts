@@ -3,9 +3,15 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type ImplementsOnClassesOption = {
-  contexts?: any[];
-};
+export interface ImplementsOnClassesOption {
+  contexts?: (
+    | string
+    | {
+        comment?: string;
+        context?: string;
+      }
+  )[];
+}
 
 /**
  * Options.

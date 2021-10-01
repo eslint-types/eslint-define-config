@@ -3,9 +3,10 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type ValidTypesOption = {
+export interface ValidTypesOption {
   allowEmptyNamepaths?: boolean;
-};
+  [k: string]: any;
+}
 
 /**
  * Options.

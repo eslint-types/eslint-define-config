@@ -3,7 +3,7 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type CheckParamNamesOption = {
+export interface CheckParamNamesOption {
   allowExtraTrailingParamDocs?: boolean;
   checkDestructured?: boolean;
   checkRestProperty?: boolean;
@@ -11,7 +11,7 @@ export type CheckParamNamesOption = {
   disableExtraPropertyReporting?: boolean;
   enableFixer?: boolean;
   useDefaultObjectProperties?: boolean;
-};
+}
 
 /**
  * Options.

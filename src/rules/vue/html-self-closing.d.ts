@@ -3,7 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type HtmlSelfClosingOption = any[];
+export type HtmlSelfClosingOption =
+  | []
+  | [
+      {
+        html?: {
+          normal?: OptionValue;
+          void?: OptionValue;
+          component?: OptionValue;
+        };
+        svg?: OptionValue;
+        math?: OptionValue;
+      }
+    ];
+export type OptionValue = 'always' | 'never' | 'any';
 
 /**
  * Options.

@@ -3,7 +3,12 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type ArrayBracketNewlineOption = any;
+export type ArrayBracketNewlineOption =
+  | ('always' | 'never' | 'consistent')
+  | {
+      multiline?: boolean;
+      minItems?: number | null;
+    };
 
 /**
  * Options.

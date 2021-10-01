@@ -3,11 +3,11 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type RequireDescriptionCompleteSentenceOption = {
+export interface RequireDescriptionCompleteSentenceOption {
   abbreviations?: string[];
   newlineBeforeCapsAssumesBadSentenceEnd?: boolean;
   tags?: string[];
-};
+}
 
 /**
  * Options.

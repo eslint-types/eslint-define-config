@@ -3,9 +3,11 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type CheckExamplesOption = {
+export interface CheckExamplesOption {
   allowInlineConfig?: boolean;
-  baseConfig?: Record<string, any>;
+  baseConfig?: {
+    [k: string]: any;
+  };
   captionRequired?: boolean;
   checkDefaults?: boolean;
   checkEslintrc?: boolean;
@@ -21,7 +23,7 @@ export type CheckExamplesOption = {
   paddedIndent?: number;
   rejectExampleCodeRegex?: string;
   reportUnusedDisableDirectives?: boolean;
-};
+}
 
 /**
  * Options.

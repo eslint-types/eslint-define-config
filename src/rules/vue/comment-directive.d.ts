@@ -3,9 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type CommentDirectiveOption = {
+export interface CommentDirectiveOption {
   reportUnusedDisableDirectives?: boolean;
-};
+}
 
 /**
  * Options.
