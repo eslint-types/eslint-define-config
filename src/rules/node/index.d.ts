@@ -17,7 +17,7 @@ export type NodeRules = NoDeprecatedApiRule &
   NoExtraneousRequireRule &
   NoMissingImportRule &
   NoMissingRequireRule &
-  NoProcessExitRuleConfig &
+  // NoProcessExitRuleConfig & // TODO: This rule breaks somehow JSDoc hovering.
   NoRestrictedRequireRule &
   NoUnpublishedImportRule &
   NoUnpublishedRequireRule &
