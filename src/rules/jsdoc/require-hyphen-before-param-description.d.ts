@@ -1,6 +1,13 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Config.
+ */
+export type RequireHyphenBeforeParamDescriptionConfig = {
+  tags?: any;
+};
+
+/**
  * Option.
  */
 export type RequireHyphenBeforeParamDescriptionOption = 'always' | 'never';
@@ -8,7 +15,10 @@ export type RequireHyphenBeforeParamDescriptionOption = 'always' | 'never';
 /**
  * Options.
  */
-export type RequireHyphenBeforeParamDescriptionOptions = [RequireHyphenBeforeParamDescriptionOption?];
+export type RequireHyphenBeforeParamDescriptionOptions = [
+  RequireHyphenBeforeParamDescriptionOption?,
+  RequireHyphenBeforeParamDescriptionConfig?
+];
 
 /**
  * Requires a hyphen before the `@param` description.

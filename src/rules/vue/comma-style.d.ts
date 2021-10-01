@@ -1,6 +1,13 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Config.
+ */
+export type CommaStyleConfig = {
+  exceptions?: Record<string, any>;
+};
+
+/**
  * Option.
  */
 export type CommaStyleOption = 'first' | 'last';
@@ -8,7 +15,7 @@ export type CommaStyleOption = 'first' | 'last';
 /**
  * Options.
  */
-export type CommaStyleOptions = [CommaStyleOption?];
+export type CommaStyleOptions = [CommaStyleOption?, CommaStyleConfig?];
 
 /**
  * Enforce consistent comma style

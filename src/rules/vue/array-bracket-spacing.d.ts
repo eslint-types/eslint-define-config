@@ -1,6 +1,15 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Config.
+ */
+export type ArrayBracketSpacingConfig = {
+  singleValue?: boolean;
+  objectsInArrays?: boolean;
+  arraysInArrays?: boolean;
+};
+
+/**
  * Option.
  */
 export type ArrayBracketSpacingOption = 'always' | 'never';
@@ -8,7 +17,7 @@ export type ArrayBracketSpacingOption = 'always' | 'never';
 /**
  * Options.
  */
-export type ArrayBracketSpacingOptions = [ArrayBracketSpacingOption?];
+export type ArrayBracketSpacingOptions = [ArrayBracketSpacingOption?, ArrayBracketSpacingConfig?];
 
 /**
  * Enforce consistent spacing inside array brackets

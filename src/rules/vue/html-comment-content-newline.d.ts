@@ -1,6 +1,13 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Config.
+ */
+export type HtmlCommentContentNewlineConfig = {
+  exceptions?: any[];
+};
+
+/**
  * Option.
  */
 export type HtmlCommentContentNewlineOption = any;
@@ -8,7 +15,7 @@ export type HtmlCommentContentNewlineOption = any;
 /**
  * Options.
  */
-export type HtmlCommentContentNewlineOptions = [HtmlCommentContentNewlineOption?];
+export type HtmlCommentContentNewlineOptions = [HtmlCommentContentNewlineOption?, HtmlCommentContentNewlineConfig?];
 
 /**
  * Enforce unified line brake in HTML comments

@@ -1,6 +1,13 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Config.
+ */
+export type SpaceInParensConfig = {
+  exceptions?: any[];
+};
+
+/**
  * Option.
  */
 export type SpaceInParensOption = 'always' | 'never';
@@ -8,7 +15,7 @@ export type SpaceInParensOption = 'always' | 'never';
 /**
  * Options.
  */
-export type SpaceInParensOptions = [SpaceInParensOption?];
+export type SpaceInParensOptions = [SpaceInParensOption?, SpaceInParensConfig?];
 
 /**
  * Enforce consistent spacing inside parentheses

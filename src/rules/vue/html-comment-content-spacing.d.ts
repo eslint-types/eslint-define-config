@@ -1,6 +1,13 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Config.
+ */
+export type HtmlCommentContentSpacingConfig = {
+  exceptions?: any[];
+};
+
+/**
  * Option.
  */
 export type HtmlCommentContentSpacingOption = 'always' | 'never';
@@ -8,7 +15,7 @@ export type HtmlCommentContentSpacingOption = 'always' | 'never';
 /**
  * Options.
  */
-export type HtmlCommentContentSpacingOptions = [HtmlCommentContentSpacingOption?];
+export type HtmlCommentContentSpacingOptions = [HtmlCommentContentSpacingOption?, HtmlCommentContentSpacingConfig?];
 
 /**
  * Enforce unified spacing in HTML comments

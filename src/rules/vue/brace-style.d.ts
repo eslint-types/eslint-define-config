@@ -1,6 +1,13 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
+ * Config.
+ */
+export type BraceStyleConfig = {
+  allowSingleLine?: boolean;
+};
+
+/**
  * Option.
  */
 export type BraceStyleOption = '1tbs' | 'stroustrup' | 'allman';
@@ -8,7 +15,7 @@ export type BraceStyleOption = '1tbs' | 'stroustrup' | 'allman';
 /**
  * Options.
  */
-export type BraceStyleOptions = [BraceStyleOption?];
+export type BraceStyleOptions = [BraceStyleOption?, BraceStyleConfig?];
 
 /**
  * Enforce consistent brace style for blocks

@@ -20,7 +20,7 @@ export type NoTypesOptions = [NoTypesOption?];
  *
  * The rule is intended to prevent the indication of types on tags where the type information would be redundant with TypeScript.
  *
- * @see [no-types](https://github.com/gajus/eslint-plugin-jsdoc#no-types)
+ * @see [no-types](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-types)
  */
 export type NoTypesRuleConfig = RuleConfig<NoTypesOptions>;
 
@@ -29,7 +29,7 @@ export type NoTypesRuleConfig = RuleConfig<NoTypesOptions>;
  *
  * The rule is intended to prevent the indication of types on tags where the type information would be redundant with TypeScript.
  *
- * @see [no-types](https://github.com/gajus/eslint-plugin-jsdoc#no-types)
+ * @see [no-types](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-types)
  */
 export interface NoTypesRule {
   /**
@@ -37,7 +37,7 @@ export interface NoTypesRule {
    *
    * The rule is intended to prevent the indication of types on tags where the type information would be redundant with TypeScript.
    *
-   * @see [no-types](https://github.com/gajus/eslint-plugin-jsdoc#no-types)
+   * @see [no-types](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-types)
    */
   'jsdoc/no-types': NoTypesRuleConfig;
 }
