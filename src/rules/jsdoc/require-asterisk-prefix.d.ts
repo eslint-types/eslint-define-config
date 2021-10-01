@@ -3,9 +3,14 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Config.
  */
-export type RequireAsteriskPrefixConfig = {
-  tags?: Record<string, any>;
-};
+export interface RequireAsteriskPrefixConfig {
+  tags?: {
+    always?: string[];
+    any?: string[];
+    never?: string[];
+    [k: string]: any;
+  };
+}
 
 /**
  * Option.

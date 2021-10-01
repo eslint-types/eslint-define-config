@@ -3,7 +3,23 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Config.
  */
-export type MaxLenConfig = any;
+export type MaxLenConfig =
+  | {
+      code?: number;
+      template?: number;
+      comments?: number;
+      tabWidth?: number;
+      ignorePattern?: string;
+      ignoreComments?: boolean;
+      ignoreTrailingComments?: boolean;
+      ignoreUrls?: boolean;
+      ignoreStrings?: boolean;
+      ignoreTemplateLiterals?: boolean;
+      ignoreRegExpLiterals?: boolean;
+      ignoreHTMLAttributeValues?: boolean;
+      ignoreHTMLTextContents?: boolean;
+    }
+  | number;
 
 /**
  * Option.

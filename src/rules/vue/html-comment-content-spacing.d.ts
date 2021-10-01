@@ -3,9 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Config.
  */
-export type HtmlCommentContentSpacingConfig = {
+export interface HtmlCommentContentSpacingConfig {
   exceptions?: string[];
-};
+}
 
 /**
  * Option.

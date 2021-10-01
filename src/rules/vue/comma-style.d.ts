@@ -3,9 +3,11 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Config.
  */
-export type CommaStyleConfig = {
-  exceptions?: Record<string, any>;
-};
+export interface CommaStyleConfig {
+  exceptions?: {
+    [k: string]: boolean;
+  };
+}
 
 /**
  * Option.

@@ -3,10 +3,10 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Config.
  */
-export type ComponentNameInTemplateCasingConfig = {
+export interface ComponentNameInTemplateCasingConfig {
   ignores?: string[];
   registeredComponentsOnly?: boolean;
-};
+}
 
 /**
  * Option.

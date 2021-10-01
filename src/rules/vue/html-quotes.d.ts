@@ -3,9 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Config.
  */
-export type HtmlQuotesConfig = {
+export interface HtmlQuotesConfig {
   avoidEscape?: boolean;
-};
+}
 
 /**
  * Option.
