@@ -18,20 +18,20 @@ export type HtmlCommentContentSpacingOption = 'always' | 'never';
 export type HtmlCommentContentSpacingOptions = [HtmlCommentContentSpacingOption?, HtmlCommentContentSpacingConfig?];
 
 /**
- * Enforce unified spacing in HTML comments
+ * Enforce unified spacing in HTML comments.
  *
  * @see [html-comment-content-spacing](https://eslint.vuejs.org/rules/html-comment-content-spacing.html)
  */
 export type HtmlCommentContentSpacingRuleConfig = RuleConfig<HtmlCommentContentSpacingOptions>;
 
 /**
- * Enforce unified spacing in HTML comments
+ * Enforce unified spacing in HTML comments.
  *
  * @see [html-comment-content-spacing](https://eslint.vuejs.org/rules/html-comment-content-spacing.html)
  */
 export interface HtmlCommentContentSpacingRule {
   /**
-   * Enforce unified spacing in HTML comments
+   * Enforce unified spacing in HTML comments.
    *
    * @see [html-comment-content-spacing](https://eslint.vuejs.org/rules/html-comment-content-spacing.html)
    */

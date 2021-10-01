@@ -1,26 +1,25 @@
-import { AllowOptionEntries } from '../eslint/no-empty-function';
 import type { RuleConfig } from '../rule-config';
-
-/** Additional Allow Option Entries. */
-export type AdditionalAllowOptionEntries =
-  | AllowOptionEntries
-  | 'private-constructors'
-  | 'protected-constructors'
-  | 'decoratedFunctions';
 
 /**
  * Option.
  */
-export type NoEmptyFunctionOption = {
-  /**
-   * Allow specific kinds of functions to be empty.
-   *
-   * @default []
-   *
-   * @see [allow](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-function.md#options)
-   */
-  allow?: AdditionalAllowOptionEntries[];
-};
+export interface NoEmptyFunctionOption {
+  allow?: (
+    | 'functions'
+    | 'arrowFunctions'
+    | 'generatorFunctions'
+    | 'methods'
+    | 'generatorMethods'
+    | 'getters'
+    | 'setters'
+    | 'constructors'
+    | 'private-constructors'
+    | 'protected-constructors'
+    | 'asyncFunctions'
+    | 'asyncMethods'
+    | 'decoratedFunctions'
+  )[];
+}
 
 /**
  * Options.
@@ -30,20 +29,20 @@ export type NoEmptyFunctionOptions = [NoEmptyFunctionOption?];
 /**
  * Disallow empty functions.
  *
- * @see [no-empty-function](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-function.md)
+ * @see [no-empty-function](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/no-empty-function.md)
  */
 export type NoEmptyFunctionRuleConfig = RuleConfig<NoEmptyFunctionOptions>;
 
 /**
  * Disallow empty functions.
  *
- * @see [no-empty-function](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-function.md)
+ * @see [no-empty-function](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/no-empty-function.md)
  */
 export interface NoEmptyFunctionRule {
   /**
    * Disallow empty functions.
    *
-   * @see [no-empty-function](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-function.md)
+   * @see [no-empty-function](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/no-empty-function.md)
    */
   '@typescript-eslint/no-empty-function': NoEmptyFunctionRuleConfig;
 }

@@ -24,20 +24,20 @@ export type OptionValue = 'always' | 'never' | 'any';
 export type HtmlSelfClosingOptions = [HtmlSelfClosingOption?];
 
 /**
- * Enforce self-closing style
+ * Enforce self-closing style.
  *
  * @see [html-self-closing](https://eslint.vuejs.org/rules/html-self-closing.html)
  */
 export type HtmlSelfClosingRuleConfig = RuleConfig<HtmlSelfClosingOptions>;
 
 /**
- * Enforce self-closing style
+ * Enforce self-closing style.
  *
  * @see [html-self-closing](https://eslint.vuejs.org/rules/html-self-closing.html)
  */
 export interface HtmlSelfClosingRule {
   /**
-   * Enforce self-closing style
+   * Enforce self-closing style.
    *
    * @see [html-self-closing](https://eslint.vuejs.org/rules/html-self-closing.html)
    */

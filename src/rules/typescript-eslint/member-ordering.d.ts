@@ -1,79 +1,423 @@
 import type { RuleConfig } from '../rule-config';
 
-/** Signature. */
-export type Signature = 'signature';
-/** Visibility. */
-export type Visibility = 'public' | 'protected' | 'private';
-/** Static. */
-export type Static = 'static';
-/** Decorated. */
-export type Decorated = 'decorated';
-/** Instance. */
-export type Instance = 'instance';
-/** Abstract. */
-export type Abstract = 'abstract';
-/** Field. */
-export type Field = 'field';
-/** Constructor. */
-export type Constructor = 'constructor';
-/** Method. */
-export type Method = 'method';
-
-/**
- * @see [Member types (granular form)](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-ordering.md#member-types-granular-form)
- */
-export type MemberTypes =
-  // Index signature
-  | Signature
-
-  // Fields
-  | `${Visibility}-${Static}-${Field}`
-  | `${Visibility}-${Decorated}-${Field}`
-  | `${Visibility}-${Instance}-${Field}`
-  | `${Visibility}-${Abstract}-${Field}`
-  | `${Visibility}-${Field}`
-  | `${Static}-${Field}`
-  | `${Instance}-${Field}`
-  | `${Decorated}-${Field}`
-  | `${Abstract}-${Field}`
-  | Field
-
-  // Constructors
-  | `${Visibility}-${Constructor}`
-  | Constructor
-
-  // Methods
-  | `${Visibility}-${Static}-${Method}`
-  | `${Visibility}-${Decorated}-${Method}`
-  | `${Visibility}-${Instance}-${Method}`
-  | `${Visibility}-${Abstract}-${Method}`
-  | `${Visibility}-${Method}`
-  | `${Static}-${Method}`
-  | `${Decorated}-${Method}`
-  | `${Instance}-${Method}`
-  | `${Abstract}-${Method}`
-  | Method;
-
-/**
- * @see [TypeOptions](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-ordering.md#options)
- */
-export type TypeOptions<T extends MemberTypes> =
-  | MemberTypes[]
-  | { memberTypes: Array<T> | 'never'; order?: 'alphabetically' | 'as-written' }
-  | { order: 'alphabetically' };
-
 /**
  * Option.
  */
-export type MemberOrderingOption = {
-  default?: TypeOptions<MemberTypes>;
-
-  classes?: TypeOptions<MemberTypes>;
-  classExpressions?: TypeOptions<MemberTypes>;
-
-  interfaces?: TypeOptions<Signature | Field | Method | Constructor>;
-  typeLiterals?: TypeOptions<Signature | Field | Method | Constructor>;
-};
+export interface MemberOrderingOption {
+  default?:
+    | 'never'
+    | (
+        | 'signature'
+        | 'field'
+        | 'public-field'
+        | 'public-decorated-field'
+        | 'decorated-field'
+        | 'static-field'
+        | 'public-static-field'
+        | 'instance-field'
+        | 'public-instance-field'
+        | 'abstract-field'
+        | 'public-abstract-field'
+        | 'protected-field'
+        | 'protected-decorated-field'
+        | 'protected-static-field'
+        | 'protected-instance-field'
+        | 'protected-abstract-field'
+        | 'private-field'
+        | 'private-decorated-field'
+        | 'private-static-field'
+        | 'private-instance-field'
+        | 'private-abstract-field'
+        | 'method'
+        | 'public-method'
+        | 'public-decorated-method'
+        | 'decorated-method'
+        | 'static-method'
+        | 'public-static-method'
+        | 'instance-method'
+        | 'public-instance-method'
+        | 'abstract-method'
+        | 'public-abstract-method'
+        | 'protected-method'
+        | 'protected-decorated-method'
+        | 'protected-static-method'
+        | 'protected-instance-method'
+        | 'protected-abstract-method'
+        | 'private-method'
+        | 'private-decorated-method'
+        | 'private-static-method'
+        | 'private-instance-method'
+        | 'private-abstract-method'
+        | 'call-signature'
+        | 'public-call-signature'
+        | 'static-call-signature'
+        | 'public-static-call-signature'
+        | 'instance-call-signature'
+        | 'public-instance-call-signature'
+        | 'abstract-call-signature'
+        | 'public-abstract-call-signature'
+        | 'protected-call-signature'
+        | 'protected-static-call-signature'
+        | 'protected-instance-call-signature'
+        | 'protected-abstract-call-signature'
+        | 'private-call-signature'
+        | 'private-static-call-signature'
+        | 'private-instance-call-signature'
+        | 'private-abstract-call-signature'
+        | 'constructor'
+        | 'public-constructor'
+        | 'protected-constructor'
+        | 'private-constructor'
+      )[]
+    | {
+        memberTypes?:
+          | (
+              | 'signature'
+              | 'field'
+              | 'public-field'
+              | 'public-decorated-field'
+              | 'decorated-field'
+              | 'static-field'
+              | 'public-static-field'
+              | 'instance-field'
+              | 'public-instance-field'
+              | 'abstract-field'
+              | 'public-abstract-field'
+              | 'protected-field'
+              | 'protected-decorated-field'
+              | 'protected-static-field'
+              | 'protected-instance-field'
+              | 'protected-abstract-field'
+              | 'private-field'
+              | 'private-decorated-field'
+              | 'private-static-field'
+              | 'private-instance-field'
+              | 'private-abstract-field'
+              | 'method'
+              | 'public-method'
+              | 'public-decorated-method'
+              | 'decorated-method'
+              | 'static-method'
+              | 'public-static-method'
+              | 'instance-method'
+              | 'public-instance-method'
+              | 'abstract-method'
+              | 'public-abstract-method'
+              | 'protected-method'
+              | 'protected-decorated-method'
+              | 'protected-static-method'
+              | 'protected-instance-method'
+              | 'protected-abstract-method'
+              | 'private-method'
+              | 'private-decorated-method'
+              | 'private-static-method'
+              | 'private-instance-method'
+              | 'private-abstract-method'
+              | 'call-signature'
+              | 'public-call-signature'
+              | 'static-call-signature'
+              | 'public-static-call-signature'
+              | 'instance-call-signature'
+              | 'public-instance-call-signature'
+              | 'abstract-call-signature'
+              | 'public-abstract-call-signature'
+              | 'protected-call-signature'
+              | 'protected-static-call-signature'
+              | 'protected-instance-call-signature'
+              | 'protected-abstract-call-signature'
+              | 'private-call-signature'
+              | 'private-static-call-signature'
+              | 'private-instance-call-signature'
+              | 'private-abstract-call-signature'
+              | 'constructor'
+              | 'public-constructor'
+              | 'protected-constructor'
+              | 'private-constructor'
+            )[]
+          | 'never';
+        order?: 'alphabetically' | 'as-written';
+      };
+  classes?:
+    | 'never'
+    | (
+        | 'signature'
+        | 'field'
+        | 'public-field'
+        | 'public-decorated-field'
+        | 'decorated-field'
+        | 'static-field'
+        | 'public-static-field'
+        | 'instance-field'
+        | 'public-instance-field'
+        | 'abstract-field'
+        | 'public-abstract-field'
+        | 'protected-field'
+        | 'protected-decorated-field'
+        | 'protected-static-field'
+        | 'protected-instance-field'
+        | 'protected-abstract-field'
+        | 'private-field'
+        | 'private-decorated-field'
+        | 'private-static-field'
+        | 'private-instance-field'
+        | 'private-abstract-field'
+        | 'method'
+        | 'public-method'
+        | 'public-decorated-method'
+        | 'decorated-method'
+        | 'static-method'
+        | 'public-static-method'
+        | 'instance-method'
+        | 'public-instance-method'
+        | 'abstract-method'
+        | 'public-abstract-method'
+        | 'protected-method'
+        | 'protected-decorated-method'
+        | 'protected-static-method'
+        | 'protected-instance-method'
+        | 'protected-abstract-method'
+        | 'private-method'
+        | 'private-decorated-method'
+        | 'private-static-method'
+        | 'private-instance-method'
+        | 'private-abstract-method'
+        | 'call-signature'
+        | 'public-call-signature'
+        | 'static-call-signature'
+        | 'public-static-call-signature'
+        | 'instance-call-signature'
+        | 'public-instance-call-signature'
+        | 'abstract-call-signature'
+        | 'public-abstract-call-signature'
+        | 'protected-call-signature'
+        | 'protected-static-call-signature'
+        | 'protected-instance-call-signature'
+        | 'protected-abstract-call-signature'
+        | 'private-call-signature'
+        | 'private-static-call-signature'
+        | 'private-instance-call-signature'
+        | 'private-abstract-call-signature'
+        | 'constructor'
+        | 'public-constructor'
+        | 'protected-constructor'
+        | 'private-constructor'
+      )[]
+    | {
+        memberTypes?:
+          | (
+              | 'signature'
+              | 'field'
+              | 'public-field'
+              | 'public-decorated-field'
+              | 'decorated-field'
+              | 'static-field'
+              | 'public-static-field'
+              | 'instance-field'
+              | 'public-instance-field'
+              | 'abstract-field'
+              | 'public-abstract-field'
+              | 'protected-field'
+              | 'protected-decorated-field'
+              | 'protected-static-field'
+              | 'protected-instance-field'
+              | 'protected-abstract-field'
+              | 'private-field'
+              | 'private-decorated-field'
+              | 'private-static-field'
+              | 'private-instance-field'
+              | 'private-abstract-field'
+              | 'method'
+              | 'public-method'
+              | 'public-decorated-method'
+              | 'decorated-method'
+              | 'static-method'
+              | 'public-static-method'
+              | 'instance-method'
+              | 'public-instance-method'
+              | 'abstract-method'
+              | 'public-abstract-method'
+              | 'protected-method'
+              | 'protected-decorated-method'
+              | 'protected-static-method'
+              | 'protected-instance-method'
+              | 'protected-abstract-method'
+              | 'private-method'
+              | 'private-decorated-method'
+              | 'private-static-method'
+              | 'private-instance-method'
+              | 'private-abstract-method'
+              | 'call-signature'
+              | 'public-call-signature'
+              | 'static-call-signature'
+              | 'public-static-call-signature'
+              | 'instance-call-signature'
+              | 'public-instance-call-signature'
+              | 'abstract-call-signature'
+              | 'public-abstract-call-signature'
+              | 'protected-call-signature'
+              | 'protected-static-call-signature'
+              | 'protected-instance-call-signature'
+              | 'protected-abstract-call-signature'
+              | 'private-call-signature'
+              | 'private-static-call-signature'
+              | 'private-instance-call-signature'
+              | 'private-abstract-call-signature'
+              | 'constructor'
+              | 'public-constructor'
+              | 'protected-constructor'
+              | 'private-constructor'
+            )[]
+          | 'never';
+        order?: 'alphabetically' | 'as-written';
+      };
+  classExpressions?:
+    | 'never'
+    | (
+        | 'signature'
+        | 'field'
+        | 'public-field'
+        | 'public-decorated-field'
+        | 'decorated-field'
+        | 'static-field'
+        | 'public-static-field'
+        | 'instance-field'
+        | 'public-instance-field'
+        | 'abstract-field'
+        | 'public-abstract-field'
+        | 'protected-field'
+        | 'protected-decorated-field'
+        | 'protected-static-field'
+        | 'protected-instance-field'
+        | 'protected-abstract-field'
+        | 'private-field'
+        | 'private-decorated-field'
+        | 'private-static-field'
+        | 'private-instance-field'
+        | 'private-abstract-field'
+        | 'method'
+        | 'public-method'
+        | 'public-decorated-method'
+        | 'decorated-method'
+        | 'static-method'
+        | 'public-static-method'
+        | 'instance-method'
+        | 'public-instance-method'
+        | 'abstract-method'
+        | 'public-abstract-method'
+        | 'protected-method'
+        | 'protected-decorated-method'
+        | 'protected-static-method'
+        | 'protected-instance-method'
+        | 'protected-abstract-method'
+        | 'private-method'
+        | 'private-decorated-method'
+        | 'private-static-method'
+        | 'private-instance-method'
+        | 'private-abstract-method'
+        | 'call-signature'
+        | 'public-call-signature'
+        | 'static-call-signature'
+        | 'public-static-call-signature'
+        | 'instance-call-signature'
+        | 'public-instance-call-signature'
+        | 'abstract-call-signature'
+        | 'public-abstract-call-signature'
+        | 'protected-call-signature'
+        | 'protected-static-call-signature'
+        | 'protected-instance-call-signature'
+        | 'protected-abstract-call-signature'
+        | 'private-call-signature'
+        | 'private-static-call-signature'
+        | 'private-instance-call-signature'
+        | 'private-abstract-call-signature'
+        | 'constructor'
+        | 'public-constructor'
+        | 'protected-constructor'
+        | 'private-constructor'
+      )[]
+    | {
+        memberTypes?:
+          | (
+              | 'signature'
+              | 'field'
+              | 'public-field'
+              | 'public-decorated-field'
+              | 'decorated-field'
+              | 'static-field'
+              | 'public-static-field'
+              | 'instance-field'
+              | 'public-instance-field'
+              | 'abstract-field'
+              | 'public-abstract-field'
+              | 'protected-field'
+              | 'protected-decorated-field'
+              | 'protected-static-field'
+              | 'protected-instance-field'
+              | 'protected-abstract-field'
+              | 'private-field'
+              | 'private-decorated-field'
+              | 'private-static-field'
+              | 'private-instance-field'
+              | 'private-abstract-field'
+              | 'method'
+              | 'public-method'
+              | 'public-decorated-method'
+              | 'decorated-method'
+              | 'static-method'
+              | 'public-static-method'
+              | 'instance-method'
+              | 'public-instance-method'
+              | 'abstract-method'
+              | 'public-abstract-method'
+              | 'protected-method'
+              | 'protected-decorated-method'
+              | 'protected-static-method'
+              | 'protected-instance-method'
+              | 'protected-abstract-method'
+              | 'private-method'
+              | 'private-decorated-method'
+              | 'private-static-method'
+              | 'private-instance-method'
+              | 'private-abstract-method'
+              | 'call-signature'
+              | 'public-call-signature'
+              | 'static-call-signature'
+              | 'public-static-call-signature'
+              | 'instance-call-signature'
+              | 'public-instance-call-signature'
+              | 'abstract-call-signature'
+              | 'public-abstract-call-signature'
+              | 'protected-call-signature'
+              | 'protected-static-call-signature'
+              | 'protected-instance-call-signature'
+              | 'protected-abstract-call-signature'
+              | 'private-call-signature'
+              | 'private-static-call-signature'
+              | 'private-instance-call-signature'
+              | 'private-abstract-call-signature'
+              | 'constructor'
+              | 'public-constructor'
+              | 'protected-constructor'
+              | 'private-constructor'
+            )[]
+          | 'never';
+        order?: 'alphabetically' | 'as-written';
+      };
+  interfaces?:
+    | 'never'
+    | ('signature' | 'field' | 'method' | 'constructor')[]
+    | {
+        memberTypes?: ('signature' | 'field' | 'method' | 'constructor')[] | 'never';
+        order?: 'alphabetically' | 'as-written';
+      };
+  typeLiterals?:
+    | 'never'
+    | ('signature' | 'field' | 'method' | 'constructor')[]
+    | {
+        memberTypes?: ('signature' | 'field' | 'method' | 'constructor')[] | 'never';
+        order?: 'alphabetically' | 'as-written';
+      };
+}
 
 /**
  * Options.
@@ -83,20 +427,20 @@ export type MemberOrderingOptions = [MemberOrderingOption?];
 /**
  * Require a consistent member declaration order.
  *
- * @see [member-ordering](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-ordering.md)
+ * @see [member-ordering](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/member-ordering.md)
  */
 export type MemberOrderingRuleConfig = RuleConfig<MemberOrderingOptions>;
 
 /**
  * Require a consistent member declaration order.
  *
- * @see [member-ordering](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-ordering.md)
+ * @see [member-ordering](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/member-ordering.md)
  */
 export interface MemberOrderingRule {
   /**
    * Require a consistent member declaration order.
    *
-   * @see [member-ordering](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-ordering.md)
+   * @see [member-ordering](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/member-ordering.md)
    */
   '@typescript-eslint/member-ordering': MemberOrderingRuleConfig;
 }

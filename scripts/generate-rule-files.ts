@@ -1,3 +1,5 @@
+// @ts-expect-error
+import eslintPluginTypeScript from '@typescript-eslint/eslint-plugin';
 import { camelCase, pascalCase } from 'change-case';
 import type { Rule } from 'eslint';
 // @ts-expect-error
@@ -16,6 +18,7 @@ import { upperCaseFirst } from 'upper-case-first';
 
 interface Plugin {
   name: string;
+  prefix?: string;
   rules: Record<string, Rule.RuleModule>;
 }
 
@@ -40,6 +43,11 @@ const generationMap: Record<string, Plugin> = {
     name: 'Spellcheck',
     rules: (eslintPluginSpellcheck as Plugin).rules
   },
+  'typescript-eslint': {
+    name: 'TypeScript',
+    prefix: '@typescript-eslint',
+    rules: (eslintPluginTypeScript as Plugin).rules
+  },
   vue: {
     name: 'Vue',
     rules: (eslintPluginVue as Plugin).rules
@@ -51,7 +59,7 @@ const rulesDir: string = path.resolve(__dirname, '../src/rules');
 
 async function main(): Promise<void> {
   for (const pluginName in generationMap) {
-    const { rules, name } = generationMap[pluginName]!;
+    const { rules, name, prefix } = generationMap[pluginName]!;
 
     const ruleProviderDir: string = path.resolve(rulesDir, pluginName);
 
@@ -63,7 +71,10 @@ async function main(): Promise<void> {
 
       const ruleNamePascalCase: string = pascalCase(ruleName);
 
-      const description: string = upperCaseFirst(meta?.docs?.description ?? '');
+      let description: string = upperCaseFirst(meta?.docs?.description ?? '');
+      if (description.length > 0 && !description.endsWith('.')) {
+        description += '.';
+      }
       const seeDocLink: string = meta?.docs?.url ? `@see [${ruleName}](${meta.docs.url})` : '';
 
       const schema: JSONSchema4 | JSONSchema4[] | undefined = meta?.schema;
@@ -167,7 +178,7 @@ export type ${ruleNamePascalCase}Options = [${ruleNamePascalCase}Option?${
      *
      * ${seeDocLink}
      */
-    '${camelCase(pluginName)}/${ruleName}': ${ruleNamePascalCase}RuleConfig;
+    '${prefix ?? camelCase(pluginName)}/${ruleName}': ${ruleNamePascalCase}RuleConfig;
   }
   `;
       ruleContent = format(ruleContent, PRETTIER_OPTIONS);
@@ -200,6 +211,6 @@ main()
   .then(() => {
     //
   })
-  .catch(() => {
-    //
+  .catch((error) => {
+    console.log('Failed to generate rule files.', error);
   });

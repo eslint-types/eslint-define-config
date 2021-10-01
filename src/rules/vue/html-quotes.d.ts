@@ -18,20 +18,20 @@ export type HtmlQuotesOption = 'double' | 'single';
 export type HtmlQuotesOptions = [HtmlQuotesOption?, HtmlQuotesConfig?];
 
 /**
- * Enforce quotes style of HTML attributes
+ * Enforce quotes style of HTML attributes.
  *
  * @see [html-quotes](https://eslint.vuejs.org/rules/html-quotes.html)
  */
 export type HtmlQuotesRuleConfig = RuleConfig<HtmlQuotesOptions>;
 
 /**
- * Enforce quotes style of HTML attributes
+ * Enforce quotes style of HTML attributes.
  *
  * @see [html-quotes](https://eslint.vuejs.org/rules/html-quotes.html)
  */
 export interface HtmlQuotesRule {
   /**
-   * Enforce quotes style of HTML attributes
+   * Enforce quotes style of HTML attributes.
    *
    * @see [html-quotes](https://eslint.vuejs.org/rules/html-quotes.html)
    */

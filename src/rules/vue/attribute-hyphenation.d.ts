@@ -22,20 +22,20 @@ export type AttributeHyphenationOption = 'always' | 'never';
 export type AttributeHyphenationOptions = [AttributeHyphenationOption?, AttributeHyphenationConfig?];
 
 /**
- * Enforce attribute naming style on custom components in template
+ * Enforce attribute naming style on custom components in template.
  *
  * @see [attribute-hyphenation](https://eslint.vuejs.org/rules/attribute-hyphenation.html)
  */
 export type AttributeHyphenationRuleConfig = RuleConfig<AttributeHyphenationOptions>;
 
 /**
- * Enforce attribute naming style on custom components in template
+ * Enforce attribute naming style on custom components in template.
  *
  * @see [attribute-hyphenation](https://eslint.vuejs.org/rules/attribute-hyphenation.html)
  */
 export interface AttributeHyphenationRule {
   /**
-   * Enforce attribute naming style on custom components in template
+   * Enforce attribute naming style on custom components in template.
    *
    * @see [attribute-hyphenation](https://eslint.vuejs.org/rules/attribute-hyphenation.html)
    */

@@ -33,20 +33,20 @@ export type HtmlIndentOption = number | 'tab';
 export type HtmlIndentOptions = [HtmlIndentOption?, HtmlIndentConfig?];
 
 /**
- * Enforce consistent indentation in `<template>`
+ * Enforce consistent indentation in `<template>`.
  *
  * @see [html-indent](https://eslint.vuejs.org/rules/html-indent.html)
  */
 export type HtmlIndentRuleConfig = RuleConfig<HtmlIndentOptions>;
 
 /**
- * Enforce consistent indentation in `<template>`
+ * Enforce consistent indentation in `<template>`.
  *
  * @see [html-indent](https://eslint.vuejs.org/rules/html-indent.html)
  */
 export interface HtmlIndentRule {
   /**
-   * Enforce consistent indentation in `<template>`
+   * Enforce consistent indentation in `<template>`.
    *
    * @see [html-indent](https://eslint.vuejs.org/rules/html-indent.html)
    */

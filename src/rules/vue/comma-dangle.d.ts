@@ -24,20 +24,20 @@ export type ValueWithIgnore = 'always-multiline' | 'always' | 'ignore' | 'never'
 export type CommaDangleOptions = [CommaDangleOption?];
 
 /**
- * Require or disallow trailing commas
+ * Require or disallow trailing commas.
  *
  * @see [comma-dangle](https://eslint.vuejs.org/rules/comma-dangle.html)
  */
 export type CommaDangleRuleConfig = RuleConfig<CommaDangleOptions>;
 
 /**
- * Require or disallow trailing commas
+ * Require or disallow trailing commas.
  *
  * @see [comma-dangle](https://eslint.vuejs.org/rules/comma-dangle.html)
  */
 export interface CommaDangleRule {
   /**
-   * Require or disallow trailing commas
+   * Require or disallow trailing commas.
    *
    * @see [comma-dangle](https://eslint.vuejs.org/rules/comma-dangle.html)
    */

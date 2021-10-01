@@ -18,20 +18,20 @@ export type BraceStyleOption = '1tbs' | 'stroustrup' | 'allman';
 export type BraceStyleOptions = [BraceStyleOption?, BraceStyleConfig?];
 
 /**
- * Enforce consistent brace style for blocks
+ * Enforce consistent brace style for blocks.
  *
  * @see [brace-style](https://eslint.vuejs.org/rules/brace-style.html)
  */
 export type BraceStyleRuleConfig = RuleConfig<BraceStyleOptions>;
 
 /**
- * Enforce consistent brace style for blocks
+ * Enforce consistent brace style for blocks.
  *
  * @see [brace-style](https://eslint.vuejs.org/rules/brace-style.html)
  */
 export interface BraceStyleRule {
   /**
-   * Enforce consistent brace style for blocks
+   * Enforce consistent brace style for blocks.
    *
    * @see [brace-style](https://eslint.vuejs.org/rules/brace-style.html)
    */

@@ -11,20 +11,20 @@ export type MustacheInterpolationSpacingOption = 'always' | 'never';
 export type MustacheInterpolationSpacingOptions = [MustacheInterpolationSpacingOption?];
 
 /**
- * Enforce unified spacing in mustache interpolations
+ * Enforce unified spacing in mustache interpolations.
  *
  * @see [mustache-interpolation-spacing](https://eslint.vuejs.org/rules/mustache-interpolation-spacing.html)
  */
 export type MustacheInterpolationSpacingRuleConfig = RuleConfig<MustacheInterpolationSpacingOptions>;
 
 /**
- * Enforce unified spacing in mustache interpolations
+ * Enforce unified spacing in mustache interpolations.
  *
  * @see [mustache-interpolation-spacing](https://eslint.vuejs.org/rules/mustache-interpolation-spacing.html)
  */
 export interface MustacheInterpolationSpacingRule {
   /**
-   * Enforce unified spacing in mustache interpolations
+   * Enforce unified spacing in mustache interpolations.
    *
    * @see [mustache-interpolation-spacing](https://eslint.vuejs.org/rules/mustache-interpolation-spacing.html)
    */
