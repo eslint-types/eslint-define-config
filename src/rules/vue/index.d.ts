@@ -91,6 +91,7 @@ import type { NoReservedComponentNamesRule } from './no-reserved-component-names
 import type { NoReservedKeysRule } from './no-reserved-keys';
 import type { NoRestrictedBlockRule } from './no-restricted-block';
 import type { NoRestrictedCallAfterAwaitRule } from './no-restricted-call-after-await';
+import type { NoRestrictedClassRule } from './no-restricted-class';
 import type { NoRestrictedComponentOptionsRule } from './no-restricted-component-options';
 import type { NoRestrictedCustomEventRule } from './no-restricted-custom-event';
 import type { NoRestrictedPropsRule } from './no-restricted-props';
@@ -118,9 +119,10 @@ import type { NoUseComputedPropertyLikeMethodRule } from './no-use-computed-prop
 import type { NoUseVIfWithVForRule } from './no-use-v-if-with-v-for';
 import type { NoUselessConcatRule } from './no-useless-concat';
 import type { NoUselessMustachesRule } from './no-useless-mustaches';
+import type { NoUselessTemplateAttributesRule } from './no-useless-template-attributes';
 import type { NoUselessVBindRule } from './no-useless-v-bind';
-import type { NoVForTemplateKeyRule } from './no-v-for-template-key';
 import type { NoVForTemplateKeyOnChildRule } from './no-v-for-template-key-on-child';
+import type { NoVForTemplateKeyRule } from './no-v-for-template-key';
 import type { NoVHtmlRule } from './no-v-html';
 import type { NoVModelArgumentRule } from './no-v-model-argument';
 import type { NoVTextRule } from './no-v-text';
@@ -171,11 +173,11 @@ import type { ValidDefineEmitsRule } from './valid-define-emits';
 import type { ValidDefinePropsRule } from './valid-define-props';
 import type { ValidNextTickRule } from './valid-next-tick';
 import type { ValidTemplateRootRule } from './valid-template-root';
-import type { ValidVBindRule } from './valid-v-bind';
 import type { ValidVBindSyncRule } from './valid-v-bind-sync';
+import type { ValidVBindRule } from './valid-v-bind';
 import type { ValidVCloakRule } from './valid-v-cloak';
-import type { ValidVElseRule } from './valid-v-else';
 import type { ValidVElseIfRule } from './valid-v-else-if';
+import type { ValidVElseRule } from './valid-v-else';
 import type { ValidVForRule } from './valid-v-for';
 import type { ValidVHtmlRule } from './valid-v-html';
 import type { ValidVIfRule } from './valid-v-if';
@@ -285,6 +287,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoReservedKeysRule &
   NoRestrictedBlockRule &
   NoRestrictedCallAfterAwaitRule &
+  NoRestrictedClassRule &
   NoRestrictedComponentOptionsRule &
   NoRestrictedCustomEventRule &
   NoRestrictedPropsRule &
@@ -312,6 +315,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoUseVIfWithVForRule &
   NoUselessConcatRule &
   NoUselessMustachesRule &
+  NoUselessTemplateAttributesRule &
   NoUselessVBindRule &
   NoVForTemplateKeyOnChildRule &
   NoVForTemplateKeyRule &

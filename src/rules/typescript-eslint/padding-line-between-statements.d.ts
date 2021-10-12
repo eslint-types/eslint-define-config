@@ -147,20 +147,20 @@ export type PaddingLineBetweenStatementsOptions = PaddingLineBetweenStatementsOp
 /**
  * Require or disallow padding lines between statements.
  *
- * @see [padding-line-between-statements](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/padding-line-between-statements.md)
+ * @see [padding-line-between-statements](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/padding-line-between-statements.md)
  */
 export type PaddingLineBetweenStatementsRuleConfig = RuleConfig<PaddingLineBetweenStatementsOptions>;
 
 /**
  * Require or disallow padding lines between statements.
  *
- * @see [padding-line-between-statements](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/padding-line-between-statements.md)
+ * @see [padding-line-between-statements](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/padding-line-between-statements.md)
  */
 export interface PaddingLineBetweenStatementsRule {
   /**
    * Require or disallow padding lines between statements.
    *
-   * @see [padding-line-between-statements](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/padding-line-between-statements.md)
+   * @see [padding-line-between-statements](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/padding-line-between-statements.md)
    */
   '@typescript-eslint/padding-line-between-statements': PaddingLineBetweenStatementsRuleConfig;
 }

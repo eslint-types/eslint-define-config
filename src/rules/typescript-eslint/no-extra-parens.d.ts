@@ -30,20 +30,20 @@ export type NoExtraParensOptions = NoExtraParensOption;
 /**
  * Disallow unnecessary parentheses.
  *
- * @see [no-extra-parens](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/no-extra-parens.md)
+ * @see [no-extra-parens](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/no-extra-parens.md)
  */
 export type NoExtraParensRuleConfig = RuleConfig<NoExtraParensOptions>;
 
 /**
  * Disallow unnecessary parentheses.
  *
- * @see [no-extra-parens](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/no-extra-parens.md)
+ * @see [no-extra-parens](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/no-extra-parens.md)
  */
 export interface NoExtraParensRule {
   /**
    * Disallow unnecessary parentheses.
    *
-   * @see [no-extra-parens](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/no-extra-parens.md)
+   * @see [no-extra-parens](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/no-extra-parens.md)
    */
   '@typescript-eslint/no-extra-parens': NoExtraParensRuleConfig;
 }

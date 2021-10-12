@@ -85,6 +85,7 @@ import type { RequireArrayJoinSeparatorRule } from './require-array-join-separat
 import type { RequireNumberToFixedDigitsArgumentRule } from './require-number-to-fixed-digits-argument';
 import type { RequirePostMessageTargetOriginRule } from './require-post-message-target-origin';
 import type { StringContentRule } from './string-content';
+import type { TemplateIndentRule } from './template-indent';
 import type { ThrowNewErrorRule } from './throw-new-error';
 import type { NoArrayInstanceofRule } from './no-array-instanceof';
 import type { NoFnReferenceInIteratorRule } from './no-fn-reference-in-iterator';
@@ -191,6 +192,7 @@ export type UnicornRules = BetterRegexRule &
   RequireNumberToFixedDigitsArgumentRule &
   RequirePostMessageTargetOriginRule &
   StringContentRule &
+  TemplateIndentRule &
   ThrowNewErrorRule &
   NoArrayInstanceofRule &
   NoFnReferenceInIteratorRule &

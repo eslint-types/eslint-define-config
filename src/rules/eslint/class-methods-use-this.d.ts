@@ -5,6 +5,7 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface ClassMethodsUseThisOption {
   exceptMethods?: string[];
+  enforceForClassFields?: boolean;
 }
 
 /**

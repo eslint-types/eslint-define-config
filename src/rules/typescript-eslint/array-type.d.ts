@@ -29,20 +29,20 @@ export type ArrayTypeOptions = [ArrayTypeOption?];
 /**
  * Requires using either `T[]` or `Array<T>` for arrays.
  *
- * @see [array-type](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/array-type.md)
+ * @see [array-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/array-type.md)
  */
 export type ArrayTypeRuleConfig = RuleConfig<ArrayTypeOptions>;
 
 /**
  * Requires using either `T[]` or `Array<T>` for arrays.
  *
- * @see [array-type](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/array-type.md)
+ * @see [array-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/array-type.md)
  */
 export interface ArrayTypeRule {
   /**
    * Requires using either `T[]` or `Array<T>` for arrays.
    *
-   * @see [array-type](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/array-type.md)
+   * @see [array-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/array-type.md)
    */
   '@typescript-eslint/array-type': ArrayTypeRuleConfig;
 }

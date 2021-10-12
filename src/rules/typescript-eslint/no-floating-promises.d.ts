@@ -34,7 +34,7 @@ export type NoFloatingPromisesOptions = [NoFloatingPromisesOption?];
  * Unhandled promises can cause several issues, such as improperly sequenced operations, ignored Promise rejections and more.
  * Valid ways of handling a Promise-valued statement include awaiting, returning, and either calling `.then()` with two arguments or `.catch()` with one argument.
  *
- * @see [no-floating-promises](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/no-floating-promises.md)
+ * @see [no-floating-promises](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/no-floating-promises.md)
  */
 export type NoFloatingPromisesRuleConfig = RuleConfig<NoFloatingPromisesOptions>;
 
@@ -45,7 +45,7 @@ export type NoFloatingPromisesRuleConfig = RuleConfig<NoFloatingPromisesOptions>
  * Unhandled promises can cause several issues, such as improperly sequenced operations, ignored Promise rejections and more.
  * Valid ways of handling a Promise-valued statement include awaiting, returning, and either calling `.then()` with two arguments or `.catch()` with one argument.
  *
- * @see [no-floating-promises](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/no-floating-promises.md)
+ * @see [no-floating-promises](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/no-floating-promises.md)
  */
 export interface NoFloatingPromisesRule {
   /**
@@ -55,7 +55,7 @@ export interface NoFloatingPromisesRule {
    * Unhandled promises can cause several issues, such as improperly sequenced operations, ignored Promise rejections and more.
    * Valid ways of handling a Promise-valued statement include awaiting, returning, and either calling `.then()` with two arguments or `.catch()` with one argument.
    *
-   * @see [no-floating-promises](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/no-floating-promises.md)
+   * @see [no-floating-promises](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/no-floating-promises.md)
    */
   '@typescript-eslint/no-floating-promises': NoFloatingPromisesRuleConfig;
 }

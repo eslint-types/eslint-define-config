@@ -18,20 +18,20 @@ export type LinesBetweenClassMembersOptions = [LinesBetweenClassMembersOption?, 
 /**
  * Require or disallow an empty line between class members.
  *
- * @see [lines-between-class-members](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/lines-between-class-members.md)
+ * @see [lines-between-class-members](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/lines-between-class-members.md)
  */
 export type LinesBetweenClassMembersRuleConfig = RuleConfig<LinesBetweenClassMembersOptions>;
 
 /**
  * Require or disallow an empty line between class members.
  *
- * @see [lines-between-class-members](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/lines-between-class-members.md)
+ * @see [lines-between-class-members](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/lines-between-class-members.md)
  */
 export interface LinesBetweenClassMembersRule {
   /**
    * Require or disallow an empty line between class members.
    *
-   * @see [lines-between-class-members](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/lines-between-class-members.md)
+   * @see [lines-between-class-members](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/lines-between-class-members.md)
    */
   '@typescript-eslint/lines-between-class-members': LinesBetweenClassMembersRuleConfig;
 }

@@ -15,20 +15,20 @@ export type PreferObjectHasOwnOptions = [PreferObjectHasOwnOption?];
 /**
  * Prefer `Object.hasOwn(…)` over `Object.prototype.hasOwnProperty.call(…)`.
  *
- * @see [prefer-object-has-own](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v36.0.0/docs/rules/prefer-object-has-own.md)
+ * @see [prefer-object-has-own](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v37.0.1/docs/rules/prefer-object-has-own.md)
  */
 export type PreferObjectHasOwnRuleConfig = RuleConfig<PreferObjectHasOwnOptions>;
 
 /**
  * Prefer `Object.hasOwn(…)` over `Object.prototype.hasOwnProperty.call(…)`.
  *
- * @see [prefer-object-has-own](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v36.0.0/docs/rules/prefer-object-has-own.md)
+ * @see [prefer-object-has-own](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v37.0.1/docs/rules/prefer-object-has-own.md)
  */
 export interface PreferObjectHasOwnRule {
   /**
    * Prefer `Object.hasOwn(…)` over `Object.prototype.hasOwnProperty.call(…)`.
    *
-   * @see [prefer-object-has-own](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v36.0.0/docs/rules/prefer-object-has-own.md)
+   * @see [prefer-object-has-own](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v37.0.1/docs/rules/prefer-object-has-own.md)
    */
   'unicorn/prefer-object-has-own': PreferObjectHasOwnRuleConfig;
 }

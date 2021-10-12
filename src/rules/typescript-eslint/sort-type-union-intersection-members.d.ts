@@ -31,20 +31,20 @@ export type SortTypeUnionIntersectionMembersOptions = [SortTypeUnionIntersection
 /**
  * Enforces that members of a type union/intersection are sorted alphabetically.
  *
- * @see [sort-type-union-intersection-members](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/sort-type-union-intersection-members.md)
+ * @see [sort-type-union-intersection-members](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/sort-type-union-intersection-members.md)
  */
 export type SortTypeUnionIntersectionMembersRuleConfig = RuleConfig<SortTypeUnionIntersectionMembersOptions>;
 
 /**
  * Enforces that members of a type union/intersection are sorted alphabetically.
  *
- * @see [sort-type-union-intersection-members](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/sort-type-union-intersection-members.md)
+ * @see [sort-type-union-intersection-members](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/sort-type-union-intersection-members.md)
  */
 export interface SortTypeUnionIntersectionMembersRule {
   /**
    * Enforces that members of a type union/intersection are sorted alphabetically.
    *
-   * @see [sort-type-union-intersection-members](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/sort-type-union-intersection-members.md)
+   * @see [sort-type-union-intersection-members](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/sort-type-union-intersection-members.md)
    */
   '@typescript-eslint/sort-type-union-intersection-members': SortTypeUnionIntersectionMembersRuleConfig;
 }

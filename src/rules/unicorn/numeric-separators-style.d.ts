@@ -35,20 +35,20 @@ export type NumericSeparatorsStyleOptions = [NumericSeparatorsStyleOption?];
 /**
  * Enforce the style of numeric separators by correctly grouping digits.
  *
- * @see [numeric-separators-style](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v36.0.0/docs/rules/numeric-separators-style.md)
+ * @see [numeric-separators-style](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v37.0.1/docs/rules/numeric-separators-style.md)
  */
 export type NumericSeparatorsStyleRuleConfig = RuleConfig<NumericSeparatorsStyleOptions>;
 
 /**
  * Enforce the style of numeric separators by correctly grouping digits.
  *
- * @see [numeric-separators-style](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v36.0.0/docs/rules/numeric-separators-style.md)
+ * @see [numeric-separators-style](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v37.0.1/docs/rules/numeric-separators-style.md)
  */
 export interface NumericSeparatorsStyleRule {
   /**
    * Enforce the style of numeric separators by correctly grouping digits.
    *
-   * @see [numeric-separators-style](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v36.0.0/docs/rules/numeric-separators-style.md)
+   * @see [numeric-separators-style](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v37.0.1/docs/rules/numeric-separators-style.md)
    */
   'unicorn/numeric-separators-style': NumericSeparatorsStyleRuleConfig;
 }

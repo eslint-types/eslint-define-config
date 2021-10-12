@@ -16,20 +16,20 @@ export type NoThisAliasOptions = [NoThisAliasOption?];
 /**
  * Disallow aliasing `this`.
  *
- * @see [no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/no-this-alias.md)
+ * @see [no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/no-this-alias.md)
  */
 export type NoThisAliasRuleConfig = RuleConfig<NoThisAliasOptions>;
 
 /**
  * Disallow aliasing `this`.
  *
- * @see [no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/no-this-alias.md)
+ * @see [no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/no-this-alias.md)
  */
 export interface NoThisAliasRule {
   /**
    * Disallow aliasing `this`.
    *
-   * @see [no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/no-this-alias.md)
+   * @see [no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/no-this-alias.md)
    */
   '@typescript-eslint/no-this-alias': NoThisAliasRuleConfig;
 }

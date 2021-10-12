@@ -54,11 +54,13 @@ import type { NoMeaninglessVoidOperatorRule } from './no-meaningless-void-operat
 import type { NoMisusedNewRule } from './no-misused-new';
 import type { NoMisusedPromisesRule } from './no-misused-promises';
 import type { NoNamespaceRule } from './no-namespace';
+import type { NoNonNullAssertedNullishCoalescingRule } from './no-non-null-asserted-nullish-coalescing';
 import type { NoNonNullAssertedOptionalChainRule } from './no-non-null-asserted-optional-chain';
 import type { NoNonNullAssertionRule } from './no-non-null-assertion';
 import type { NoParameterPropertiesRule } from './no-parameter-properties';
 import type { NoRedeclareRule } from './no-redeclare';
 import type { NoRequireImportsRule } from './no-require-imports';
+import type { NoRestrictedImportsRule } from './no-restricted-imports';
 import type { NoShadowRule } from './no-shadow';
 import type { NoThisAliasRule } from './no-this-alias';
 import type { NoThrowLiteralRule } from './no-throw-literal';
@@ -76,7 +78,6 @@ import type { NoUnsafeMemberAccessRule } from './no-unsafe-member-access';
 import type { NoUnsafeReturnRule } from './no-unsafe-return';
 import type { NoUnusedExpressionsRule } from './no-unused-expressions';
 import type { NoUnusedVarsRule } from './no-unused-vars';
-import type { NoUnusedVarsExperimentalRule } from './no-unused-vars-experimental';
 import type { NoUseBeforeDefineRule } from './no-use-before-define';
 import type { NoUselessConstructorRule } from './no-useless-constructor';
 import type { NoVarRequiresRule } from './no-var-requires';
@@ -177,11 +178,13 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   NoMisusedNewRule &
   NoMisusedPromisesRule &
   NoNamespaceRule &
+  NoNonNullAssertedNullishCoalescingRule &
   NoNonNullAssertedOptionalChainRule &
   NoNonNullAssertionRule &
   NoParameterPropertiesRule &
   NoRedeclareRule &
   NoRequireImportsRule &
+  NoRestrictedImportsRule &
   NoShadowRule &
   NoThisAliasRule &
   NoThrowLiteralRule &
@@ -199,7 +202,6 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   NoUnsafeReturnRule &
   NoUnusedExpressionsRule &
   NoUnusedVarsRule &
-  NoUnusedVarsExperimentalRule &
   NoUseBeforeDefineRule &
   NoUselessConstructorRule &
   NoVarRequiresRule &

@@ -5,6 +5,7 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface IdMatchConfig {
   properties?: boolean;
+  classFields?: boolean;
   onlyDeclarations?: boolean;
   ignoreDestructuring?: boolean;
 }

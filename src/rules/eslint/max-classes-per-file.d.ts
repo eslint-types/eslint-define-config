@@ -3,7 +3,12 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type MaxClassesPerFileOption = number;
+export type MaxClassesPerFileOption =
+  | number
+  | {
+      ignoreExpressions?: boolean;
+      max?: number;
+    };
 
 /**
  * Options.

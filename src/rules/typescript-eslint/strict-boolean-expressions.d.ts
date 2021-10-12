@@ -22,20 +22,20 @@ export type StrictBooleanExpressionsOptions = [StrictBooleanExpressionsOption?];
 /**
  * Restricts the types allowed in boolean expressions.
  *
- * @see [strict-boolean-expressions](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/strict-boolean-expressions.md)
+ * @see [strict-boolean-expressions](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/strict-boolean-expressions.md)
  */
 export type StrictBooleanExpressionsRuleConfig = RuleConfig<StrictBooleanExpressionsOptions>;
 
 /**
  * Restricts the types allowed in boolean expressions.
  *
- * @see [strict-boolean-expressions](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/strict-boolean-expressions.md)
+ * @see [strict-boolean-expressions](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/strict-boolean-expressions.md)
  */
 export interface StrictBooleanExpressionsRule {
   /**
    * Restricts the types allowed in boolean expressions.
    *
-   * @see [strict-boolean-expressions](https://github.com/typescript-eslint/typescript-eslint/blob/v4.31.2/packages/eslint-plugin/docs/rules/strict-boolean-expressions.md)
+   * @see [strict-boolean-expressions](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/strict-boolean-expressions.md)
    */
   '@typescript-eslint/strict-boolean-expressions': StrictBooleanExpressionsRuleConfig;
 }
