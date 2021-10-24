@@ -1,6 +1,12 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.1.1...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.1.2...main)
+
+# 1.1.2
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.1.1...1.1.2)
+
+- Update some rules
 
 # 1.1.1
 
