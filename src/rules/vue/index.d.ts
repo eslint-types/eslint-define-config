@@ -38,6 +38,7 @@ import type { KeywordSpacingRule } from './keyword-spacing';
 import type { MatchComponentFileNameRule } from './match-component-file-name';
 import type { MaxAttributesPerLineRule } from './max-attributes-per-line';
 import type { MaxLenRule } from './max-len';
+import type { MultiWordComponentNamesRule } from './multi-word-component-names';
 import type { MultilineHtmlElementContentNewlineRule } from './multiline-html-element-content-newline';
 import type { MustacheInterpolationSpacingRule } from './mustache-interpolation-spacing';
 import type { NamePropertyCasingRule } from './name-property-casing';
@@ -46,6 +47,7 @@ import type { NextTickStyleRule } from './next-tick-style';
 import type { NoArrowFunctionsInWatchRule } from './no-arrow-functions-in-watch';
 import type { NoAsyncInComputedPropertiesRule } from './no-async-in-computed-properties';
 import type { NoBooleanDefaultRule } from './no-boolean-default';
+import type { NoComputedPropertiesInDataRule } from './no-computed-properties-in-data';
 import type { NoConfusingVForVIfRule } from './no-confusing-v-for-v-if';
 import type { NoConstantConditionRule } from './no-constant-condition';
 import type { NoCustomModifiersOnVModelRule } from './no-custom-modifiers-on-v-model';
@@ -59,6 +61,7 @@ import type { NoDeprecatedFunctionalTemplateRule } from './no-deprecated-functio
 import type { NoDeprecatedHtmlElementIsRule } from './no-deprecated-html-element-is';
 import type { NoDeprecatedInlineTemplateRule } from './no-deprecated-inline-template';
 import type { NoDeprecatedPropsDefaultThisRule } from './no-deprecated-props-default-this';
+import type { NoDeprecatedRouterLinkTagPropRule } from './no-deprecated-router-link-tag-prop';
 import type { NoDeprecatedScopeAttributeRule } from './no-deprecated-scope-attribute';
 import type { NoDeprecatedSlotAttributeRule } from './no-deprecated-slot-attribute';
 import type { NoDeprecatedSlotScopeAttributeRule } from './no-deprecated-slot-scope-attribute';
@@ -109,6 +112,7 @@ import type { NoTemplateShadowRule } from './no-template-shadow';
 import type { NoTemplateTargetBlankRule } from './no-template-target-blank';
 import type { NoTextareaMustacheRule } from './no-textarea-mustache';
 import type { NoThisInBeforeRouteEnterRule } from './no-this-in-before-route-enter';
+import type { NoUndefPropertiesRule } from './no-undef-properties';
 import type { NoUnregisteredComponentsRule } from './no-unregistered-components';
 import type { NoUnsupportedFeaturesRule } from './no-unsupported-features';
 import type { NoUnusedComponentsRule } from './no-unused-components';
@@ -234,6 +238,7 @@ export type VueRules = ArrayBracketNewlineRule &
   MatchComponentFileNameRule &
   MaxAttributesPerLineRule &
   MaxLenRule &
+  MultiWordComponentNamesRule &
   MultilineHtmlElementContentNewlineRule &
   MustacheInterpolationSpacingRule &
   NamePropertyCasingRule &
@@ -242,6 +247,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoArrowFunctionsInWatchRule &
   NoAsyncInComputedPropertiesRule &
   NoBooleanDefaultRule &
+  NoComputedPropertiesInDataRule &
   NoConfusingVForVIfRule &
   NoConstantConditionRule &
   NoCustomModifiersOnVModelRule &
@@ -255,6 +261,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoDeprecatedHtmlElementIsRule &
   NoDeprecatedInlineTemplateRule &
   NoDeprecatedPropsDefaultThisRule &
+  NoDeprecatedRouterLinkTagPropRule &
   NoDeprecatedScopeAttributeRule &
   NoDeprecatedSlotAttributeRule &
   NoDeprecatedSlotScopeAttributeRule &
@@ -305,6 +312,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoTemplateTargetBlankRule &
   NoTextareaMustacheRule &
   NoThisInBeforeRouteEnterRule &
+  NoUndefPropertiesRule &
   NoUnregisteredComponentsRule &
   NoUnsupportedFeaturesRule &
   NoUnusedComponentsRule &

@@ -205,6 +205,7 @@ import type { NoUnsafeNegationRule } from './no-unsafe-negation';
 import type { NoUnsafeOptionalChainingRule } from './no-unsafe-optional-chaining';
 import type { NoUnusedExpressionsRule } from './no-unused-expressions';
 import type { NoUnusedLabelsRule } from './no-unused-labels';
+import type { NoUnusedPrivateClassMembersRule } from './no-unused-private-class-members';
 import type { NoUnusedVarsRule } from './no-unused-vars';
 import type { NoUseBeforeDefineRule } from './no-use-before-define';
 import type { NoUselessBackreferenceRule } from './no-useless-backreference';
@@ -491,6 +492,7 @@ export type EslintRules = AccessorPairsRule &
   NoUnsafeOptionalChainingRule &
   NoUnusedExpressionsRule &
   NoUnusedLabelsRule &
+  NoUnusedPrivateClassMembersRule &
   NoUnusedVarsRule &
   NoUseBeforeDefineRule &
   NoUselessBackreferenceRule &
