@@ -87,8 +87,10 @@ async function main(): Promise<void> {
     const failedRules: string[] = [];
     for (const [ruleName, { meta }] of Object.entries(rules)) {
       try {
+        const nestedDepth: number = ruleName.split('/').length;
+
         const rulePath: string = path.resolve(ruleProviderDir, `${ruleName}.d.ts`);
-        let ruleContent: string = "import type { RuleConfig } from '../rule-config';";
+        let ruleContent: string = `import type { RuleConfig } from '${'../'.repeat(nestedDepth)}rule-config';`;
 
         const ruleNamePascalCase: string = pascalCase(ruleName);
 

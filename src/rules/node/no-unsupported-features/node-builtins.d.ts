@@ -1,4 +1,3 @@
-import type { LiteralUnion } from '../../../utility-types';
 import type { RuleConfig } from '../../rule-config';
 
 /**
@@ -6,7 +5,7 @@ import type { RuleConfig } from '../../rule-config';
  */
 export interface NoUnsupportedFeaturesNodeBuiltinsOption {
   version?: string;
-  ignores?: LiteralUnion<
+  ignores?: (
     | 'queueMicrotask'
     | 'require.resolve.paths'
     | 'Buffer.alloc'
@@ -163,7 +162,7 @@ export interface NoUnsupportedFeaturesNodeBuiltinsOption {
     | 'vm.Module'
     | 'vm.compileFunction'
     | 'worker_threads'
-  >[];
+  )[];
 }
 
 /**
