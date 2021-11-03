@@ -82,6 +82,10 @@ async function main(): Promise<void> {
 
     const ruleProviderDir: string = path.resolve(rulesDir, pluginName);
 
+    if (fs.existsSync(ruleProviderDir)) {
+      fs.rmSync(ruleProviderDir, { recursive: true, force: true });
+    }
+
     fs.mkdirSync(ruleProviderDir, { mode: 0o755, recursive: true });
 
     const failedRules: string[] = [];
@@ -234,6 +238,12 @@ export type ${ruleNamePascalCase}Options = ${
   }
   `;
         ruleContent = format(ruleContent, PRETTIER_OPTIONS);
+        if (nestedDepth > 1) {
+          const subPath: string = rulePath.replace(/\/[\w-]+.d.ts$/, '');
+          if (!fs.existsSync(subPath)) {
+            fs.mkdirSync(rulePath.replace(/\/[\w-]+.d.ts$/, ''), { recursive: true });
+          }
+        }
         fs.writeFileSync(rulePath, ruleContent);
       } catch (error) {
         if (error instanceof Error) {

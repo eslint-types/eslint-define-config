@@ -26,6 +26,15 @@ import type { NoUnsupportedFeaturesRule } from './no-unsupported-features';
 import type { NoUnsupportedFeaturesEsBuiltinsRule } from './no-unsupported-features/es-builtins';
 import type { NoUnsupportedFeaturesEsSyntaxRule } from './no-unsupported-features/es-syntax';
 import type { NoUnsupportedFeaturesNodeBuiltinsRule } from './no-unsupported-features/node-builtins';
+import type { PreferGlobalBufferRule } from './prefer-global/buffer';
+import type { PreferGlobalConsoleRule } from './prefer-global/console';
+import type { PreferGlobalProcessRule } from './prefer-global/process';
+import type { PreferGlobalTextDecoderRule } from './prefer-global/text-decoder';
+import type { PreferGlobalTextEncoderRule } from './prefer-global/text-encoder';
+import type { PreferGlobalUrlRule } from './prefer-global/url';
+import type { PreferGlobalUrlSearchParamsRule } from './prefer-global/url-search-params';
+import type { PreferPromisesDnsRule } from './prefer-promises/dns';
+import type { PreferPromisesFsRule } from './prefer-promises/fs';
 import type { ProcessExitAsThrowRule } from './process-exit-as-throw';
 import type { ShebangRule } from './shebang';
 
@@ -58,6 +67,15 @@ export type NodeRules = CallbackReturnRule &
   NoUnsupportedFeaturesEsBuiltinsRule &
   NoUnsupportedFeaturesEsSyntaxRule &
   NoUnsupportedFeaturesNodeBuiltinsRule &
+  PreferGlobalBufferRule &
+  PreferGlobalConsoleRule &
+  PreferGlobalProcessRule &
+  PreferGlobalTextDecoderRule &
+  PreferGlobalTextEncoderRule &
+  PreferGlobalUrlSearchParamsRule &
+  PreferGlobalUrlRule &
+  PreferPromisesDnsRule &
+  PreferPromisesFsRule &
   ProcessExitAsThrowRule &
   ShebangRule &
   NoHideCoreModulesRule &
