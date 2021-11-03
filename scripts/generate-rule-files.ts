@@ -28,6 +28,8 @@ interface Plugin {
 }
 
 const PRETTIER_OPTIONS: Options = {
+  plugins: [require.resolve('prettier-plugin-organize-imports')],
+
   parser: 'typescript',
   arrowParens: 'always',
   bracketSpacing: true,
