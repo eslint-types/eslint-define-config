@@ -11,29 +11,8 @@ export type QuotePropsOption =
   | [
       'always' | 'as-needed' | 'consistent' | 'consistent-as-needed',
       {
-        /**
-         * Requires quotes around language keywords used as object property names.
-         *
-         * @default true
-         *
-         * @see [keywords](https://eslint.org/docs/rules/quote-props#keywords)
-         */
         keywords?: boolean;
-        /**
-         * Dis-/allows quotes around object literal property names that are not strictly required.
-         *
-         * @default true
-         *
-         * @see [unnecessary](https://eslint.org/docs/rules/quote-props#unnecessary)
-         */
         unnecessary?: boolean;
-        /**
-         * Requires quotes around numbers used as object property names.
-         *
-         * @default true
-         *
-         * @see [numbers](https://eslint.org/docs/rules/quote-props#numbers)
-         */
         numbers?: boolean;
       }
     ];

@@ -6,13 +6,7 @@ import type { RuleConfig } from '../rule-config';
 export type QuotesConfig =
   | 'avoid-escape'
   | {
-      /**
-       * Allows strings to use single-quotes or double-quotes so long as the string contains a quote that would have to be escaped otherwise.
-       */
       avoidEscape?: boolean;
-      /**
-       * Allows strings to use backticks.
-       */
       allowTemplateLiterals?: boolean;
     };
 

@@ -9,11 +9,6 @@ export type SemiOption =
   | [
       'never',
       {
-        /**
-         * - `'any'` - Ignores semicolons (or lacking semicolon) at the end of statements if the next line starts with `[`, `(`, `/`, `+`, or `-`.
-         * - `'always'` - Requires semicolons at the end of statements if the next line starts with `[`, `(`, `/`, `+`, or `-`.
-         * - `'never'` - Disallows semicolons as the end of statements if it doesn't make ASI hazard even if the next line starts with `[`, `(`, `/`, `+`, or `-`.
-         */
         beforeStatementContinuationChars?: 'always' | 'any' | 'never';
       }
     ]
@@ -22,9 +17,6 @@ export type SemiOption =
   | [
       'always',
       {
-        /**
-         * Ignores the last semicolon in a block in which its braces (and therefore the content of the block) are in the same line.
-         */
         omitLastInOneLineBlock?: boolean;
       }
     ];

@@ -4,9 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoTypesOption {
-  /**
-   * @see [contexts](https://github.com/gajus/eslint-plugin-jsdoc#contexts-3)
-   */
   contexts?: (
     | string
     | {

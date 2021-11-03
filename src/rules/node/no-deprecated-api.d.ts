@@ -4,21 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoDeprecatedApiOption {
-  /**
-   * As mentioned above, this rule reads the [engines] field of `package.json`. But, you can overwrite the version by `version` option.
-   *
-   * The `version` option accepts [the valid version range of `node-semver`](https://github.com/npm/node-semver#range-grammar).
-   *
-   * @see [version](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md#version)
-   */
   version?: string;
-  /**
-   * This is the array of module names and module's member names.
-   *
-   * @default []
-   *
-   * @see [ignoreModuleItems](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md#ignoremoduleitems)
-   */
   ignoreModuleItems?: (
     | '_linklist'
     | '_stream_wrap'
@@ -106,13 +92,6 @@ export interface NoDeprecatedApiOption {
     | 'util._extend'
     | 'vm.runInDebugContext'
   )[];
-  /**
-   * This is the array of global variable names and global variable's member names.
-   *
-   * @default []
-   *
-   * @see [ignoreGlobalItems](https://github.com/mysticatea/eslint-plugin-node/blob/master/docs/rules/no-deprecated-api.md#ignoreglobalitems)
-   */
   ignoreGlobalItems?: (
     | 'Buffer()'
     | 'new Buffer()'

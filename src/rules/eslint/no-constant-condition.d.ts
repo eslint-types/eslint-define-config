@@ -4,13 +4,6 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoConstantConditionOption {
-  /**
-   * Setting this option to `false` allows constant expressions in loops.
-   *
-   * @default true
-   *
-   * @see [checkLoops](https://eslint.org/docs/rules/no-constant-condition#checkloops)
-   */
   checkLoops?: boolean;
 }
 
