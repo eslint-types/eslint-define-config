@@ -4,7 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoUnusedPropertiesOption {
-  groups?: ('props' | 'data' | 'computed' | 'methods' | 'setup')[];
+  groups?: ('props' | 'data' | 'asyncData' | 'computed' | 'methods' | 'setup')[];
   deepData?: boolean;
   ignorePublicMembers?: boolean;
 }

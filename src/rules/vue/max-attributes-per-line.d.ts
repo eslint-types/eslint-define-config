@@ -8,13 +8,11 @@ export interface MaxAttributesPerLineOption {
     | number
     | {
         max?: number;
-        allowFirstLine?: boolean;
       };
   multiline?:
     | number
     | {
         max?: number;
-        allowFirstLine?: boolean;
       };
 }
 

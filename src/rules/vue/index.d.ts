@@ -21,6 +21,7 @@ import type { DotLocationRule } from './dot-location';
 import type { DotNotationRule } from './dot-notation';
 import type { EqeqeqRule } from './eqeqeq';
 import type { ExperimentalScriptSetupVarsRule } from './experimental-script-setup-vars';
+import type { FirstAttributeLinebreakRule } from './first-attribute-linebreak';
 import type { FuncCallSpacingRule } from './func-call-spacing';
 import type { HtmlButtonHasTypeRule } from './html-button-has-type';
 import type { HtmlClosingBracketNewlineRule } from './html-closing-bracket-newline';
@@ -82,6 +83,7 @@ import type { NoInvalidModelKeysRule } from './no-invalid-model-keys';
 import type { NoIrregularWhitespaceRule } from './no-irregular-whitespace';
 import type { NoLifecycleAfterAwaitRule } from './no-lifecycle-after-await';
 import type { NoLoneTemplateRule } from './no-lone-template';
+import type { NoLossOfPrecisionRule } from './no-loss-of-precision';
 import type { NoMultiSpacesRule } from './no-multi-spaces';
 import type { NoMultipleObjectsInClassRule } from './no-multiple-objects-in-class';
 import type { NoMultipleSlotArgsRule } from './no-multiple-slot-args';
@@ -92,6 +94,7 @@ import type { NoPotentialComponentOptionTypoRule } from './no-potential-componen
 import type { NoRefAsOperandRule } from './no-ref-as-operand';
 import type { NoReservedComponentNamesRule } from './no-reserved-component-names';
 import type { NoReservedKeysRule } from './no-reserved-keys';
+import type { NoReservedPropsRule } from './no-reserved-props';
 import type { NoRestrictedBlockRule } from './no-restricted-block';
 import type { NoRestrictedCallAfterAwaitRule } from './no-restricted-call-after-await';
 import type { NoRestrictedClassRule } from './no-restricted-class';
@@ -221,6 +224,7 @@ export type VueRules = ArrayBracketNewlineRule &
   DotNotationRule &
   EqeqeqRule &
   ExperimentalScriptSetupVarsRule &
+  FirstAttributeLinebreakRule &
   FuncCallSpacingRule &
   HtmlButtonHasTypeRule &
   HtmlClosingBracketNewlineRule &
@@ -282,6 +286,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoIrregularWhitespaceRule &
   NoLifecycleAfterAwaitRule &
   NoLoneTemplateRule &
+  NoLossOfPrecisionRule &
   NoMultiSpacesRule &
   NoMultipleObjectsInClassRule &
   NoMultipleSlotArgsRule &
@@ -292,6 +297,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoRefAsOperandRule &
   NoReservedComponentNamesRule &
   NoReservedKeysRule &
+  NoReservedPropsRule &
   NoRestrictedBlockRule &
   NoRestrictedCallAfterAwaitRule &
   NoRestrictedClassRule &
