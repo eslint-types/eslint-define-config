@@ -1,6 +1,13 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.1.2...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.1.3...main)
+
+# 1.1.3
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.1.2...1.1.3)
+
+- Update rules for: [typescript-eslint, vue]
+- Removed some manual JSDocs to simplify the automatic generation process
 
 # 1.1.2
 
