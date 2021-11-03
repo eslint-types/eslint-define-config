@@ -16,20 +16,20 @@ export type RequireArraySortCompareOptions = [RequireArraySortCompareOption?];
 /**
  * Requires `Array#sort` calls to always provide a `compareFunction`.
  *
- * @see [require-array-sort-compare](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/require-array-sort-compare.md)
+ * @see [require-array-sort-compare](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/require-array-sort-compare.md)
  */
 export type RequireArraySortCompareRuleConfig = RuleConfig<RequireArraySortCompareOptions>;
 
 /**
  * Requires `Array#sort` calls to always provide a `compareFunction`.
  *
- * @see [require-array-sort-compare](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/require-array-sort-compare.md)
+ * @see [require-array-sort-compare](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/require-array-sort-compare.md)
  */
 export interface RequireArraySortCompareRule {
   /**
    * Requires `Array#sort` calls to always provide a `compareFunction`.
    *
-   * @see [require-array-sort-compare](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/require-array-sort-compare.md)
+   * @see [require-array-sort-compare](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/require-array-sort-compare.md)
    */
   '@typescript-eslint/require-array-sort-compare': RequireArraySortCompareRuleConfig;
 }

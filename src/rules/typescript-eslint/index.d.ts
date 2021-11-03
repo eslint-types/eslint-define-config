@@ -11,6 +11,7 @@ import type { CommaSpacingRule } from './comma-spacing';
 import type { ConsistentIndexedObjectStyleRule } from './consistent-indexed-object-style';
 import type { ConsistentTypeAssertionsRule } from './consistent-type-assertions';
 import type { ConsistentTypeDefinitionsRule } from './consistent-type-definitions';
+import type { ConsistentTypeExportsRule } from './consistent-type-exports';
 import type { ConsistentTypeImportsRule } from './consistent-type-imports';
 import type { DefaultParamLastRule } from './default-param-last';
 import type { DotNotationRule } from './dot-notation';
@@ -135,6 +136,7 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   ConsistentIndexedObjectStyleRule &
   ConsistentTypeAssertionsRule &
   ConsistentTypeDefinitionsRule &
+  ConsistentTypeExportsRule &
   ConsistentTypeImportsRule &
   DefaultParamLastRule &
   DotNotationRule &

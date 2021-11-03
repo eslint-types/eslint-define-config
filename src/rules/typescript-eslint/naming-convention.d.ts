@@ -649,20 +649,20 @@ export type NamingConventionOptions = NamingConventionOption;
 /**
  * Enforces naming conventions for everything across a codebase.
  *
- * @see [naming-convention](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/naming-convention.md)
+ * @see [naming-convention](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/naming-convention.md)
  */
 export type NamingConventionRuleConfig = RuleConfig<NamingConventionOptions>;
 
 /**
  * Enforces naming conventions for everything across a codebase.
  *
- * @see [naming-convention](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/naming-convention.md)
+ * @see [naming-convention](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/naming-convention.md)
  */
 export interface NamingConventionRule {
   /**
    * Enforces naming conventions for everything across a codebase.
    *
-   * @see [naming-convention](https://github.com/typescript-eslint/typescript-eslint/blob/v5.0.0/packages/eslint-plugin/docs/rules/naming-convention.md)
+   * @see [naming-convention](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/naming-convention.md)
    */
   '@typescript-eslint/naming-convention': NamingConventionRuleConfig;
 }
