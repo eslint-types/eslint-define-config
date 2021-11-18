@@ -1,11 +1,34 @@
 import type { LiteralUnion } from './utility-types';
 
 /**
- * Set to 3, 5 (default), 6, 7, 8, 9, 10, 11, or 12 to specify the version of ECMAScript syntax you want to use. You can also set to 2015 (same as 6), 2016 (same as 7), 2017 (same as 8), 2018 (same as 9), 2019 (same as 10), 2020 (same as 11), or 2021 (same as 12) to use the year-based naming.
+ * Any valid ECMAScript version number or 'latest':
  *
- * @default 5
+ * - A version: es3, es5, es6, es7, es8, es9, es10, es11, es12, es13, ...
+ * - A year: es2015, es2016, es2017, es2018, es2019, es2020, es2021, es2022, ...
+ * - 'latest'
+ *
+ * @see https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionsecmaversion
  */
-export type EcmaVersion = 3 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021;
+export type EcmaVersion =
+  | 3
+  | 5
+  | 6
+  | 7
+  | 8
+  | 9
+  | 10
+  | 11
+  | 12
+  | 13
+  | 2015
+  | 2016
+  | 2017
+  | 2018
+  | 2019
+  | 2020
+  | 2021
+  | 2022
+  | 'latest';
 
 /**
  * Set to "script" (default) or "module" if your code is in ECMAScript modules.
@@ -108,9 +131,18 @@ export type Parser = LiteralUnion<'babel-eslint' | '@typescript-eslint/parser' |
  */
 export interface ParserOptions extends Partial<Record<string, unknown>> {
   /**
-   * Set to 3, 5 (default), 6, 7, 8, 9, 10, 11, or 12 to specify the version of ECMAScript syntax you want to use. You can also set to 2015 (same as 6), 2016 (same as 7), 2017 (same as 8), 2018 (same as 9), 2019 (same as 10), 2020 (same as 11), or 2021 (same as 12) to use the year-based naming.
+   * Accepts any valid ECMAScript version number or 'latest':
    *
-   * @default 5
+   * - A version: es3, es5, es6, es7, es8, es9, es10, es11, es12, es13, ...
+   * - A year: es2015, es2016, es2017, es2018, es2019, es2020, es2021, es2022, ...
+   * - 'latest'
+   *
+   * When it's a version or a year, the value must be a number - so do not include the es prefix.
+   *
+   * Specifies the version of ECMAScript syntax you want to use. This is used by the parser to determine how to perform scope analysis, and it affects the default
+   *
+   * @default 2018
+   * @see https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionsecmaversion
    */
   ecmaVersion?: EcmaVersion;
   /**
