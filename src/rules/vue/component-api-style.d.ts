@@ -4,8 +4,8 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type ComponentApiStyleOption = [
-  'script-setup' | 'composition' | 'options',
-  ...('script-setup' | 'composition' | 'options')[]
+  'script-setup' | 'composition' | 'composition-vue2' | 'options',
+  ...('script-setup' | 'composition' | 'composition-vue2' | 'options')[]
 ];
 
 /**

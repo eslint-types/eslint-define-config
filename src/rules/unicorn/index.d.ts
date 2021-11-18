@@ -20,6 +20,7 @@ import type { NoArrayPushPushRule } from './no-array-push-push';
 import type { NoArrayReduceRule } from './no-array-reduce';
 import type { NoConsoleSpacesRule } from './no-console-spaces';
 import type { NoDocumentCookieRule } from './no-document-cookie';
+import type { NoEmptyFileRule } from './no-empty-file';
 import type { NoFnReferenceInIteratorRule } from './no-fn-reference-in-iterator';
 import type { NoForLoopRule } from './no-for-loop';
 import type { NoHexEscapeRule } from './no-hex-escape';
@@ -62,6 +63,7 @@ import type { PreferDomNodeRemoveRule } from './prefer-dom-node-remove';
 import type { PreferDomNodeTextContentRule } from './prefer-dom-node-text-content';
 import type { PreferEventKeyRule } from './prefer-event-key';
 import type { PreferExponentiationOperatorRule } from './prefer-exponentiation-operator';
+import type { PreferExportFromRule } from './prefer-export-from';
 import type { PreferFlatMapRule } from './prefer-flat-map';
 import type { PreferIncludesRule } from './prefer-includes';
 import type { PreferKeyboardEventKeyRule } from './prefer-keyboard-event-key';
@@ -126,6 +128,7 @@ export type UnicornRules = BetterRegexRule &
   NoArrayReduceRule &
   NoConsoleSpacesRule &
   NoDocumentCookieRule &
+  NoEmptyFileRule &
   NoForLoopRule &
   NoHexEscapeRule &
   NoInstanceofArrayRule &
@@ -163,6 +166,7 @@ export type UnicornRules = BetterRegexRule &
   PreferDomNodeDatasetRule &
   PreferDomNodeRemoveRule &
   PreferDomNodeTextContentRule &
+  PreferExportFromRule &
   PreferIncludesRule &
   PreferKeyboardEventKeyRule &
   PreferMathTruncRule &

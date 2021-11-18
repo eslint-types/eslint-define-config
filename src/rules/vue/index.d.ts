@@ -48,6 +48,7 @@ import type { NextTickStyleRule } from './next-tick-style';
 import type { NoArrowFunctionsInWatchRule } from './no-arrow-functions-in-watch';
 import type { NoAsyncInComputedPropertiesRule } from './no-async-in-computed-properties';
 import type { NoBooleanDefaultRule } from './no-boolean-default';
+import type { NoChildContentRule } from './no-child-content';
 import type { NoComputedPropertiesInDataRule } from './no-computed-properties-in-data';
 import type { NoConfusingVForVIfRule } from './no-confusing-v-for-v-if';
 import type { NoConstantConditionRule } from './no-constant-condition';
@@ -78,6 +79,7 @@ import type { NoDuplicateAttributesRule } from './no-duplicate-attributes';
 import type { NoEmptyComponentBlockRule } from './no-empty-component-block';
 import type { NoEmptyPatternRule } from './no-empty-pattern';
 import type { NoExportInScriptSetupRule } from './no-export-in-script-setup';
+import type { NoExposeAfterAwaitRule } from './no-expose-after-await';
 import type { NoExtraParensRule } from './no-extra-parens';
 import type { NoInvalidModelKeysRule } from './no-invalid-model-keys';
 import type { NoIrregularWhitespaceRule } from './no-irregular-whitespace';
@@ -251,6 +253,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoArrowFunctionsInWatchRule &
   NoAsyncInComputedPropertiesRule &
   NoBooleanDefaultRule &
+  NoChildContentRule &
   NoComputedPropertiesInDataRule &
   NoConfusingVForVIfRule &
   NoConstantConditionRule &
@@ -281,6 +284,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoEmptyComponentBlockRule &
   NoEmptyPatternRule &
   NoExportInScriptSetupRule &
+  NoExposeAfterAwaitRule &
   NoExtraParensRule &
   NoInvalidModelKeysRule &
   NoIrregularWhitespaceRule &

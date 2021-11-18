@@ -36,20 +36,20 @@ export type NoRestrictedImportsOptions = NoRestrictedImportsOption;
 /**
  * Disallow specified modules when loaded by `import`.
  *
- * @see [no-restricted-imports](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/no-restricted-imports.md)
+ * @see [no-restricted-imports](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/no-restricted-imports.md)
  */
 export type NoRestrictedImportsRuleConfig = RuleConfig<NoRestrictedImportsOptions>;
 
 /**
  * Disallow specified modules when loaded by `import`.
  *
- * @see [no-restricted-imports](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/no-restricted-imports.md)
+ * @see [no-restricted-imports](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/no-restricted-imports.md)
  */
 export interface NoRestrictedImportsRule {
   /**
    * Disallow specified modules when loaded by `import`.
    *
-   * @see [no-restricted-imports](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/no-restricted-imports.md)
+   * @see [no-restricted-imports](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/no-restricted-imports.md)
    */
   '@typescript-eslint/no-restricted-imports': NoRestrictedImportsRuleConfig;
 }

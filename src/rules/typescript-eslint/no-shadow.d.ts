@@ -19,20 +19,20 @@ export type NoShadowOptions = [NoShadowOption?];
 /**
  * Disallow variable declarations from shadowing variables declared in the outer scope.
  *
- * @see [no-shadow](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/no-shadow.md)
+ * @see [no-shadow](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/no-shadow.md)
  */
 export type NoShadowRuleConfig = RuleConfig<NoShadowOptions>;
 
 /**
  * Disallow variable declarations from shadowing variables declared in the outer scope.
  *
- * @see [no-shadow](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/no-shadow.md)
+ * @see [no-shadow](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/no-shadow.md)
  */
 export interface NoShadowRule {
   /**
    * Disallow variable declarations from shadowing variables declared in the outer scope.
    *
-   * @see [no-shadow](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/no-shadow.md)
+   * @see [no-shadow](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/no-shadow.md)
    */
   '@typescript-eslint/no-shadow': NoShadowRuleConfig;
 }

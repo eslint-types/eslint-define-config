@@ -45,20 +45,20 @@ export type MemberDelimiterStyleOptions = [MemberDelimiterStyleOption?];
 /**
  * Require a specific member delimiter style for interfaces and type literals.
  *
- * @see [member-delimiter-style](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/member-delimiter-style.md)
+ * @see [member-delimiter-style](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/member-delimiter-style.md)
  */
 export type MemberDelimiterStyleRuleConfig = RuleConfig<MemberDelimiterStyleOptions>;
 
 /**
  * Require a specific member delimiter style for interfaces and type literals.
  *
- * @see [member-delimiter-style](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/member-delimiter-style.md)
+ * @see [member-delimiter-style](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/member-delimiter-style.md)
  */
 export interface MemberDelimiterStyleRule {
   /**
    * Require a specific member delimiter style for interfaces and type literals.
    *
-   * @see [member-delimiter-style](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/member-delimiter-style.md)
+   * @see [member-delimiter-style](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/member-delimiter-style.md)
    */
   '@typescript-eslint/member-delimiter-style': MemberDelimiterStyleRuleConfig;
 }

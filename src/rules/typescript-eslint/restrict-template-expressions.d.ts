@@ -20,20 +20,20 @@ export type RestrictTemplateExpressionsOptions = [RestrictTemplateExpressionsOpt
 /**
  * Enforce template literal expressions to be of string type.
  *
- * @see [restrict-template-expressions](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/restrict-template-expressions.md)
+ * @see [restrict-template-expressions](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/restrict-template-expressions.md)
  */
 export type RestrictTemplateExpressionsRuleConfig = RuleConfig<RestrictTemplateExpressionsOptions>;
 
 /**
  * Enforce template literal expressions to be of string type.
  *
- * @see [restrict-template-expressions](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/restrict-template-expressions.md)
+ * @see [restrict-template-expressions](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/restrict-template-expressions.md)
  */
 export interface RestrictTemplateExpressionsRule {
   /**
    * Enforce template literal expressions to be of string type.
    *
-   * @see [restrict-template-expressions](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/restrict-template-expressions.md)
+   * @see [restrict-template-expressions](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/restrict-template-expressions.md)
    */
   '@typescript-eslint/restrict-template-expressions': RestrictTemplateExpressionsRuleConfig;
 }

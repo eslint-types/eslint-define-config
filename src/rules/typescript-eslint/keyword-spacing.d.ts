@@ -290,20 +290,20 @@ export type KeywordSpacingOptions = [KeywordSpacingOption?];
 /**
  * Enforce consistent spacing before and after keywords.
  *
- * @see [keyword-spacing](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/keyword-spacing.md)
+ * @see [keyword-spacing](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/keyword-spacing.md)
  */
 export type KeywordSpacingRuleConfig = RuleConfig<KeywordSpacingOptions>;
 
 /**
  * Enforce consistent spacing before and after keywords.
  *
- * @see [keyword-spacing](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/keyword-spacing.md)
+ * @see [keyword-spacing](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/keyword-spacing.md)
  */
 export interface KeywordSpacingRule {
   /**
    * Enforce consistent spacing before and after keywords.
    *
-   * @see [keyword-spacing](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/keyword-spacing.md)
+   * @see [keyword-spacing](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/keyword-spacing.md)
    */
   '@typescript-eslint/keyword-spacing': KeywordSpacingRuleConfig;
 }

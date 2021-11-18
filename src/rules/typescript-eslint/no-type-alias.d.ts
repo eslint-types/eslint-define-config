@@ -22,20 +22,20 @@ export type NoTypeAliasOptions = [NoTypeAliasOption?];
 /**
  * Disallow the use of type aliases.
  *
- * @see [no-type-alias](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/no-type-alias.md)
+ * @see [no-type-alias](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/no-type-alias.md)
  */
 export type NoTypeAliasRuleConfig = RuleConfig<NoTypeAliasOptions>;
 
 /**
  * Disallow the use of type aliases.
  *
- * @see [no-type-alias](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/no-type-alias.md)
+ * @see [no-type-alias](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/no-type-alias.md)
  */
 export interface NoTypeAliasRule {
   /**
    * Disallow the use of type aliases.
    *
-   * @see [no-type-alias](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.0/packages/eslint-plugin/docs/rules/no-type-alias.md)
+   * @see [no-type-alias](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/no-type-alias.md)
    */
   '@typescript-eslint/no-type-alias': NoTypeAliasRuleConfig;
 }
