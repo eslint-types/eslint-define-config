@@ -1,5 +1,6 @@
-import type { Linter } from 'eslint';
 import type { LiteralUnion } from './utility-types';
+
+// Some types copied from `@types/eslint` `Linter.ParserOptions`
 
 /**
  * Any valid ECMAScript version number or 'latest':
@@ -10,12 +11,29 @@ import type { LiteralUnion } from './utility-types';
  *
  * @see https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionsecmaversion
  */
-export type EcmaVersion = NonNullable<Linter.ParserOptions['ecmaVersion']>;
+export type EcmaVersion =
+  | 3
+  | 5
+  | 6
+  | 7
+  | 8
+  | 9
+  | 10
+  | 11
+  | 12
+  | 2015
+  | 2016
+  | 2017
+  | 2018
+  | 2019
+  | 2020
+  | 2021
+  | 'latest';
 
 /**
  * Set to "script" (default) or "module" if your code is in ECMAScript modules.
  */
-export type SourceType = NonNullable<Linter.ParserOptions['sourceType']>;
+export type SourceType = 'script' | 'module';
 
 /**
  * An object indicating which additional language features you'd like to use.
