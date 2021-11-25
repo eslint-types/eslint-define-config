@@ -1,6 +1,8 @@
 // @ts-expect-error
+import eslintPluginVueI18n from '@intlify/eslint-plugin-vue-i18n';
+// @ts-expect-error
 import eslintPluginTypeScript from '@typescript-eslint/eslint-plugin';
-import { camelCase, pascalCase } from 'change-case';
+import { paramCase as kebabCase, pascalCase } from 'change-case';
 import type { Rule } from 'eslint';
 import * as eslint from 'eslint';
 // @ts-expect-error
@@ -13,6 +15,8 @@ import eslintPluginSpellcheck from 'eslint-plugin-spellcheck';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 // @ts-expect-error
 import eslintPluginVue from 'eslint-plugin-vue';
+// @ts-expect-error
+import eslintPluginVuePugSfc from 'eslint-plugin-vue-pug-sfc';
 import * as fs from 'fs';
 import type { JSONSchema4 } from 'json-schema';
 import { compile } from 'json-schema-to-typescript';
@@ -70,6 +74,15 @@ const generationMap: Record<string, Plugin> = {
   vue: {
     name: 'Vue',
     rules: (eslintPluginVue as Plugin).rules
+  },
+  'vue-i18n': {
+    name: 'VueI18n',
+    prefix: '@intlify/vue-i18n',
+    rules: (eslintPluginVueI18n as Plugin).rules
+  },
+  'vue-pug-sfc': {
+    name: 'VuePugSfc',
+    rules: (eslintPluginVuePugSfc as Plugin).rules
   }
 };
 
@@ -233,7 +246,7 @@ export type ${ruleNamePascalCase}Options = ${
      * ${seeDocLink}
      */
     '${
-      pluginName !== 'eslint' ? `${prefix ?? camelCase(pluginName)}/` : ''
+      pluginName !== 'eslint' ? `${prefix ?? kebabCase(pluginName)}/` : ''
     }${ruleName}': ${ruleNamePascalCase}RuleConfig;
   }
   `;

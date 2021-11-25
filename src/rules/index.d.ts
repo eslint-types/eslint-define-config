@@ -7,6 +7,8 @@ import type { SpellcheckRules } from './spellcheck';
 import type { TypeScriptRules } from './typescript-eslint';
 import type { UnicornRules } from './unicorn';
 import type { VueRules } from './vue';
+import type { VueI18nRules } from './vue-i18n';
+import type { VuePugSfcRules } from './vue-pug-sfc';
 
 /**
  * Rules.
@@ -22,5 +24,7 @@ export type Rules = Partial<
     TypeScriptRules &
     UnicornRules &
     VueRules &
+    VueI18nRules &
+    VuePugSfcRules &
     Record<string, RuleConfig>
 >;
