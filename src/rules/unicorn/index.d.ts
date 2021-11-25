@@ -10,6 +10,7 @@ import type { ExpiringTodoCommentsRule } from './expiring-todo-comments';
 import type { ExplicitLengthCheckRule } from './explicit-length-check';
 import type { FilenameCaseRule } from './filename-case';
 import type { ImportIndexRule } from './import-index';
+import type { ImportStyleRule } from './import-style';
 import type { NewForBuiltinsRule } from './new-for-builtins';
 import type { NoAbusiveEslintDisableRule } from './no-abusive-eslint-disable';
 import type { NoArrayCallbackReferenceRule } from './no-array-callback-reference';
@@ -18,6 +19,7 @@ import type { NoArrayInstanceofRule } from './no-array-instanceof';
 import type { NoArrayMethodThisArgumentRule } from './no-array-method-this-argument';
 import type { NoArrayPushPushRule } from './no-array-push-push';
 import type { NoArrayReduceRule } from './no-array-reduce';
+import type { NoAwaitExpressionMemberRule } from './no-await-expression-member';
 import type { NoConsoleSpacesRule } from './no-console-spaces';
 import type { NoDocumentCookieRule } from './no-document-cookie';
 import type { NoEmptyFileRule } from './no-empty-file';
@@ -54,6 +56,7 @@ import type { PreferArrayFlatMapRule } from './prefer-array-flat-map';
 import type { PreferArrayIndexOfRule } from './prefer-array-index-of';
 import type { PreferArraySomeRule } from './prefer-array-some';
 import type { PreferAtRule } from './prefer-at';
+import type { PreferCodePointRule } from './prefer-code-point';
 import type { PreferDatasetRule } from './prefer-dataset';
 import type { PreferDateNowRule } from './prefer-date-now';
 import type { PreferDefaultParametersRule } from './prefer-default-parameters';
@@ -96,6 +99,7 @@ import type { PreferTextContentRule } from './prefer-text-content';
 import type { PreferTopLevelAwaitRule } from './prefer-top-level-await';
 import type { PreferTrimStartEndRule } from './prefer-trim-start-end';
 import type { PreferTypeErrorRule } from './prefer-type-error';
+import type { PreventAbbreviationsRule } from './prevent-abbreviations';
 import type { RegexShorthandRule } from './regex-shorthand';
 import type { RequireArrayJoinSeparatorRule } from './require-array-join-separator';
 import type { RequireNumberToFixedDigitsArgumentRule } from './require-number-to-fixed-digits-argument';
@@ -119,6 +123,7 @@ export type UnicornRules = BetterRegexRule &
   ExplicitLengthCheckRule &
   FilenameCaseRule &
   ImportIndexRule &
+  ImportStyleRule &
   NewForBuiltinsRule &
   NoAbusiveEslintDisableRule &
   NoArrayCallbackReferenceRule &
@@ -126,6 +131,7 @@ export type UnicornRules = BetterRegexRule &
   NoArrayMethodThisArgumentRule &
   NoArrayPushPushRule &
   NoArrayReduceRule &
+  NoAwaitExpressionMemberRule &
   NoConsoleSpacesRule &
   NoDocumentCookieRule &
   NoEmptyFileRule &
@@ -160,6 +166,7 @@ export type UnicornRules = BetterRegexRule &
   PreferArrayIndexOfRule &
   PreferArraySomeRule &
   PreferAtRule &
+  PreferCodePointRule &
   PreferDateNowRule &
   PreferDefaultParametersRule &
   PreferDomNodeAppendRule &
@@ -192,6 +199,7 @@ export type UnicornRules = BetterRegexRule &
   PreferTernaryRule &
   PreferTopLevelAwaitRule &
   PreferTypeErrorRule &
+  PreventAbbreviationsRule &
   RequireArrayJoinSeparatorRule &
   RequireNumberToFixedDigitsArgumentRule &
   RequirePostMessageTargetOriginRule &
