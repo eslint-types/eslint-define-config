@@ -1,6 +1,13 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.1.4...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.2.0...main)
+
+# 1.2.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.1.4...1.2.0)
+
+- Add support for: [vue-i18n, vue-pug-sfc]
+- Update rules for: [eslint, typescript-eslint, unicorn]
 
 # 1.1.4
 
