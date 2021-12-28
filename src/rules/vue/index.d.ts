@@ -15,6 +15,7 @@ import type { CommentDirectiveRule } from './comment-directive';
 import type { ComponentApiStyleRule } from './component-api-style';
 import type { ComponentDefinitionNameCasingRule } from './component-definition-name-casing';
 import type { ComponentNameInTemplateCasingRule } from './component-name-in-template-casing';
+import type { ComponentOptionsNameCasingRule } from './component-options-name-casing';
 import type { ComponentTagsOrderRule } from './component-tags-order';
 import type { CustomEventNameCasingRule } from './custom-event-name-casing';
 import type { DotLocationRule } from './dot-location';
@@ -143,6 +144,7 @@ import type { OneComponentPerFileRule } from './one-component-per-file';
 import type { OperatorLinebreakRule } from './operator-linebreak';
 import type { OrderInComponentsRule } from './order-in-components';
 import type { PaddingLineBetweenBlocksRule } from './padding-line-between-blocks';
+import type { PreferSeparateStaticClassRule } from './prefer-separate-static-class';
 import type { PreferTemplateRule } from './prefer-template';
 import type { PropNameCasingRule } from './prop-name-casing';
 import type { RequireComponentIsRule } from './require-component-is';
@@ -220,6 +222,7 @@ export type VueRules = ArrayBracketNewlineRule &
   ComponentApiStyleRule &
   ComponentDefinitionNameCasingRule &
   ComponentNameInTemplateCasingRule &
+  ComponentOptionsNameCasingRule &
   ComponentTagsOrderRule &
   CustomEventNameCasingRule &
   DotLocationRule &
@@ -348,6 +351,7 @@ export type VueRules = ArrayBracketNewlineRule &
   OperatorLinebreakRule &
   OrderInComponentsRule &
   PaddingLineBetweenBlocksRule &
+  PreferSeparateStaticClassRule &
   PreferTemplateRule &
   PropNameCasingRule &
   RequireComponentIsRule &
