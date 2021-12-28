@@ -239,6 +239,7 @@ import type { PreferDestructuringRule } from './prefer-destructuring';
 import type { PreferExponentiationOperatorRule } from './prefer-exponentiation-operator';
 import type { PreferNamedCaptureGroupRule } from './prefer-named-capture-group';
 import type { PreferNumericLiteralsRule } from './prefer-numeric-literals';
+import type { PreferObjectHasOwnRule } from './prefer-object-has-own';
 import type { PreferObjectSpreadRule } from './prefer-object-spread';
 import type { PreferPromiseRejectErrorsRule } from './prefer-promise-reject-errors';
 import type { PreferReflectRule } from './prefer-reflect';
@@ -526,6 +527,7 @@ export type EslintRules = AccessorPairsRule &
   PreferExponentiationOperatorRule &
   PreferNamedCaptureGroupRule &
   PreferNumericLiteralsRule &
+  PreferObjectHasOwnRule &
   PreferObjectSpreadRule &
   PreferPromiseRejectErrorsRule &
   PreferReflectRule &
