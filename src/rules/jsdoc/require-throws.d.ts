@@ -20,22 +20,22 @@ export interface RequireThrowsOption {
 export type RequireThrowsOptions = [RequireThrowsOption?];
 
 /**
+ * Requires that throw statements are documented.
  *
- *
- * @see [require-throws](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns)
+ * @see [require-throws](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-throws)
  */
 export type RequireThrowsRuleConfig = RuleConfig<RequireThrowsOptions>;
 
 /**
+ * Requires that throw statements are documented.
  *
- *
- * @see [require-throws](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns)
+ * @see [require-throws](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-throws)
  */
 export interface RequireThrowsRule {
   /**
+   * Requires that throw statements are documented.
    *
-   *
-   * @see [require-throws](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns)
+   * @see [require-throws](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-throws)
    */
   'jsdoc/require-throws': RequireThrowsRuleConfig;
 }
