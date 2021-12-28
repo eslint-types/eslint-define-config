@@ -29,20 +29,20 @@ export type NoEmptyFunctionOptions = [NoEmptyFunctionOption?];
 /**
  * Disallow empty functions.
  *
- * @see [no-empty-function](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/no-empty-function.md)
+ * @see [no-empty-function](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-empty-function.md)
  */
 export type NoEmptyFunctionRuleConfig = RuleConfig<NoEmptyFunctionOptions>;
 
 /**
  * Disallow empty functions.
  *
- * @see [no-empty-function](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/no-empty-function.md)
+ * @see [no-empty-function](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-empty-function.md)
  */
 export interface NoEmptyFunctionRule {
   /**
    * Disallow empty functions.
    *
-   * @see [no-empty-function](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/no-empty-function.md)
+   * @see [no-empty-function](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-empty-function.md)
    */
   '@typescript-eslint/no-empty-function': NoEmptyFunctionRuleConfig;
 }

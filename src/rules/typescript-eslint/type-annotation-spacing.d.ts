@@ -42,20 +42,20 @@ export type TypeAnnotationSpacingOptions = [TypeAnnotationSpacingOption?];
 /**
  * Require consistent spacing around type annotations.
  *
- * @see [type-annotation-spacing](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/type-annotation-spacing.md)
+ * @see [type-annotation-spacing](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/type-annotation-spacing.md)
  */
 export type TypeAnnotationSpacingRuleConfig = RuleConfig<TypeAnnotationSpacingOptions>;
 
 /**
  * Require consistent spacing around type annotations.
  *
- * @see [type-annotation-spacing](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/type-annotation-spacing.md)
+ * @see [type-annotation-spacing](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/type-annotation-spacing.md)
  */
 export interface TypeAnnotationSpacingRule {
   /**
    * Require consistent spacing around type annotations.
    *
-   * @see [type-annotation-spacing](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/type-annotation-spacing.md)
+   * @see [type-annotation-spacing](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/type-annotation-spacing.md)
    */
   '@typescript-eslint/type-annotation-spacing': TypeAnnotationSpacingRuleConfig;
 }

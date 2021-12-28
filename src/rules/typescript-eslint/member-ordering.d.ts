@@ -215,7 +215,7 @@ export interface MemberOrderingOption {
               | 'private-abstract-set'
             )[]
           | 'never';
-        order?: 'alphabetically' | 'as-written';
+        order?: 'alphabetically' | 'alphabetically-case-insensitive' | 'as-written';
       };
   classes?:
     | 'never'
@@ -428,7 +428,7 @@ export interface MemberOrderingOption {
               | 'private-abstract-set'
             )[]
           | 'never';
-        order?: 'alphabetically' | 'as-written';
+        order?: 'alphabetically' | 'alphabetically-case-insensitive' | 'as-written';
       };
   classExpressions?:
     | 'never'
@@ -641,21 +641,21 @@ export interface MemberOrderingOption {
               | 'private-abstract-set'
             )[]
           | 'never';
-        order?: 'alphabetically' | 'as-written';
+        order?: 'alphabetically' | 'alphabetically-case-insensitive' | 'as-written';
       };
   interfaces?:
     | 'never'
     | ('signature' | 'field' | 'method' | 'constructor')[]
     | {
         memberTypes?: ('signature' | 'field' | 'method' | 'constructor')[] | 'never';
-        order?: 'alphabetically' | 'as-written';
+        order?: 'alphabetically' | 'alphabetically-case-insensitive' | 'as-written';
       };
   typeLiterals?:
     | 'never'
     | ('signature' | 'field' | 'method' | 'constructor')[]
     | {
         memberTypes?: ('signature' | 'field' | 'method' | 'constructor')[] | 'never';
-        order?: 'alphabetically' | 'as-written';
+        order?: 'alphabetically' | 'alphabetically-case-insensitive' | 'as-written';
       };
 }
 
@@ -667,20 +667,20 @@ export type MemberOrderingOptions = [MemberOrderingOption?];
 /**
  * Require a consistent member declaration order.
  *
- * @see [member-ordering](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/member-ordering.md)
+ * @see [member-ordering](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/member-ordering.md)
  */
 export type MemberOrderingRuleConfig = RuleConfig<MemberOrderingOptions>;
 
 /**
  * Require a consistent member declaration order.
  *
- * @see [member-ordering](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/member-ordering.md)
+ * @see [member-ordering](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/member-ordering.md)
  */
 export interface MemberOrderingRule {
   /**
    * Require a consistent member declaration order.
    *
-   * @see [member-ordering](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/member-ordering.md)
+   * @see [member-ordering](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/member-ordering.md)
    */
   '@typescript-eslint/member-ordering': MemberOrderingRuleConfig;
 }

@@ -19,20 +19,20 @@ export type SpaceBeforeFunctionParenOptions = [SpaceBeforeFunctionParenOption?];
 /**
  * Enforces consistent spacing before function parenthesis.
  *
- * @see [space-before-function-paren](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/space-before-function-paren.md)
+ * @see [space-before-function-paren](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/space-before-function-paren.md)
  */
 export type SpaceBeforeFunctionParenRuleConfig = RuleConfig<SpaceBeforeFunctionParenOptions>;
 
 /**
  * Enforces consistent spacing before function parenthesis.
  *
- * @see [space-before-function-paren](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/space-before-function-paren.md)
+ * @see [space-before-function-paren](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/space-before-function-paren.md)
  */
 export interface SpaceBeforeFunctionParenRule {
   /**
    * Enforces consistent spacing before function parenthesis.
    *
-   * @see [space-before-function-paren](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/space-before-function-paren.md)
+   * @see [space-before-function-paren](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/space-before-function-paren.md)
    */
   '@typescript-eslint/space-before-function-paren': SpaceBeforeFunctionParenRuleConfig;
 }

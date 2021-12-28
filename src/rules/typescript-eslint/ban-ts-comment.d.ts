@@ -19,20 +19,20 @@ export type BanTsCommentOptions = [BanTsCommentOption?];
 /**
  * Bans `@ts-<directive>` comments from being used or requires descriptions after directive.
  *
- * @see [ban-ts-comment](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/ban-ts-comment.md)
+ * @see [ban-ts-comment](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/ban-ts-comment.md)
  */
 export type BanTsCommentRuleConfig = RuleConfig<BanTsCommentOptions>;
 
 /**
  * Bans `@ts-<directive>` comments from being used or requires descriptions after directive.
  *
- * @see [ban-ts-comment](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/ban-ts-comment.md)
+ * @see [ban-ts-comment](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/ban-ts-comment.md)
  */
 export interface BanTsCommentRule {
   /**
    * Bans `@ts-<directive>` comments from being used or requires descriptions after directive.
    *
-   * @see [ban-ts-comment](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/ban-ts-comment.md)
+   * @see [ban-ts-comment](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/ban-ts-comment.md)
    */
   '@typescript-eslint/ban-ts-comment': BanTsCommentRuleConfig;
 }

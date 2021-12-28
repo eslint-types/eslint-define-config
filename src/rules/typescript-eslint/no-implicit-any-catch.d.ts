@@ -17,7 +17,7 @@ export type NoImplicitAnyCatchOptions = [NoImplicitAnyCatchOption?];
  *
  * @deprecated
  *
- * @see [no-implicit-any-catch](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/no-implicit-any-catch.md)
+ * @see [no-implicit-any-catch](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-implicit-any-catch.md)
  */
 export type NoImplicitAnyCatchRuleConfig = RuleConfig<NoImplicitAnyCatchOptions>;
 
@@ -26,7 +26,7 @@ export type NoImplicitAnyCatchRuleConfig = RuleConfig<NoImplicitAnyCatchOptions>
  *
  * @deprecated
  *
- * @see [no-implicit-any-catch](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/no-implicit-any-catch.md)
+ * @see [no-implicit-any-catch](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-implicit-any-catch.md)
  */
 export interface NoImplicitAnyCatchRule {
   /**
@@ -34,7 +34,7 @@ export interface NoImplicitAnyCatchRule {
    *
    * @deprecated
    *
-   * @see [no-implicit-any-catch](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/no-implicit-any-catch.md)
+   * @see [no-implicit-any-catch](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-implicit-any-catch.md)
    */
   '@typescript-eslint/no-implicit-any-catch': NoImplicitAnyCatchRuleConfig;
 }

@@ -23,20 +23,20 @@ export type QuotesOptions = [QuotesOption?, QuotesConfig?];
 /**
  * Enforce the consistent use of either backticks, double, or single quotes.
  *
- * @see [quotes](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/quotes.md)
+ * @see [quotes](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/quotes.md)
  */
 export type QuotesRuleConfig = RuleConfig<QuotesOptions>;
 
 /**
  * Enforce the consistent use of either backticks, double, or single quotes.
  *
- * @see [quotes](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/quotes.md)
+ * @see [quotes](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/quotes.md)
  */
 export interface QuotesRule {
   /**
    * Enforce the consistent use of either backticks, double, or single quotes.
    *
-   * @see [quotes](https://github.com/typescript-eslint/typescript-eslint/blob/v5.4.0/packages/eslint-plugin/docs/rules/quotes.md)
+   * @see [quotes](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/quotes.md)
    */
   '@typescript-eslint/quotes': QuotesRuleConfig;
 }
