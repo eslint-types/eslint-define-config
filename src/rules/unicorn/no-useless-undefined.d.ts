@@ -15,20 +15,20 @@ export type NoUselessUndefinedOptions = [NoUselessUndefinedOption?];
 /**
  * Disallow useless `undefined`.
  *
- * @see [no-useless-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v39.0.0/docs/rules/no-useless-undefined.md)
+ * @see [no-useless-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/no-useless-undefined.md)
  */
 export type NoUselessUndefinedRuleConfig = RuleConfig<NoUselessUndefinedOptions>;
 
 /**
  * Disallow useless `undefined`.
  *
- * @see [no-useless-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v39.0.0/docs/rules/no-useless-undefined.md)
+ * @see [no-useless-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/no-useless-undefined.md)
  */
 export interface NoUselessUndefinedRule {
   /**
    * Disallow useless `undefined`.
    *
-   * @see [no-useless-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v39.0.0/docs/rules/no-useless-undefined.md)
+   * @see [no-useless-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/no-useless-undefined.md)
    */
   'unicorn/no-useless-undefined': NoUselessUndefinedRuleConfig;
 }

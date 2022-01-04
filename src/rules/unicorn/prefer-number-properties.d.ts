@@ -15,20 +15,20 @@ export type PreferNumberPropertiesOptions = [PreferNumberPropertiesOption?];
 /**
  * Prefer `Number` static properties over global ones.
  *
- * @see [prefer-number-properties](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v39.0.0/docs/rules/prefer-number-properties.md)
+ * @see [prefer-number-properties](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/prefer-number-properties.md)
  */
 export type PreferNumberPropertiesRuleConfig = RuleConfig<PreferNumberPropertiesOptions>;
 
 /**
  * Prefer `Number` static properties over global ones.
  *
- * @see [prefer-number-properties](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v39.0.0/docs/rules/prefer-number-properties.md)
+ * @see [prefer-number-properties](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/prefer-number-properties.md)
  */
 export interface PreferNumberPropertiesRule {
   /**
    * Prefer `Number` static properties over global ones.
    *
-   * @see [prefer-number-properties](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v39.0.0/docs/rules/prefer-number-properties.md)
+   * @see [prefer-number-properties](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/prefer-number-properties.md)
    */
   'unicorn/prefer-number-properties': PreferNumberPropertiesRuleConfig;
 }

@@ -1,34 +1,28 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- * Option.
- */
-export interface PreferObjectHasOwnOption {
-  functions?: any[];
-}
-
-/**
- * Options.
- */
-export type PreferObjectHasOwnOptions = [PreferObjectHasOwnOption?];
-
-/**
- * Prefer `Object.hasOwn(…)` over `Object.prototype.hasOwnProperty.call(…)`.
  *
- * @see [prefer-object-has-own](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v39.0.0/docs/rules/prefer-object-has-own.md)
+ *
+ * @deprecated
+ *
+ * @see [prefer-object-has-own](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/deprecated-rules.md#prefer-object-has-own)
  */
-export type PreferObjectHasOwnRuleConfig = RuleConfig<PreferObjectHasOwnOptions>;
+export type PreferObjectHasOwnRuleConfig = RuleConfig<[]>;
 
 /**
- * Prefer `Object.hasOwn(…)` over `Object.prototype.hasOwnProperty.call(…)`.
  *
- * @see [prefer-object-has-own](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v39.0.0/docs/rules/prefer-object-has-own.md)
+ *
+ * @deprecated
+ *
+ * @see [prefer-object-has-own](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/deprecated-rules.md#prefer-object-has-own)
  */
 export interface PreferObjectHasOwnRule {
   /**
-   * Prefer `Object.hasOwn(…)` over `Object.prototype.hasOwnProperty.call(…)`.
    *
-   * @see [prefer-object-has-own](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v39.0.0/docs/rules/prefer-object-has-own.md)
+   *
+   * @deprecated
+   *
+   * @see [prefer-object-has-own](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/deprecated-rules.md#prefer-object-has-own)
    */
   'unicorn/prefer-object-has-own': PreferObjectHasOwnRuleConfig;
 }
