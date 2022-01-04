@@ -38,12 +38,14 @@ import type { NoObjectAsDefaultParameterRule } from './no-object-as-default-para
 import type { NoProcessExitRule } from './no-process-exit';
 import type { NoReduceRule } from './no-reduce';
 import type { NoStaticOnlyClassRule } from './no-static-only-class';
+import type { NoThenableRule } from './no-thenable';
 import type { NoThisAssignmentRule } from './no-this-assignment';
 import type { NoUnreadableArrayDestructuringRule } from './no-unreadable-array-destructuring';
 import type { NoUnsafeRegexRule } from './no-unsafe-regex';
 import type { NoUnusedPropertiesRule } from './no-unused-properties';
 import type { NoUselessFallbackInSpreadRule } from './no-useless-fallback-in-spread';
 import type { NoUselessLengthCheckRule } from './no-useless-length-check';
+import type { NoUselessPromiseResolveRejectRule } from './no-useless-promise-resolve-reject';
 import type { NoUselessSpreadRule } from './no-useless-spread';
 import type { NoUselessUndefinedRule } from './no-useless-undefined';
 import type { NoZeroFractionsRule } from './no-zero-fractions';
@@ -69,6 +71,7 @@ import type { PreferExponentiationOperatorRule } from './prefer-exponentiation-o
 import type { PreferExportFromRule } from './prefer-export-from';
 import type { PreferFlatMapRule } from './prefer-flat-map';
 import type { PreferIncludesRule } from './prefer-includes';
+import type { PreferJsonParseBufferRule } from './prefer-json-parse-buffer';
 import type { PreferKeyboardEventKeyRule } from './prefer-keyboard-event-key';
 import type { PreferMathTruncRule } from './prefer-math-trunc';
 import type { PreferModernDomApisRule } from './prefer-modern-dom-apis';
@@ -101,6 +104,7 @@ import type { PreferTrimStartEndRule } from './prefer-trim-start-end';
 import type { PreferTypeErrorRule } from './prefer-type-error';
 import type { PreventAbbreviationsRule } from './prevent-abbreviations';
 import type { RegexShorthandRule } from './regex-shorthand';
+import type { RelativeUrlStyleRule } from './relative-url-style';
 import type { RequireArrayJoinSeparatorRule } from './require-array-join-separator';
 import type { RequireNumberToFixedDigitsArgumentRule } from './require-number-to-fixed-digits-argument';
 import type { RequirePostMessageTargetOriginRule } from './require-post-message-target-origin';
@@ -148,12 +152,14 @@ export type UnicornRules = BetterRegexRule &
   NoObjectAsDefaultParameterRule &
   NoProcessExitRule &
   NoStaticOnlyClassRule &
+  NoThenableRule &
   NoThisAssignmentRule &
   NoUnreadableArrayDestructuringRule &
   NoUnsafeRegexRule &
   NoUnusedPropertiesRule &
   NoUselessFallbackInSpreadRule &
   NoUselessLengthCheckRule &
+  NoUselessPromiseResolveRejectRule &
   NoUselessSpreadRule &
   NoUselessUndefinedRule &
   NoZeroFractionsRule &
@@ -175,6 +181,7 @@ export type UnicornRules = BetterRegexRule &
   PreferDomNodeTextContentRule &
   PreferExportFromRule &
   PreferIncludesRule &
+  PreferJsonParseBufferRule &
   PreferKeyboardEventKeyRule &
   PreferMathTruncRule &
   PreferModernDomApisRule &
@@ -183,7 +190,6 @@ export type UnicornRules = BetterRegexRule &
   PreferNodeProtocolRule &
   PreferNumberPropertiesRule &
   PreferObjectFromEntriesRule &
-  PreferObjectHasOwnRule &
   PreferOptionalCatchBindingRule &
   PreferPrototypeMethodsRule &
   PreferQuerySelectorRule &
@@ -200,6 +206,7 @@ export type UnicornRules = BetterRegexRule &
   PreferTopLevelAwaitRule &
   PreferTypeErrorRule &
   PreventAbbreviationsRule &
+  RelativeUrlStyleRule &
   RequireArrayJoinSeparatorRule &
   RequireNumberToFixedDigitsArgumentRule &
   RequirePostMessageTargetOriginRule &
@@ -215,6 +222,7 @@ export type UnicornRules = BetterRegexRule &
   PreferFlatMapRule &
   PreferNodeAppendRule &
   PreferNodeRemoveRule &
+  PreferObjectHasOwnRule &
   PreferReplaceAllRule &
   PreferStartsEndsWithRule &
   PreferTextContentRule &
