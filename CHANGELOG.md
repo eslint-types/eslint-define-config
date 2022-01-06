@@ -1,6 +1,15 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.2.1...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.2.2...main)
+
+# 1.2.2
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.2.1...1.2.2)
+
+- Allow `parser` and `parserOptions` to get overridden ([193593a])
+- Update rules for: [jsdoc, typescript-eslint, unicorn]
+
+[193593a]: https://github.com/Shinigami92/eslint-define-config/commit/193593aec4435a95cb3a83f09adc8ad54344528c
 
 # 1.2.1
 
