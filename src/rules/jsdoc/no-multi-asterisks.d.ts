@@ -4,6 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoMultiAsterisksOption {
+  allowWhitespace?: boolean;
   preventAtEnd?: boolean;
   preventAtMiddleLines?: boolean;
   [k: string]: any;
