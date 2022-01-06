@@ -23,20 +23,20 @@ export type NoUnusedVarsOptions = [NoUnusedVarsOption?];
 /**
  * Disallow unused variables.
  *
- * @see [no-unused-vars](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-unused-vars.md)
+ * @see [no-unused-vars](https://typescript-eslint.io/rules/no-unused-vars)
  */
 export type NoUnusedVarsRuleConfig = RuleConfig<NoUnusedVarsOptions>;
 
 /**
  * Disallow unused variables.
  *
- * @see [no-unused-vars](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-unused-vars.md)
+ * @see [no-unused-vars](https://typescript-eslint.io/rules/no-unused-vars)
  */
 export interface NoUnusedVarsRule {
   /**
    * Disallow unused variables.
    *
-   * @see [no-unused-vars](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-unused-vars.md)
+   * @see [no-unused-vars](https://typescript-eslint.io/rules/no-unused-vars)
    */
   '@typescript-eslint/no-unused-vars': NoUnusedVarsRuleConfig;
 }

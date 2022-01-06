@@ -13,20 +13,20 @@ export type ReturnAwaitOptions = [ReturnAwaitOption?];
 /**
  * Enforces consistent returning of awaited values.
  *
- * @see [return-await](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/return-await.md)
+ * @see [return-await](https://typescript-eslint.io/rules/return-await)
  */
 export type ReturnAwaitRuleConfig = RuleConfig<ReturnAwaitOptions>;
 
 /**
  * Enforces consistent returning of awaited values.
  *
- * @see [return-await](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/return-await.md)
+ * @see [return-await](https://typescript-eslint.io/rules/return-await)
  */
 export interface ReturnAwaitRule {
   /**
    * Enforces consistent returning of awaited values.
    *
-   * @see [return-await](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/return-await.md)
+   * @see [return-await](https://typescript-eslint.io/rules/return-await)
    */
   '@typescript-eslint/return-await': ReturnAwaitRuleConfig;
 }

@@ -16,20 +16,20 @@ export type NoThrowLiteralOptions = [NoThrowLiteralOption?];
 /**
  * Disallow throwing literals as exceptions.
  *
- * @see [no-throw-literal](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-throw-literal.md)
+ * @see [no-throw-literal](https://typescript-eslint.io/rules/no-throw-literal)
  */
 export type NoThrowLiteralRuleConfig = RuleConfig<NoThrowLiteralOptions>;
 
 /**
  * Disallow throwing literals as exceptions.
  *
- * @see [no-throw-literal](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-throw-literal.md)
+ * @see [no-throw-literal](https://typescript-eslint.io/rules/no-throw-literal)
  */
 export interface NoThrowLiteralRule {
   /**
    * Disallow throwing literals as exceptions.
    *
-   * @see [no-throw-literal](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-throw-literal.md)
+   * @see [no-throw-literal](https://typescript-eslint.io/rules/no-throw-literal)
    */
   '@typescript-eslint/no-throw-literal': NoThrowLiteralRuleConfig;
 }

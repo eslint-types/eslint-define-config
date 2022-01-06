@@ -16,20 +16,20 @@ export type NoInvalidVoidTypeOptions = [NoInvalidVoidTypeOption?];
 /**
  * Disallows usage of `void` type outside of generic or return types.
  *
- * @see [no-invalid-void-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-invalid-void-type.md)
+ * @see [no-invalid-void-type](https://typescript-eslint.io/rules/no-invalid-void-type)
  */
 export type NoInvalidVoidTypeRuleConfig = RuleConfig<NoInvalidVoidTypeOptions>;
 
 /**
  * Disallows usage of `void` type outside of generic or return types.
  *
- * @see [no-invalid-void-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-invalid-void-type.md)
+ * @see [no-invalid-void-type](https://typescript-eslint.io/rules/no-invalid-void-type)
  */
 export interface NoInvalidVoidTypeRule {
   /**
    * Disallows usage of `void` type outside of generic or return types.
    *
-   * @see [no-invalid-void-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-invalid-void-type.md)
+   * @see [no-invalid-void-type](https://typescript-eslint.io/rules/no-invalid-void-type)
    */
   '@typescript-eslint/no-invalid-void-type': NoInvalidVoidTypeRuleConfig;
 }

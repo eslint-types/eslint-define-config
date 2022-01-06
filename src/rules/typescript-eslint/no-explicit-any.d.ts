@@ -16,20 +16,20 @@ export type NoExplicitAnyOptions = [NoExplicitAnyOption?];
 /**
  * Disallow usage of the `any` type.
  *
- * @see [no-explicit-any](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-explicit-any.md)
+ * @see [no-explicit-any](https://typescript-eslint.io/rules/no-explicit-any)
  */
 export type NoExplicitAnyRuleConfig = RuleConfig<NoExplicitAnyOptions>;
 
 /**
  * Disallow usage of the `any` type.
  *
- * @see [no-explicit-any](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-explicit-any.md)
+ * @see [no-explicit-any](https://typescript-eslint.io/rules/no-explicit-any)
  */
 export interface NoExplicitAnyRule {
   /**
    * Disallow usage of the `any` type.
    *
-   * @see [no-explicit-any](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-explicit-any.md)
+   * @see [no-explicit-any](https://typescript-eslint.io/rules/no-explicit-any)
    */
   '@typescript-eslint/no-explicit-any': NoExplicitAnyRuleConfig;
 }

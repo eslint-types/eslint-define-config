@@ -29,20 +29,20 @@ export type SemiOptions = SemiOption;
 /**
  * Require or disallow semicolons instead of ASI.
  *
- * @see [semi](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/semi.md)
+ * @see [semi](https://typescript-eslint.io/rules/semi)
  */
 export type SemiRuleConfig = RuleConfig<SemiOptions>;
 
 /**
  * Require or disallow semicolons instead of ASI.
  *
- * @see [semi](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/semi.md)
+ * @see [semi](https://typescript-eslint.io/rules/semi)
  */
 export interface SemiRule {
   /**
    * Require or disallow semicolons instead of ASI.
    *
-   * @see [semi](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/semi.md)
+   * @see [semi](https://typescript-eslint.io/rules/semi)
    */
   '@typescript-eslint/semi': SemiRuleConfig;
 }

@@ -3,20 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Disallows invocation of `require()`.
  *
- * @see [no-require-imports](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-require-imports.md)
+ * @see [no-require-imports](https://typescript-eslint.io/rules/no-require-imports)
  */
 export type NoRequireImportsRuleConfig = RuleConfig<[]>;
 
 /**
  * Disallows invocation of `require()`.
  *
- * @see [no-require-imports](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-require-imports.md)
+ * @see [no-require-imports](https://typescript-eslint.io/rules/no-require-imports)
  */
 export interface NoRequireImportsRule {
   /**
    * Disallows invocation of `require()`.
    *
-   * @see [no-require-imports](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-require-imports.md)
+   * @see [no-require-imports](https://typescript-eslint.io/rules/no-require-imports)
    */
   '@typescript-eslint/no-require-imports': NoRequireImportsRuleConfig;
 }

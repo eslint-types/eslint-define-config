@@ -23,20 +23,20 @@ export type InitDeclarationsOptions = InitDeclarationsOption;
 /**
  * Require or disallow initialization in variable declarations.
  *
- * @see [init-declarations](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/init-declarations.md)
+ * @see [init-declarations](https://typescript-eslint.io/rules/init-declarations)
  */
 export type InitDeclarationsRuleConfig = RuleConfig<InitDeclarationsOptions>;
 
 /**
  * Require or disallow initialization in variable declarations.
  *
- * @see [init-declarations](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/init-declarations.md)
+ * @see [init-declarations](https://typescript-eslint.io/rules/init-declarations)
  */
 export interface InitDeclarationsRule {
   /**
    * Require or disallow initialization in variable declarations.
    *
-   * @see [init-declarations](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/init-declarations.md)
+   * @see [init-declarations](https://typescript-eslint.io/rules/init-declarations)
    */
   '@typescript-eslint/init-declarations': InitDeclarationsRuleConfig;
 }

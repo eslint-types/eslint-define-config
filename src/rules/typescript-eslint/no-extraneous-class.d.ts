@@ -18,20 +18,20 @@ export type NoExtraneousClassOptions = [NoExtraneousClassOption?];
 /**
  * Forbids the use of classes as namespaces.
  *
- * @see [no-extraneous-class](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-extraneous-class.md)
+ * @see [no-extraneous-class](https://typescript-eslint.io/rules/no-extraneous-class)
  */
 export type NoExtraneousClassRuleConfig = RuleConfig<NoExtraneousClassOptions>;
 
 /**
  * Forbids the use of classes as namespaces.
  *
- * @see [no-extraneous-class](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-extraneous-class.md)
+ * @see [no-extraneous-class](https://typescript-eslint.io/rules/no-extraneous-class)
  */
 export interface NoExtraneousClassRule {
   /**
    * Forbids the use of classes as namespaces.
    *
-   * @see [no-extraneous-class](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-extraneous-class.md)
+   * @see [no-extraneous-class](https://typescript-eslint.io/rules/no-extraneous-class)
    */
   '@typescript-eslint/no-extraneous-class': NoExtraneousClassRuleConfig;
 }

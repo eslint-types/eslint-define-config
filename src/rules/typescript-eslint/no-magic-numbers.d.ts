@@ -18,20 +18,20 @@ export type NoMagicNumbersOptions = [NoMagicNumbersOption?];
 /**
  * Disallow magic numbers.
  *
- * @see [no-magic-numbers](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-magic-numbers.md)
+ * @see [no-magic-numbers](https://typescript-eslint.io/rules/no-magic-numbers)
  */
 export type NoMagicNumbersRuleConfig = RuleConfig<NoMagicNumbersOptions>;
 
 /**
  * Disallow magic numbers.
  *
- * @see [no-magic-numbers](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-magic-numbers.md)
+ * @see [no-magic-numbers](https://typescript-eslint.io/rules/no-magic-numbers)
  */
 export interface NoMagicNumbersRule {
   /**
    * Disallow magic numbers.
    *
-   * @see [no-magic-numbers](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-magic-numbers.md)
+   * @see [no-magic-numbers](https://typescript-eslint.io/rules/no-magic-numbers)
    */
   '@typescript-eslint/no-magic-numbers': NoMagicNumbersRuleConfig;
 }

@@ -17,20 +17,20 @@ export type ArrayTypeOptions = [ArrayTypeOption?];
 /**
  * Requires using either `T[]` or `Array<T>` for arrays.
  *
- * @see [array-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/array-type.md)
+ * @see [array-type](https://typescript-eslint.io/rules/array-type)
  */
 export type ArrayTypeRuleConfig = RuleConfig<ArrayTypeOptions>;
 
 /**
  * Requires using either `T[]` or `Array<T>` for arrays.
  *
- * @see [array-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/array-type.md)
+ * @see [array-type](https://typescript-eslint.io/rules/array-type)
  */
 export interface ArrayTypeRule {
   /**
    * Requires using either `T[]` or `Array<T>` for arrays.
    *
-   * @see [array-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/array-type.md)
+   * @see [array-type](https://typescript-eslint.io/rules/array-type)
    */
   '@typescript-eslint/array-type': ArrayTypeRuleConfig;
 }

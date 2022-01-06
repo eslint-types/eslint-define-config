@@ -15,20 +15,20 @@ export type NoInvalidThisOptions = [NoInvalidThisOption?];
 /**
  * Disallow `this` keywords outside of classes or class-like objects.
  *
- * @see [no-invalid-this](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-invalid-this.md)
+ * @see [no-invalid-this](https://typescript-eslint.io/rules/no-invalid-this)
  */
 export type NoInvalidThisRuleConfig = RuleConfig<NoInvalidThisOptions>;
 
 /**
  * Disallow `this` keywords outside of classes or class-like objects.
  *
- * @see [no-invalid-this](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-invalid-this.md)
+ * @see [no-invalid-this](https://typescript-eslint.io/rules/no-invalid-this)
  */
 export interface NoInvalidThisRule {
   /**
    * Disallow `this` keywords outside of classes or class-like objects.
    *
-   * @see [no-invalid-this](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-invalid-this.md)
+   * @see [no-invalid-this](https://typescript-eslint.io/rules/no-invalid-this)
    */
   '@typescript-eslint/no-invalid-this': NoInvalidThisRuleConfig;
 }

@@ -19,20 +19,20 @@ export type DotNotationOptions = [DotNotationOption?];
 /**
  * Enforce dot notation whenever possible.
  *
- * @see [dot-notation](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/dot-notation.md)
+ * @see [dot-notation](https://typescript-eslint.io/rules/dot-notation)
  */
 export type DotNotationRuleConfig = RuleConfig<DotNotationOptions>;
 
 /**
  * Enforce dot notation whenever possible.
  *
- * @see [dot-notation](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/dot-notation.md)
+ * @see [dot-notation](https://typescript-eslint.io/rules/dot-notation)
  */
 export interface DotNotationRule {
   /**
    * Enforce dot notation whenever possible.
    *
-   * @see [dot-notation](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/dot-notation.md)
+   * @see [dot-notation](https://typescript-eslint.io/rules/dot-notation)
    */
   '@typescript-eslint/dot-notation': DotNotationRuleConfig;
 }

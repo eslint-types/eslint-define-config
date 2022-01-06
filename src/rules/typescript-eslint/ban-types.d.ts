@@ -25,20 +25,20 @@ export type BanTypesOptions = [BanTypesOption?];
 /**
  * Bans specific types from being used.
  *
- * @see [ban-types](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/ban-types.md)
+ * @see [ban-types](https://typescript-eslint.io/rules/ban-types)
  */
 export type BanTypesRuleConfig = RuleConfig<BanTypesOptions>;
 
 /**
  * Bans specific types from being used.
  *
- * @see [ban-types](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/ban-types.md)
+ * @see [ban-types](https://typescript-eslint.io/rules/ban-types)
  */
 export interface BanTypesRule {
   /**
    * Bans specific types from being used.
    *
-   * @see [ban-types](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/ban-types.md)
+   * @see [ban-types](https://typescript-eslint.io/rules/ban-types)
    */
   '@typescript-eslint/ban-types': BanTypesRuleConfig;
 }

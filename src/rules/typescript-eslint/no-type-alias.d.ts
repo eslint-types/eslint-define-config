@@ -22,20 +22,20 @@ export type NoTypeAliasOptions = [NoTypeAliasOption?];
 /**
  * Disallow the use of type aliases.
  *
- * @see [no-type-alias](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-type-alias.md)
+ * @see [no-type-alias](https://typescript-eslint.io/rules/no-type-alias)
  */
 export type NoTypeAliasRuleConfig = RuleConfig<NoTypeAliasOptions>;
 
 /**
  * Disallow the use of type aliases.
  *
- * @see [no-type-alias](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-type-alias.md)
+ * @see [no-type-alias](https://typescript-eslint.io/rules/no-type-alias)
  */
 export interface NoTypeAliasRule {
   /**
    * Disallow the use of type aliases.
    *
-   * @see [no-type-alias](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-type-alias.md)
+   * @see [no-type-alias](https://typescript-eslint.io/rules/no-type-alias)
    */
   '@typescript-eslint/no-type-alias': NoTypeAliasRuleConfig;
 }

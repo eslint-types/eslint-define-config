@@ -15,20 +15,20 @@ export type UnboundMethodOptions = [UnboundMethodOption?];
 /**
  * Enforces unbound methods are called with their expected scope.
  *
- * @see [unbound-method](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/unbound-method.md)
+ * @see [unbound-method](https://typescript-eslint.io/rules/unbound-method)
  */
 export type UnboundMethodRuleConfig = RuleConfig<UnboundMethodOptions>;
 
 /**
  * Enforces unbound methods are called with their expected scope.
  *
- * @see [unbound-method](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/unbound-method.md)
+ * @see [unbound-method](https://typescript-eslint.io/rules/unbound-method)
  */
 export interface UnboundMethodRule {
   /**
    * Enforces unbound methods are called with their expected scope.
    *
-   * @see [unbound-method](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/unbound-method.md)
+   * @see [unbound-method](https://typescript-eslint.io/rules/unbound-method)
    */
   '@typescript-eslint/unbound-method': UnboundMethodRuleConfig;
 }

@@ -3,20 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Disallow literal numbers that lose precision.
  *
- * @see [no-loss-of-precision](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-loss-of-precision.md)
+ * @see [no-loss-of-precision](https://typescript-eslint.io/rules/no-loss-of-precision)
  */
 export type NoLossOfPrecisionRuleConfig = RuleConfig<[]>;
 
 /**
  * Disallow literal numbers that lose precision.
  *
- * @see [no-loss-of-precision](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-loss-of-precision.md)
+ * @see [no-loss-of-precision](https://typescript-eslint.io/rules/no-loss-of-precision)
  */
 export interface NoLossOfPrecisionRule {
   /**
    * Disallow literal numbers that lose precision.
    *
-   * @see [no-loss-of-precision](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-loss-of-precision.md)
+   * @see [no-loss-of-precision](https://typescript-eslint.io/rules/no-loss-of-precision)
    */
   '@typescript-eslint/no-loss-of-precision': NoLossOfPrecisionRuleConfig;
 }

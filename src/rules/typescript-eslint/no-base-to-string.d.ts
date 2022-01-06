@@ -15,20 +15,20 @@ export type NoBaseToStringOptions = [NoBaseToStringOption?];
 /**
  * Requires that `.toString()` is only called on objects which provide useful information when stringified.
  *
- * @see [no-base-to-string](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-base-to-string.md)
+ * @see [no-base-to-string](https://typescript-eslint.io/rules/no-base-to-string)
  */
 export type NoBaseToStringRuleConfig = RuleConfig<NoBaseToStringOptions>;
 
 /**
  * Requires that `.toString()` is only called on objects which provide useful information when stringified.
  *
- * @see [no-base-to-string](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-base-to-string.md)
+ * @see [no-base-to-string](https://typescript-eslint.io/rules/no-base-to-string)
  */
 export interface NoBaseToStringRule {
   /**
    * Requires that `.toString()` is only called on objects which provide useful information when stringified.
    *
-   * @see [no-base-to-string](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-base-to-string.md)
+   * @see [no-base-to-string](https://typescript-eslint.io/rules/no-base-to-string)
    */
   '@typescript-eslint/no-base-to-string': NoBaseToStringRuleConfig;
 }

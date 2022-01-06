@@ -15,20 +15,20 @@ export type ConsistentTypeExportsOptions = [ConsistentTypeExportsOption?];
 /**
  * Enforces consistent usage of type exports.
  *
- * @see [consistent-type-exports](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/consistent-type-exports.md)
+ * @see [consistent-type-exports](https://typescript-eslint.io/rules/consistent-type-exports)
  */
 export type ConsistentTypeExportsRuleConfig = RuleConfig<ConsistentTypeExportsOptions>;
 
 /**
  * Enforces consistent usage of type exports.
  *
- * @see [consistent-type-exports](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/consistent-type-exports.md)
+ * @see [consistent-type-exports](https://typescript-eslint.io/rules/consistent-type-exports)
  */
 export interface ConsistentTypeExportsRule {
   /**
    * Enforces consistent usage of type exports.
    *
-   * @see [consistent-type-exports](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/consistent-type-exports.md)
+   * @see [consistent-type-exports](https://typescript-eslint.io/rules/consistent-type-exports)
    */
   '@typescript-eslint/consistent-type-exports': ConsistentTypeExportsRuleConfig;
 }

@@ -20,20 +20,20 @@ export type BraceStyleOptions = [BraceStyleOption?, BraceStyleConfig?];
 /**
  * Enforce consistent brace style for blocks.
  *
- * @see [brace-style](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/brace-style.md)
+ * @see [brace-style](https://typescript-eslint.io/rules/brace-style)
  */
 export type BraceStyleRuleConfig = RuleConfig<BraceStyleOptions>;
 
 /**
  * Enforce consistent brace style for blocks.
  *
- * @see [brace-style](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/brace-style.md)
+ * @see [brace-style](https://typescript-eslint.io/rules/brace-style)
  */
 export interface BraceStyleRule {
   /**
    * Enforce consistent brace style for blocks.
    *
-   * @see [brace-style](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/brace-style.md)
+   * @see [brace-style](https://typescript-eslint.io/rules/brace-style)
    */
   '@typescript-eslint/brace-style': BraceStyleRuleConfig;
 }

@@ -22,20 +22,20 @@ export type NoUseBeforeDefineOptions = [NoUseBeforeDefineOption?];
 /**
  * Disallow the use of variables before they are defined.
  *
- * @see [no-use-before-define](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-use-before-define.md)
+ * @see [no-use-before-define](https://typescript-eslint.io/rules/no-use-before-define)
  */
 export type NoUseBeforeDefineRuleConfig = RuleConfig<NoUseBeforeDefineOptions>;
 
 /**
  * Disallow the use of variables before they are defined.
  *
- * @see [no-use-before-define](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-use-before-define.md)
+ * @see [no-use-before-define](https://typescript-eslint.io/rules/no-use-before-define)
  */
 export interface NoUseBeforeDefineRule {
   /**
    * Disallow the use of variables before they are defined.
    *
-   * @see [no-use-before-define](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-use-before-define.md)
+   * @see [no-use-before-define](https://typescript-eslint.io/rules/no-use-before-define)
    */
   '@typescript-eslint/no-use-before-define': NoUseBeforeDefineRuleConfig;
 }

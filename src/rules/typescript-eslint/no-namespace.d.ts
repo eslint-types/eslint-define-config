@@ -16,20 +16,20 @@ export type NoNamespaceOptions = [NoNamespaceOption?];
 /**
  * Disallow the use of custom TypeScript modules and namespaces.
  *
- * @see [no-namespace](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-namespace.md)
+ * @see [no-namespace](https://typescript-eslint.io/rules/no-namespace)
  */
 export type NoNamespaceRuleConfig = RuleConfig<NoNamespaceOptions>;
 
 /**
  * Disallow the use of custom TypeScript modules and namespaces.
  *
- * @see [no-namespace](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-namespace.md)
+ * @see [no-namespace](https://typescript-eslint.io/rules/no-namespace)
  */
 export interface NoNamespaceRule {
   /**
    * Disallow the use of custom TypeScript modules and namespaces.
    *
-   * @see [no-namespace](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-namespace.md)
+   * @see [no-namespace](https://typescript-eslint.io/rules/no-namespace)
    */
   '@typescript-eslint/no-namespace': NoNamespaceRuleConfig;
 }

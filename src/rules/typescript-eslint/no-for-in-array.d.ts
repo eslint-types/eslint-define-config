@@ -3,20 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Disallow iterating over an array with a for-in loop.
  *
- * @see [no-for-in-array](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-for-in-array.md)
+ * @see [no-for-in-array](https://typescript-eslint.io/rules/no-for-in-array)
  */
 export type NoForInArrayRuleConfig = RuleConfig<[]>;
 
 /**
  * Disallow iterating over an array with a for-in loop.
  *
- * @see [no-for-in-array](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-for-in-array.md)
+ * @see [no-for-in-array](https://typescript-eslint.io/rules/no-for-in-array)
  */
 export interface NoForInArrayRule {
   /**
    * Disallow iterating over an array with a for-in loop.
    *
-   * @see [no-for-in-array](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-for-in-array.md)
+   * @see [no-for-in-array](https://typescript-eslint.io/rules/no-for-in-array)
    */
   '@typescript-eslint/no-for-in-array': NoForInArrayRuleConfig;
 }

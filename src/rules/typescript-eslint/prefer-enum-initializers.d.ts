@@ -3,20 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Prefer initializing each enums member value.
  *
- * @see [prefer-enum-initializers](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/prefer-enum-initializers.md)
+ * @see [prefer-enum-initializers](https://typescript-eslint.io/rules/prefer-enum-initializers)
  */
 export type PreferEnumInitializersRuleConfig = RuleConfig<[]>;
 
 /**
  * Prefer initializing each enums member value.
  *
- * @see [prefer-enum-initializers](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/prefer-enum-initializers.md)
+ * @see [prefer-enum-initializers](https://typescript-eslint.io/rules/prefer-enum-initializers)
  */
 export interface PreferEnumInitializersRule {
   /**
    * Prefer initializing each enums member value.
    *
-   * @see [prefer-enum-initializers](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/prefer-enum-initializers.md)
+   * @see [prefer-enum-initializers](https://typescript-eslint.io/rules/prefer-enum-initializers)
    */
   '@typescript-eslint/prefer-enum-initializers': PreferEnumInitializersRuleConfig;
 }

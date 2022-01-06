@@ -20,20 +20,20 @@ export type ExplicitModuleBoundaryTypesOptions = [ExplicitModuleBoundaryTypesOpt
 /**
  * Require explicit return and argument types on exported functions' and classes' public class methods.
  *
- * @see [explicit-module-boundary-types](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md)
+ * @see [explicit-module-boundary-types](https://typescript-eslint.io/rules/explicit-module-boundary-types)
  */
 export type ExplicitModuleBoundaryTypesRuleConfig = RuleConfig<ExplicitModuleBoundaryTypesOptions>;
 
 /**
  * Require explicit return and argument types on exported functions' and classes' public class methods.
  *
- * @see [explicit-module-boundary-types](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md)
+ * @see [explicit-module-boundary-types](https://typescript-eslint.io/rules/explicit-module-boundary-types)
  */
 export interface ExplicitModuleBoundaryTypesRule {
   /**
    * Require explicit return and argument types on exported functions' and classes' public class methods.
    *
-   * @see [explicit-module-boundary-types](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md)
+   * @see [explicit-module-boundary-types](https://typescript-eslint.io/rules/explicit-module-boundary-types)
    */
   '@typescript-eslint/explicit-module-boundary-types': ExplicitModuleBoundaryTypesRuleConfig;
 }

@@ -17,20 +17,20 @@ export type PreferReadonlyParameterTypesOptions = [PreferReadonlyParameterTypesO
 /**
  * Requires that function parameters are typed as readonly to prevent accidental mutation of inputs.
  *
- * @see [prefer-readonly-parameter-types](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/prefer-readonly-parameter-types.md)
+ * @see [prefer-readonly-parameter-types](https://typescript-eslint.io/rules/prefer-readonly-parameter-types)
  */
 export type PreferReadonlyParameterTypesRuleConfig = RuleConfig<PreferReadonlyParameterTypesOptions>;
 
 /**
  * Requires that function parameters are typed as readonly to prevent accidental mutation of inputs.
  *
- * @see [prefer-readonly-parameter-types](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/prefer-readonly-parameter-types.md)
+ * @see [prefer-readonly-parameter-types](https://typescript-eslint.io/rules/prefer-readonly-parameter-types)
  */
 export interface PreferReadonlyParameterTypesRule {
   /**
    * Requires that function parameters are typed as readonly to prevent accidental mutation of inputs.
    *
-   * @see [prefer-readonly-parameter-types](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/prefer-readonly-parameter-types.md)
+   * @see [prefer-readonly-parameter-types](https://typescript-eslint.io/rules/prefer-readonly-parameter-types)
    */
   '@typescript-eslint/prefer-readonly-parameter-types': PreferReadonlyParameterTypesRuleConfig;
 }

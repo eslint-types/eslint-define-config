@@ -3,20 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Enforce that `this` is used when only `this` type is returned.
  *
- * @see [prefer-return-this-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/prefer-return-this-type.md)
+ * @see [prefer-return-this-type](https://typescript-eslint.io/rules/prefer-return-this-type)
  */
 export type PreferReturnThisTypeRuleConfig = RuleConfig<[]>;
 
 /**
  * Enforce that `this` is used when only `this` type is returned.
  *
- * @see [prefer-return-this-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/prefer-return-this-type.md)
+ * @see [prefer-return-this-type](https://typescript-eslint.io/rules/prefer-return-this-type)
  */
 export interface PreferReturnThisTypeRule {
   /**
    * Enforce that `this` is used when only `this` type is returned.
    *
-   * @see [prefer-return-this-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/prefer-return-this-type.md)
+   * @see [prefer-return-this-type](https://typescript-eslint.io/rules/prefer-return-this-type)
    */
   '@typescript-eslint/prefer-return-this-type': PreferReturnThisTypeRuleConfig;
 }

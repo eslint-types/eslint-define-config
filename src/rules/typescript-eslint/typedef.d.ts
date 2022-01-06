@@ -23,20 +23,20 @@ export type TypedefOptions = [TypedefOption?];
 /**
  * Requires type annotations to exist.
  *
- * @see [typedef](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/typedef.md)
+ * @see [typedef](https://typescript-eslint.io/rules/typedef)
  */
 export type TypedefRuleConfig = RuleConfig<TypedefOptions>;
 
 /**
  * Requires type annotations to exist.
  *
- * @see [typedef](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/typedef.md)
+ * @see [typedef](https://typescript-eslint.io/rules/typedef)
  */
 export interface TypedefRule {
   /**
    * Requires type annotations to exist.
    *
-   * @see [typedef](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/typedef.md)
+   * @see [typedef](https://typescript-eslint.io/rules/typedef)
    */
   '@typescript-eslint/typedef': TypedefRuleConfig;
 }

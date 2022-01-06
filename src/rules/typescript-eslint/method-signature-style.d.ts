@@ -13,20 +13,20 @@ export type MethodSignatureStyleOptions = [MethodSignatureStyleOption?];
 /**
  * Enforces using a particular method signature syntax.
  *
- * @see [method-signature-style](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/method-signature-style.md)
+ * @see [method-signature-style](https://typescript-eslint.io/rules/method-signature-style)
  */
 export type MethodSignatureStyleRuleConfig = RuleConfig<MethodSignatureStyleOptions>;
 
 /**
  * Enforces using a particular method signature syntax.
  *
- * @see [method-signature-style](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/method-signature-style.md)
+ * @see [method-signature-style](https://typescript-eslint.io/rules/method-signature-style)
  */
 export interface MethodSignatureStyleRule {
   /**
    * Enforces using a particular method signature syntax.
    *
-   * @see [method-signature-style](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/method-signature-style.md)
+   * @see [method-signature-style](https://typescript-eslint.io/rules/method-signature-style)
    */
   '@typescript-eslint/method-signature-style': MethodSignatureStyleRuleConfig;
 }

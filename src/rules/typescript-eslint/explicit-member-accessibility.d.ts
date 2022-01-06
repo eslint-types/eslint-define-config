@@ -23,20 +23,20 @@ export type ExplicitMemberAccessibilityOptions = [ExplicitMemberAccessibilityOpt
 /**
  * Require explicit accessibility modifiers on class properties and methods.
  *
- * @see [explicit-member-accessibility](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/explicit-member-accessibility.md)
+ * @see [explicit-member-accessibility](https://typescript-eslint.io/rules/explicit-member-accessibility)
  */
 export type ExplicitMemberAccessibilityRuleConfig = RuleConfig<ExplicitMemberAccessibilityOptions>;
 
 /**
  * Require explicit accessibility modifiers on class properties and methods.
  *
- * @see [explicit-member-accessibility](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/explicit-member-accessibility.md)
+ * @see [explicit-member-accessibility](https://typescript-eslint.io/rules/explicit-member-accessibility)
  */
 export interface ExplicitMemberAccessibilityRule {
   /**
    * Require explicit accessibility modifiers on class properties and methods.
    *
-   * @see [explicit-member-accessibility](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/explicit-member-accessibility.md)
+   * @see [explicit-member-accessibility](https://typescript-eslint.io/rules/explicit-member-accessibility)
    */
   '@typescript-eslint/explicit-member-accessibility': ExplicitMemberAccessibilityRuleConfig;
 }

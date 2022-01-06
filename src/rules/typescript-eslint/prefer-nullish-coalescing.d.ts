@@ -17,20 +17,20 @@ export type PreferNullishCoalescingOptions = [PreferNullishCoalescingOption?];
 /**
  * Enforce the usage of the nullish coalescing operator instead of logical chaining.
  *
- * @see [prefer-nullish-coalescing](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/prefer-nullish-coalescing.md)
+ * @see [prefer-nullish-coalescing](https://typescript-eslint.io/rules/prefer-nullish-coalescing)
  */
 export type PreferNullishCoalescingRuleConfig = RuleConfig<PreferNullishCoalescingOptions>;
 
 /**
  * Enforce the usage of the nullish coalescing operator instead of logical chaining.
  *
- * @see [prefer-nullish-coalescing](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/prefer-nullish-coalescing.md)
+ * @see [prefer-nullish-coalescing](https://typescript-eslint.io/rules/prefer-nullish-coalescing)
  */
 export interface PreferNullishCoalescingRule {
   /**
    * Enforce the usage of the nullish coalescing operator instead of logical chaining.
    *
-   * @see [prefer-nullish-coalescing](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/prefer-nullish-coalescing.md)
+   * @see [prefer-nullish-coalescing](https://typescript-eslint.io/rules/prefer-nullish-coalescing)
    */
   '@typescript-eslint/prefer-nullish-coalescing': PreferNullishCoalescingRuleConfig;
 }

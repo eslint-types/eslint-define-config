@@ -667,20 +667,20 @@ export type MemberOrderingOptions = [MemberOrderingOption?];
 /**
  * Require a consistent member declaration order.
  *
- * @see [member-ordering](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/member-ordering.md)
+ * @see [member-ordering](https://typescript-eslint.io/rules/member-ordering)
  */
 export type MemberOrderingRuleConfig = RuleConfig<MemberOrderingOptions>;
 
 /**
  * Require a consistent member declaration order.
  *
- * @see [member-ordering](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/member-ordering.md)
+ * @see [member-ordering](https://typescript-eslint.io/rules/member-ordering)
  */
 export interface MemberOrderingRule {
   /**
    * Require a consistent member declaration order.
    *
-   * @see [member-ordering](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/member-ordering.md)
+   * @see [member-ordering](https://typescript-eslint.io/rules/member-ordering)
    */
   '@typescript-eslint/member-ordering': MemberOrderingRuleConfig;
 }

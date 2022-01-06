@@ -29,20 +29,20 @@ export type CommaDangleOptions = CommaDangleOption;
 /**
  * Require or disallow trailing comma.
  *
- * @see [comma-dangle](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/comma-dangle.md)
+ * @see [comma-dangle](https://typescript-eslint.io/rules/comma-dangle)
  */
 export type CommaDangleRuleConfig = RuleConfig<CommaDangleOptions>;
 
 /**
  * Require or disallow trailing comma.
  *
- * @see [comma-dangle](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/comma-dangle.md)
+ * @see [comma-dangle](https://typescript-eslint.io/rules/comma-dangle)
  */
 export interface CommaDangleRule {
   /**
    * Require or disallow trailing comma.
    *
-   * @see [comma-dangle](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/comma-dangle.md)
+   * @see [comma-dangle](https://typescript-eslint.io/rules/comma-dangle)
    */
   '@typescript-eslint/comma-dangle': CommaDangleRuleConfig;
 }

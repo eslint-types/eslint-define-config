@@ -3,20 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Enforce default parameters to be last.
  *
- * @see [default-param-last](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/default-param-last.md)
+ * @see [default-param-last](https://typescript-eslint.io/rules/default-param-last)
  */
 export type DefaultParamLastRuleConfig = RuleConfig<[]>;
 
 /**
  * Enforce default parameters to be last.
  *
- * @see [default-param-last](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/default-param-last.md)
+ * @see [default-param-last](https://typescript-eslint.io/rules/default-param-last)
  */
 export interface DefaultParamLastRule {
   /**
    * Enforce default parameters to be last.
    *
-   * @see [default-param-last](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/default-param-last.md)
+   * @see [default-param-last](https://typescript-eslint.io/rules/default-param-last)
    */
   '@typescript-eslint/default-param-last': DefaultParamLastRuleConfig;
 }

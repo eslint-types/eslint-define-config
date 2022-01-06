@@ -3,20 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Disallow unnecessary constructors.
  *
- * @see [no-useless-constructor](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-useless-constructor.md)
+ * @see [no-useless-constructor](https://typescript-eslint.io/rules/no-useless-constructor)
  */
 export type NoUselessConstructorRuleConfig = RuleConfig<[]>;
 
 /**
  * Disallow unnecessary constructors.
  *
- * @see [no-useless-constructor](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-useless-constructor.md)
+ * @see [no-useless-constructor](https://typescript-eslint.io/rules/no-useless-constructor)
  */
 export interface NoUselessConstructorRule {
   /**
    * Disallow unnecessary constructors.
    *
-   * @see [no-useless-constructor](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-useless-constructor.md)
+   * @see [no-useless-constructor](https://typescript-eslint.io/rules/no-useless-constructor)
    */
   '@typescript-eslint/no-useless-constructor': NoUselessConstructorRuleConfig;
 }

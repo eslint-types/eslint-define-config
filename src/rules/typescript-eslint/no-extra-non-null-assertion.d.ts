@@ -3,20 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Disallow extra non-null assertion.
  *
- * @see [no-extra-non-null-assertion](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-extra-non-null-assertion.md)
+ * @see [no-extra-non-null-assertion](https://typescript-eslint.io/rules/no-extra-non-null-assertion)
  */
 export type NoExtraNonNullAssertionRuleConfig = RuleConfig<[]>;
 
 /**
  * Disallow extra non-null assertion.
  *
- * @see [no-extra-non-null-assertion](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-extra-non-null-assertion.md)
+ * @see [no-extra-non-null-assertion](https://typescript-eslint.io/rules/no-extra-non-null-assertion)
  */
 export interface NoExtraNonNullAssertionRule {
   /**
    * Disallow extra non-null assertion.
    *
-   * @see [no-extra-non-null-assertion](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/no-extra-non-null-assertion.md)
+   * @see [no-extra-non-null-assertion](https://typescript-eslint.io/rules/no-extra-non-null-assertion)
    */
   '@typescript-eslint/no-extra-non-null-assertion': NoExtraNonNullAssertionRuleConfig;
 }

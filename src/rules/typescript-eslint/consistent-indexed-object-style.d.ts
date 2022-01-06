@@ -13,20 +13,20 @@ export type ConsistentIndexedObjectStyleOptions = [ConsistentIndexedObjectStyleO
 /**
  * Enforce or disallow the use of the record type.
  *
- * @see [consistent-indexed-object-style](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/consistent-indexed-object-style.md)
+ * @see [consistent-indexed-object-style](https://typescript-eslint.io/rules/consistent-indexed-object-style)
  */
 export type ConsistentIndexedObjectStyleRuleConfig = RuleConfig<ConsistentIndexedObjectStyleOptions>;
 
 /**
  * Enforce or disallow the use of the record type.
  *
- * @see [consistent-indexed-object-style](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/consistent-indexed-object-style.md)
+ * @see [consistent-indexed-object-style](https://typescript-eslint.io/rules/consistent-indexed-object-style)
  */
 export interface ConsistentIndexedObjectStyleRule {
   /**
    * Enforce or disallow the use of the record type.
    *
-   * @see [consistent-indexed-object-style](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/consistent-indexed-object-style.md)
+   * @see [consistent-indexed-object-style](https://typescript-eslint.io/rules/consistent-indexed-object-style)
    */
   '@typescript-eslint/consistent-indexed-object-style': ConsistentIndexedObjectStyleRuleConfig;
 }
