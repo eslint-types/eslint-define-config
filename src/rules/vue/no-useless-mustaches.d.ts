@@ -18,7 +18,8 @@ export type NoUselessMustachesOptions = [NoUselessMustachesOption?];
  *
  * @see [no-useless-mustaches](https://eslint.vuejs.org/rules/no-useless-mustaches.html)
  */
-export type NoUselessMustachesRuleConfig = RuleConfig<NoUselessMustachesOptions>;
+export type NoUselessMustachesRuleConfig =
+  RuleConfig<NoUselessMustachesOptions>;
 
 /**
  * Disallow unnecessary mustache interpolations.

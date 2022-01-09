@@ -18,7 +18,8 @@ export type NoDuplicateAttributesOptions = [NoDuplicateAttributesOption?];
  *
  * @see [no-duplicate-attributes](https://eslint.vuejs.org/rules/no-duplicate-attributes.html)
  */
-export type NoDuplicateAttributesRuleConfig = RuleConfig<NoDuplicateAttributesOptions>;
+export type NoDuplicateAttributesRuleConfig =
+  RuleConfig<NoDuplicateAttributesOptions>;
 
 /**
  * Disallow duplication of attributes.

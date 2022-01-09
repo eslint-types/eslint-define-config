@@ -10,14 +10,17 @@ export interface NoMissingKeysInOtherLocalesOption {
 /**
  * Options.
  */
-export type NoMissingKeysInOtherLocalesOptions = [NoMissingKeysInOtherLocalesOption?];
+export type NoMissingKeysInOtherLocalesOptions = [
+  NoMissingKeysInOtherLocalesOption?,
+];
 
 /**
  * Disallow missing locale message keys in other locales.
  *
  *
  */
-export type NoMissingKeysInOtherLocalesRuleConfig = RuleConfig<NoMissingKeysInOtherLocalesOptions>;
+export type NoMissingKeysInOtherLocalesRuleConfig =
+  RuleConfig<NoMissingKeysInOtherLocalesOptions>;
 
 /**
  * Disallow missing locale message keys in other locales.

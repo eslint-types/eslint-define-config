@@ -17,7 +17,8 @@ export type NoDuplicateImportsOptions = [NoDuplicateImportsOption?];
  *
  * @see [no-duplicate-imports](https://typescript-eslint.io/rules/no-duplicate-imports)
  */
-export type NoDuplicateImportsRuleConfig = RuleConfig<NoDuplicateImportsOptions>;
+export type NoDuplicateImportsRuleConfig =
+  RuleConfig<NoDuplicateImportsOptions>;
 
 /**
  * Disallow duplicate imports.

@@ -75,14 +75,17 @@ export interface NoUnsupportedFeaturesEsBuiltinsOption {
 /**
  * Options.
  */
-export type NoUnsupportedFeaturesEsBuiltinsOptions = [NoUnsupportedFeaturesEsBuiltinsOption?];
+export type NoUnsupportedFeaturesEsBuiltinsOptions = [
+  NoUnsupportedFeaturesEsBuiltinsOption?,
+];
 
 /**
  * Disallow unsupported ECMAScript built-ins on the specified version.
  *
  * @see [no-unsupported-features/es-builtins](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-unsupported-features/es-builtins.md)
  */
-export type NoUnsupportedFeaturesEsBuiltinsRuleConfig = RuleConfig<NoUnsupportedFeaturesEsBuiltinsOptions>;
+export type NoUnsupportedFeaturesEsBuiltinsRuleConfig =
+  RuleConfig<NoUnsupportedFeaturesEsBuiltinsOptions>;
 
 /**
  * Disallow unsupported ECMAScript built-ins on the specified version.

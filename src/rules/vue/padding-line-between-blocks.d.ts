@@ -15,7 +15,8 @@ export type PaddingLineBetweenBlocksOptions = [PaddingLineBetweenBlocksOption?];
  *
  * @see [padding-line-between-blocks](https://eslint.vuejs.org/rules/padding-line-between-blocks.html)
  */
-export type PaddingLineBetweenBlocksRuleConfig = RuleConfig<PaddingLineBetweenBlocksOptions>;
+export type PaddingLineBetweenBlocksRuleConfig =
+  RuleConfig<PaddingLineBetweenBlocksOptions>;
 
 /**
  * Require or disallow padding lines between blocks.

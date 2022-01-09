@@ -5,7 +5,15 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface NoParameterPropertiesOption {
   allows?: [
-    'readonly' | 'private' | 'protected' | 'public' | 'private readonly' | 'protected readonly' | 'public readonly',
+    (
+      | 'readonly'
+      | 'private'
+      | 'protected'
+      | 'public'
+      | 'private readonly'
+      | 'protected readonly'
+      | 'public readonly'
+    ),
     ...(
       | 'readonly'
       | 'private'
@@ -28,7 +36,8 @@ export type NoParameterPropertiesOptions = [NoParameterPropertiesOption?];
  *
  * @see [no-parameter-properties](https://typescript-eslint.io/rules/no-parameter-properties)
  */
-export type NoParameterPropertiesRuleConfig = RuleConfig<NoParameterPropertiesOptions>;
+export type NoParameterPropertiesRuleConfig =
+  RuleConfig<NoParameterPropertiesOptions>;
 
 /**
  * Disallow the use of parameter properties in class constructors.

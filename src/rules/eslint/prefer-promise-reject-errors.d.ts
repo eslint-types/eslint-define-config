@@ -10,14 +10,17 @@ export interface PreferPromiseRejectErrorsOption {
 /**
  * Options.
  */
-export type PreferPromiseRejectErrorsOptions = [PreferPromiseRejectErrorsOption?];
+export type PreferPromiseRejectErrorsOptions = [
+  PreferPromiseRejectErrorsOption?,
+];
 
 /**
  * Require using Error objects as Promise rejection reasons.
  *
  * @see [prefer-promise-reject-errors](https://eslint.org/docs/rules/prefer-promise-reject-errors)
  */
-export type PreferPromiseRejectErrorsRuleConfig = RuleConfig<PreferPromiseRejectErrorsOptions>;
+export type PreferPromiseRejectErrorsRuleConfig =
+  RuleConfig<PreferPromiseRejectErrorsOptions>;
 
 /**
  * Require using Error objects as Promise rejection reasons.

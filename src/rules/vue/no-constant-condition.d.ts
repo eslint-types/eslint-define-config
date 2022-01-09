@@ -17,7 +17,8 @@ export type NoConstantConditionOptions = [NoConstantConditionOption?];
  *
  * @see [no-constant-condition](https://eslint.vuejs.org/rules/no-constant-condition.html)
  */
-export type NoConstantConditionRuleConfig = RuleConfig<NoConstantConditionOptions>;
+export type NoConstantConditionRuleConfig =
+  RuleConfig<NoConstantConditionOptions>;
 
 /**
  * Disallow constant expressions in conditions.

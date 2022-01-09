@@ -11,14 +11,17 @@ export interface NoUnnecessaryBooleanLiteralCompareOption {
 /**
  * Options.
  */
-export type NoUnnecessaryBooleanLiteralCompareOptions = [NoUnnecessaryBooleanLiteralCompareOption?];
+export type NoUnnecessaryBooleanLiteralCompareOptions = [
+  NoUnnecessaryBooleanLiteralCompareOption?,
+];
 
 /**
  * Flags unnecessary equality comparisons against boolean literals.
  *
  * @see [no-unnecessary-boolean-literal-compare](https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare)
  */
-export type NoUnnecessaryBooleanLiteralCompareRuleConfig = RuleConfig<NoUnnecessaryBooleanLiteralCompareOptions>;
+export type NoUnnecessaryBooleanLiteralCompareRuleConfig =
+  RuleConfig<NoUnnecessaryBooleanLiteralCompareOptions>;
 
 /**
  * Flags unnecessary equality comparisons against boolean literals.

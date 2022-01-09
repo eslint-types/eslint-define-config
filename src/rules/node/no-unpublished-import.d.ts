@@ -35,7 +35,8 @@ export type NoUnpublishedImportOptions = [NoUnpublishedImportOption?];
  *
  * @see [no-unpublished-import](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-unpublished-import.md)
  */
-export type NoUnpublishedImportRuleConfig = RuleConfig<NoUnpublishedImportOptions>;
+export type NoUnpublishedImportRuleConfig =
+  RuleConfig<NoUnpublishedImportOptions>;
 
 /**
  * Disallow `import` declarations which import private modules.

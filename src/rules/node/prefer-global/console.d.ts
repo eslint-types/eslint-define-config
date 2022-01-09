@@ -15,7 +15,8 @@ export type PreferGlobalConsoleOptions = [PreferGlobalConsoleOption?];
  *
  * @see [prefer-global/console](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/prefer-global/console.md)
  */
-export type PreferGlobalConsoleRuleConfig = RuleConfig<PreferGlobalConsoleOptions>;
+export type PreferGlobalConsoleRuleConfig =
+  RuleConfig<PreferGlobalConsoleOptions>;
 
 /**
  * Enforce either `console` or `require("console")`.

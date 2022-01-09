@@ -18,7 +18,8 @@ export type NoFloatingPromisesOptions = [NoFloatingPromisesOption?];
  *
  * @see [no-floating-promises](https://typescript-eslint.io/rules/no-floating-promises)
  */
-export type NoFloatingPromisesRuleConfig = RuleConfig<NoFloatingPromisesOptions>;
+export type NoFloatingPromisesRuleConfig =
+  RuleConfig<NoFloatingPromisesOptions>;
 
 /**
  * Requires Promise-like values to be handled appropriately.

@@ -21,7 +21,8 @@ export type NoRestrictedSyntaxOptions = NoRestrictedSyntaxOption;
  *
  * @see [no-restricted-syntax](https://eslint.vuejs.org/rules/no-restricted-syntax.html)
  */
-export type NoRestrictedSyntaxRuleConfig = RuleConfig<NoRestrictedSyntaxOptions>;
+export type NoRestrictedSyntaxRuleConfig =
+  RuleConfig<NoRestrictedSyntaxOptions>;
 
 /**
  * Disallow specified syntax.

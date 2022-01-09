@@ -4,7 +4,13 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoUnreachableLoopOption {
-  ignore?: ('WhileStatement' | 'DoWhileStatement' | 'ForStatement' | 'ForInStatement' | 'ForOfStatement')[];
+  ignore?: (
+    | 'WhileStatement'
+    | 'DoWhileStatement'
+    | 'ForStatement'
+    | 'ForInStatement'
+    | 'ForOfStatement'
+  )[];
 }
 
 /**

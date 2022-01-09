@@ -15,14 +15,17 @@ export interface ExplicitModuleBoundaryTypesOption {
 /**
  * Options.
  */
-export type ExplicitModuleBoundaryTypesOptions = [ExplicitModuleBoundaryTypesOption?];
+export type ExplicitModuleBoundaryTypesOptions = [
+  ExplicitModuleBoundaryTypesOption?,
+];
 
 /**
  * Require explicit return and argument types on exported functions' and classes' public class methods.
  *
  * @see [explicit-module-boundary-types](https://typescript-eslint.io/rules/explicit-module-boundary-types)
  */
-export type ExplicitModuleBoundaryTypesRuleConfig = RuleConfig<ExplicitModuleBoundaryTypesOptions>;
+export type ExplicitModuleBoundaryTypesRuleConfig =
+  RuleConfig<ExplicitModuleBoundaryTypesOptions>;
 
 /**
  * Require explicit return and argument types on exported functions' and classes' public class methods.

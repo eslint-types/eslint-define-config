@@ -22,7 +22,8 @@ export type ConsistentTypeAssertionsOptions = [ConsistentTypeAssertionsOption?];
  *
  * @see [consistent-type-assertions](https://typescript-eslint.io/rules/consistent-type-assertions)
  */
-export type ConsistentTypeAssertionsRuleConfig = RuleConfig<ConsistentTypeAssertionsOptions>;
+export type ConsistentTypeAssertionsRuleConfig =
+  RuleConfig<ConsistentTypeAssertionsOptions>;
 
 /**
  * Enforces consistent usage of type assertions.

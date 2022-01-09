@@ -20,14 +20,18 @@ export type HtmlCommentContentNewlineOption =
 /**
  * Options.
  */
-export type HtmlCommentContentNewlineOptions = [HtmlCommentContentNewlineOption?, HtmlCommentContentNewlineConfig?];
+export type HtmlCommentContentNewlineOptions = [
+  HtmlCommentContentNewlineOption?,
+  HtmlCommentContentNewlineConfig?,
+];
 
 /**
  * Enforce unified line brake in HTML comments.
  *
  * @see [html-comment-content-newline](https://eslint.vuejs.org/rules/html-comment-content-newline.html)
  */
-export type HtmlCommentContentNewlineRuleConfig = RuleConfig<HtmlCommentContentNewlineOptions>;
+export type HtmlCommentContentNewlineRuleConfig =
+  RuleConfig<HtmlCommentContentNewlineOptions>;
 
 /**
  * Enforce unified line brake in HTML comments.

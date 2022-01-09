@@ -15,7 +15,8 @@ export type MethodSignatureStyleOptions = [MethodSignatureStyleOption?];
  *
  * @see [method-signature-style](https://typescript-eslint.io/rules/method-signature-style)
  */
-export type MethodSignatureStyleRuleConfig = RuleConfig<MethodSignatureStyleOptions>;
+export type MethodSignatureStyleRuleConfig =
+  RuleConfig<MethodSignatureStyleOptions>;
 
 /**
  * Enforces using a particular method signature syntax.

@@ -18,7 +18,8 @@ export type ClassMethodsUseThisOptions = [ClassMethodsUseThisOption?];
  *
  * @see [class-methods-use-this](https://eslint.org/docs/rules/class-methods-use-this)
  */
-export type ClassMethodsUseThisRuleConfig = RuleConfig<ClassMethodsUseThisOptions>;
+export type ClassMethodsUseThisRuleConfig =
+  RuleConfig<ClassMethodsUseThisOptions>;
 
 /**
  * Enforce that class methods utilize `this`.

@@ -22,7 +22,8 @@ export type NoIrregularWhitespaceOptions = [NoIrregularWhitespaceOption?];
  *
  * @see [no-irregular-whitespace](https://eslint.vuejs.org/rules/no-irregular-whitespace.html)
  */
-export type NoIrregularWhitespaceRuleConfig = RuleConfig<NoIrregularWhitespaceOptions>;
+export type NoIrregularWhitespaceRuleConfig =
+  RuleConfig<NoIrregularWhitespaceOptions>;
 
 /**
  * Disallow irregular whitespace.

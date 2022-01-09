@@ -35,7 +35,8 @@ export type NoExtraneousRequireOptions = [NoExtraneousRequireOption?];
  *
  * @see [no-extraneous-require](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-extraneous-require.md)
  */
-export type NoExtraneousRequireRuleConfig = RuleConfig<NoExtraneousRequireOptions>;
+export type NoExtraneousRequireRuleConfig =
+  RuleConfig<NoExtraneousRequireOptions>;
 
 /**
  * Disallow `require()` expressions which import extraneous modules.

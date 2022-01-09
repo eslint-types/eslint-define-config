@@ -168,14 +168,17 @@ export interface NoUnsupportedFeaturesNodeBuiltinsOption {
 /**
  * Options.
  */
-export type NoUnsupportedFeaturesNodeBuiltinsOptions = [NoUnsupportedFeaturesNodeBuiltinsOption?];
+export type NoUnsupportedFeaturesNodeBuiltinsOptions = [
+  NoUnsupportedFeaturesNodeBuiltinsOption?,
+];
 
 /**
  * Disallow unsupported Node.js built-in APIs on the specified version.
  *
  * @see [no-unsupported-features/node-builtins](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-unsupported-features/node-builtins.md)
  */
-export type NoUnsupportedFeaturesNodeBuiltinsRuleConfig = RuleConfig<NoUnsupportedFeaturesNodeBuiltinsOptions>;
+export type NoUnsupportedFeaturesNodeBuiltinsRuleConfig =
+  RuleConfig<NoUnsupportedFeaturesNodeBuiltinsOptions>;
 
 /**
  * Disallow unsupported Node.js built-in APIs on the specified version.

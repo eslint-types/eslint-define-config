@@ -17,7 +17,8 @@ export type NoUselessUndefinedOptions = [NoUselessUndefinedOption?];
  *
  * @see [no-useless-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/no-useless-undefined.md)
  */
-export type NoUselessUndefinedRuleConfig = RuleConfig<NoUselessUndefinedOptions>;
+export type NoUselessUndefinedRuleConfig =
+  RuleConfig<NoUselessUndefinedOptions>;
 
 /**
  * Disallow useless `undefined`.

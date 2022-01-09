@@ -20,7 +20,8 @@ export type ArrayBracketNewlineOptions = [ArrayBracketNewlineOption?];
  *
  * @see [array-bracket-newline](https://eslint.org/docs/rules/array-bracket-newline)
  */
-export type ArrayBracketNewlineRuleConfig = RuleConfig<ArrayBracketNewlineOptions>;
+export type ArrayBracketNewlineRuleConfig =
+  RuleConfig<ArrayBracketNewlineOptions>;
 
 /**
  * Enforce linebreaks after opening and before closing array brackets.

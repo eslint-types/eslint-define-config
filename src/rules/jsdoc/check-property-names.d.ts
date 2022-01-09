@@ -17,7 +17,8 @@ export type CheckPropertyNamesOptions = [CheckPropertyNamesOption?];
  *
  * @see [check-property-names](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-property-names)
  */
-export type CheckPropertyNamesRuleConfig = RuleConfig<CheckPropertyNamesOptions>;
+export type CheckPropertyNamesRuleConfig =
+  RuleConfig<CheckPropertyNamesOptions>;
 
 /**
  * Ensures that property names in JSDoc are not duplicated on the same block and that nested properties have defined roots.

@@ -17,14 +17,18 @@ export type ArrayBracketSpacingOption = 'always' | 'never';
 /**
  * Options.
  */
-export type ArrayBracketSpacingOptions = [ArrayBracketSpacingOption?, ArrayBracketSpacingConfig?];
+export type ArrayBracketSpacingOptions = [
+  ArrayBracketSpacingOption?,
+  ArrayBracketSpacingConfig?,
+];
 
 /**
  * Enforce consistent spacing inside array brackets.
  *
  * @see [array-bracket-spacing](https://eslint.org/docs/rules/array-bracket-spacing)
  */
-export type ArrayBracketSpacingRuleConfig = RuleConfig<ArrayBracketSpacingOptions>;
+export type ArrayBracketSpacingRuleConfig =
+  RuleConfig<ArrayBracketSpacingOptions>;
 
 /**
  * Enforce consistent spacing inside array brackets.

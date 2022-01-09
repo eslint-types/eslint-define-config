@@ -23,7 +23,7 @@ export type NonblockStatementBodyPositionOption = 'beside' | 'below' | 'any';
  */
 export type NonblockStatementBodyPositionOptions = [
   NonblockStatementBodyPositionOption?,
-  NonblockStatementBodyPositionConfig?
+  NonblockStatementBodyPositionConfig?,
 ];
 
 /**
@@ -31,7 +31,8 @@ export type NonblockStatementBodyPositionOptions = [
  *
  * @see [nonblock-statement-body-position](https://eslint.org/docs/rules/nonblock-statement-body-position)
  */
-export type NonblockStatementBodyPositionRuleConfig = RuleConfig<NonblockStatementBodyPositionOptions>;
+export type NonblockStatementBodyPositionRuleConfig =
+  RuleConfig<NonblockStatementBodyPositionOptions>;
 
 /**
  * Enforce the location of single-line statements.

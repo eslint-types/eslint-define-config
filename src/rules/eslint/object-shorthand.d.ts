@@ -5,14 +5,21 @@ import type { RuleConfig } from '../rule-config';
  */
 export type ObjectShorthandOption =
   | []
-  | ['always' | 'methods' | 'properties' | 'never' | 'consistent' | 'consistent-as-needed']
+  | [
+      | 'always'
+      | 'methods'
+      | 'properties'
+      | 'never'
+      | 'consistent'
+      | 'consistent-as-needed',
+    ]
   | []
   | ['always' | 'methods' | 'properties']
   | [
       'always' | 'methods' | 'properties',
       {
         avoidQuotes?: boolean;
-      }
+      },
     ]
   | []
   | ['always' | 'methods']
@@ -22,7 +29,7 @@ export type ObjectShorthandOption =
         ignoreConstructors?: boolean;
         avoidQuotes?: boolean;
         avoidExplicitReturnArrows?: boolean;
-      }
+      },
     ];
 
 /**

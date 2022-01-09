@@ -19,7 +19,8 @@ export type TripleSlashReferenceOptions = [TripleSlashReferenceOption?];
  *
  * @see [triple-slash-reference](https://typescript-eslint.io/rules/triple-slash-reference)
  */
-export type TripleSlashReferenceRuleConfig = RuleConfig<TripleSlashReferenceOptions>;
+export type TripleSlashReferenceRuleConfig =
+  RuleConfig<TripleSlashReferenceOptions>;
 
 /**
  * Sets preference level for triple slash directives versus ES6-style import declarations.

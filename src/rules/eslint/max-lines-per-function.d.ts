@@ -22,7 +22,8 @@ export type MaxLinesPerFunctionOptions = [MaxLinesPerFunctionOption?];
  *
  * @see [max-lines-per-function](https://eslint.org/docs/rules/max-lines-per-function)
  */
-export type MaxLinesPerFunctionRuleConfig = RuleConfig<MaxLinesPerFunctionOptions>;
+export type MaxLinesPerFunctionRuleConfig =
+  RuleConfig<MaxLinesPerFunctionOptions>;
 
 /**
  * Enforce a maximum number of lines of code in a function.

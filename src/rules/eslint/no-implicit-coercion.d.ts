@@ -21,7 +21,8 @@ export type NoImplicitCoercionOptions = [NoImplicitCoercionOption?];
  *
  * @see [no-implicit-coercion](https://eslint.org/docs/rules/no-implicit-coercion)
  */
-export type NoImplicitCoercionRuleConfig = RuleConfig<NoImplicitCoercionOptions>;
+export type NoImplicitCoercionRuleConfig =
+  RuleConfig<NoImplicitCoercionOptions>;
 
 /**
  * Disallow shorthand type conversions.

@@ -15,7 +15,8 @@ export type OperatorAssignmentOptions = [OperatorAssignmentOption?];
  *
  * @see [operator-assignment](https://eslint.org/docs/rules/operator-assignment)
  */
-export type OperatorAssignmentRuleConfig = RuleConfig<OperatorAssignmentOptions>;
+export type OperatorAssignmentRuleConfig =
+  RuleConfig<OperatorAssignmentOptions>;
 
 /**
  * Require or disallow assignment operator shorthand where possible.

@@ -12,14 +12,16 @@ export type NoRestrictedCallAfterAwaitOption = {
 /**
  * Options.
  */
-export type NoRestrictedCallAfterAwaitOptions = NoRestrictedCallAfterAwaitOption;
+export type NoRestrictedCallAfterAwaitOptions =
+  NoRestrictedCallAfterAwaitOption;
 
 /**
  * Disallow asynchronously called restricted methods.
  *
  * @see [no-restricted-call-after-await](https://eslint.vuejs.org/rules/no-restricted-call-after-await.html)
  */
-export type NoRestrictedCallAfterAwaitRuleConfig = RuleConfig<NoRestrictedCallAfterAwaitOptions>;
+export type NoRestrictedCallAfterAwaitRuleConfig =
+  RuleConfig<NoRestrictedCallAfterAwaitOptions>;
 
 /**
  * Disallow asynchronously called restricted methods.

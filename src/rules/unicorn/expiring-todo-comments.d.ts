@@ -20,7 +20,8 @@ export type ExpiringTodoCommentsOptions = [ExpiringTodoCommentsOption?];
  *
  * @see [expiring-todo-comments](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/expiring-todo-comments.md)
  */
-export type ExpiringTodoCommentsRuleConfig = RuleConfig<ExpiringTodoCommentsOptions>;
+export type ExpiringTodoCommentsRuleConfig =
+  RuleConfig<ExpiringTodoCommentsOptions>;
 
 /**
  * Add expiration conditions to TODO comments.

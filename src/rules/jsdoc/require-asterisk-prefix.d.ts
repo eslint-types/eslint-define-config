@@ -20,14 +20,18 @@ export type RequireAsteriskPrefixOption = 'always' | 'never' | 'any';
 /**
  * Options.
  */
-export type RequireAsteriskPrefixOptions = [RequireAsteriskPrefixOption?, RequireAsteriskPrefixConfig?];
+export type RequireAsteriskPrefixOptions = [
+  RequireAsteriskPrefixOption?,
+  RequireAsteriskPrefixConfig?,
+];
 
 /**
  *
  *
  *
  */
-export type RequireAsteriskPrefixRuleConfig = RuleConfig<RequireAsteriskPrefixOptions>;
+export type RequireAsteriskPrefixRuleConfig =
+  RuleConfig<RequireAsteriskPrefixOptions>;
 
 /**
  *

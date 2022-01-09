@@ -10,14 +10,17 @@ export interface NoMeaninglessVoidOperatorOption {
 /**
  * Options.
  */
-export type NoMeaninglessVoidOperatorOptions = [NoMeaninglessVoidOperatorOption?];
+export type NoMeaninglessVoidOperatorOptions = [
+  NoMeaninglessVoidOperatorOption?,
+];
 
 /**
  * Disallow the `void` operator except when used to discard a value.
  *
  * @see [no-meaningless-void-operator](https://typescript-eslint.io/rules/no-meaningless-void-operator)
  */
-export type NoMeaninglessVoidOperatorRuleConfig = RuleConfig<NoMeaninglessVoidOperatorOptions>;
+export type NoMeaninglessVoidOperatorRuleConfig =
+  RuleConfig<NoMeaninglessVoidOperatorOptions>;
 
 /**
  * Disallow the `void` operator except when used to discard a value.

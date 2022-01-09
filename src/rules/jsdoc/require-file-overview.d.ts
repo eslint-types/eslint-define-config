@@ -23,7 +23,8 @@ export type RequireFileOverviewOptions = [RequireFileOverviewOption?];
  *
  * @see [require-file-overview](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-file-overview)
  */
-export type RequireFileOverviewRuleConfig = RuleConfig<RequireFileOverviewOptions>;
+export type RequireFileOverviewRuleConfig =
+  RuleConfig<RequireFileOverviewOptions>;
 
 /**
  * Checks that all files have one `@file`, `@fileoverview`, or `@overview` tag at the beginning of the file.

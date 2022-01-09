@@ -18,7 +18,7 @@ export type ComponentNameInTemplateCasingOption = 'PascalCase' | 'kebab-case';
  */
 export type ComponentNameInTemplateCasingOptions = [
   ComponentNameInTemplateCasingOption?,
-  ComponentNameInTemplateCasingConfig?
+  ComponentNameInTemplateCasingConfig?,
 ];
 
 /**
@@ -26,7 +26,8 @@ export type ComponentNameInTemplateCasingOptions = [
  *
  * @see [component-name-in-template-casing](https://eslint.vuejs.org/rules/component-name-in-template-casing.html)
  */
-export type ComponentNameInTemplateCasingRuleConfig = RuleConfig<ComponentNameInTemplateCasingOptions>;
+export type ComponentNameInTemplateCasingRuleConfig =
+  RuleConfig<ComponentNameInTemplateCasingOptions>;
 
 /**
  * Enforce specific casing for the component naming style in template.

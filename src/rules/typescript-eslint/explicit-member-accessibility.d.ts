@@ -18,14 +18,17 @@ export interface ExplicitMemberAccessibilityOption {
 /**
  * Options.
  */
-export type ExplicitMemberAccessibilityOptions = [ExplicitMemberAccessibilityOption?];
+export type ExplicitMemberAccessibilityOptions = [
+  ExplicitMemberAccessibilityOption?,
+];
 
 /**
  * Require explicit accessibility modifiers on class properties and methods.
  *
  * @see [explicit-member-accessibility](https://typescript-eslint.io/rules/explicit-member-accessibility)
  */
-export type ExplicitMemberAccessibilityRuleConfig = RuleConfig<ExplicitMemberAccessibilityOptions>;
+export type ExplicitMemberAccessibilityRuleConfig =
+  RuleConfig<ExplicitMemberAccessibilityOptions>;
 
 /**
  * Require explicit accessibility modifiers on class properties and methods.

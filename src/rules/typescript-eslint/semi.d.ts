@@ -10,7 +10,7 @@ export type SemiOption =
       'never',
       {
         beforeStatementContinuationChars?: 'always' | 'any' | 'never';
-      }
+      },
     ]
   | []
   | ['always']
@@ -18,7 +18,7 @@ export type SemiOption =
       'always',
       {
         omitLastInOneLineBlock?: boolean;
-      }
+      },
     ];
 
 /**

@@ -12,14 +12,17 @@ export interface NoPotentialComponentOptionTypoOption {
 /**
  * Options.
  */
-export type NoPotentialComponentOptionTypoOptions = [NoPotentialComponentOptionTypoOption?];
+export type NoPotentialComponentOptionTypoOptions = [
+  NoPotentialComponentOptionTypoOption?,
+];
 
 /**
  * Disallow a potential typo in your component property.
  *
  * @see [no-potential-component-option-typo](https://eslint.vuejs.org/rules/no-potential-component-option-typo.html)
  */
-export type NoPotentialComponentOptionTypoRuleConfig = RuleConfig<NoPotentialComponentOptionTypoOptions>;
+export type NoPotentialComponentOptionTypoRuleConfig =
+  RuleConfig<NoPotentialComponentOptionTypoOptions>;
 
 /**
  * Disallow a potential typo in your component property.

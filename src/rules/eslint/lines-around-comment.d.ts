@@ -30,7 +30,8 @@ export type LinesAroundCommentOptions = [LinesAroundCommentOption?];
  *
  * @see [lines-around-comment](https://eslint.org/docs/rules/lines-around-comment)
  */
-export type LinesAroundCommentRuleConfig = RuleConfig<LinesAroundCommentOptions>;
+export type LinesAroundCommentRuleConfig =
+  RuleConfig<LinesAroundCommentOptions>;
 
 /**
  * Require empty lines around comments.

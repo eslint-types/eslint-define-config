@@ -29,14 +29,18 @@ export type PreferDestructuringOption =
 /**
  * Options.
  */
-export type PreferDestructuringOptions = [PreferDestructuringOption?, PreferDestructuringConfig?];
+export type PreferDestructuringOptions = [
+  PreferDestructuringOption?,
+  PreferDestructuringConfig?,
+];
 
 /**
  * Require destructuring from arrays and/or objects.
  *
  * @see [prefer-destructuring](https://eslint.org/docs/rules/prefer-destructuring)
  */
-export type PreferDestructuringRuleConfig = RuleConfig<PreferDestructuringOptions>;
+export type PreferDestructuringRuleConfig =
+  RuleConfig<PreferDestructuringOptions>;
 
 /**
  * Require destructuring from arrays and/or objects.

@@ -17,7 +17,8 @@ export type NoExtraBooleanCastOptions = [NoExtraBooleanCastOption?];
  *
  * @see [no-extra-boolean-cast](https://eslint.org/docs/rules/no-extra-boolean-cast)
  */
-export type NoExtraBooleanCastRuleConfig = RuleConfig<NoExtraBooleanCastOptions>;
+export type NoExtraBooleanCastRuleConfig =
+  RuleConfig<NoExtraBooleanCastOptions>;
 
 /**
  * Disallow unnecessary boolean casts.

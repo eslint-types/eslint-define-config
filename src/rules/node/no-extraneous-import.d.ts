@@ -35,7 +35,8 @@ export type NoExtraneousImportOptions = [NoExtraneousImportOption?];
  *
  * @see [no-extraneous-import](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-extraneous-import.md)
  */
-export type NoExtraneousImportRuleConfig = RuleConfig<NoExtraneousImportOptions>;
+export type NoExtraneousImportRuleConfig =
+  RuleConfig<NoExtraneousImportOptions>;
 
 /**
  * Disallow `import` declarations which import extraneous modules.

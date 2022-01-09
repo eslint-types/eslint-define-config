@@ -18,7 +18,8 @@ export type ConsistentTypeImportsOptions = [ConsistentTypeImportsOption?];
  *
  * @see [consistent-type-imports](https://typescript-eslint.io/rules/consistent-type-imports)
  */
-export type ConsistentTypeImportsRuleConfig = RuleConfig<ConsistentTypeImportsOptions>;
+export type ConsistentTypeImportsRuleConfig =
+  RuleConfig<ConsistentTypeImportsOptions>;
 
 /**
  * Enforces consistent usage of type imports.

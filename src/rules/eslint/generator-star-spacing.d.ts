@@ -38,7 +38,8 @@ export type GeneratorStarSpacingOptions = [GeneratorStarSpacingOption?];
  *
  * @see [generator-star-spacing](https://eslint.org/docs/rules/generator-star-spacing)
  */
-export type GeneratorStarSpacingRuleConfig = RuleConfig<GeneratorStarSpacingOptions>;
+export type GeneratorStarSpacingRuleConfig =
+  RuleConfig<GeneratorStarSpacingOptions>;
 
 /**
  * Enforce consistent spacing around `*` operators in generator functions.

@@ -47,7 +47,8 @@ export type MemberDelimiterStyleOptions = [MemberDelimiterStyleOption?];
  *
  * @see [member-delimiter-style](https://typescript-eslint.io/rules/member-delimiter-style)
  */
-export type MemberDelimiterStyleRuleConfig = RuleConfig<MemberDelimiterStyleOptions>;
+export type MemberDelimiterStyleRuleConfig =
+  RuleConfig<MemberDelimiterStyleOptions>;
 
 /**
  * Require a specific member delimiter style for interfaces and type literals.

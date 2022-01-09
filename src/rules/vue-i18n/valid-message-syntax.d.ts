@@ -17,7 +17,8 @@ export type ValidMessageSyntaxOptions = [ValidMessageSyntaxOption?];
  *
  *
  */
-export type ValidMessageSyntaxRuleConfig = RuleConfig<ValidMessageSyntaxOptions>;
+export type ValidMessageSyntaxRuleConfig =
+  RuleConfig<ValidMessageSyntaxOptions>;
 
 /**
  * Disallow invalid message syntax.

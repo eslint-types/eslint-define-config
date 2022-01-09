@@ -17,7 +17,8 @@ export type NoUnusedComponentsOptions = [NoUnusedComponentsOption?];
  *
  * @see [no-unused-components](https://eslint.vuejs.org/rules/no-unused-components.html)
  */
-export type NoUnusedComponentsRuleConfig = RuleConfig<NoUnusedComponentsOptions>;
+export type NoUnusedComponentsRuleConfig =
+  RuleConfig<NoUnusedComponentsOptions>;
 
 /**
  * Disallow registering components that are not used inside templates.

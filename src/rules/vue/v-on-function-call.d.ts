@@ -15,7 +15,10 @@ export type VOnFunctionCallOption = 'always' | 'never';
 /**
  * Options.
  */
-export type VOnFunctionCallOptions = [VOnFunctionCallOption?, VOnFunctionCallConfig?];
+export type VOnFunctionCallOptions = [
+  VOnFunctionCallOption?,
+  VOnFunctionCallConfig?,
+];
 
 /**
  * Enforce or forbid parentheses after method calls without arguments in `v-on` directives.

@@ -26,14 +26,17 @@ export interface SortTypeUnionIntersectionMembersOption {
 /**
  * Options.
  */
-export type SortTypeUnionIntersectionMembersOptions = [SortTypeUnionIntersectionMembersOption?];
+export type SortTypeUnionIntersectionMembersOptions = [
+  SortTypeUnionIntersectionMembersOption?,
+];
 
 /**
  * Enforces that members of a type union/intersection are sorted alphabetically.
  *
  * @see [sort-type-union-intersection-members](https://typescript-eslint.io/rules/sort-type-union-intersection-members)
  */
-export type SortTypeUnionIntersectionMembersRuleConfig = RuleConfig<SortTypeUnionIntersectionMembersOptions>;
+export type SortTypeUnionIntersectionMembersRuleConfig =
+  RuleConfig<SortTypeUnionIntersectionMembersOptions>;
 
 /**
  * Enforces that members of a type union/intersection are sorted alphabetically.

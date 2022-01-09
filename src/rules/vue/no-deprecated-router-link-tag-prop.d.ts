@@ -11,14 +11,17 @@ export interface NoDeprecatedRouterLinkTagPropOption {
 /**
  * Options.
  */
-export type NoDeprecatedRouterLinkTagPropOptions = [NoDeprecatedRouterLinkTagPropOption?];
+export type NoDeprecatedRouterLinkTagPropOptions = [
+  NoDeprecatedRouterLinkTagPropOption?,
+];
 
 /**
  * Disallow using deprecated `tag` property on `RouterLink` (in Vue.js 3.0.0+).
  *
  * @see [no-deprecated-router-link-tag-prop](https://eslint.vuejs.org/rules/no-deprecated-router-link-tag-prop.html)
  */
-export type NoDeprecatedRouterLinkTagPropRuleConfig = RuleConfig<NoDeprecatedRouterLinkTagPropOptions>;
+export type NoDeprecatedRouterLinkTagPropRuleConfig =
+  RuleConfig<NoDeprecatedRouterLinkTagPropOptions>;
 
 /**
  * Disallow using deprecated `tag` property on `RouterLink` (in Vue.js 3.0.0+).

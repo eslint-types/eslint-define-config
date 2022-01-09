@@ -24,7 +24,8 @@ export type NoRestrictedSyntaxOptions = [NoRestrictedSyntaxOption?];
  *
  * @see [no-restricted-syntax](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-restricted-syntax)
  */
-export type NoRestrictedSyntaxRuleConfig = RuleConfig<NoRestrictedSyntaxOptions>;
+export type NoRestrictedSyntaxRuleConfig =
+  RuleConfig<NoRestrictedSyntaxOptions>;
 
 /**
  * Reports when certain comment structures are present.

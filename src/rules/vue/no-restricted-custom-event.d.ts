@@ -22,7 +22,8 @@ export type NoRestrictedCustomEventOptions = NoRestrictedCustomEventOption;
  *
  * @see [no-restricted-custom-event](https://eslint.vuejs.org/rules/no-restricted-custom-event.html)
  */
-export type NoRestrictedCustomEventRuleConfig = RuleConfig<NoRestrictedCustomEventOptions>;
+export type NoRestrictedCustomEventRuleConfig =
+  RuleConfig<NoRestrictedCustomEventOptions>;
 
 /**
  * Disallow specific custom event.

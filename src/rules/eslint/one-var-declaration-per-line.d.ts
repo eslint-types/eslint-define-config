@@ -15,7 +15,8 @@ export type OneVarDeclarationPerLineOptions = [OneVarDeclarationPerLineOption?];
  *
  * @see [one-var-declaration-per-line](https://eslint.org/docs/rules/one-var-declaration-per-line)
  */
-export type OneVarDeclarationPerLineRuleConfig = RuleConfig<OneVarDeclarationPerLineOptions>;
+export type OneVarDeclarationPerLineRuleConfig =
+  RuleConfig<OneVarDeclarationPerLineOptions>;
 
 /**
  * Require or disallow newlines around variable declarations.

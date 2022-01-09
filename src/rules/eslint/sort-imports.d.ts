@@ -9,7 +9,7 @@ export interface SortImportsOption {
     'none' | 'all' | 'multiple' | 'single',
     'none' | 'all' | 'multiple' | 'single',
     'none' | 'all' | 'multiple' | 'single',
-    'none' | 'all' | 'multiple' | 'single'
+    'none' | 'all' | 'multiple' | 'single',
   ];
   ignoreDeclarationSort?: boolean;
   ignoreMemberSort?: boolean;

@@ -15,14 +15,17 @@ export interface RestrictTemplateExpressionsOption {
 /**
  * Options.
  */
-export type RestrictTemplateExpressionsOptions = [RestrictTemplateExpressionsOption?];
+export type RestrictTemplateExpressionsOptions = [
+  RestrictTemplateExpressionsOption?,
+];
 
 /**
  * Enforce template literal expressions to be of string type.
  *
  * @see [restrict-template-expressions](https://typescript-eslint.io/rules/restrict-template-expressions)
  */
-export type RestrictTemplateExpressionsRuleConfig = RuleConfig<RestrictTemplateExpressionsOptions>;
+export type RestrictTemplateExpressionsRuleConfig =
+  RuleConfig<RestrictTemplateExpressionsOptions>;
 
 /**
  * Enforce template literal expressions to be of string type.

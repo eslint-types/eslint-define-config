@@ -21,7 +21,8 @@ export type SpaceBeforeFunctionParenOptions = [SpaceBeforeFunctionParenOption?];
  *
  * @see [space-before-function-paren](https://eslint.org/docs/rules/space-before-function-paren)
  */
-export type SpaceBeforeFunctionParenRuleConfig = RuleConfig<SpaceBeforeFunctionParenOptions>;
+export type SpaceBeforeFunctionParenRuleConfig =
+  RuleConfig<SpaceBeforeFunctionParenOptions>;
 
 /**
  * Enforce consistent spacing before `function` definition opening parenthesis.

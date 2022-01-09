@@ -15,7 +15,8 @@ export type ImplicitArrowLinebreakOptions = [ImplicitArrowLinebreakOption?];
  *
  * @see [implicit-arrow-linebreak](https://eslint.org/docs/rules/implicit-arrow-linebreak)
  */
-export type ImplicitArrowLinebreakRuleConfig = RuleConfig<ImplicitArrowLinebreakOptions>;
+export type ImplicitArrowLinebreakRuleConfig =
+  RuleConfig<ImplicitArrowLinebreakOptions>;
 
 /**
  * Enforce the location of arrow function bodies.

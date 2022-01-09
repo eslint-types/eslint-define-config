@@ -20,7 +20,8 @@ export type NoUnusedExpressionsOptions = [NoUnusedExpressionsOption?];
  *
  * @see [no-unused-expressions](https://eslint.org/docs/rules/no-unused-expressions)
  */
-export type NoUnusedExpressionsRuleConfig = RuleConfig<NoUnusedExpressionsOptions>;
+export type NoUnusedExpressionsRuleConfig =
+  RuleConfig<NoUnusedExpressionsOptions>;
 
 /**
  * Disallow unused expressions.

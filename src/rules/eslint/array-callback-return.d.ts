@@ -18,7 +18,8 @@ export type ArrayCallbackReturnOptions = [ArrayCallbackReturnOption?];
  *
  * @see [array-callback-return](https://eslint.org/docs/rules/array-callback-return)
  */
-export type ArrayCallbackReturnRuleConfig = RuleConfig<ArrayCallbackReturnOptions>;
+export type ArrayCallbackReturnRuleConfig =
+  RuleConfig<ArrayCallbackReturnOptions>;
 
 /**
  * Enforce `return` statements in callbacks of array methods.

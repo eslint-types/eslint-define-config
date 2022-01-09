@@ -15,7 +15,8 @@ export type PreferGlobalProcessOptions = [PreferGlobalProcessOption?];
  *
  * @see [prefer-global/process](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/prefer-global/process.md)
  */
-export type PreferGlobalProcessRuleConfig = RuleConfig<PreferGlobalProcessOptions>;
+export type PreferGlobalProcessRuleConfig =
+  RuleConfig<PreferGlobalProcessOptions>;
 
 /**
  * Enforce either `process` or `require("process")`.

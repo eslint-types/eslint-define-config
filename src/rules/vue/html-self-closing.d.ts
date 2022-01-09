@@ -14,7 +14,7 @@ export type HtmlSelfClosingOption =
         };
         svg?: OptionValue;
         math?: OptionValue;
-      }
+      },
     ];
 export type OptionValue = 'always' | 'never' | 'any';
 

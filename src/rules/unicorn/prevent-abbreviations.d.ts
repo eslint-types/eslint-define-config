@@ -18,7 +18,7 @@ export type PreventAbbreviationsOption =
         extendDefaultAllowList?: boolean;
         allowList?: BooleanObject;
         ignore?: any[];
-      }
+      },
     ];
 export type Replacements = false | BooleanObject;
 
@@ -39,7 +39,8 @@ export type PreventAbbreviationsOptions = PreventAbbreviationsOption;
  *
  * @see [prevent-abbreviations](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/prevent-abbreviations.md)
  */
-export type PreventAbbreviationsRuleConfig = RuleConfig<PreventAbbreviationsOptions>;
+export type PreventAbbreviationsRuleConfig =
+  RuleConfig<PreventAbbreviationsOptions>;
 
 /**
  * Prevent abbreviations.

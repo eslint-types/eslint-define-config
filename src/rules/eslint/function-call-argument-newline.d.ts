@@ -3,19 +3,25 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type FunctionCallArgumentNewlineOption = 'always' | 'never' | 'consistent';
+export type FunctionCallArgumentNewlineOption =
+  | 'always'
+  | 'never'
+  | 'consistent';
 
 /**
  * Options.
  */
-export type FunctionCallArgumentNewlineOptions = [FunctionCallArgumentNewlineOption?];
+export type FunctionCallArgumentNewlineOptions = [
+  FunctionCallArgumentNewlineOption?,
+];
 
 /**
  * Enforce line breaks between arguments of a function call.
  *
  * @see [function-call-argument-newline](https://eslint.org/docs/rules/function-call-argument-newline)
  */
-export type FunctionCallArgumentNewlineRuleConfig = RuleConfig<FunctionCallArgumentNewlineOptions>;
+export type FunctionCallArgumentNewlineRuleConfig =
+  RuleConfig<FunctionCallArgumentNewlineOptions>;
 
 /**
  * Enforce line breaks between arguments of a function call.

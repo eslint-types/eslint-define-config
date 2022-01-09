@@ -18,7 +18,8 @@ export type PreferArrowCallbackOptions = [PreferArrowCallbackOption?];
  *
  * @see [prefer-arrow-callback](https://eslint.org/docs/rules/prefer-arrow-callback)
  */
-export type PreferArrowCallbackRuleConfig = RuleConfig<PreferArrowCallbackOptions>;
+export type PreferArrowCallbackRuleConfig =
+  RuleConfig<PreferArrowCallbackOptions>;
 
 /**
  * Require using arrow functions for callbacks.

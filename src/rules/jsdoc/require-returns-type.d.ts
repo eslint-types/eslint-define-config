@@ -23,7 +23,8 @@ export type RequireReturnsTypeOptions = [RequireReturnsTypeOption?];
  *
  * @see [require-returns-type](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns-type)
  */
-export type RequireReturnsTypeRuleConfig = RuleConfig<RequireReturnsTypeOptions>;
+export type RequireReturnsTypeRuleConfig =
+  RuleConfig<RequireReturnsTypeOptions>;
 
 /**
  * Requires that `@returns` tag has `type` value.

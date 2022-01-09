@@ -18,7 +18,8 @@ export type NoTemplateTargetBlankOptions = [NoTemplateTargetBlankOption?];
  *
  * @see [no-template-target-blank](https://eslint.vuejs.org/rules/no-template-target-blank.html)
  */
-export type NoTemplateTargetBlankRuleConfig = RuleConfig<NoTemplateTargetBlankOptions>;
+export type NoTemplateTargetBlankRuleConfig =
+  RuleConfig<NoTemplateTargetBlankOptions>;
 
 /**
  * Disallow target="_blank" attribute without rel="noopener noreferrer".

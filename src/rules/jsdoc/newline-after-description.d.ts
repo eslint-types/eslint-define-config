@@ -15,7 +15,8 @@ export type NewlineAfterDescriptionOptions = [NewlineAfterDescriptionOption?];
  *
  * @see [newline-after-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-newline-after-description)
  */
-export type NewlineAfterDescriptionRuleConfig = RuleConfig<NewlineAfterDescriptionOptions>;
+export type NewlineAfterDescriptionRuleConfig =
+  RuleConfig<NewlineAfterDescriptionOptions>;
 
 /**
  * Enforces a consistent padding of the block description.

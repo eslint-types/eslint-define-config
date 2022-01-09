@@ -17,7 +17,8 @@ export type PreferNodeProtocolOptions = [PreferNodeProtocolOption?];
  *
  * @see [prefer-node-protocol](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/prefer-node-protocol.md)
  */
-export type PreferNodeProtocolRuleConfig = RuleConfig<PreferNodeProtocolOptions>;
+export type PreferNodeProtocolRuleConfig =
+  RuleConfig<PreferNodeProtocolOptions>;
 
 /**
  * Prefer using the `node:` protocol when importing Node.js builtin modules.

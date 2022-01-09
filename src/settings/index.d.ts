@@ -5,4 +5,8 @@ import type { NodeSettings } from './node';
 /**
  * Settings.
  */
-export interface Settings extends ImportSettings, JSDocSettings, NodeSettings, Partial<Record<string, unknown>> {}
+export interface Settings
+  extends ImportSettings,
+    JSDocSettings,
+    NodeSettings,
+    Partial<Record<string, unknown>> {}

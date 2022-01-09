@@ -22,14 +22,18 @@ export type CheckLineAlignmentOption = 'always' | 'never';
 /**
  * Options.
  */
-export type CheckLineAlignmentOptions = [CheckLineAlignmentOption?, CheckLineAlignmentConfig?];
+export type CheckLineAlignmentOptions = [
+  CheckLineAlignmentOption?,
+  CheckLineAlignmentConfig?,
+];
 
 /**
  * Reports invalid alignment of JSDoc block lines.
  *
  * @see [check-line-alignment](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-line-alignment)
  */
-export type CheckLineAlignmentRuleConfig = RuleConfig<CheckLineAlignmentOptions>;
+export type CheckLineAlignmentRuleConfig =
+  RuleConfig<CheckLineAlignmentOptions>;
 
 /**
  * Reports invalid alignment of JSDoc block lines.

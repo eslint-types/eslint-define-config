@@ -15,14 +15,18 @@ export type LinesBetweenClassMembersOption = 'always' | 'never';
 /**
  * Options.
  */
-export type LinesBetweenClassMembersOptions = [LinesBetweenClassMembersOption?, LinesBetweenClassMembersConfig?];
+export type LinesBetweenClassMembersOptions = [
+  LinesBetweenClassMembersOption?,
+  LinesBetweenClassMembersConfig?,
+];
 
 /**
  * Require or disallow an empty line between class members.
  *
  * @see [lines-between-class-members](https://eslint.org/docs/rules/lines-between-class-members)
  */
-export type LinesBetweenClassMembersRuleConfig = RuleConfig<LinesBetweenClassMembersOptions>;
+export type LinesBetweenClassMembersRuleConfig =
+  RuleConfig<LinesBetweenClassMembersOptions>;
 
 /**
  * Require or disallow an empty line between class members.

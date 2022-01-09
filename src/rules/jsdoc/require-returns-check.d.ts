@@ -19,7 +19,8 @@ export type RequireReturnsCheckOptions = [RequireReturnsCheckOption?];
  *
  * @see [require-returns-check](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns-check)
  */
-export type RequireReturnsCheckRuleConfig = RuleConfig<RequireReturnsCheckOptions>;
+export type RequireReturnsCheckRuleConfig =
+  RuleConfig<RequireReturnsCheckOptions>;
 
 /**
  * Requires a return statement in function body if a `@returns` tag is specified in jsdoc comment.

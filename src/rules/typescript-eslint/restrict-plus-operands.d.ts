@@ -18,7 +18,8 @@ export type RestrictPlusOperandsOptions = [RestrictPlusOperandsOption?];
  *
  * @see [restrict-plus-operands](https://typescript-eslint.io/rules/restrict-plus-operands)
  */
-export type RestrictPlusOperandsRuleConfig = RuleConfig<RestrictPlusOperandsOptions>;
+export type RestrictPlusOperandsRuleConfig =
+  RuleConfig<RestrictPlusOperandsOptions>;
 
 /**
  * When adding two variables, operands must both be of type number or of type string.

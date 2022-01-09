@@ -1,3 +1,9 @@
 {
-  "recommendations": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint", "streetsidesoftware.code-spell-checker"]
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "pflannery.vscode-versionlens",
+    "streetsidesoftware.code-spell-checker"
+  ]
 }

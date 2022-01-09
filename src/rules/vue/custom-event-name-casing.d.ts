@@ -10,13 +10,13 @@ export type CustomEventNameCasingOption =
       'kebab-case' | 'camelCase',
       {
         ignores?: string[];
-      }
+      },
     ]
   | []
   | [
       {
         ignores?: string[];
-      }
+      },
     ];
 
 /**
@@ -29,7 +29,8 @@ export type CustomEventNameCasingOptions = CustomEventNameCasingOption;
  *
  * @see [custom-event-name-casing](https://eslint.vuejs.org/rules/custom-event-name-casing.html)
  */
-export type CustomEventNameCasingRuleConfig = RuleConfig<CustomEventNameCasingOptions>;
+export type CustomEventNameCasingRuleConfig =
+  RuleConfig<CustomEventNameCasingOptions>;
 
 /**
  * Enforce specific casing for custom event name.

@@ -10,7 +10,7 @@ export type FuncNamesOption =
       Value,
       {
         generators?: Value;
-      }
+      },
     ];
 export type Value = 'always' | 'as-needed' | 'never';
 

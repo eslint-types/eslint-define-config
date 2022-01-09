@@ -18,7 +18,8 @@ export type FirstAttributeLinebreakOptions = [FirstAttributeLinebreakOption?];
  *
  * @see [first-attribute-linebreak](https://eslint.vuejs.org/rules/first-attribute-linebreak.html)
  */
-export type FirstAttributeLinebreakRuleConfig = RuleConfig<FirstAttributeLinebreakOptions>;
+export type FirstAttributeLinebreakRuleConfig =
+  RuleConfig<FirstAttributeLinebreakOptions>;
 
 /**
  * Enforce the location of first attribute.

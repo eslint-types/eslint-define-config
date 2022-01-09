@@ -12,14 +12,17 @@ export interface PreferReadonlyParameterTypesOption {
 /**
  * Options.
  */
-export type PreferReadonlyParameterTypesOptions = [PreferReadonlyParameterTypesOption?];
+export type PreferReadonlyParameterTypesOptions = [
+  PreferReadonlyParameterTypesOption?,
+];
 
 /**
  * Requires that function parameters are typed as readonly to prevent accidental mutation of inputs.
  *
  * @see [prefer-readonly-parameter-types](https://typescript-eslint.io/rules/prefer-readonly-parameter-types)
  */
-export type PreferReadonlyParameterTypesRuleConfig = RuleConfig<PreferReadonlyParameterTypesOptions>;
+export type PreferReadonlyParameterTypesRuleConfig =
+  RuleConfig<PreferReadonlyParameterTypesOptions>;
 
 /**
  * Requires that function parameters are typed as readonly to prevent accidental mutation of inputs.

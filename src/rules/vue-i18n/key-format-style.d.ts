@@ -10,12 +10,19 @@ export interface KeyFormatStyleConfig {
 /**
  * Option.
  */
-export type KeyFormatStyleOption = 'camelCase' | 'kebab-case' | 'snake_case' | 'SCREAMING_SNAKE_CASE';
+export type KeyFormatStyleOption =
+  | 'camelCase'
+  | 'kebab-case'
+  | 'snake_case'
+  | 'SCREAMING_SNAKE_CASE';
 
 /**
  * Options.
  */
-export type KeyFormatStyleOptions = [KeyFormatStyleOption?, KeyFormatStyleConfig?];
+export type KeyFormatStyleOptions = [
+  KeyFormatStyleOption?,
+  KeyFormatStyleConfig?,
+];
 
 /**
  * Enforce specific casing for localization keys.

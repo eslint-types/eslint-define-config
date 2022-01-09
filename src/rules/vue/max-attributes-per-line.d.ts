@@ -26,7 +26,8 @@ export type MaxAttributesPerLineOptions = [MaxAttributesPerLineOption?];
  *
  * @see [max-attributes-per-line](https://eslint.vuejs.org/rules/max-attributes-per-line.html)
  */
-export type MaxAttributesPerLineRuleConfig = RuleConfig<MaxAttributesPerLineOptions>;
+export type MaxAttributesPerLineRuleConfig =
+  RuleConfig<MaxAttributesPerLineOptions>;
 
 /**
  * Enforce the maximum number of attributes per line.

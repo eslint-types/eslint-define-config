@@ -18,7 +18,8 @@ export type MatchComponentFileNameOptions = [MatchComponentFileNameOption?];
  *
  * @see [match-component-file-name](https://eslint.vuejs.org/rules/match-component-file-name.html)
  */
-export type MatchComponentFileNameRuleConfig = RuleConfig<MatchComponentFileNameOptions>;
+export type MatchComponentFileNameRuleConfig =
+  RuleConfig<MatchComponentFileNameOptions>;
 
 /**
  * Require component name property to match its file name.

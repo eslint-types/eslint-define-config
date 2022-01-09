@@ -17,7 +17,8 @@ export type PreferLiteralEnumMemberOptions = [PreferLiteralEnumMemberOption?];
  *
  * @see [prefer-literal-enum-member](https://typescript-eslint.io/rules/prefer-literal-enum-member)
  */
-export type PreferLiteralEnumMemberRuleConfig = RuleConfig<PreferLiteralEnumMemberOptions>;
+export type PreferLiteralEnumMemberRuleConfig =
+  RuleConfig<PreferLiteralEnumMemberOptions>;
 
 /**
  * Require that all enum members be literal values to prevent unintended enum member name shadow issues.

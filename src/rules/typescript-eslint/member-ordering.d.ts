@@ -215,7 +215,10 @@ export interface MemberOrderingOption {
               | 'private-abstract-set'
             )[]
           | 'never';
-        order?: 'alphabetically' | 'alphabetically-case-insensitive' | 'as-written';
+        order?:
+          | 'alphabetically'
+          | 'alphabetically-case-insensitive'
+          | 'as-written';
       };
   classes?:
     | 'never'
@@ -428,7 +431,10 @@ export interface MemberOrderingOption {
               | 'private-abstract-set'
             )[]
           | 'never';
-        order?: 'alphabetically' | 'alphabetically-case-insensitive' | 'as-written';
+        order?:
+          | 'alphabetically'
+          | 'alphabetically-case-insensitive'
+          | 'as-written';
       };
   classExpressions?:
     | 'never'
@@ -641,21 +647,34 @@ export interface MemberOrderingOption {
               | 'private-abstract-set'
             )[]
           | 'never';
-        order?: 'alphabetically' | 'alphabetically-case-insensitive' | 'as-written';
+        order?:
+          | 'alphabetically'
+          | 'alphabetically-case-insensitive'
+          | 'as-written';
       };
   interfaces?:
     | 'never'
     | ('signature' | 'field' | 'method' | 'constructor')[]
     | {
-        memberTypes?: ('signature' | 'field' | 'method' | 'constructor')[] | 'never';
-        order?: 'alphabetically' | 'alphabetically-case-insensitive' | 'as-written';
+        memberTypes?:
+          | ('signature' | 'field' | 'method' | 'constructor')[]
+          | 'never';
+        order?:
+          | 'alphabetically'
+          | 'alphabetically-case-insensitive'
+          | 'as-written';
       };
   typeLiterals?:
     | 'never'
     | ('signature' | 'field' | 'method' | 'constructor')[]
     | {
-        memberTypes?: ('signature' | 'field' | 'method' | 'constructor')[] | 'never';
-        order?: 'alphabetically' | 'alphabetically-case-insensitive' | 'as-written';
+        memberTypes?:
+          | ('signature' | 'field' | 'method' | 'constructor')[]
+          | 'never';
+        order?:
+          | 'alphabetically'
+          | 'alphabetically-case-insensitive'
+          | 'as-written';
       };
 }
 

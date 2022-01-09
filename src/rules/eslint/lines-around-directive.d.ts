@@ -22,7 +22,8 @@ export type LinesAroundDirectiveOptions = [LinesAroundDirectiveOption?];
  *
  * @see [lines-around-directive](https://eslint.org/docs/rules/lines-around-directive)
  */
-export type LinesAroundDirectiveRuleConfig = RuleConfig<LinesAroundDirectiveOptions>;
+export type LinesAroundDirectiveRuleConfig =
+  RuleConfig<LinesAroundDirectiveOptions>;
 
 /**
  * Require or disallow newlines around directives.

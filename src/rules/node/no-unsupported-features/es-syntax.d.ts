@@ -47,14 +47,17 @@ export interface NoUnsupportedFeaturesEsSyntaxOption {
 /**
  * Options.
  */
-export type NoUnsupportedFeaturesEsSyntaxOptions = [NoUnsupportedFeaturesEsSyntaxOption?];
+export type NoUnsupportedFeaturesEsSyntaxOptions = [
+  NoUnsupportedFeaturesEsSyntaxOption?,
+];
 
 /**
  * Disallow unsupported ECMAScript syntax on the specified version.
  *
  * @see [no-unsupported-features/es-syntax](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-unsupported-features/es-syntax.md)
  */
-export type NoUnsupportedFeaturesEsSyntaxRuleConfig = RuleConfig<NoUnsupportedFeaturesEsSyntaxOptions>;
+export type NoUnsupportedFeaturesEsSyntaxRuleConfig =
+  RuleConfig<NoUnsupportedFeaturesEsSyntaxOptions>;
 
 /**
  * Disallow unsupported ECMAScript syntax on the specified version.

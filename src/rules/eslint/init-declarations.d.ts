@@ -12,7 +12,7 @@ export type InitDeclarationsOption =
       'never',
       {
         ignoreForLoopInit?: boolean;
-      }
+      },
     ];
 
 /**

@@ -12,7 +12,7 @@ export type ArrowBodyStyleOption =
       'as-needed',
       {
         requireReturnForObjectLiteral?: boolean;
-      }
+      },
     ];
 
 /**

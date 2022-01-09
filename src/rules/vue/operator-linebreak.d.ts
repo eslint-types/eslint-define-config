@@ -17,7 +17,10 @@ export type OperatorLinebreakOption = 'after' | 'before' | 'none' | null;
 /**
  * Options.
  */
-export type OperatorLinebreakOptions = [OperatorLinebreakOption?, OperatorLinebreakConfig?];
+export type OperatorLinebreakOptions = [
+  OperatorLinebreakOption?,
+  OperatorLinebreakConfig?,
+];
 
 /**
  * Enforce consistent linebreak style for operators.

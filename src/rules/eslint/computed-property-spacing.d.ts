@@ -15,14 +15,18 @@ export type ComputedPropertySpacingOption = 'always' | 'never';
 /**
  * Options.
  */
-export type ComputedPropertySpacingOptions = [ComputedPropertySpacingOption?, ComputedPropertySpacingConfig?];
+export type ComputedPropertySpacingOptions = [
+  ComputedPropertySpacingOption?,
+  ComputedPropertySpacingConfig?,
+];
 
 /**
  * Enforce consistent spacing inside computed property brackets.
  *
  * @see [computed-property-spacing](https://eslint.org/docs/rules/computed-property-spacing)
  */
-export type ComputedPropertySpacingRuleConfig = RuleConfig<ComputedPropertySpacingOptions>;
+export type ComputedPropertySpacingRuleConfig =
+  RuleConfig<ComputedPropertySpacingOptions>;
 
 /**
  * Enforce consistent spacing inside computed property brackets.

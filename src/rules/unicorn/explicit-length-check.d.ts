@@ -17,7 +17,8 @@ export type ExplicitLengthCheckOptions = [ExplicitLengthCheckOption?];
  *
  * @see [explicit-length-check](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/explicit-length-check.md)
  */
-export type ExplicitLengthCheckRuleConfig = RuleConfig<ExplicitLengthCheckOptions>;
+export type ExplicitLengthCheckRuleConfig =
+  RuleConfig<ExplicitLengthCheckOptions>;
 
 /**
  * Enforce explicitly comparing the `length` or `size` property of a value.

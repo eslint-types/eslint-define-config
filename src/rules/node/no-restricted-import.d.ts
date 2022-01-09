@@ -21,7 +21,8 @@ export type NoRestrictedImportOptions = [NoRestrictedImportOption?];
  *
  * @see [no-restricted-import](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-restricted-import.md)
  */
-export type NoRestrictedImportRuleConfig = RuleConfig<NoRestrictedImportOptions>;
+export type NoRestrictedImportRuleConfig =
+  RuleConfig<NoRestrictedImportOptions>;
 
 /**
  * Disallow specified modules when loaded by `require`.

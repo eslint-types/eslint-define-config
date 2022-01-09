@@ -20,7 +20,8 @@ export type MaxNestedCallbacksOptions = [MaxNestedCallbacksOption?];
  *
  * @see [max-nested-callbacks](https://eslint.org/docs/rules/max-nested-callbacks)
  */
-export type MaxNestedCallbacksRuleConfig = RuleConfig<MaxNestedCallbacksOptions>;
+export type MaxNestedCallbacksRuleConfig =
+  RuleConfig<MaxNestedCallbacksOptions>;
 
 /**
  * Enforce a maximum depth that callbacks can be nested.

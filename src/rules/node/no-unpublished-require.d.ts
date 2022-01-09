@@ -35,7 +35,8 @@ export type NoUnpublishedRequireOptions = [NoUnpublishedRequireOption?];
  *
  * @see [no-unpublished-require](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-unpublished-require.md)
  */
-export type NoUnpublishedRequireRuleConfig = RuleConfig<NoUnpublishedRequireOptions>;
+export type NoUnpublishedRequireRuleConfig =
+  RuleConfig<NoUnpublishedRequireOptions>;
 
 /**
  * Disallow `require()` expressions which import private modules.

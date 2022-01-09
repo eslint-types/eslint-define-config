@@ -28,7 +28,8 @@ export type RequireDescriptionOptions = [RequireDescriptionOption?];
  *
  * @see [require-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-description)
  */
-export type RequireDescriptionRuleConfig = RuleConfig<RequireDescriptionOptions>;
+export type RequireDescriptionRuleConfig =
+  RuleConfig<RequireDescriptionOptions>;
 
 /**
  * Requires that all functions have a description.

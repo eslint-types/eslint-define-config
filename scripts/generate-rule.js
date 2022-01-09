@@ -29,7 +29,10 @@ function normalizeRuleProvider(provider) {
 
 console.log({ ruleName, ruleProvider });
 
-const ruleProviderDir = path.resolve(rulesDir, normalizeRuleProvider(ruleProvider));
+const ruleProviderDir = path.resolve(
+  rulesDir,
+  normalizeRuleProvider(ruleProvider),
+);
 const rulePath = path.resolve(ruleProviderDir, `${ruleName}.d.ts`);
 
 /**
@@ -37,7 +40,9 @@ const rulePath = path.resolve(ruleProviderDir, `${ruleName}.d.ts`);
  * @param {string} provider
  */
 function generateRuleFileContent(name, provider) {
-  const PascalCase = name.replace(/(\w)(\w*)/g, (_, g1, g2) => g1.toUpperCase() + g2.toLowerCase()).replace(/-/g, '');
+  const PascalCase = name
+    .replace(/(\w)(\w*)/g, (_, g1, g2) => g1.toUpperCase() + g2.toLowerCase())
+    .replace(/-/g, '');
   const kebabCase = name;
 
   let RuleLink = '<RuleLink>';

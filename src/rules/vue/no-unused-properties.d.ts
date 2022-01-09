@@ -4,7 +4,14 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoUnusedPropertiesOption {
-  groups?: ('props' | 'data' | 'asyncData' | 'computed' | 'methods' | 'setup')[];
+  groups?: (
+    | 'props'
+    | 'data'
+    | 'asyncData'
+    | 'computed'
+    | 'methods'
+    | 'setup'
+  )[];
   deepData?: boolean;
   ignorePublicMembers?: boolean;
 }
@@ -19,7 +26,8 @@ export type NoUnusedPropertiesOptions = [NoUnusedPropertiesOption?];
  *
  * @see [no-unused-properties](https://eslint.vuejs.org/rules/no-unused-properties.html)
  */
-export type NoUnusedPropertiesRuleConfig = RuleConfig<NoUnusedPropertiesOptions>;
+export type NoUnusedPropertiesRuleConfig =
+  RuleConfig<NoUnusedPropertiesOptions>;
 
 /**
  * Disallow unused properties.

@@ -4,13 +4,33 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoTypeAliasOption {
-  allowAliases?: 'always' | 'never' | 'in-unions' | 'in-intersections' | 'in-unions-and-intersections';
+  allowAliases?:
+    | 'always'
+    | 'never'
+    | 'in-unions'
+    | 'in-intersections'
+    | 'in-unions-and-intersections';
   allowCallbacks?: 'always' | 'never';
   allowConditionalTypes?: 'always' | 'never';
   allowConstructors?: 'always' | 'never';
-  allowLiterals?: 'always' | 'never' | 'in-unions' | 'in-intersections' | 'in-unions-and-intersections';
-  allowMappedTypes?: 'always' | 'never' | 'in-unions' | 'in-intersections' | 'in-unions-and-intersections';
-  allowTupleTypes?: 'always' | 'never' | 'in-unions' | 'in-intersections' | 'in-unions-and-intersections';
+  allowLiterals?:
+    | 'always'
+    | 'never'
+    | 'in-unions'
+    | 'in-intersections'
+    | 'in-unions-and-intersections';
+  allowMappedTypes?:
+    | 'always'
+    | 'never'
+    | 'in-unions'
+    | 'in-intersections'
+    | 'in-unions-and-intersections';
+  allowTupleTypes?:
+    | 'always'
+    | 'never'
+    | 'in-unions'
+    | 'in-intersections'
+    | 'in-unions-and-intersections';
   allowGenerics?: 'always' | 'never';
 }
 

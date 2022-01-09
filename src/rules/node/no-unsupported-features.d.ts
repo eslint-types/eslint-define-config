@@ -7,7 +7,9 @@ export type NoUnsupportedFeaturesOption =
   | (0.1 | 0.12 | 4 | 5 | 6 | 6.5 | 7 | 7.6 | 8 | 8.3 | 9 | 10)
   | string
   | {
-      version?: (0.1 | 0.12 | 4 | 5 | 6 | 6.5 | 7 | 7.6 | 8 | 8.3 | 9 | 10) | string;
+      version?:
+        | (0.1 | 0.12 | 4 | 5 | 6 | 6.5 | 7 | 7.6 | 8 | 8.3 | 9 | 10)
+        | string;
       ignores?: (
         | 'syntax'
         | 'defaultParameters'
@@ -158,7 +160,8 @@ export type NoUnsupportedFeaturesOptions = [NoUnsupportedFeaturesOption?];
  *
  * @see [no-unsupported-features](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/no-unsupported-features.md)
  */
-export type NoUnsupportedFeaturesRuleConfig = RuleConfig<NoUnsupportedFeaturesOptions>;
+export type NoUnsupportedFeaturesRuleConfig =
+  RuleConfig<NoUnsupportedFeaturesOptions>;
 
 /**
  * Disallow unsupported ECMAScript features on the specified version.

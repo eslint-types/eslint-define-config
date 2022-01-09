@@ -30,14 +30,18 @@ export type CapitalizedCommentsOption = 'always' | 'never';
 /**
  * Options.
  */
-export type CapitalizedCommentsOptions = [CapitalizedCommentsOption?, CapitalizedCommentsConfig?];
+export type CapitalizedCommentsOptions = [
+  CapitalizedCommentsOption?,
+  CapitalizedCommentsConfig?,
+];
 
 /**
  * Enforce or disallow capitalization of the first letter of a comment.
  *
  * @see [capitalized-comments](https://eslint.org/docs/rules/capitalized-comments)
  */
-export type CapitalizedCommentsRuleConfig = RuleConfig<CapitalizedCommentsOptions>;
+export type CapitalizedCommentsRuleConfig =
+  RuleConfig<CapitalizedCommentsOptions>;
 
 /**
  * Enforce or disallow capitalization of the first letter of a comment.

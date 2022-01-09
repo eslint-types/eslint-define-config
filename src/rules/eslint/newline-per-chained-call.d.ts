@@ -17,7 +17,8 @@ export type NewlinePerChainedCallOptions = [NewlinePerChainedCallOption?];
  *
  * @see [newline-per-chained-call](https://eslint.org/docs/rules/newline-per-chained-call)
  */
-export type NewlinePerChainedCallRuleConfig = RuleConfig<NewlinePerChainedCallOptions>;
+export type NewlinePerChainedCallRuleConfig =
+  RuleConfig<NewlinePerChainedCallOptions>;
 
 /**
  * Require a newline after each call in a method chain.

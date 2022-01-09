@@ -35,55 +35,49 @@ const PRETTIER_OPTIONS: Options = {
   plugins: [require.resolve('prettier-plugin-organize-imports')],
 
   parser: 'typescript',
-  arrowParens: 'always',
-  bracketSpacing: true,
-  printWidth: 120,
-  semi: true,
   singleQuote: true,
-  tabWidth: 2,
-  trailingComma: 'none',
-  useTabs: false
+  trailingComma: 'all',
 };
 
 const generationMap: Record<string, Plugin> = {
   eslint: {
     name: 'Eslint',
-    rules: Object.fromEntries(new eslint.Linter().getRules().entries())
+    rules: Object.fromEntries(new eslint.Linter().getRules().entries()),
   },
   'typescript-eslint': {
     name: 'TypeScript',
     prefix: '@typescript-eslint',
-    rules: (eslintPluginTypeScript as Plugin).rules
+    rules: (eslintPluginTypeScript as Plugin).rules,
   },
   jsdoc: {
     name: 'JSDoc',
-    rules: (eslintPluginJSDoc as Plugin).rules
+    rules: (eslintPluginJSDoc as Plugin).rules,
   },
   node: {
     name: 'Node',
-    rules: (eslintPluginNode as Plugin).rules
+    rules: (eslintPluginNode as Plugin).rules,
   },
   spellcheck: {
     name: 'Spellcheck',
-    rules: (eslintPluginSpellcheck as Plugin).rules
+    rules: (eslintPluginSpellcheck as Plugin).rules,
   },
   unicorn: {
     name: 'Unicorn',
-    rules: (eslintPluginUnicorn as Plugin).rules
+    rules: (eslintPluginUnicorn as Plugin).rules,
   },
   vue: {
     name: 'Vue',
-    rules: (eslintPluginVue as Plugin).rules
+    rules: (eslintPluginVue as Plugin).rules,
   },
   'vue-i18n': {
     name: 'VueI18n',
     prefix: '@intlify/vue-i18n',
-    rules: (eslintPluginVueI18n as Plugin).rules
+    rules: (eslintPluginVueI18n as Plugin).rules,
   },
   'vue-pug-sfc': {
     name: 'VuePugSfc',
-    rules: (eslintPluginVuePugSfc as Plugin).rules
-  }
+    rules: (eslintPluginVuePugSfc as Plugin).rules,
+  },
 };
 
 // Generating rule files
@@ -106,8 +100,13 @@ async function main(): Promise<void> {
       try {
         const nestedDepth: number = ruleName.split('/').length;
 
-        const rulePath: string = path.resolve(ruleProviderDir, `${ruleName}.d.ts`);
-        let ruleContent: string = `import type { RuleConfig } from '${'../'.repeat(nestedDepth)}rule-config';`;
+        const rulePath: string = path.resolve(
+          ruleProviderDir,
+          `${ruleName}.d.ts`,
+        );
+        let ruleContent: string = `import type { RuleConfig } from '${'../'.repeat(
+          nestedDepth,
+        )}rule-config';`;
 
         const ruleNamePascalCase: string = pascalCase(ruleName);
 
@@ -115,33 +114,40 @@ async function main(): Promise<void> {
         if (description.length > 0 && !description.endsWith('.')) {
           description += '.';
         }
-        const seeDocLink: string = meta?.docs?.url ? `@see [${ruleName}](${meta.docs.url})` : '';
+        const seeDocLink: string = meta?.docs?.url
+          ? `@see [${ruleName}](${meta.docs.url})`
+          : '';
 
         const deprecated: boolean | undefined = meta?.deprecated;
 
         const schema: JSONSchema4 | JSONSchema4[] | undefined = meta?.schema;
         const schemaIsObject: boolean = !Array.isArray(schema);
-        const mainSchema: JSONSchema4 | undefined = Array.isArray(schema) ? schema[0] : schema;
+        const mainSchema: JSONSchema4 | undefined = Array.isArray(schema)
+          ? schema[0]
+          : schema;
         const sideSchema: JSONSchema4 | undefined =
-          schema && Array.isArray(schema) && schema.length > 1 ? schema[1] : undefined;
+          schema && Array.isArray(schema) && schema.length > 1
+            ? schema[1]
+            : undefined;
         const thirdSchema: JSONSchema4 | undefined =
-          schema && Array.isArray(schema) && schema.length > 2 ? schema[2] : undefined;
+          schema && Array.isArray(schema) && schema.length > 2
+            ? schema[2]
+            : undefined;
         if (mainSchema) {
           if (sideSchema) {
             if (thirdSchema) {
-              const ruleSetting: string = await compile(thirdSchema, `${ruleNamePascalCase}Setting`, {
-                bannerComment: '',
-                style: {
-                  bracketSpacing: true,
-                  printWidth: 120,
-                  semi: true,
-                  singleQuote: true,
-                  tabWidth: 2,
-                  trailingComma: 'none',
-                  useTabs: false
+              const ruleSetting: string = await compile(
+                thirdSchema,
+                `${ruleNamePascalCase}Setting`,
+                {
+                  bannerComment: '',
+                  style: {
+                    singleQuote: true,
+                    trailingComma: 'all',
+                  },
+                  unknownAny: false,
                 },
-                unknownAny: false
-              });
+              );
               ruleContent += `
 
 /**
@@ -149,19 +155,18 @@ async function main(): Promise<void> {
  */
 ${ruleSetting}`;
             }
-            const ruleConfig: string = await compile(sideSchema, `${ruleNamePascalCase}Config`, {
-              bannerComment: '',
-              style: {
-                bracketSpacing: true,
-                printWidth: 120,
-                semi: true,
-                singleQuote: true,
-                tabWidth: 2,
-                trailingComma: 'none',
-                useTabs: false
+            const ruleConfig: string = await compile(
+              sideSchema,
+              `${ruleNamePascalCase}Config`,
+              {
+                bannerComment: '',
+                style: {
+                  singleQuote: true,
+                  trailingComma: 'all',
+                },
+                unknownAny: false,
               },
-              unknownAny: false
-            });
+            );
             ruleContent += `
 
 /**
@@ -170,19 +175,18 @@ ${ruleSetting}`;
 ${ruleConfig}`;
           }
 
-          const ruleOption: string = await compile(mainSchema, `${ruleNamePascalCase}Option`, {
-            bannerComment: '',
-            style: {
-              bracketSpacing: true,
-              printWidth: 120,
-              semi: true,
-              singleQuote: true,
-              tabWidth: 2,
-              trailingComma: 'none',
-              useTabs: false
+          const ruleOption: string = await compile(
+            mainSchema,
+            `${ruleNamePascalCase}Option`,
+            {
+              bannerComment: '',
+              style: {
+                singleQuote: true,
+                trailingComma: 'all',
+              },
+              unknownAny: false,
             },
-            unknownAny: false
-          });
+          );
 
           ruleContent += `
 
@@ -199,7 +203,9 @@ export type ${ruleNamePascalCase}Options = ${
               ? `${ruleNamePascalCase}Option`
               : `[${ruleNamePascalCase}Option?${
                   sideSchema
-                    ? `, ${ruleNamePascalCase}Config?${thirdSchema ? `, ${ruleNamePascalCase}Setting?` : ''}`
+                    ? `, ${ruleNamePascalCase}Config?${
+                        thirdSchema ? `, ${ruleNamePascalCase}Setting?` : ''
+                      }`
                     : ''
                 }]`
           };`;
@@ -220,7 +226,9 @@ export type ${ruleNamePascalCase}Options = ${
    *
    * ${seeDocLink}
    */
-  export type ${ruleNamePascalCase}RuleConfig = RuleConfig<${mainSchema ? `${ruleNamePascalCase}Options` : '[]'}>;
+  export type ${ruleNamePascalCase}RuleConfig = RuleConfig<${
+          mainSchema ? `${ruleNamePascalCase}Options` : '[]'
+        }>;
 
   /**
    * ${description}${
@@ -254,13 +262,19 @@ export type ${ruleNamePascalCase}Options = ${
         if (nestedDepth > 1) {
           const subPath: string = rulePath.replace(/\/[\w-]+.d.ts$/, '');
           if (!fs.existsSync(subPath)) {
-            fs.mkdirSync(rulePath.replace(/\/[\w-]+.d.ts$/, ''), { recursive: true });
+            fs.mkdirSync(rulePath.replace(/\/[\w-]+.d.ts$/, ''), {
+              recursive: true,
+            });
           }
         }
         fs.writeFileSync(rulePath, ruleContent);
       } catch (error) {
         if (error instanceof Error) {
-          console.error(`Failed to generate rule '${ruleName}' for ${name}.\n`, error.stack, '\n');
+          console.error(
+            `Failed to generate rule '${ruleName}' for ${name}.\n`,
+            error.stack,
+            '\n',
+          );
         }
         failedRules.push(ruleName);
       }
@@ -270,7 +284,9 @@ export type ${ruleNamePascalCase}Options = ${
     const indexPath: string = path.resolve(ruleProviderDir, 'index.d.ts');
     let indexContent: string = Object.keys(rules)
       .filter((name) => !failedRules.includes(name))
-      .map((name) => `import type { ${pascalCase(name)}Rule } from './${name}';`)
+      .map(
+        (name) => `import type { ${pascalCase(name)}Rule } from './${name}';`,
+      )
       .join('\n');
 
     indexContent += `

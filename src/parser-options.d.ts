@@ -119,10 +119,14 @@ export type Lib = LiteralUnion<
 >;
 
 /** DebugLevel. */
-export type DebugLevel = boolean | Array<'eslint' | 'typescript' | 'typescript-eslint'>;
+export type DebugLevel =
+  | boolean
+  | Array<'eslint' | 'typescript' | 'typescript-eslint'>;
 
 /** Parser. */
-export type Parser = LiteralUnion<'babel-eslint' | '@typescript-eslint/parser' | 'vue-eslint-parser'>;
+export type Parser = LiteralUnion<
+  'babel-eslint' | '@typescript-eslint/parser' | 'vue-eslint-parser'
+>;
 
 /**
  * Parser options.

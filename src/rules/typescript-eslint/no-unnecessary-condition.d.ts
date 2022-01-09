@@ -18,7 +18,8 @@ export type NoUnnecessaryConditionOptions = [NoUnnecessaryConditionOption?];
  *
  * @see [no-unnecessary-condition](https://typescript-eslint.io/rules/no-unnecessary-condition)
  */
-export type NoUnnecessaryConditionRuleConfig = RuleConfig<NoUnnecessaryConditionOptions>;
+export type NoUnnecessaryConditionRuleConfig =
+  RuleConfig<NoUnnecessaryConditionOptions>;
 
 /**
  * Prevents conditionals where the type is always truthy or always falsy.

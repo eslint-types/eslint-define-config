@@ -3,7 +3,10 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type MultilineCommentStyleOption = 'starred-block' | 'separate-lines' | 'bare-block';
+export type MultilineCommentStyleOption =
+  | 'starred-block'
+  | 'separate-lines'
+  | 'bare-block';
 
 /**
  * Options.
@@ -15,7 +18,8 @@ export type MultilineCommentStyleOptions = [MultilineCommentStyleOption?];
  *
  * @see [multiline-comment-style](https://eslint.org/docs/rules/multiline-comment-style)
  */
-export type MultilineCommentStyleRuleConfig = RuleConfig<MultilineCommentStyleOptions>;
+export type MultilineCommentStyleRuleConfig =
+  RuleConfig<MultilineCommentStyleOptions>;
 
 /**
  * Enforce a particular style for multiline comments.

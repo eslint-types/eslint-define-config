@@ -22,7 +22,8 @@ export type LineCommentPositionOptions = [LineCommentPositionOption?];
  *
  * @see [line-comment-position](https://eslint.org/docs/rules/line-comment-position)
  */
-export type LineCommentPositionRuleConfig = RuleConfig<LineCommentPositionOptions>;
+export type LineCommentPositionRuleConfig =
+  RuleConfig<LineCommentPositionOptions>;
 
 /**
  * Enforce position of line comments.

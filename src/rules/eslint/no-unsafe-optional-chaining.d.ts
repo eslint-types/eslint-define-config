@@ -17,7 +17,8 @@ export type NoUnsafeOptionalChainingOptions = [NoUnsafeOptionalChainingOption?];
  *
  * @see [no-unsafe-optional-chaining](https://eslint.org/docs/rules/no-unsafe-optional-chaining)
  */
-export type NoUnsafeOptionalChainingRuleConfig = RuleConfig<NoUnsafeOptionalChainingOptions>;
+export type NoUnsafeOptionalChainingRuleConfig =
+  RuleConfig<NoUnsafeOptionalChainingOptions>;
 
 /**
  * Disallow use of optional chaining in contexts where the `undefined` value is not allowed.

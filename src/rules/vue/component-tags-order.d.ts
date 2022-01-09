@@ -17,7 +17,8 @@ export type ComponentTagsOrderOptions = [ComponentTagsOrderOption?];
  *
  * @see [component-tags-order](https://eslint.vuejs.org/rules/component-tags-order.html)
  */
-export type ComponentTagsOrderRuleConfig = RuleConfig<ComponentTagsOrderOptions>;
+export type ComponentTagsOrderRuleConfig =
+  RuleConfig<ComponentTagsOrderOptions>;
 
 /**
  * Enforce order of component top-level elements.

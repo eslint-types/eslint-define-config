@@ -20,7 +20,8 @@ export type NoUnusedExpressionsOptions = [NoUnusedExpressionsOption?];
  *
  * @see [no-unused-expressions](https://typescript-eslint.io/rules/no-unused-expressions)
  */
-export type NoUnusedExpressionsRuleConfig = RuleConfig<NoUnusedExpressionsOptions>;
+export type NoUnusedExpressionsRuleConfig =
+  RuleConfig<NoUnusedExpressionsOptions>;
 
 /**
  * Disallow unused expressions.

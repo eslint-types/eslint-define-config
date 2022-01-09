@@ -10,7 +10,8 @@ export type NoConstructorReturnOptions = [];
  *
  * @see [no-constructor-return](https://eslint.org/docs/rules/no-constructor-return)
  */
-export type NoConstructorReturnRuleConfig = RuleConfig<NoConstructorReturnOptions>;
+export type NoConstructorReturnRuleConfig =
+  RuleConfig<NoConstructorReturnOptions>;
 
 /**
  * Disallow returning value from constructor.

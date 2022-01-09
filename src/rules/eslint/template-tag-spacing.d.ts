@@ -15,7 +15,8 @@ export type TemplateTagSpacingOptions = [TemplateTagSpacingOption?];
  *
  * @see [template-tag-spacing](https://eslint.org/docs/rules/template-tag-spacing)
  */
-export type TemplateTagSpacingRuleConfig = RuleConfig<TemplateTagSpacingOptions>;
+export type TemplateTagSpacingRuleConfig =
+  RuleConfig<TemplateTagSpacingOptions>;
 
 /**
  * Require or disallow spacing between template tags and their literals.

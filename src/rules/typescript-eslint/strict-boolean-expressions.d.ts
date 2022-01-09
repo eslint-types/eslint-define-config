@@ -24,7 +24,8 @@ export type StrictBooleanExpressionsOptions = [StrictBooleanExpressionsOption?];
  *
  * @see [strict-boolean-expressions](https://typescript-eslint.io/rules/strict-boolean-expressions)
  */
-export type StrictBooleanExpressionsRuleConfig = RuleConfig<StrictBooleanExpressionsOptions>;
+export type StrictBooleanExpressionsRuleConfig =
+  RuleConfig<StrictBooleanExpressionsOptions>;
 
 /**
  * Restricts the types allowed in boolean expressions.

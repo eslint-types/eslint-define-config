@@ -17,7 +17,8 @@ export type NoDuplicateImportsOptions = [NoDuplicateImportsOption?];
  *
  * @see [no-duplicate-imports](https://eslint.org/docs/rules/no-duplicate-imports)
  */
-export type NoDuplicateImportsRuleConfig = RuleConfig<NoDuplicateImportsOptions>;
+export type NoDuplicateImportsRuleConfig =
+  RuleConfig<NoDuplicateImportsOptions>;
 
 /**
  * Disallow duplicate module imports.

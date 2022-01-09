@@ -10,7 +10,7 @@ export type ArrayElementNewlineOption =
       | {
           ArrayExpression?: BasicConfig;
           ArrayPattern?: BasicConfig;
-        }
+        },
     ];
 export type BasicConfig =
   | ('always' | 'never' | 'consistent')
@@ -29,7 +29,8 @@ export type ArrayElementNewlineOptions = ArrayElementNewlineOption;
  *
  * @see [array-element-newline](https://eslint.org/docs/rules/array-element-newline)
  */
-export type ArrayElementNewlineRuleConfig = RuleConfig<ArrayElementNewlineOptions>;
+export type ArrayElementNewlineRuleConfig =
+  RuleConfig<ArrayElementNewlineOptions>;
 
 /**
  * Enforce line breaks after each array element.

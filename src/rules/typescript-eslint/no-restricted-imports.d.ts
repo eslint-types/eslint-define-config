@@ -38,7 +38,8 @@ export type NoRestrictedImportsOptions = NoRestrictedImportsOption;
  *
  * @see [no-restricted-imports](https://typescript-eslint.io/rules/no-restricted-imports)
  */
-export type NoRestrictedImportsRuleConfig = RuleConfig<NoRestrictedImportsOptions>;
+export type NoRestrictedImportsRuleConfig =
+  RuleConfig<NoRestrictedImportsOptions>;
 
 /**
  * Disallow specified modules when loaded by `import`.

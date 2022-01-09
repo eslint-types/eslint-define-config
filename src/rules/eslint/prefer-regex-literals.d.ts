@@ -17,7 +17,8 @@ export type PreferRegexLiteralsOptions = [PreferRegexLiteralsOption?];
  *
  * @see [prefer-regex-literals](https://eslint.org/docs/rules/prefer-regex-literals)
  */
-export type PreferRegexLiteralsRuleConfig = RuleConfig<PreferRegexLiteralsOptions>;
+export type PreferRegexLiteralsRuleConfig =
+  RuleConfig<PreferRegexLiteralsOptions>;
 
 /**
  * Disallow use of the `RegExp` constructor in favor of regular expression literals.

@@ -17,7 +17,8 @@ export type RequireExplicitEmitsOptions = [RequireExplicitEmitsOption?];
  *
  * @see [require-explicit-emits](https://eslint.vuejs.org/rules/require-explicit-emits.html)
  */
-export type RequireExplicitEmitsRuleConfig = RuleConfig<RequireExplicitEmitsOptions>;
+export type RequireExplicitEmitsRuleConfig =
+  RuleConfig<RequireExplicitEmitsOptions>;
 
 /**
  * Require `emits` option with name triggered by `$emit()`.

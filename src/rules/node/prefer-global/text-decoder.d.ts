@@ -15,7 +15,8 @@ export type PreferGlobalTextDecoderOptions = [PreferGlobalTextDecoderOption?];
  *
  * @see [prefer-global/text-decoder](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/prefer-global/text-decoder.md)
  */
-export type PreferGlobalTextDecoderRuleConfig = RuleConfig<PreferGlobalTextDecoderOptions>;
+export type PreferGlobalTextDecoderRuleConfig =
+  RuleConfig<PreferGlobalTextDecoderOptions>;
 
 /**
  * Enforce either `TextDecoder` or `require("util").TextDecoder`.

@@ -21,7 +21,8 @@ export type NoRestrictedSyntaxOptions = NoRestrictedSyntaxOption;
  *
  * @see [no-restricted-syntax](https://eslint.org/docs/rules/no-restricted-syntax)
  */
-export type NoRestrictedSyntaxRuleConfig = RuleConfig<NoRestrictedSyntaxOptions>;
+export type NoRestrictedSyntaxRuleConfig =
+  RuleConfig<NoRestrictedSyntaxOptions>;
 
 /**
  * Disallow specified syntax.

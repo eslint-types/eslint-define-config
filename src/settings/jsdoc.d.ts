@@ -33,7 +33,10 @@ export interface JSDocSetting extends Partial<Record<string, unknown>> {
    *
    * @see [Alias Preference](https://github.com/gajus/eslint-plugin-jsdoc#alias-preference)
    */
-  tagNamePreference?: Record<string, string | { message: string; replacement?: string } | false>;
+  tagNamePreference?: Record<
+    string,
+    string | { message: string; replacement?: string } | false
+  >;
   overrideReplacesDocs?: boolean;
   augmentsExtendsReplacesDocs?: boolean;
   implementsReplacesDocs?: boolean;

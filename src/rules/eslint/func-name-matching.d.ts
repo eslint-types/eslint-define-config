@@ -11,14 +11,14 @@ export type FuncNameMatchingOption =
       {
         considerPropertyDescriptor?: boolean;
         includeCommonJSModuleExports?: boolean;
-      }
+      },
     ]
   | []
   | [
       {
         considerPropertyDescriptor?: boolean;
         includeCommonJSModuleExports?: boolean;
-      }
+      },
     ];
 
 /**

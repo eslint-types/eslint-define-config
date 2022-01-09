@@ -8,14 +8,17 @@ export type ConsistentTypeDefinitionsOption = 'interface' | 'type';
 /**
  * Options.
  */
-export type ConsistentTypeDefinitionsOptions = [ConsistentTypeDefinitionsOption?];
+export type ConsistentTypeDefinitionsOptions = [
+  ConsistentTypeDefinitionsOption?,
+];
 
 /**
  * Consistent with type definition either `interface` or `type`.
  *
  * @see [consistent-type-definitions](https://typescript-eslint.io/rules/consistent-type-definitions)
  */
-export type ConsistentTypeDefinitionsRuleConfig = RuleConfig<ConsistentTypeDefinitionsOptions>;
+export type ConsistentTypeDefinitionsRuleConfig =
+  RuleConfig<ConsistentTypeDefinitionsOptions>;
 
 /**
  * Consistent with type definition either `interface` or `type`.

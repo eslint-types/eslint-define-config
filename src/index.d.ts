@@ -39,7 +39,10 @@ export interface EslintConfig {
    *
    * @see [Globals](https://eslint.org/docs/user-guide/configuring/language-options#specifying-globals)
    */
-  globals?: Record<string, 'readonly' | 'writable' | false | 'readable' | true | 'writeable' | 'off'>;
+  globals?: Record<
+    string,
+    'readonly' | 'writable' | false | 'readable' | true | 'writeable' | 'off'
+  >;
   /**
    * Parser.
    *

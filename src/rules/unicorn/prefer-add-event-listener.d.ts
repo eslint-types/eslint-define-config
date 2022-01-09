@@ -17,7 +17,8 @@ export type PreferAddEventListenerOptions = [PreferAddEventListenerOption?];
  *
  * @see [prefer-add-event-listener](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/prefer-add-event-listener.md)
  */
-export type PreferAddEventListenerRuleConfig = RuleConfig<PreferAddEventListenerOptions>;
+export type PreferAddEventListenerRuleConfig =
+  RuleConfig<PreferAddEventListenerOptions>;
 
 /**
  * Prefer `.addEventListener()` and `.removeEventListener()` over `on`-functions.

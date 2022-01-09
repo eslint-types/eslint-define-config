@@ -14,7 +14,7 @@ export type QuotePropsOption =
         keywords?: boolean;
         unnecessary?: boolean;
         numbers?: boolean;
-      }
+      },
     ];
 
 /**

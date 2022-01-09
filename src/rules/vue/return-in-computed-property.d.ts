@@ -17,7 +17,8 @@ export type ReturnInComputedPropertyOptions = [ReturnInComputedPropertyOption?];
  *
  * @see [return-in-computed-property](https://eslint.vuejs.org/rules/return-in-computed-property.html)
  */
-export type ReturnInComputedPropertyRuleConfig = RuleConfig<ReturnInComputedPropertyOptions>;
+export type ReturnInComputedPropertyRuleConfig =
+  RuleConfig<ReturnInComputedPropertyOptions>;
 
 /**
  * Enforce that a return statement is present in computed property.

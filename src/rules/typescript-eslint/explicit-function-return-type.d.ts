@@ -14,14 +14,17 @@ export interface ExplicitFunctionReturnTypeOption {
 /**
  * Options.
  */
-export type ExplicitFunctionReturnTypeOptions = [ExplicitFunctionReturnTypeOption?];
+export type ExplicitFunctionReturnTypeOptions = [
+  ExplicitFunctionReturnTypeOption?,
+];
 
 /**
  * Require explicit return types on functions and class methods.
  *
  * @see [explicit-function-return-type](https://typescript-eslint.io/rules/explicit-function-return-type)
  */
-export type ExplicitFunctionReturnTypeRuleConfig = RuleConfig<ExplicitFunctionReturnTypeOptions>;
+export type ExplicitFunctionReturnTypeRuleConfig =
+  RuleConfig<ExplicitFunctionReturnTypeOptions>;
 
 /**
  * Require explicit return types on functions and class methods.

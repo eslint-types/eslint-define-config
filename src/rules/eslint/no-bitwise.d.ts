@@ -4,7 +4,21 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoBitwiseOption {
-  allow?: ('^' | '|' | '&' | '<<' | '>>' | '>>>' | '^=' | '|=' | '&=' | '<<=' | '>>=' | '>>>=' | '~')[];
+  allow?: (
+    | '^'
+    | '|'
+    | '&'
+    | '<<'
+    | '>>'
+    | '>>>'
+    | '^='
+    | '|='
+    | '&='
+    | '<<='
+    | '>>='
+    | '>>>='
+    | '~'
+  )[];
   int32Hint?: boolean;
 }
 

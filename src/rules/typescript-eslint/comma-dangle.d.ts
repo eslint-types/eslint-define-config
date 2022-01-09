@@ -16,10 +16,15 @@ export type CommaDangleOption =
           enums?: ValueWithIgnore;
           generics?: ValueWithIgnore;
           tuples?: ValueWithIgnore;
-        }
+        },
     ];
 export type Value = 'always-multiline' | 'always' | 'never' | 'only-multiline';
-export type ValueWithIgnore = 'always-multiline' | 'always' | 'never' | 'only-multiline' | 'ignore';
+export type ValueWithIgnore =
+  | 'always-multiline'
+  | 'always'
+  | 'never'
+  | 'only-multiline'
+  | 'ignore';
 
 /**
  * Options.

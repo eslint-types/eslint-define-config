@@ -20,7 +20,8 @@ export type NoIrregularWhitespaceOptions = [NoIrregularWhitespaceOption?];
  *
  * @see [no-irregular-whitespace](https://eslint.org/docs/rules/no-irregular-whitespace)
  */
-export type NoIrregularWhitespaceRuleConfig = RuleConfig<NoIrregularWhitespaceOptions>;
+export type NoIrregularWhitespaceRuleConfig =
+  RuleConfig<NoIrregularWhitespaceOptions>;
 
 /**
  * Disallow irregular whitespace.

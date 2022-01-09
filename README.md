@@ -53,7 +53,7 @@ module.exports = defineConfig({
   root: true,
   rules: {
     // rules...
-  }
+  },
 });
 ```
 

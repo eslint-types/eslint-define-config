@@ -19,7 +19,8 @@ export type NoImplicitAnyCatchOptions = [NoImplicitAnyCatchOption?];
  *
  * @see [no-implicit-any-catch](https://typescript-eslint.io/rules/no-implicit-any-catch)
  */
-export type NoImplicitAnyCatchRuleConfig = RuleConfig<NoImplicitAnyCatchOptions>;
+export type NoImplicitAnyCatchRuleConfig =
+  RuleConfig<NoImplicitAnyCatchOptions>;
 
 /**
  * Disallow usage of the implicit `any` type in catch clauses.

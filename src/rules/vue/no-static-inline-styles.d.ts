@@ -17,7 +17,8 @@ export type NoStaticInlineStylesOptions = [NoStaticInlineStylesOption?];
  *
  * @see [no-static-inline-styles](https://eslint.vuejs.org/rules/no-static-inline-styles.html)
  */
-export type NoStaticInlineStylesRuleConfig = RuleConfig<NoStaticInlineStylesOptions>;
+export type NoStaticInlineStylesRuleConfig =
+  RuleConfig<NoStaticInlineStylesOptions>;
 
 /**
  * Disallow static inline `style` attributes.

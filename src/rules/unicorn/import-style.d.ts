@@ -13,7 +13,7 @@ export type ImportStyleOption =
         checkRequire?: boolean;
         extendDefaultStyles?: boolean;
         styles?: ModuleStyles;
-      }
+      },
     ];
 export type Styles = false | BooleanObject;
 

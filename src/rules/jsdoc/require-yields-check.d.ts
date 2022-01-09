@@ -26,7 +26,8 @@ export type RequireYieldsCheckOptions = [RequireYieldsCheckOption?];
  *
  * @see [require-yields-check](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-yields-check)
  */
-export type RequireYieldsCheckRuleConfig = RuleConfig<RequireYieldsCheckOptions>;
+export type RequireYieldsCheckRuleConfig =
+  RuleConfig<RequireYieldsCheckOptions>;
 
 /**
  * Requires a yield statement in function body if a `@yields` tag is specified in jsdoc comment.

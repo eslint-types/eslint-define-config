@@ -10,14 +10,17 @@ export interface ConsistentFunctionScopingOption {
 /**
  * Options.
  */
-export type ConsistentFunctionScopingOptions = [ConsistentFunctionScopingOption?];
+export type ConsistentFunctionScopingOptions = [
+  ConsistentFunctionScopingOption?,
+];
 
 /**
  * Move function definitions to the highest possible scope.
  *
  * @see [consistent-function-scoping](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/consistent-function-scoping.md)
  */
-export type ConsistentFunctionScopingRuleConfig = RuleConfig<ConsistentFunctionScopingOptions>;
+export type ConsistentFunctionScopingRuleConfig =
+  RuleConfig<ConsistentFunctionScopingOptions>;
 
 /**
  * Move function definitions to the highest possible scope.

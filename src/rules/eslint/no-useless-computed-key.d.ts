@@ -17,7 +17,8 @@ export type NoUselessComputedKeyOptions = [NoUselessComputedKeyOption?];
  *
  * @see [no-useless-computed-key](https://eslint.org/docs/rules/no-useless-computed-key)
  */
-export type NoUselessComputedKeyRuleConfig = RuleConfig<NoUselessComputedKeyOptions>;
+export type NoUselessComputedKeyRuleConfig =
+  RuleConfig<NoUselessComputedKeyOptions>;
 
 /**
  * Disallow unnecessary computed property keys in objects and classes.

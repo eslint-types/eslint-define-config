@@ -18,7 +18,8 @@ export type NoReservedComponentNamesOptions = [NoReservedComponentNamesOption?];
  *
  * @see [no-reserved-component-names](https://eslint.vuejs.org/rules/no-reserved-component-names.html)
  */
-export type NoReservedComponentNamesRuleConfig = RuleConfig<NoReservedComponentNamesOptions>;
+export type NoReservedComponentNamesRuleConfig =
+  RuleConfig<NoReservedComponentNamesOptions>;
 
 /**
  * Disallow the use of reserved names in component definitions.

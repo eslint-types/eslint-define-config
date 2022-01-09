@@ -17,7 +17,8 @@ export type MultiWordComponentNamesOptions = [MultiWordComponentNamesOption?];
  *
  * @see [multi-word-component-names](https://eslint.vuejs.org/rules/multi-word-component-names.html)
  */
-export type MultiWordComponentNamesRuleConfig = RuleConfig<MultiWordComponentNamesOptions>;
+export type MultiWordComponentNamesRuleConfig =
+  RuleConfig<MultiWordComponentNamesOptions>;
 
 /**
  * Require component names to be always multi-word.

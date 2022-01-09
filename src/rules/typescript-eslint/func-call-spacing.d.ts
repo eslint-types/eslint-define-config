@@ -12,7 +12,7 @@ export type FuncCallSpacingOption =
       'always',
       {
         allowNewlines?: boolean;
-      }
+      },
     ];
 
 /**

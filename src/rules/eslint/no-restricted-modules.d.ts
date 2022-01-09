@@ -34,7 +34,8 @@ export type NoRestrictedModulesOptions = NoRestrictedModulesOption;
  *
  * @see [no-restricted-modules](https://eslint.org/docs/rules/no-restricted-modules)
  */
-export type NoRestrictedModulesRuleConfig = RuleConfig<NoRestrictedModulesOptions>;
+export type NoRestrictedModulesRuleConfig =
+  RuleConfig<NoRestrictedModulesOptions>;
 
 /**
  * Disallow specified modules when loaded by `require`.

@@ -44,7 +44,8 @@ export type TypeAnnotationSpacingOptions = [TypeAnnotationSpacingOption?];
  *
  * @see [type-annotation-spacing](https://typescript-eslint.io/rules/type-annotation-spacing)
  */
-export type TypeAnnotationSpacingRuleConfig = RuleConfig<TypeAnnotationSpacingOptions>;
+export type TypeAnnotationSpacingRuleConfig =
+  RuleConfig<TypeAnnotationSpacingOptions>;
 
 /**
  * Require consistent spacing around type annotations.

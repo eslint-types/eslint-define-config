@@ -22,7 +22,8 @@ export type NoUnderscoreDangleOptions = [NoUnderscoreDangleOption?];
  *
  * @see [no-underscore-dangle](https://eslint.org/docs/rules/no-underscore-dangle)
  */
-export type NoUnderscoreDangleRuleConfig = RuleConfig<NoUnderscoreDangleOptions>;
+export type NoUnderscoreDangleRuleConfig =
+  RuleConfig<NoUnderscoreDangleOptions>;
 
 /**
  * Disallow dangling underscores in identifiers.

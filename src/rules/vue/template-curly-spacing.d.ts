@@ -15,7 +15,8 @@ export type TemplateCurlySpacingOptions = [TemplateCurlySpacingOption?];
  *
  * @see [template-curly-spacing](https://eslint.vuejs.org/rules/template-curly-spacing.html)
  */
-export type TemplateCurlySpacingRuleConfig = RuleConfig<TemplateCurlySpacingOptions>;
+export type TemplateCurlySpacingRuleConfig =
+  RuleConfig<TemplateCurlySpacingOptions>;
 
 /**
  * Require or disallow spacing around embedded expressions of template strings.

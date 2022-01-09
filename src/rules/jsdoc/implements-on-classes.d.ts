@@ -23,7 +23,8 @@ export type ImplementsOnClassesOptions = [ImplementsOnClassesOption?];
  *
  * @see [implements-on-classes](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-implements-on-classes)
  */
-export type ImplementsOnClassesRuleConfig = RuleConfig<ImplementsOnClassesOptions>;
+export type ImplementsOnClassesRuleConfig =
+  RuleConfig<ImplementsOnClassesOptions>;
 
 /**
  * Reports an issue with any non-constructor function using `@implements`.

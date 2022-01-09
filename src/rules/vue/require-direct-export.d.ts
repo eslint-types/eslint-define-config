@@ -17,7 +17,8 @@ export type RequireDirectExportOptions = [RequireDirectExportOption?];
  *
  * @see [require-direct-export](https://eslint.vuejs.org/rules/require-direct-export.html)
  */
-export type RequireDirectExportRuleConfig = RuleConfig<RequireDirectExportOptions>;
+export type RequireDirectExportRuleConfig =
+  RuleConfig<RequireDirectExportOptions>;
 
 /**
  * Require the component to be directly exported.

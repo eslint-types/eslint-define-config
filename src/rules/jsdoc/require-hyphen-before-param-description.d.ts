@@ -21,7 +21,7 @@ export type RequireHyphenBeforeParamDescriptionOption = 'always' | 'never';
  */
 export type RequireHyphenBeforeParamDescriptionOptions = [
   RequireHyphenBeforeParamDescriptionOption?,
-  RequireHyphenBeforeParamDescriptionConfig?
+  RequireHyphenBeforeParamDescriptionConfig?,
 ];
 
 /**
@@ -29,7 +29,8 @@ export type RequireHyphenBeforeParamDescriptionOptions = [
  *
  * @see [require-hyphen-before-param-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-hyphen-before-param-description)
  */
-export type RequireHyphenBeforeParamDescriptionRuleConfig = RuleConfig<RequireHyphenBeforeParamDescriptionOptions>;
+export type RequireHyphenBeforeParamDescriptionRuleConfig =
+  RuleConfig<RequireHyphenBeforeParamDescriptionOptions>;
 
 /**
  * Requires a hyphen before the `@param` description.

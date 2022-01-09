@@ -15,7 +15,8 @@ export type NoInnerDeclarationsOptions = [NoInnerDeclarationsOption?];
  *
  * @see [no-inner-declarations](https://eslint.org/docs/rules/no-inner-declarations)
  */
-export type NoInnerDeclarationsRuleConfig = RuleConfig<NoInnerDeclarationsOptions>;
+export type NoInnerDeclarationsRuleConfig =
+  RuleConfig<NoInnerDeclarationsOptions>;
 
 /**
  * Disallow variable or `function` declarations in nested blocks.

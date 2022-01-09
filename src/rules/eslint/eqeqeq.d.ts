@@ -10,7 +10,7 @@ export type EqeqeqOption =
       'always',
       {
         null?: 'always' | 'never' | 'ignore';
-      }
+      },
     ]
   | []
   | ['smart' | 'allow-null'];

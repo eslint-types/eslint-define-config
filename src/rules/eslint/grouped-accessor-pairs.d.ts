@@ -3,7 +3,10 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type GroupedAccessorPairsOption = 'anyOrder' | 'getBeforeSet' | 'setBeforeGet';
+export type GroupedAccessorPairsOption =
+  | 'anyOrder'
+  | 'getBeforeSet'
+  | 'setBeforeGet';
 
 /**
  * Options.
@@ -15,7 +18,8 @@ export type GroupedAccessorPairsOptions = [GroupedAccessorPairsOption?];
  *
  * @see [grouped-accessor-pairs](https://eslint.org/docs/rules/grouped-accessor-pairs)
  */
-export type GroupedAccessorPairsRuleConfig = RuleConfig<GroupedAccessorPairsOptions>;
+export type GroupedAccessorPairsRuleConfig =
+  RuleConfig<GroupedAccessorPairsOptions>;
 
 /**
  * Require grouped accessor pairs in object literals and classes.

@@ -23,7 +23,8 @@ export type RequireParamDescriptionOptions = [RequireParamDescriptionOption?];
  *
  * @see [require-param-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param-description)
  */
-export type RequireParamDescriptionRuleConfig = RuleConfig<RequireParamDescriptionOptions>;
+export type RequireParamDescriptionRuleConfig =
+  RuleConfig<RequireParamDescriptionOptions>;
 
 /**
  * Requires that each `@param` tag has a `description` value.

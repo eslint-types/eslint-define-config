@@ -16,14 +16,18 @@ export type ObjectCurlySpacingOption = 'always' | 'never';
 /**
  * Options.
  */
-export type ObjectCurlySpacingOptions = [ObjectCurlySpacingOption?, ObjectCurlySpacingConfig?];
+export type ObjectCurlySpacingOptions = [
+  ObjectCurlySpacingOption?,
+  ObjectCurlySpacingConfig?,
+];
 
 /**
  * Enforce consistent spacing inside braces.
  *
  * @see [object-curly-spacing](https://eslint.vuejs.org/rules/object-curly-spacing.html)
  */
-export type ObjectCurlySpacingRuleConfig = RuleConfig<ObjectCurlySpacingOptions>;
+export type ObjectCurlySpacingRuleConfig =
+  RuleConfig<ObjectCurlySpacingOptions>;
 
 /**
  * Enforce consistent spacing inside braces.

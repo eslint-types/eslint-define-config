@@ -5,7 +5,10 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface PreferSwitchOption {
   minimumCases?: number;
-  emptyDefaultCase?: 'no-default-comment' | 'do-nothing-comment' | 'no-default-case';
+  emptyDefaultCase?:
+    | 'no-default-comment'
+    | 'do-nothing-comment'
+    | 'no-default-case';
 }
 
 /**

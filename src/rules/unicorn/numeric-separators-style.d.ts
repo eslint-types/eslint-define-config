@@ -37,7 +37,8 @@ export type NumericSeparatorsStyleOptions = [NumericSeparatorsStyleOption?];
  *
  * @see [numeric-separators-style](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/numeric-separators-style.md)
  */
-export type NumericSeparatorsStyleRuleConfig = RuleConfig<NumericSeparatorsStyleOptions>;
+export type NumericSeparatorsStyleRuleConfig =
+  RuleConfig<NumericSeparatorsStyleOptions>;
 
 /**
  * Enforce the style of numeric separators by correctly grouping digits.

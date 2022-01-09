@@ -21,7 +21,8 @@ export type SpaceBeforeFunctionParenOptions = [SpaceBeforeFunctionParenOption?];
  *
  * @see [space-before-function-paren](https://typescript-eslint.io/rules/space-before-function-paren)
  */
-export type SpaceBeforeFunctionParenRuleConfig = RuleConfig<SpaceBeforeFunctionParenOptions>;
+export type SpaceBeforeFunctionParenRuleConfig =
+  RuleConfig<SpaceBeforeFunctionParenOptions>;
 
 /**
  * Enforces consistent spacing before function parenthesis.

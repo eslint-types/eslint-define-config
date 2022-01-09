@@ -21,7 +21,8 @@ export type NoRestrictedGlobalsOptions = NoRestrictedGlobalsOption;
  *
  * @see [no-restricted-globals](https://eslint.org/docs/rules/no-restricted-globals)
  */
-export type NoRestrictedGlobalsRuleConfig = RuleConfig<NoRestrictedGlobalsOptions>;
+export type NoRestrictedGlobalsRuleConfig =
+  RuleConfig<NoRestrictedGlobalsOptions>;
 
 /**
  * Disallow specified global variables.

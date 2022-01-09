@@ -17,7 +17,8 @@ export type NoDuplicateKeysInLocaleOptions = [NoDuplicateKeysInLocaleOption?];
  *
  *
  */
-export type NoDuplicateKeysInLocaleRuleConfig = RuleConfig<NoDuplicateKeysInLocaleOptions>;
+export type NoDuplicateKeysInLocaleRuleConfig =
+  RuleConfig<NoDuplicateKeysInLocaleOptions>;
 
 /**
  * Disallow duplicate localization keys within the same locale.
