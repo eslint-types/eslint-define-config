@@ -28,6 +28,7 @@ export type NoRestrictedImportsOption =
           | {
               group: [string, ...string[]];
               message?: string;
+              caseSensitive?: boolean;
             }[];
       },
     ];
