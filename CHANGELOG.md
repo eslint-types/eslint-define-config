@@ -1,6 +1,12 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.2.2...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.2.3...main)
+
+# 1.2.3
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.2.2...1.2.3)
+
+- Update rules for: [eslint, unicorn]
 
 # 1.2.2
 
