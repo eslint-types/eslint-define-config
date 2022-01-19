@@ -3,20 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Prefer using `.dataset` on DOM elements over calling attribute methods.
  *
- * @see [prefer-dom-node-dataset](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/prefer-dom-node-dataset.md)
+ * @see [prefer-dom-node-dataset](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/rules/prefer-dom-node-dataset.md)
  */
 export type PreferDomNodeDatasetRuleConfig = RuleConfig<[]>;
 
 /**
  * Prefer using `.dataset` on DOM elements over calling attribute methods.
  *
- * @see [prefer-dom-node-dataset](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/prefer-dom-node-dataset.md)
+ * @see [prefer-dom-node-dataset](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/rules/prefer-dom-node-dataset.md)
  */
 export interface PreferDomNodeDatasetRule {
   /**
    * Prefer using `.dataset` on DOM elements over calling attribute methods.
    *
-   * @see [prefer-dom-node-dataset](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/prefer-dom-node-dataset.md)
+   * @see [prefer-dom-node-dataset](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/rules/prefer-dom-node-dataset.md)
    */
   'unicorn/prefer-dom-node-dataset': PreferDomNodeDatasetRuleConfig;
 }

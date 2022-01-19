@@ -3,20 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Prefer top-level await over top-level promises and async function calls.
  *
- * @see [prefer-top-level-await](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/prefer-top-level-await.md)
+ * @see [prefer-top-level-await](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/rules/prefer-top-level-await.md)
  */
 export type PreferTopLevelAwaitRuleConfig = RuleConfig<[]>;
 
 /**
  * Prefer top-level await over top-level promises and async function calls.
  *
- * @see [prefer-top-level-await](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/prefer-top-level-await.md)
+ * @see [prefer-top-level-await](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/rules/prefer-top-level-await.md)
  */
 export interface PreferTopLevelAwaitRule {
   /**
    * Prefer top-level await over top-level promises and async function calls.
    *
-   * @see [prefer-top-level-await](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/rules/prefer-top-level-await.md)
+   * @see [prefer-top-level-await](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/rules/prefer-top-level-await.md)
    */
   'unicorn/prefer-top-level-await': PreferTopLevelAwaitRuleConfig;
 }

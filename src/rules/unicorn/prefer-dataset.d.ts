@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @deprecated
  *
- * @see [prefer-dataset](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/deprecated-rules.md#prefer-dataset)
+ * @see [prefer-dataset](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/deprecated-rules.md#prefer-dataset)
  */
 export type PreferDatasetRuleConfig = RuleConfig<[]>;
 
@@ -14,7 +14,7 @@ export type PreferDatasetRuleConfig = RuleConfig<[]>;
  *
  * @deprecated
  *
- * @see [prefer-dataset](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/deprecated-rules.md#prefer-dataset)
+ * @see [prefer-dataset](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/deprecated-rules.md#prefer-dataset)
  */
 export interface PreferDatasetRule {
   /**
@@ -22,7 +22,7 @@ export interface PreferDatasetRule {
    *
    * @deprecated
    *
-   * @see [prefer-dataset](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.0.0/docs/deprecated-rules.md#prefer-dataset)
+   * @see [prefer-dataset](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/deprecated-rules.md#prefer-dataset)
    */
   'unicorn/prefer-dataset': PreferDatasetRuleConfig;
 }
