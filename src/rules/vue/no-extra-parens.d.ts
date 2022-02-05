@@ -28,20 +28,20 @@ export type NoExtraParensOption =
 export type NoExtraParensOptions = NoExtraParensOption;
 
 /**
- * Disallow unnecessary parentheses.
+ * Disallow unnecessary parentheses in `<template>`.
  *
  * @see [no-extra-parens](https://eslint.vuejs.org/rules/no-extra-parens.html)
  */
 export type NoExtraParensRuleConfig = RuleConfig<NoExtraParensOptions>;
 
 /**
- * Disallow unnecessary parentheses.
+ * Disallow unnecessary parentheses in `<template>`.
  *
  * @see [no-extra-parens](https://eslint.vuejs.org/rules/no-extra-parens.html)
  */
 export interface NoExtraParensRule {
   /**
-   * Disallow unnecessary parentheses.
+   * Disallow unnecessary parentheses in `<template>`.
    *
    * @see [no-extra-parens](https://eslint.vuejs.org/rules/no-extra-parens.html)
    */

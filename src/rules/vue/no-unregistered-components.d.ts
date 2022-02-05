@@ -15,6 +15,8 @@ export type NoUnregisteredComponentsOptions = [NoUnregisteredComponentsOption?];
 /**
  * Disallow using components that are not registered inside templates.
  *
+ * @deprecated
+ *
  * @see [no-unregistered-components](https://eslint.vuejs.org/rules/no-unregistered-components.html)
  */
 export type NoUnregisteredComponentsRuleConfig =
@@ -23,11 +25,15 @@ export type NoUnregisteredComponentsRuleConfig =
 /**
  * Disallow using components that are not registered inside templates.
  *
+ * @deprecated
+ *
  * @see [no-unregistered-components](https://eslint.vuejs.org/rules/no-unregistered-components.html)
  */
 export interface NoUnregisteredComponentsRule {
   /**
    * Disallow using components that are not registered inside templates.
+   *
+   * @deprecated
    *
    * @see [no-unregistered-components](https://eslint.vuejs.org/rules/no-unregistered-components.html)
    */

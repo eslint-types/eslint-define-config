@@ -18,7 +18,7 @@ export interface NoIrregularWhitespaceOption {
 export type NoIrregularWhitespaceOptions = [NoIrregularWhitespaceOption?];
 
 /**
- * Disallow irregular whitespace.
+ * Disallow irregular whitespace in `.vue` files.
  *
  * @see [no-irregular-whitespace](https://eslint.vuejs.org/rules/no-irregular-whitespace.html)
  */
@@ -26,13 +26,13 @@ export type NoIrregularWhitespaceRuleConfig =
   RuleConfig<NoIrregularWhitespaceOptions>;
 
 /**
- * Disallow irregular whitespace.
+ * Disallow irregular whitespace in `.vue` files.
  *
  * @see [no-irregular-whitespace](https://eslint.vuejs.org/rules/no-irregular-whitespace.html)
  */
 export interface NoIrregularWhitespaceRule {
   /**
-   * Disallow irregular whitespace.
+   * Disallow irregular whitespace in `.vue` files.
    *
    * @see [no-irregular-whitespace](https://eslint.vuejs.org/rules/no-irregular-whitespace.html)
    */

@@ -18,20 +18,20 @@ export type SpaceInParensOption = 'always' | 'never';
 export type SpaceInParensOptions = [SpaceInParensOption?, SpaceInParensConfig?];
 
 /**
- * Enforce consistent spacing inside parentheses.
+ * Enforce consistent spacing inside parentheses in `<template>`.
  *
  * @see [space-in-parens](https://eslint.vuejs.org/rules/space-in-parens.html)
  */
 export type SpaceInParensRuleConfig = RuleConfig<SpaceInParensOptions>;
 
 /**
- * Enforce consistent spacing inside parentheses.
+ * Enforce consistent spacing inside parentheses in `<template>`.
  *
  * @see [space-in-parens](https://eslint.vuejs.org/rules/space-in-parens.html)
  */
 export interface SpaceInParensRule {
   /**
-   * Enforce consistent spacing inside parentheses.
+   * Enforce consistent spacing inside parentheses in `<template>`.
    *
    * @see [space-in-parens](https://eslint.vuejs.org/rules/space-in-parens.html)
    */

@@ -49,7 +49,7 @@ export type ObjectCurlyNewlineOption =
 export type ObjectCurlyNewlineOptions = [ObjectCurlyNewlineOption?];
 
 /**
- * Enforce consistent line breaks after opening and before closing braces.
+ * Enforce consistent line breaks after opening and before closing braces in `<template>`.
  *
  * @see [object-curly-newline](https://eslint.vuejs.org/rules/object-curly-newline.html)
  */
@@ -57,13 +57,13 @@ export type ObjectCurlyNewlineRuleConfig =
   RuleConfig<ObjectCurlyNewlineOptions>;
 
 /**
- * Enforce consistent line breaks after opening and before closing braces.
+ * Enforce consistent line breaks after opening and before closing braces in `<template>`.
  *
  * @see [object-curly-newline](https://eslint.vuejs.org/rules/object-curly-newline.html)
  */
 export interface ObjectCurlyNewlineRule {
   /**
-   * Enforce consistent line breaks after opening and before closing braces.
+   * Enforce consistent line breaks after opening and before closing braces in `<template>`.
    *
    * @see [object-curly-newline](https://eslint.vuejs.org/rules/object-curly-newline.html)
    */

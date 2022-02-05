@@ -23,7 +23,7 @@ export type ArrayBracketSpacingOptions = [
 ];
 
 /**
- * Enforce consistent spacing inside array brackets.
+ * Enforce consistent spacing inside array brackets in `<template>`.
  *
  * @see [array-bracket-spacing](https://eslint.vuejs.org/rules/array-bracket-spacing.html)
  */
@@ -31,13 +31,13 @@ export type ArrayBracketSpacingRuleConfig =
   RuleConfig<ArrayBracketSpacingOptions>;
 
 /**
- * Enforce consistent spacing inside array brackets.
+ * Enforce consistent spacing inside array brackets in `<template>`.
  *
  * @see [array-bracket-spacing](https://eslint.vuejs.org/rules/array-bracket-spacing.html)
  */
 export interface ArrayBracketSpacingRule {
   /**
-   * Enforce consistent spacing inside array brackets.
+   * Enforce consistent spacing inside array brackets in `<template>`.
    *
    * @see [array-bracket-spacing](https://eslint.vuejs.org/rules/array-bracket-spacing.html)
    */

@@ -20,20 +20,20 @@ export type CommaStyleOption = 'first' | 'last';
 export type CommaStyleOptions = [CommaStyleOption?, CommaStyleConfig?];
 
 /**
- * Enforce consistent comma style.
+ * Enforce consistent comma style in `<template>`.
  *
  * @see [comma-style](https://eslint.vuejs.org/rules/comma-style.html)
  */
 export type CommaStyleRuleConfig = RuleConfig<CommaStyleOptions>;
 
 /**
- * Enforce consistent comma style.
+ * Enforce consistent comma style in `<template>`.
  *
  * @see [comma-style](https://eslint.vuejs.org/rules/comma-style.html)
  */
 export interface CommaStyleRule {
   /**
-   * Enforce consistent comma style.
+   * Enforce consistent comma style in `<template>`.
    *
    * @see [comma-style](https://eslint.vuejs.org/rules/comma-style.html)
    */

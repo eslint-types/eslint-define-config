@@ -118,6 +118,7 @@ import type { NoTemplateShadowRule } from './no-template-shadow';
 import type { NoTemplateTargetBlankRule } from './no-template-target-blank';
 import type { NoTextareaMustacheRule } from './no-textarea-mustache';
 import type { NoThisInBeforeRouteEnterRule } from './no-this-in-before-route-enter';
+import type { NoUndefComponentsRule } from './no-undef-components';
 import type { NoUndefPropertiesRule } from './no-undef-properties';
 import type { NoUnregisteredComponentsRule } from './no-unregistered-components';
 import type { NoUnsupportedFeaturesRule } from './no-unsupported-features';
@@ -136,10 +137,12 @@ import type { NoVForTemplateKeyOnChildRule } from './no-v-for-template-key-on-ch
 import type { NoVHtmlRule } from './no-v-html';
 import type { NoVModelArgumentRule } from './no-v-model-argument';
 import type { NoVTextRule } from './no-v-text';
+import type { NoVTextVHtmlOnComponentRule } from './no-v-text-v-html-on-component';
 import type { NoWatchAfterAwaitRule } from './no-watch-after-await';
 import type { ObjectCurlyNewlineRule } from './object-curly-newline';
 import type { ObjectCurlySpacingRule } from './object-curly-spacing';
 import type { ObjectPropertyNewlineRule } from './object-property-newline';
+import type { ObjectShorthandRule } from './object-shorthand';
 import type { OneComponentPerFileRule } from './one-component-per-file';
 import type { OperatorLinebreakRule } from './operator-linebreak';
 import type { OrderInComponentsRule } from './order-in-components';
@@ -147,6 +150,7 @@ import type { PaddingLineBetweenBlocksRule } from './padding-line-between-blocks
 import type { PreferSeparateStaticClassRule } from './prefer-separate-static-class';
 import type { PreferTemplateRule } from './prefer-template';
 import type { PropNameCasingRule } from './prop-name-casing';
+import type { QuotePropsRule } from './quote-props';
 import type { RequireComponentIsRule } from './require-component-is';
 import type { RequireDefaultPropRule } from './require-default-prop';
 import type { RequireDirectExportRule } from './require-direct-export';
@@ -325,6 +329,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoTemplateTargetBlankRule &
   NoTextareaMustacheRule &
   NoThisInBeforeRouteEnterRule &
+  NoUndefComponentsRule &
   NoUndefPropertiesRule &
   NoUnregisteredComponentsRule &
   NoUnsupportedFeaturesRule &
@@ -342,11 +347,13 @@ export type VueRules = ArrayBracketNewlineRule &
   NoVForTemplateKeyRule &
   NoVHtmlRule &
   NoVModelArgumentRule &
+  NoVTextVHtmlOnComponentRule &
   NoVTextRule &
   NoWatchAfterAwaitRule &
   ObjectCurlyNewlineRule &
   ObjectCurlySpacingRule &
   ObjectPropertyNewlineRule &
+  ObjectShorthandRule &
   OneComponentPerFileRule &
   OperatorLinebreakRule &
   OrderInComponentsRule &
@@ -354,6 +361,7 @@ export type VueRules = ArrayBracketNewlineRule &
   PreferSeparateStaticClassRule &
   PreferTemplateRule &
   PropNameCasingRule &
+  QuotePropsRule &
   RequireComponentIsRule &
   RequireDefaultPropRule &
   RequireDirectExportRule &

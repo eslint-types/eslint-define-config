@@ -11,20 +11,20 @@ export type DotLocationOption = 'object' | 'property';
 export type DotLocationOptions = [DotLocationOption?];
 
 /**
- * Enforce consistent newlines before and after dots.
+ * Enforce consistent newlines before and after dots in `<template>`.
  *
  * @see [dot-location](https://eslint.vuejs.org/rules/dot-location.html)
  */
 export type DotLocationRuleConfig = RuleConfig<DotLocationOptions>;
 
 /**
- * Enforce consistent newlines before and after dots.
+ * Enforce consistent newlines before and after dots in `<template>`.
  *
  * @see [dot-location](https://eslint.vuejs.org/rules/dot-location.html)
  */
 export interface DotLocationRule {
   /**
-   * Enforce consistent newlines before and after dots.
+   * Enforce consistent newlines before and after dots in `<template>`.
    *
    * @see [dot-location](https://eslint.vuejs.org/rules/dot-location.html)
    */

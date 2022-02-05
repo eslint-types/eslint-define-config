@@ -17,20 +17,20 @@ export interface SpaceUnaryOpsOption {
 export type SpaceUnaryOpsOptions = [SpaceUnaryOpsOption?];
 
 /**
- * Enforce consistent spacing before or after unary operators.
+ * Enforce consistent spacing before or after unary operators in `<template>`.
  *
  * @see [space-unary-ops](https://eslint.vuejs.org/rules/space-unary-ops.html)
  */
 export type SpaceUnaryOpsRuleConfig = RuleConfig<SpaceUnaryOpsOptions>;
 
 /**
- * Enforce consistent spacing before or after unary operators.
+ * Enforce consistent spacing before or after unary operators in `<template>`.
  *
  * @see [space-unary-ops](https://eslint.vuejs.org/rules/space-unary-ops.html)
  */
 export interface SpaceUnaryOpsRule {
   /**
-   * Enforce consistent spacing before or after unary operators.
+   * Enforce consistent spacing before or after unary operators in `<template>`.
    *
    * @see [space-unary-ops](https://eslint.vuejs.org/rules/space-unary-ops.html)
    */

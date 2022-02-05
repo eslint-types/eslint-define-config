@@ -22,7 +22,7 @@ export type ObjectCurlySpacingOptions = [
 ];
 
 /**
- * Enforce consistent spacing inside braces.
+ * Enforce consistent spacing inside braces in `<template>`.
  *
  * @see [object-curly-spacing](https://eslint.vuejs.org/rules/object-curly-spacing.html)
  */
@@ -30,13 +30,13 @@ export type ObjectCurlySpacingRuleConfig =
   RuleConfig<ObjectCurlySpacingOptions>;
 
 /**
- * Enforce consistent spacing inside braces.
+ * Enforce consistent spacing inside braces in `<template>`.
  *
  * @see [object-curly-spacing](https://eslint.vuejs.org/rules/object-curly-spacing.html)
  */
 export interface ObjectCurlySpacingRule {
   /**
-   * Enforce consistent spacing inside braces.
+   * Enforce consistent spacing inside braces in `<template>`.
    *
    * @see [object-curly-spacing](https://eslint.vuejs.org/rules/object-curly-spacing.html)
    */

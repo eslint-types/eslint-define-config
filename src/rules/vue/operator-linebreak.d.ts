@@ -23,20 +23,20 @@ export type OperatorLinebreakOptions = [
 ];
 
 /**
- * Enforce consistent linebreak style for operators.
+ * Enforce consistent linebreak style for operators in `<template>`.
  *
  * @see [operator-linebreak](https://eslint.vuejs.org/rules/operator-linebreak.html)
  */
 export type OperatorLinebreakRuleConfig = RuleConfig<OperatorLinebreakOptions>;
 
 /**
- * Enforce consistent linebreak style for operators.
+ * Enforce consistent linebreak style for operators in `<template>`.
  *
  * @see [operator-linebreak](https://eslint.vuejs.org/rules/operator-linebreak.html)
  */
 export interface OperatorLinebreakRule {
   /**
-   * Enforce consistent linebreak style for operators.
+   * Enforce consistent linebreak style for operators in `<template>`.
    *
    * @see [operator-linebreak](https://eslint.vuejs.org/rules/operator-linebreak.html)
    */
