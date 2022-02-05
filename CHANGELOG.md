@@ -1,6 +1,12 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.2.3...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.2.4...main)
+
+# 1.2.4
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.2.3...1.2.4)
+
+- Update rules for: [vue]
 
 # 1.2.3
 
