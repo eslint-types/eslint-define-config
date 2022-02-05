@@ -1,7 +1,9 @@
 import type { Environments } from './env';
 import type { Extends } from './extends';
 import type { Parser, ParserOptions } from './parser-options';
+import type { Plugin } from './plugin';
 import type { Rules } from './rules';
+import type { Settings } from './settings';
 
 /**
  *
@@ -35,6 +37,12 @@ export interface Override {
    */
   parserOptions?: ParserOptions;
   /**
+   * Which third-party plugins define additional rules, environments, configs, etc. for ESLint to use.
+   *
+   * @see [Configuring Plugins](https://eslint.org/docs/user-guide/configuring/plugins#configuring-plugins)
+   */
+  plugins?: Plugin[];
+  /**
    * Specifying Processor.
    *
    * @see [processor](https://eslint.org/docs/user-guide/configuring/plugins#specifying-processor)
@@ -46,6 +54,12 @@ export interface Override {
    * @see [Rules](https://eslint.org/docs/user-guide/configuring/rules)
    */
   rules?: Rules;
+  /**
+   * Settings.
+   *
+   * @see [Settings](https://eslint.org/docs/user-guide/configuring/configuration-files#adding-shared-settings)
+   */
+  settings?: Settings;
 }
 
 /**
