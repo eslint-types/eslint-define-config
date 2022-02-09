@@ -4,7 +4,7 @@ specifiers:
   '@intlify/eslint-plugin-vue-i18n': ~1.2.0
   '@types/eslint': ~8.4.1
   '@types/node': ~16.11.22
-  '@types/prettier': ~2.4.3
+  '@types/prettier': ~2.4.4
   '@typescript-eslint/eslint-plugin': ~5.10.2
   '@typescript-eslint/parser': ~5.10.2
   change-case: ~4.1.2
@@ -12,14 +12,14 @@ specifiers:
   eslint-config-prettier: ~8.3.0
   eslint-gitignore: ~0.1.0
   eslint-plugin-inclusive-language: ~2.2.0
-  eslint-plugin-jsdoc: ~37.7.1
+  eslint-plugin-jsdoc: ~37.8.0
   eslint-plugin-node: ~11.1.0
   eslint-plugin-prettier: ~4.0.0
   eslint-plugin-spellcheck: ~0.0.19
   eslint-plugin-unicorn: ~40.1.0
   eslint-plugin-vue: ~8.4.1
   eslint-plugin-vue-pug-sfc: ~1.0.0-alpha.20
-  esno: ~0.14.0
+  esno: ~0.14.1
   json-schema-to-typescript: ~10.1.5
   prettier: 2.5.1
   prettier-plugin-organize-imports: ~2.3.4
@@ -30,7 +30,7 @@ devDependencies:
   '@intlify/eslint-plugin-vue-i18n': 1.2.0_eslint@8.8.0
   '@types/eslint': 8.4.1
   '@types/node': 16.11.22
-  '@types/prettier': 2.4.3
+  '@types/prettier': 2.4.4
   '@typescript-eslint/eslint-plugin': 5.10.2_2595c2126aec4d4b6e944b931dabb4c2
   '@typescript-eslint/parser': 5.10.2_eslint@8.8.0+typescript@4.5.5
   change-case: 4.1.2
@@ -38,14 +38,14 @@ devDependencies:
   eslint-config-prettier: 8.3.0_eslint@8.8.0
   eslint-gitignore: 0.1.0_eslint@8.8.0
   eslint-plugin-inclusive-language: 2.2.0
-  eslint-plugin-jsdoc: 37.7.1_eslint@8.8.0
+  eslint-plugin-jsdoc: 37.8.0_eslint@8.8.0
   eslint-plugin-node: 11.1.0_eslint@8.8.0
   eslint-plugin-prettier: 4.0.0_43197c8d12d1d439034cfcf65e1c48c2
   eslint-plugin-spellcheck: 0.0.19_eslint@8.8.0
   eslint-plugin-unicorn: 40.1.0_eslint@8.8.0
   eslint-plugin-vue: 8.4.1_eslint@8.8.0
   eslint-plugin-vue-pug-sfc: 1.0.0-alpha.20_eslint@8.8.0
-  esno: 0.14.0_typescript@4.5.5
+  esno: 0.14.1
   json-schema-to-typescript: 10.1.5
   prettier: 2.5.1
   prettier-plugin-organize-imports: 2.3.4_prettier@2.5.1+typescript@4.5.5
@@ -232,8 +232,8 @@ packages:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
     dev: true
 
-  /@types/prettier/2.4.3:
-    resolution: {integrity: sha512-QzSuZMBuG5u8HqYz01qtMdg/Jfctlnvj1z/lYnIDXs/golxw0fxtRAHd9KrzjR7Yxz1qVeI00o0kiO3PmVdJ9w==}
+  /@types/prettier/2.4.4:
+    resolution: {integrity: sha512-ReVR2rLTV1kvtlWFyuot+d1pkpG2Fw/XKE3PDAdj57rbM97ttSp9JZ2UsP+2EHTylra9cUf6JA7tGwW1INzUrA==}
     dev: true
 
   /@typescript-eslint/eslint-plugin/5.10.2_2595c2126aec4d4b6e944b931dabb4c2:
@@ -842,13 +842,10 @@ packages:
     dev: true
     optional: true
 
-  /esbuild-node-loader/0.6.4_typescript@4.5.5:
-    resolution: {integrity: sha512-7Esvc3CWHf+DcXHX+VdIl91s4hPs83wV/DqDbjrR2q5gKjnR4O7NCX2Hw7QVYd8h5Pzc7fIV2z12SMqAcHIyJg==}
-    peerDependencies:
-      typescript: ^4.0
+  /esbuild-node-loader/0.6.5:
+    resolution: {integrity: sha512-uPP+dllWm38cFvDysdocutN3lfe5pTIbddAHp1ENyLzpHYqE2r+3Wo+pfg9X3p8DFWwzIisft5YkeBIthIcixw==}
     dependencies:
       esbuild: 0.14.18
-      typescript: 4.5.5
     dev: true
 
   /esbuild-openbsd-64/0.14.18:
@@ -980,8 +977,8 @@ packages:
       humps: 2.0.1
     dev: true
 
-  /eslint-plugin-jsdoc/37.7.1_eslint@8.8.0:
-    resolution: {integrity: sha512-ySxDTedl6qKXT/VeTwcZlhsRtvNQZGPklyVnaL5+ge20vowzFA9CKvrY0NXRqvdIz6JBVMFpxX9DSmS3OyAUOQ==}
+  /eslint-plugin-jsdoc/37.8.0_eslint@8.8.0:
+    resolution: {integrity: sha512-0HvNH9nyKhp06u5vi8lPB97j/luBrkk+6JrcKVBjLQZuVkyzLYfKOYoc9cFHxMKvJMgYVa2F3g+msV2T8IM3jQ==}
     engines: {node: ^12 || ^14 || ^16 || ^17}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0
@@ -1191,17 +1188,15 @@ packages:
       - supports-color
     dev: true
 
-  /esno/0.14.0_typescript@4.5.5:
-    resolution: {integrity: sha512-KEij9fDbMSO+WxwZRZRXWRxSpd48tXKF1VUW8dPUezN7VbUM6jKUXBrYY3CAbnkVfHzEbD8RWkapCYwc+ZaYoA==}
+  /esno/0.14.1:
+    resolution: {integrity: sha512-yDFYw6dGUjCT1qKsdG7WOc/RzIh/qwxUEVZ+ohCltaxBxEFMNqeqbQL9xjRl6Yvdwrfc5OCjUA9JbFmuu/8BKg==}
     hasBin: true
     dependencies:
       cross-spawn: 7.0.3
       esbuild: 0.14.18
-      esbuild-node-loader: 0.6.4_typescript@4.5.5
+      esbuild-node-loader: 0.6.5
       esbuild-register: 3.3.2_esbuild@0.14.18
       import-meta-resolve: 1.1.1
-    transitivePeerDependencies:
-      - typescript
     dev: true
 
   /espree/9.3.0:
@@ -1669,7 +1664,7 @@ packages:
     dependencies:
       '@types/json-schema': 7.0.9
       '@types/lodash': 4.14.178
-      '@types/prettier': 2.4.3
+      '@types/prettier': 2.4.4
       cli-color: 2.0.1
       get-stdin: 8.0.0
       glob: 7.2.0
