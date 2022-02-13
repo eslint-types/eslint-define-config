@@ -8,10 +8,12 @@ import type { NoHtmlMessagesRule } from './no-html-messages';
 import type { NoI18nTPathPropRule } from './no-i18n-t-path-prop';
 import type { NoMissingKeysRule } from './no-missing-keys';
 import type { NoMissingKeysInOtherLocalesRule } from './no-missing-keys-in-other-locales';
+import type { NoUnknownLocaleRule } from './no-unknown-locale';
 import type { NoUnusedKeysRule } from './no-unused-keys';
 import type { NoVHtmlRule } from './no-v-html';
 import type { PreferLinkedKeyWithParenRule } from './prefer-linked-key-with-paren';
 import type { PreferSfcLangAttrRule } from './prefer-sfc-lang-attr';
+import type { SfcLocaleAttrRule } from './sfc-locale-attr';
 import type { ValidMessageSyntaxRule } from './valid-message-syntax';
 
 /**
@@ -27,8 +29,10 @@ export type VueI18nRules = KeyFormatStyleRule &
   NoI18nTPathPropRule &
   NoMissingKeysInOtherLocalesRule &
   NoMissingKeysRule &
+  NoUnknownLocaleRule &
   NoUnusedKeysRule &
   NoVHtmlRule &
   PreferLinkedKeyWithParenRule &
   PreferSfcLangAttrRule &
+  SfcLocaleAttrRule &
   ValidMessageSyntaxRule;
