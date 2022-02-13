@@ -44,6 +44,7 @@ import type { RequireReturnsTypeRule } from './require-returns-type';
 import type { RequireThrowsRule } from './require-throws';
 import type { RequireYieldsRule } from './require-yields';
 import type { RequireYieldsCheckRule } from './require-yields-check';
+import type { SortTagsRule } from './sort-tags';
 import type { TagLinesRule } from './tag-lines';
 import type { ValidTypesRule } from './valid-types';
 
@@ -96,5 +97,6 @@ export type JSDocRules = CheckAccessRule &
   RequireThrowsRule &
   RequireYieldsRule &
   RequireYieldsCheckRule &
+  SortTagsRule &
   TagLinesRule &
   ValidTypesRule;
