@@ -4,10 +4,14 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoMagicNumbersOption {
+  detectObjects?: boolean;
+  enforceConst?: boolean;
+  ignore?: (number | string)[];
+  ignoreArrayIndexes?: boolean;
+  ignoreDefaultValues?: boolean;
   ignoreNumericLiteralTypes?: boolean;
   ignoreEnums?: boolean;
   ignoreReadonlyClassProperties?: boolean;
-  [k: string]: any;
 }
 
 /**

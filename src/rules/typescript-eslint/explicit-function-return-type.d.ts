@@ -9,6 +9,7 @@ export interface ExplicitFunctionReturnTypeOption {
   allowHigherOrderFunctions?: boolean;
   allowDirectConstAssertionInArrowFunctions?: boolean;
   allowConciseArrowFunctionExpressionsStartingWithVoid?: boolean;
+  allowedNames?: string[];
 }
 
 /**
