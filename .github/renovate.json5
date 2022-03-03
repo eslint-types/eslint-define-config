@@ -12,15 +12,15 @@
     },
     {
       "groupName": "vitest",
-      "matchPackagePrefixes": ["@vitest/ui", "vitest"]
+      "matchPackageNames": ["@vitest/ui", "vitest"]
     },
     {
       "groupName": "typescript",
-      "matchPackagePrefixes": ["typescript"]
+      "matchPackageNames": ["typescript"]
     },
     {
       "groupName": "prettier",
-      "matchPackagePrefixes": ["prettier", "@types/prettier"]
+      "matchPackageNames": ["@types/prettier", "prettier"]
     },
     {
       "groupName": "engines",
