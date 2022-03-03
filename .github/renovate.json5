@@ -8,22 +8,18 @@
   "packageRules": [
     {
       "groupName": "typescript-eslint",
-      "matchDepTypes": ["devDependencies"],
       "matchPackagePrefixes": ["@typescript-eslint/"]
     },
     {
       "groupName": "vitest",
-      "matchDepTypes": ["devDependencies"],
       "matchPackagePrefixes": ["@vitest/ui", "vitest"]
     },
     {
       "groupName": "typescript",
-      "matchDepTypes": ["devDependencies"],
       "matchPackagePrefixes": ["typescript"]
     },
     {
       "groupName": "prettier",
-      "matchDepTypes": ["devDependencies"],
       "matchPackagePrefixes": ["prettier", "@types/prettier"]
     },
     {
