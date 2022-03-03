@@ -1,14 +1,15 @@
 /* eslint-disable */
 
-const fs = require('fs');
-const path = require('path');
+const { mkdirSync, writeFileSync } = require('node:fs');
+const { resolve } = require('node:path');
+const { exit } = require('node:process');
 
-const rulesDir = path.resolve(__dirname, '../src/rules');
+const rulesDir = resolve(__dirname, '../src/rules');
 
 const ruleNameInput = process.argv[2];
 if (!ruleNameInput) {
   console.warn('No rule name provided');
-  return;
+  exit(1);
 }
 
 let ruleProvider = 'eslint';
@@ -29,11 +30,8 @@ function normalizeRuleProvider(provider) {
 
 console.log({ ruleName, ruleProvider });
 
-const ruleProviderDir = path.resolve(
-  rulesDir,
-  normalizeRuleProvider(ruleProvider),
-);
-const rulePath = path.resolve(ruleProviderDir, `${ruleName}.d.ts`);
+const ruleProviderDir = resolve(rulesDir, normalizeRuleProvider(ruleProvider));
+const rulePath = resolve(ruleProviderDir, `${ruleName}.d.ts`);
 
 /**
  * @param {string} name
@@ -107,6 +105,6 @@ export interface ${PascalCase}Rule {
 `;
 }
 
-fs.mkdirSync(ruleProviderDir, { mode: 0o755, recursive: true });
+mkdirSync(ruleProviderDir, { mode: 0o755, recursive: true });
 
-fs.writeFileSync(rulePath, generateRuleFileContent(ruleName, ruleProvider));
+writeFileSync(rulePath, generateRuleFileContent(ruleName, ruleProvider));
