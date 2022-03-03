@@ -27,9 +27,9 @@
       "matchPackagePrefixes": ["prettier", "@types/prettier"]
     },
     {
-      "groupName": "node",
-      "matchPackagePrefixes": ["@types/node", "node", "npm"],
-      "rangeStrategy": "bump"
+      "groupName": "engines",
+      "matchDepTypes": ["engines"],
+      "rangeStrategy": "replace"
     },
     {
       "groupName": "dependencies",
