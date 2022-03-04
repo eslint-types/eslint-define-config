@@ -30,12 +30,18 @@
       "groupName": "typescript-eslint",
       "matchPackagePrefixes": ["@typescript-eslint/"]
     },
-    { "groupName": "vitest", "matchPackageNames": ["@vitest/ui", "vitest"] },
+    {
+      "groupName": "vitest",
+      "matchPackageNames": ["@vitest/ui", "vitest"]
+    },
     {
       "groupName": "prettier",
       "matchPackageNames": ["@types/prettier", "prettier"]
     },
-    { "groupName": "typescript", "matchPackageNames": ["typescript"] }
+    {
+      "groupName": "typescript",
+      "matchPackageNames": ["typescript"]
+    }
   ],
   "vulnerabilityAlerts": {
     "labels": ["security"],
