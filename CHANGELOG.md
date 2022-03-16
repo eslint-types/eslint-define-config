@@ -1,6 +1,14 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.2.5...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.3.0...main)
+
+# 1.3.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.2.5...1.3.0)
+
+- Generate rules for: [import]
+- Update `ParserOptions`
+- Update rules for: [eslint, jsdoc, typescript-eslint, unicorn, vue]
 
 # 1.2.5
 
