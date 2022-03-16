@@ -3,20 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Disallow empty files.
  *
- * @see [no-empty-file](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/rules/no-empty-file.md)
+ * @see [no-empty-file](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/rules/no-empty-file.md)
  */
 export type NoEmptyFileRuleConfig = RuleConfig<[]>;
 
 /**
  * Disallow empty files.
  *
- * @see [no-empty-file](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/rules/no-empty-file.md)
+ * @see [no-empty-file](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/rules/no-empty-file.md)
  */
 export interface NoEmptyFileRule {
   /**
    * Disallow empty files.
    *
-   * @see [no-empty-file](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/rules/no-empty-file.md)
+   * @see [no-empty-file](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/rules/no-empty-file.md)
    */
   'unicorn/no-empty-file': NoEmptyFileRuleConfig;
 }

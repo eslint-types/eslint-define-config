@@ -5,7 +5,15 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface NoMisusedPromisesOption {
   checksConditionals?: boolean;
-  checksVoidReturn?: boolean;
+  checksVoidReturn?:
+    | boolean
+    | {
+        arguments?: boolean;
+        attributes?: boolean;
+        properties?: boolean;
+        returns?: boolean;
+        variables?: boolean;
+      };
   [k: string]: any;
 }
 
@@ -15,20 +23,20 @@ export interface NoMisusedPromisesOption {
 export type NoMisusedPromisesOptions = [NoMisusedPromisesOption?];
 
 /**
- * Avoid using promises in places not designed to handle them.
+ * Avoid using Promises in places not designed to handle them.
  *
  * @see [no-misused-promises](https://typescript-eslint.io/rules/no-misused-promises)
  */
 export type NoMisusedPromisesRuleConfig = RuleConfig<NoMisusedPromisesOptions>;
 
 /**
- * Avoid using promises in places not designed to handle them.
+ * Avoid using Promises in places not designed to handle them.
  *
  * @see [no-misused-promises](https://typescript-eslint.io/rules/no-misused-promises)
  */
 export interface NoMisusedPromisesRule {
   /**
-   * Avoid using promises in places not designed to handle them.
+   * Avoid using Promises in places not designed to handle them.
    *
    * @see [no-misused-promises](https://typescript-eslint.io/rules/no-misused-promises)
    */

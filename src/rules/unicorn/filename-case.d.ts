@@ -26,20 +26,20 @@ export type FilenameCaseOptions = [FilenameCaseOption?];
 /**
  * Enforce a case style for filenames.
  *
- * @see [filename-case](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/rules/filename-case.md)
+ * @see [filename-case](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/rules/filename-case.md)
  */
 export type FilenameCaseRuleConfig = RuleConfig<FilenameCaseOptions>;
 
 /**
  * Enforce a case style for filenames.
  *
- * @see [filename-case](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/rules/filename-case.md)
+ * @see [filename-case](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/rules/filename-case.md)
  */
 export interface FilenameCaseRule {
   /**
    * Enforce a case style for filenames.
    *
-   * @see [filename-case](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/rules/filename-case.md)
+   * @see [filename-case](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/rules/filename-case.md)
    */
   'unicorn/filename-case': FilenameCaseRuleConfig;
 }

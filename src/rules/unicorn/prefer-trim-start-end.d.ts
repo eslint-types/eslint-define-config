@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @deprecated
  *
- * @see [prefer-trim-start-end](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/deprecated-rules.md#prefer-trim-start-end)
+ * @see [prefer-trim-start-end](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/deprecated-rules.md#prefer-trim-start-end)
  */
 export type PreferTrimStartEndRuleConfig = RuleConfig<[]>;
 
@@ -14,7 +14,7 @@ export type PreferTrimStartEndRuleConfig = RuleConfig<[]>;
  *
  * @deprecated
  *
- * @see [prefer-trim-start-end](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/deprecated-rules.md#prefer-trim-start-end)
+ * @see [prefer-trim-start-end](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/deprecated-rules.md#prefer-trim-start-end)
  */
 export interface PreferTrimStartEndRule {
   /**
@@ -22,7 +22,7 @@ export interface PreferTrimStartEndRule {
    *
    * @deprecated
    *
-   * @see [prefer-trim-start-end](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/deprecated-rules.md#prefer-trim-start-end)
+   * @see [prefer-trim-start-end](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/deprecated-rules.md#prefer-trim-start-end)
    */
   'unicorn/prefer-trim-start-end': PreferTrimStartEndRuleConfig;
 }

@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @deprecated
  *
- * @see [prefer-object-has-own](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/deprecated-rules.md#prefer-object-has-own)
+ * @see [prefer-object-has-own](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/deprecated-rules.md#prefer-object-has-own)
  */
 export type PreferObjectHasOwnRuleConfig = RuleConfig<[]>;
 
@@ -14,7 +14,7 @@ export type PreferObjectHasOwnRuleConfig = RuleConfig<[]>;
  *
  * @deprecated
  *
- * @see [prefer-object-has-own](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/deprecated-rules.md#prefer-object-has-own)
+ * @see [prefer-object-has-own](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/deprecated-rules.md#prefer-object-has-own)
  */
 export interface PreferObjectHasOwnRule {
   /**
@@ -22,7 +22,7 @@ export interface PreferObjectHasOwnRule {
    *
    * @deprecated
    *
-   * @see [prefer-object-has-own](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/deprecated-rules.md#prefer-object-has-own)
+   * @see [prefer-object-has-own](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/deprecated-rules.md#prefer-object-has-own)
    */
   'unicorn/prefer-object-has-own': PreferObjectHasOwnRuleConfig;
 }

@@ -147,8 +147,10 @@ import type { OneComponentPerFileRule } from './one-component-per-file';
 import type { OperatorLinebreakRule } from './operator-linebreak';
 import type { OrderInComponentsRule } from './order-in-components';
 import type { PaddingLineBetweenBlocksRule } from './padding-line-between-blocks';
+import type { PreferImportFromVueRule } from './prefer-import-from-vue';
 import type { PreferSeparateStaticClassRule } from './prefer-separate-static-class';
 import type { PreferTemplateRule } from './prefer-template';
+import type { PreferTrueAttributeShorthandRule } from './prefer-true-attribute-shorthand';
 import type { PropNameCasingRule } from './prop-name-casing';
 import type { QuotePropsRule } from './quote-props';
 import type { RequireComponentIsRule } from './require-component-is';
@@ -358,8 +360,10 @@ export type VueRules = ArrayBracketNewlineRule &
   OperatorLinebreakRule &
   OrderInComponentsRule &
   PaddingLineBetweenBlocksRule &
+  PreferImportFromVueRule &
   PreferSeparateStaticClassRule &
   PreferTemplateRule &
+  PreferTrueAttributeShorthandRule &
   PropNameCasingRule &
   QuotePropsRule &
   RequireComponentIsRule &
