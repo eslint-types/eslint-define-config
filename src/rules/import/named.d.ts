@@ -1,22 +1,34 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- * Verifies that all named imports are part of the set of named exports in the referenced module.
- *
- * @see [named](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/named.md)
+ * Option.
  */
-export type NamedRuleConfig = RuleConfig<[]>;
+export interface NamedOption {
+  commonjs?: boolean;
+}
 
 /**
- * Verifies that all named imports are part of the set of named exports in the referenced module.
+ * Options.
+ */
+export type NamedOptions = [NamedOption?];
+
+/**
  *
- * @see [named](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/named.md)
+ *
+ * @see [named](https://github.com/import-js/eslint-plugin-import/blob/v2.25.4/docs/rules/named.md)
+ */
+export type NamedRuleConfig = RuleConfig<NamedOptions>;
+
+/**
+ *
+ *
+ * @see [named](https://github.com/import-js/eslint-plugin-import/blob/v2.25.4/docs/rules/named.md)
  */
 export interface NamedRule {
   /**
-   * Verifies that all named imports are part of the set of named exports in the referenced module.
    *
-   * @see [named](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/named.md)
+   *
+   * @see [named](https://github.com/import-js/eslint-plugin-import/blob/v2.25.4/docs/rules/named.md)
    */
   'import/named': NamedRuleConfig;
 }
