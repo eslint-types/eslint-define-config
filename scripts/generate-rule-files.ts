@@ -6,6 +6,8 @@ import { paramCase as kebabCase, pascalCase } from 'change-case';
 import type { Rule } from 'eslint';
 import * as eslint from 'eslint';
 // @ts-expect-error
+import * as eslintPluginImport from 'eslint-plugin-import';
+// @ts-expect-error
 import eslintPluginJSDoc from 'eslint-plugin-jsdoc';
 // @ts-expect-error
 import eslintPluginNode from 'eslint-plugin-node';
@@ -48,6 +50,10 @@ const generationMap: Record<string, Plugin> = {
     name: 'TypeScript',
     prefix: '@typescript-eslint',
     rules: (eslintPluginTypeScript as Plugin).rules,
+  },
+  import: {
+    name: 'Import',
+    rules: (eslintPluginImport as Plugin).rules,
   },
   jsdoc: {
     name: 'JSDoc',
