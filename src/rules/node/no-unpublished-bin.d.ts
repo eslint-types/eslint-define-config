@@ -18,7 +18,7 @@ export interface NoUnpublishedBinOption {
           include: [string, ...string[]];
           exclude?: string[];
           replace: [string, string];
-        }[]
+        }[],
       ];
   [k: string]: any;
 }

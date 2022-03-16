@@ -3,20 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Enforce using the `targetOrigin` argument with `window.postMessage()`.
  *
- * @see [require-post-message-target-origin](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/rules/require-post-message-target-origin.md)
+ * @see [require-post-message-target-origin](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/rules/require-post-message-target-origin.md)
  */
 export type RequirePostMessageTargetOriginRuleConfig = RuleConfig<[]>;
 
 /**
  * Enforce using the `targetOrigin` argument with `window.postMessage()`.
  *
- * @see [require-post-message-target-origin](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/rules/require-post-message-target-origin.md)
+ * @see [require-post-message-target-origin](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/rules/require-post-message-target-origin.md)
  */
 export interface RequirePostMessageTargetOriginRule {
   /**
    * Enforce using the `targetOrigin` argument with `window.postMessage()`.
    *
-   * @see [require-post-message-target-origin](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v40.1.0/docs/rules/require-post-message-target-origin.md)
+   * @see [require-post-message-target-origin](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/rules/require-post-message-target-origin.md)
    */
   'unicorn/require-post-message-target-origin': RequirePostMessageTargetOriginRuleConfig;
 }

@@ -207,9 +207,18 @@ export interface ParserOptions extends Partial<Record<string, unknown>> {
    *
    * @default true
    *
-   * @see [warnOnUnsupportedTypeScriptVersion](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionswarnonunsupportedtypescriptversion)
+   * @see [warnOnUnsupportedTypeScriptVersion](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/parser#parseroptionswarnonunsupportedtypescriptversion)
    */
   warnOnUnsupportedTypeScriptVersion?: boolean;
+  /**
+   * This option allow you to tell parser to act as if `emitDecoratorMetadata: true` is set in `tsconfig.json`, but without [type-aware linting](https://typescript-eslint.io/docs/linting/type-linting/).
+   * In other words, you don't have to specify `parserOptions.project` in this case, making the linting process faster.
+   *
+   * @default undefined
+   *
+   * @see [emitDecoratorMetadata](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/parser#parseroptionsemitdecoratormetadata)
+   */
+  emitDecoratorMetadata?: boolean;
   /**
    * @see [vueFeatures](https://github.com/vuejs/vue-eslint-parser#parseroptionsvuefeatures)
    */

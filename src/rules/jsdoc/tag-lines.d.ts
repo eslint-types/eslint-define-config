@@ -5,6 +5,7 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface TagLinesConfig {
   count?: number;
+  dropEndLines?: boolean;
   noEndLines?: boolean;
   tags?: {
     [k: string]: {

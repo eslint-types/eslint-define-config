@@ -110,6 +110,7 @@ import type { RequireNumberToFixedDigitsArgumentRule } from './require-number-to
 import type { RequirePostMessageTargetOriginRule } from './require-post-message-target-origin';
 import type { StringContentRule } from './string-content';
 import type { TemplateIndentRule } from './template-indent';
+import type { TextEncodingIdentifierCaseRule } from './text-encoding-identifier-case';
 import type { ThrowNewErrorRule } from './throw-new-error';
 
 /**
@@ -212,6 +213,7 @@ export type UnicornRules = BetterRegexRule &
   RequirePostMessageTargetOriginRule &
   StringContentRule &
   TemplateIndentRule &
+  TextEncodingIdentifierCaseRule &
   ThrowNewErrorRule &
   NoArrayInstanceofRule &
   NoFnReferenceInIteratorRule &

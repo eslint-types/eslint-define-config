@@ -13,6 +13,7 @@ export type NoUnusedVarsOption =
       argsIgnorePattern?: string;
       caughtErrors?: 'all' | 'none';
       caughtErrorsIgnorePattern?: string;
+      destructuredArrayIgnorePattern?: string;
     };
 
 /**

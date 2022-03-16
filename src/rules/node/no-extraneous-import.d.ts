@@ -19,7 +19,7 @@ export interface NoExtraneousImportOption {
           include: [string, ...string[]];
           exclude?: string[];
           replace: [string, string];
-        }[]
+        }[],
       ];
   resolvePaths?: string[];
   tryExtensions?: string[];

@@ -60,6 +60,7 @@ import type { NoNonNullAssertedOptionalChainRule } from './no-non-null-asserted-
 import type { NoNonNullAssertionRule } from './no-non-null-assertion';
 import type { NoParameterPropertiesRule } from './no-parameter-properties';
 import type { NoRedeclareRule } from './no-redeclare';
+import type { NoRedundantTypeConstituentsRule } from './no-redundant-type-constituents';
 import type { NoRequireImportsRule } from './no-require-imports';
 import type { NoRestrictedImportsRule } from './no-restricted-imports';
 import type { NoShadowRule } from './no-shadow';
@@ -81,6 +82,7 @@ import type { NoUnusedExpressionsRule } from './no-unused-expressions';
 import type { NoUnusedVarsRule } from './no-unused-vars';
 import type { NoUseBeforeDefineRule } from './no-use-before-define';
 import type { NoUselessConstructorRule } from './no-useless-constructor';
+import type { NoUselessEmptyExportRule } from './no-useless-empty-export';
 import type { NoVarRequiresRule } from './no-var-requires';
 import type { NonNullableTypeAssertionStyleRule } from './non-nullable-type-assertion-style';
 import type { ObjectCurlySpacingRule } from './object-curly-spacing';
@@ -110,6 +112,7 @@ import type { RestrictTemplateExpressionsRule } from './restrict-template-expres
 import type { ReturnAwaitRule } from './return-await';
 import type { SemiRule } from './semi';
 import type { SortTypeUnionIntersectionMembersRule } from './sort-type-union-intersection-members';
+import type { SpaceBeforeBlocksRule } from './space-before-blocks';
 import type { SpaceBeforeFunctionParenRule } from './space-before-function-paren';
 import type { SpaceInfixOpsRule } from './space-infix-ops';
 import type { StrictBooleanExpressionsRule } from './strict-boolean-expressions';
@@ -185,6 +188,7 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   NoNonNullAssertionRule &
   NoParameterPropertiesRule &
   NoRedeclareRule &
+  NoRedundantTypeConstituentsRule &
   NoRequireImportsRule &
   NoRestrictedImportsRule &
   NoShadowRule &
@@ -206,6 +210,7 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   NoUnusedVarsRule &
   NoUseBeforeDefineRule &
   NoUselessConstructorRule &
+  NoUselessEmptyExportRule &
   NoVarRequiresRule &
   NonNullableTypeAssertionStyleRule &
   ObjectCurlySpacingRule &
@@ -235,6 +240,7 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   ReturnAwaitRule &
   SemiRule &
   SortTypeUnionIntersectionMembersRule &
+  SpaceBeforeBlocksRule &
   SpaceBeforeFunctionParenRule &
   SpaceInfixOpsRule &
   StrictBooleanExpressionsRule &

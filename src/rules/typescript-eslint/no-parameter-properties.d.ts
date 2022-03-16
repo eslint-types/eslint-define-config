@@ -22,7 +22,7 @@ export interface NoParameterPropertiesOption {
       | 'private readonly'
       | 'protected readonly'
       | 'public readonly'
-    )[]
+    )[],
   ];
 }
 

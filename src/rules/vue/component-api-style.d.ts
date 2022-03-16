@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  */
 export type ComponentApiStyleOption = [
   'script-setup' | 'composition' | 'composition-vue2' | 'options',
-  ...('script-setup' | 'composition' | 'composition-vue2' | 'options')[]
+  ...('script-setup' | 'composition' | 'composition-vue2' | 'options')[],
 ];
 
 /**
