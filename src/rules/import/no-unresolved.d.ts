@@ -15,7 +15,7 @@ export interface NoUnresolvedOption {
 /**
  * Options.
  */
-export type NoUnresolvedOptions = [NoUnresolvedConfig?];
+export type NoUnresolvedOptions = [NoUnresolvedOption?];
 
 /**
  *
