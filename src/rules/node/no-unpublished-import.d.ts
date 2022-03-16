@@ -19,7 +19,7 @@ export interface NoUnpublishedImportOption {
           include: [string, ...string[]];
           exclude?: string[];
           replace: [string, string];
-        }[]
+        }[],
       ];
   resolvePaths?: string[];
   tryExtensions?: string[];

@@ -131,7 +131,7 @@ export type StatementType =
         | 'with'
         | 'interface'
         | 'type'
-      )[]
+      )[],
     ];
 export type PaddingLineBetweenStatementsOption = {
   blankLine: PaddingType;

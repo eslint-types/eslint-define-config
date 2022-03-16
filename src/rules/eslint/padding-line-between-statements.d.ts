@@ -125,7 +125,7 @@ export type StatementType =
         | 'var'
         | 'while'
         | 'with'
-      )[]
+      )[],
     ];
 export type PaddingLineBetweenStatementsOption = {
   blankLine: PaddingType;

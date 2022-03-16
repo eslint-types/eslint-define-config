@@ -91,7 +91,7 @@ export interface NoMixedOperatorsOption {
       | 'instanceof'
       | '?:'
       | '??'
-    )[]
+    )[],
   ][];
   allowSamePrecedence?: boolean;
 }

@@ -18,7 +18,7 @@ export interface ShebangOption {
           include: [string, ...string[]];
           exclude?: string[];
           replace: [string, string];
-        }[]
+        }[],
       ];
 }
 
