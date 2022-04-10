@@ -4,7 +4,7 @@ specifiers:
   '@intlify/eslint-plugin-vue-i18n': ~1.4.0
   '@types/eslint': ~8.4.1
   '@types/node': ~16.11.26
-  '@types/prettier': ~2.4.4
+  '@types/prettier': ~2.6.0
   '@typescript-eslint/eslint-plugin': ~5.15.0
   '@typescript-eslint/parser': ~5.15.0
   change-case: ~4.1.2
@@ -22,7 +22,7 @@ specifiers:
   eslint-plugin-vue-pug-sfc: ~1.0.0-alpha.20
   esno: ~0.14.1
   json-schema-to-typescript: ~10.1.5
-  prettier: 2.6.0
+  prettier: 2.6.2
   prettier-plugin-organize-imports: ~2.3.4
   typescript: ~4.6.2
   upper-case-first: ~2.0.2
@@ -31,7 +31,7 @@ devDependencies:
   '@intlify/eslint-plugin-vue-i18n': 1.4.0_eslint@8.11.0
   '@types/eslint': 8.4.1
   '@types/node': 16.11.26
-  '@types/prettier': 2.4.4
+  '@types/prettier': 2.6.0
   '@typescript-eslint/eslint-plugin': 5.15.0_f2c49ce7d0e93ebcfdb4b7d25b131b28
   '@typescript-eslint/parser': 5.15.0_eslint@8.11.0+typescript@4.6.2
   change-case: 4.1.2
@@ -42,15 +42,15 @@ devDependencies:
   eslint-plugin-inclusive-language: 2.2.0
   eslint-plugin-jsdoc: 38.0.4_eslint@8.11.0
   eslint-plugin-node: 11.1.0_eslint@8.11.0
-  eslint-plugin-prettier: 4.0.0_68edcf5670f37721baf5d2cac6124e4d
+  eslint-plugin-prettier: 4.0.0_d787f974c3263c3f552a159664c9f51b
   eslint-plugin-spellcheck: 0.0.19_eslint@8.11.0
   eslint-plugin-unicorn: 41.0.0_eslint@8.11.0
   eslint-plugin-vue: 8.5.0_eslint@8.11.0
   eslint-plugin-vue-pug-sfc: 1.0.0-alpha.20_eslint@8.11.0
   esno: 0.14.1
   json-schema-to-typescript: 10.1.5
-  prettier: 2.6.0
-  prettier-plugin-organize-imports: 2.3.4_prettier@2.6.0+typescript@4.6.2
+  prettier: 2.6.2
+  prettier-plugin-organize-imports: 2.3.4_prettier@2.6.2+typescript@4.6.2
   typescript: 4.6.2
   upper-case-first: 2.0.2
 
@@ -283,8 +283,8 @@ packages:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
     dev: true
 
-  /@types/prettier/2.4.4:
-    resolution: {integrity: sha512-ReVR2rLTV1kvtlWFyuot+d1pkpG2Fw/XKE3PDAdj57rbM97ttSp9JZ2UsP+2EHTylra9cUf6JA7tGwW1INzUrA==}
+  /@types/prettier/2.6.0:
+    resolution: {integrity: sha512-G/AdOadiZhnJp0jXCaBQU449W2h716OW/EoXeYkCytxKL06X1WCXB4DZpp8TpZ8eyIJVS1cw4lrlkkSYU21cDw==}
     dev: true
 
   /@typescript-eslint/eslint-plugin/5.15.0_f2c49ce7d0e93ebcfdb4b7d25b131b28:
@@ -1160,7 +1160,7 @@ packages:
       semver: 6.3.0
     dev: true
 
-  /eslint-plugin-prettier/4.0.0_68edcf5670f37721baf5d2cac6124e4d:
+  /eslint-plugin-prettier/4.0.0_d787f974c3263c3f552a159664c9f51b:
     resolution: {integrity: sha512-98MqmCJ7vJodoQK359bqQWaxOE0CS8paAz/GgjaZLyex4TTk3g9HugoO89EqWCrFiOqn9EVvcoo7gZzONCWVwQ==}
     engines: {node: '>=6.0.0'}
     peerDependencies:
@@ -1173,7 +1173,7 @@ packages:
     dependencies:
       eslint: 8.11.0
       eslint-config-prettier: 8.5.0_eslint@8.11.0
-      prettier: 2.6.0
+      prettier: 2.6.2
       prettier-linter-helpers: 1.0.0
     dev: true
 
@@ -1821,7 +1821,7 @@ packages:
     dependencies:
       '@types/json-schema': 7.0.9
       '@types/lodash': 4.14.180
-      '@types/prettier': 2.4.4
+      '@types/prettier': 2.6.0
       cli-color: 2.0.1
       get-stdin: 8.0.0
       glob: 7.2.0
@@ -1833,7 +1833,7 @@ packages:
       minimist: 1.2.5
       mkdirp: 1.0.4
       mz: 2.7.0
-      prettier: 2.6.0
+      prettier: 2.6.2
     dev: true
 
   /json-schema-traverse/0.4.1:
@@ -2200,18 +2200,18 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier-plugin-organize-imports/2.3.4_prettier@2.6.0+typescript@4.6.2:
+  /prettier-plugin-organize-imports/2.3.4_prettier@2.6.2+typescript@4.6.2:
     resolution: {integrity: sha512-R8o23sf5iVL/U71h9SFUdhdOEPsi3nm42FD/oDYIZ2PQa4TNWWuWecxln6jlIQzpZTDMUeO1NicJP6lLn2TtRw==}
     peerDependencies:
       prettier: '>=2.0'
       typescript: '>=2.9'
     dependencies:
-      prettier: 2.6.0
+      prettier: 2.6.2
       typescript: 4.6.2
     dev: true
 
-  /prettier/2.6.0:
-    resolution: {integrity: sha512-m2FgJibYrBGGgQXNzfd0PuDGShJgRavjUoRCw1mZERIWVSXF0iLzLm+aOqTAbLnC3n6JzUhAA8uZnFVghHJ86A==}
+  /prettier/2.6.2:
+    resolution: {integrity: sha512-PkUpF+qoXTqhOeWL9fu7As8LXsIUZ1WYaJiY/a7McAQzxjk82OF0tibkFXVCDImZtWxbvojFjerkiLb0/q8mew==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
