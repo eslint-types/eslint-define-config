@@ -13,20 +13,20 @@ export interface NoInvalidThisOption {
 export type NoInvalidThisOptions = [NoInvalidThisOption?];
 
 /**
- * Disallow `this` keywords outside of classes or class-like objects.
+ * Disallow use of `this` in contexts where the value of `this` is `undefined`.
  *
  * @see [no-invalid-this](https://eslint.org/docs/rules/no-invalid-this)
  */
 export type NoInvalidThisRuleConfig = RuleConfig<NoInvalidThisOptions>;
 
 /**
- * Disallow `this` keywords outside of classes or class-like objects.
+ * Disallow use of `this` in contexts where the value of `this` is `undefined`.
  *
  * @see [no-invalid-this](https://eslint.org/docs/rules/no-invalid-this)
  */
 export interface NoInvalidThisRule {
   /**
-   * Disallow `this` keywords outside of classes or class-like objects.
+   * Disallow use of `this` in contexts where the value of `this` is `undefined`.
    *
    * @see [no-invalid-this](https://eslint.org/docs/rules/no-invalid-this)
    */
