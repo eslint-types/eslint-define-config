@@ -23,20 +23,20 @@ export type NoCycleOptions = [NoCycleOption?];
 /**
  *
  *
- * @see [no-cycle](https://github.com/import-js/eslint-plugin-import/blob/v2.25.4/docs/rules/no-cycle.md)
+ * @see [no-cycle](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-cycle.md)
  */
 export type NoCycleRuleConfig = RuleConfig<NoCycleOptions>;
 
 /**
  *
  *
- * @see [no-cycle](https://github.com/import-js/eslint-plugin-import/blob/v2.25.4/docs/rules/no-cycle.md)
+ * @see [no-cycle](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-cycle.md)
  */
 export interface NoCycleRule {
   /**
    *
    *
-   * @see [no-cycle](https://github.com/import-js/eslint-plugin-import/blob/v2.25.4/docs/rules/no-cycle.md)
+   * @see [no-cycle](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-cycle.md)
    */
   'import/no-cycle': NoCycleRuleConfig;
 }

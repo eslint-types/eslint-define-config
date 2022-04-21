@@ -18,7 +18,7 @@ export type NoRelativePackagesOptions = [NoRelativePackagesOption?];
 /**
  *
  *
- * @see [no-relative-packages](https://github.com/import-js/eslint-plugin-import/blob/v2.25.4/docs/rules/no-relative-packages.md)
+ * @see [no-relative-packages](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-relative-packages.md)
  */
 export type NoRelativePackagesRuleConfig =
   RuleConfig<NoRelativePackagesOptions>;
@@ -26,13 +26,13 @@ export type NoRelativePackagesRuleConfig =
 /**
  *
  *
- * @see [no-relative-packages](https://github.com/import-js/eslint-plugin-import/blob/v2.25.4/docs/rules/no-relative-packages.md)
+ * @see [no-relative-packages](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-relative-packages.md)
  */
 export interface NoRelativePackagesRule {
   /**
    *
    *
-   * @see [no-relative-packages](https://github.com/import-js/eslint-plugin-import/blob/v2.25.4/docs/rules/no-relative-packages.md)
+   * @see [no-relative-packages](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-relative-packages.md)
    */
   'import/no-relative-packages': NoRelativePackagesRuleConfig;
 }

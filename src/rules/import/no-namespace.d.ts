@@ -16,20 +16,20 @@ export type NoNamespaceOptions = [NoNamespaceOption?];
 /**
  *
  *
- * @see [no-namespace](https://github.com/import-js/eslint-plugin-import/blob/v2.25.4/docs/rules/no-namespace.md)
+ * @see [no-namespace](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-namespace.md)
  */
 export type NoNamespaceRuleConfig = RuleConfig<NoNamespaceOptions>;
 
 /**
  *
  *
- * @see [no-namespace](https://github.com/import-js/eslint-plugin-import/blob/v2.25.4/docs/rules/no-namespace.md)
+ * @see [no-namespace](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-namespace.md)
  */
 export interface NoNamespaceRule {
   /**
    *
    *
-   * @see [no-namespace](https://github.com/import-js/eslint-plugin-import/blob/v2.25.4/docs/rules/no-namespace.md)
+   * @see [no-namespace](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-namespace.md)
    */
   'import/no-namespace': NoNamespaceRuleConfig;
 }

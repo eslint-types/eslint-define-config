@@ -51,20 +51,20 @@ export type ExtensionsOptions = ExtensionsOption;
 /**
  *
  *
- * @see [extensions](https://github.com/import-js/eslint-plugin-import/blob/v2.25.4/docs/rules/extensions.md)
+ * @see [extensions](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/extensions.md)
  */
 export type ExtensionsRuleConfig = RuleConfig<ExtensionsOptions>;
 
 /**
  *
  *
- * @see [extensions](https://github.com/import-js/eslint-plugin-import/blob/v2.25.4/docs/rules/extensions.md)
+ * @see [extensions](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/extensions.md)
  */
 export interface ExtensionsRule {
   /**
    *
    *
-   * @see [extensions](https://github.com/import-js/eslint-plugin-import/blob/v2.25.4/docs/rules/extensions.md)
+   * @see [extensions](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/extensions.md)
    */
   'import/extensions': ExtensionsRuleConfig;
 }
