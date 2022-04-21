@@ -12,12 +12,14 @@ export interface RequireJsdocOption {
     | {
         context?: string;
         inlineCommentBlock?: boolean;
+        minLineCount?: number;
       }
   )[];
   enableFixer?: boolean;
   exemptEmptyConstructors?: boolean;
   exemptEmptyFunctions?: boolean;
   fixerMessage?: string;
+  minLineCount?: number;
   publicOnly?:
     | boolean
     | {

@@ -14,6 +14,7 @@ export interface RequireExampleOption {
         context?: string;
       }
   )[];
+  enableFixer?: boolean;
   exemptedBy?: string[];
   exemptNoArguments?: boolean;
 }

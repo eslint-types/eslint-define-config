@@ -5,10 +5,6 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface NoMultiSpacesOption {
   exceptions?: {
-    /**
-     * This interface was referenced by `undefined`'s JSON-Schema definition
-     * via the `patternProperty` "^([A-Z][a-z]*)+$".
-     */
     [k: string]: boolean;
   };
   ignoreEOLComments?: boolean;
