@@ -6,7 +6,7 @@ import type { NodeExtensions } from './eslint-plugin-node';
 import type { PrettierExtensions } from './eslint-plugin-prettier';
 import type { UnicornExtensions } from './eslint-plugin-unicorn';
 import type { VueExtensions } from './eslint-plugin-vue';
-import type { VuePugSfcExtensions } from './eslint-plugin-vue-pug-sfc';
+import type { VuePugExtensions } from './eslint-plugin-vue-pug';
 import type { IntlifyVueI18nExtensions } from './intlify-vue-i18n';
 import type { TypescriptEslintExtensions } from './typescript-eslint';
 
@@ -23,7 +23,7 @@ export type KnownExtensions = LiteralUnion<
   | TypescriptEslintExtensions
   | UnicornExtensions
   | VueExtensions
-  | VuePugSfcExtensions
+  | VuePugExtensions
 >;
 
 /**

@@ -242,4 +242,10 @@ export interface ParserOptions extends Partial<Record<string, unknown>> {
      */
     interpolationAsNonHTML?: boolean;
   };
+  /**
+   * @see [templateTokenizer](https://github.com/rashfael/eslint-plugin-vue-pug#usage)
+   */
+  templateTokenizer?: {
+    pug?: LiteralUnion<'vue-eslint-parser-template-tokenizer-pug'>;
+  };
 }

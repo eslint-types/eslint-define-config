@@ -8,7 +8,7 @@ import type { TypeScriptRules } from './typescript-eslint';
 import type { UnicornRules } from './unicorn';
 import type { VueRules } from './vue';
 import type { VueI18nRules } from './vue-i18n';
-import type { VuePugSfcRules } from './vue-pug-sfc';
+import type { VuePugRules } from './vue-pug';
 
 /**
  * Rules.
@@ -25,6 +25,6 @@ export type Rules = Partial<
     UnicornRules &
     VueRules &
     VueI18nRules &
-    VuePugSfcRules &
+    VuePugRules &
     Record<string, RuleConfig>
 >;

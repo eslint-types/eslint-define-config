@@ -40,5 +40,5 @@ export interface ComponentNameInTemplateCasingRule {
    *
    * @see [component-name-in-template-casing](https://eslint.vuejs.org/rules/component-name-in-template-casing.html)
    */
-  'vue-pug-sfc/component-name-in-template-casing': ComponentNameInTemplateCasingRuleConfig;
+  'vue-pug/component-name-in-template-casing': ComponentNameInTemplateCasingRuleConfig;
 }

@@ -18,7 +18,7 @@ import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 // @ts-expect-error
 import eslintPluginVue from 'eslint-plugin-vue';
 // @ts-expect-error
-import eslintPluginVuePugSfc from 'eslint-plugin-vue-pug-sfc';
+import eslintPluginVuePug from 'eslint-plugin-vue-pug';
 import * as fs from 'fs';
 import type { JSONSchema4 } from 'json-schema';
 import { compile } from 'json-schema-to-typescript';
@@ -80,9 +80,9 @@ const generationMap: Record<string, Plugin> = {
     prefix: '@intlify/vue-i18n',
     rules: (eslintPluginVueI18n as Plugin).rules,
   },
-  'vue-pug-sfc': {
-    name: 'VuePugSfc',
-    rules: (eslintPluginVuePugSfc as Plugin).rules,
+  'vue-pug': {
+    name: 'VuePug',
+    rules: (eslintPluginVuePug as Plugin).rules,
   },
 };
 

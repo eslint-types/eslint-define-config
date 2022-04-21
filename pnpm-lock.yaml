@@ -19,6 +19,7 @@ specifiers:
   eslint-plugin-spellcheck: ~0.0.19
   eslint-plugin-unicorn: ~42.0.0
   eslint-plugin-vue: ~8.6.0
+  eslint-plugin-vue-pug: ~0.4.0
   esno: ~0.14.1
   json-schema-to-typescript: ~10.1.5
   prettier: 2.6.2
@@ -45,6 +46,7 @@ devDependencies:
   eslint-plugin-spellcheck: 0.0.19_eslint@8.13.0
   eslint-plugin-unicorn: 42.0.0_eslint@8.13.0
   eslint-plugin-vue: 8.6.0_eslint@8.13.0
+  eslint-plugin-vue-pug: 0.4.0_eslint-plugin-vue@8.6.0
   esno: 0.14.1
   json-schema-to-typescript: 10.1.5
   prettier: 2.6.2
@@ -419,6 +421,12 @@ packages:
       acorn: 8.7.0
     dev: true
 
+  /acorn/7.4.1:
+    resolution: {integrity: sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+    dev: true
+
   /acorn/8.7.0:
     resolution: {integrity: sha512-V/LGr1APy+PXIwKebEWrkZPwoeoF+w1jiOBUmuxuiUIaOHtob8Qc9BTrYo7VuI5fR8tqsy+buA2WFooR5olqvQ==}
     engines: {node: '>=0.4.0'}
@@ -589,6 +597,12 @@ packages:
       sentence-case: 3.0.4
       snake-case: 3.0.4
       tslib: 2.3.1
+    dev: true
+
+  /character-parser/2.2.0:
+    resolution: {integrity: sha1-x84o821LzZdE5f/CxfzeHHMmH8A=}
+    dependencies:
+      is-regex: 1.1.4
     dev: true
 
   /ci-info/3.3.0:
@@ -1205,6 +1219,17 @@ packages:
       strip-indent: 3.0.0
     dev: true
 
+  /eslint-plugin-vue-pug/0.4.0_eslint-plugin-vue@8.6.0:
+    resolution: {integrity: sha512-8SG8Tq0kp62yLTYlqYSJlGdbEpbG3jJPjmC9MrIkHNZEfdh9Dai/tacLDnZP/Woi73cjq5oBm1xutw+QYMPqWQ==}
+    peerDependencies:
+      eslint-plugin-vue: ^8.5.0
+    dependencies:
+      eslint-plugin-vue: 8.6.0_eslint@8.13.0
+      vue-eslint-parser-template-tokenizer-pug: 0.4.1
+    transitivePeerDependencies:
+      - vue-eslint-parser
+    dev: true
+
   /eslint-plugin-vue/8.6.0_eslint@8.13.0:
     resolution: {integrity: sha512-abXiF2J18n/7ZPy9foSlJyouKf54IqpKlNvNmzhM93N0zs3QUxZG/oBd3tVPOJTKg7SlhBUtPxugpqzNbgGpQQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
@@ -1684,6 +1709,13 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       has-tostringtag: 1.0.0
+    dev: true
+
+  /is-expression/4.0.0:
+    resolution: {integrity: sha512-zMIXX63sxzG3XrkHkrAPvm/OVZVSCPNkwMHU8oTX7/U3AL78I0QXCEICXUM13BIa8TYGZ68PiTKfQz3yaTNr4A==}
+    dependencies:
+      acorn: 7.4.1
+      object-assign: 4.1.1
     dev: true
 
   /is-extglob/2.1.1:
@@ -2190,6 +2222,18 @@ packages:
     hasBin: true
     dev: true
 
+  /pug-error/2.0.0:
+    resolution: {integrity: sha512-sjiUsi9M4RAGHktC1drQfCr5C5eriu24Lfbt4s+7SykztEOwVZtbFk1RRq0tzLxcMxMYTBR+zMQaG07J/btayQ==}
+    dev: true
+
+  /pug-lexer/5.0.1:
+    resolution: {integrity: sha512-0I6C62+keXlZPZkOJeVam9aBLVP2EnbeDw3An+k0/QlqdwH6rv8284nko14Na7c0TtqtogfWXcRoFE4O4Ff20w==}
+    dependencies:
+      character-parser: 2.2.0
+      is-expression: 4.0.0
+      pug-error: 2.0.0
+    dev: true
+
   /punycode/2.1.1:
     resolution: {integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==}
     engines: {node: '>=6'}
@@ -2542,6 +2586,14 @@ packages:
     dependencies:
       spdx-correct: 3.1.1
       spdx-expression-parse: 3.0.1
+    dev: true
+
+  /vue-eslint-parser-template-tokenizer-pug/0.4.1:
+    resolution: {integrity: sha512-LN/FrJA81NQ7OC7RYgwOD3+AJ+25VryvvSafkKAPLESnbc1LN7xClaJLSPdms0FpbaG74fCL+I6eQhHhh/p9yw==}
+    peerDependencies:
+      vue-eslint-parser: '>=9.0.0-alpha.0'
+    dependencies:
+      pug-lexer: 5.0.1
     dev: true
 
   /vue-eslint-parser/8.3.0_eslint@8.13.0:
