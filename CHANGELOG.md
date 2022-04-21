@@ -1,6 +1,15 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.3.0...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.4.0...main)
+
+# 1.4.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.3.0...1.4.0)
+
+- Generate rules for: [vue-pug]
+- Removed rules for: [vue-pug-sfc]
+- Update `ParserOptions`
+- Update rules for: [eslint, import, jsdoc, typescript-eslint, unicorn, vue]
 
 # 1.3.0
 
