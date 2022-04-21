@@ -7,6 +7,7 @@ export interface NoShadowOption {
   builtinGlobals?: boolean;
   hoist?: 'all' | 'functions' | 'never';
   allow?: string[];
+  ignoreOnInitialization?: boolean;
   ignoreTypeValueShadow?: boolean;
   ignoreFunctionTypeParameterNameValueShadow?: boolean;
 }
