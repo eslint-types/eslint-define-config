@@ -103,6 +103,7 @@ import type { NoRestrictedCallAfterAwaitRule } from './no-restricted-call-after-
 import type { NoRestrictedClassRule } from './no-restricted-class';
 import type { NoRestrictedComponentOptionsRule } from './no-restricted-component-options';
 import type { NoRestrictedCustomEventRule } from './no-restricted-custom-event';
+import type { NoRestrictedHtmlElementsRule } from './no-restricted-html-elements';
 import type { NoRestrictedPropsRule } from './no-restricted-props';
 import type { NoRestrictedStaticAttributeRule } from './no-restricted-static-attribute';
 import type { NoRestrictedSyntaxRule } from './no-restricted-syntax';
@@ -148,6 +149,7 @@ import type { OperatorLinebreakRule } from './operator-linebreak';
 import type { OrderInComponentsRule } from './order-in-components';
 import type { PaddingLineBetweenBlocksRule } from './padding-line-between-blocks';
 import type { PreferImportFromVueRule } from './prefer-import-from-vue';
+import type { PreferPropTypeBooleanFirstRule } from './prefer-prop-type-boolean-first';
 import type { PreferSeparateStaticClassRule } from './prefer-separate-static-class';
 import type { PreferTemplateRule } from './prefer-template';
 import type { PreferTrueAttributeShorthandRule } from './prefer-true-attribute-shorthand';
@@ -316,6 +318,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoRestrictedClassRule &
   NoRestrictedComponentOptionsRule &
   NoRestrictedCustomEventRule &
+  NoRestrictedHtmlElementsRule &
   NoRestrictedPropsRule &
   NoRestrictedStaticAttributeRule &
   NoRestrictedSyntaxRule &
@@ -361,6 +364,7 @@ export type VueRules = ArrayBracketNewlineRule &
   OrderInComponentsRule &
   PaddingLineBetweenBlocksRule &
   PreferImportFromVueRule &
+  PreferPropTypeBooleanFirstRule &
   PreferSeparateStaticClassRule &
   PreferTemplateRule &
   PreferTrueAttributeShorthandRule &
