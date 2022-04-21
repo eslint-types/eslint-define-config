@@ -21,6 +21,7 @@ export type EcmaVersion =
   | 10
   | 11
   | 12
+  | 13
   | 2015
   | 2016
   | 2017
@@ -28,6 +29,7 @@ export type EcmaVersion =
   | 2019
   | 2020
   | 2021
+  | 2022
   | 'latest';
 
 /**
@@ -135,13 +137,13 @@ export type Parser = LiteralUnion<
  */
 export interface ParserOptions extends Partial<Record<string, unknown>> {
   /**
-   * Accepts any valid ECMAScript version number or 'latest':
+   * Accepts any valid ECMAScript version number or `'latest'`:
    *
-   * - A version: es3, es5, es6, es7, es8, es9, es10, es11, es12, es13, ...
-   * - A year: es2015, es2016, es2017, es2018, es2019, es2020, es2021, es2022, ...
-   * - 'latest'
+   * - A version: es3, es5, es6, es7, es8, es9, es10, es11, es12, es13, ..., or
+   * - A year: es2015, es2016, es2017, es2018, es2019, es2020, es2021, es2022, ..., or
+   * - `'latest'`
    *
-   * When it's a version or a year, the value must be a number - so do not include the es prefix.
+   * When it's a version or a year, the value must be a number - so do not include the `es` prefix.
    *
    * Specifies the version of ECMAScript syntax you want to use. This is used by the parser to determine how to perform scope analysis, and it affects the default
    *
