@@ -37,7 +37,7 @@ export type PreventAbbreviationsOptions = PreventAbbreviationsOption;
 /**
  * Prevent abbreviations.
  *
- * @see [prevent-abbreviations](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/rules/prevent-abbreviations.md)
+ * @see [prevent-abbreviations](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v42.0.0/docs/rules/prevent-abbreviations.md)
  */
 export type PreventAbbreviationsRuleConfig =
   RuleConfig<PreventAbbreviationsOptions>;
@@ -45,13 +45,13 @@ export type PreventAbbreviationsRuleConfig =
 /**
  * Prevent abbreviations.
  *
- * @see [prevent-abbreviations](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/rules/prevent-abbreviations.md)
+ * @see [prevent-abbreviations](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v42.0.0/docs/rules/prevent-abbreviations.md)
  */
 export interface PreventAbbreviationsRule {
   /**
    * Prevent abbreviations.
    *
-   * @see [prevent-abbreviations](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/rules/prevent-abbreviations.md)
+   * @see [prevent-abbreviations](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v42.0.0/docs/rules/prevent-abbreviations.md)
    */
   'unicorn/prevent-abbreviations': PreventAbbreviationsRuleConfig;
 }

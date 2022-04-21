@@ -41,12 +41,14 @@ import type { NoStaticOnlyClassRule } from './no-static-only-class';
 import type { NoThenableRule } from './no-thenable';
 import type { NoThisAssignmentRule } from './no-this-assignment';
 import type { NoUnreadableArrayDestructuringRule } from './no-unreadable-array-destructuring';
+import type { NoUnreadableIifeRule } from './no-unreadable-iife';
 import type { NoUnsafeRegexRule } from './no-unsafe-regex';
 import type { NoUnusedPropertiesRule } from './no-unused-properties';
 import type { NoUselessFallbackInSpreadRule } from './no-useless-fallback-in-spread';
 import type { NoUselessLengthCheckRule } from './no-useless-length-check';
 import type { NoUselessPromiseResolveRejectRule } from './no-useless-promise-resolve-reject';
 import type { NoUselessSpreadRule } from './no-useless-spread';
+import type { NoUselessSwitchCaseRule } from './no-useless-switch-case';
 import type { NoUselessUndefinedRule } from './no-useless-undefined';
 import type { NoZeroFractionsRule } from './no-zero-fractions';
 import type { NumberLiteralCaseRule } from './number-literal-case';
@@ -75,7 +77,9 @@ import type { PreferJsonParseBufferRule } from './prefer-json-parse-buffer';
 import type { PreferKeyboardEventKeyRule } from './prefer-keyboard-event-key';
 import type { PreferMathTruncRule } from './prefer-math-trunc';
 import type { PreferModernDomApisRule } from './prefer-modern-dom-apis';
+import type { PreferModernMathApisRule } from './prefer-modern-math-apis';
 import type { PreferModuleRule } from './prefer-module';
+import type { PreferNativeCoercionFunctionsRule } from './prefer-native-coercion-functions';
 import type { PreferNegativeIndexRule } from './prefer-negative-index';
 import type { PreferNodeAppendRule } from './prefer-node-append';
 import type { PreferNodeProtocolRule } from './prefer-node-protocol';
@@ -156,12 +160,14 @@ export type UnicornRules = BetterRegexRule &
   NoThenableRule &
   NoThisAssignmentRule &
   NoUnreadableArrayDestructuringRule &
+  NoUnreadableIifeRule &
   NoUnsafeRegexRule &
   NoUnusedPropertiesRule &
   NoUselessFallbackInSpreadRule &
   NoUselessLengthCheckRule &
   NoUselessPromiseResolveRejectRule &
   NoUselessSpreadRule &
+  NoUselessSwitchCaseRule &
   NoUselessUndefinedRule &
   NoZeroFractionsRule &
   NumberLiteralCaseRule &
@@ -186,7 +192,9 @@ export type UnicornRules = BetterRegexRule &
   PreferKeyboardEventKeyRule &
   PreferMathTruncRule &
   PreferModernDomApisRule &
+  PreferModernMathApisRule &
   PreferModuleRule &
+  PreferNativeCoercionFunctionsRule &
   PreferNegativeIndexRule &
   PreferNodeProtocolRule &
   PreferNumberPropertiesRule &

@@ -15,20 +15,20 @@ export type NoArrayPushPushOptions = [NoArrayPushPushOption?];
 /**
  * Enforce combining multiple `Array#push()` into one call.
  *
- * @see [no-array-push-push](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/rules/no-array-push-push.md)
+ * @see [no-array-push-push](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v42.0.0/docs/rules/no-array-push-push.md)
  */
 export type NoArrayPushPushRuleConfig = RuleConfig<NoArrayPushPushOptions>;
 
 /**
  * Enforce combining multiple `Array#push()` into one call.
  *
- * @see [no-array-push-push](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/rules/no-array-push-push.md)
+ * @see [no-array-push-push](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v42.0.0/docs/rules/no-array-push-push.md)
  */
 export interface NoArrayPushPushRule {
   /**
    * Enforce combining multiple `Array#push()` into one call.
    *
-   * @see [no-array-push-push](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v41.0.0/docs/rules/no-array-push-push.md)
+   * @see [no-array-push-push](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v42.0.0/docs/rules/no-array-push-push.md)
    */
   'unicorn/no-array-push-push': NoArrayPushPushRuleConfig;
 }
