@@ -89,6 +89,7 @@ import type { NoCondAssignRule } from './no-cond-assign';
 import type { NoConfusingArrowRule } from './no-confusing-arrow';
 import type { NoConsoleRule } from './no-console';
 import type { NoConstAssignRule } from './no-const-assign';
+import type { NoConstantBinaryExpressionRule } from './no-constant-binary-expression';
 import type { NoConstantConditionRule } from './no-constant-condition';
 import type { NoConstructorReturnRule } from './no-constructor-return';
 import type { NoContinueRule } from './no-continue';
@@ -377,6 +378,7 @@ export type EslintRules = AccessorPairsRule &
   NoConfusingArrowRule &
   NoConsoleRule &
   NoConstAssignRule &
+  NoConstantBinaryExpressionRule &
   NoConstantConditionRule &
   NoConstructorReturnRule &
   NoContinueRule &

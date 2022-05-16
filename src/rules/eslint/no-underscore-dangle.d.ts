@@ -10,6 +10,7 @@ export interface NoUnderscoreDangleOption {
   allowAfterThisConstructor?: boolean;
   enforceInMethodNames?: boolean;
   allowFunctionParams?: boolean;
+  enforceInClassFields?: boolean;
 }
 
 /**
