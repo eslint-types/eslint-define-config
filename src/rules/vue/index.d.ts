@@ -18,6 +18,7 @@ import type { ComponentNameInTemplateCasingRule } from './component-name-in-temp
 import type { ComponentOptionsNameCasingRule } from './component-options-name-casing';
 import type { ComponentTagsOrderRule } from './component-tags-order';
 import type { CustomEventNameCasingRule } from './custom-event-name-casing';
+import type { DefineMacrosOrderRule } from './define-macros-order';
 import type { DotLocationRule } from './dot-location';
 import type { DotNotationRule } from './dot-notation';
 import type { EqeqeqRule } from './eqeqeq';
@@ -38,6 +39,7 @@ import type { JsxUsesVarsRule } from './jsx-uses-vars';
 import type { KeySpacingRule } from './key-spacing';
 import type { KeywordSpacingRule } from './keyword-spacing';
 import type { MatchComponentFileNameRule } from './match-component-file-name';
+import type { MatchComponentImportNameRule } from './match-component-import-name';
 import type { MaxAttributesPerLineRule } from './max-attributes-per-line';
 import type { MaxLenRule } from './max-len';
 import type { MultiWordComponentNamesRule } from './multi-word-component-names';
@@ -233,6 +235,7 @@ export type VueRules = ArrayBracketNewlineRule &
   ComponentOptionsNameCasingRule &
   ComponentTagsOrderRule &
   CustomEventNameCasingRule &
+  DefineMacrosOrderRule &
   DotLocationRule &
   DotNotationRule &
   EqeqeqRule &
@@ -253,6 +256,7 @@ export type VueRules = ArrayBracketNewlineRule &
   KeySpacingRule &
   KeywordSpacingRule &
   MatchComponentFileNameRule &
+  MatchComponentImportNameRule &
   MaxAttributesPerLineRule &
   MaxLenRule &
   MultiWordComponentNamesRule &
