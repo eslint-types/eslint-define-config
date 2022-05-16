@@ -32,6 +32,7 @@ import type { NoBaseToStringRule } from './no-base-to-string';
 import type { NoConfusingNonNullAssertionRule } from './no-confusing-non-null-assertion';
 import type { NoConfusingVoidExpressionRule } from './no-confusing-void-expression';
 import type { NoDupeClassMembersRule } from './no-dupe-class-members';
+import type { NoDuplicateEnumValuesRule } from './no-duplicate-enum-values';
 import type { NoDuplicateImportsRule } from './no-duplicate-imports';
 import type { NoDynamicDeleteRule } from './no-dynamic-delete';
 import type { NoEmptyFunctionRule } from './no-empty-function';
@@ -87,6 +88,7 @@ import type { NoVarRequiresRule } from './no-var-requires';
 import type { NonNullableTypeAssertionStyleRule } from './non-nullable-type-assertion-style';
 import type { ObjectCurlySpacingRule } from './object-curly-spacing';
 import type { PaddingLineBetweenStatementsRule } from './padding-line-between-statements';
+import type { ParameterPropertiesRule } from './parameter-properties';
 import type { PreferAsConstRule } from './prefer-as-const';
 import type { PreferEnumInitializersRule } from './prefer-enum-initializers';
 import type { PreferForOfRule } from './prefer-for-of';
@@ -160,6 +162,7 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   NoConfusingNonNullAssertionRule &
   NoConfusingVoidExpressionRule &
   NoDupeClassMembersRule &
+  NoDuplicateEnumValuesRule &
   NoDuplicateImportsRule &
   NoDynamicDeleteRule &
   NoEmptyFunctionRule &
@@ -215,6 +218,7 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   NonNullableTypeAssertionStyleRule &
   ObjectCurlySpacingRule &
   PaddingLineBetweenStatementsRule &
+  ParameterPropertiesRule &
   PreferAsConstRule &
   PreferEnumInitializersRule &
   PreferForOfRule &

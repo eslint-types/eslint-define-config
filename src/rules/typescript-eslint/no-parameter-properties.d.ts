@@ -34,6 +34,8 @@ export type NoParameterPropertiesOptions = [NoParameterPropertiesOption?];
 /**
  * Disallow the use of parameter properties in class constructors.
  *
+ * @deprecated
+ *
  * @see [no-parameter-properties](https://typescript-eslint.io/rules/no-parameter-properties)
  */
 export type NoParameterPropertiesRuleConfig =
@@ -42,11 +44,15 @@ export type NoParameterPropertiesRuleConfig =
 /**
  * Disallow the use of parameter properties in class constructors.
  *
+ * @deprecated
+ *
  * @see [no-parameter-properties](https://typescript-eslint.io/rules/no-parameter-properties)
  */
 export interface NoParameterPropertiesRule {
   /**
    * Disallow the use of parameter properties in class constructors.
+   *
+   * @deprecated
    *
    * @see [no-parameter-properties](https://typescript-eslint.io/rules/no-parameter-properties)
    */
