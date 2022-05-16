@@ -1,6 +1,12 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.4.0...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.4.1...main)
+
+# 1.4.1
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.4.0...1.4.1)
+
+- Update rules for: [eslint, typescript-eslint, vue]
 
 # 1.4.0
 
