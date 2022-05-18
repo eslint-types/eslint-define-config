@@ -68,7 +68,7 @@
     "upper-case-first": "~2.0.2",
     "vue-eslint-parser": "~9.0.1"
   },
-  "packageManager": "pnpm@7.1.0",
+  "packageManager": "pnpm@7.1.1",
   "engines": {
     "node": ">= 14.6.0",
     "npm": ">= 6.0.0",
