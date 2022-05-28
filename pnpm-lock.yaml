@@ -5,7 +5,7 @@ specifiers:
   '@types/eslint': ~8.4.2
   '@types/json-schema': ~7.0.11
   '@types/node': ~17.0.33
-  '@types/prettier': ~2.6.1
+  '@types/prettier': ~2.6.3
   '@typescript-eslint/eslint-plugin': ~5.23.0
   '@typescript-eslint/parser': ~5.23.0
   change-case: ~4.1.2
@@ -35,7 +35,7 @@ devDependencies:
   '@types/eslint': 8.4.2
   '@types/json-schema': 7.0.11
   '@types/node': 17.0.33
-  '@types/prettier': 2.6.1
+  '@types/prettier': 2.6.3
   '@typescript-eslint/eslint-plugin': 5.23.0_c63nfttrfhylg3zmgcxfslaw44
   '@typescript-eslint/parser': 5.23.0_hcfsmds2fshutdssjqluwm76uu
   change-case: 4.1.2
@@ -289,8 +289,8 @@ packages:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
     dev: true
 
-  /@types/prettier/2.6.1:
-    resolution: {integrity: sha512-XFjFHmaLVifrAKaZ+EKghFHtHSUonyw8P2Qmy2/+osBnrKbH9UYtlK10zg8/kCt47MFilll/DEDKy3DHfJ0URw==}
+  /@types/prettier/2.6.3:
+    resolution: {integrity: sha512-ymZk3LEC/fsut+/Q5qejp6R9O1rMxz3XaRHDV6kX8MrGAhOSPqVARbDi+EZvInBpw+BnCX3TD240byVkOfQsHg==}
     dev: true
 
   /@typescript-eslint/eslint-plugin/5.23.0_c63nfttrfhylg3zmgcxfslaw44:
@@ -1903,7 +1903,7 @@ packages:
     dependencies:
       '@types/json-schema': 7.0.11
       '@types/lodash': 4.14.182
-      '@types/prettier': 2.6.1
+      '@types/prettier': 2.6.3
       cli-color: 2.0.2
       get-stdin: 8.0.0
       glob: 7.2.3
