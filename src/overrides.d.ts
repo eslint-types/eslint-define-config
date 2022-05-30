@@ -9,7 +9,7 @@ import type { Settings } from './settings';
  *
  */
 export interface Override {
-  files: string[];
+  files: string[] | string;
   /**
    * An environment provides predefined global variables.
    *
