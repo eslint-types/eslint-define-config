@@ -22,7 +22,6 @@ import type { DefineMacrosOrderRule } from './define-macros-order';
 import type { DotLocationRule } from './dot-location';
 import type { DotNotationRule } from './dot-notation';
 import type { EqeqeqRule } from './eqeqeq';
-import type { ExperimentalScriptSetupVarsRule } from './experimental-script-setup-vars';
 import type { FirstAttributeLinebreakRule } from './first-attribute-linebreak';
 import type { FuncCallSpacingRule } from './func-call-spacing';
 import type { HtmlButtonHasTypeRule } from './html-button-has-type';
@@ -45,7 +44,6 @@ import type { MaxLenRule } from './max-len';
 import type { MultiWordComponentNamesRule } from './multi-word-component-names';
 import type { MultilineHtmlElementContentNewlineRule } from './multiline-html-element-content-newline';
 import type { MustacheInterpolationSpacingRule } from './mustache-interpolation-spacing';
-import type { NamePropertyCasingRule } from './name-property-casing';
 import type { NewLineBetweenMultiLinePropertyRule } from './new-line-between-multi-line-property';
 import type { NextTickStyleRule } from './next-tick-style';
 import type { NoArrowFunctionsInWatchRule } from './no-arrow-functions-in-watch';
@@ -53,7 +51,6 @@ import type { NoAsyncInComputedPropertiesRule } from './no-async-in-computed-pro
 import type { NoBooleanDefaultRule } from './no-boolean-default';
 import type { NoChildContentRule } from './no-child-content';
 import type { NoComputedPropertiesInDataRule } from './no-computed-properties-in-data';
-import type { NoConfusingVForVIfRule } from './no-confusing-v-for-v-if';
 import type { NoConstantConditionRule } from './no-constant-condition';
 import type { NoCustomModifiersOnVModelRule } from './no-custom-modifiers-on-v-model';
 import type { NoDeprecatedDataObjectDeclarationRule } from './no-deprecated-data-object-declaration';
@@ -123,7 +120,6 @@ import type { NoTextareaMustacheRule } from './no-textarea-mustache';
 import type { NoThisInBeforeRouteEnterRule } from './no-this-in-before-route-enter';
 import type { NoUndefComponentsRule } from './no-undef-components';
 import type { NoUndefPropertiesRule } from './no-undef-properties';
-import type { NoUnregisteredComponentsRule } from './no-unregistered-components';
 import type { NoUnsupportedFeaturesRule } from './no-unsupported-features';
 import type { NoUnusedComponentsRule } from './no-unused-components';
 import type { NoUnusedPropertiesRule } from './no-unused-properties';
@@ -190,8 +186,10 @@ import type { VOnEventHyphenationRule } from './v-on-event-hyphenation';
 import type { VOnFunctionCallRule } from './v-on-function-call';
 import type { VOnStyleRule } from './v-on-style';
 import type { VSlotStyleRule } from './v-slot-style';
+import type { ValidAttributeNameRule } from './valid-attribute-name';
 import type { ValidDefineEmitsRule } from './valid-define-emits';
 import type { ValidDefinePropsRule } from './valid-define-props';
+import type { ValidModelDefinitionRule } from './valid-model-definition';
 import type { ValidNextTickRule } from './valid-next-tick';
 import type { ValidTemplateRootRule } from './valid-template-root';
 import type { ValidVBindRule } from './valid-v-bind';
@@ -239,7 +237,6 @@ export type VueRules = ArrayBracketNewlineRule &
   DotLocationRule &
   DotNotationRule &
   EqeqeqRule &
-  ExperimentalScriptSetupVarsRule &
   FirstAttributeLinebreakRule &
   FuncCallSpacingRule &
   HtmlButtonHasTypeRule &
@@ -262,7 +259,6 @@ export type VueRules = ArrayBracketNewlineRule &
   MultiWordComponentNamesRule &
   MultilineHtmlElementContentNewlineRule &
   MustacheInterpolationSpacingRule &
-  NamePropertyCasingRule &
   NewLineBetweenMultiLinePropertyRule &
   NextTickStyleRule &
   NoArrowFunctionsInWatchRule &
@@ -270,7 +266,6 @@ export type VueRules = ArrayBracketNewlineRule &
   NoBooleanDefaultRule &
   NoChildContentRule &
   NoComputedPropertiesInDataRule &
-  NoConfusingVForVIfRule &
   NoConstantConditionRule &
   NoCustomModifiersOnVModelRule &
   NoDeprecatedDataObjectDeclarationRule &
@@ -340,7 +335,6 @@ export type VueRules = ArrayBracketNewlineRule &
   NoThisInBeforeRouteEnterRule &
   NoUndefComponentsRule &
   NoUndefPropertiesRule &
-  NoUnregisteredComponentsRule &
   NoUnsupportedFeaturesRule &
   NoUnusedComponentsRule &
   NoUnusedPropertiesRule &
@@ -407,8 +401,10 @@ export type VueRules = ArrayBracketNewlineRule &
   VOnFunctionCallRule &
   VOnStyleRule &
   VSlotStyleRule &
+  ValidAttributeNameRule &
   ValidDefineEmitsRule &
   ValidDefinePropsRule &
+  ValidModelDefinitionRule &
   ValidNextTickRule &
   ValidTemplateRootRule &
   ValidVBindSyncRule &
