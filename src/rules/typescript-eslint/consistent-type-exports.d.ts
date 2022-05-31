@@ -13,7 +13,7 @@ export interface ConsistentTypeExportsOption {
 export type ConsistentTypeExportsOptions = [ConsistentTypeExportsOption?];
 
 /**
- * Enforces consistent usage of type exports.
+ * Enforce consistent usage of type exports.
  *
  * @see [consistent-type-exports](https://typescript-eslint.io/rules/consistent-type-exports)
  */
@@ -21,13 +21,13 @@ export type ConsistentTypeExportsRuleConfig =
   RuleConfig<ConsistentTypeExportsOptions>;
 
 /**
- * Enforces consistent usage of type exports.
+ * Enforce consistent usage of type exports.
  *
  * @see [consistent-type-exports](https://typescript-eslint.io/rules/consistent-type-exports)
  */
 export interface ConsistentTypeExportsRule {
   /**
-   * Enforces consistent usage of type exports.
+   * Enforce consistent usage of type exports.
    *
    * @see [consistent-type-exports](https://typescript-eslint.io/rules/consistent-type-exports)
    */

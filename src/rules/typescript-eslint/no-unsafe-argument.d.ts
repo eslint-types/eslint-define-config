@@ -1,20 +1,20 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- * Disallows calling a function with an any type value.
+ * Disallow calling a function with a value with type `any`.
  *
  * @see [no-unsafe-argument](https://typescript-eslint.io/rules/no-unsafe-argument)
  */
 export type NoUnsafeArgumentRuleConfig = RuleConfig<[]>;
 
 /**
- * Disallows calling a function with an any type value.
+ * Disallow calling a function with a value with type `any`.
  *
  * @see [no-unsafe-argument](https://typescript-eslint.io/rules/no-unsafe-argument)
  */
 export interface NoUnsafeArgumentRule {
   /**
-   * Disallows calling a function with an any type value.
+   * Disallow calling a function with a value with type `any`.
    *
    * @see [no-unsafe-argument](https://typescript-eslint.io/rules/no-unsafe-argument)
    */

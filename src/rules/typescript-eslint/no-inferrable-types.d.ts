@@ -14,20 +14,20 @@ export interface NoInferrableTypesOption {
 export type NoInferrableTypesOptions = [NoInferrableTypesOption?];
 
 /**
- * Disallows explicit type declarations for variables or parameters initialized to a number, string, or boolean.
+ * Disallow explicit type declarations for variables or parameters initialized to a number, string, or boolean.
  *
  * @see [no-inferrable-types](https://typescript-eslint.io/rules/no-inferrable-types)
  */
 export type NoInferrableTypesRuleConfig = RuleConfig<NoInferrableTypesOptions>;
 
 /**
- * Disallows explicit type declarations for variables or parameters initialized to a number, string, or boolean.
+ * Disallow explicit type declarations for variables or parameters initialized to a number, string, or boolean.
  *
  * @see [no-inferrable-types](https://typescript-eslint.io/rules/no-inferrable-types)
  */
 export interface NoInferrableTypesRule {
   /**
-   * Disallows explicit type declarations for variables or parameters initialized to a number, string, or boolean.
+   * Disallow explicit type declarations for variables or parameters initialized to a number, string, or boolean.
    *
    * @see [no-inferrable-types](https://typescript-eslint.io/rules/no-inferrable-types)
    */

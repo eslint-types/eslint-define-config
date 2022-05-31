@@ -14,20 +14,20 @@ export interface NoExplicitAnyOption {
 export type NoExplicitAnyOptions = [NoExplicitAnyOption?];
 
 /**
- * Disallow usage of the `any` type.
+ * Disallow the `any` type.
  *
  * @see [no-explicit-any](https://typescript-eslint.io/rules/no-explicit-any)
  */
 export type NoExplicitAnyRuleConfig = RuleConfig<NoExplicitAnyOptions>;
 
 /**
- * Disallow usage of the `any` type.
+ * Disallow the `any` type.
  *
  * @see [no-explicit-any](https://typescript-eslint.io/rules/no-explicit-any)
  */
 export interface NoExplicitAnyRule {
   /**
-   * Disallow usage of the `any` type.
+   * Disallow the `any` type.
    *
    * @see [no-explicit-any](https://typescript-eslint.io/rules/no-explicit-any)
    */

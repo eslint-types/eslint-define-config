@@ -40,20 +40,20 @@ export interface NoTypeAliasOption {
 export type NoTypeAliasOptions = [NoTypeAliasOption?];
 
 /**
- * Disallow the use of type aliases.
+ * Disallow type aliases.
  *
  * @see [no-type-alias](https://typescript-eslint.io/rules/no-type-alias)
  */
 export type NoTypeAliasRuleConfig = RuleConfig<NoTypeAliasOptions>;
 
 /**
- * Disallow the use of type aliases.
+ * Disallow type aliases.
  *
  * @see [no-type-alias](https://typescript-eslint.io/rules/no-type-alias)
  */
 export interface NoTypeAliasRule {
   /**
-   * Disallow the use of type aliases.
+   * Disallow type aliases.
    *
    * @see [no-type-alias](https://typescript-eslint.io/rules/no-type-alias)
    */

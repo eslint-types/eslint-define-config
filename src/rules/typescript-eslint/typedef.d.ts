@@ -21,20 +21,20 @@ export interface TypedefOption {
 export type TypedefOptions = [TypedefOption?];
 
 /**
- * Requires type annotations to exist.
+ * Require type annotations in certain places.
  *
  * @see [typedef](https://typescript-eslint.io/rules/typedef)
  */
 export type TypedefRuleConfig = RuleConfig<TypedefOptions>;
 
 /**
- * Requires type annotations to exist.
+ * Require type annotations in certain places.
  *
  * @see [typedef](https://typescript-eslint.io/rules/typedef)
  */
 export interface TypedefRule {
   /**
-   * Requires type annotations to exist.
+   * Require type annotations in certain places.
    *
    * @see [typedef](https://typescript-eslint.io/rules/typedef)
    */

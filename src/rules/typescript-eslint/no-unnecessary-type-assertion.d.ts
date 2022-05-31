@@ -16,7 +16,7 @@ export type NoUnnecessaryTypeAssertionOptions = [
 ];
 
 /**
- * Warns if a type assertion does not change the type of an expression.
+ * Disallow type assertions that do not change the type of an expression.
  *
  * @see [no-unnecessary-type-assertion](https://typescript-eslint.io/rules/no-unnecessary-type-assertion)
  */
@@ -24,13 +24,13 @@ export type NoUnnecessaryTypeAssertionRuleConfig =
   RuleConfig<NoUnnecessaryTypeAssertionOptions>;
 
 /**
- * Warns if a type assertion does not change the type of an expression.
+ * Disallow type assertions that do not change the type of an expression.
  *
  * @see [no-unnecessary-type-assertion](https://typescript-eslint.io/rules/no-unnecessary-type-assertion)
  */
 export interface NoUnnecessaryTypeAssertionRule {
   /**
-   * Warns if a type assertion does not change the type of an expression.
+   * Disallow type assertions that do not change the type of an expression.
    *
    * @see [no-unnecessary-type-assertion](https://typescript-eslint.io/rules/no-unnecessary-type-assertion)
    */

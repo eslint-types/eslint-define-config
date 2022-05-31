@@ -33,7 +33,7 @@ export interface ParameterPropertiesOption {
 export type ParameterPropertiesOptions = [ParameterPropertiesOption?];
 
 /**
- * Require or disallow the use of parameter properties in class constructors.
+ * Require or disallow parameter properties in class constructors.
  *
  * @see [parameter-properties](https://typescript-eslint.io/rules/parameter-properties)
  */
@@ -41,13 +41,13 @@ export type ParameterPropertiesRuleConfig =
   RuleConfig<ParameterPropertiesOptions>;
 
 /**
- * Require or disallow the use of parameter properties in class constructors.
+ * Require or disallow parameter properties in class constructors.
  *
  * @see [parameter-properties](https://typescript-eslint.io/rules/parameter-properties)
  */
 export interface ParameterPropertiesRule {
   /**
-   * Require or disallow the use of parameter properties in class constructors.
+   * Require or disallow parameter properties in class constructors.
    *
    * @see [parameter-properties](https://typescript-eslint.io/rules/parameter-properties)
    */

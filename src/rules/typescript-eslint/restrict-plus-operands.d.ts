@@ -14,7 +14,7 @@ export interface RestrictPlusOperandsOption {
 export type RestrictPlusOperandsOptions = [RestrictPlusOperandsOption?];
 
 /**
- * When adding two variables, operands must both be of type number or of type string.
+ * Require both operands of addition to have type `number` or `string`.
  *
  * @see [restrict-plus-operands](https://typescript-eslint.io/rules/restrict-plus-operands)
  */
@@ -22,13 +22,13 @@ export type RestrictPlusOperandsRuleConfig =
   RuleConfig<RestrictPlusOperandsOptions>;
 
 /**
- * When adding two variables, operands must both be of type number or of type string.
+ * Require both operands of addition to have type `number` or `string`.
  *
  * @see [restrict-plus-operands](https://typescript-eslint.io/rules/restrict-plus-operands)
  */
 export interface RestrictPlusOperandsRule {
   /**
-   * When adding two variables, operands must both be of type number or of type string.
+   * Require both operands of addition to have type `number` or `string`.
    *
    * @see [restrict-plus-operands](https://typescript-eslint.io/rules/restrict-plus-operands)
    */

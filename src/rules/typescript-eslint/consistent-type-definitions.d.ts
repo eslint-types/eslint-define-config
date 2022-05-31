@@ -13,7 +13,7 @@ export type ConsistentTypeDefinitionsOptions = [
 ];
 
 /**
- * Consistent with type definition either `interface` or `type`.
+ * Enforce type definitions to consistently use either `interface` or `type`.
  *
  * @see [consistent-type-definitions](https://typescript-eslint.io/rules/consistent-type-definitions)
  */
@@ -21,13 +21,13 @@ export type ConsistentTypeDefinitionsRuleConfig =
   RuleConfig<ConsistentTypeDefinitionsOptions>;
 
 /**
- * Consistent with type definition either `interface` or `type`.
+ * Enforce type definitions to consistently use either `interface` or `type`.
  *
  * @see [consistent-type-definitions](https://typescript-eslint.io/rules/consistent-type-definitions)
  */
 export interface ConsistentTypeDefinitionsRule {
   /**
-   * Consistent with type definition either `interface` or `type`.
+   * Enforce type definitions to consistently use either `interface` or `type`.
    *
    * @see [consistent-type-definitions](https://typescript-eslint.io/rules/consistent-type-definitions)
    */

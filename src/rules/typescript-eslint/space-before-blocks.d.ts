@@ -17,20 +17,20 @@ export type SpaceBeforeBlocksOption =
 export type SpaceBeforeBlocksOptions = [SpaceBeforeBlocksOption?];
 
 /**
- * Enforces consistent spacing before blocks.
+ * Enforce consistent spacing before blocks.
  *
  * @see [space-before-blocks](https://typescript-eslint.io/rules/space-before-blocks)
  */
 export type SpaceBeforeBlocksRuleConfig = RuleConfig<SpaceBeforeBlocksOptions>;
 
 /**
- * Enforces consistent spacing before blocks.
+ * Enforce consistent spacing before blocks.
  *
  * @see [space-before-blocks](https://typescript-eslint.io/rules/space-before-blocks)
  */
 export interface SpaceBeforeBlocksRule {
   /**
-   * Enforces consistent spacing before blocks.
+   * Enforce consistent spacing before blocks.
    *
    * @see [space-before-blocks](https://typescript-eslint.io/rules/space-before-blocks)
    */

@@ -32,20 +32,20 @@ export type ValueWithIgnore =
 export type CommaDangleOptions = CommaDangleOption;
 
 /**
- * Require or disallow trailing comma.
+ * Require or disallow trailing commas.
  *
  * @see [comma-dangle](https://typescript-eslint.io/rules/comma-dangle)
  */
 export type CommaDangleRuleConfig = RuleConfig<CommaDangleOptions>;
 
 /**
- * Require or disallow trailing comma.
+ * Require or disallow trailing commas.
  *
  * @see [comma-dangle](https://typescript-eslint.io/rules/comma-dangle)
  */
 export interface CommaDangleRule {
   /**
-   * Require or disallow trailing comma.
+   * Require or disallow trailing commas.
    *
    * @see [comma-dangle](https://typescript-eslint.io/rules/comma-dangle)
    */

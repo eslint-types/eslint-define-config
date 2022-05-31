@@ -1154,20 +1154,20 @@ export type NamingConventionOption = (
 export type NamingConventionOptions = NamingConventionOption;
 
 /**
- * Enforces naming conventions for everything across a codebase.
+ * Enforce naming conventions for everything across a codebase.
  *
  * @see [naming-convention](https://typescript-eslint.io/rules/naming-convention)
  */
 export type NamingConventionRuleConfig = RuleConfig<NamingConventionOptions>;
 
 /**
- * Enforces naming conventions for everything across a codebase.
+ * Enforce naming conventions for everything across a codebase.
  *
  * @see [naming-convention](https://typescript-eslint.io/rules/naming-convention)
  */
 export interface NamingConventionRule {
   /**
-   * Enforces naming conventions for everything across a codebase.
+   * Enforce naming conventions for everything across a codebase.
    *
    * @see [naming-convention](https://typescript-eslint.io/rules/naming-convention)
    */

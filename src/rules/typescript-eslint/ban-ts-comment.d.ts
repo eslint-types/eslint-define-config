@@ -4,10 +4,34 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface BanTsCommentOption {
-  'ts-expect-error'?: boolean | 'allow-with-description';
-  'ts-ignore'?: boolean | 'allow-with-description';
-  'ts-nocheck'?: boolean | 'allow-with-description';
-  'ts-check'?: boolean | 'allow-with-description';
+  'ts-expect-error'?:
+    | boolean
+    | 'allow-with-description'
+    | {
+        descriptionFormat?: string;
+        [k: string]: any;
+      };
+  'ts-ignore'?:
+    | boolean
+    | 'allow-with-description'
+    | {
+        descriptionFormat?: string;
+        [k: string]: any;
+      };
+  'ts-nocheck'?:
+    | boolean
+    | 'allow-with-description'
+    | {
+        descriptionFormat?: string;
+        [k: string]: any;
+      };
+  'ts-check'?:
+    | boolean
+    | 'allow-with-description'
+    | {
+        descriptionFormat?: string;
+        [k: string]: any;
+      };
   minimumDescriptionLength?: number;
 }
 
@@ -17,20 +41,20 @@ export interface BanTsCommentOption {
 export type BanTsCommentOptions = [BanTsCommentOption?];
 
 /**
- * Bans `@ts-<directive>` comments from being used or requires descriptions after directive.
+ * Disallow `@ts-<directive>` comments or require descriptions after directive.
  *
  * @see [ban-ts-comment](https://typescript-eslint.io/rules/ban-ts-comment)
  */
 export type BanTsCommentRuleConfig = RuleConfig<BanTsCommentOptions>;
 
 /**
- * Bans `@ts-<directive>` comments from being used or requires descriptions after directive.
+ * Disallow `@ts-<directive>` comments or require descriptions after directive.
  *
  * @see [ban-ts-comment](https://typescript-eslint.io/rules/ban-ts-comment)
  */
 export interface BanTsCommentRule {
   /**
-   * Bans `@ts-<directive>` comments from being used or requires descriptions after directive.
+   * Disallow `@ts-<directive>` comments or require descriptions after directive.
    *
    * @see [ban-ts-comment](https://typescript-eslint.io/rules/ban-ts-comment)
    */

@@ -18,7 +18,7 @@ export type ConsistentTypeAssertionsOption =
 export type ConsistentTypeAssertionsOptions = [ConsistentTypeAssertionsOption?];
 
 /**
- * Enforces consistent usage of type assertions.
+ * Enforce consistent usage of type assertions.
  *
  * @see [consistent-type-assertions](https://typescript-eslint.io/rules/consistent-type-assertions)
  */
@@ -26,13 +26,13 @@ export type ConsistentTypeAssertionsRuleConfig =
   RuleConfig<ConsistentTypeAssertionsOptions>;
 
 /**
- * Enforces consistent usage of type assertions.
+ * Enforce consistent usage of type assertions.
  *
  * @see [consistent-type-assertions](https://typescript-eslint.io/rules/consistent-type-assertions)
  */
 export interface ConsistentTypeAssertionsRule {
   /**
-   * Enforces consistent usage of type assertions.
+   * Enforce consistent usage of type assertions.
    *
    * @see [consistent-type-assertions](https://typescript-eslint.io/rules/consistent-type-assertions)
    */

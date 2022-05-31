@@ -14,7 +14,7 @@ export interface NoFloatingPromisesOption {
 export type NoFloatingPromisesOptions = [NoFloatingPromisesOption?];
 
 /**
- * Requires Promise-like statements to be handled appropriately.
+ * Require Promise-like statements to be handled appropriately.
  *
  * @see [no-floating-promises](https://typescript-eslint.io/rules/no-floating-promises)
  */
@@ -22,13 +22,13 @@ export type NoFloatingPromisesRuleConfig =
   RuleConfig<NoFloatingPromisesOptions>;
 
 /**
- * Requires Promise-like statements to be handled appropriately.
+ * Require Promise-like statements to be handled appropriately.
  *
  * @see [no-floating-promises](https://typescript-eslint.io/rules/no-floating-promises)
  */
 export interface NoFloatingPromisesRule {
   /**
-   * Requires Promise-like statements to be handled appropriately.
+   * Require Promise-like statements to be handled appropriately.
    *
    * @see [no-floating-promises](https://typescript-eslint.io/rules/no-floating-promises)
    */

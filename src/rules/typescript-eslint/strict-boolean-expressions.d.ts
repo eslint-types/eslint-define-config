@@ -20,7 +20,7 @@ export interface StrictBooleanExpressionsOption {
 export type StrictBooleanExpressionsOptions = [StrictBooleanExpressionsOption?];
 
 /**
- * Restricts the types allowed in boolean expressions.
+ * Disallow certain types in boolean expressions.
  *
  * @see [strict-boolean-expressions](https://typescript-eslint.io/rules/strict-boolean-expressions)
  */
@@ -28,13 +28,13 @@ export type StrictBooleanExpressionsRuleConfig =
   RuleConfig<StrictBooleanExpressionsOptions>;
 
 /**
- * Restricts the types allowed in boolean expressions.
+ * Disallow certain types in boolean expressions.
  *
  * @see [strict-boolean-expressions](https://typescript-eslint.io/rules/strict-boolean-expressions)
  */
 export interface StrictBooleanExpressionsRule {
   /**
-   * Restricts the types allowed in boolean expressions.
+   * Disallow certain types in boolean expressions.
    *
    * @see [strict-boolean-expressions](https://typescript-eslint.io/rules/strict-boolean-expressions)
    */

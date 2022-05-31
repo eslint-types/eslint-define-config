@@ -14,20 +14,20 @@ export interface CommaSpacingOption {
 export type CommaSpacingOptions = [CommaSpacingOption?];
 
 /**
- * Enforces consistent spacing before and after commas.
+ * Enforce consistent spacing before and after commas.
  *
  * @see [comma-spacing](https://typescript-eslint.io/rules/comma-spacing)
  */
 export type CommaSpacingRuleConfig = RuleConfig<CommaSpacingOptions>;
 
 /**
- * Enforces consistent spacing before and after commas.
+ * Enforce consistent spacing before and after commas.
  *
  * @see [comma-spacing](https://typescript-eslint.io/rules/comma-spacing)
  */
 export interface CommaSpacingRule {
   /**
-   * Enforces consistent spacing before and after commas.
+   * Enforce consistent spacing before and after commas.
    *
    * @see [comma-spacing](https://typescript-eslint.io/rules/comma-spacing)
    */

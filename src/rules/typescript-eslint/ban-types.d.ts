@@ -23,20 +23,20 @@ export interface BanTypesOption {
 export type BanTypesOptions = [BanTypesOption?];
 
 /**
- * Bans specific types from being used.
+ * Disallow certain types.
  *
  * @see [ban-types](https://typescript-eslint.io/rules/ban-types)
  */
 export type BanTypesRuleConfig = RuleConfig<BanTypesOptions>;
 
 /**
- * Bans specific types from being used.
+ * Disallow certain types.
  *
  * @see [ban-types](https://typescript-eslint.io/rules/ban-types)
  */
 export interface BanTypesRule {
   /**
-   * Bans specific types from being used.
+   * Disallow certain types.
    *
    * @see [ban-types](https://typescript-eslint.io/rules/ban-types)
    */

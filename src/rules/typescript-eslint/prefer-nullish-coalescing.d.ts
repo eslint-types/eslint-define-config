@@ -15,7 +15,7 @@ export interface PreferNullishCoalescingOption {
 export type PreferNullishCoalescingOptions = [PreferNullishCoalescingOption?];
 
 /**
- * Enforce the usage of the nullish coalescing operator instead of logical chaining.
+ * Enforce using the nullish coalescing operator instead of logical chaining.
  *
  * @see [prefer-nullish-coalescing](https://typescript-eslint.io/rules/prefer-nullish-coalescing)
  */
@@ -23,13 +23,13 @@ export type PreferNullishCoalescingRuleConfig =
   RuleConfig<PreferNullishCoalescingOptions>;
 
 /**
- * Enforce the usage of the nullish coalescing operator instead of logical chaining.
+ * Enforce using the nullish coalescing operator instead of logical chaining.
  *
  * @see [prefer-nullish-coalescing](https://typescript-eslint.io/rules/prefer-nullish-coalescing)
  */
 export interface PreferNullishCoalescingRule {
   /**
-   * Enforce the usage of the nullish coalescing operator instead of logical chaining.
+   * Enforce using the nullish coalescing operator instead of logical chaining.
    *
    * @see [prefer-nullish-coalescing](https://typescript-eslint.io/rules/prefer-nullish-coalescing)
    */

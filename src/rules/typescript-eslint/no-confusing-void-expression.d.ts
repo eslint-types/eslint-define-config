@@ -16,7 +16,7 @@ export type NoConfusingVoidExpressionOptions = [
 ];
 
 /**
- * Requires expressions of type void to appear in statement position.
+ * Require expressions of type void to appear in statement position.
  *
  * @see [no-confusing-void-expression](https://typescript-eslint.io/rules/no-confusing-void-expression)
  */
@@ -24,13 +24,13 @@ export type NoConfusingVoidExpressionRuleConfig =
   RuleConfig<NoConfusingVoidExpressionOptions>;
 
 /**
- * Requires expressions of type void to appear in statement position.
+ * Require expressions of type void to appear in statement position.
  *
  * @see [no-confusing-void-expression](https://typescript-eslint.io/rules/no-confusing-void-expression)
  */
 export interface NoConfusingVoidExpressionRule {
   /**
-   * Requires expressions of type void to appear in statement position.
+   * Require expressions of type void to appear in statement position.
    *
    * @see [no-confusing-void-expression](https://typescript-eslint.io/rules/no-confusing-void-expression)
    */

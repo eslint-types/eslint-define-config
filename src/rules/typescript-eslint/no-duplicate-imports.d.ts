@@ -15,6 +15,8 @@ export type NoDuplicateImportsOptions = [NoDuplicateImportsOption?];
 /**
  * Disallow duplicate imports.
  *
+ * @deprecated
+ *
  * @see [no-duplicate-imports](https://typescript-eslint.io/rules/no-duplicate-imports)
  */
 export type NoDuplicateImportsRuleConfig =
@@ -23,11 +25,15 @@ export type NoDuplicateImportsRuleConfig =
 /**
  * Disallow duplicate imports.
  *
+ * @deprecated
+ *
  * @see [no-duplicate-imports](https://typescript-eslint.io/rules/no-duplicate-imports)
  */
 export interface NoDuplicateImportsRule {
   /**
    * Disallow duplicate imports.
+   *
+   * @deprecated
    *
    * @see [no-duplicate-imports](https://typescript-eslint.io/rules/no-duplicate-imports)
    */

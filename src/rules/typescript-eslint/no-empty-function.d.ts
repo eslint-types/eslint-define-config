@@ -18,6 +18,7 @@ export interface NoEmptyFunctionOption {
     | 'asyncFunctions'
     | 'asyncMethods'
     | 'decoratedFunctions'
+    | 'overrideMethods'
   )[];
 }
 

@@ -1,20 +1,20 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- * Disallows member access on any typed variables.
+ * Disallow member access on a value with type `any`.
  *
  * @see [no-unsafe-member-access](https://typescript-eslint.io/rules/no-unsafe-member-access)
  */
 export type NoUnsafeMemberAccessRuleConfig = RuleConfig<[]>;
 
 /**
- * Disallows member access on any typed variables.
+ * Disallow member access on a value with type `any`.
  *
  * @see [no-unsafe-member-access](https://typescript-eslint.io/rules/no-unsafe-member-access)
  */
 export interface NoUnsafeMemberAccessRule {
   /**
-   * Disallows member access on any typed variables.
+   * Disallow member access on a value with type `any`.
    *
    * @see [no-unsafe-member-access](https://typescript-eslint.io/rules/no-unsafe-member-access)
    */

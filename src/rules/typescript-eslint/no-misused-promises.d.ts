@@ -14,6 +14,7 @@ export interface NoMisusedPromisesOption {
         returns?: boolean;
         variables?: boolean;
       };
+  checksSpreads?: boolean;
   [k: string]: any;
 }
 
@@ -23,20 +24,20 @@ export interface NoMisusedPromisesOption {
 export type NoMisusedPromisesOptions = [NoMisusedPromisesOption?];
 
 /**
- * Avoid using Promises in places not designed to handle them.
+ * Disallow Promises in places not designed to handle them.
  *
  * @see [no-misused-promises](https://typescript-eslint.io/rules/no-misused-promises)
  */
 export type NoMisusedPromisesRuleConfig = RuleConfig<NoMisusedPromisesOptions>;
 
 /**
- * Avoid using Promises in places not designed to handle them.
+ * Disallow Promises in places not designed to handle them.
  *
  * @see [no-misused-promises](https://typescript-eslint.io/rules/no-misused-promises)
  */
 export interface NoMisusedPromisesRule {
   /**
-   * Avoid using Promises in places not designed to handle them.
+   * Disallow Promises in places not designed to handle them.
    *
    * @see [no-misused-promises](https://typescript-eslint.io/rules/no-misused-promises)
    */

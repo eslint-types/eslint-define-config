@@ -1,20 +1,20 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- * Enforces that type arguments will not be used if not required.
+ * Disallow type arguments that are equal to the default.
  *
  * @see [no-unnecessary-type-arguments](https://typescript-eslint.io/rules/no-unnecessary-type-arguments)
  */
 export type NoUnnecessaryTypeArgumentsRuleConfig = RuleConfig<[]>;
 
 /**
- * Enforces that type arguments will not be used if not required.
+ * Disallow type arguments that are equal to the default.
  *
  * @see [no-unnecessary-type-arguments](https://typescript-eslint.io/rules/no-unnecessary-type-arguments)
  */
 export interface NoUnnecessaryTypeArgumentsRule {
   /**
-   * Enforces that type arguments will not be used if not required.
+   * Disallow type arguments that are equal to the default.
    *
    * @see [no-unnecessary-type-arguments](https://typescript-eslint.io/rules/no-unnecessary-type-arguments)
    */

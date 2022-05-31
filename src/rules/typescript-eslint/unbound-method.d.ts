@@ -13,20 +13,20 @@ export interface UnboundMethodOption {
 export type UnboundMethodOptions = [UnboundMethodOption?];
 
 /**
- * Enforces unbound methods are called with their expected scope.
+ * Enforce unbound methods are called with their expected scope.
  *
  * @see [unbound-method](https://typescript-eslint.io/rules/unbound-method)
  */
 export type UnboundMethodRuleConfig = RuleConfig<UnboundMethodOptions>;
 
 /**
- * Enforces unbound methods are called with their expected scope.
+ * Enforce unbound methods are called with their expected scope.
  *
  * @see [unbound-method](https://typescript-eslint.io/rules/unbound-method)
  */
 export interface UnboundMethodRule {
   /**
-   * Enforces unbound methods are called with their expected scope.
+   * Enforce unbound methods are called with their expected scope.
    *
    * @see [unbound-method](https://typescript-eslint.io/rules/unbound-method)
    */

@@ -16,20 +16,20 @@ export interface NoExtraneousClassOption {
 export type NoExtraneousClassOptions = [NoExtraneousClassOption?];
 
 /**
- * Forbids the use of classes as namespaces.
+ * Disallow classes used as namespaces.
  *
  * @see [no-extraneous-class](https://typescript-eslint.io/rules/no-extraneous-class)
  */
 export type NoExtraneousClassRuleConfig = RuleConfig<NoExtraneousClassOptions>;
 
 /**
- * Forbids the use of classes as namespaces.
+ * Disallow classes used as namespaces.
  *
  * @see [no-extraneous-class](https://typescript-eslint.io/rules/no-extraneous-class)
  */
 export interface NoExtraneousClassRule {
   /**
-   * Forbids the use of classes as namespaces.
+   * Disallow classes used as namespaces.
    *
    * @see [no-extraneous-class](https://typescript-eslint.io/rules/no-extraneous-class)
    */

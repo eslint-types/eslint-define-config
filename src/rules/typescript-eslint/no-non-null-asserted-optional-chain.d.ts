@@ -1,20 +1,20 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- * Disallows using a non-null assertion after an optional chain expression.
+ * Disallow non-null assertions after an optional chain expression.
  *
  * @see [no-non-null-asserted-optional-chain](https://typescript-eslint.io/rules/no-non-null-asserted-optional-chain)
  */
 export type NoNonNullAssertedOptionalChainRuleConfig = RuleConfig<[]>;
 
 /**
- * Disallows using a non-null assertion after an optional chain expression.
+ * Disallow non-null assertions after an optional chain expression.
  *
  * @see [no-non-null-asserted-optional-chain](https://typescript-eslint.io/rules/no-non-null-asserted-optional-chain)
  */
 export interface NoNonNullAssertedOptionalChainRule {
   /**
-   * Disallows using a non-null assertion after an optional chain expression.
+   * Disallow non-null assertions after an optional chain expression.
    *
    * @see [no-non-null-asserted-optional-chain](https://typescript-eslint.io/rules/no-non-null-asserted-optional-chain)
    */
