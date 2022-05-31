@@ -1,6 +1,15 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.4.1...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.5.0...main)
+
+# 1.5.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.4.1...1.5.0)
+
+- `overrides.files` allows `string` ([#108])
+- Update rules for: [typescript-eslint, vue]
+
+[#108]: https://github.com/Shinigami92/eslint-define-config/pull/108
 
 # 1.4.1
 
