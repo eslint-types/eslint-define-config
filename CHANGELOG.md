@@ -1,6 +1,15 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.5.0...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.5.1...main)
+
+# 1.5.1
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.5.0...1.5.1)
+
+- Update ESLint config type ([#111])
+- Update rules for: [eslint]
+
+[#111]: https://github.com/Shinigami92/eslint-define-config/pull/111
 
 # 1.5.0
 
