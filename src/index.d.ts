@@ -87,6 +87,18 @@ export interface EslintConfig {
    * @see [Settings](https://eslint.org/docs/user-guide/configuring/configuration-files#adding-shared-settings)
    */
   settings?: Settings;
+  /**
+   * Disabling Inline Comments.
+   *
+   * @see [Disabling Inline Comments](https://eslint.org/docs/user-guide/configuring/rules#disabling-inline-comments)
+   */
+  noInlineConfig?: boolean;
+  /**
+   * Report unused `eslint-disable` comments.
+   *
+   * @see [Report unused `eslint-disable` comments](https://eslint.org/docs/user-guide/configuring/rules#report-unused-eslint-disable-comments)
+   */
+  reportUnusedDisableDirectives?: boolean;
 }
 
 /**
