@@ -9,6 +9,7 @@ export type NoUseBeforeDefineOption =
       functions?: boolean;
       classes?: boolean;
       variables?: boolean;
+      allowNamedExports?: boolean;
     };
 
 /**
