@@ -32,6 +32,16 @@
     "type": "git",
     "url": "https://github.com/Shinigami92/eslint-define-config.git"
   },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/Shinigami92"
+    },
+    {
+      "type": "paypal",
+      "url": "https://www.paypal.com/donate/?hosted_button_id=L7GY729FBKTZY"
+    }
+  ],
   "bugs": "https://github.com/Shinigami92/eslint-define-config/issues",
   "license": "MIT",
   "files": [
@@ -42,7 +52,7 @@
     "@intlify/eslint-plugin-vue-i18n": "~2.0.0",
     "@types/eslint": "~8.4.2",
     "@types/json-schema": "~7.0.11",
-    "@types/node": "~17.0.36",
+    "@types/node": "~17.0.40",
     "@types/prettier": "~2.6.3",
     "@typescript-eslint/eslint-plugin": "~5.27.1",
     "@typescript-eslint/parser": "~5.27.1",
