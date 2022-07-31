@@ -3,6 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
+/**
+ * @maxItems 1
+ */
 export type HtmlSelfClosingOption =
   | []
   | [

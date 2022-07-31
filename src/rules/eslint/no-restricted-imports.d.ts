@@ -26,6 +26,13 @@ export type NoRestrictedImportsOption =
         patterns?:
           | string[]
           | {
+              /**
+               * @minItems 1
+               */
+              importNames?: [string, ...string[]];
+              /**
+               * @minItems 1
+               */
               group: [string, ...string[]];
               message?: string;
               caseSensitive?: boolean;

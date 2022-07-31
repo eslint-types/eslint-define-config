@@ -4,6 +4,9 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoDeprecatedRouterLinkTagPropOption {
+  /**
+   * @minItems 1
+   */
   components?: [string, ...string[]];
   [k: string]: any;
 }

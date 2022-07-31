@@ -19,20 +19,20 @@ export type TemplateIndentOptions = [TemplateIndentOption?];
 /**
  * Fix whitespace-insensitive template indentation.
  *
- * @see [template-indent](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v42.0.0/docs/rules/template-indent.md)
+ * @see [template-indent](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/template-indent.md)
  */
 export type TemplateIndentRuleConfig = RuleConfig<TemplateIndentOptions>;
 
 /**
  * Fix whitespace-insensitive template indentation.
  *
- * @see [template-indent](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v42.0.0/docs/rules/template-indent.md)
+ * @see [template-indent](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/template-indent.md)
  */
 export interface TemplateIndentRule {
   /**
    * Fix whitespace-insensitive template indentation.
    *
-   * @see [template-indent](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v42.0.0/docs/rules/template-indent.md)
+   * @see [template-indent](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/template-indent.md)
    */
   'unicorn/template-indent': TemplateIndentRuleConfig;
 }

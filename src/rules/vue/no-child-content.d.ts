@@ -4,6 +4,9 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoChildContentOption {
+  /**
+   * @minItems 1
+   */
   additionalDirectives: [string, ...string[]];
 }
 

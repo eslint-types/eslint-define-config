@@ -69,12 +69,14 @@ import type { PreferDomNodeDatasetRule } from './prefer-dom-node-dataset';
 import type { PreferDomNodeRemoveRule } from './prefer-dom-node-remove';
 import type { PreferDomNodeTextContentRule } from './prefer-dom-node-text-content';
 import type { PreferEventKeyRule } from './prefer-event-key';
+import type { PreferEventTargetRule } from './prefer-event-target';
 import type { PreferExponentiationOperatorRule } from './prefer-exponentiation-operator';
 import type { PreferExportFromRule } from './prefer-export-from';
 import type { PreferFlatMapRule } from './prefer-flat-map';
 import type { PreferIncludesRule } from './prefer-includes';
 import type { PreferJsonParseBufferRule } from './prefer-json-parse-buffer';
 import type { PreferKeyboardEventKeyRule } from './prefer-keyboard-event-key';
+import type { PreferLogicalOperatorOverTernaryRule } from './prefer-logical-operator-over-ternary';
 import type { PreferMathTruncRule } from './prefer-math-trunc';
 import type { PreferModernDomApisRule } from './prefer-modern-dom-apis';
 import type { PreferModernMathApisRule } from './prefer-modern-math-apis';
@@ -131,7 +133,6 @@ export type UnicornRules = BetterRegexRule &
   ExpiringTodoCommentsRule &
   ExplicitLengthCheckRule &
   FilenameCaseRule &
-  ImportIndexRule &
   ImportStyleRule &
   NewForBuiltinsRule &
   NoAbusiveEslintDisableRule &
@@ -186,10 +187,12 @@ export type UnicornRules = BetterRegexRule &
   PreferDomNodeDatasetRule &
   PreferDomNodeRemoveRule &
   PreferDomNodeTextContentRule &
+  PreferEventTargetRule &
   PreferExportFromRule &
   PreferIncludesRule &
   PreferJsonParseBufferRule &
   PreferKeyboardEventKeyRule &
+  PreferLogicalOperatorOverTernaryRule &
   PreferMathTruncRule &
   PreferModernDomApisRule &
   PreferModernMathApisRule &
@@ -223,6 +226,7 @@ export type UnicornRules = BetterRegexRule &
   TemplateIndentRule &
   TextEncodingIdentifierCaseRule &
   ThrowNewErrorRule &
+  ImportIndexRule &
   NoArrayInstanceofRule &
   NoFnReferenceInIteratorRule &
   NoReduceRule &

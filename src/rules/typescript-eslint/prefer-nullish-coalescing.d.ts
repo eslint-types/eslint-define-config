@@ -5,6 +5,7 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface PreferNullishCoalescingOption {
   ignoreConditionalTests?: boolean;
+  ignoreTernaryTests?: boolean;
   ignoreMixedLogicalExpressions?: boolean;
   forceSuggestionFixer?: boolean;
 }

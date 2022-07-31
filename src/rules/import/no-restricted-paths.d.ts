@@ -4,6 +4,9 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoRestrictedPathsOption {
+  /**
+   * @minItems 1
+   */
   zones?: [
     {
       target?: string;

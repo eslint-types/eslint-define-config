@@ -8,6 +8,9 @@ export interface CamelcaseOption {
   ignoreImports?: boolean;
   ignoreGlobals?: boolean;
   properties?: 'always' | 'never';
+  /**
+   * @minItems 0
+   */
   allow?: [] | [string];
 }
 

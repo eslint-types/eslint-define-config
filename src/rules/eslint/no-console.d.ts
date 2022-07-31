@@ -4,6 +4,9 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoConsoleOption {
+  /**
+   * @minItems 1
+   */
   allow?: [string, ...string[]];
 }
 

@@ -4,6 +4,9 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoKeywordPrefixOption {
+  /**
+   * @minItems 0
+   */
   disallowedPrefixes?: [] | [string];
   checkProperties?: boolean;
   onlyCamelCase?: boolean;
@@ -17,20 +20,20 @@ export type NoKeywordPrefixOptions = [NoKeywordPrefixOption?];
 /**
  * Disallow identifiers starting with `new` or `class`.
  *
- * @see [no-keyword-prefix](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v42.0.0/docs/rules/no-keyword-prefix.md)
+ * @see [no-keyword-prefix](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/no-keyword-prefix.md)
  */
 export type NoKeywordPrefixRuleConfig = RuleConfig<NoKeywordPrefixOptions>;
 
 /**
  * Disallow identifiers starting with `new` or `class`.
  *
- * @see [no-keyword-prefix](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v42.0.0/docs/rules/no-keyword-prefix.md)
+ * @see [no-keyword-prefix](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/no-keyword-prefix.md)
  */
 export interface NoKeywordPrefixRule {
   /**
    * Disallow identifiers starting with `new` or `class`.
    *
-   * @see [no-keyword-prefix](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v42.0.0/docs/rules/no-keyword-prefix.md)
+   * @see [no-keyword-prefix](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/no-keyword-prefix.md)
    */
   'unicorn/no-keyword-prefix': NoKeywordPrefixRuleConfig;
 }

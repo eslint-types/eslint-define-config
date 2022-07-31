@@ -3,6 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
+/**
+ * @minItems 0
+ */
 export type NoRestrictedStaticAttributeOption = (
   | string
   | {

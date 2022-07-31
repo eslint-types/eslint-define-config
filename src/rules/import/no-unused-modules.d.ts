@@ -18,10 +18,14 @@ export type NoUnusedModulesOption = (
 ) & {
   /**
    * files/paths to be analyzed (only for unused exports)
+   *
+   * @minItems 1
    */
   src?: [string, ...string[]];
   /**
    * files/paths for which unused exports will not be reported (e.g module entry points)
+   *
+   * @minItems 1
    */
   ignoreExports?: [string, ...string[]];
   /**

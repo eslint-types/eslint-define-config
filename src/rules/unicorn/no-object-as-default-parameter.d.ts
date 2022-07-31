@@ -3,20 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Disallow the use of objects as default parameters.
  *
- * @see [no-object-as-default-parameter](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v42.0.0/docs/rules/no-object-as-default-parameter.md)
+ * @see [no-object-as-default-parameter](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/no-object-as-default-parameter.md)
  */
 export type NoObjectAsDefaultParameterRuleConfig = RuleConfig<[]>;
 
 /**
  * Disallow the use of objects as default parameters.
  *
- * @see [no-object-as-default-parameter](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v42.0.0/docs/rules/no-object-as-default-parameter.md)
+ * @see [no-object-as-default-parameter](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/no-object-as-default-parameter.md)
  */
 export interface NoObjectAsDefaultParameterRule {
   /**
    * Disallow the use of objects as default parameters.
    *
-   * @see [no-object-as-default-parameter](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v42.0.0/docs/rules/no-object-as-default-parameter.md)
+   * @see [no-object-as-default-parameter](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/no-object-as-default-parameter.md)
    */
   'unicorn/no-object-as-default-parameter': NoObjectAsDefaultParameterRuleConfig;
 }

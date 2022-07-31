@@ -1,22 +1,22 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- * Prefer `for…of` over `Array#forEach(…)`.
+ * Prefer `for…of` over the `forEach` method.
  *
- * @see [no-array-for-each](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v42.0.0/docs/rules/no-array-for-each.md)
+ * @see [no-array-for-each](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/no-array-for-each.md)
  */
 export type NoArrayForEachRuleConfig = RuleConfig<[]>;
 
 /**
- * Prefer `for…of` over `Array#forEach(…)`.
+ * Prefer `for…of` over the `forEach` method.
  *
- * @see [no-array-for-each](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v42.0.0/docs/rules/no-array-for-each.md)
+ * @see [no-array-for-each](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/no-array-for-each.md)
  */
 export interface NoArrayForEachRule {
   /**
-   * Prefer `for…of` over `Array#forEach(…)`.
+   * Prefer `for…of` over the `forEach` method.
    *
-   * @see [no-array-for-each](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v42.0.0/docs/rules/no-array-for-each.md)
+   * @see [no-array-for-each](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/no-array-for-each.md)
    */
   'unicorn/no-array-for-each': NoArrayForEachRuleConfig;
 }

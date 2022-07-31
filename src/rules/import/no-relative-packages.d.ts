@@ -7,6 +7,9 @@ export interface NoRelativePackagesOption {
   commonjs?: boolean;
   amd?: boolean;
   esmodule?: boolean;
+  /**
+   * @minItems 1
+   */
   ignore?: [string, ...string[]];
 }
 

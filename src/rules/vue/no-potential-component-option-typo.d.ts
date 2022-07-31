@@ -4,7 +4,13 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoPotentialComponentOptionTypoOption {
+  /**
+   * @minItems 0
+   */
   presets?: ('all' | 'vue' | 'vue-router' | 'nuxt')[];
+  /**
+   * @minItems 0
+   */
   custom?: string[];
   threshold?: number;
 }

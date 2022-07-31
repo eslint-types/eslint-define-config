@@ -3,12 +3,12 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type FirstOption = 'absolute-first' | 'disable-absolute-first';
+export type ImportsFirstOption = 'absolute-first' | 'disable-absolute-first';
 
 /**
  * Options.
  */
-export type ImportsFirstOptions = [FirstOption?];
+export type ImportsFirstOptions = [ImportsFirstOption?];
 
 /**
  *

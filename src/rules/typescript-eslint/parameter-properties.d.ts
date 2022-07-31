@@ -4,6 +4,9 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface ParameterPropertiesOption {
+  /**
+   * @minItems 1
+   */
   allow?: [
     (
       | 'readonly'

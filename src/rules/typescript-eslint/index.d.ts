@@ -8,6 +8,7 @@ import type { BraceStyleRule } from './brace-style';
 import type { ClassLiteralPropertyStyleRule } from './class-literal-property-style';
 import type { CommaDangleRule } from './comma-dangle';
 import type { CommaSpacingRule } from './comma-spacing';
+import type { ConsistentGenericConstructorsRule } from './consistent-generic-constructors';
 import type { ConsistentIndexedObjectStyleRule } from './consistent-indexed-object-style';
 import type { ConsistentTypeAssertionsRule } from './consistent-type-assertions';
 import type { ConsistentTypeDefinitionsRule } from './consistent-type-definitions';
@@ -138,6 +139,7 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   ClassLiteralPropertyStyleRule &
   CommaDangleRule &
   CommaSpacingRule &
+  ConsistentGenericConstructorsRule &
   ConsistentIndexedObjectStyleRule &
   ConsistentTypeAssertionsRule &
   ConsistentTypeDefinitionsRule &

@@ -106,6 +106,7 @@ import type { NoDuplicateImportsRule } from './no-duplicate-imports';
 import type { NoElseReturnRule } from './no-else-return';
 import type { NoEmptyRule } from './no-empty';
 import type { NoEmptyCharacterClassRule } from './no-empty-character-class';
+import type { NoEmptyFunctionRule } from './no-empty-function';
 import type { NoEmptyPatternRule } from './no-empty-pattern';
 import type { NoEqNullRule } from './no-eq-null';
 import type { NoEvalRule } from './no-eval';
@@ -395,6 +396,7 @@ export type EslintRules = AccessorPairsRule &
   NoElseReturnRule &
   NoEmptyRule &
   NoEmptyCharacterClassRule &
+  NoEmptyFunctionRule &
   NoEmptyPatternRule &
   NoEqNullRule &
   NoEvalRule &
