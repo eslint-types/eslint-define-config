@@ -1,6 +1,15 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.5.1...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.6.0...main)
+
+# 1.6.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.5.1...1.6.0)
+
+- Add `override.excludedFiles` ([#120])
+- Update rules for: [eslint, import, node, typescript-eslint, unicorn, vue]
+
+[#120]: https://github.com/Shinigami92/eslint-define-config/pull/120
 
 # 1.5.1
 
