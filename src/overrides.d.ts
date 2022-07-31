@@ -10,6 +10,7 @@ import type { Settings } from './settings';
  */
 export interface Override {
   files: string[] | string;
+  excludedFiles?: string;
   /**
    * An environment provides predefined global variables.
    *
