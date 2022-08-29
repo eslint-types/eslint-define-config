@@ -5,6 +5,7 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface NoFallthroughOption {
   commentPattern?: string;
+  allowEmptyCase?: boolean;
 }
 
 /**

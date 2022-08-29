@@ -27,6 +27,7 @@ export type ObjectShorthandOption =
       'always' | 'methods',
       {
         ignoreConstructors?: boolean;
+        methodsIgnorePattern?: string;
         avoidQuotes?: boolean;
         avoidExplicitReturnArrows?: boolean;
       },

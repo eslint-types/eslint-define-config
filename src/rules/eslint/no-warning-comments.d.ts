@@ -6,6 +6,10 @@ import type { RuleConfig } from '../rule-config';
 export interface NoWarningCommentsOption {
   terms?: string[];
   location?: 'start' | 'anywhere';
+  /**
+   * @minItems 1
+   */
+  decoration?: [string, ...string[]];
 }
 
 /**

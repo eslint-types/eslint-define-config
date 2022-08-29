@@ -7,6 +7,7 @@ export interface SortKeysConfig {
   caseSensitive?: boolean;
   natural?: boolean;
   minKeys?: number;
+  allowLineSeparatedGroups?: boolean;
 }
 
 /**
