@@ -1,6 +1,14 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.6.1...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.7.0...main)
+
+# 1.7.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.6.1...1.7.0)
+
+- Add support for `mdx` ([#121])
+
+[#121]: https://github.com/Shinigami92/eslint-define-config/issues/121
 
 # 1.6.1
 
