@@ -4,7 +4,13 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoFloatingPromisesOption {
+  /**
+   * Whether to ignore `void` expressions.
+   */
   ignoreVoid?: boolean;
+  /**
+   * Whether to ignore async IIFEs (Immediately Invocated Function Expressions).
+   */
   ignoreIIFE?: boolean;
 }
 

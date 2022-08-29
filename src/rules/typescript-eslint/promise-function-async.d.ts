@@ -4,7 +4,13 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface PromiseFunctionAsyncOption {
+  /**
+   * Whether to consider `any` and `unknown` to be Promises.
+   */
   allowAny?: boolean;
+  /**
+   * Any extra names of classes or interfaces to be considered Promises.
+   */
   allowedPromiseNames?: string[];
   checkArrowFunctions?: boolean;
   checkFunctionDeclarations?: boolean;

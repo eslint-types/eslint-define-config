@@ -4,7 +4,13 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoNamespaceOption {
+  /**
+   * Whether to allow `declare` with custom TypeScript namespaces.
+   */
   allowDeclarations?: boolean;
+  /**
+   * Whether to allow `declare` with custom TypeScript namespaces inside definition files.
+   */
   allowDefinitionFiles?: boolean;
 }
 

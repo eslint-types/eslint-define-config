@@ -12,6 +12,7 @@ export type NoUseBeforeDefineOption =
       variables?: boolean;
       typedefs?: boolean;
       ignoreTypeReferences?: boolean;
+      allowNamedExports?: boolean;
     };
 
 /**

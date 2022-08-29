@@ -4,7 +4,13 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface RestrictPlusOperandsOption {
+  /**
+   * Whether to check compound assignments such as `+=`.
+   */
   checkCompoundAssignments?: boolean;
+  /**
+   * Whether to allow `any` typed values.
+   */
   allowAny?: boolean;
 }
 

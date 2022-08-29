@@ -4,6 +4,9 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface RequireArraySortCompareOption {
+  /**
+   * Whether to ignore arrays in which all elements are strings.
+   */
   ignoreStringArrays?: boolean;
   [k: string]: any;
 }

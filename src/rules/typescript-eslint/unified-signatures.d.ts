@@ -4,6 +4,9 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface UnifiedSignaturesOption {
+  /**
+   * Whether two parameters with different names at the same index should be considered different even if their types are the same.
+   */
   ignoreDifferentlyNamedParameters?: boolean;
 }
 

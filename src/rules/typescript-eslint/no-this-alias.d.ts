@@ -4,7 +4,13 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoThisAliasOption {
+  /**
+   * Whether to ignore destructurings, such as `const { props, state } = this`.
+   */
   allowDestructuring?: boolean;
+  /**
+   * Names to ignore, such as ["self"] for `const self = this;`.
+   */
   allowedNames?: string[];
 }
 

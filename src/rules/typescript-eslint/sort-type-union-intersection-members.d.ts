@@ -4,8 +4,17 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface SortTypeUnionIntersectionMembersOption {
+  /**
+   * Whether to check intersection types.
+   */
   checkIntersections?: boolean;
+  /**
+   * Whether to check union types.
+   */
   checkUnions?: boolean;
+  /**
+   * Ordering of the groups.
+   */
   groupOrder?: (
     | 'conditional'
     | 'function'

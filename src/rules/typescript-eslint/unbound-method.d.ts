@@ -4,6 +4,9 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface UnboundMethodOption {
+  /**
+   * Whether to skip checking whether `static` methods are correctly bound.
+   */
   ignoreStatic?: boolean;
 }
 

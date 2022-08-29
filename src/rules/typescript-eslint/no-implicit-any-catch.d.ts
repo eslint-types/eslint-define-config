@@ -4,6 +4,9 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoImplicitAnyCatchOption {
+  /**
+   * Whether to disallow specifying `: any` as the error type as well. See also `no-explicit-any`.
+   */
   allowExplicitAny?: boolean;
 }
 

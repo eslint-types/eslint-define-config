@@ -4,7 +4,13 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoUnnecessaryBooleanLiteralCompareOption {
+  /**
+   * Whether to allow comparisons between nullable boolean variables and `true`.
+   */
   allowComparingNullableBooleansToTrue?: boolean;
+  /**
+   * Whether to allow comparisons between nullable boolean variables and `false`.
+   */
   allowComparingNullableBooleansToFalse?: boolean;
 }
 

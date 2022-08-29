@@ -4,7 +4,13 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoUnnecessaryConditionOption {
+  /**
+   * Whether to ignore constant loop conditions, such as `while (true)`.
+   */
   allowConstantLoopConditions?: boolean;
+  /**
+   * Whether to not error when running with a tsconfig that has strictNullChecks turned.
+   */
   allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean;
 }
 
