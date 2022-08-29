@@ -2,6 +2,7 @@ import type { LiteralUnion } from '../utility-types';
 import type { EslintExtensions } from './eslint';
 import type { ImportExtensions } from './eslint-plugin-import';
 import type { JsdocExtensions } from './eslint-plugin-jsdoc';
+import type { MdxExtensions } from './eslint-plugin-mdx';
 import type { NodeExtensions } from './eslint-plugin-node';
 import type { PrettierExtensions } from './eslint-plugin-prettier';
 import type { UnicornExtensions } from './eslint-plugin-unicorn';
@@ -18,6 +19,7 @@ export type KnownExtensions = LiteralUnion<
   | ImportExtensions
   | IntlifyVueI18nExtensions
   | JsdocExtensions
+  | MdxExtensions
   | NodeExtensions
   | PrettierExtensions
   | TypescriptEslintExtensions

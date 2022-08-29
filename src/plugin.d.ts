@@ -6,6 +6,7 @@ export type Plugin = LiteralUnion<
   | 'import'
   | 'inclusive-language'
   | 'jsdoc'
+  | 'mdx'
   | 'prettier'
   | 'spellcheck'
   | 'unicorn'
