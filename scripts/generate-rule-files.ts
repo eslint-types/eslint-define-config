@@ -9,6 +9,7 @@ import * as eslint from 'eslint';
 import * as eslintPluginImport from 'eslint-plugin-import';
 // @ts-expect-error
 import eslintPluginJSDoc from 'eslint-plugin-jsdoc';
+import * as eslintPluginMdx from 'eslint-plugin-mdx';
 // @ts-expect-error
 import eslintPluginNode from 'eslint-plugin-node';
 // @ts-expect-error
@@ -58,6 +59,10 @@ const generationMap: Record<string, Plugin> = {
   jsdoc: {
     name: 'JSDoc',
     rules: (eslintPluginJSDoc as Plugin).rules,
+  },
+  mdx: {
+    name: 'Mdx',
+    rules: eslintPluginMdx.rules,
   },
   node: {
     name: 'Node',
