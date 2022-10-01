@@ -67,7 +67,7 @@
     "eslint-plugin-node": "~11.1.0",
     "eslint-plugin-prettier": "~4.2.1",
     "eslint-plugin-spellcheck": "~0.0.19",
-    "eslint-plugin-unicorn": "~43.0.2",
+    "eslint-plugin-unicorn": "~44.0.0",
     "eslint-plugin-vue": "~9.4.0",
     "eslint-plugin-vue-pug": "~0.5.4",
     "esno": "0.16.3",
