@@ -127,7 +127,10 @@ export type DebugLevel =
 
 /** Parser. */
 export type Parser = LiteralUnion<
-  'babel-eslint' | '@typescript-eslint/parser' | 'vue-eslint-parser'
+  | 'babel-eslint'
+  | '@typescript-eslint/parser'
+  | 'vue-eslint-parser'
+  | 'jsonc-eslint-parser'
 >;
 
 /**

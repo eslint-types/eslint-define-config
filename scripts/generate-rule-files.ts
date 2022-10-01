@@ -14,6 +14,7 @@ import * as eslintPluginMdx from 'eslint-plugin-mdx';
 import eslintPluginNode from 'eslint-plugin-node';
 // @ts-expect-error
 import eslintPluginSpellcheck from 'eslint-plugin-spellcheck';
+import eslintPluginJsonc from 'eslint-plugin-jsonc';
 // @ts-expect-error
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 // @ts-expect-error
@@ -59,6 +60,13 @@ const generationMap: Record<string, Plugin> = {
   jsdoc: {
     name: 'JSDoc',
     rules: (eslintPluginJSDoc as Plugin).rules,
+  },
+  jsonc: {
+    name: 'Jsonc',
+    rules: eslintPluginJsonc.rules as unknown as Record<
+      string,
+      Rule.RuleModule
+    >,
   },
   mdx: {
     name: 'Mdx',
