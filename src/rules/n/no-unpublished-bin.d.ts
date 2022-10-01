@@ -9,9 +9,6 @@ export interface NoUnpublishedBinOption {
         /**
          * @minItems 2
          * @maxItems 2
-         *
-         * This interface was referenced by `undefined`'s JSON-Schema definition
-         * via the `patternProperty` "^.+$".
          */
         [k: string]: [string, string];
       }
