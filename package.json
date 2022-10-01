@@ -72,6 +72,7 @@
     "eslint-plugin-n": "~15.6.0",
     "eslint-plugin-node": "~11.1.0",
     "eslint-plugin-prettier": "~4.2.1",
+    "eslint-plugin-sonarjs": "~0.17.0",
     "eslint-plugin-spellcheck": "~0.0.20",
     "eslint-plugin-unicorn": "~45.0.2",
     "eslint-plugin-vue": "~9.8.0",
