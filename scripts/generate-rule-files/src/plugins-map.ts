@@ -4,6 +4,7 @@ import * as eslintPluginDeprecation from 'eslint-plugin-deprecation';
 import * as eslintPluginImport from 'eslint-plugin-import';
 // @ts-expect-error
 import eslintPluginJSDoc from 'eslint-plugin-jsdoc';
+import eslintPluginJsonc from 'eslint-plugin-jsonc';
 import * as eslintPluginMdx from 'eslint-plugin-mdx';
 // @ts-expect-error
 import eslintPluginNode from 'eslint-plugin-node';
@@ -50,6 +51,13 @@ export const PLUGIN_REGISTRY: Readonly<Record<string, Plugin>> = {
     name: 'JSDoc',
     prefix: 'jsdoc',
     rules: (eslintPluginJSDoc as Plugin).rules,
+  },
+  jsonc: {
+    name: 'Jsonc',
+    prefix: 'jsonc',
+    rules:
+      // @ts-expect-error: throw error when plugin successfully updated their type defs
+      eslintPluginJsonc.rules as Plugin['rules'],
   },
   mdx: {
     name: 'Mdx',
