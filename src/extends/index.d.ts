@@ -21,8 +21,8 @@ export type KnownExtensions = LiteralUnion<
   | IntlifyVueI18nExtensions
   | JsdocExtensions
   | MdxExtensions
-  | NodeExtensions
   | NExtensions
+  | NodeExtensions
   | PrettierExtensions
   | TypescriptEslintExtensions
   | UnicornExtensions
