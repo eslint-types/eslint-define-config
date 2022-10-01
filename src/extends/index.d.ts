@@ -10,6 +10,7 @@ import type { VueExtensions } from './eslint-plugin-vue';
 import type { VuePugExtensions } from './eslint-plugin-vue-pug';
 import type { IntlifyVueI18nExtensions } from './intlify-vue-i18n';
 import type { TypescriptEslintExtensions } from './typescript-eslint';
+import type { SonarjsExtensions } from './eslint-plugin-sonarjs';
 
 /**
  * All known extensions.
@@ -22,6 +23,7 @@ export type KnownExtensions = LiteralUnion<
   | MdxExtensions
   | NodeExtensions
   | PrettierExtensions
+  | SonarjsExtensions
   | TypescriptEslintExtensions
   | UnicornExtensions
   | VueExtensions

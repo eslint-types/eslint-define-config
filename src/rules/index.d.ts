@@ -3,6 +3,7 @@ import type { ImportRules } from './import';
 import type { JSDocRules } from './jsdoc';
 import type { NodeRules } from './node';
 import type { RuleConfig } from './rule-config';
+import type { SonarjsRules } from './sonarjs';
 import type { SpellcheckRules } from './spellcheck';
 import type { TypeScriptRules } from './typescript-eslint';
 import type { UnicornRules } from './unicorn';
@@ -20,6 +21,7 @@ export type Rules = Partial<
     ImportRules &
     JSDocRules &
     NodeRules &
+    SonarjsRules &
     SpellcheckRules &
     TypeScriptRules &
     UnicornRules &

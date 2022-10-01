@@ -8,6 +8,7 @@ export type Plugin = LiteralUnion<
   | 'jsdoc'
   | 'mdx'
   | 'prettier'
+  | 'sonarjs'
   | 'spellcheck'
   | 'unicorn'
   | 'vue'

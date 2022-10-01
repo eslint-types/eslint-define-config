@@ -12,6 +12,7 @@ import eslintPluginJSDoc from 'eslint-plugin-jsdoc';
 import * as eslintPluginMdx from 'eslint-plugin-mdx';
 // @ts-expect-error
 import eslintPluginNode from 'eslint-plugin-node';
+import * as eslintPluginSonarjs from 'eslint-plugin-sonarjs';
 // @ts-expect-error
 import eslintPluginSpellcheck from 'eslint-plugin-spellcheck';
 // @ts-expect-error
@@ -67,6 +68,10 @@ const generationMap: Record<string, Plugin> = {
   node: {
     name: 'Node',
     rules: (eslintPluginNode as Plugin).rules,
+  },
+  sonarjs: {
+    name: 'Sonarjs',
+    rules: eslintPluginSonarjs.rules,
   },
   spellcheck: {
     name: 'Spellcheck',
