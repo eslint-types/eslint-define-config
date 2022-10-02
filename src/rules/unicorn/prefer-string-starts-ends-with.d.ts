@@ -3,20 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Prefer `String#startsWith()` & `String#endsWith()` over `RegExp#test()`.
  *
- * @see [prefer-string-starts-ends-with](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/prefer-string-starts-ends-with.md)
+ * @see [prefer-string-starts-ends-with](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v44.0.0/docs/rules/prefer-string-starts-ends-with.md)
  */
 export type PreferStringStartsEndsWithRuleConfig = RuleConfig<[]>;
 
 /**
  * Prefer `String#startsWith()` & `String#endsWith()` over `RegExp#test()`.
  *
- * @see [prefer-string-starts-ends-with](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/prefer-string-starts-ends-with.md)
+ * @see [prefer-string-starts-ends-with](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v44.0.0/docs/rules/prefer-string-starts-ends-with.md)
  */
 export interface PreferStringStartsEndsWithRule {
   /**
    * Prefer `String#startsWith()` & `String#endsWith()` over `RegExp#test()`.
    *
-   * @see [prefer-string-starts-ends-with](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/prefer-string-starts-ends-with.md)
+   * @see [prefer-string-starts-ends-with](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v44.0.0/docs/rules/prefer-string-starts-ends-with.md)
    */
   'unicorn/prefer-string-starts-ends-with': PreferStringStartsEndsWithRuleConfig;
 }
