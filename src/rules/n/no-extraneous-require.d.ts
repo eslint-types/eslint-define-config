@@ -10,7 +10,6 @@ export interface NoExtraneousRequireOption {
         /**
          * @minItems 2
          * @maxItems 2
-         *
          */
         [k: string]: [string, string];
       }
