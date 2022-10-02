@@ -1,5 +1,5 @@
 /**
- * Eslint N ( Node ) extensions.
+ * Eslint N (Node) extensions.
  *
  * @see [Eslint N extensions](https://github.com/eslint-community/eslint-plugin-n#-configs)
  */
