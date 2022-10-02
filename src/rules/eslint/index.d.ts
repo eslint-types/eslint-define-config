@@ -58,6 +58,7 @@ import type { LinebreakStyleRule } from './linebreak-style';
 import type { LinesAroundCommentRule } from './lines-around-comment';
 import type { LinesAroundDirectiveRule } from './lines-around-directive';
 import type { LinesBetweenClassMembersRule } from './lines-between-class-members';
+import type { LogicalAssignmentOperatorsRule } from './logical-assignment-operators';
 import type { MaxClassesPerFileRule } from './max-classes-per-file';
 import type { MaxDepthRule } from './max-depth';
 import type { MaxLenRule } from './max-len';
@@ -348,6 +349,7 @@ export type EslintRules = AccessorPairsRule &
   LinesAroundCommentRule &
   LinesAroundDirectiveRule &
   LinesBetweenClassMembersRule &
+  LogicalAssignmentOperatorsRule &
   MaxClassesPerFileRule &
   MaxDepthRule &
   MaxLenRule &
