@@ -11,8 +11,7 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "prepublishOnly": "pnpm run clean && pnpm install && pnpm run check",
-    "generate:rules": "tsx ./scripts/generate-rule-files/cli.ts",
-    "generate": "node ./scripts/generate-rule.js"
+    "generate:rules": "tsx ./scripts/generate-rule-files/cli.ts"
   },
   "keywords": [
     "config",
