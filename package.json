@@ -75,7 +75,6 @@
     "eslint-plugin-vue-pug": "~0.5.4",
     "json-schema": "~0.4.0",
     "json-schema-to-typescript": "~11.0.2",
-    "kleur": "~4.1.5",
     "prettier": "2.7.1",
     "prettier-plugin-organize-imports": "~3.1.1",
     "ts-dedent": "~2.2.0",
@@ -84,6 +83,11 @@
     "upper-case-first": "~2.0.2",
     "vitest": "~0.23.4",
     "vue-eslint-parser": "~9.1.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@poppinss/colors": "poppinss/colors#fix/typing-nbuild"
+    }
   },
   "packageManager": "pnpm@7.12.2",
   "engines": {

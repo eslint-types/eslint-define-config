@@ -1,7 +1,6 @@
 import { logger } from '@poppinss/cliui';
 import { pascalCase } from 'change-case';
 import type { Rule } from 'eslint';
-import { green, red, yellow } from 'kleur';
 import * as fs from 'node:fs';
 import { join } from 'node:path';
 import dedent from 'ts-dedent';
@@ -64,11 +63,11 @@ function printGenerationReport(
   failedRules: string[],
 ): void {
   const msg = `  ✅ Generated ${rules.length - failedRules.length} rules`;
-  logger.logUpdate(green(msg));
+  logger.logUpdate(logger.colors.green(msg));
   logger.logUpdatePersist();
 
   if (failedRules.length) {
-    logger.log(red(`  ❌ Failed ${failedRules.length} rules`));
+    logger.log(logger.colors.red(`  ❌ Failed ${failedRules.length} rules`));
   }
   logger.log('');
 }
@@ -84,7 +83,7 @@ async function generateRulesFiles(
 
   const rules = Object.entries(plugin.rules);
   for (const [ruleName, rule] of rules) {
-    logger.logUpdate(yellow(`  Generating > ${ruleName}`));
+    logger.logUpdate(logger.colors.yellow(`  Generating > ${ruleName}`));
 
     const ruleFile = new RuleFile(plugin, pluginDirectory, ruleName, rule);
     try {
