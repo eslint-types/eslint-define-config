@@ -1,22 +1,34 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- * Prefer `.find(…)` over the first element from `.filter(…)`.
- *
- * @see [prefer-array-find](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/prefer-array-find.md)
+ * Option.
  */
-export type PreferArrayFindRuleConfig = RuleConfig<[]>;
+export interface PreferArrayFindOption {
+  checkFromLast?: boolean;
+}
 
 /**
- * Prefer `.find(…)` over the first element from `.filter(…)`.
+ * Options.
+ */
+export type PreferArrayFindOptions = [PreferArrayFindOption?];
+
+/**
+ * Prefer `.find(…)` and `.findLast(…)` over the first or last element from `.filter(…)`.
  *
- * @see [prefer-array-find](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/prefer-array-find.md)
+ * @see [prefer-array-find](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v44.0.0/docs/rules/prefer-array-find.md)
+ */
+export type PreferArrayFindRuleConfig = RuleConfig<PreferArrayFindOptions>;
+
+/**
+ * Prefer `.find(…)` and `.findLast(…)` over the first or last element from `.filter(…)`.
+ *
+ * @see [prefer-array-find](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v44.0.0/docs/rules/prefer-array-find.md)
  */
 export interface PreferArrayFindRule {
   /**
-   * Prefer `.find(…)` over the first element from `.filter(…)`.
+   * Prefer `.find(…)` and `.findLast(…)` over the first or last element from `.filter(…)`.
    *
-   * @see [prefer-array-find](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/prefer-array-find.md)
+   * @see [prefer-array-find](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v44.0.0/docs/rules/prefer-array-find.md)
    */
   'unicorn/prefer-array-find': PreferArrayFindRuleConfig;
 }

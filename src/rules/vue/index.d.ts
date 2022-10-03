@@ -18,7 +18,9 @@ import type { ComponentNameInTemplateCasingRule } from './component-name-in-temp
 import type { ComponentOptionsNameCasingRule } from './component-options-name-casing';
 import type { ComponentTagsOrderRule } from './component-tags-order';
 import type { CustomEventNameCasingRule } from './custom-event-name-casing';
+import type { DefineEmitsDeclarationRule } from './define-emits-declaration';
 import type { DefineMacrosOrderRule } from './define-macros-order';
+import type { DefinePropsDeclarationRule } from './define-props-declaration';
 import type { DotLocationRule } from './dot-location';
 import type { DotNotationRule } from './dot-notation';
 import type { EqeqeqRule } from './eqeqeq';
@@ -94,6 +96,7 @@ import type { NoMutatingPropsRule } from './no-mutating-props';
 import type { NoParsingErrorRule } from './no-parsing-error';
 import type { NoPotentialComponentOptionTypoRule } from './no-potential-component-option-typo';
 import type { NoRefAsOperandRule } from './no-ref-as-operand';
+import type { NoRefObjectDestructureRule } from './no-ref-object-destructure';
 import type { NoReservedComponentNamesRule } from './no-reserved-component-names';
 import type { NoReservedKeysRule } from './no-reserved-keys';
 import type { NoReservedPropsRule } from './no-reserved-props';
@@ -146,6 +149,7 @@ import type { OneComponentPerFileRule } from './one-component-per-file';
 import type { OperatorLinebreakRule } from './operator-linebreak';
 import type { OrderInComponentsRule } from './order-in-components';
 import type { PaddingLineBetweenBlocksRule } from './padding-line-between-blocks';
+import type { PaddingLineBetweenTagsRule } from './padding-line-between-tags';
 import type { PreferImportFromVueRule } from './prefer-import-from-vue';
 import type { PreferPropTypeBooleanFirstRule } from './prefer-prop-type-boolean-first';
 import type { PreferSeparateStaticClassRule } from './prefer-separate-static-class';
@@ -233,7 +237,9 @@ export type VueRules = ArrayBracketNewlineRule &
   ComponentOptionsNameCasingRule &
   ComponentTagsOrderRule &
   CustomEventNameCasingRule &
+  DefineEmitsDeclarationRule &
   DefineMacrosOrderRule &
+  DefinePropsDeclarationRule &
   DotLocationRule &
   DotNotationRule &
   EqeqeqRule &
@@ -309,6 +315,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoParsingErrorRule &
   NoPotentialComponentOptionTypoRule &
   NoRefAsOperandRule &
+  NoRefObjectDestructureRule &
   NoReservedComponentNamesRule &
   NoReservedKeysRule &
   NoReservedPropsRule &
@@ -361,6 +368,7 @@ export type VueRules = ArrayBracketNewlineRule &
   OperatorLinebreakRule &
   OrderInComponentsRule &
   PaddingLineBetweenBlocksRule &
+  PaddingLineBetweenTagsRule &
   PreferImportFromVueRule &
   PreferPropTypeBooleanFirstRule &
   PreferSeparateStaticClassRule &

@@ -40,6 +40,7 @@ import type { NoReduceRule } from './no-reduce';
 import type { NoStaticOnlyClassRule } from './no-static-only-class';
 import type { NoThenableRule } from './no-thenable';
 import type { NoThisAssignmentRule } from './no-this-assignment';
+import type { NoUnnecessaryAwaitRule } from './no-unnecessary-await';
 import type { NoUnreadableArrayDestructuringRule } from './no-unreadable-array-destructuring';
 import type { NoUnreadableIifeRule } from './no-unreadable-iife';
 import type { NoUnsafeRegexRule } from './no-unsafe-regex';
@@ -115,6 +116,7 @@ import type { RequireArrayJoinSeparatorRule } from './require-array-join-separat
 import type { RequireNumberToFixedDigitsArgumentRule } from './require-number-to-fixed-digits-argument';
 import type { RequirePostMessageTargetOriginRule } from './require-post-message-target-origin';
 import type { StringContentRule } from './string-content';
+import type { SwitchCaseBracesRule } from './switch-case-braces';
 import type { TemplateIndentRule } from './template-indent';
 import type { TextEncodingIdentifierCaseRule } from './text-encoding-identifier-case';
 import type { ThrowNewErrorRule } from './throw-new-error';
@@ -160,6 +162,7 @@ export type UnicornRules = BetterRegexRule &
   NoStaticOnlyClassRule &
   NoThenableRule &
   NoThisAssignmentRule &
+  NoUnnecessaryAwaitRule &
   NoUnreadableArrayDestructuringRule &
   NoUnreadableIifeRule &
   NoUnsafeRegexRule &
@@ -223,6 +226,7 @@ export type UnicornRules = BetterRegexRule &
   RequireNumberToFixedDigitsArgumentRule &
   RequirePostMessageTargetOriginRule &
   StringContentRule &
+  SwitchCaseBracesRule &
   TemplateIndentRule &
   TextEncodingIdentifierCaseRule &
   ThrowNewErrorRule &

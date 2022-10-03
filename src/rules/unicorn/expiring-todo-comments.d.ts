@@ -19,7 +19,7 @@ export type ExpiringTodoCommentsOptions = [ExpiringTodoCommentsOption?];
 /**
  * Add expiration conditions to TODO comments.
  *
- * @see [expiring-todo-comments](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/expiring-todo-comments.md)
+ * @see [expiring-todo-comments](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v44.0.0/docs/rules/expiring-todo-comments.md)
  */
 export type ExpiringTodoCommentsRuleConfig =
   RuleConfig<ExpiringTodoCommentsOptions>;
@@ -27,13 +27,13 @@ export type ExpiringTodoCommentsRuleConfig =
 /**
  * Add expiration conditions to TODO comments.
  *
- * @see [expiring-todo-comments](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/expiring-todo-comments.md)
+ * @see [expiring-todo-comments](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v44.0.0/docs/rules/expiring-todo-comments.md)
  */
 export interface ExpiringTodoCommentsRule {
   /**
    * Add expiration conditions to TODO comments.
    *
-   * @see [expiring-todo-comments](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/rules/expiring-todo-comments.md)
+   * @see [expiring-todo-comments](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v44.0.0/docs/rules/expiring-todo-comments.md)
    */
   'unicorn/expiring-todo-comments': ExpiringTodoCommentsRuleConfig;
 }
