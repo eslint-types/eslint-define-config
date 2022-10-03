@@ -39,6 +39,7 @@ export const pluginsMap: Record<string, Plugin> = {
   },
   jsdoc: {
     name: 'JSDoc',
+    prefix: 'jsdoc',
     rules: (eslintPluginJSDoc as Plugin).rules,
   },
   mdx: {
