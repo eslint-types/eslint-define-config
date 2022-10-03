@@ -1,6 +1,6 @@
 import { pascalCase } from 'change-case';
-import * as fs from 'fs';
-import { join } from 'path';
+import * as fs from 'node:fs';
+import { join } from 'node:path';
 import type { Plugin } from './contracts';
 import { format } from './src/format';
 import { pluginsMap } from './src/plugins-map';
