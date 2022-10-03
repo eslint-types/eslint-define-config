@@ -7,6 +7,8 @@ import * as eslintPluginMdx from 'eslint-plugin-mdx';
 // @ts-expect-error
 import eslintPluginNode from 'eslint-plugin-node';
 // @ts-expect-error
+import eslintPluginN from 'eslint-plugin-n';
+// @ts-expect-error
 import eslintPluginSpellcheck from 'eslint-plugin-spellcheck';
 // @ts-expect-error
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
@@ -45,6 +47,10 @@ export const pluginsMap: Record<string, Plugin> = {
   mdx: {
     name: 'Mdx',
     rules: eslintPluginMdx.rules,
+  },
+  n: {
+    name: 'N',
+    rules: (eslintPluginN as Plugin).rules,
   },
   node: {
     name: 'Node',
