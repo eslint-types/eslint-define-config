@@ -1,15 +1,15 @@
+import { logger } from '@poppinss/cliui';
 import { pascalCase } from 'change-case';
+import type { Rule } from 'eslint';
+import { green, red, yellow } from 'kleur';
 import * as fs from 'node:fs';
 import { join } from 'node:path';
+import dedent from 'ts-dedent';
 import type { Plugin } from './contracts';
 import { format } from './src/format';
+import { JsDocBuilder } from './src/js-doc-builder';
 import { pluginsMap } from './src/plugins-map';
 import { RuleFile } from './src/rule-file';
-import dedent from 'ts-dedent';
-import { JsDocBuilder } from './src/js-doc-builder';
-import { red, green, yellow } from 'kleur';
-import { logger } from '@poppinss/cliui';
-import type { Rule } from 'eslint';
 
 /**
  * Generate the index.d.ts file for the plugin's rules that will re-export all
@@ -48,6 +48,7 @@ function generateRuleIndexFile(
    */
   const fileContent = dedent(`
     ${rulesImports}
+
     ${pluginRulesType}
   `);
 
@@ -88,6 +89,7 @@ async function generateRulesFiles(
     const ruleFile = new RuleFile(plugin, pluginDirectory, ruleName, rule);
     try {
       await ruleFile.generate();
+      ruleFile.writeGeneratedContent();
     } catch (err) {
       failedRules.push(ruleName);
     }
@@ -102,11 +104,11 @@ async function generateRulesFiles(
  * rule files.
  */
 function createPluginDirectory(
-  plugin: Plugin,
+  pluginName: string,
   targetDirectory?: string,
 ): string {
   const rulesDirectory = join(__dirname, targetDirectory || '../../src/rules');
-  const pluginDirectory = join(rulesDirectory, plugin.name);
+  const pluginDirectory = join(rulesDirectory, pluginName);
 
   if (fs.existsSync(pluginDirectory)) {
     fs.rmSync(pluginDirectory, { recursive: true, force: true });
@@ -120,7 +122,8 @@ export async function run(options?: {
   plugins?: string[];
   targetDirectory?: string;
 }): Promise<void> {
-  const wantedPlugins = options?.plugins ?? Object.keys(pluginsMap);
+  const { plugins, targetDirectory } = options || {};
+  const wantedPlugins = plugins ?? Object.keys(pluginsMap);
 
   for (const pluginName of wantedPlugins) {
     const plugin = pluginsMap[pluginName]!;
@@ -131,7 +134,7 @@ export async function run(options?: {
 
     logger.info(`Generating ${plugin.name} rules`);
 
-    const pluginDir = createPluginDirectory(plugin, options?.targetDirectory);
+    const pluginDir = createPluginDirectory(pluginName, targetDirectory);
     const { failedRules } = await generateRulesFiles(plugin, pluginDir);
 
     generateRuleIndexFile(pluginDir, plugin, failedRules);

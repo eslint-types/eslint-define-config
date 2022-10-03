@@ -1,18 +1,18 @@
-import { pascalCase, paramCase as kebabCase } from 'change-case';
+import { paramCase as kebabCase, pascalCase } from 'change-case';
 import type { Rule } from 'eslint';
+import type { JSONSchema4 } from 'json-schema';
+import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { upperCaseFirst } from 'upper-case-first';
 import type { Plugin } from '../contracts';
 import { format } from './format';
-import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { JsDocBuilder } from './js-doc-builder';
 import { generateTypeFromSchema } from './json-schema-to-ts';
-import type { JSONSchema4 } from 'json-schema';
 
 export class RuleFile {
-  private content: string = '';
+  private content = '';
   private readonly rulePath: string;
-  private readonly ruleNamePascalCase: string = pascalCase(this.ruleName);
+  private readonly ruleNamePascalCase: string;
 
   private isSchemaArray!: boolean;
   private mainSchema?: JSONSchema4;
@@ -25,6 +25,7 @@ export class RuleFile {
     private readonly ruleName: string,
     private readonly rule: Rule.RuleModule,
   ) {
+    this.ruleNamePascalCase = pascalCase(this.ruleName);
     this.rulePath = resolve(pluginDirectory, `${ruleName}.d.ts`);
     this.assignSchemasInfo();
   }
@@ -45,7 +46,7 @@ export class RuleFile {
   public appendRuleConfigImport(): void {
     const nestedDepth = this.ruleName.split('/').length;
     const ruleConfigImportPath = '../'.repeat(nestedDepth) + 'rule-config';
-    this.content += `import type { RuleConfig } from '${ruleConfigImportPath}'\n`;
+    this.content += `import type { RuleConfig } from '${ruleConfigImportPath}'\n\n`;
   }
 
   /**
@@ -60,7 +61,7 @@ export class RuleFile {
       description += '.';
     }
 
-    return description;
+    return description.replace('*/', '');
   }
 
   /**
@@ -81,7 +82,9 @@ export class RuleFile {
   public generateTypeJsDoc(): string {
     return JsDocBuilder.build()
       .add(this.buildDescription())
+      .add(' ')
       .add(this.rule.meta?.deprecated ? '@deprecated' : '')
+      .add(this.rule.meta?.deprecated ? ' ' : '')
       .add(this.buildSeeDocLink())
       .output();
   }
@@ -93,10 +96,14 @@ export class RuleFile {
     schema: JSONSchema4,
     comment: string,
   ): Promise<void> {
-    const type = await generateTypeFromSchema(schema, comment);
+    const type = await generateTypeFromSchema(
+      schema,
+      this.ruleNamePascalCase + comment,
+    );
 
-    const output = JsDocBuilder.build().add(comment).output();
-    this.content += `${output}\n${type}`;
+    const jsdoc = JsDocBuilder.build().add(`${comment}.`).output();
+    this.content += `\n${jsdoc}`;
+    this.content += `\n${type}\n`;
   }
 
   /**
@@ -124,7 +131,7 @@ export class RuleFile {
 
     let type = '';
     if (!this.isSchemaArray) {
-      type = `${ruleName}Options`;
+      type = `${ruleName}Option`;
     } else if (this.thirdSchema) {
       type = `[${ruleName}Option?, ${ruleName}Config?, ${ruleName}Setting?]`;
     } else if (this.sideSchema) {
@@ -133,8 +140,8 @@ export class RuleFile {
       type = `[${ruleName}Option?]`;
     }
 
-    this.content += JsDocBuilder.build().add('Options').output();
-    this.content += `export type ${ruleName}Options = ${type}`;
+    this.content += JsDocBuilder.build().add('Options.').output() + '\n';
+    this.content += `export type ${ruleName}Options = ${type}\n\n`;
   }
 
   /**
@@ -144,8 +151,8 @@ export class RuleFile {
     const ruleName = this.ruleNamePascalCase;
     const genericContent = this.mainSchema ? `${ruleName}Options` : '[]';
 
-    this.content += this.generateTypeJsDoc();
-    this.content += `export type ${ruleName}RuleConfig = RuleConfig<${genericContent}>;`;
+    this.content += this.generateTypeJsDoc() + '\n';
+    this.content += `export type ${ruleName}RuleConfig = RuleConfig<${genericContent}>;\n\n`;
   }
 
   /**
@@ -153,13 +160,17 @@ export class RuleFile {
    */
   private appendRule(): void {
     const ruleName = this.ruleNamePascalCase;
-    const rulePrefix = this.plugin.prefix ?? kebabCase(this.plugin.name);
+    const { prefix, name } = this.plugin;
+    let rulePrefix = (prefix ?? kebabCase(name)) + '/';
+    if (name === 'Eslint') {
+      rulePrefix = '';
+    }
 
-    this.content += this.generateTypeJsDoc();
+    this.content += this.generateTypeJsDoc() + '\n';
 
     this.content += `export interface ${ruleName}Rule {`;
-    this.content += `${this.generateTypeJsDoc()}`;
-    this.content += `'${rulePrefix}/${this.ruleName}': ${ruleName}RuleConfig;`;
+    this.content += `${this.generateTypeJsDoc()}\n`;
+    this.content += `'${rulePrefix}${this.ruleName}': ${ruleName}RuleConfig;`;
     this.content += '}';
   }
 
@@ -176,18 +187,26 @@ export class RuleFile {
   /**
    * Generate a file with the rule typings
    */
-  public async generate(): Promise<void> {
+  public async generate(): Promise<string> {
     this.appendRuleConfigImport();
     await this.appendRuleSchemaTypes();
 
     if (this.mainSchema) {
       this.appendRuleOptions();
-      this.appendRuleConfig();
-      this.appendRule();
     }
+
+    this.appendRuleConfig();
+    this.appendRule();
 
     this.content = format(this.content);
 
+    return this.content;
+  }
+
+  /**
+   * Must be called after `generate()` to write the file
+   */
+  public writeGeneratedContent(): void {
     this.createRuleDirectory();
     writeFileSync(this.rulePath, this.content);
   }

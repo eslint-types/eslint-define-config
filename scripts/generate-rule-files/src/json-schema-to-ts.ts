@@ -25,6 +25,7 @@ export async function generateTypeFromSchema(
   typeName: string,
 ): Promise<string> {
   const result = await compile(schema, typeName, {
+    format: false,
     bannerComment: '',
     style: { singleQuote: true, trailingComma: 'all' },
     unknownAny: false,
