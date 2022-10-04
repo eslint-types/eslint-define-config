@@ -51,7 +51,11 @@ describe('Rule patcher', () => {
       console.log('lets go')
     `);
 
-    expect(result.fileContent).toBe("console.log('lets go');");
+    expect(result.fileContent).toMatchInlineSnapshot(`
+      "
+
+      console.log('lets go');"
+    `);
     expect(getReportOf(result.report, 'test').hasPatched).toBe(true);
   });
 });
@@ -66,11 +70,10 @@ describe('Fix mapped types module', () => {
     `);
 
     expect(result.fileContent).toMatchInlineSnapshot(`
-      "type FileExtensionInImportConfig = {
-        tryExtensions?: string[];
-      } | {
-        [k: string]: 'always' | 'never';
-      };"
+      "
+      type FileExtensionInImportConfig = {
+        tryExtensions?: string[];} | {
+        [k: string]: 'always' | 'never';};"
     `);
 
     expect(getReportOf(result.report, 'fix-mapped-types').hasPatched).toBe(
@@ -87,11 +90,10 @@ describe('Fix mapped types module', () => {
     `);
 
     expect(result.fileContent).toMatchInlineSnapshot(`
-      "export type FileExtensionInImportConfig = {
-        tryExtensions?: string[];
-      } | {
-        [k: string]: 'always' | 'never';
-      };"
+      "
+      export type FileExtensionInImportConfig = {
+        tryExtensions?: string[];} | {
+        [k: string]: 'always' | 'never';};"
     `);
   });
 
