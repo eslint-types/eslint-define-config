@@ -1,14 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 
-import { Filesystem } from '@poppinss/dev-utils';
-import { join } from 'path';
-import { afterEach, describe, expect, it } from 'vitest';
+import { describe, expect, it } from 'vitest';
 import { generateTypeFromSchema } from '../scripts/generate-rule-files/src/json-schema-to-ts';
 import { RuleFile } from '../scripts/generate-rule-files/src/rule-file';
-
-const fs = new Filesystem(join(__dirname, '../tmp'));
-
-afterEach(() => fs.cleanup());
 
 describe('Json schema to ts', () => {
   it('Should remove garbage comments', async () => {
@@ -48,7 +42,7 @@ describe('Rule File', () => {
 
     const ruleFile = new RuleFile(
       { name: 'my-plugin', rules: {} },
-      join(fs.basePath, 'my-plugin'),
+      'my-plugin',
       'my-rule',
       rule as any,
     );
@@ -73,7 +67,7 @@ describe('Rule File', () => {
 
     const ruleFile = new RuleFile(
       { name: 'my-plugin', rules: {} },
-      join(fs.basePath, 'my-plugin'),
+      'my-plugin',
       'my-rule',
       rule as any,
     );
@@ -99,7 +93,7 @@ describe('Rule File', () => {
 
     const ruleFile = new RuleFile(
       { name: 'my-plugin', rules: {} },
-      join(fs.basePath, 'my-plugin'),
+      'my-plugin',
       'my-rule',
       rule as any,
     );
@@ -123,7 +117,7 @@ describe('Rule File', () => {
 
     const ruleFile = new RuleFile(
       { name: 'my-plugin', rules: {} },
-      join(fs.basePath, 'my-plugin'),
+      'my-plugin',
       'my-rule',
       rule as any,
     );
