@@ -5,8 +5,8 @@ import { describe, expect, it } from 'vitest';
 import { generateTypeFromSchema } from '../scripts/generate-rule-files/src/json-schema-to-ts';
 import { RuleFile } from '../scripts/generate-rule-files/src/rule-file';
 
-describe('Json schema to ts', () => {
-  it('Should remove garbage comments', async () => {
+describe('Json schema to TS', () => {
+  it('Should clean comments', async () => {
     const result: string = await generateTypeFromSchema(
       {
         type: 'object',
@@ -52,7 +52,7 @@ describe('Rule File', () => {
     expect(content).toMatchSnapshot();
   });
 
-  it('Two schemas', async () => {
+  it('Side schemas', async () => {
     const rule: Rule.RuleModule = {
       meta: {
         docs: {
@@ -77,7 +77,7 @@ describe('Rule File', () => {
     expect(content).toMatchSnapshot();
   });
 
-  it('Three schemas', async () => {
+  it('Third schemas', async () => {
     const rule: Rule.RuleModule = {
       meta: {
         docs: {
@@ -96,7 +96,7 @@ describe('Rule File', () => {
       { name: 'my-plugin', rules: {} },
       'my-plugin',
       'my-rule',
-      rule as any,
+      rule,
     );
 
     const content: string = await ruleFile.generate();
@@ -120,7 +120,7 @@ describe('Rule File', () => {
       { name: 'my-plugin', rules: {} },
       'my-plugin',
       'my-rule',
-      rule as any,
+      rule,
     );
 
     const content: string = await ruleFile.generate();

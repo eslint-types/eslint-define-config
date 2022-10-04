@@ -74,13 +74,8 @@ export interface MyRuleRule {
 "
 `;
 
-exports[`Rule File > Three schemas 1`] = `
+exports[`Rule File > Side schemas 1`] = `
 "import type { RuleConfig } from '../rule-config';
-
-/**
- * Setting.
- */
-export type MyRuleSetting = boolean;
 
 /**
  * Config.
@@ -95,7 +90,7 @@ export type MyRuleOption = number;
 /**
  * Options.
  */
-export type MyRuleOptions = [MyRuleOption?, MyRuleConfig?, MyRuleSetting?];
+export type MyRuleOptions = [MyRuleOption?, MyRuleConfig?];
 
 /**
  * My rule description.
@@ -120,8 +115,13 @@ export interface MyRuleRule {
 "
 `;
 
-exports[`Rule File > Two schemas 1`] = `
+exports[`Rule File > Third schemas 1`] = `
 "import type { RuleConfig } from '../rule-config';
+
+/**
+ * Setting.
+ */
+export type MyRuleSetting = boolean;
 
 /**
  * Config.
@@ -136,7 +136,7 @@ export type MyRuleOption = number;
 /**
  * Options.
  */
-export type MyRuleOptions = [MyRuleOption?, MyRuleConfig?];
+export type MyRuleOptions = [MyRuleOption?, MyRuleConfig?, MyRuleSetting?];
 
 /**
  * My rule description.
