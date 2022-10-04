@@ -10,7 +10,7 @@ import { JsDocBuilder } from './js-doc-builder';
 import { generateTypeFromSchema } from './json-schema-to-ts';
 
 export class RuleFile {
-  private content = '';
+  private content: string = '';
   private readonly rulePath: string;
   private readonly ruleNamePascalCase: string;
 
@@ -31,7 +31,9 @@ export class RuleFile {
   }
 
   private assignSchemasInfo(): void {
-    const schema = this.rule.meta?.schema;
+    const schema: JSONSchema4 | JSONSchema4[] | undefined =
+      this.rule.meta?.schema;
+    // eslint-disable-next-line @typescript-eslint/typedef
     const isArray = Array.isArray(schema);
 
     this.mainSchema = isArray ? schema[0] : schema;
@@ -44,8 +46,9 @@ export class RuleFile {
    * Append the `import type { RuleConfig } at the top of the file
    */
   public appendRuleConfigImport(): void {
-    const nestedDepth = this.ruleName.split('/').length;
-    const ruleConfigImportPath = '../'.repeat(nestedDepth) + 'rule-config';
+    const nestedDepth: number = this.ruleName.split('/').length;
+    const ruleConfigImportPath: string =
+      '../'.repeat(nestedDepth) + 'rule-config';
     this.content += `import type { RuleConfig } from '${ruleConfigImportPath}'\n\n`;
   }
 
@@ -96,12 +99,12 @@ export class RuleFile {
     schema: JSONSchema4,
     comment: string,
   ): Promise<void> {
-    const type = await generateTypeFromSchema(
+    const type: string = await generateTypeFromSchema(
       schema,
       this.ruleNamePascalCase + comment,
     );
 
-    const jsdoc = JsDocBuilder.build().add(`${comment}.`).output();
+    const jsdoc: string = JsDocBuilder.build().add(`${comment}.`).output();
     this.content += `\n${jsdoc}`;
     this.content += `\n${type}\n`;
   }
@@ -127,9 +130,9 @@ export class RuleFile {
    * Append the rule type options to the file content
    */
   private appendRuleOptions(): void {
-    const ruleName = this.ruleNamePascalCase;
+    const ruleName: string = this.ruleNamePascalCase;
 
-    let type = '';
+    let type: string = '';
     if (!this.isSchemaArray) {
       type = `${ruleName}Option`;
     } else if (this.thirdSchema) {
@@ -148,8 +151,10 @@ export class RuleFile {
    * Append the rule config type to the file content
    */
   private appendRuleConfig(): void {
-    const ruleName = this.ruleNamePascalCase;
-    const genericContent = this.mainSchema ? `${ruleName}Options` : '[]';
+    const ruleName: string = this.ruleNamePascalCase;
+    const genericContent: string = this.mainSchema
+      ? `${ruleName}Options`
+      : '[]';
 
     this.content += this.generateTypeJsDoc() + '\n';
     this.content += `export type ${ruleName}RuleConfig = RuleConfig<${genericContent}>;\n\n`;
@@ -159,9 +164,9 @@ export class RuleFile {
    * Append the final rule interface to the file content
    */
   private appendRule(): void {
-    const ruleName = this.ruleNamePascalCase;
+    const ruleName: string = this.ruleNamePascalCase;
     const { prefix, name } = this.plugin;
-    let rulePrefix = (prefix ?? kebabCase(name)) + '/';
+    let rulePrefix: string = (prefix ?? kebabCase(name)) + '/';
     if (name === 'Eslint') {
       rulePrefix = '';
     }
@@ -178,7 +183,7 @@ export class RuleFile {
    * Create the directory of the rule file if it doesn't exist
    */
   private createRuleDirectory(): void {
-    const subPath = dirname(this.rulePath.toLowerCase());
+    const subPath: string = dirname(this.rulePath.toLowerCase());
     if (!existsSync(subPath)) {
       mkdirSync(subPath, { recursive: true });
     }

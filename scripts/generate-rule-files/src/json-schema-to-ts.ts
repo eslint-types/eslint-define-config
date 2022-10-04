@@ -6,7 +6,7 @@ import { compile } from 'json-schema-to-typescript';
  * and that we don't need
  */
 function removeGarbageFromJsDocs(content: string): string {
-  const patterns = [
+  const patterns: RegExp[] = [
     /\* This interface was referenced by .+ JSON-Schema definition/,
     /\* via the `.+` "/,
   ];
@@ -24,7 +24,7 @@ export async function generateTypeFromSchema(
   schema: JSONSchema4,
   typeName: string,
 ): Promise<string> {
-  const result = await compile(schema, typeName, {
+  const result: string = await compile(schema, typeName, {
     format: false,
     bannerComment: '',
     style: { singleQuote: true, trailingComma: 'all' },

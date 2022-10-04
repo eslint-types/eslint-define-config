@@ -1,6 +1,6 @@
 import { run } from '.';
 
-const selectedPlugins = process.argv
+const selectedPlugins: string[] | undefined = process.argv
   .slice(2)
   .find((arg) => arg.startsWith('--plugins='))
   ?.replace('--plugins=', '')

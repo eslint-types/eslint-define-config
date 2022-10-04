@@ -14,6 +14,6 @@ const PRETTIER_OPTIONS: Options = {
 /**
  * Format the given content with Prettier.
  */
-export const format = (content: string): string => {
+export function format(content: string): string {
   return prettierFormat(content, PRETTIER_OPTIONS);
-};
+}
