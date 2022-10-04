@@ -7,7 +7,7 @@ import dedent from 'ts-dedent';
 import type { Plugin } from './contracts';
 import { format } from './src/format';
 import { JsDocBuilder } from './src/js-doc-builder';
-import { pluginsMap } from './src/plugins-map';
+import { PLUGIN_REGISTRY } from './src/plugins-map';
 import { RuleFile } from './src/rule-file';
 
 /**
@@ -134,10 +134,10 @@ export interface RunOptions {
 export async function run(options: RunOptions = {}): Promise<void> {
   const { plugins, targetDirectory } = options;
 
-  const wantedPlugins: string[] = plugins ?? Object.keys(pluginsMap);
+  const wantedPlugins: string[] = plugins ?? Object.keys(PLUGIN_REGISTRY);
 
   for (const pluginName of wantedPlugins) {
-    const plugin: Plugin = pluginsMap[pluginName]!;
+    const plugin: Plugin = PLUGIN_REGISTRY[pluginName]!;
 
     if (!plugin) {
       throw new Error(`Plugin ${pluginName} doesn't exist.`);

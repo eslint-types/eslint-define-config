@@ -25,7 +25,7 @@ import type { Plugin } from '../contracts';
 /**
  * Map of plugins for which the script will generate rule files.
  */
-export const pluginsMap: Record<string, Plugin> = {
+export const PLUGIN_REGISTRY: Readonly<Record<string, Plugin>> = {
   eslint: {
     name: 'Eslint',
     rules: Object.fromEntries(new eslint.Linter().getRules().entries()),
@@ -77,4 +77,4 @@ export const pluginsMap: Record<string, Plugin> = {
     name: 'VuePug',
     rules: (eslintPluginVuePug as Plugin).rules,
   },
-};
+} as const;
