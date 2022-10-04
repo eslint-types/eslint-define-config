@@ -1,10 +1,10 @@
 /**
- * Simple class helper to build a JSDoc comment
+ * Simple class helper to build a JSDoc comment.
  */
 export class JsDocBuilder {
   private readonly content: string[] = [];
 
-  static build(): JsDocBuilder {
+  public static build(): JsDocBuilder {
     return new JsDocBuilder();
   }
 

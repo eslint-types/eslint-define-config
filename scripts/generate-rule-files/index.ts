@@ -11,8 +11,7 @@ import { pluginsMap } from './src/plugins-map';
 import { RuleFile } from './src/rule-file';
 
 /**
- * Generate the index.d.ts file for the plugin's rules that will re-export all
- * rules.
+ * Generate the `index.d.ts` file for the plugin's rules that will re-export all rules.
  */
 function generateRuleIndexFile(
   pluginDirectory: string,
@@ -24,14 +23,14 @@ function generateRuleIndexFile(
   );
 
   /**
-   * Build all the import statements for the rules
+   * Build all the import statements for the rules.
    */
   const rulesImports: string = generatedRules
     .map((name) => `import type { ${pascalCase(name)}Rule } from './${name}';`)
     .join('\n');
 
   /**
-   * Build the exported type that is an intersection of all the rules
+   * Build the exported type that is an intersection of all the rules.
    */
   const rulesFinalIntersection: string = generatedRules
     .map((name) => `${pascalCase(name)}Rule`)
@@ -43,7 +42,7 @@ function generateRuleIndexFile(
   `);
 
   /**
-   * Write the final index.d.ts file
+   * Write the final `index.d.ts` file.
    */
   const fileContent: string = dedent(`
     ${rulesImports}
@@ -56,7 +55,7 @@ function generateRuleIndexFile(
 }
 
 /**
- * Print a report after having generated rules files for a plugin
+ * Print a report after having generated rules files for a plugin.
  */
 function printGenerationReport(
   rules: [string, Rule.RuleModule][],
@@ -75,7 +74,7 @@ function printGenerationReport(
 }
 
 /**
- * Generate a .d.ts file for each rule in the given plugin
+ * Generate a .d.ts file for each rule in the given plugin.
  */
 async function generateRulesFiles(
   plugin: Plugin,
@@ -106,8 +105,7 @@ async function generateRulesFiles(
   return { failedRules };
 }
 /**
- * If it doesn't exist, create the directory that will contain the plugin's
- * rule files.
+ * If it doesn't exist, create the directory that will contain the plugin's rule files.
  */
 function createPluginDirectory(
   pluginName: string,
@@ -124,15 +122,16 @@ function createPluginDirectory(
   }
 
   mkdirSync(pluginDirectory, { mode: 0o755, recursive: true });
+
   return pluginDirectory;
 }
 
-export async function run(
-  options: {
-    plugins?: string[];
-    targetDirectory?: string;
-  } = {},
-): Promise<void> {
+export interface RunOptions {
+  plugins?: string[];
+  targetDirectory?: string;
+}
+
+export async function run(options: RunOptions = {}): Promise<void> {
   const { plugins, targetDirectory } = options;
 
   const wantedPlugins: string[] = plugins ?? Object.keys(pluginsMap);
@@ -141,10 +140,10 @@ export async function run(
     const plugin: Plugin = pluginsMap[pluginName]!;
 
     if (!plugin) {
-      throw new Error(`Plugin ${pluginName} doesn't exist`);
+      throw new Error(`Plugin ${pluginName} doesn't exist.`);
     }
 
-    logger.info(`Generating ${plugin.name} rules`);
+    logger.info(`Generating ${plugin.name} rules.`);
 
     const pluginDir: string = createPluginDirectory(
       pluginName,

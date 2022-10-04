@@ -26,7 +26,10 @@ export async function generateTypeFromSchema(
   const result: string = await compile(schema, typeName, {
     format: false,
     bannerComment: '',
-    style: { singleQuote: true, trailingComma: 'all' },
+    style: {
+      singleQuote: true,
+      trailingComma: 'all',
+    },
     unknownAny: false,
   });
 

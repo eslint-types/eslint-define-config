@@ -11,6 +11,7 @@ import { generateTypeFromSchema } from './json-schema-to-ts';
 
 export class RuleFile {
   private content: string = '';
+
   private readonly rulePath: string;
   private readonly ruleNamePascalCase: string;
 
@@ -19,7 +20,7 @@ export class RuleFile {
   private sideSchema?: JSONSchema4;
   private thirdSchema?: JSONSchema4;
 
-  constructor(
+  public constructor(
     private readonly plugin: Plugin,
     pluginDirectory: string,
     private readonly ruleName: string,
@@ -43,17 +44,18 @@ export class RuleFile {
   }
 
   /**
-   * Append the `import type { RuleConfig } at the top of the file
+   * Append the `import type { RuleConfig } from '../rule-config'` at the top of the file.
    */
   public appendRuleConfigImport(): void {
     const nestedDepth: number = this.ruleName.split('/').length;
-    const ruleConfigImportPath: string =
-      '../'.repeat(nestedDepth) + 'rule-config';
+    const ruleConfigImportPath: string = `${'../'.repeat(
+      nestedDepth,
+    )}rule-config`;
     this.content += `import type { RuleConfig } from '${ruleConfigImportPath}'\n\n`;
   }
 
   /**
-   * Build the rule description to append to the JSDoc
+   * Build the rule description to append to the JSDoc.
    */
   public buildDescription(): string {
     let description: string = upperCaseFirst(
@@ -68,7 +70,7 @@ export class RuleFile {
   }
 
   /**
-   * Build the `@see` url to the rule documentation to append to the JSDoc
+   * Build the `@see` url to the rule documentation to append to the JSDoc.
    */
   public buildSeeDocLink(): string {
     const { meta } = this.rule;
@@ -80,7 +82,7 @@ export class RuleFile {
   }
 
   /**
-   * Generate a JSDoc with the rule description and `@see` url
+   * Generate a JSDoc with the rule description and `@see` url.
    */
   public generateTypeJsDoc(): string {
     return JsDocBuilder.build()
@@ -93,7 +95,7 @@ export class RuleFile {
   }
 
   /**
-   * Generate a type from a JSON schema and append it to the file content
+   * Generate a type from a JSON schema and append it to the file content.
    */
   private async appendJsonSchemaType(
     schema: JSONSchema4,
@@ -110,7 +112,7 @@ export class RuleFile {
   }
 
   /**
-   * Generate and append types for the rule schemas
+   * Generate and append types for the rule schemas.
    */
   private async appendRuleSchemaTypes(): Promise<void> {
     if (this.thirdSchema) {
@@ -127,7 +129,7 @@ export class RuleFile {
   }
 
   /**
-   * Append the rule type options to the file content
+   * Append the rule type options to the file content.
    */
   private appendRuleOptions(): void {
     const ruleName: string = this.ruleNamePascalCase;
@@ -148,7 +150,7 @@ export class RuleFile {
   }
 
   /**
-   * Append the rule config type to the file content
+   * Append the rule config type to the file content.
    */
   private appendRuleConfig(): void {
     const ruleName: string = this.ruleNamePascalCase;
@@ -161,7 +163,7 @@ export class RuleFile {
   }
 
   /**
-   * Append the final rule interface to the file content
+   * Append the final rule interface to the file content.
    */
   private appendRule(): void {
     const ruleName: string = this.ruleNamePascalCase;
@@ -180,7 +182,7 @@ export class RuleFile {
   }
 
   /**
-   * Create the directory of the rule file if it doesn't exist
+   * Create the directory of the rule file if it doesn't exist.
    */
   private createRuleDirectory(): void {
     const subPath: string = dirname(this.rulePath.toLowerCase());
@@ -190,7 +192,7 @@ export class RuleFile {
   }
 
   /**
-   * Generate a file with the rule typings
+   * Generate a file with the rule typings.
    */
   public async generate(): Promise<string> {
     this.appendRuleConfigImport();
@@ -209,10 +211,11 @@ export class RuleFile {
   }
 
   /**
-   * Must be called after `generate()` to write the file
+   * Must be called after `generate()` to write the file.
    */
   public writeGeneratedContent(): void {
     this.createRuleDirectory();
+
     writeFileSync(this.rulePath, this.content);
   }
 }
