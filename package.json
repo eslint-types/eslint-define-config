@@ -8,10 +8,10 @@
     "check": "tsc",
     "format": "prettier --write .",
     "lint": "eslint .",
-    "test": "echo \"No tests available\"",
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
     "prepublishOnly": "pnpm run clean && pnpm install && pnpm run check",
-    "generate:rules": "esno ./scripts/generate-rule-files.ts",
-    "generate": "node ./scripts/generate-rule.js"
+    "generate:rules": "tsx ./scripts/generate-rule-files/cli.ts"
   },
   "keywords": [
     "config",
@@ -50,6 +50,7 @@
   ],
   "devDependencies": {
     "@intlify/eslint-plugin-vue-i18n": "~2.0.0",
+    "@poppinss/cliui": "~3.0.4",
     "@types/eslint": "~8.4.6",
     "@types/json-schema": "~7.0.11",
     "@types/node": "~18.7.23",
@@ -71,13 +72,15 @@
     "eslint-plugin-unicorn": "~44.0.0",
     "eslint-plugin-vue": "~9.5.1",
     "eslint-plugin-vue-pug": "~0.5.4",
-    "esno": "0.16.3",
     "json-schema": "~0.4.0",
     "json-schema-to-typescript": "~11.0.2",
     "prettier": "2.7.1",
     "prettier-plugin-organize-imports": "~3.1.1",
+    "ts-dedent": "~2.2.0",
+    "tsx": "~3.9.0",
     "typescript": "~4.8.4",
     "upper-case-first": "~2.0.2",
+    "vitest": "~0.23.4",
     "vue-eslint-parser": "~9.1.0"
   },
   "packageManager": "pnpm@7.12.2",
