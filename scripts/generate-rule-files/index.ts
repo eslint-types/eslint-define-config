@@ -92,6 +92,7 @@ async function generateRulesFiles(
       ruleName,
       rule,
     );
+
     try {
       await ruleFile.generate();
       ruleFile.writeGeneratedContent();
@@ -129,6 +130,7 @@ function createPluginDirectory(
 export interface RunOptions {
   plugins?: string[];
   targetDirectory?: string;
+  verbose?: boolean;
 }
 
 export async function run(options: RunOptions = {}): Promise<void> {

@@ -8,6 +8,7 @@ import type { Plugin } from '../contracts';
 import { format } from './format';
 import { JsDocBuilder } from './js-doc-builder';
 import { generateTypeFromSchema } from './json-schema-to-ts';
+import { defaultRulePatcher } from './rule-patcher';
 
 export class RuleFile {
   private content: string = '';
@@ -191,6 +192,12 @@ export class RuleFile {
     }
   }
 
+  private async applyRulePatcher(): Promise<void> {
+    const rulePatcherResult = await defaultRulePatcher.patch(this.content);
+
+    this.content = rulePatcherResult.fileContent;
+  }
+
   /**
    * Generate a file with the rule typings.
    */
@@ -204,6 +211,7 @@ export class RuleFile {
 
     this.appendRuleConfig();
     this.appendRule();
+    await this.applyRulePatcher();
 
     this.content = format(this.content);
 

@@ -42,9 +42,9 @@ exports[`Rule File > Object schema 1`] = `
 /**
  * Option.
  */
-export interface MyRuleOption {
+export type MyRuleOption = {
   [k: string]: any;
-}
+};
 
 /**
  * Options.

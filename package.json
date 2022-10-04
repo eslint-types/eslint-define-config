@@ -49,8 +49,14 @@
     "tsconfig.json"
   ],
   "devDependencies": {
+    "@babel/generator": "~7.19.3",
+    "@babel/parser": "~7.19.3",
+    "@babel/traverse": "~7.19.3",
+    "@babel/types": "~7.19.3",
     "@intlify/eslint-plugin-vue-i18n": "~2.0.0",
     "@poppinss/cliui": "~3.0.4",
+    "@types/babel__generator": "~7.6.4",
+    "@types/babel__traverse": "~7.18.2",
     "@types/eslint": "~8.4.6",
     "@types/json-schema": "~7.0.11",
     "@types/node": "~18.8.2",
