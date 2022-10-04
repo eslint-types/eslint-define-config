@@ -74,7 +74,7 @@ function printGenerationReport(
 }
 
 /**
- * Generate a .d.ts file for each rule in the given plugin.
+ * Generate a `.d.ts` file for each rule in the given plugin.
  */
 async function generateRulesFiles(
   plugin: Plugin,
