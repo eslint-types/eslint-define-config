@@ -95,7 +95,7 @@ describe('Fix mapped types module', () => {
     `);
   });
 
-  it.only('Should works with interface', async () => {
+  it('Should works with interface', async () => {
     const result = await new RulePatcher([fixMappedTypes]).patch(`
       export interface FileExtensionInImportConfig {
         tryExtensions?: string[];
