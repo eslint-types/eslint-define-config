@@ -1,8 +1,8 @@
+import type { Parser, ParserOptions } from '../parser-options';
+import type { Rules } from '../rules';
 import type { Environments } from './env';
 import type { Extends } from './extends';
-import type { Parser, ParserOptions } from './parser-options';
 import type { Plugin } from './plugin';
-import type { Rules } from './rules';
 import type { Settings } from './settings';
 
 /**

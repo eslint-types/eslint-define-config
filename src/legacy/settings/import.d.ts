@@ -1,4 +1,4 @@
-import type { Parser } from '../parser-options';
+import type { Parser } from '../../parser-options';
 
 /**
  * Import settings.

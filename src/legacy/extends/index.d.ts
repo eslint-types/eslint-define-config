@@ -1,4 +1,4 @@
-import type { LiteralUnion } from '../utility-types';
+import type { LiteralUnion } from '../../utility-types';
 import type { EslintExtensions } from './eslint';
 import type { ImportExtensions } from './eslint-plugin-import';
 import type { JsdocExtensions } from './eslint-plugin-jsdoc';
