@@ -3,6 +3,7 @@
   "version": "1.7.0",
   "description": "Provide a defineConfig function for .eslintrc.js files",
   "main": "src/index.js",
+  "module": "src/index.mjs",
   "scripts": {
     "clean": "rm -Rf dist pnpm-lock.yaml node_modules",
     "check": "tsc",
