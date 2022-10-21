@@ -1,5 +1,5 @@
-import type { ESLintFlatConfig } from './flat';
-import type { ESLintConfig } from './legacy';
+import type { ESLintConfig } from './config';
+import type { FlatESLintConfig } from './flat-config';
 
 /**
  * Define an ESLint config.
@@ -17,4 +17,4 @@ export function defineConfig(config: ESLintConfig): ESLintConfig;
  * @param config flat ESLint config.
  * @returns flat ESLint config.
  */
-export function defineConfig(config: ESLintFlatConfig[]): ESLintFlatConfig[];
+export function defineConfig(config: FlatESLintConfig[]): FlatESLintConfig[];
