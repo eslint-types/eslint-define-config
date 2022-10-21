@@ -15,6 +15,7 @@ export interface FlatESLintConfig {
    * @see [Ignore Patterns](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new#excluding-files-with-ignores)
    */
   files?: string[];
+
   /**
    * An array of glob patterns indicating the files that the configuration object should not apply to. If not specified, the configuration object applies to all files matched by files.
    *
