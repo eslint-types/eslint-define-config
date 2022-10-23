@@ -25,19 +25,16 @@ export type SpellCheckerOptions = [SpellCheckerOption?];
 /**
  * Spell check.
  *
- *
  */
 export type SpellCheckerRuleConfig = RuleConfig<SpellCheckerOptions>;
 
 /**
  * Spell check.
  *
- *
  */
 export interface SpellCheckerRule {
   /**
    * Spell check.
-   *
    *
    */
   'spellcheck/spell-checker': SpellCheckerRuleConfig;
