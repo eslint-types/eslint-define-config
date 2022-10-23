@@ -8,6 +8,7 @@ import type { NoHtmlMessagesRule } from './no-html-messages';
 import type { NoI18nTPathPropRule } from './no-i18n-t-path-prop';
 import type { NoMissingKeysRule } from './no-missing-keys';
 import type { NoMissingKeysInOtherLocalesRule } from './no-missing-keys-in-other-locales';
+import type { NoRawTextRule } from './no-raw-text';
 import type { NoUnknownLocaleRule } from './no-unknown-locale';
 import type { NoUnusedKeysRule } from './no-unused-keys';
 import type { NoVHtmlRule } from './no-v-html';
@@ -29,6 +30,7 @@ export type VueI18nRules = KeyFormatStyleRule &
   NoI18nTPathPropRule &
   NoMissingKeysInOtherLocalesRule &
   NoMissingKeysRule &
+  NoRawTextRule &
   NoUnknownLocaleRule &
   NoUnusedKeysRule &
   NoVHtmlRule &
