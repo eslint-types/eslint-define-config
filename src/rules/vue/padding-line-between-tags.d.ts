@@ -4,7 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type PaddingLineBetweenTagsOption = {
-  blankLine: 'always' | 'never';
+  blankLine: 'always' | 'never' | 'consistent';
   prev: string;
   next: string;
 }[];

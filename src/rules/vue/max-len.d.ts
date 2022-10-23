@@ -22,12 +22,44 @@ export interface MaxLenSetting {
 /**
  * Config.
  */
-export type MaxLenConfig = MaxLenSetting | number;
+export type MaxLenConfig =
+  | {
+      code?: number;
+      template?: number;
+      comments?: number;
+      tabWidth?: number;
+      ignorePattern?: string;
+      ignoreComments?: boolean;
+      ignoreTrailingComments?: boolean;
+      ignoreUrls?: boolean;
+      ignoreStrings?: boolean;
+      ignoreTemplateLiterals?: boolean;
+      ignoreRegExpLiterals?: boolean;
+      ignoreHTMLAttributeValues?: boolean;
+      ignoreHTMLTextContents?: boolean;
+    }
+  | number;
 
 /**
  * Option.
  */
-export type MaxLenOption = MaxLenSetting | number;
+export type MaxLenOption =
+  | {
+      code?: number;
+      template?: number;
+      comments?: number;
+      tabWidth?: number;
+      ignorePattern?: string;
+      ignoreComments?: boolean;
+      ignoreTrailingComments?: boolean;
+      ignoreUrls?: boolean;
+      ignoreStrings?: boolean;
+      ignoreTemplateLiterals?: boolean;
+      ignoreRegExpLiterals?: boolean;
+      ignoreHTMLAttributeValues?: boolean;
+      ignoreHTMLTextContents?: boolean;
+    }
+  | number;
 
 /**
  * Options.

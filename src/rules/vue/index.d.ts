@@ -50,6 +50,7 @@ import type { NewLineBetweenMultiLinePropertyRule } from './new-line-between-mul
 import type { NextTickStyleRule } from './next-tick-style';
 import type { NoArrowFunctionsInWatchRule } from './no-arrow-functions-in-watch';
 import type { NoAsyncInComputedPropertiesRule } from './no-async-in-computed-properties';
+import type { NoBareStringsInTemplateRule } from './no-bare-strings-in-template';
 import type { NoBooleanDefaultRule } from './no-boolean-default';
 import type { NoChildContentRule } from './no-child-content';
 import type { NoComputedPropertiesInDataRule } from './no-computed-properties-in-data';
@@ -97,6 +98,7 @@ import type { NoParsingErrorRule } from './no-parsing-error';
 import type { NoPotentialComponentOptionTypoRule } from './no-potential-component-option-typo';
 import type { NoRefAsOperandRule } from './no-ref-as-operand';
 import type { NoRefObjectDestructureRule } from './no-ref-object-destructure';
+import type { NoRequiredPropWithDefaultRule } from './no-required-prop-with-default';
 import type { NoReservedComponentNamesRule } from './no-reserved-component-names';
 import type { NoReservedKeysRule } from './no-reserved-keys';
 import type { NoReservedPropsRule } from './no-reserved-props';
@@ -269,6 +271,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NextTickStyleRule &
   NoArrowFunctionsInWatchRule &
   NoAsyncInComputedPropertiesRule &
+  NoBareStringsInTemplateRule &
   NoBooleanDefaultRule &
   NoChildContentRule &
   NoComputedPropertiesInDataRule &
@@ -316,6 +319,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoPotentialComponentOptionTypoRule &
   NoRefAsOperandRule &
   NoRefObjectDestructureRule &
+  NoRequiredPropWithDefaultRule &
   NoReservedComponentNamesRule &
   NoReservedKeysRule &
   NoReservedPropsRule &

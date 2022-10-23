@@ -4,6 +4,8 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface BlockLangOption {
+  /**
+   */
   [k: string]: {
     lang?: string | string[];
     allowNoLang?: boolean;
