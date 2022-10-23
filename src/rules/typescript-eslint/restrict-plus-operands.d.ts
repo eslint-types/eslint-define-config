@@ -20,7 +20,7 @@ export interface RestrictPlusOperandsOption {
 export type RestrictPlusOperandsOptions = [RestrictPlusOperandsOption?];
 
 /**
- * Require both operands of addition to have type `number` or `string`.
+ * Require both operands of addition to be the same type and be `bigint`, `number`, or `string`.
  *
  * @see [restrict-plus-operands](https://typescript-eslint.io/rules/restrict-plus-operands)
  */
@@ -28,13 +28,13 @@ export type RestrictPlusOperandsRuleConfig =
   RuleConfig<RestrictPlusOperandsOptions>;
 
 /**
- * Require both operands of addition to have type `number` or `string`.
+ * Require both operands of addition to be the same type and be `bigint`, `number`, or `string`.
  *
  * @see [restrict-plus-operands](https://typescript-eslint.io/rules/restrict-plus-operands)
  */
 export interface RestrictPlusOperandsRule {
   /**
-   * Require both operands of addition to have type `number` or `string`.
+   * Require both operands of addition to be the same type and be `bigint`, `number`, or `string`.
    *
    * @see [restrict-plus-operands](https://typescript-eslint.io/rules/restrict-plus-operands)
    */

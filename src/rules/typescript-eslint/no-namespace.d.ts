@@ -20,20 +20,20 @@ export interface NoNamespaceOption {
 export type NoNamespaceOptions = [NoNamespaceOption?];
 
 /**
- * Disallow custom TypeScript modules and namespaces.
+ * Disallow TypeScript namespaces.
  *
  * @see [no-namespace](https://typescript-eslint.io/rules/no-namespace)
  */
 export type NoNamespaceRuleConfig = RuleConfig<NoNamespaceOptions>;
 
 /**
- * Disallow custom TypeScript modules and namespaces.
+ * Disallow TypeScript namespaces.
  *
  * @see [no-namespace](https://typescript-eslint.io/rules/no-namespace)
  */
 export interface NoNamespaceRule {
   /**
-   * Disallow custom TypeScript modules and namespaces.
+   * Disallow TypeScript namespaces.
    *
    * @see [no-namespace](https://typescript-eslint.io/rules/no-namespace)
    */

@@ -41,20 +41,20 @@ export interface BanTsCommentOption {
 export type BanTsCommentOptions = [BanTsCommentOption?];
 
 /**
- * Disallow `@ts-<directive>` comments or require descriptions after directive.
+ * Disallow `@ts-<directive>` comments or require descriptions after directives.
  *
  * @see [ban-ts-comment](https://typescript-eslint.io/rules/ban-ts-comment)
  */
 export type BanTsCommentRuleConfig = RuleConfig<BanTsCommentOptions>;
 
 /**
- * Disallow `@ts-<directive>` comments or require descriptions after directive.
+ * Disallow `@ts-<directive>` comments or require descriptions after directives.
  *
  * @see [ban-ts-comment](https://typescript-eslint.io/rules/ban-ts-comment)
  */
 export interface BanTsCommentRule {
   /**
-   * Disallow `@ts-<directive>` comments or require descriptions after directive.
+   * Disallow `@ts-<directive>` comments or require descriptions after directives.
    *
    * @see [ban-ts-comment](https://typescript-eslint.io/rules/ban-ts-comment)
    */

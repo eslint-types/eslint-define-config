@@ -15,20 +15,20 @@ export interface ArrayTypeOption {
 export type ArrayTypeOptions = [ArrayTypeOption?];
 
 /**
- * Require using either `T[]` or `Array<T>` for arrays.
+ * Require consistently using either `T[]` or `Array<T>` for arrays.
  *
  * @see [array-type](https://typescript-eslint.io/rules/array-type)
  */
 export type ArrayTypeRuleConfig = RuleConfig<ArrayTypeOptions>;
 
 /**
- * Require using either `T[]` or `Array<T>` for arrays.
+ * Require consistently using either `T[]` or `Array<T>` for arrays.
  *
  * @see [array-type](https://typescript-eslint.io/rules/array-type)
  */
 export interface ArrayTypeRule {
   /**
-   * Require using either `T[]` or `Array<T>` for arrays.
+   * Require consistently using either `T[]` or `Array<T>` for arrays.
    *
    * @see [array-type](https://typescript-eslint.io/rules/array-type)
    */
