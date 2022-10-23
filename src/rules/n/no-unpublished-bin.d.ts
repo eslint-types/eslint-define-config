@@ -9,6 +9,7 @@ export interface NoUnpublishedBinOption {
         /**
          * @minItems 2
          * @maxItems 2
+         *
          */
         [k: string]: [string, string];
       }

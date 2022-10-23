@@ -10,6 +10,7 @@ export interface NoExtraneousImportOption {
         /**
          * @minItems 2
          * @maxItems 2
+         *
          */
         [k: string]: [string, string];
       }

@@ -5,6 +5,8 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface NoMultiSpacesOption {
   exceptions?: {
+    /**
+     */
     [k: string]: boolean;
   };
   ignoreEOLComments?: boolean;

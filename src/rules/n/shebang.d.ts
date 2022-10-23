@@ -9,6 +9,7 @@ export interface ShebangOption {
         /**
          * @minItems 2
          * @maxItems 2
+         *
          */
         [k: string]: [string, string];
       }
