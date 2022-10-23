@@ -15,7 +15,7 @@ export type NoRequiredPropWithDefaultOptions = [
 ];
 
 /**
- * Enforce props with default values ​​to be optional.
+ * Enforce props with default values to be optional.
  *
  * @see [no-required-prop-with-default](https://eslint.vuejs.org/rules/no-required-prop-with-default.html)
  */
@@ -23,13 +23,13 @@ export type NoRequiredPropWithDefaultRuleConfig =
   RuleConfig<NoRequiredPropWithDefaultOptions>;
 
 /**
- * Enforce props with default values ​​to be optional.
+ * Enforce props with default values to be optional.
  *
  * @see [no-required-prop-with-default](https://eslint.vuejs.org/rules/no-required-prop-with-default.html)
  */
 export interface NoRequiredPropWithDefaultRule {
   /**
-   * Enforce props with default values ​​to be optional.
+   * Enforce props with default values to be optional.
    *
    * @see [no-required-prop-with-default](https://eslint.vuejs.org/rules/no-required-prop-with-default.html)
    */
