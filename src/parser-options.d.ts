@@ -45,10 +45,12 @@ export interface EcmaFeatures extends Partial<Record<string, boolean>> {
    * Allow `return` statements in the global scope.
    */
   globalReturn?: boolean;
+
   /**
    * Enable global [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) (if `ecmaVersion` is 5 or greater).
    */
   impliedStrict?: boolean;
+
   /**
    * Enable [JSX](https://facebook.github.io/jsx).
    */
@@ -151,24 +153,34 @@ export interface ParserOptions extends Partial<Record<string, unknown>> {
    * @see https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionsecmaversion
    */
   ecmaVersion?: EcmaVersion;
+
   /**
    * Set to "script" (default) or "module" if your code is in ECMAScript modules.
    */
   sourceType?: SourceType;
+
   /**
    * An object indicating which additional language features you'd like to use.
    */
   ecmaFeatures?: EcmaFeatures;
+
   jsxPragma?: string;
+
   jsxFragmentName?: string | null;
+
   /**
    * @see [lib](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionslib)
    */
   lib?: Lib[];
+
   comment?: boolean;
+
   debugLevel?: DebugLevel;
+
   errorOnTypeScriptSyntacticAndSemanticIssues?: boolean;
+
   errorOnUnknownASTType?: boolean;
+
   /**
    * This option allows you to provide one or more additional file extensions which should be considered in the TypeScript Program compilation.
    *
@@ -178,8 +190,11 @@ export interface ParserOptions extends Partial<Record<string, unknown>> {
    * @see [extraFileExtensions](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionsextrafileextensions)
    */
   extraFileExtensions?: string[];
+
   filePath?: string;
+
   loc?: boolean;
+
   /**
    * Parser.
    *
@@ -187,23 +202,30 @@ export interface ParserOptions extends Partial<Record<string, unknown>> {
    * @see [Specifying Parser](https://eslint.org/docs/user-guide/configuring/plugins#specifying-parser)
    */
   parser?: Parser;
+
   /**
    * @see [project](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionsproject)
    */
   project?: string | string[];
+
   /**
    * @see [projectFolderIgnoreList](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionsprojectfolderignorelist)
    */
   projectFolderIgnoreList?: Array<string | RegExp>;
+
   range?: boolean;
+
   tokens?: boolean;
+
   /**
    * This option allows you to provide the root directory for relative tsconfig paths specified in the `project` option above.
    *
    * @see [tsconfigRootDir](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#parseroptionstsconfigrootdir)
    */
   tsconfigRootDir?: string;
+
   useJSXTextNode?: boolean;
+
   /**
    * This option allows you to toggle the warning that the parser will give you if you use a version of TypeScript which is not explicitly supported.
    *
@@ -212,6 +234,7 @@ export interface ParserOptions extends Partial<Record<string, unknown>> {
    * @see [warnOnUnsupportedTypeScriptVersion](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/parser#parseroptionswarnonunsupportedtypescriptversion)
    */
   warnOnUnsupportedTypeScriptVersion?: boolean;
+
   /**
    * This option allow you to tell parser to act as if `emitDecoratorMetadata: true` is set in `tsconfig.json`, but without [type-aware linting](https://typescript-eslint.io/docs/linting/type-linting/).
    * In other words, you don't have to specify `parserOptions.project` in this case, making the linting process faster.
@@ -221,6 +244,7 @@ export interface ParserOptions extends Partial<Record<string, unknown>> {
    * @see [emitDecoratorMetadata](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/parser#parseroptionsemitdecoratormetadata)
    */
   emitDecoratorMetadata?: boolean;
+
   /**
    * @see [vueFeatures](https://github.com/vuejs/vue-eslint-parser#parseroptionsvuefeatures)
    */
@@ -233,6 +257,7 @@ export interface ParserOptions extends Partial<Record<string, unknown>> {
      * @see [filter](https://github.com/vuejs/vue-eslint-parser#parseroptionsvuefeaturesfilter)
      */
     filter?: boolean;
+
     /**
      * You can use `parserOptions.vueFeatures.interpolationAsNonHTML` property to specify whether to parse the interpolation as HTML.
      *
@@ -242,6 +267,7 @@ export interface ParserOptions extends Partial<Record<string, unknown>> {
      */
     interpolationAsNonHTML?: boolean;
   };
+
   /**
    * @see [templateTokenizer](https://github.com/rashfael/eslint-plugin-vue-pug#usage)
    */

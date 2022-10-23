@@ -6,6 +6,7 @@ module.exports = defineConfig({
   ignorePatterns: [
     ...readGitignoreFiles(),
     'src/index.js',
+    'src/index.mjs',
     '.eslintrc.js', // Skip self linting
   ],
   root: true,

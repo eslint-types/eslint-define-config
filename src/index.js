@@ -4,12 +4,13 @@ exports.__esModule = true;
 exports.defineConfig = void 0;
 
 /**
- * Define an eslint config.
+ * Define an ESLint config.
  *
- * @param config Eslint config.
- * @returns Eslint config.
+ * @param config ESLint config.
+ * @returns ESLint config.
  */
 function defineConfig(config) {
   return config;
 }
+
 exports.defineConfig = defineConfig;
