@@ -19,12 +19,38 @@ export interface MaxLenSetting {
 /**
  * Config.
  */
-export type MaxLenConfig = MaxLenSetting | number;
+export type MaxLenConfig =
+  | {
+      code?: number;
+      comments?: number;
+      tabWidth?: number;
+      ignorePattern?: string;
+      ignoreComments?: boolean;
+      ignoreStrings?: boolean;
+      ignoreUrls?: boolean;
+      ignoreTemplateLiterals?: boolean;
+      ignoreRegExpLiterals?: boolean;
+      ignoreTrailingComments?: boolean;
+    }
+  | number;
 
 /**
  * Option.
  */
-export type MaxLenOption = MaxLenSetting | number;
+export type MaxLenOption =
+  | {
+      code?: number;
+      comments?: number;
+      tabWidth?: number;
+      ignorePattern?: string;
+      ignoreComments?: boolean;
+      ignoreStrings?: boolean;
+      ignoreUrls?: boolean;
+      ignoreTemplateLiterals?: boolean;
+      ignoreRegExpLiterals?: boolean;
+      ignoreTrailingComments?: boolean;
+    }
+  | number;
 
 /**
  * Options.

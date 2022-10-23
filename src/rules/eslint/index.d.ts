@@ -195,6 +195,7 @@ import type { NoTernaryRule } from './no-ternary';
 import type { NoThisBeforeSuperRule } from './no-this-before-super';
 import type { NoThrowLiteralRule } from './no-throw-literal';
 import type { NoTrailingSpacesRule } from './no-trailing-spaces';
+import type { NoUndefRule } from './no-undef';
 import type { NoUndefInitRule } from './no-undef-init';
 import type { NoUndefinedRule } from './no-undefined';
 import type { NoUnderscoreDangleRule } from './no-underscore-dangle';
@@ -486,6 +487,7 @@ export type EslintRules = AccessorPairsRule &
   NoThisBeforeSuperRule &
   NoThrowLiteralRule &
   NoTrailingSpacesRule &
+  NoUndefRule &
   NoUndefInitRule &
   NoUndefinedRule &
   NoUnderscoreDangleRule &
