@@ -5,6 +5,8 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface RequireFileOverviewOption {
   tags?: {
+    /**
+     */
     [k: string]: {
       initialCommentsOnly?: boolean;
       mustExist?: boolean;

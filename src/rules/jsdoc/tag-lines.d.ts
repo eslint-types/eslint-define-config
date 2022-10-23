@@ -8,6 +8,8 @@ export interface TagLinesConfig {
   dropEndLines?: boolean;
   noEndLines?: boolean;
   tags?: {
+    /**
+     */
     [k: string]: {
       count?: number;
       lines?: 'always' | 'never' | 'any';

@@ -17,19 +17,16 @@ export type NoMultiAsterisksOptions = [NoMultiAsterisksOption?];
 
 /**
  *
- *
  * @see [no-multi-asterisks](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-multi-asterisks)
  */
 export type NoMultiAsterisksRuleConfig = RuleConfig<NoMultiAsterisksOptions>;
 
 /**
  *
- *
  * @see [no-multi-asterisks](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-multi-asterisks)
  */
 export interface NoMultiAsterisksRule {
   /**
-   *
    *
    * @see [no-multi-asterisks](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-multi-asterisks)
    */

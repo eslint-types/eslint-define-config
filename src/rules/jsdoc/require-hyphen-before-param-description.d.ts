@@ -6,6 +6,8 @@ import type { RuleConfig } from '../rule-config';
 export interface RequireHyphenBeforeParamDescriptionConfig {
   tags?:
     | {
+        /**
+         */
         [k: string]: 'always' | 'never';
       }
     | 'any';

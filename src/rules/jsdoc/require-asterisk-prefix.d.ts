@@ -27,21 +27,15 @@ export type RequireAsteriskPrefixOptions = [
 
 /**
  *
- *
- *
  */
 export type RequireAsteriskPrefixRuleConfig =
   RuleConfig<RequireAsteriskPrefixOptions>;
 
 /**
  *
- *
- *
  */
 export interface RequireAsteriskPrefixRule {
   /**
-   *
-   *
    *
    */
   'jsdoc/require-asterisk-prefix': RequireAsteriskPrefixRuleConfig;

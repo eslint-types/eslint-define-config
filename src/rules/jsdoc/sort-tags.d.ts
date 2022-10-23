@@ -16,19 +16,16 @@ export type SortTagsOptions = [SortTagsOption?];
 
 /**
  *
- *
  * @see [sort-tags](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-sort-tags)
  */
 export type SortTagsRuleConfig = RuleConfig<SortTagsOptions>;
 
 /**
  *
- *
  * @see [sort-tags](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-sort-tags)
  */
 export interface SortTagsRule {
   /**
-   *
    *
    * @see [sort-tags](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-sort-tags)
    */

@@ -21,6 +21,8 @@ export interface MatchDescriptionOption {
   matchDescription?: string;
   message?: string;
   tags?: {
+    /**
+     */
     [k: string]:
       | string
       | true
