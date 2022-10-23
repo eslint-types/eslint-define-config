@@ -1,6 +1,14 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.7.0...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.8.0...main)
+
+# 1.8.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.7.0...1.8.0)
+
+- Add support for Flat ESLint Config ([#122])
+
+[#122]: https://github.com/Shinigami92/eslint-define-config/issues/122
 
 # 1.7.0
 
