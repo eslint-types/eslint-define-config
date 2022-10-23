@@ -14,7 +14,7 @@ export function defineConfig(config: ESLintConfig): ESLintConfig;
  *
  * @see [Configuration Files (New)](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new)
  *
- * @param config flat ESLint config.
- * @returns flat ESLint config.
+ * @param config Flat ESLint config.
+ * @returns Flat ESLint config.
  */
 export function defineConfig(config: FlatESLintConfig[]): FlatESLintConfig[];

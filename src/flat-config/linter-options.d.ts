@@ -3,14 +3,14 @@
  */
 export interface LinterOptions {
   /**
-   * A Boolean value indicating if inline configuration is allowed.
+   * A boolean value indicating if inline configuration is allowed.
    *
    * @see [Disabling inline configuration](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new#disabling-inline-configuration)
    */
   noInlineConfig?: boolean;
 
   /**
-   * A Boolean value indicating if unused disable directives should be tracked and reported.
+   * A boolean value indicating if unused disable directives should be tracked and reported.
    *
    * @see [Reporting unused disable directives](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new#reporting-unused-disable-directives)
    */
