@@ -32,20 +32,20 @@ export type ImportStyleOptions = ImportStyleOption;
 /**
  * Enforce specific import styles per module.
  *
- * @see [import-style](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v44.0.0/docs/rules/import-style.md)
+ * @see [import-style](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v44.0.2/docs/rules/import-style.md)
  */
 export type ImportStyleRuleConfig = RuleConfig<ImportStyleOptions>;
 
 /**
  * Enforce specific import styles per module.
  *
- * @see [import-style](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v44.0.0/docs/rules/import-style.md)
+ * @see [import-style](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v44.0.2/docs/rules/import-style.md)
  */
 export interface ImportStyleRule {
   /**
    * Enforce specific import styles per module.
    *
-   * @see [import-style](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v44.0.0/docs/rules/import-style.md)
+   * @see [import-style](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v44.0.2/docs/rules/import-style.md)
    */
   'unicorn/import-style': ImportStyleRuleConfig;
 }
