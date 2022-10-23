@@ -22,19 +22,16 @@ export type NoUnresolvedOptions = [NoUnresolvedOption?];
 
 /**
  *
- *
  * @see [no-unresolved](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unresolved.md)
  */
 export type NoUnresolvedRuleConfig = RuleConfig<NoUnresolvedOptions>;
 
 /**
  *
- *
  * @see [no-unresolved](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unresolved.md)
  */
 export interface NoUnresolvedRule {
   /**
-   *
    *
    * @see [no-unresolved](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unresolved.md)
    */

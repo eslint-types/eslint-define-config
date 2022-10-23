@@ -46,19 +46,16 @@ export type NoUnusedModulesOptions = [NoUnusedModulesOption?];
 
 /**
  *
- *
  * @see [no-unused-modules](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unused-modules.md)
  */
 export type NoUnusedModulesRuleConfig = RuleConfig<NoUnusedModulesOptions>;
 
 /**
  *
- *
  * @see [no-unused-modules](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unused-modules.md)
  */
 export interface NoUnusedModulesRule {
   /**
-   *
    *
    * @see [no-unused-modules](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unused-modules.md)
    */

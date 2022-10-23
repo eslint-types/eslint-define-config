@@ -16,7 +16,6 @@ export type DynamicImportChunknameOptions = [DynamicImportChunknameOption?];
 
 /**
  *
- *
  * @see [dynamic-import-chunkname](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/dynamic-import-chunkname.md)
  */
 export type DynamicImportChunknameRuleConfig =
@@ -24,12 +23,10 @@ export type DynamicImportChunknameRuleConfig =
 
 /**
  *
- *
  * @see [dynamic-import-chunkname](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/dynamic-import-chunkname.md)
  */
 export interface DynamicImportChunknameRule {
   /**
-   *
    *
    * @see [dynamic-import-chunkname](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/dynamic-import-chunkname.md)
    */

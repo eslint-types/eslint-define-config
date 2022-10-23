@@ -15,7 +15,6 @@ export type NoImportModuleExportsOptions = [NoImportModuleExportsOption?];
 /**
  * Disallow import statements with module.exports.
  *
- *
  */
 export type NoImportModuleExportsRuleConfig =
   RuleConfig<NoImportModuleExportsOptions>;
@@ -23,12 +22,10 @@ export type NoImportModuleExportsRuleConfig =
 /**
  * Disallow import statements with module.exports.
  *
- *
  */
 export interface NoImportModuleExportsRule {
   /**
    * Disallow import statements with module.exports.
-   *
    *
    */
   'import/no-import-module-exports': NoImportModuleExportsRuleConfig;

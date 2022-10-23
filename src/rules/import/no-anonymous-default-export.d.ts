@@ -41,7 +41,6 @@ export type NoAnonymousDefaultExportOptions = [NoAnonymousDefaultExportOption?];
 
 /**
  *
- *
  * @see [no-anonymous-default-export](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-anonymous-default-export.md)
  */
 export type NoAnonymousDefaultExportRuleConfig =
@@ -49,12 +48,10 @@ export type NoAnonymousDefaultExportRuleConfig =
 
 /**
  *
- *
  * @see [no-anonymous-default-export](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-anonymous-default-export.md)
  */
 export interface NoAnonymousDefaultExportRule {
   /**
-   *
    *
    * @see [no-anonymous-default-export](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-anonymous-default-export.md)
    */

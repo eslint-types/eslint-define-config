@@ -18,7 +18,6 @@ export type NoExtraneousDependenciesOptions = [NoExtraneousDependenciesOption?];
 
 /**
  *
- *
  * @see [no-extraneous-dependencies](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-extraneous-dependencies.md)
  */
 export type NoExtraneousDependenciesRuleConfig =
@@ -26,12 +25,10 @@ export type NoExtraneousDependenciesRuleConfig =
 
 /**
  *
- *
  * @see [no-extraneous-dependencies](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-extraneous-dependencies.md)
  */
 export interface NoExtraneousDependenciesRule {
   /**
-   *
    *
    * @see [no-extraneous-dependencies](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-extraneous-dependencies.md)
    */

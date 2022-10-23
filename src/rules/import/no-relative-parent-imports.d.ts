@@ -20,7 +20,6 @@ export type NoRelativeParentImportsOptions = [NoRelativeParentImportsOption?];
 
 /**
  *
- *
  * @see [no-relative-parent-imports](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-relative-parent-imports.md)
  */
 export type NoRelativeParentImportsRuleConfig =
@@ -28,12 +27,10 @@ export type NoRelativeParentImportsRuleConfig =
 
 /**
  *
- *
  * @see [no-relative-parent-imports](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-relative-parent-imports.md)
  */
 export interface NoRelativeParentImportsRule {
   /**
-   *
    *
    * @see [no-relative-parent-imports](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-relative-parent-imports.md)
    */

@@ -12,6 +12,8 @@ export type ExtensionsOption =
       'always' | 'ignorePackages' | 'never',
       {
         pattern?: {
+          /**
+           */
           [k: string]: 'always' | 'ignorePackages' | 'never';
         };
         ignorePackages?: boolean;
@@ -22,6 +24,8 @@ export type ExtensionsOption =
   | [
       {
         pattern?: {
+          /**
+           */
           [k: string]: 'always' | 'ignorePackages' | 'never';
         };
         ignorePackages?: boolean;
@@ -31,6 +35,8 @@ export type ExtensionsOption =
   | []
   | [
       {
+        /**
+         */
         [k: string]: 'always' | 'ignorePackages' | 'never';
       },
     ]
@@ -39,6 +45,8 @@ export type ExtensionsOption =
   | [
       'always' | 'ignorePackages' | 'never',
       {
+        /**
+         */
         [k: string]: 'always' | 'ignorePackages' | 'never';
       },
     ];
@@ -50,19 +58,16 @@ export type ExtensionsOptions = ExtensionsOption;
 
 /**
  *
- *
  * @see [extensions](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/extensions.md)
  */
 export type ExtensionsRuleConfig = RuleConfig<ExtensionsOptions>;
 
 /**
  *
- *
  * @see [extensions](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/extensions.md)
  */
 export interface ExtensionsRule {
   /**
-   *
    *
    * @see [extensions](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/extensions.md)
    */
