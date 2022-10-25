@@ -1,5 +1,6 @@
 import type { ESLint, Linter } from 'eslint';
 import type { Rules } from '../rules';
+import type { LiteralUnion } from '../utility-types';
 import type { LanguageOptions } from './language-options';
 import type { LinterOptions } from './linter-options';
 
@@ -56,3 +57,9 @@ export interface FlatESLintConfig {
    */
   rules?: Rules;
 }
+
+export type PredefinedConfig = LiteralUnion<
+  'eslint:recommended' | 'eslint:all'
+>;
+
+export type FlatESLintConfigs = Array<FlatESLintConfig | PredefinedConfig>;
