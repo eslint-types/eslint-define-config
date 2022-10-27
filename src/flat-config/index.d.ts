@@ -58,6 +58,11 @@ export interface FlatESLintConfig {
   rules?: Rules;
 }
 
+/**
+ * Predefined configurations.
+ *
+ * @see [Using predefined configurations](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new#using-predefined-configurations)
+ */
 export type PredefinedConfig = LiteralUnion<
   'eslint:recommended' | 'eslint:all'
 >;
