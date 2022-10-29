@@ -9,7 +9,7 @@ import type { LinterOptions } from './linter-options';
  *
  * @see [Configuration Files (New)](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new)
  */
-export interface FlatESLintConfig {
+export interface FlatESLintConfigItem {
   /**
    * An array of glob patterns indicating the files that the configuration object should apply to. If not specified, the configuration object applies to all files.
    *
@@ -67,4 +67,5 @@ export type PredefinedConfig = LiteralUnion<
   'eslint:recommended' | 'eslint:all'
 >;
 
-export type FlatESLintConfigs = Array<FlatESLintConfig | PredefinedConfig>;
+export type FlatESLintConfig = FlatESLintConfigItem | PredefinedConfig;
+export type FlatESLintConfigs = Array<FlatESLintConfig>;
