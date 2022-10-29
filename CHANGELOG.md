@@ -1,6 +1,14 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.9.0...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.9.1...main)
+
+# 1.9.1
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.9.0...1.9.1)
+
+- Fix Flat ESLint Config ([#147])
+
+[#147]: https://github.com/Shinigami92/eslint-define-config/pull/147
 
 # 1.9.0
 
