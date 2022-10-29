@@ -24,6 +24,7 @@ specifiers:
   eslint-plugin-unicorn: ~44.0.2
   eslint-plugin-vue: ~9.6.0
   eslint-plugin-vue-pug: ~0.5.4
+  expect-type: ^0.15.0
   json-schema: ~0.4.0
   json-schema-to-typescript: ~11.0.2
   prettier: 2.7.1
@@ -59,6 +60,7 @@ devDependencies:
   eslint-plugin-unicorn: 44.0.2_eslint@8.26.0
   eslint-plugin-vue: 9.6.0_eslint@8.26.0
   eslint-plugin-vue-pug: 0.5.4_sakenfqtroawfv52hgm7jorj54
+  expect-type: 0.15.0
   json-schema: 0.4.0
   json-schema-to-typescript: 11.0.2
   prettier: 2.7.1
@@ -1817,6 +1819,10 @@ packages:
     dependencies:
       d: 1.0.1
       es5-ext: 0.10.62
+    dev: true
+
+  /expect-type/0.15.0:
+    resolution: {integrity: sha512-yWnriYB4e8G54M5/fAFj7rCIBiKs1HAACaY13kCz6Ku0dezjS9aMcfcdVK2X8Tv2tEV1BPz/wKfQ7WA4S/d8aA==}
     dev: true
 
   /ext/1.7.0:

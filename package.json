@@ -73,6 +73,7 @@
     "eslint-plugin-unicorn": "~44.0.2",
     "eslint-plugin-vue": "~9.6.0",
     "eslint-plugin-vue-pug": "~0.5.4",
+    "expect-type": "^0.15.0",
     "json-schema": "~0.4.0",
     "json-schema-to-typescript": "~11.0.2",
     "prettier": "2.7.1",
