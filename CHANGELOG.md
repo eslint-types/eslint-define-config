@@ -1,6 +1,16 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.9.1...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.10.0...main)
+
+# 1.10.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.9.1...1.10.0)
+
+- Add override for defining just one item of Flat Config ([#148])
+- Export TS types ([#149])
+
+[#148]: https://github.com/Shinigami92/eslint-define-config/pull/148
+[#149]: https://github.com/Shinigami92/eslint-define-config/pull/149
 
 # 1.9.1
 
