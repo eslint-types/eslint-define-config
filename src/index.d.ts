@@ -10,12 +10,12 @@ import type { FlatESLintConfig, FlatESLintConfigs } from './flat-config';
 export function defineConfig(config: ESLintConfig): ESLintConfig;
 
 /**
- * Define a item of flat ESLint config.
+ * Define an item of Flat ESLint config.
  *
  * @see [Configuration Files (New)](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new)
  *
- * @param config a item of Flat ESLint config.
- * @returns a item of Flat ESLint config.
+ * @param config an item of Flat ESLint config.
+ * @returns an item of Flat ESLint config.
  */
 export function defineConfig(config: FlatESLintConfig): FlatESLintConfig;
 
