@@ -113,3 +113,9 @@ export interface ESLintConfig {
    */
   reportUnusedDisableDirectives?: boolean;
 }
+
+export * from './env';
+export * from './extends';
+export * from './overrides';
+export * from './plugin';
+export * from './settings';

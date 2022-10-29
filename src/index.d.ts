@@ -28,3 +28,8 @@ export function defineConfig(config: FlatESLintConfig): FlatESLintConfig;
  * @returns Flat ESLint config.
  */
 export function defineConfig(config: FlatESLintConfigs): FlatESLintConfigs;
+
+export * from './config';
+export * from './flat-config';
+export * from './parser-options';
+export * from './rules';
