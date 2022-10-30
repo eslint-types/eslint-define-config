@@ -1,6 +1,15 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.10.0...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.11.0...main)
+
+# 1.11.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.10.0...1.11.0)
+
+- Improve type suggestions with specific `defineFlatConfig` ([#150])  
+  (_theoretically a breaking change_)
+
+[#150]: https://github.com/Shinigami92/eslint-define-config/pull/150
 
 # 1.10.0
 
