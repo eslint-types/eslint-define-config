@@ -68,7 +68,6 @@ export type PredefinedConfig = LiteralUnion<
 >;
 
 export type FlatESLintConfig = FlatESLintConfigItem | PredefinedConfig;
-export type FlatESLintConfigs = Array<FlatESLintConfig>;
 
 export * from './language-options';
 export * from './linter-options';

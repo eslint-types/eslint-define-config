@@ -1,7 +1,7 @@
 import { expectTypeOf } from 'expect-type';
 import { describe, test } from 'vitest';
-import type { ESLintConfig, FlatESLintConfig, FlatESLintConfigs } from '../src';
-import { defineConfig } from '../src';
+import type { ESLintConfig, FlatESLintConfig } from '../src';
+import { defineConfig, defineFlatConfig } from '../src';
 
 describe('define', () => {
   test('define empty config', () => {
@@ -20,8 +20,7 @@ describe('define', () => {
 
   test('define an item of flat ESLint config', () => {
     expectTypeOf(
-      defineConfig({
-        includes: [],
+      defineFlatConfig({
         ignores: [],
         plugins: {},
         rules: {},
@@ -31,21 +30,20 @@ describe('define', () => {
 
   test('define predefined flat ESLint config', () => {
     expectTypeOf(
-      defineConfig('eslint:recommended'),
+      defineFlatConfig('eslint:recommended'),
     ).toEqualTypeOf<FlatESLintConfig>();
   });
 
   test('define flat ESLint config', () => {
     expectTypeOf(
-      defineConfig([
+      defineFlatConfig([
         'eslint:recommended',
         {
-          includes: [],
           ignores: [],
           plugins: {},
           rules: {},
         },
       ]),
-    ).toEqualTypeOf<FlatESLintConfigs>();
+    ).toEqualTypeOf<FlatESLintConfig[]>();
   });
 });

@@ -2,15 +2,7 @@
 
 exports.__esModule = true;
 exports.defineConfig = void 0;
+exports.defineFlatConfig = void 0;
 
-/**
- * Define an ESLint config.
- *
- * @param config ESLint config.
- * @returns ESLint config.
- */
-function defineConfig(config) {
-  return config;
-}
-
-exports.defineConfig = defineConfig;
+exports.defineConfig = (config) => config;
+exports.defineFlatConfig = (config) => config;
