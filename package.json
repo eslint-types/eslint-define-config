@@ -9,6 +9,7 @@
     "check": "tsc",
     "format": "prettier --write .",
     "lint": "eslint .",
+    "typecheck": "vitest typecheck",
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "prepublishOnly": "pnpm run clean && pnpm install && pnpm run check",

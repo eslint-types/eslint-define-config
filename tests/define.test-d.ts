@@ -1,5 +1,4 @@
-import { expectTypeOf } from 'expect-type';
-import { describe, test } from 'vitest';
+import { describe, expectTypeOf, test } from 'vitest';
 import type { ESLintConfig, FlatESLintConfig } from '../src';
 import { defineConfig, defineFlatConfig } from '../src';
 
