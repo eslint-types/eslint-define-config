@@ -1,6 +1,15 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.11.0...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.12.0...main)
+
+# 1.12.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.11.0...1.12.0)
+
+- Add `globals` key to `overrides` ([#153])
+- Update rules for: [eslint, jsdoc, n, typescript-eslint, vue]
+
+[#153]: https://github.com/Shinigami92/eslint-define-config/pull/153
 
 # 1.11.0
 
