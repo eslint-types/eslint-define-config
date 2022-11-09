@@ -17,7 +17,7 @@ specifiers:
   eslint-plugin-inclusive-language: ~2.2.0
   eslint-plugin-jsdoc: ~39.6.2
   eslint-plugin-mdx: ~2.0.5
-  eslint-plugin-n: ~15.5.0
+  eslint-plugin-n: ~15.5.1
   eslint-plugin-node: ~11.1.0
   eslint-plugin-prettier: ~4.2.1
   eslint-plugin-spellcheck: ~0.0.19
@@ -53,7 +53,7 @@ devDependencies:
   eslint-plugin-inclusive-language: 2.2.0
   eslint-plugin-jsdoc: 39.6.2_eslint@8.27.0
   eslint-plugin-mdx: 2.0.5_eslint@8.27.0
-  eslint-plugin-n: 15.5.0_eslint@8.27.0
+  eslint-plugin-n: 15.5.1_eslint@8.27.0
   eslint-plugin-node: 11.1.0_eslint@8.27.0
   eslint-plugin-prettier: 4.2.1_v7o5sx5x3wbs57ifz6wc4f76we
   eslint-plugin-spellcheck: 0.0.19_eslint@8.27.0
@@ -1563,8 +1563,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-n/15.5.0_eslint@8.27.0:
-    resolution: {integrity: sha512-VCqQiZDpdm1Q9grnvy+XsENZoXDgTLqPHRQwgl9qFNNgTKR4YEnQOMN0pFB/9TbmrQ88jdeTnqTcNwRvjqMOtg==}
+  /eslint-plugin-n/15.5.1_eslint@8.27.0:
+    resolution: {integrity: sha512-kAd+xhZm7brHoFLzKLB7/FGRFJNg/srmv67mqb7tto22rpr4wv/LV6RuXzAfv3jbab7+k1wi42PsIhGviywaaw==}
     engines: {node: '>=12.22.0'}
     peerDependencies:
       eslint: '>=7.0.0'
