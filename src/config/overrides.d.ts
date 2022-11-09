@@ -28,6 +28,16 @@ export interface Override {
   extends?: Extends;
 
   /**
+   * Specifying Globals.
+   *
+   * @see [Globals](https://ESLint.org/docs/user-guide/configuring/language-options#specifying-globals)
+   */
+  globals?: Record<
+    string,
+    'readonly' | 'writable' | false | 'readable' | true | 'writeable' | 'off'
+  >;
+
+  /**
    * Parser.
    *
    * @see [Working with Custom Parsers](https://eslint.org/docs/developer-guide/working-with-custom-parsers)
