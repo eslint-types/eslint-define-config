@@ -78,6 +78,7 @@ import type { NoUnnecessaryTypeConstraintRule } from './no-unnecessary-type-cons
 import type { NoUnsafeArgumentRule } from './no-unsafe-argument';
 import type { NoUnsafeAssignmentRule } from './no-unsafe-assignment';
 import type { NoUnsafeCallRule } from './no-unsafe-call';
+import type { NoUnsafeDeclarationMergingRule } from './no-unsafe-declaration-merging';
 import type { NoUnsafeMemberAccessRule } from './no-unsafe-member-access';
 import type { NoUnsafeReturnRule } from './no-unsafe-return';
 import type { NoUnusedExpressionsRule } from './no-unused-expressions';
@@ -114,6 +115,7 @@ import type { RestrictPlusOperandsRule } from './restrict-plus-operands';
 import type { RestrictTemplateExpressionsRule } from './restrict-template-expressions';
 import type { ReturnAwaitRule } from './return-await';
 import type { SemiRule } from './semi';
+import type { SortTypeConstituentsRule } from './sort-type-constituents';
 import type { SortTypeUnionIntersectionMembersRule } from './sort-type-union-intersection-members';
 import type { SpaceBeforeBlocksRule } from './space-before-blocks';
 import type { SpaceBeforeFunctionParenRule } from './space-before-function-paren';
@@ -209,6 +211,7 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   NoUnsafeArgumentRule &
   NoUnsafeAssignmentRule &
   NoUnsafeCallRule &
+  NoUnsafeDeclarationMergingRule &
   NoUnsafeMemberAccessRule &
   NoUnsafeReturnRule &
   NoUnusedExpressionsRule &
@@ -245,6 +248,7 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   RestrictTemplateExpressionsRule &
   ReturnAwaitRule &
   SemiRule &
+  SortTypeConstituentsRule &
   SortTypeUnionIntersectionMembersRule &
   SpaceBeforeBlocksRule &
   SpaceBeforeFunctionParenRule &

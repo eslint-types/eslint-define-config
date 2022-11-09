@@ -480,7 +480,9 @@ export interface MemberOrderingOption {
         order?:
           | 'alphabetically'
           | 'alphabetically-case-insensitive'
-          | 'as-written';
+          | 'as-written'
+          | 'natural'
+          | 'natural-case-insensitive';
       };
   classes?:
     | 'never'
@@ -958,7 +960,9 @@ export interface MemberOrderingOption {
         order?:
           | 'alphabetically'
           | 'alphabetically-case-insensitive'
-          | 'as-written';
+          | 'as-written'
+          | 'natural'
+          | 'natural-case-insensitive';
       };
   classExpressions?:
     | 'never'
@@ -1436,7 +1440,9 @@ export interface MemberOrderingOption {
         order?:
           | 'alphabetically'
           | 'alphabetically-case-insensitive'
-          | 'as-written';
+          | 'as-written'
+          | 'natural'
+          | 'natural-case-insensitive';
       };
   interfaces?:
     | 'never'
@@ -1454,7 +1460,9 @@ export interface MemberOrderingOption {
         order?:
           | 'alphabetically'
           | 'alphabetically-case-insensitive'
-          | 'as-written';
+          | 'as-written'
+          | 'natural'
+          | 'natural-case-insensitive';
       };
   typeLiterals?:
     | 'never'
@@ -1472,7 +1480,9 @@ export interface MemberOrderingOption {
         order?:
           | 'alphabetically'
           | 'alphabetically-case-insensitive'
-          | 'as-written';
+          | 'as-written'
+          | 'natural'
+          | 'natural-case-insensitive';
       };
 }
 

@@ -42,6 +42,8 @@ export type SortTypeUnionIntersectionMembersOptions = [
 /**
  * Enforce members of a type union/intersection to be sorted alphabetically.
  *
+ * @deprecated
+ *
  * @see [sort-type-union-intersection-members](https://typescript-eslint.io/rules/sort-type-union-intersection-members)
  */
 export type SortTypeUnionIntersectionMembersRuleConfig =
@@ -50,11 +52,15 @@ export type SortTypeUnionIntersectionMembersRuleConfig =
 /**
  * Enforce members of a type union/intersection to be sorted alphabetically.
  *
+ * @deprecated
+ *
  * @see [sort-type-union-intersection-members](https://typescript-eslint.io/rules/sort-type-union-intersection-members)
  */
 export interface SortTypeUnionIntersectionMembersRule {
   /**
    * Enforce members of a type union/intersection to be sorted alphabetically.
+   *
+   * @deprecated
    *
    * @see [sort-type-union-intersection-members](https://typescript-eslint.io/rules/sort-type-union-intersection-members)
    */
