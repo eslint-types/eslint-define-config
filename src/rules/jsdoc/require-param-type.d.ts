@@ -11,6 +11,8 @@ export interface RequireParamTypeOption {
         context?: string;
       }
   )[];
+  defaultDestructuredRootType?: string;
+  setDefaultDestructuredRootType?: boolean;
 }
 
 /**

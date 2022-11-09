@@ -46,6 +46,7 @@ import type { RequireYieldsRule } from './require-yields';
 import type { RequireYieldsCheckRule } from './require-yields-check';
 import type { SortTagsRule } from './sort-tags';
 import type { TagLinesRule } from './tag-lines';
+import type { TextEscapingRule } from './text-escaping';
 import type { ValidTypesRule } from './valid-types';
 
 /**
@@ -99,4 +100,5 @@ export type JSDocRules = CheckAccessRule &
   RequireYieldsCheckRule &
   SortTagsRule &
   TagLinesRule &
+  TextEscapingRule &
   ValidTypesRule;

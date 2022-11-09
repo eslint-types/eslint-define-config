@@ -11,6 +11,8 @@ export interface RequireParamDescriptionOption {
         context?: string;
       }
   )[];
+  defaultDestructuredRootDescription?: string;
+  setDefaultDestructuredRootDescription?: boolean;
 }
 
 /**
