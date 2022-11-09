@@ -45,6 +45,7 @@ import type { MaxAttributesPerLineRule } from './max-attributes-per-line';
 import type { MaxLenRule } from './max-len';
 import type { MultiWordComponentNamesRule } from './multi-word-component-names';
 import type { MultilineHtmlElementContentNewlineRule } from './multiline-html-element-content-newline';
+import type { MultilineTernaryRule } from './multiline-ternary';
 import type { MustacheInterpolationSpacingRule } from './mustache-interpolation-spacing';
 import type { NewLineBetweenMultiLinePropertyRule } from './new-line-between-multi-line-property';
 import type { NextTickStyleRule } from './next-tick-style';
@@ -190,6 +191,7 @@ import type { VBindStyleRule } from './v-bind-style';
 import type { VForDelimiterStyleRule } from './v-for-delimiter-style';
 import type { VOnEventHyphenationRule } from './v-on-event-hyphenation';
 import type { VOnFunctionCallRule } from './v-on-function-call';
+import type { VOnHandlerStyleRule } from './v-on-handler-style';
 import type { VOnStyleRule } from './v-on-style';
 import type { VSlotStyleRule } from './v-slot-style';
 import type { ValidAttributeNameRule } from './valid-attribute-name';
@@ -266,6 +268,7 @@ export type VueRules = ArrayBracketNewlineRule &
   MaxLenRule &
   MultiWordComponentNamesRule &
   MultilineHtmlElementContentNewlineRule &
+  MultilineTernaryRule &
   MustacheInterpolationSpacingRule &
   NewLineBetweenMultiLinePropertyRule &
   NextTickStyleRule &
@@ -411,6 +414,7 @@ export type VueRules = ArrayBracketNewlineRule &
   VForDelimiterStyleRule &
   VOnEventHyphenationRule &
   VOnFunctionCallRule &
+  VOnHandlerStyleRule &
   VOnStyleRule &
   VSlotStyleRule &
   ValidAttributeNameRule &

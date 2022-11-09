@@ -4,6 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Config.
  */
 export interface ComponentNameInTemplateCasingConfig {
+  globals?: string[];
   ignores?: string[];
   registeredComponentsOnly?: boolean;
 }
