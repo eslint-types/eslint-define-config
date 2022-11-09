@@ -109,6 +109,7 @@ import type { NoEmptyRule } from './no-empty';
 import type { NoEmptyCharacterClassRule } from './no-empty-character-class';
 import type { NoEmptyFunctionRule } from './no-empty-function';
 import type { NoEmptyPatternRule } from './no-empty-pattern';
+import type { NoEmptyStaticBlockRule } from './no-empty-static-block';
 import type { NoEqNullRule } from './no-eq-null';
 import type { NoEvalRule } from './no-eval';
 import type { NoExAssignRule } from './no-ex-assign';
@@ -153,6 +154,7 @@ import type { NoNegatedInLhsRule } from './no-negated-in-lhs';
 import type { NoNestedTernaryRule } from './no-nested-ternary';
 import type { NoNewRule } from './no-new';
 import type { NoNewFuncRule } from './no-new-func';
+import type { NoNewNativeNonconstructorRule } from './no-new-native-nonconstructor';
 import type { NoNewObjectRule } from './no-new-object';
 import type { NoNewRequireRule } from './no-new-require';
 import type { NoNewSymbolRule } from './no-new-symbol';
@@ -401,6 +403,7 @@ export type EslintRules = AccessorPairsRule &
   NoEmptyCharacterClassRule &
   NoEmptyFunctionRule &
   NoEmptyPatternRule &
+  NoEmptyStaticBlockRule &
   NoEqNullRule &
   NoEvalRule &
   NoExAssignRule &
@@ -445,6 +448,7 @@ export type EslintRules = AccessorPairsRule &
   NoNestedTernaryRule &
   NoNewRule &
   NoNewFuncRule &
+  NoNewNativeNonconstructorRule &
   NoNewObjectRule &
   NoNewRequireRule &
   NoNewSymbolRule &
