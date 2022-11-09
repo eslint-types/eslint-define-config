@@ -47,20 +47,20 @@ export interface ShebangOption {
 export type ShebangOptions = [ShebangOption?];
 
 /**
- * Suggest correct usage of shebang.
+ * Require correct usage of shebang.
  *
  * @see [shebang](https://github.com/weiran-zsd/eslint-plugin-node/blob/HEAD/docs/rules/shebang.md)
  */
 export type ShebangRuleConfig = RuleConfig<ShebangOptions>;
 
 /**
- * Suggest correct usage of shebang.
+ * Require correct usage of shebang.
  *
  * @see [shebang](https://github.com/weiran-zsd/eslint-plugin-node/blob/HEAD/docs/rules/shebang.md)
  */
 export interface ShebangRule {
   /**
-   * Suggest correct usage of shebang.
+   * Require correct usage of shebang.
    *
    * @see [shebang](https://github.com/weiran-zsd/eslint-plugin-node/blob/HEAD/docs/rules/shebang.md)
    */
