@@ -57,6 +57,25 @@ module.exports = defineConfig({
 });
 ```
 
+## Flat Config
+
+```ts
+// @ts-check
+const { defineFlatConfig } = require('eslint-define-config');
+
+module.exports = defineFlatConfig([
+  'eslint:recommended',
+  {
+    plugins: {
+      // plugins...
+    },
+    rules: {
+      // rules...
+    },
+  },
+]);
+```
+
 # Why?
 
 Improve your eslint configuration experience with:
