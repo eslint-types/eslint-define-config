@@ -71,7 +71,7 @@
     "eslint-plugin-node": "~11.1.0",
     "eslint-plugin-prettier": "~4.2.1",
     "eslint-plugin-spellcheck": "~0.0.19",
-    "eslint-plugin-unicorn": "~44.0.2",
+    "eslint-plugin-unicorn": "~45.0.2",
     "eslint-plugin-vue": "~9.7.0",
     "eslint-plugin-vue-pug": "~0.5.4",
     "expect-type": "~0.15.0",
