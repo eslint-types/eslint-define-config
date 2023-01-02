@@ -1,6 +1,25 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.12.0...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.13.0...main)
+
+# 1.13.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.12.0...1.13.0)
+
+- Fix `excludedFiles` type to allow `string[]` ([#159])
+- Add support for `deprecation` ([8ca5721])
+- Add support for `eslint-comments` ([#163])
+- Add support for `jsonc` ([#160])
+- Add support for `promise` ([#162])
+- Add support for `sonarjs` ([#161])
+- Update rules for: [eslint, jsdoc, spellcheck, typescript-eslint, unicorn, vue]
+
+[8ca5721]: https://github.com/Shinigami92/eslint-define-config/commit/8ca572102916067843a027af972c868741723ca3
+[#159]: https://github.com/Shinigami92/eslint-define-config/pull/159
+[#160]: https://github.com/Shinigami92/eslint-define-config/pull/160
+[#161]: https://github.com/Shinigami92/eslint-define-config/pull/161
+[#162]: https://github.com/Shinigami92/eslint-define-config/pull/162
+[#163]: https://github.com/Shinigami92/eslint-define-config/pull/163
 
 # 1.12.0
 
