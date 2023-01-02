@@ -11,7 +11,11 @@ import type { Settings } from './settings';
 export interface Override {
   files: string[] | string;
 
-  excludedFiles?: string;
+  /**
+   * The glob patterns for excluded files.
+   */
+  // https://github.com/eslint/eslint/blob/762a8727fb3b5619cff900826053b643ca5f1162/lib/shared/types.js#L59
+  excludedFiles?: string | string[];
 
   /**
    * An environment provides predefined global variables.
