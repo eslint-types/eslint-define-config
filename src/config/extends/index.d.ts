@@ -1,5 +1,6 @@
 import type { LiteralUnion } from '../../utility-types';
 import type { EslintExtensions } from './eslint';
+import type { EslintCommentsExtensions } from './eslint-plugin-eslint-comment';
 import type { ImportExtensions } from './eslint-plugin-import';
 import type { JsdocExtensions } from './eslint-plugin-jsdoc';
 import type { JsoncExtensions } from './eslint-plugin-jsonc';
@@ -19,6 +20,7 @@ import type { TypescriptEslintExtensions } from './typescript-eslint';
  * All known extensions.
  */
 export type KnownExtensions = LiteralUnion<
+  | EslintCommentsExtensions
   | EslintExtensions
   | ImportExtensions
   | IntlifyVueI18nExtensions

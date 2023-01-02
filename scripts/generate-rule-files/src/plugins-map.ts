@@ -1,6 +1,8 @@
 import * as eslint from 'eslint';
 import * as eslintPluginDeprecation from 'eslint-plugin-deprecation';
 // @ts-expect-error
+import eslintPluginEslintComments from 'eslint-plugin-eslint-comments';
+// @ts-expect-error
 import * as eslintPluginImport from 'eslint-plugin-import';
 // @ts-expect-error
 import eslintPluginJSDoc from 'eslint-plugin-jsdoc';
@@ -50,6 +52,10 @@ export const PLUGIN_REGISTRY: Readonly<Record<string, Plugin>> = {
     name: 'Import',
     rules: (eslintPluginImport as Plugin).rules,
   },
+  'eslint-comments': {
+    name: 'EslintComments',
+    rules: (eslintPluginEslintComments as Plugin).rules,
+  },
   jsdoc: {
     name: 'JSDoc',
     prefix: 'jsdoc',
@@ -57,7 +63,6 @@ export const PLUGIN_REGISTRY: Readonly<Record<string, Plugin>> = {
   },
   jsonc: {
     name: 'Jsonc',
-    prefix: 'jsonc',
     rules:
       // @ts-expect-error: throw error when plugin successfully updated their type defs
       eslintPluginJsonc.rules as Plugin['rules'],
