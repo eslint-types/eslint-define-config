@@ -7,6 +7,7 @@ import type { MdxExtensions } from './eslint-plugin-mdx';
 import type { NExtensions } from './eslint-plugin-n';
 import type { NodeExtensions } from './eslint-plugin-node';
 import type { PrettierExtensions } from './eslint-plugin-prettier';
+import type { PromiseExtensions } from './eslint-plugin-promise';
 import type { SonarjsExtensions } from './eslint-plugin-sonarjs';
 import type { UnicornExtensions } from './eslint-plugin-unicorn';
 import type { VueExtensions } from './eslint-plugin-vue';
@@ -27,6 +28,7 @@ export type KnownExtensions = LiteralUnion<
   | NExtensions
   | NodeExtensions
   | PrettierExtensions
+  | PromiseExtensions
   | SonarjsExtensions
   | TypescriptEslintExtensions
   | UnicornExtensions
