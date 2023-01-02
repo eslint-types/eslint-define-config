@@ -1,5 +1,6 @@
 import type { DeprecationRules } from './deprecation';
 import type { EslintRules } from './eslint';
+import type { EslintCommentsRules } from './eslint-comments';
 import type { ImportRules } from './import';
 import type { JSDocRules } from './jsdoc';
 import type { JsoncRules } from './jsonc';
@@ -23,6 +24,7 @@ import type { VuePugRules } from './vue-pug';
 export type Rules = Partial<
   DeprecationRules &
     EslintRules &
+    EslintCommentsRules &
     ImportRules &
     JSDocRules &
     JsoncRules &
