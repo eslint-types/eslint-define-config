@@ -82,6 +82,8 @@ export type NamingConventionOption = (
         | 'exported'
         | 'unused'
         | 'requiresQuotes'
+        | 'override'
+        | 'async'
       )[];
       types?: ('boolean' | 'string' | 'number' | 'function' | 'array')[];
     }
@@ -139,6 +141,8 @@ export type NamingConventionOption = (
         | 'exported'
         | 'unused'
         | 'requiresQuotes'
+        | 'override'
+        | 'async'
       )[];
     }
   | {
@@ -182,7 +186,7 @@ export type NamingConventionOption = (
             [k: string]: any;
           };
       selector: 'variableLike';
-      modifiers?: 'unused'[];
+      modifiers?: ('unused' | 'async')[];
     }
   | {
       format:
@@ -231,6 +235,7 @@ export type NamingConventionOption = (
         | 'exported'
         | 'global'
         | 'unused'
+        | 'async'
       )[];
       types?: ('boolean' | 'string' | 'number' | 'function' | 'array')[];
     }
@@ -275,7 +280,7 @@ export type NamingConventionOption = (
             [k: string]: any;
           };
       selector: 'function';
-      modifiers?: ('exported' | 'global' | 'unused')[];
+      modifiers?: ('exported' | 'global' | 'unused' | 'async')[];
     }
   | {
       format:
@@ -370,6 +375,8 @@ export type NamingConventionOption = (
         | 'readonly'
         | 'requiresQuotes'
         | 'static'
+        | 'override'
+        | 'async'
       )[];
     }
   | {
@@ -421,6 +428,7 @@ export type NamingConventionOption = (
         | 'readonly'
         | 'requiresQuotes'
         | 'static'
+        | 'override'
       )[];
       types?: ('boolean' | 'string' | 'number' | 'function' | 'array')[];
     }
@@ -605,6 +613,8 @@ export type NamingConventionOption = (
         | 'readonly'
         | 'requiresQuotes'
         | 'static'
+        | 'override'
+        | 'async'
       )[];
       types?: ('boolean' | 'string' | 'number' | 'function' | 'array')[];
     }
@@ -656,6 +666,8 @@ export type NamingConventionOption = (
         | 'public'
         | 'requiresQuotes'
         | 'static'
+        | 'override'
+        | 'async'
       )[];
     }
   | {
@@ -699,7 +711,7 @@ export type NamingConventionOption = (
             [k: string]: any;
           };
       selector: 'objectLiteralMethod';
-      modifiers?: ('public' | 'requiresQuotes')[];
+      modifiers?: ('public' | 'requiresQuotes' | 'async')[];
     }
   | {
       format:
@@ -792,6 +804,8 @@ export type NamingConventionOption = (
         | 'public'
         | 'requiresQuotes'
         | 'static'
+        | 'override'
+        | 'async'
       )[];
     }
   | {
@@ -842,6 +856,7 @@ export type NamingConventionOption = (
         | 'public'
         | 'requiresQuotes'
         | 'static'
+        | 'override'
       )[];
       types?: ('boolean' | 'string' | 'number' | 'function' | 'array')[];
     }

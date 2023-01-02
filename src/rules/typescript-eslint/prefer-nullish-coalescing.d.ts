@@ -7,7 +7,7 @@ export interface PreferNullishCoalescingOption {
   ignoreConditionalTests?: boolean;
   ignoreTernaryTests?: boolean;
   ignoreMixedLogicalExpressions?: boolean;
-  forceSuggestionFixer?: boolean;
+  allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean;
 }
 
 /**
