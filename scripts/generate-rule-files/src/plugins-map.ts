@@ -7,6 +7,8 @@ import eslintPluginJSDoc from 'eslint-plugin-jsdoc';
 import eslintPluginJsonc from 'eslint-plugin-jsonc';
 import * as eslintPluginMdx from 'eslint-plugin-mdx';
 // @ts-expect-error
+import eslintPluginPromise from 'eslint-plugin-promise';
+// @ts-expect-error
 import eslintPluginNode from 'eslint-plugin-node';
 // @ts-expect-error
 import eslintPluginN from 'eslint-plugin-n';
@@ -71,6 +73,10 @@ export const PLUGIN_REGISTRY: Readonly<Record<string, Plugin>> = {
   node: {
     name: 'Node',
     rules: (eslintPluginNode as Plugin).rules,
+  },
+  promise: {
+    name: 'Promise',
+    rules: (eslintPluginPromise as Plugin).rules,
   },
   sonarjs: {
     name: 'SonarJS',
