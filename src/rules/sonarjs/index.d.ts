@@ -32,9 +32,9 @@ import type { PreferSingleBooleanReturnRule } from './prefer-single-boolean-retu
 import type { PreferWhileRule } from './prefer-while';
 
 /**
- * All Sonarjs rules.
+ * All SonarJS rules.
  */
-export type SonarjsRules = CognitiveComplexityRule &
+export type SonarJSRules = CognitiveComplexityRule &
   ElseifWithoutElseRule &
   MaxSwitchCasesRule &
   NoAllDuplicatedBranchesRule &
