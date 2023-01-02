@@ -6,6 +6,7 @@ import type { RuleConfig } from '../rule-config';
 export interface ConsistentTypeImportsOption {
   prefer?: 'type-imports' | 'no-type-imports';
   disallowTypeAnnotations?: boolean;
+  fixStyle?: 'separate-type-imports' | 'inline-type-imports';
 }
 
 /**

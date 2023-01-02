@@ -30,6 +30,7 @@ import type { NoInstanceofArrayRule } from './no-instanceof-array';
 import type { NoInvalidRemoveEventListenerRule } from './no-invalid-remove-event-listener';
 import type { NoKeywordPrefixRule } from './no-keyword-prefix';
 import type { NoLonelyIfRule } from './no-lonely-if';
+import type { NoNegatedConditionRule } from './no-negated-condition';
 import type { NoNestedTernaryRule } from './no-nested-ternary';
 import type { NoNewArrayRule } from './no-new-array';
 import type { NoNewBufferRule } from './no-new-buffer';
@@ -40,6 +41,7 @@ import type { NoReduceRule } from './no-reduce';
 import type { NoStaticOnlyClassRule } from './no-static-only-class';
 import type { NoThenableRule } from './no-thenable';
 import type { NoThisAssignmentRule } from './no-this-assignment';
+import type { NoTypeofUndefinedRule } from './no-typeof-undefined';
 import type { NoUnnecessaryAwaitRule } from './no-unnecessary-await';
 import type { NoUnreadableArrayDestructuringRule } from './no-unreadable-array-destructuring';
 import type { NoUnreadableIifeRule } from './no-unreadable-iife';
@@ -97,6 +99,7 @@ import type { PreferReflectApplyRule } from './prefer-reflect-apply';
 import type { PreferRegexpTestRule } from './prefer-regexp-test';
 import type { PreferReplaceAllRule } from './prefer-replace-all';
 import type { PreferSetHasRule } from './prefer-set-has';
+import type { PreferSetSizeRule } from './prefer-set-size';
 import type { PreferSpreadRule } from './prefer-spread';
 import type { PreferStartsEndsWithRule } from './prefer-starts-ends-with';
 import type { PreferStringReplaceAllRule } from './prefer-string-replace-all';
@@ -153,6 +156,7 @@ export type UnicornRules = BetterRegexRule &
   NoInvalidRemoveEventListenerRule &
   NoKeywordPrefixRule &
   NoLonelyIfRule &
+  NoNegatedConditionRule &
   NoNestedTernaryRule &
   NoNewArrayRule &
   NoNewBufferRule &
@@ -162,6 +166,7 @@ export type UnicornRules = BetterRegexRule &
   NoStaticOnlyClassRule &
   NoThenableRule &
   NoThisAssignmentRule &
+  NoTypeofUndefinedRule &
   NoUnnecessaryAwaitRule &
   NoUnreadableArrayDestructuringRule &
   NoUnreadableIifeRule &
@@ -211,6 +216,7 @@ export type UnicornRules = BetterRegexRule &
   PreferReflectApplyRule &
   PreferRegexpTestRule &
   PreferSetHasRule &
+  PreferSetSizeRule &
   PreferSpreadRule &
   PreferStringReplaceAllRule &
   PreferStringSliceRule &

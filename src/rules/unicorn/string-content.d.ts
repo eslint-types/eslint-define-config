@@ -23,20 +23,20 @@ export type StringContentOptions = [StringContentOption?];
 /**
  * Enforce better string content.
  *
- * @see [string-content](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v44.0.2/docs/rules/string-content.md)
+ * @see [string-content](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v45.0.2/docs/rules/string-content.md)
  */
 export type StringContentRuleConfig = RuleConfig<StringContentOptions>;
 
 /**
  * Enforce better string content.
  *
- * @see [string-content](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v44.0.2/docs/rules/string-content.md)
+ * @see [string-content](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v45.0.2/docs/rules/string-content.md)
  */
 export interface StringContentRule {
   /**
    * Enforce better string content.
    *
-   * @see [string-content](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v44.0.2/docs/rules/string-content.md)
+   * @see [string-content](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v45.0.2/docs/rules/string-content.md)
    */
   'unicorn/string-content': StringContentRuleConfig;
 }

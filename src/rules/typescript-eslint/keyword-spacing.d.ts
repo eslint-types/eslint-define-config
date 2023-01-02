@@ -279,6 +279,10 @@ export interface KeywordSpacingOption {
       before?: boolean;
       after?: boolean;
     };
+    type?: {
+      before?: boolean;
+      after?: boolean;
+    };
   };
 }
 

@@ -11,6 +11,8 @@ export interface NoUnderscoreDangleOption {
   enforceInMethodNames?: boolean;
   allowFunctionParams?: boolean;
   enforceInClassFields?: boolean;
+  allowInArrayDestructuring?: boolean;
+  allowInObjectDestructuring?: boolean;
 }
 
 /**

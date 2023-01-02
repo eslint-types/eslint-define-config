@@ -9,6 +9,7 @@ export interface NoMagicNumbersOption {
   ignore?: (number | string)[];
   ignoreArrayIndexes?: boolean;
   ignoreDefaultValues?: boolean;
+  ignoreClassFieldInitialValues?: boolean;
   ignoreNumericLiteralTypes?: boolean;
   ignoreEnums?: boolean;
   ignoreReadonlyClassProperties?: boolean;

@@ -1,3 +1,4 @@
+import type { DeprecationRules } from './deprecation';
 import type { EslintRules } from './eslint';
 import type { ImportRules } from './import';
 import type { JSDocRules } from './jsdoc';
@@ -17,7 +18,8 @@ import type { VuePugRules } from './vue-pug';
  * @see [Rules](https://eslint.org/docs/user-guide/configuring/rules)
  */
 export type Rules = Partial<
-  EslintRules &
+  DeprecationRules &
+    EslintRules &
     ImportRules &
     JSDocRules &
     NodeRules &

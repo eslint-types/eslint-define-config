@@ -167,6 +167,7 @@ import type { RequireEmitValidatorRule } from './require-emit-validator';
 import type { RequireExplicitEmitsRule } from './require-explicit-emits';
 import type { RequireExposeRule } from './require-expose';
 import type { RequireNamePropertyRule } from './require-name-property';
+import type { RequirePropCommentRule } from './require-prop-comment';
 import type { RequirePropTypeConstructorRule } from './require-prop-type-constructor';
 import type { RequirePropTypesRule } from './require-prop-types';
 import type { RequireRenderReturnRule } from './require-render-return';
@@ -390,6 +391,7 @@ export type VueRules = ArrayBracketNewlineRule &
   RequireExplicitEmitsRule &
   RequireExposeRule &
   RequireNamePropertyRule &
+  RequirePropCommentRule &
   RequirePropTypeConstructorRule &
   RequirePropTypesRule &
   RequireRenderReturnRule &

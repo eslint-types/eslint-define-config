@@ -19,6 +19,7 @@ export type NoExtraParensOption =
         enforceForSequenceExpressions?: boolean;
         enforceForNewInMemberExpressions?: boolean;
         enforceForFunctionPrototypeMethods?: boolean;
+        allowParensAfterCommentPattern?: string;
       },
     ];
 

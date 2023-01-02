@@ -8,6 +8,7 @@ export interface SpellCheckerOption {
   strings?: boolean;
   identifiers?: boolean;
   ignoreRequire?: boolean;
+  enableUpperCaseUnderscoreCheck?: boolean;
   templates?: boolean;
   lang?: string;
   langDir?: string;

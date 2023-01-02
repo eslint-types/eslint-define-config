@@ -1,8 +1,9 @@
 /**
  * Typescript eslint extensions.
  *
- * @see [Typescript eslint extensions](https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/README.md#configuration)
+ * @see [Typescript eslint extensions](https://typescript-eslint.io/linting/configs#recommended-configurations)
  */
 export type TypescriptEslintExtensions =
   | 'plugin:@typescript-eslint/recommended'
-  | 'plugin:@typescript-eslint/recommended-requiring-type-checking';
+  | 'plugin:@typescript-eslint/recommended-requiring-type-checking'
+  | 'plugin:@typescript-eslint/strict';
