@@ -6,6 +6,7 @@ import type { JsoncRules } from './jsonc';
 import type { NRules } from './n';
 import type { NodeRules } from './node';
 import type { RuleConfig } from './rule-config';
+import type { SonarJSRules } from './sonarjs';
 import type { SpellcheckRules } from './spellcheck';
 import type { TypeScriptRules } from './typescript-eslint';
 import type { UnicornRules } from './unicorn';
@@ -26,6 +27,7 @@ export type Rules = Partial<
     JsoncRules &
     NodeRules &
     NRules &
+    SonarJSRules &
     SpellcheckRules &
     TypeScriptRules &
     UnicornRules &

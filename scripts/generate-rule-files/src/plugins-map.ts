@@ -10,6 +10,7 @@ import * as eslintPluginMdx from 'eslint-plugin-mdx';
 import eslintPluginNode from 'eslint-plugin-node';
 // @ts-expect-error
 import eslintPluginN from 'eslint-plugin-n';
+import * as eslintPluginSonarJS from 'eslint-plugin-sonarjs';
 // @ts-expect-error
 import eslintPluginSpellcheck from 'eslint-plugin-spellcheck';
 // @ts-expect-error
@@ -70,6 +71,11 @@ export const PLUGIN_REGISTRY: Readonly<Record<string, Plugin>> = {
   node: {
     name: 'Node',
     rules: (eslintPluginNode as Plugin).rules,
+  },
+  sonarjs: {
+    name: 'SonarJS',
+    prefix: 'sonarjs',
+    rules: eslintPluginSonarJS.rules,
   },
   spellcheck: {
     name: 'Spellcheck',
