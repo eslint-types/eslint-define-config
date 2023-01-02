@@ -30,7 +30,7 @@ export interface Override {
   /**
    * Specifying Globals.
    *
-   * @see [Globals](https://ESLint.org/docs/user-guide/configuring/language-options#specifying-globals)
+   * @see [Globals](https://eslint.org/docs/latest/user-guide/configuring/language-options#specifying-globals)
    */
   globals?: Record<
     string,

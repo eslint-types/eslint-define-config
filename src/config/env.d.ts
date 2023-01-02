@@ -25,24 +25,49 @@ export interface Environments extends Partial<Record<string, boolean>> {
   'shared-node-browser'?: boolean;
 
   /**
-   * Enable all ECMAScript 6 features except for modules (this automatically sets the ecmaVersion parser option to 6).
+   * Enable all ECMAScript 6 features except for modules (this automatically sets the `ecmaVersion` parser option to 6).
    */
   es6?: boolean;
 
   /**
-   * Adds all ECMAScript 2017 globals and automatically sets the ecmaVersion parser option to 8.
+   * Adds all ECMAScript 2016 globals and automatically sets the `ecmaVersion` parser option to 7.
+   */
+  es2016?: boolean;
+
+  /**
+   * Adds all ECMAScript 2017 globals and automatically sets the `ecmaVersion` parser option to 8.
    */
   es2017?: boolean;
 
   /**
-   * Adds all ECMAScript 2020 globals and automatically sets the ecmaVersion parser option to 11.
+   * Adds all ECMAScript 2018 globals and automatically sets the `ecmaVersion` parser option to 9.
+   */
+  es2018?: boolean;
+
+  /**
+   * Adds all ECMAScript 2019 globals and automatically sets the `ecmaVersion` parser option to 10.
+   */
+  es2019?: boolean;
+
+  /**
+   * Adds all ECMAScript 2020 globals and automatically sets the `ecmaVersion` parser option to 11.
    */
   es2020?: boolean;
 
   /**
-   * Adds all ECMAScript 2021 globals and automatically sets the ecmaVersion parser option to 12.
+   * Adds all ECMAScript 2021 globals and automatically sets the `ecmaVersion` parser option to 12.
    */
   es2021?: boolean;
+
+  /**
+   * Adds all ECMAScript 2022 globals and automatically sets the `ecmaVersion` parser option to 13.
+   */
+  es2022?: boolean;
+
+  /**
+   * Adds all ECMAScript 2023 globals and automatically sets the `ecmaVersion` parser option to 14.
+   */
+  es2023?: boolean;
 
   /**
    * Web workers global variables.
