@@ -6,9 +6,13 @@ import type { Plugin } from './plugin';
 import type { Settings } from './settings';
 
 /**
- *
+ * OverrideConfigData.
  */
 export interface Override {
+  /**
+   * The glob patterns for target files.
+   */
+  // https://github.com/eslint/eslint/blob/762a8727fb3b5619cff900826053b643ca5f1162/lib/shared/types.js#L61
   files: string[] | string;
 
   /**
