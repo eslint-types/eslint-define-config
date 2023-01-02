@@ -13,6 +13,7 @@ specifiers:
   eslint: ~8.31.0
   eslint-config-prettier: ~8.5.0
   eslint-gitignore: ~0.1.0
+  eslint-plugin-deprecation: ~1.3.3
   eslint-plugin-import: ~2.26.0
   eslint-plugin-inclusive-language: ~2.2.0
   eslint-plugin-jsdoc: ~39.6.4
@@ -49,6 +50,7 @@ devDependencies:
   eslint: 8.31.0
   eslint-config-prettier: 8.5.0_eslint@8.31.0
   eslint-gitignore: 0.1.0_eslint@8.31.0
+  eslint-plugin-deprecation: 1.3.3_iukboom6ndih5an6iafl45j2fe
   eslint-plugin-import: 2.26.0_ejk3zt536nc2nr7uicalblhboi
   eslint-plugin-inclusive-language: 2.2.0
   eslint-plugin-jsdoc: 39.6.4_eslint@8.31.0
@@ -658,6 +660,19 @@ packages:
       typescript: 4.9.4
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@typescript-eslint/experimental-utils/5.47.1_iukboom6ndih5an6iafl45j2fe:
+    resolution: {integrity: sha512-zWHo/VbqAiRvhXP5byQqW7rGQtdanajHnItGqtmv8JaIi58zMPnmGZ1bW/drXIjU1fuOyfTVoDkNS7aEWGDSLg==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+    dependencies:
+      '@typescript-eslint/utils': 5.47.1_iukboom6ndih5an6iafl45j2fe
+      eslint: 8.31.0
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
     dev: true
 
   /@typescript-eslint/parser/5.47.1_iukboom6ndih5an6iafl45j2fe:
@@ -1691,6 +1706,21 @@ packages:
       debug: 3.2.7
       eslint: 8.31.0
       eslint-import-resolver-node: 0.3.6
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /eslint-plugin-deprecation/1.3.3_iukboom6ndih5an6iafl45j2fe:
+    resolution: {integrity: sha512-Bbkv6ZN2cCthVXz/oZKPwsSY5S/CbgTLRG4Q2s2gpPpgNsT0uJ0dB5oLNiWzFYY8AgKX4ULxXFG1l/rDav9QFA==}
+    peerDependencies:
+      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+      typescript: ^3.7.5 || ^4.0.0
+    dependencies:
+      '@typescript-eslint/experimental-utils': 5.47.1_iukboom6ndih5an6iafl45j2fe
+      eslint: 8.31.0
+      tslib: 2.4.1
+      tsutils: 3.21.0_typescript@4.9.4
+      typescript: 4.9.4
     transitivePeerDependencies:
       - supports-color
     dev: true

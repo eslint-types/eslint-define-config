@@ -1,4 +1,5 @@
 import * as eslint from 'eslint';
+import * as eslintPluginDeprecation from 'eslint-plugin-deprecation';
 // @ts-expect-error
 import * as eslintPluginImport from 'eslint-plugin-import';
 // @ts-expect-error
@@ -26,6 +27,12 @@ import type { Plugin } from '../contracts';
  * Map of plugins for which the script will generate rule files.
  */
 export const PLUGIN_REGISTRY: Readonly<Record<string, Plugin>> = {
+  deprecation: {
+    name: 'Deprecation',
+    rules:
+      // @ts-expect-error: throw error when plugin successfully updated their type defs
+      eslintPluginDeprecation.rules as Plugin['rules'],
+  },
   eslint: {
     name: 'Eslint',
     rules: Object.fromEntries(new eslint.Linter().getRules().entries()),
