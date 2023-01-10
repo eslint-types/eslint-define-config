@@ -41,6 +41,7 @@ describe('define', () => {
           ignores: [],
           plugins: {},
           rules: {},
+          settings: {},
         },
       ]),
     ).toEqualTypeOf<FlatESLintConfig[]>();
