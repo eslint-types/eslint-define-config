@@ -55,6 +55,13 @@ export interface FlatESLintConfigItem {
    * @see [Configuring rules](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new#configuring-rules)
    */
   rules?: Rules;
+
+  /**
+   * An object containing name-value pairs of information that should be available to all rules.
+   *
+   * @see [Configuring shared settings](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new#configuring-shared-settings)
+   */
+  settings?: Record<string, any>;
 }
 
 /**
