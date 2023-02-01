@@ -25,7 +25,6 @@ import eslintPluginVue from 'eslint-plugin-vue';
 import eslintPluginVuePug from 'eslint-plugin-vue-pug';
 // @ts-expect-error
 import eslintPluginVueI18n from '@intlify/eslint-plugin-vue-i18n';
-// @ts-expect-error
 import eslintPluginTypeScript from '@typescript-eslint/eslint-plugin';
 import type { Plugin } from '../contracts';
 
@@ -46,7 +45,7 @@ export const PLUGIN_REGISTRY: Readonly<Record<string, Plugin>> = {
   'typescript-eslint': {
     name: 'TypeScript',
     prefix: '@typescript-eslint',
-    rules: (eslintPluginTypeScript as Plugin).rules,
+    rules: (eslintPluginTypeScript as unknown as Plugin).rules,
   },
   import: {
     name: 'Import',
