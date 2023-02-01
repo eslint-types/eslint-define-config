@@ -22,6 +22,7 @@ import type { ExplicitModuleBoundaryTypesRule } from './explicit-module-boundary
 import type { FuncCallSpacingRule } from './func-call-spacing';
 import type { IndentRule } from './indent';
 import type { InitDeclarationsRule } from './init-declarations';
+import type { KeySpacingRule } from './key-spacing';
 import type { KeywordSpacingRule } from './keyword-spacing';
 import type { LinesBetweenClassMembersRule } from './lines-between-class-members';
 import type { MemberDelimiterStyleRule } from './member-delimiter-style';
@@ -155,6 +156,7 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   FuncCallSpacingRule &
   IndentRule &
   InitDeclarationsRule &
+  KeySpacingRule &
   KeywordSpacingRule &
   LinesBetweenClassMembersRule &
   MemberDelimiterStyleRule &

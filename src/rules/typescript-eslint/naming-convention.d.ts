@@ -76,6 +76,7 @@ export type NamingConventionOption = (
         | 'public'
         | 'protected'
         | 'private'
+        | '#private'
         | 'abstract'
         | 'destructured'
         | 'global'
@@ -135,6 +136,7 @@ export type NamingConventionOption = (
         | 'public'
         | 'protected'
         | 'private'
+        | '#private'
         | 'abstract'
         | 'destructured'
         | 'global'
@@ -370,6 +372,7 @@ export type NamingConventionOption = (
       modifiers?: (
         | 'abstract'
         | 'private'
+        | '#private'
         | 'protected'
         | 'public'
         | 'readonly'
@@ -423,6 +426,7 @@ export type NamingConventionOption = (
       modifiers?: (
         | 'abstract'
         | 'private'
+        | '#private'
         | 'protected'
         | 'public'
         | 'readonly'
@@ -608,6 +612,7 @@ export type NamingConventionOption = (
       modifiers?: (
         | 'abstract'
         | 'private'
+        | '#private'
         | 'protected'
         | 'public'
         | 'readonly'
@@ -662,6 +667,7 @@ export type NamingConventionOption = (
       modifiers?: (
         | 'abstract'
         | 'private'
+        | '#private'
         | 'protected'
         | 'public'
         | 'requiresQuotes'
@@ -800,6 +806,7 @@ export type NamingConventionOption = (
       modifiers?: (
         | 'abstract'
         | 'private'
+        | '#private'
         | 'protected'
         | 'public'
         | 'requiresQuotes'
