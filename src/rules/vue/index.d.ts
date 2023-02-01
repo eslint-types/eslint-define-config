@@ -1,5 +1,6 @@
 import type { ArrayBracketNewlineRule } from './array-bracket-newline';
 import type { ArrayBracketSpacingRule } from './array-bracket-spacing';
+import type { ArrayElementNewlineRule } from './array-element-newline';
 import type { ArrowSpacingRule } from './arrow-spacing';
 import type { AttributeHyphenationRule } from './attribute-hyphenation';
 import type { AttributesOrderRule } from './attributes-order';
@@ -153,6 +154,7 @@ import type { OperatorLinebreakRule } from './operator-linebreak';
 import type { OrderInComponentsRule } from './order-in-components';
 import type { PaddingLineBetweenBlocksRule } from './padding-line-between-blocks';
 import type { PaddingLineBetweenTagsRule } from './padding-line-between-tags';
+import type { PaddingLinesInComponentDefinitionRule } from './padding-lines-in-component-definition';
 import type { PreferImportFromVueRule } from './prefer-import-from-vue';
 import type { PreferPropTypeBooleanFirstRule } from './prefer-prop-type-boolean-first';
 import type { PreferSeparateStaticClassRule } from './prefer-separate-static-class';
@@ -224,6 +226,7 @@ import type { ValidVTextRule } from './valid-v-text';
  */
 export type VueRules = ArrayBracketNewlineRule &
   ArrayBracketSpacingRule &
+  ArrayElementNewlineRule &
   ArrowSpacingRule &
   AttributeHyphenationRule &
   AttributesOrderRule &
@@ -377,6 +380,7 @@ export type VueRules = ArrayBracketNewlineRule &
   OrderInComponentsRule &
   PaddingLineBetweenBlocksRule &
   PaddingLineBetweenTagsRule &
+  PaddingLinesInComponentDefinitionRule &
   PreferImportFromVueRule &
   PreferPropTypeBooleanFirstRule &
   PreferSeparateStaticClassRule &

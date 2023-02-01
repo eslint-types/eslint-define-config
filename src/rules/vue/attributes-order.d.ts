@@ -16,6 +16,9 @@ export interface AttributesOrderOption {
         | 'TWO_WAY_BINDING'
         | 'OTHER_DIRECTIVES'
         | 'OTHER_ATTR'
+        | 'ATTR_STATIC'
+        | 'ATTR_DYNAMIC'
+        | 'ATTR_SHORTHAND_BOOL'
         | 'EVENTS'
         | 'CONTENT'
       )
@@ -30,6 +33,9 @@ export interface AttributesOrderOption {
         | 'TWO_WAY_BINDING'
         | 'OTHER_DIRECTIVES'
         | 'OTHER_ATTR'
+        | 'ATTR_STATIC'
+        | 'ATTR_DYNAMIC'
+        | 'ATTR_SHORTHAND_BOOL'
         | 'EVENTS'
         | 'CONTENT'
       )[]
