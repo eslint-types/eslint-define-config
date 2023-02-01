@@ -45,19 +45,22 @@ export type NoUnusedModulesOption = (
 export type NoUnusedModulesOptions = [NoUnusedModulesOption?];
 
 /**
+ * Forbid modules without exports, or exports without matching import in another module.
  *
- * @see [no-unused-modules](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unused-modules.md)
+ * @see [no-unused-modules](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-unused-modules.md)
  */
 export type NoUnusedModulesRuleConfig = RuleConfig<NoUnusedModulesOptions>;
 
 /**
+ * Forbid modules without exports, or exports without matching import in another module.
  *
- * @see [no-unused-modules](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unused-modules.md)
+ * @see [no-unused-modules](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-unused-modules.md)
  */
 export interface NoUnusedModulesRule {
   /**
+   * Forbid modules without exports, or exports without matching import in another module.
    *
-   * @see [no-unused-modules](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unused-modules.md)
+   * @see [no-unused-modules](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-unused-modules.md)
    */
   'import/no-unused-modules': NoUnusedModulesRuleConfig;
 }

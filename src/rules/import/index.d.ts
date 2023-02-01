@@ -1,3 +1,4 @@
+import type { ConsistentTypeSpecifierStyleRule } from './consistent-type-specifier-style';
 import type { DefaultRule } from './default';
 import type { DynamicImportChunknameRule } from './dynamic-import-chunkname';
 import type { ExportRule } from './export';
@@ -19,6 +20,7 @@ import type { NoDefaultExportRule } from './no-default-export';
 import type { NoDeprecatedRule } from './no-deprecated';
 import type { NoDuplicatesRule } from './no-duplicates';
 import type { NoDynamicRequireRule } from './no-dynamic-require';
+import type { NoEmptyNamedBlocksRule } from './no-empty-named-blocks';
 import type { NoExtraneousDependenciesRule } from './no-extraneous-dependencies';
 import type { NoImportModuleExportsRule } from './no-import-module-exports';
 import type { NoInternalModulesRule } from './no-internal-modules';
@@ -58,6 +60,7 @@ export type ImportRules = NoUnresolvedRule &
   GroupExportsRule &
   NoRelativePackagesRule &
   NoRelativeParentImportsRule &
+  ConsistentTypeSpecifierStyleRule &
   NoSelfImportRule &
   NoCycleRule &
   NoNamedDefaultRule &
@@ -85,6 +88,7 @@ export type ImportRules = NoUnresolvedRule &
   NoUselessPathSegmentsRule &
   DynamicImportChunknameRule &
   NoImportModuleExportsRule &
+  NoEmptyNamedBlocksRule &
   ExportsLastRule &
   NoDeprecatedRule &
   ImportsFirstRule;

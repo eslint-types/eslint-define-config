@@ -13,19 +13,19 @@ export interface NoImportModuleExportsOption {
 export type NoImportModuleExportsOptions = [NoImportModuleExportsOption?];
 
 /**
- * Disallow import statements with module.exports.
+ * Forbid import statements with CommonJS module.exports.
  *
  */
 export type NoImportModuleExportsRuleConfig =
   RuleConfig<NoImportModuleExportsOptions>;
 
 /**
- * Disallow import statements with module.exports.
+ * Forbid import statements with CommonJS module.exports.
  *
  */
 export interface NoImportModuleExportsRule {
   /**
-   * Disallow import statements with module.exports.
+   * Forbid import statements with CommonJS module.exports.
    *
    */
   'import/no-import-module-exports': NoImportModuleExportsRuleConfig;

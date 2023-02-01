@@ -14,19 +14,22 @@ export interface NoNamespaceOption {
 export type NoNamespaceOptions = [NoNamespaceOption?];
 
 /**
+ * Forbid namespace (a.k.a. "wildcard" `*`) imports.
  *
- * @see [no-namespace](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-namespace.md)
+ * @see [no-namespace](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-namespace.md)
  */
 export type NoNamespaceRuleConfig = RuleConfig<NoNamespaceOptions>;
 
 /**
+ * Forbid namespace (a.k.a. "wildcard" `*`) imports.
  *
- * @see [no-namespace](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-namespace.md)
+ * @see [no-namespace](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-namespace.md)
  */
 export interface NoNamespaceRule {
   /**
+   * Forbid namespace (a.k.a. "wildcard" `*`) imports.
    *
-   * @see [no-namespace](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-namespace.md)
+   * @see [no-namespace](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-namespace.md)
    */
   'import/no-namespace': NoNamespaceRuleConfig;
 }

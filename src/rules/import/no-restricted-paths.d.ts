@@ -9,14 +9,14 @@ export interface NoRestrictedPathsOption {
    */
   zones?: [
     {
-      target?: string;
-      from?: string;
+      target?: string | string[];
+      from?: string | string[];
       except?: string[];
       message?: string;
     },
     ...{
-      target?: string;
-      from?: string;
+      target?: string | string[];
+      from?: string | string[];
       except?: string[];
       message?: string;
     }[],
@@ -30,19 +30,22 @@ export interface NoRestrictedPathsOption {
 export type NoRestrictedPathsOptions = [NoRestrictedPathsOption?];
 
 /**
+ * Enforce which files can be imported in a given folder.
  *
- * @see [no-restricted-paths](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-restricted-paths.md)
+ * @see [no-restricted-paths](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-restricted-paths.md)
  */
 export type NoRestrictedPathsRuleConfig = RuleConfig<NoRestrictedPathsOptions>;
 
 /**
+ * Enforce which files can be imported in a given folder.
  *
- * @see [no-restricted-paths](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-restricted-paths.md)
+ * @see [no-restricted-paths](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-restricted-paths.md)
  */
 export interface NoRestrictedPathsRule {
   /**
+   * Enforce which files can be imported in a given folder.
    *
-   * @see [no-restricted-paths](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-restricted-paths.md)
+   * @see [no-restricted-paths](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-restricted-paths.md)
    */
   'import/no-restricted-paths': NoRestrictedPathsRuleConfig;
 }

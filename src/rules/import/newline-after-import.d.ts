@@ -5,6 +5,7 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface NewlineAfterImportOption {
   count?: number;
+  considerComments?: boolean;
 }
 
 /**
@@ -13,20 +14,23 @@ export interface NewlineAfterImportOption {
 export type NewlineAfterImportOptions = [NewlineAfterImportOption?];
 
 /**
+ * Enforce a newline after import statements.
  *
- * @see [newline-after-import](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/newline-after-import.md)
+ * @see [newline-after-import](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/newline-after-import.md)
  */
 export type NewlineAfterImportRuleConfig =
   RuleConfig<NewlineAfterImportOptions>;
 
 /**
+ * Enforce a newline after import statements.
  *
- * @see [newline-after-import](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/newline-after-import.md)
+ * @see [newline-after-import](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/newline-after-import.md)
  */
 export interface NewlineAfterImportRule {
   /**
+   * Enforce a newline after import statements.
    *
-   * @see [newline-after-import](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/newline-after-import.md)
+   * @see [newline-after-import](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/newline-after-import.md)
    */
   'import/newline-after-import': NewlineAfterImportRuleConfig;
 }

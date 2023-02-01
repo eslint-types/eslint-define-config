@@ -16,20 +16,23 @@ export interface NoUnassignedImportOption {
 export type NoUnassignedImportOptions = [NoUnassignedImportOption?];
 
 /**
+ * Forbid unassigned imports.
  *
- * @see [no-unassigned-import](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unassigned-import.md)
+ * @see [no-unassigned-import](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-unassigned-import.md)
  */
 export type NoUnassignedImportRuleConfig =
   RuleConfig<NoUnassignedImportOptions>;
 
 /**
+ * Forbid unassigned imports.
  *
- * @see [no-unassigned-import](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unassigned-import.md)
+ * @see [no-unassigned-import](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-unassigned-import.md)
  */
 export interface NoUnassignedImportRule {
   /**
+   * Forbid unassigned imports.
    *
-   * @see [no-unassigned-import](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/no-unassigned-import.md)
+   * @see [no-unassigned-import](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-unassigned-import.md)
    */
   'import/no-unassigned-import': NoUnassignedImportRuleConfig;
 }

@@ -6,6 +6,7 @@ import type { RuleConfig } from '../rule-config';
 export interface OrderOption {
   groups?: any[];
   pathGroupsExcludedImportTypes?: any[];
+  distinctGroup?: boolean;
   pathGroups?: {
     pattern: string;
     patternOptions?: {
@@ -22,7 +23,6 @@ export interface OrderOption {
       | 'object'
       | 'type';
     position?: 'after' | 'before';
-    [k: string]: any;
   }[];
   'newlines-between'?:
     | 'ignore'
@@ -32,6 +32,7 @@ export interface OrderOption {
   alphabetize?: {
     caseInsensitive?: boolean;
     order?: 'ignore' | 'asc' | 'desc';
+    orderImportKind?: 'ignore' | 'asc' | 'desc';
   };
   warnOnUnassignedImports?: boolean;
 }
@@ -42,19 +43,22 @@ export interface OrderOption {
 export type OrderOptions = [OrderOption?];
 
 /**
+ * Enforce a convention in module import order.
  *
- * @see [order](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/order.md)
+ * @see [order](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/order.md)
  */
 export type OrderRuleConfig = RuleConfig<OrderOptions>;
 
 /**
+ * Enforce a convention in module import order.
  *
- * @see [order](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/order.md)
+ * @see [order](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/order.md)
  */
 export interface OrderRule {
   /**
+   * Enforce a convention in module import order.
    *
-   * @see [order](https://github.com/import-js/eslint-plugin-import/blob/v2.26.0/docs/rules/order.md)
+   * @see [order](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/order.md)
    */
   'import/order': OrderRuleConfig;
 }

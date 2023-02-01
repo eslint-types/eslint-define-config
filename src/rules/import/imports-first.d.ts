@@ -11,6 +11,7 @@ export type ImportsFirstOption = 'absolute-first' | 'disable-absolute-first';
 export type ImportsFirstOptions = [ImportsFirstOption?];
 
 /**
+ * Replaced by `import/first`.
  *
  * @deprecated
  *
@@ -19,6 +20,7 @@ export type ImportsFirstOptions = [ImportsFirstOption?];
 export type ImportsFirstRuleConfig = RuleConfig<ImportsFirstOptions>;
 
 /**
+ * Replaced by `import/first`.
  *
  * @deprecated
  *
@@ -26,6 +28,7 @@ export type ImportsFirstRuleConfig = RuleConfig<ImportsFirstOptions>;
  */
 export interface ImportsFirstRule {
   /**
+   * Replaced by `import/first`.
    *
    * @deprecated
    *
