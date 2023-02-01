@@ -1,6 +1,15 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.14.0...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.15.0...main)
+
+# 1.15.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.14.0...1.15.0)
+
+- Add support for `graphql` ([#168])
+- Update rules for: [import, typescript-eslint, vue]
+
+[#168]: https://github.com/Shinigami92/eslint-define-config/pull/168
 
 # 1.14.0
 
