@@ -1,3 +1,4 @@
+import * as eslintPluginGraphQl from '@graphql-eslint/eslint-plugin';
 import * as eslint from 'eslint';
 import * as eslintPluginDeprecation from 'eslint-plugin-deprecation';
 // @ts-expect-error
@@ -54,6 +55,11 @@ export const PLUGIN_REGISTRY: Readonly<Record<string, Plugin>> = {
   'eslint-comments': {
     name: 'EslintComments',
     rules: (eslintPluginEslintComments as Plugin).rules,
+  },
+  'graphql-eslint': {
+    name: 'GraphQL',
+    prefix: '@graphql-eslint',
+    rules: eslintPluginGraphQl.rules as Plugin['rules'],
   },
   jsdoc: {
     name: 'JSDoc',

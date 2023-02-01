@@ -1,6 +1,7 @@
 import type { DeprecationRules } from './deprecation';
 import type { EslintRules } from './eslint';
 import type { EslintCommentsRules } from './eslint-comments';
+import type { GraphQLRules } from './graphql-eslint';
 import type { ImportRules } from './import';
 import type { JSDocRules } from './jsdoc';
 import type { JsoncRules } from './jsonc';
@@ -25,6 +26,7 @@ export type Rules = Partial<
   DeprecationRules &
     EslintRules &
     EslintCommentsRules &
+    GraphQLRules &
     ImportRules &
     JSDocRules &
     JsoncRules &
