@@ -2,6 +2,7 @@ import type { LiteralUnion } from '../utility-types';
 
 /** Plugin. */
 export type Plugin = LiteralUnion<
+  | '@graphql-eslint'
   | '@typescript-eslint'
   | 'deprecation'
   | 'import'

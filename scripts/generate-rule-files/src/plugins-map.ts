@@ -56,8 +56,8 @@ export const PLUGIN_REGISTRY: Readonly<Record<string, Plugin>> = {
     name: 'EslintComments',
     rules: (eslintPluginEslintComments as Plugin).rules,
   },
-  graphql: {
-    name: 'Graphql',
+  'graphql-eslint': {
+    name: 'GraphQL',
     prefix: '@graphql-eslint',
     rules: eslintPluginGraphQl.rules as Plugin['rules'],
   },

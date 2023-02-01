@@ -63,9 +63,9 @@ import type { VariablesAreInputTypesRule } from './variables-are-input-types';
 import type { VariablesInAllowedPositionRule } from './variables-in-allowed-position';
 
 /**
- * All Graphql rules.
+ * All GraphQL rules.
  */
-export type GraphqlRules = ExecutableDefinitionsRule &
+export type GraphQLRules = ExecutableDefinitionsRule &
   FieldsOnCorrectTypeRule &
   FragmentsOnCompositeTypeRule &
   KnownArgumentNamesRule &
