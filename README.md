@@ -21,7 +21,7 @@
 
 # eslint-define-config
 
-Provide a `defineConfig` function for `.eslintrc.js` files.
+Provide a `defineConfig` function for `.eslintrc.js`,  and `defineFlatConfig` function for `eslint.config.js` files.
 
 > This project is written by a human and only partially automatically generated!  
 > Some rules are even enhanced by hand!  
@@ -59,6 +59,8 @@ module.exports = defineConfig({
 
 ## Flat Config
 
+`eslint.config.js`
+
 ```ts
 // @ts-check
 const { defineFlatConfig } = require('eslint-define-config');
@@ -81,7 +83,7 @@ module.exports = defineFlatConfig([
 Improve your eslint configuration experience with:
 
 - auto-suggestions
-- type checking (Use `// @ts-check` at the first line in your `.eslintrc.js`)
+- type checking (Use `// @ts-check` at the first line in your `.eslintrc.js` or `eslint.config.js`)
 - documentation
 - deprecation warnings
 
