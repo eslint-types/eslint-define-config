@@ -18,6 +18,7 @@ export interface LinesAroundCommentOption {
   allowArrayEnd?: boolean;
   ignorePattern?: string;
   applyDefaultIgnorePatterns?: boolean;
+  afterHashbangComment?: boolean;
 }
 
 /**
