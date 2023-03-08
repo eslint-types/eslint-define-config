@@ -4,6 +4,7 @@ import type { AwaitThenableRule } from './await-thenable';
 import type { BanTsCommentRule } from './ban-ts-comment';
 import type { BanTslintCommentRule } from './ban-tslint-comment';
 import type { BanTypesRule } from './ban-types';
+import type { BlockSpacingRule } from './block-spacing';
 import type { BraceStyleRule } from './brace-style';
 import type { ClassLiteralPropertyStyleRule } from './class-literal-property-style';
 import type { CommaDangleRule } from './comma-dangle';
@@ -48,6 +49,7 @@ import type { NoFloatingPromisesRule } from './no-floating-promises';
 import type { NoForInArrayRule } from './no-for-in-array';
 import type { NoImplicitAnyCatchRule } from './no-implicit-any-catch';
 import type { NoImpliedEvalRule } from './no-implied-eval';
+import type { NoImportTypeSideEffectsRule } from './no-import-type-side-effects';
 import type { NoInferrableTypesRule } from './no-inferrable-types';
 import type { NoInvalidThisRule } from './no-invalid-this';
 import type { NoInvalidVoidTypeRule } from './no-invalid-void-type';
@@ -57,6 +59,7 @@ import type { NoMagicNumbersRule } from './no-magic-numbers';
 import type { NoMeaninglessVoidOperatorRule } from './no-meaningless-void-operator';
 import type { NoMisusedNewRule } from './no-misused-new';
 import type { NoMisusedPromisesRule } from './no-misused-promises';
+import type { NoMixedEnumsRule } from './no-mixed-enums';
 import type { NoNamespaceRule } from './no-namespace';
 import type { NoNonNullAssertedNullishCoalescingRule } from './no-non-null-asserted-nullish-coalescing';
 import type { NoNonNullAssertedOptionalChainRule } from './no-non-null-asserted-optional-chain';
@@ -138,6 +141,7 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   BanTsCommentRule &
   BanTslintCommentRule &
   BanTypesRule &
+  BlockSpacingRule &
   BraceStyleRule &
   ClassLiteralPropertyStyleRule &
   CommaDangleRule &
@@ -182,6 +186,7 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   NoForInArrayRule &
   NoImplicitAnyCatchRule &
   NoImpliedEvalRule &
+  NoImportTypeSideEffectsRule &
   NoInferrableTypesRule &
   NoInvalidThisRule &
   NoInvalidVoidTypeRule &
@@ -191,6 +196,7 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   NoMeaninglessVoidOperatorRule &
   NoMisusedNewRule &
   NoMisusedPromisesRule &
+  NoMixedEnumsRule &
   NoNamespaceRule &
   NoNonNullAssertedNullishCoalescingRule &
   NoNonNullAssertedOptionalChainRule &

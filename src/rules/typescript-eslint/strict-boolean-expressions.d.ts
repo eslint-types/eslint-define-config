@@ -10,6 +10,7 @@ export interface StrictBooleanExpressionsOption {
   allowNullableBoolean?: boolean;
   allowNullableString?: boolean;
   allowNullableNumber?: boolean;
+  allowNullableEnum?: boolean;
   allowAny?: boolean;
   allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean;
 }
