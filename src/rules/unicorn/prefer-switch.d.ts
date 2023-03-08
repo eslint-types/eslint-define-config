@@ -19,20 +19,20 @@ export type PreferSwitchOptions = [PreferSwitchOption?];
 /**
  * Prefer `switch` over multiple `else-if`.
  *
- * @see [prefer-switch](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v45.0.2/docs/rules/prefer-switch.md)
+ * @see [prefer-switch](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v46.0.0/docs/rules/prefer-switch.md)
  */
 export type PreferSwitchRuleConfig = RuleConfig<PreferSwitchOptions>;
 
 /**
  * Prefer `switch` over multiple `else-if`.
  *
- * @see [prefer-switch](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v45.0.2/docs/rules/prefer-switch.md)
+ * @see [prefer-switch](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v46.0.0/docs/rules/prefer-switch.md)
  */
 export interface PreferSwitchRule {
   /**
    * Prefer `switch` over multiple `else-if`.
    *
-   * @see [prefer-switch](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v45.0.2/docs/rules/prefer-switch.md)
+   * @see [prefer-switch](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v46.0.0/docs/rules/prefer-switch.md)
    */
   'unicorn/prefer-switch': PreferSwitchRuleConfig;
 }
