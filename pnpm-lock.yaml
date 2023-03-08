@@ -29,7 +29,7 @@ specifiers:
   eslint-plugin-spellcheck: ~0.0.20
   eslint-plugin-unicorn: ~46.0.0
   eslint-plugin-vue: ~9.9.0
-  eslint-plugin-vue-pug: ~0.5.5
+  eslint-plugin-vue-pug: ~0.6.0
   expect-type: ~0.15.0
   graphql: ~16.6.0
   json-schema: ~0.4.0
@@ -73,7 +73,7 @@ devDependencies:
   eslint-plugin-spellcheck: 0.0.20_eslint@8.35.0
   eslint-plugin-unicorn: 46.0.0_eslint@8.35.0
   eslint-plugin-vue: 9.9.0_eslint@8.35.0
-  eslint-plugin-vue-pug: 0.5.5_tygcqzbe3npvtnu2w2c2ee5se4
+  eslint-plugin-vue-pug: 0.6.0_tygcqzbe3npvtnu2w2c2ee5se4
   expect-type: 0.15.0
   graphql: 16.6.0
   json-schema: 0.4.0
@@ -2605,8 +2605,8 @@ packages:
       strip-indent: 3.0.0
     dev: true
 
-  /eslint-plugin-vue-pug/0.5.5_tygcqzbe3npvtnu2w2c2ee5se4:
-    resolution: {integrity: sha512-kpuIJlA++0oaIfu1FI7mfQQkZWS8RIcM5y/WtWkYJma+OcXi6SBeh5ACZV2mK1neAy1cXQEKNFO+HyGt2Ob8fA==}
+  /eslint-plugin-vue-pug/0.6.0_tygcqzbe3npvtnu2w2c2ee5se4:
+    resolution: {integrity: sha512-VFCdVctcEob2/sEWBeAVhWPXACUfLpqWpnhTK7tHXuDF+0GM2N3BeiCG0cneFvleI59B/NouGX80GXB6NGrgvA==}
     peerDependencies:
       eslint-plugin-vue: ^9.8.0
     dependencies:
