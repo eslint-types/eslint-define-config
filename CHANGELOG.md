@@ -1,6 +1,15 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.15.0...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.16.0...main)
+
+# 1.16.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.15.0...1.16.0)
+
+- Fix and sync `config.rule` type to eslint `Linter.Rule` ([#172])
+- Update rules for: [eslint, typescript-eslint, graphql, jsdoc, unicorn, vue-pug]
+
+[#172]: https://github.com/Shinigami92/eslint-define-config/issues/172
 
 # 1.15.0
 
