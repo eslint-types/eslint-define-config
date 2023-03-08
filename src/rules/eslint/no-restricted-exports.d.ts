@@ -3,9 +3,20 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export interface NoRestrictedExportsOption {
-  restrictedNamedExports?: string[];
-}
+export type NoRestrictedExportsOption =
+  | {
+      restrictedNamedExports?: string[];
+    }
+  | {
+      restrictedNamedExports?: string[];
+      restrictDefaultExports?: {
+        direct?: boolean;
+        named?: boolean;
+        defaultFrom?: boolean;
+        namedFrom?: boolean;
+        namespaceFrom?: boolean;
+      };
+    };
 
 /**
  * Options.
