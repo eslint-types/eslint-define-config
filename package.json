@@ -51,7 +51,7 @@
     "tsconfig.json"
   ],
   "devDependencies": {
-    "@graphql-eslint/eslint-plugin": "~3.15.0",
+    "@graphql-eslint/eslint-plugin": "~3.16.1",
     "@intlify/eslint-plugin-vue-i18n": "~2.0.0",
     "@poppinss/cliui": "~3.0.5",
     "@types/eslint": "~8.21.1",

@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@graphql-eslint/eslint-plugin': ~3.15.0
+  '@graphql-eslint/eslint-plugin': ~3.16.1
   '@intlify/eslint-plugin-vue-i18n': ~2.0.0
   '@poppinss/cliui': ~3.0.5
   '@types/eslint': ~8.21.1
@@ -45,7 +45,7 @@ specifiers:
   vue-eslint-parser: ~9.1.0
 
 devDependencies:
-  '@graphql-eslint/eslint-plugin': 3.15.0_jukviheqyaybdjg76ifj2dsifa
+  '@graphql-eslint/eslint-plugin': 3.16.1_jukviheqyaybdjg76ifj2dsifa
   '@intlify/eslint-plugin-vue-i18n': 2.0.0_eslint@8.35.0
   '@poppinss/cliui': 3.0.5
   '@types/eslint': 8.21.1
@@ -722,8 +722,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@graphql-eslint/eslint-plugin/3.15.0_jukviheqyaybdjg76ifj2dsifa:
-    resolution: {integrity: sha512-0sCHsbD07sCAHLKr/89i0ZcKasAbPps9OcWcvBtBoyuyvINWQlTrG0eqIwo4n5pOdNLw1yCfk+R7AwRYJ8m+MQ==}
+  /@graphql-eslint/eslint-plugin/3.16.1_jukviheqyaybdjg76ifj2dsifa:
+    resolution: {integrity: sha512-sKmtlwVWjxCXlmgpNJSdvBqapluyrp6PA7FbSnpkyHD0ejkp3mhwZtCiR6843LmVFgWSzfAtEdjPCT2TcJ5p/w==}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:

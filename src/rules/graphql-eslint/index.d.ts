@@ -42,6 +42,7 @@ import type { RequireDeprecationReasonRule } from './require-deprecation-reason'
 import type { RequireDescriptionRule } from './require-description';
 import type { RequireFieldOfTypeQueryInMutationResultRule } from './require-field-of-type-query-in-mutation-result';
 import type { RequireIdWhenAvailableRule } from './require-id-when-available';
+import type { RequireImportFragmentRule } from './require-import-fragment';
 import type { RequireNullableFieldsWithOneofRule } from './require-nullable-fields-with-oneof';
 import type { RequireTypePatternWithOneofRule } from './require-type-pattern-with-oneof';
 import type { ScalarLeafsRule } from './scalar-leafs';
@@ -122,6 +123,7 @@ export type GraphQLRules = ExecutableDefinitionsRule &
   RequireDescriptionRule &
   RequireFieldOfTypeQueryInMutationResultRule &
   RequireIdWhenAvailableRule &
+  RequireImportFragmentRule &
   RequireNullableFieldsWithOneofRule &
   RequireTypePatternWithOneofRule &
   SelectionSetDepthRule &
