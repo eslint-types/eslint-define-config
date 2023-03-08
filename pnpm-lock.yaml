@@ -18,7 +18,7 @@ specifiers:
   eslint-plugin-eslint-comments: ~3.2.0
   eslint-plugin-import: ~2.27.5
   eslint-plugin-inclusive-language: ~2.2.0
-  eslint-plugin-jsdoc: ~39.7.5
+  eslint-plugin-jsdoc: ~40.0.1
   eslint-plugin-jsonc: ~2.6.0
   eslint-plugin-mdx: ~2.0.5
   eslint-plugin-n: ~15.6.1
@@ -62,7 +62,7 @@ devDependencies:
   eslint-plugin-eslint-comments: 3.2.0_eslint@8.35.0
   eslint-plugin-import: 2.27.5_uyiasnnzcqrxqkfvjklwnmwcha
   eslint-plugin-inclusive-language: 2.2.0
-  eslint-plugin-jsdoc: 39.7.5_eslint@8.35.0
+  eslint-plugin-jsdoc: 40.0.1_eslint@8.35.0
   eslint-plugin-jsonc: 2.6.0_eslint@8.35.0
   eslint-plugin-mdx: 2.0.5_eslint@8.35.0
   eslint-plugin-n: 15.6.1_eslint@8.35.0
@@ -2441,8 +2441,8 @@ packages:
       humps: 2.0.1
     dev: true
 
-  /eslint-plugin-jsdoc/39.7.5_eslint@8.35.0:
-    resolution: {integrity: sha512-6L90P0AnZcE4ra7nocolp9vTjgVr2wEZ7jPnEA/X30XAoQPk+wvnaq61n164Tf7Fg4QPpJtRSCPpApOsfWDdNA==}
+  /eslint-plugin-jsdoc/40.0.1_eslint@8.35.0:
+    resolution: {integrity: sha512-KkiRInury7YrjjV5aCHDxwsPy6XFt5p2b2CnpDMITnWs8patNPf5kj24+VXIWw45kP6z/B0GOKfrYczB56OjQQ==}
     engines: {node: ^14 || ^16 || ^17 || ^18 || ^19}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0

@@ -68,7 +68,7 @@
     "eslint-plugin-eslint-comments": "~3.2.0",
     "eslint-plugin-import": "~2.27.5",
     "eslint-plugin-inclusive-language": "~2.2.0",
-    "eslint-plugin-jsdoc": "~39.7.5",
+    "eslint-plugin-jsdoc": "~40.0.1",
     "eslint-plugin-jsonc": "~2.6.0",
     "eslint-plugin-mdx": "~2.0.5",
     "eslint-plugin-n": "~15.6.1",

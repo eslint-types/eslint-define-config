@@ -6,18 +6,20 @@ import type { RuleConfig } from '../rule-config';
 export interface CheckLineAlignmentConfig {
   customSpacings?: {
     postDelimiter?: number;
+    postHyphen?: number;
     postName?: number;
     postTag?: number;
     postType?: number;
   };
   preserveMainDescriptionPostDelimiter?: boolean;
   tags?: string[];
+  wrapIndent?: string;
 }
 
 /**
  * Option.
  */
-export type CheckLineAlignmentOption = 'always' | 'never';
+export type CheckLineAlignmentOption = 'always' | 'never' | 'any';
 
 /**
  * Options.
