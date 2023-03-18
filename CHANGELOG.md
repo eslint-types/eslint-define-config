@@ -1,6 +1,16 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.16.0...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.17.0...main)
+
+# 1.17.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.16.0...1.17.0)
+
+- Upgrade to TypeScript 5
+- Allow `parserOptions.project` to be `null` ([#175])
+- Update rules for: [eslint, typescript-eslint]
+
+[#175]: https://github.com/Shinigami92/eslint-define-config/issues/175
 
 # 1.16.0
 
