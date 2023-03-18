@@ -25,6 +25,7 @@ import type { IndentRule } from './indent';
 import type { InitDeclarationsRule } from './init-declarations';
 import type { KeySpacingRule } from './key-spacing';
 import type { KeywordSpacingRule } from './keyword-spacing';
+import type { LinesAroundCommentRule } from './lines-around-comment';
 import type { LinesBetweenClassMembersRule } from './lines-between-class-members';
 import type { MemberDelimiterStyleRule } from './member-delimiter-style';
 import type { MemberOrderingRule } from './member-ordering';
@@ -162,6 +163,7 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   InitDeclarationsRule &
   KeySpacingRule &
   KeywordSpacingRule &
+  LinesAroundCommentRule &
   LinesBetweenClassMembersRule &
   MemberDelimiterStyleRule &
   MemberOrderingRule &
