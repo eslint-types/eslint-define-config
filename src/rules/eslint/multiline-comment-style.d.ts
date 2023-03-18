@@ -4,14 +4,21 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export type MultilineCommentStyleOption =
-  | 'starred-block'
-  | 'separate-lines'
-  | 'bare-block';
+  | []
+  | ['starred-block' | 'bare-block']
+  | []
+  | ['separate-lines']
+  | [
+      'separate-lines',
+      {
+        checkJSDoc?: boolean;
+      },
+    ];
 
 /**
  * Options.
  */
-export type MultilineCommentStyleOptions = [MultilineCommentStyleOption?];
+export type MultilineCommentStyleOptions = MultilineCommentStyleOption;
 
 /**
  * Enforce a particular style for multiline comments.
