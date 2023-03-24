@@ -85,7 +85,7 @@
     "json-schema": "~0.4.0",
     "json-schema-to-ts": "~2.7.2",
     "json-schema-to-typescript": "~12.0.0",
-    "prettier": "2.8.6",
+    "prettier": "2.8.7",
     "prettier-plugin-organize-imports": "~3.2.2",
     "ts-dedent": "~2.2.0",
     "tsx": "~3.12.6",
