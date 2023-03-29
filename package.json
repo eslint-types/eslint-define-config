@@ -91,7 +91,7 @@
     "tsx": "~3.12.6",
     "typescript": "~5.0.2",
     "upper-case-first": "~2.0.2",
-    "vitest": "~0.29.7",
+    "vitest": "~0.29.8",
     "vue-eslint-parser": "~9.1.0"
   },
   "pnpm": {
