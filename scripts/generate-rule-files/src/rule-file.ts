@@ -1,6 +1,8 @@
+import { logger } from '@poppinss/cliui';
 import { paramCase as kebabCase, pascalCase } from 'change-case';
 import type { Rule } from 'eslint';
 import type { JSONSchema4 } from 'json-schema';
+import { execSync } from 'node:child_process';
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { upperCaseFirst } from 'upper-case-first';
@@ -22,12 +24,12 @@ export class RuleFile {
 
   public constructor(
     private readonly plugin: Plugin,
-    pluginDirectory: string,
+    private readonly pluginDirectory: string,
     private readonly ruleName: string,
     private readonly rule: Rule.RuleModule,
   ) {
     this.ruleNamePascalCase = pascalCase(this.ruleName);
-    this.rulePath = resolve(pluginDirectory, `${ruleName}.d.ts`);
+    this.rulePath = resolve(this.pluginDirectory, `${ruleName}.d.ts`);
     this.assignSchemasInfo();
   }
 
@@ -163,21 +165,30 @@ export class RuleFile {
   }
 
   /**
+   * Scoped rule name ESLint config uses.
+   */
+  private prefixedRuleName(): string {
+    const { prefix, name } = this.plugin;
+    let rulePrefix: string = (prefix ?? kebabCase(name)) + '/';
+
+    if (name === 'Eslint') {
+      rulePrefix = '';
+    }
+
+    return `${rulePrefix}${this.ruleName}`;
+  }
+
+  /**
    * Append the final rule interface to the file content.
    */
   private appendRule(): void {
     const ruleName: string = this.ruleNamePascalCase;
-    const { prefix, name } = this.plugin;
-    let rulePrefix: string = (prefix ?? kebabCase(name)) + '/';
-    if (name === 'Eslint') {
-      rulePrefix = '';
-    }
 
     this.content += this.generateTypeJsDoc() + '\n';
 
     this.content += `export interface ${ruleName}Rule {`;
     this.content += `${this.generateTypeJsDoc()}\n`;
-    this.content += `'${rulePrefix}${this.ruleName}': ${ruleName}RuleConfig;`;
+    this.content += `'${this.prefixedRuleName()}': ${ruleName}RuleConfig;`;
     this.content += '}';
   }
 
@@ -217,5 +228,34 @@ export class RuleFile {
     this.createRuleDirectory();
 
     writeFileSync(this.rulePath, this.content);
+  }
+
+  /**
+   * Apply a patch to the generated content if a diff file exists for it.
+   *
+   * Must be called after `generate()`.
+   */
+  public applyPatch(): void {
+    const pathParts: string[] = this.rulePath.split('/');
+    const ruleFileName: string = pathParts[pathParts.length - 1] ?? '';
+    const rulePlugin: string = pathParts[pathParts.length - 2] ?? '';
+
+    const diffFile: string = resolve(
+      __dirname,
+      '..',
+      'diffs',
+      'rules',
+      rulePlugin,
+      `${ruleFileName}.diff`,
+    );
+
+    const ruleName: string = this.prefixedRuleName();
+
+    if (existsSync(diffFile)) {
+      logger.logUpdate(logger.colors.yellow(`  🧹 Adjusting ${ruleName}`));
+      logger.logUpdatePersist();
+
+      execSync(`git apply ${diffFile}`);
+    }
   }
 }
