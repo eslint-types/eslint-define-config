@@ -103,7 +103,7 @@
       ]
     }
   },
-  "packageManager": "pnpm@7.30.0",
+  "packageManager": "pnpm@7.30.5",
   "engines": {
     "node": "^14.17.0 || ^16.13.0 || >=18.0.0",
     "npm": ">=6.14.13",
