@@ -3,13 +3,10 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Config.
  */
-export type FileExtensionInImportConfig =
-  | {
-      tryExtensions?: string[];
-    }
-  | {
-      [k: string]: 'always' | 'never';
-    };
+export interface FileExtensionInImportConfig {
+  tryExtensions?: string[];
+  [ext: `.${string}`]: 'always' | 'never';
+}
 
 /**
  * Option.
