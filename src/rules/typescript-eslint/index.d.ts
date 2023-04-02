@@ -38,6 +38,7 @@ import type { NoConfusingVoidExpressionRule } from './no-confusing-void-expressi
 import type { NoDupeClassMembersRule } from './no-dupe-class-members';
 import type { NoDuplicateEnumValuesRule } from './no-duplicate-enum-values';
 import type { NoDuplicateImportsRule } from './no-duplicate-imports';
+import type { NoDuplicateTypeConstituentsRule } from './no-duplicate-type-constituents';
 import type { NoDynamicDeleteRule } from './no-dynamic-delete';
 import type { NoEmptyFunctionRule } from './no-empty-function';
 import type { NoEmptyInterfaceRule } from './no-empty-interface';
@@ -176,6 +177,7 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   NoDupeClassMembersRule &
   NoDuplicateEnumValuesRule &
   NoDuplicateImportsRule &
+  NoDuplicateTypeConstituentsRule &
   NoDynamicDeleteRule &
   NoEmptyFunctionRule &
   NoEmptyInterfaceRule &
