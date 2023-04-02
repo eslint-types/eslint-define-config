@@ -78,6 +78,8 @@ export type NamingConventionOption =
         VariableDefinition?: AsString | AsObject;
         allowLeadingUnderscore?: boolean;
         allowTrailingUnderscore?: boolean;
+      } & {
+        [k: string]: AsString | AsObject;
       },
     ];
 /**
@@ -97,6 +99,14 @@ export interface AsObject {
    * @minItems 1
    */
   forbiddenSuffixes?: [string, ...string[]];
+  /**
+   * @minItems 1
+   */
+  requiredPrefixes?: [string, ...string[]];
+  /**
+   * @minItems 1
+   */
+  requiredSuffixes?: [string, ...string[]];
   /**
    * Option to skip validation of some words, e.g. acronyms
    */
