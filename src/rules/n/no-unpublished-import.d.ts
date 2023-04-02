@@ -41,6 +41,7 @@ export interface NoUnpublishedImportOption {
         }[],
       ];
   resolvePaths?: string[];
+  ignoreTypeImport?: boolean;
 }
 
 /**
