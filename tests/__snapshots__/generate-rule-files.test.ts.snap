@@ -1,162 +1,64 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Rule File > Main schema 1`] = `
-"import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export type MyRuleOption = number;
-
-/**
- * Options.
- */
-export type MyRuleOptions = [MyRuleOption?];
-
-/**
- * My rule description.
- *
- * @see [my-rule](http://test.com/my-rule)
- */
-export type MyRuleRuleConfig = RuleConfig<MyRuleOptions>;
-
-/**
- * My rule description.
- *
- * @see [my-rule](http://test.com/my-rule)
- */
+"import type { Rule } from '../rule-config';
+import type { RuleLevel } from '../rule-severity';
 export interface MyRuleRule {
   /**
    * My rule description.
    *
    * @see [my-rule](http://test.com/my-rule)
    */
-  'my-plugin/my-rule': MyRuleRuleConfig;
+  'my-plugin/my-rule': Rule<[RuleLevel, number]>;
 }
 "
 `;
 
 exports[`Rule File > Object schema 1`] = `
-"import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export interface MyRuleOption {
-  [k: string]: any;
-}
-
-/**
- * Options.
- */
-export type MyRuleOptions = MyRuleOption;
-
-/**
- * My rule description.
- *
- * @see [my-rule](http://test.com/my-rule)
- */
-export type MyRuleRuleConfig = RuleConfig<MyRuleOptions>;
-
-/**
- * My rule description.
- *
- * @see [my-rule](http://test.com/my-rule)
- */
+"import type { Rule } from '../rule-config';
+import type { RuleLevel } from '../rule-severity';
 export interface MyRuleRule {
   /**
    * My rule description.
    *
    * @see [my-rule](http://test.com/my-rule)
    */
-  'my-plugin/my-rule': MyRuleRuleConfig;
+  'my-plugin/my-rule': Rule<
+    [
+      RuleLevel,
+      ...{
+        [k: string]: any;
+      },
+    ]
+  >;
 }
 "
 `;
 
 exports[`Rule File > Side schemas 1`] = `
-"import type { RuleConfig } from '../rule-config';
-
-/**
- * Config.
- */
-export type MyRuleConfig = string;
-
-/**
- * Option.
- */
-export type MyRuleOption = number;
-
-/**
- * Options.
- */
-export type MyRuleOptions = [MyRuleOption?, MyRuleConfig?];
-
-/**
- * My rule description.
- *
- * @see [my-rule](http://test.com/my-rule)
- */
-export type MyRuleRuleConfig = RuleConfig<MyRuleOptions>;
-
-/**
- * My rule description.
- *
- * @see [my-rule](http://test.com/my-rule)
- */
+"import type { Rule } from '../rule-config';
+import type { RuleLevel } from '../rule-severity';
 export interface MyRuleRule {
   /**
    * My rule description.
    *
    * @see [my-rule](http://test.com/my-rule)
    */
-  'my-plugin/my-rule': MyRuleRuleConfig;
+  'my-plugin/my-rule': Rule<[RuleLevel, number, string]>;
 }
 "
 `;
 
 exports[`Rule File > Third schemas 1`] = `
-"import type { RuleConfig } from '../rule-config';
-
-/**
- * Setting.
- */
-export type MyRuleSetting = boolean;
-
-/**
- * Config.
- */
-export type MyRuleConfig = string;
-
-/**
- * Option.
- */
-export type MyRuleOption = number;
-
-/**
- * Options.
- */
-export type MyRuleOptions = [MyRuleOption?, MyRuleConfig?, MyRuleSetting?];
-
-/**
- * My rule description.
- *
- * @see [my-rule](http://test.com/my-rule)
- */
-export type MyRuleRuleConfig = RuleConfig<MyRuleOptions>;
-
-/**
- * My rule description.
- *
- * @see [my-rule](http://test.com/my-rule)
- */
+"import type { Rule } from '../rule-config';
+import type { RuleLevel } from '../rule-severity';
 export interface MyRuleRule {
   /**
    * My rule description.
    *
    * @see [my-rule](http://test.com/my-rule)
    */
-  'my-plugin/my-rule': MyRuleRuleConfig;
+  'my-plugin/my-rule': Rule<[RuleLevel, number, string, boolean]>;
 }
 "
 `;

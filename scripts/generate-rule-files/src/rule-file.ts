@@ -17,7 +17,7 @@ export class RuleFile {
   private readonly rulePath: string;
   private readonly ruleNamePascalCase: string;
 
-  private isSchemaArray!: boolean;
+  private isSchemaArray?: boolean;
   private mainSchema?: JSONSchema4;
   private sideSchema?: JSONSchema4;
   private thirdSchema?: JSONSchema4;
@@ -43,17 +43,6 @@ export class RuleFile {
     this.sideSchema = isArray && schema.length > 1 ? schema[1] : undefined;
     this.thirdSchema = isArray && schema.length > 2 ? schema[2] : undefined;
     this.isSchemaArray = isArray;
-  }
-
-  /**
-   * Append the `import type { RuleConfig } from '../rule-config'` at the top of the file.
-   */
-  public appendRuleConfigImport(): void {
-    const nestedDepth: number = this.ruleName.split('/').length;
-    const ruleConfigImportPath: string = `${'../'.repeat(
-      nestedDepth,
-    )}rule-config`;
-    this.content += `import type { RuleConfig } from '${ruleConfigImportPath}'\n\n`;
   }
 
   /**
@@ -96,72 +85,48 @@ export class RuleFile {
       .output();
   }
 
+  private readonly ruleSchemas: {
+    Setting?: string;
+    Config?: string;
+    Option?: string;
+    Partial: string[];
+  } = { Partial: [] };
+
   /**
    * Generate a type from a JSON schema and append it to the file content.
    */
-  private async appendJsonSchemaType(
+  private async generateJsonSchemaType(
     schema: JSONSchema4,
-    comment: string,
+    comment: 'Setting' | 'Config' | 'Option',
   ): Promise<void> {
     const type: string = await generateTypeFromSchema(
       schema,
       this.ruleNamePascalCase + comment,
     );
 
-    const jsdoc: string = JsDocBuilder.build().add(`${comment}.`).output();
-    this.content += `\n${jsdoc}`;
-    this.content += `\n${type}\n`;
+    const fullSchema: string = type
+      .replace(/export (type|interface) \w+\s*(=\s*)?/, '')
+      .trim();
+    const [mainSchema, ...parts] = fullSchema.split('\nexport ');
+    this.ruleSchemas[comment] = mainSchema;
+    this.ruleSchemas.Partial.push(...parts);
   }
 
   /**
    * Generate and append types for the rule schemas.
    */
-  private async appendRuleSchemaTypes(): Promise<void> {
+  private async generateRuleSchemaTypes(): Promise<void> {
     if (this.thirdSchema) {
-      await this.appendJsonSchemaType(this.thirdSchema, 'Setting');
+      await this.generateJsonSchemaType(this.thirdSchema, 'Setting');
     }
 
     if (this.sideSchema) {
-      await this.appendJsonSchemaType(this.sideSchema, 'Config');
+      await this.generateJsonSchemaType(this.sideSchema, 'Config');
     }
 
     if (this.mainSchema) {
-      await this.appendJsonSchemaType(this.mainSchema, 'Option');
+      await this.generateJsonSchemaType(this.mainSchema, 'Option');
     }
-  }
-
-  /**
-   * Append the rule type options to the file content.
-   */
-  private appendRuleOptions(): void {
-    const ruleName: string = this.ruleNamePascalCase;
-
-    let type: string = '';
-    if (!this.isSchemaArray) {
-      type = `${ruleName}Option`;
-    } else if (this.thirdSchema) {
-      type = `[${ruleName}Option?, ${ruleName}Config?, ${ruleName}Setting?]`;
-    } else if (this.sideSchema) {
-      type = `[${ruleName}Option?, ${ruleName}Config?]`;
-    } else if (this.mainSchema) {
-      type = `[${ruleName}Option?]`;
-    }
-
-    this.content += JsDocBuilder.build().add('Options.').output() + '\n';
-    this.content += `export type ${ruleName}Options = ${type}\n\n`;
-  }
-
-  /**
-   * Append the rule config type to the file content.
-   */
-  private appendRuleConfig(): void {
-    const ruleName: string = this.ruleNamePascalCase;
-    const genericContent: string = this.mainSchema
-      ? `${ruleName}Options`
-      : '[]';
-
-    this.content += this.generateTypeJsDoc() + '\n';
-    this.content += `export type ${ruleName}RuleConfig = RuleConfig<${genericContent}>;\n\n`;
   }
 
   /**
@@ -181,15 +146,34 @@ export class RuleFile {
   /**
    * Append the final rule interface to the file content.
    */
-  private appendRule(): void {
+  private generateRuleContent(): void {
     const ruleName: string = this.ruleNamePascalCase;
 
-    this.content += this.generateTypeJsDoc() + '\n';
+    const ruleSchema: string[] = (
+      this.isSchemaArray
+        ? [
+            'RuleLevel',
+            this.ruleSchemas.Option,
+            this.ruleSchemas.Config,
+            this.ruleSchemas.Setting,
+          ]
+        : this.mainSchema
+        ? ['RuleLevel', `...(${this.ruleSchemas.Option ?? ''})`]
+        : ['RuleLevel']
+    ).filter((e): e is string => !!e);
 
-    this.content += `export interface ${ruleName}Rule {`;
-    this.content += `${this.generateTypeJsDoc()}\n`;
-    this.content += `'${this.prefixedRuleName()}': ${ruleName}RuleConfig;`;
-    this.content += '}';
+    const nestedDepth: number = this.ruleName.split('/').length;
+    const importsRootPath: string = '../'.repeat(nestedDepth);
+
+    this.content = `
+    import type { Rule } from '${importsRootPath}rule-config';
+    import type { RuleLevel } from '${importsRootPath}rule-severity';
+    export interface ${ruleName}Rule {
+      ${this.generateTypeJsDoc()}
+      '${this.prefixedRuleName()}': Rule<[${ruleSchema.join(',\n')}]>
+    }
+    ${this.ruleSchemas.Partial.join('\n')}
+    `;
   }
 
   /**
@@ -206,16 +190,9 @@ export class RuleFile {
    * Generate a file with the rule typings.
    */
   public async generate(): Promise<string> {
-    this.appendRuleConfigImport();
-    await this.appendRuleSchemaTypes();
+    await this.generateRuleSchemaTypes();
 
-    if (this.mainSchema) {
-      this.appendRuleOptions();
-    }
-
-    this.appendRuleConfig();
-    this.appendRule();
-
+    this.generateRuleContent();
     this.content = format(this.content);
 
     return this.content;
