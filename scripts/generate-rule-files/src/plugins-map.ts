@@ -1,9 +1,9 @@
-import type { AsyncPlugin, Plugin } from '../contracts';
+import type { Plugin, PluginRules } from '../contracts';
 
 /**
  * Map of plugins for which the script will generate rule files.
  */
-export const PLUGIN_REGISTRY: Readonly<Record<string, AsyncPlugin>> = {
+export const PLUGIN_REGISTRY: Readonly<Record<string, Plugin>> = {
   deprecation: {
     name: 'Deprecation',
     module: 'eslint-plugin-deprecation',
@@ -83,14 +83,15 @@ export const PLUGIN_REGISTRY: Readonly<Record<string, AsyncPlugin>> = {
   },
 } as const;
 
-export async function loadPlugin(asyncPlugin: AsyncPlugin): Promise<Plugin> {
-  const mod: any = await import(asyncPlugin.module);
-  const rules: Plugin['rules'] =
-    asyncPlugin.module == 'eslint'
-      ? // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-argument
-        Object.fromEntries(new mod.Linter().getRules().entries())
+export async function loadPlugin(plugin: Plugin): Promise<Plugin> {
+  const mod: any = await import(plugin.module);
+  const rules: PluginRules =
+    plugin.module === 'eslint'
+      ? Object.fromEntries(
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access
+          new mod.Linter().getRules().entries(),
+        )
       : // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
         mod.rules ?? mod.default.rules;
-  Object.entries(rules);
-  return { ...asyncPlugin, rules };
+  return { ...plugin, rules };
 }
