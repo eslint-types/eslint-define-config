@@ -7,3 +7,11 @@ export interface Plugin {
   prefix?: string;
   rules: Record<string, Rule.RuleModule>;
 }
+
+export interface AsyncPlugin {
+  name: string;
+  prefix?: string;
+  module: string;
+}
+
+export type PluginRules = Record<string, Rule.RuleModule>;

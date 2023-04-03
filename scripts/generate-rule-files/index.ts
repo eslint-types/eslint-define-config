@@ -4,10 +4,10 @@ import type { Rule } from 'eslint';
 import { existsSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import dedent from 'ts-dedent';
-import type { Plugin } from './contracts';
+import type { AsyncPlugin, Plugin } from './contracts';
 import { format } from './src/format';
 import { JsDocBuilder } from './src/js-doc-builder';
-import { PLUGIN_REGISTRY } from './src/plugins-map';
+import { PLUGIN_REGISTRY, loadPlugin } from './src/plugins-map';
 import { RuleFile } from './src/rule-file';
 
 /**
@@ -137,13 +137,16 @@ export async function run(options: RunOptions = {}): Promise<void> {
   const wantedPlugins: string[] = plugins ?? Object.keys(PLUGIN_REGISTRY);
 
   for (const pluginName of wantedPlugins) {
-    const plugin: Plugin = PLUGIN_REGISTRY[pluginName]!;
-
-    if (!plugin) {
+    const asyncPlugin: AsyncPlugin | undefined = PLUGIN_REGISTRY[pluginName];
+    if (!asyncPlugin) {
       throw new Error(`Plugin ${pluginName} doesn't exist.`);
     }
 
-    logger.info(`Generating ${plugin.name} rules.`);
+    logger.info(`Generating ${asyncPlugin.name} rules.`);
+    logger.logUpdate(
+      logger.colors.yellow(`  Loading plugin > ${asyncPlugin.module}`),
+    );
+    const plugin: Plugin = await loadPlugin(asyncPlugin);
 
     const pluginDir: string = createPluginDirectory(
       pluginName,
