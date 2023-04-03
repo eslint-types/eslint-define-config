@@ -1,0 +1,23 @@
+diff --git b/src/rules/typescript-eslint/array-type.d.ts a/src/rules/typescript-eslint/array-type.d.ts
+index 98cd312..fe661fc 100644
+--- b/src/rules/typescript-eslint/array-type.d.ts
++++ a/src/rules/typescript-eslint/array-type.d.ts
+@@ -3,12 +3,16 @@ import type { RuleConfig } from '../rule-config';
+ /**
+  * Option.
+  */
+-export type ArrayTypeOption = any[];
++export interface ArrayTypeOption {
++  default?: 'array' | 'generic' | 'array-simple';
++  readonly?: 'array' | 'generic' | 'array-simple';
++  [k: string]: any;
++}
+ 
+ /**
+  * Options.
+  */
+-export type ArrayTypeOptions = ArrayTypeOption;
++export type ArrayTypeOptions = [ArrayTypeOption?];
+ 
+ /**
+  * Require consistently using either `T[]` or `Array<T>` for arrays.

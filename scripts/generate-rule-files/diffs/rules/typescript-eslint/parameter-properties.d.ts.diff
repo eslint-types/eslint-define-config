@@ -1,0 +1,44 @@
+diff --git b/src/rules/typescript-eslint/parameter-properties.d.ts a/src/rules/typescript-eslint/parameter-properties.d.ts
+index 6b0f176..591a9a4 100644
+--- b/src/rules/typescript-eslint/parameter-properties.d.ts
++++ a/src/rules/typescript-eslint/parameter-properties.d.ts
+@@ -3,12 +3,37 @@ import type { RuleConfig } from '../rule-config';
+ /**
+  * Option.
+  */
+-export type ParameterPropertiesOption = any[];
++export interface ParameterPropertiesOption {
++  /**
++   * @minItems 1
++   */
++  allow?: [
++    (
++      | 'readonly'
++      | 'private'
++      | 'protected'
++      | 'public'
++      | 'private readonly'
++      | 'protected readonly'
++      | 'public readonly'
++    ),
++    ...(
++      | 'readonly'
++      | 'private'
++      | 'protected'
++      | 'public'
++      | 'private readonly'
++      | 'protected readonly'
++      | 'public readonly'
++    )[],
++  ];
++  prefer?: 'class-property' | 'parameter-property';
++}
+ 
+ /**
+  * Options.
+  */
+-export type ParameterPropertiesOptions = ParameterPropertiesOption;
++export type ParameterPropertiesOptions = [ParameterPropertiesOption?];
+ 
+ /**
+  * Require or disallow parameter properties in class constructors.

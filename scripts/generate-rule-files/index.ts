@@ -95,6 +95,7 @@ async function generateRulesFiles(
     try {
       await ruleFile.generate();
       ruleFile.writeGeneratedContent();
+      ruleFile.applyPatch();
     } catch (err) {
       failedRules.push(ruleName);
     }
