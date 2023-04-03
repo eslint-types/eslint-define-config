@@ -1,0 +1,32 @@
+diff --git b/src/rules/typescript-eslint/explicit-member-accessibility.d.ts a/src/rules/typescript-eslint/explicit-member-accessibility.d.ts
+index b585e26..1711d51 100644
+--- b/src/rules/typescript-eslint/explicit-member-accessibility.d.ts
++++ a/src/rules/typescript-eslint/explicit-member-accessibility.d.ts
+@@ -3,13 +3,24 @@ import type { RuleConfig } from '../rule-config';
+ /**
+  * Option.
+  */
+-export type ExplicitMemberAccessibilityOption = any[];
++export interface ExplicitMemberAccessibilityOption {
++  accessibility?: 'explicit' | 'no-public' | 'off';
++  overrides?: {
++    accessors?: 'explicit' | 'no-public' | 'off';
++    constructors?: 'explicit' | 'no-public' | 'off';
++    methods?: 'explicit' | 'no-public' | 'off';
++    properties?: 'explicit' | 'no-public' | 'off';
++    parameterProperties?: 'explicit' | 'no-public' | 'off';
++  };
++  ignoredMethodNames?: string[];
++}
+ 
+ /**
+  * Options.
+  */
+-export type ExplicitMemberAccessibilityOptions =
+-  ExplicitMemberAccessibilityOption;
++export type ExplicitMemberAccessibilityOptions = [
++  ExplicitMemberAccessibilityOption?,
++];
+ 
+ /**
+  * Require explicit accessibility modifiers on class properties and methods.
