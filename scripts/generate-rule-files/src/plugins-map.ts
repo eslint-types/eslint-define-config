@@ -1,33 +1,4 @@
-import * as eslintPluginGraphQl from '@graphql-eslint/eslint-plugin';
-import * as eslint from 'eslint';
-import * as eslintPluginDeprecation from 'eslint-plugin-deprecation';
-// @ts-expect-error
-import eslintPluginEslintComments from 'eslint-plugin-eslint-comments';
-// @ts-expect-error
-import * as eslintPluginImport from 'eslint-plugin-import';
-// @ts-expect-error
-import eslintPluginJSDoc from 'eslint-plugin-jsdoc';
-import eslintPluginJsonc from 'eslint-plugin-jsonc';
-import * as eslintPluginMdx from 'eslint-plugin-mdx';
-// @ts-expect-error
-import eslintPluginPromise from 'eslint-plugin-promise';
-// @ts-expect-error
-import eslintPluginNode from 'eslint-plugin-node';
-// @ts-expect-error
-import eslintPluginN from 'eslint-plugin-n';
-import * as eslintPluginSonarJS from 'eslint-plugin-sonarjs';
-// @ts-expect-error
-import eslintPluginSpellcheck from 'eslint-plugin-spellcheck';
-// @ts-expect-error
-import eslintPluginUnicorn from 'eslint-plugin-unicorn';
-// @ts-expect-error
-import eslintPluginVue from 'eslint-plugin-vue';
-// @ts-expect-error
-import eslintPluginVuePug from 'eslint-plugin-vue-pug';
-// @ts-expect-error
-import eslintPluginVueI18n from '@intlify/eslint-plugin-vue-i18n';
-import eslintPluginTypeScript from '@typescript-eslint/eslint-plugin';
-import type { Plugin } from '../contracts';
+import type { Plugin, PluginRules } from '../contracts';
 
 /**
  * Map of plugins for which the script will generate rule files.
@@ -35,83 +6,92 @@ import type { Plugin } from '../contracts';
 export const PLUGIN_REGISTRY: Readonly<Record<string, Plugin>> = {
   deprecation: {
     name: 'Deprecation',
-    rules:
-      // @ts-expect-error: throw error when plugin successfully updated their type defs
-      eslintPluginDeprecation.rules as Plugin['rules'],
+    module: 'eslint-plugin-deprecation',
   },
   eslint: {
     name: 'Eslint',
-    rules: Object.fromEntries(new eslint.Linter().getRules().entries()),
+    module: 'eslint',
   },
   'typescript-eslint': {
     name: 'TypeScript',
     prefix: '@typescript-eslint',
-    rules: (eslintPluginTypeScript as unknown as Plugin).rules,
+    module: '@typescript-eslint/eslint-plugin',
   },
   import: {
     name: 'Import',
-    rules: (eslintPluginImport as Plugin).rules,
+    module: 'eslint-plugin-import',
   },
   'eslint-comments': {
     name: 'EslintComments',
-    rules: (eslintPluginEslintComments as Plugin).rules,
+    module: 'eslint-plugin-eslint-comments',
   },
   'graphql-eslint': {
     name: 'GraphQL',
     prefix: '@graphql-eslint',
-    rules: eslintPluginGraphQl.rules as Plugin['rules'],
+    module: '@graphql-eslint/eslint-plugin',
   },
   jsdoc: {
     name: 'JSDoc',
     prefix: 'jsdoc',
-    rules: (eslintPluginJSDoc as Plugin).rules,
+    module: 'eslint-plugin-jsdoc',
   },
   jsonc: {
     name: 'Jsonc',
-    rules:
-      // @ts-expect-error: throw error when plugin successfully updated their type defs
-      eslintPluginJsonc.rules as Plugin['rules'],
+    module: 'eslint-plugin-jsonc',
   },
   mdx: {
     name: 'Mdx',
-    rules: eslintPluginMdx.rules,
+    module: 'eslint-plugin-mdx',
   },
   n: {
     name: 'N',
-    rules: (eslintPluginN as Plugin).rules,
+    module: 'eslint-plugin-n',
   },
   node: {
     name: 'Node',
-    rules: (eslintPluginNode as Plugin).rules,
+    module: 'eslint-plugin-node',
   },
   promise: {
     name: 'Promise',
-    rules: (eslintPluginPromise as Plugin).rules,
+    module: 'eslint-plugin-promise',
   },
   sonarjs: {
     name: 'SonarJS',
     prefix: 'sonarjs',
-    rules: eslintPluginSonarJS.rules,
+    module: 'eslint-plugin-sonarjs',
   },
   spellcheck: {
     name: 'Spellcheck',
-    rules: (eslintPluginSpellcheck as Plugin).rules,
+    module: 'eslint-plugin-spellcheck',
   },
   unicorn: {
     name: 'Unicorn',
-    rules: (eslintPluginUnicorn as Plugin).rules,
+    module: 'eslint-plugin-unicorn',
   },
   vue: {
     name: 'Vue',
-    rules: (eslintPluginVue as Plugin).rules,
+    module: 'eslint-plugin-vue',
   },
   'vue-i18n': {
     name: 'VueI18n',
     prefix: '@intlify/vue-i18n',
-    rules: (eslintPluginVueI18n as Plugin).rules,
+    module: '@intlify/eslint-plugin-vue-i18n',
   },
   'vue-pug': {
     name: 'VuePug',
-    rules: (eslintPluginVuePug as Plugin).rules,
+    module: 'eslint-plugin-vue-pug',
   },
 } as const;
+
+export async function loadPlugin(plugin: Plugin): Promise<Plugin> {
+  const mod: any = await import(plugin.module);
+  const rules: PluginRules =
+    plugin.module === 'eslint'
+      ? Object.fromEntries(
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access
+          new mod.Linter().getRules().entries(),
+        )
+      : // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+        mod.rules ?? mod.default.rules;
+  return { ...plugin, rules };
+}

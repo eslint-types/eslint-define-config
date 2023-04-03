@@ -42,7 +42,11 @@ describe('Rule File', () => {
     } as Rule.RuleModule;
 
     const ruleFile: RuleFile = new RuleFile(
-      { name: 'my-plugin', rules: {} },
+      {
+        name: 'my-plugin',
+        module: 'my-module/my-plugin',
+        rules: {},
+      },
       'my-plugin',
       'my-rule',
       rule,
@@ -67,7 +71,11 @@ describe('Rule File', () => {
     } as Rule.RuleModule;
 
     const ruleFile: RuleFile = new RuleFile(
-      { name: 'my-plugin', rules: {} },
+      {
+        name: 'my-plugin',
+        module: 'my-module/my-plugin',
+        rules: {},
+      },
       'my-plugin',
       'my-rule',
       rule,
@@ -93,7 +101,11 @@ describe('Rule File', () => {
     } as Rule.RuleModule;
 
     const ruleFile: RuleFile = new RuleFile(
-      { name: 'my-plugin', rules: {} },
+      {
+        name: 'my-plugin',
+        module: 'my-module/my-plugin',
+        rules: {},
+      },
       'my-plugin',
       'my-rule',
       rule,
@@ -117,7 +129,11 @@ describe('Rule File', () => {
     } as Rule.RuleModule;
 
     const ruleFile: RuleFile = new RuleFile(
-      { name: 'my-plugin', rules: {} },
+      {
+        name: 'my-plugin',
+        module: 'my-module/my-plugin',
+        rules: {},
+      },
       'my-plugin',
       'my-rule',
       rule,

@@ -4,10 +4,10 @@ import type { Rule } from 'eslint';
 import { existsSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import dedent from 'ts-dedent';
-import type { Plugin } from './contracts';
+import type { Plugin, PluginRules } from './contracts';
 import { format } from './src/format';
 import { JsDocBuilder } from './src/js-doc-builder';
-import { PLUGIN_REGISTRY } from './src/plugins-map';
+import { PLUGIN_REGISTRY, loadPlugin } from './src/plugins-map';
 import { RuleFile } from './src/rule-file';
 
 /**
@@ -18,6 +18,12 @@ function generateRuleIndexFile(
   { rules, name }: Plugin,
   failedRules: string[],
 ): void {
+  if (!rules) {
+    throw new Error(
+      `Plugin ${name} doesn't have any rules. Did you forget to load them?`,
+    );
+  }
+
   const generatedRules: string[] = Object.keys(rules).filter(
     (ruleName) => !failedRules.includes(ruleName),
   );
@@ -82,7 +88,14 @@ async function generateRulesFiles(
 ): Promise<{ failedRules: string[] }> {
   const failedRules: string[] = [];
 
-  const rules: Array<[string, Rule.RuleModule]> = Object.entries(plugin.rules);
+  const pluginRules: PluginRules | undefined = plugin.rules;
+  if (!pluginRules) {
+    throw new Error(
+      `Plugin ${plugin.name} doesn't have any rules. Did you forget to load them?`,
+    );
+  }
+
+  const rules: Array<[string, Rule.RuleModule]> = Object.entries(pluginRules);
   for (const [ruleName, rule] of rules) {
     logger.logUpdate(logger.colors.yellow(`  Generating > ${ruleName}`));
 
@@ -138,20 +151,23 @@ export async function run(options: RunOptions = {}): Promise<void> {
   const wantedPlugins: string[] = plugins ?? Object.keys(PLUGIN_REGISTRY);
 
   for (const pluginName of wantedPlugins) {
-    const plugin: Plugin = PLUGIN_REGISTRY[pluginName]!;
-
+    const plugin: Plugin | undefined = PLUGIN_REGISTRY[pluginName];
     if (!plugin) {
       throw new Error(`Plugin ${pluginName} doesn't exist.`);
     }
 
     logger.info(`Generating ${plugin.name} rules.`);
+    logger.logUpdate(
+      logger.colors.yellow(`  Loading plugin > ${plugin.module}`),
+    );
+    const loadedPlugin: Plugin = await loadPlugin(plugin);
 
     const pluginDir: string = createPluginDirectory(
       pluginName,
       targetDirectory,
     );
-    const { failedRules } = await generateRulesFiles(plugin, pluginDir);
+    const { failedRules } = await generateRulesFiles(loadedPlugin, pluginDir);
 
-    generateRuleIndexFile(pluginDir, plugin, failedRules);
+    generateRuleIndexFile(pluginDir, loadedPlugin, failedRules);
   }
 }
