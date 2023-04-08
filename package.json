@@ -89,7 +89,7 @@
     "prettier-plugin-organize-imports": "~3.2.2",
     "ts-dedent": "~2.2.0",
     "tsx": "~3.12.6",
-    "typescript": "~5.0.3",
+    "typescript": "~5.0.4",
     "upper-case-first": "~2.0.2",
     "vitest": "~0.29.8",
     "vue-eslint-parser": "~9.1.1"
