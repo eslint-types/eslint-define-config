@@ -14,6 +14,10 @@ export interface NoUnusedPropertiesOption {
   )[];
   deepData?: boolean;
   ignorePublicMembers?: boolean;
+  unreferencedOptions?: (
+    | 'unknownMemberAsUnreferenced'
+    | 'returnAsUnreferenced'
+  )[];
 }
 
 /**
