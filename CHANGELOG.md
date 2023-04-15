@@ -1,6 +1,15 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.17.0...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.18.0...main)
+
+# 1.18.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.17.0...1.18.0)
+
+- Allow `parserOptions.project` to be `true` ([#185])
+- Update rules for: [eslint, typescript-eslint, node, graphql, sonarjs, vue]
+
+[#185]: https://github.com/Shinigami92/eslint-define-config/issues/185
 
 # 1.17.0
 
