@@ -85,6 +85,7 @@ import type { NoUnsafeArgumentRule } from './no-unsafe-argument';
 import type { NoUnsafeAssignmentRule } from './no-unsafe-assignment';
 import type { NoUnsafeCallRule } from './no-unsafe-call';
 import type { NoUnsafeDeclarationMergingRule } from './no-unsafe-declaration-merging';
+import type { NoUnsafeEnumComparisonRule } from './no-unsafe-enum-comparison';
 import type { NoUnsafeMemberAccessRule } from './no-unsafe-member-access';
 import type { NoUnsafeReturnRule } from './no-unsafe-return';
 import type { NoUnusedExpressionsRule } from './no-unused-expressions';
@@ -224,6 +225,7 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   NoUnsafeAssignmentRule &
   NoUnsafeCallRule &
   NoUnsafeDeclarationMergingRule &
+  NoUnsafeEnumComparisonRule &
   NoUnsafeMemberAccessRule &
   NoUnsafeReturnRule &
   NoUnusedExpressionsRule &
