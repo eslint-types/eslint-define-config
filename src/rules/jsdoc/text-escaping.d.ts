@@ -6,7 +6,6 @@ import type { RuleConfig } from '../rule-config';
 export interface TextEscapingOption {
   escapeHTML?: boolean;
   escapeMarkdown?: boolean;
-  [k: string]: any;
 }
 
 /**

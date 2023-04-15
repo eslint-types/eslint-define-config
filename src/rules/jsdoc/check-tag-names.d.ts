@@ -5,7 +5,9 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface CheckTagNamesOption {
   definedTags?: string[];
+  enableFixer?: boolean;
   jsxTags?: boolean;
+  typed?: boolean;
 }
 
 /**

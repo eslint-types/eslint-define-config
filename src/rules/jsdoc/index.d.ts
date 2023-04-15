@@ -11,11 +11,13 @@ import type { CheckTypesRule } from './check-types';
 import type { CheckValuesRule } from './check-values';
 import type { EmptyTagsRule } from './empty-tags';
 import type { ImplementsOnClassesRule } from './implements-on-classes';
+import type { InformativeDocsRule } from './informative-docs';
 import type { MatchDescriptionRule } from './match-description';
 import type { MatchNameRule } from './match-name';
 import type { MultilineBlocksRule } from './multiline-blocks';
 import type { NewlineAfterDescriptionRule } from './newline-after-description';
 import type { NoBadBlocksRule } from './no-bad-blocks';
+import type { NoBlankBlockDescriptionsRule } from './no-blank-block-descriptions';
 import type { NoDefaultsRule } from './no-defaults';
 import type { NoMissingSyntaxRule } from './no-missing-syntax';
 import type { NoMultiAsterisksRule } from './no-multi-asterisks';
@@ -65,11 +67,13 @@ export type JSDocRules = CheckAccessRule &
   CheckValuesRule &
   EmptyTagsRule &
   ImplementsOnClassesRule &
+  InformativeDocsRule &
   MatchDescriptionRule &
   MatchNameRule &
   MultilineBlocksRule &
   NewlineAfterDescriptionRule &
   NoBadBlocksRule &
+  NoBlankBlockDescriptionsRule &
   NoDefaultsRule &
   NoMissingSyntaxRule &
   NoMultiAsterisksRule &

@@ -5,7 +5,6 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface ValidTypesOption {
   allowEmptyNamepaths?: boolean;
-  [k: string]: any;
 }
 
 /**

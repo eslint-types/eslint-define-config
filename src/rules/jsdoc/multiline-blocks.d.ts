@@ -12,7 +12,6 @@ export interface MultilineBlocksOption {
   noSingleLineBlocks?: boolean;
   noZeroLineText?: boolean;
   singleLineTags?: string[];
-  [k: string]: any;
 }
 
 /**

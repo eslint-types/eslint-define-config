@@ -15,7 +15,6 @@ export interface TagLinesConfig {
       lines?: 'always' | 'never' | 'any';
     };
   };
-  [k: string]: any;
 }
 
 /**

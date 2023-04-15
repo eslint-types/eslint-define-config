@@ -6,7 +6,6 @@ import type { RuleConfig } from '../rule-config';
 export interface SortTagsOption {
   alphabetizeExtras?: boolean;
   tagSequence?: string[];
-  [k: string]: any;
 }
 
 /**

@@ -13,7 +13,6 @@ export interface MatchNameOption {
     tags?: string[];
     [k: string]: any;
   }[];
-  [k: string]: any;
 }
 
 /**

@@ -7,7 +7,6 @@ export interface NoMultiAsterisksOption {
   allowWhitespace?: boolean;
   preventAtEnd?: boolean;
   preventAtMiddleLines?: boolean;
-  [k: string]: any;
 }
 
 /**
