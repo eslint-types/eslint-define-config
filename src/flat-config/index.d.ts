@@ -61,6 +61,7 @@ export interface FlatESLintConfigItem {
    *
    * @see [Configuring shared settings](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new#configuring-shared-settings)
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   settings?: Record<string, any>;
 }
 

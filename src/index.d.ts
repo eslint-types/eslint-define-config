@@ -28,7 +28,7 @@ export function defineFlatConfig(config: FlatESLintConfig): FlatESLintConfig;
  * @returns Flat ESLint config.
  */
 export function defineFlatConfig(
-  config: readonly FlatESLintConfig[],
+  config: ReadonlyArray<FlatESLintConfig>,
 ): FlatESLintConfig[];
 
 export * from './config';

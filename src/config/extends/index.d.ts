@@ -45,4 +45,4 @@ export type KnownExtensions = LiteralUnion<
  *
  * @see [Extends](https://eslint.org/docs/user-guide/configuring/configuration-files#extending-configuration-files)
  */
-export type Extends = KnownExtensions | Array<KnownExtensions>;
+export type Extends = KnownExtensions | KnownExtensions[];

@@ -84,6 +84,7 @@ export const PLUGIN_REGISTRY: Readonly<Record<string, Plugin>> = {
 } as const;
 
 export async function loadPlugin(plugin: Plugin): Promise<Plugin> {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const mod: any = await import(plugin.module);
   const rules: PluginRules =
     plugin.module === 'eslint'

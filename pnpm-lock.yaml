@@ -109,6 +109,9 @@ devDependencies:
   prettier-plugin-organize-imports:
     specifier: ~3.2.2
     version: 3.2.2(prettier@2.8.7)(typescript@5.0.4)
+  rimraf:
+    specifier: ~5.0.0
+    version: 5.0.0
   ts-dedent:
     specifier: ~2.2.0
     version: 2.2.0
@@ -2809,6 +2812,16 @@ packages:
       glob: 7.2.3
     dev: true
 
+  /glob@10.1.0:
+    resolution: {integrity: sha512-daGobsYuT0G4hng24B5LbeLNvwKZYRhWyDl3RvqqAGZjJnCopWWK6PWnAGBY1M/vdA63QE+jddhZcYp+74Bq6Q==}
+    engines: {node: '>=16 || 14 >=14.17'}
+    dependencies:
+      fs.realpath: 1.0.0
+      minimatch: 9.0.0
+      minipass: 5.0.0
+      path-scurry: 1.7.0
+    dev: true
+
   /glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
     dependencies:
@@ -3466,6 +3479,11 @@ packages:
       yallist: 4.0.0
     dev: true
 
+  /lru-cache@9.0.3:
+    resolution: {integrity: sha512-cyjNRew29d4kbgnz1sjDqxg7qg8NW4s+HQzCGjeon7DV5T2yDije16W9HaUFV1dhVEMh+SjrOcK0TomBmf3Egg==}
+    engines: {node: 14 || >=16.14}
+    dev: true
+
   /lru-queue@0.1.0:
     resolution: {integrity: sha512-BpdYkt9EvGl8OfWHDQPISVpcl5xZthb+XPsbELj5AQXxIC8IriDZIQYjBJPEm5rS420sjZ0TLEzRcq5KdBhYrQ==}
     dependencies:
@@ -3938,8 +3956,20 @@ packages:
       brace-expansion: 2.0.1
     dev: true
 
+  /minimatch@9.0.0:
+    resolution: {integrity: sha512-0jJj8AvgKqWN05mrwuqi8QYKx1WmYSUoKSxu5Qhs9prezTz10sxAHGNZe9J9cqIJzta8DWsleh2KaVaLl6Ru2w==}
+    engines: {node: '>=16 || 14 >=14.17'}
+    dependencies:
+      brace-expansion: 2.0.1
+    dev: true
+
   /minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
+    dev: true
+
+  /minipass@5.0.0:
+    resolution: {integrity: sha512-3FnjYuehv9k6ovOEbyOswadCDPX1piCfhV8ncmYtHOjuPwylVWsghTLo7rabjC3Rx5xD4HDx8Wm1xnMF7S5qFQ==}
+    engines: {node: '>=8'}
     dev: true
 
   /mkdirp@1.0.4:
@@ -4231,6 +4261,14 @@ packages:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
     dev: true
 
+  /path-scurry@1.7.0:
+    resolution: {integrity: sha512-UkZUeDjczjYRE495+9thsgcVgsaCPkaw80slmfVFgllxY+IO8ubTsOpFVjDPROBqJdHfVPUFRHPBV/WciOVfWg==}
+    engines: {node: '>=16 || 14 >=14.17'}
+    dependencies:
+      lru-cache: 9.0.3
+      minipass: 5.0.0
+    dev: true
+
   /path-type@4.0.0:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
@@ -4489,6 +4527,14 @@ packages:
     hasBin: true
     dependencies:
       glob: 7.2.3
+    dev: true
+
+  /rimraf@5.0.0:
+    resolution: {integrity: sha512-Jf9llaP+RvaEVS5nPShYFhtXIrb3LRKP281ib3So0KkeZKo2wIKyq0Re7TOSwanasA423PSr6CCIL4bP6T040g==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dependencies:
+      glob: 10.1.0
     dev: true
 
   /rollup@3.20.2:

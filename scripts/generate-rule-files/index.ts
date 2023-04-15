@@ -64,7 +64,7 @@ function generateRuleIndexFile(
  * Print a report after having generated rules files for a plugin.
  */
 function printGenerationReport(
-  rules: [string, Rule.RuleModule][],
+  rules: Array<[string, Rule.RuleModule]>,
   failedRules: string[],
 ): void {
   const msg: string = `  ✅ Generated ${
@@ -76,6 +76,7 @@ function printGenerationReport(
   if (failedRules.length) {
     logger.log(logger.colors.red(`  ❌ Failed ${failedRules.length} rules`));
   }
+
   logger.log('');
 }
 
@@ -118,6 +119,7 @@ async function generateRulesFiles(
 
   return { failedRules };
 }
+
 /**
  * If it doesn't exist, create the directory that will contain the plugin's rule files.
  */

@@ -93,4 +93,4 @@ export interface Override {
 /**
  * Overrides.
  */
-export type Overrides = Array<Override>;
+export type Overrides = Override[];

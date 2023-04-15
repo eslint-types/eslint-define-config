@@ -12,6 +12,7 @@ export class JsDocBuilder {
     if (line) {
       this.content.push(line);
     }
+
     return this;
   }
 
