@@ -262,7 +262,7 @@ export interface ParserOptions extends Partial<Record<string, unknown>> {
    *
    * @see [project](https://typescript-eslint.io/architecture/parser/#project)
    */
-  project?: string | string[] | null;
+  project?: string | string[] | true | null;
 
   /**
    * This option allows you to ignore folders from being included in your provided list of `project`s.
