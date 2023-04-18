@@ -236,7 +236,7 @@ export class RuleFile {
    * Must be called after `generate()`.
    */
   public applyPatch(): void {
-    const pathParts: string[] = this.rulePath.split('/');
+    const pathParts: string[] = this.rulePath.split(/[\\/]/);
     const ruleFileName: string = pathParts[pathParts.length - 1] ?? '';
     const rulePlugin: string = pathParts[pathParts.length - 2] ?? '';
 
