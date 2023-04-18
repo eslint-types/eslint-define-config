@@ -97,19 +97,27 @@ async function generateRulesFiles(
 
   const rules: Array<[string, Rule.RuleModule]> = Object.entries(pluginRules);
   for (const [ruleName, rule] of rules) {
-    logger.logUpdate(logger.colors.yellow(`  Generating > ${ruleName}`));
-
     const ruleFile: RuleFile = new RuleFile(
       plugin,
       pluginDirectory,
       ruleName,
       rule,
     );
+    logger.logUpdate(
+      logger.colors.yellow(`  Generating > ${ruleFile.prefixedRuleName()}`),
+    );
     try {
       await ruleFile.generate();
       ruleFile.writeGeneratedContent();
       ruleFile.applyPatch();
     } catch (err) {
+      ruleFile.writeGeneratedError(err as Error);
+      logger.logUpdate(
+        logger.colors.red(
+          `     ❌ Failed to generate ${ruleFile.prefixedRuleName()}`,
+        ),
+      );
+      logger.logUpdatePersist();
       failedRules.push(ruleName);
     }
   }

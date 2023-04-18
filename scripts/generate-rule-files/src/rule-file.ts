@@ -167,7 +167,7 @@ export class RuleFile {
   /**
    * Scoped rule name ESLint config uses.
    */
-  private prefixedRuleName(): string {
+  public prefixedRuleName(): string {
     const { prefix, name } = this.plugin;
     let rulePrefix: string = (prefix ?? kebabCase(name)) + '/';
 
@@ -221,6 +221,9 @@ export class RuleFile {
     return this.content;
   }
 
+  public errorFilePath(): string {
+    return this.rulePath.replace(/.d.ts$/, '.error.d.ts');
+  }
   /**
    * Must be called after `generate()` to write the file.
    */
@@ -228,6 +231,28 @@ export class RuleFile {
     this.createRuleDirectory();
 
     writeFileSync(this.rulePath, this.content);
+  }
+  /**
+   * Must be called after `generate()` to write the error.
+   */
+  public writeGeneratedError(error: Error): void {
+    this.createRuleDirectory();
+    const errorText: string = error.toString().trimEnd().replace(/^/gm, ' * ');
+    const { isSchemaArray, mainSchema, sideSchema, thirdSchema } = this;
+    const context: string = JSON.stringify(
+      {
+        isSchemaArray,
+        mainSchema,
+        sideSchema,
+        thirdSchema,
+      },
+      null,
+      '  ',
+    );
+    writeFileSync(
+      this.errorFilePath(),
+      `/**\n${errorText}\n */\n\n${this.content}\n\n\nexport const context: ${context}`,
+    );
   }
 
   /**
