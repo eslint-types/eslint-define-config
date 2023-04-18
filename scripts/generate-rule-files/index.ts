@@ -38,9 +38,8 @@ function generateRuleIndexFile(
   /**
    * Build the exported type that is an intersection of all the rules.
    */
-  const rulesFinalIntersection: string = generatedRules
-    .map((name) => `${pascalCase(name)}Rule`)
-    .join(' & ');
+  const rulesFinalIntersection: string =
+    generatedRules.map((name) => `${pascalCase(name)}Rule`).join(' & ') || '{}';
 
   const pluginRulesType: string = dedent(`
     ${JsDocBuilder.build().add(`All ${name} rules.`).output()}
