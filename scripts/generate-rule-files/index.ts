@@ -167,7 +167,7 @@ export async function run(options: RunOptions = {}): Promise<void> {
 
     logger.info(`Generating ${plugin.name} rules.`);
     logger.logUpdate(logger.colors.yellow('  Loading plugin > Prettier'));
-    format('');
+    format(''); // Run Prettier on empty input to avoid cold start
     logger.logUpdate(
       logger.colors.yellow(`  Loading plugin > ${plugin.module}`),
     );
