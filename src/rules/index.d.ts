@@ -7,6 +7,7 @@ import type { JSDocRules } from './jsdoc';
 import type { JsoncRules } from './jsonc';
 import type { NRules } from './n';
 import type { NodeRules } from './node';
+import type { PreferLetRules } from './prefer-let';
 import type { PromiseRules } from './promise';
 import type { RuleConfig } from './rule-config';
 import type { SonarJSRules } from './sonarjs';
@@ -32,6 +33,7 @@ export type Rules = Partial<
     JsoncRules &
     NodeRules &
     NRules &
+    PreferLetRules &
     PromiseRules &
     SonarJSRules &
     SpellcheckRules &
