@@ -1,32 +1,27 @@
-diff --git b/src/rules/typescript-eslint/lines-between-class-members.d.ts a/src/rules/typescript-eslint/lines-between-class-members.d.ts
-index 46caad7..afdd87e 100644
---- b/src/rules/typescript-eslint/lines-between-class-members.d.ts
-+++ a/src/rules/typescript-eslint/lines-between-class-members.d.ts
-@@ -1,16 +1,23 @@
-+import type {
-+  LinesBetweenClassMembersConfig as BaseConfig,
-+  LinesBetweenClassMembersOption,
-+} from '../eslint/lines-between-class-members';
- import type { RuleConfig } from '../rule-config';
- 
- /**
-- * Option.
-+ * Config.
-  */
--export interface LinesBetweenClassMembersOption {
--  [k: string]: any;
-+export interface LinesBetweenClassMembersConfig extends BaseConfig {
-+  exceptAfterOverload?: boolean;
- }
- 
- /**
-  * Options.
-  */
--export type LinesBetweenClassMembersOptions = LinesBetweenClassMembersOption;
-+export type LinesBetweenClassMembersOptions = [
-+  LinesBetweenClassMembersOption?,
-+  LinesBetweenClassMembersConfig?,
-+];
- 
- /**
-  * Require or disallow an empty line between class members.
+diff --git a/src/rules/typescript-eslint/lines-between-class-members.d.ts b/src/rules/typescript-eslint/lines-between-class-members.d.ts
+index 5d8a571..9b66c2f 100644
+--- a/src/rules/typescript-eslint/lines-between-class-members.d.ts
++++ b/src/rules/typescript-eslint/lines-between-class-members.d.ts
+@@ -1,3 +1,4 @@
++import type { LinesBetweenClassMembersRule as BaseRule } from '../eslint/lines-between-class-members';
+ import type { Rule } from '../rule-config';
+ import type { RuleLevel } from '../rule-severity';
+ export interface LinesBetweenClassMembersRule {
+@@ -9,8 +10,15 @@ export interface LinesBetweenClassMembersRule {
+   '@typescript-eslint/lines-between-class-members': Rule<
+     [
+       RuleLevel,
+-      ...{
+-        [k: string]: any;
++      Exclude<
++        Extract<BaseRule['lines-between-class-members'], any[]>[1],
++        undefined
++      >,
++      Exclude<
++        Extract<BaseRule['lines-between-class-members'], any[]>[2],
++        undefined
++      > & {
++        exceptAfterOverload?: boolean;
+       },
+     ]
+   >;

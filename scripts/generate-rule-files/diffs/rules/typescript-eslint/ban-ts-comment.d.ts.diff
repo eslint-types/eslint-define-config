@@ -1,49 +1,46 @@
-diff --git b/src/rules/typescript-eslint/ban-ts-comment.d.ts a/src/rules/typescript-eslint/ban-ts-comment.d.ts
-index 111f9c9..5d489f8 100644
---- b/src/rules/typescript-eslint/ban-ts-comment.d.ts
-+++ a/src/rules/typescript-eslint/ban-ts-comment.d.ts
-@@ -3,12 +3,42 @@ import type { RuleConfig } from '../rule-config';
- /**
-  * Option.
-  */
--export type BanTsCommentOption = any[];
-+export interface BanTsCommentOption {
-+  'ts-expect-error'?:
-+    | boolean
-+    | 'allow-with-description'
-+    | {
-+        descriptionFormat?: string;
-+        [k: string]: any;
-+      };
-+  'ts-ignore'?:
-+    | boolean
-+    | 'allow-with-description'
-+    | {
-+        descriptionFormat?: string;
-+        [k: string]: any;
-+      };
-+  'ts-nocheck'?:
-+    | boolean
-+    | 'allow-with-description'
-+    | {
-+        descriptionFormat?: string;
-+        [k: string]: any;
-+      };
-+  'ts-check'?:
-+    | boolean
-+    | 'allow-with-description'
-+    | {
-+        descriptionFormat?: string;
-+        [k: string]: any;
-+      };
-+  minimumDescriptionLength?: number;
-+}
- 
- /**
-  * Options.
-  */
--export type BanTsCommentOptions = BanTsCommentOption;
-+export type BanTsCommentOptions = [BanTsCommentOption?];
- 
- /**
-  * Disallow `@ts-<directive>` comments or require descriptions after directives.
+diff --git a/src/rules/typescript-eslint/ban-ts-comment.d.ts b/src/rules/typescript-eslint/ban-ts-comment.d.ts
+index e74452b..ecfeec0 100644
+--- a/src/rules/typescript-eslint/ban-ts-comment.d.ts
++++ b/src/rules/typescript-eslint/ban-ts-comment.d.ts
+@@ -6,5 +6,40 @@ export interface BanTsCommentRule {
+    *
+    * @see [ban-ts-comment](https://typescript-eslint.io/rules/ban-ts-comment)
+    */
+-  '@typescript-eslint/ban-ts-comment': Rule<[RuleLevel, ...any[]]>;
++  '@typescript-eslint/ban-ts-comment': Rule<
++    [
++      RuleLevel,
++      ...{
++        'ts-expect-error'?:
++          | boolean
++          | 'allow-with-description'
++          | {
++              descriptionFormat?: string;
++              [k: string]: any;
++            };
++        'ts-ignore'?:
++          | boolean
++          | 'allow-with-description'
++          | {
++              descriptionFormat?: string;
++              [k: string]: any;
++            };
++        'ts-nocheck'?:
++          | boolean
++          | 'allow-with-description'
++          | {
++              descriptionFormat?: string;
++              [k: string]: any;
++            };
++        'ts-check'?:
++          | boolean
++          | 'allow-with-description'
++          | {
++              descriptionFormat?: string;
++              [k: string]: any;
++            };
++        minimumDescriptionLength?: number;
++      }[],
++    ]
++  >;
+ }

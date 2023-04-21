@@ -1,22 +1,18 @@
-diff --git b/src/rules/eslint/no-constructor-return.d.ts a/src/rules/eslint/no-constructor-return.d.ts
-index fedeca4..3e1fd03 100644
---- b/src/rules/eslint/no-constructor-return.d.ts
-+++ a/src/rules/eslint/no-constructor-return.d.ts
-@@ -1,16 +1,9 @@
- import type { RuleConfig } from '../rule-config';
- 
--/**
-- * Option.
-- */
--export interface NoConstructorReturnOption {
--  [k: string]: any;
--}
--
- /**
-  * Options.
-  */
--export type NoConstructorReturnOptions = NoConstructorReturnOption;
-+export type NoConstructorReturnOptions = [];
- 
- /**
-  * Disallow returning value from constructor.
+diff --git a/src/rules/eslint/no-constructor-return.d.ts b/src/rules/eslint/no-constructor-return.d.ts
+index 23c27dc..87369e1 100644
+--- a/src/rules/eslint/no-constructor-return.d.ts
++++ b/src/rules/eslint/no-constructor-return.d.ts
+@@ -6,12 +6,5 @@ export interface NoConstructorReturnRule {
+    *
+    * @see [no-constructor-return](https://eslint.org/docs/rules/no-constructor-return)
+    */
+-  'no-constructor-return': Rule<
+-    [
+-      RuleLevel,
+-      ...{
+-        [k: string]: any;
+-      },
+-    ]
+-  >;
++  'no-constructor-return': Rule<[RuleLevel]>;
+ }

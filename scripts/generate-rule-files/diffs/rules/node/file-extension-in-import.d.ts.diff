@@ -1,13 +1,13 @@
-diff --git b/src/rules/node/file-extension-in-import.d.ts a/src/rules/node/file-extension-in-import.d.ts
-index 652b18d..7261252 100644
---- b/src/rules/node/file-extension-in-import.d.ts
-+++ a/src/rules/node/file-extension-in-import.d.ts
-@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
-  */
- export interface FileExtensionInImportConfig {
-   tryExtensions?: string[];
--  [k: string]: 'always' | 'never';
-+  [ext: `.${string}`]: 'always' | 'never';
- }
- 
- /**
+diff --git a/src/rules/node/file-extension-in-import.d.ts b/src/rules/node/file-extension-in-import.d.ts
+index 5cd714b..d563a34 100644
+--- a/src/rules/node/file-extension-in-import.d.ts
++++ b/src/rules/node/file-extension-in-import.d.ts
+@@ -12,7 +12,7 @@ export interface FileExtensionInImportRule {
+       'always' | 'never',
+       {
+         tryExtensions?: string[];
+-        [k: string]: 'always' | 'never';
++        [ext: `.${string}`]: 'always' | 'never';
+       },
+     ]
+   >;
