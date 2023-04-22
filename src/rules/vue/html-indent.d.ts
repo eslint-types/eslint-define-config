@@ -15,11 +15,7 @@ export interface HtmlIndentConfig {
       };
   switchCase?: number;
   alignAttributesVertically?: boolean;
-  ignores?: (string & {
-    [k: string]: any;
-  } & {
-    [k: string]: any;
-  })[];
+  ignores?: string[];
 }
 
 /**
