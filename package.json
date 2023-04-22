@@ -13,6 +13,7 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "prepublishOnly": "pnpm run clean && pnpm install && pnpm run check",
+    "generate:diffs": "tsx ./scripts/generate-diffs.ts",
     "generate:rules": "tsx ./scripts/generate-rule-files/cli.ts"
   },
   "keywords": [

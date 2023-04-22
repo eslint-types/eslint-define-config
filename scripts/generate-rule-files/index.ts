@@ -38,9 +38,8 @@ function generateRuleIndexFile(
   /**
    * Build the exported type that is an intersection of all the rules.
    */
-  const rulesFinalIntersection: string = generatedRules
-    .map((name) => `${pascalCase(name)}Rule`)
-    .join(' & ');
+  const rulesFinalIntersection: string =
+    generatedRules.map((name) => `${pascalCase(name)}Rule`).join(' & ') || '{}';
 
   const pluginRulesType: string = dedent(`
     ${JsDocBuilder.build().add(`All ${name} rules.`).output()}
@@ -86,6 +85,7 @@ function printGenerationReport(
 async function generateRulesFiles(
   plugin: Plugin,
   pluginDirectory: string,
+  debuggedRules?: string[],
 ): Promise<{ failedRules: string[] }> {
   const failedRules: string[] = [];
 
@@ -98,19 +98,33 @@ async function generateRulesFiles(
 
   const rules: Array<[string, Rule.RuleModule]> = Object.entries(pluginRules);
   for (const [ruleName, rule] of rules) {
-    logger.logUpdate(logger.colors.yellow(`  Generating > ${ruleName}`));
-
     const ruleFile: RuleFile = new RuleFile(
       plugin,
       pluginDirectory,
       ruleName,
       rule,
     );
+    const prefixedName: string = ruleFile.prefixedRuleName();
+
+    logger.logUpdate(logger.colors.yellow(`  Generating > ${prefixedName}`));
     try {
       await ruleFile.generate();
       ruleFile.writeGeneratedContent();
       ruleFile.applyPatch();
+
+      if (debuggedRules?.some((target) => prefixedName.includes(target))) {
+        logger.logUpdate(
+          `  🐞 Debugging ${ruleName}: see ${ruleFile.errorFilePath()}`,
+        );
+        logger.logUpdatePersist();
+        ruleFile.writeGeneratedError(new Error('The rule is being debugged'));
+      }
     } catch (err) {
+      ruleFile.writeGeneratedError(err as Error);
+      logger.logUpdate(
+        logger.colors.red(`     ❌ Failed to generate ${prefixedName}`),
+      );
+      logger.logUpdatePersist();
       failedRules.push(ruleName);
     }
   }
@@ -145,6 +159,7 @@ function createPluginDirectory(
 export interface RunOptions {
   plugins?: string[];
   targetDirectory?: string;
+  debuggedRules?: string[];
 }
 
 export async function run(options: RunOptions = {}): Promise<void> {
@@ -159,6 +174,8 @@ export async function run(options: RunOptions = {}): Promise<void> {
     }
 
     logger.info(`Generating ${plugin.name} rules.`);
+    logger.logUpdate(logger.colors.yellow('  Loading plugin > Prettier'));
+    format(''); // Run Prettier on empty input to avoid cold start
     logger.logUpdate(
       logger.colors.yellow(`  Loading plugin > ${plugin.module}`),
     );
@@ -168,7 +185,11 @@ export async function run(options: RunOptions = {}): Promise<void> {
       pluginName,
       targetDirectory,
     );
-    const { failedRules } = await generateRulesFiles(loadedPlugin, pluginDir);
+    const { failedRules } = await generateRulesFiles(
+      loadedPlugin,
+      pluginDir,
+      options.debuggedRules,
+    );
 
     generateRuleIndexFile(pluginDir, loadedPlugin, failedRules);
   }
