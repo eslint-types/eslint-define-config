@@ -4,11 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Config.
  */
 export interface AttributeHyphenationConfig {
-  ignore?: (string & {
-    [k: string]: any;
-  } & {
-    [k: string]: any;
-  })[];
+  ignore?: string[];
 }
 
 /**

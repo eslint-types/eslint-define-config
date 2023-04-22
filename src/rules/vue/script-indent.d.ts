@@ -6,11 +6,7 @@ import type { RuleConfig } from '../rule-config';
 export interface ScriptIndentConfig {
   baseIndent?: number;
   switchCase?: number;
-  ignores?: (string & {
-    [k: string]: any;
-  } & {
-    [k: string]: any;
-  })[];
+  ignores?: string[];
 }
 
 /**
