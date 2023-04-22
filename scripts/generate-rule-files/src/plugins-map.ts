@@ -68,6 +68,10 @@ export const PLUGIN_REGISTRY: Readonly<Record<string, Plugin>> = {
     name: 'Unicorn',
     module: 'eslint-plugin-unicorn',
   },
+  vitest: {
+    name: 'Vitest',
+    module: 'eslint-plugin-vitest',
+  },
   vue: {
     name: 'Vue',
     module: 'eslint-plugin-vue',
