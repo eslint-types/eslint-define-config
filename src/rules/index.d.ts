@@ -13,6 +13,7 @@ import type { SonarJSRules } from './sonarjs';
 import type { SpellcheckRules } from './spellcheck';
 import type { TypeScriptRules } from './typescript-eslint';
 import type { UnicornRules } from './unicorn';
+import type { VitestRules } from './vitest';
 import type { VueRules } from './vue';
 import type { VueI18nRules } from './vue-i18n';
 import type { VuePugRules } from './vue-pug';
@@ -37,6 +38,7 @@ export type Rules = Partial<
     SpellcheckRules &
     TypeScriptRules &
     UnicornRules &
+    VitestRules &
     VueRules &
     VueI18nRules &
     VuePugRules &

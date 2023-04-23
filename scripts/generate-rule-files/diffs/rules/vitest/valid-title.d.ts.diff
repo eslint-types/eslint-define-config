@@ -1,0 +1,19 @@
+diff --git a/src/rules/vitest/valid-title.d.ts b/src/rules/vitest/valid-title.d.ts
+index 8bdfe9a..83c707b 100644
+--- a/src/rules/vitest/valid-title.d.ts
++++ b/src/rules/vitest/valid-title.d.ts
+@@ -8,13 +8,7 @@ export interface ValidTitleOption {
+   disallowedWords?: string[];
+   /**
+    */
+-  [k: string]:
+-    | string
+-    | [string]
+-    | [string, string]
+-    | {
+-        [k: string]: string | [string] | [string, string];
+-      };
++  [k: string]: any;
+ }
+ 
+ /**

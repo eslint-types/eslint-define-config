@@ -12,6 +12,7 @@ import type { PrettierExtensions } from './eslint-plugin-prettier';
 import type { PromiseExtensions } from './eslint-plugin-promise';
 import type { SonarjsExtensions } from './eslint-plugin-sonarjs';
 import type { UnicornExtensions } from './eslint-plugin-unicorn';
+import type { VitestExtensions } from './eslint-plugin-vitest';
 import type { VueExtensions } from './eslint-plugin-vue';
 import type { VuePugExtensions } from './eslint-plugin-vue-pug';
 import type { IntlifyVueI18nExtensions } from './intlify-vue-i18n';
@@ -36,6 +37,7 @@ export type KnownExtensions = LiteralUnion<
   | SonarjsExtensions
   | TypescriptEslintExtensions
   | UnicornExtensions
+  | VitestExtensions
   | VueExtensions
   | VuePugExtensions
 >;
