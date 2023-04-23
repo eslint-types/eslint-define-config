@@ -12,6 +12,7 @@ export interface BanTypesOption {
       | {
           message?: string;
           fixWith?: string;
+          suggest?: string[];
         };
   };
   extendDefaults?: boolean;
