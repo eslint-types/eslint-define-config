@@ -5,11 +5,7 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface VOnEventHyphenationConfig {
   autofix?: boolean;
-  ignore?: (string & {
-    [k: string]: any;
-  } & {
-    [k: string]: any;
-  })[];
+  ignore?: string[];
 }
 
 /**
