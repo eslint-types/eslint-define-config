@@ -15,7 +15,6 @@ import type { InformativeDocsRule } from './informative-docs';
 import type { MatchDescriptionRule } from './match-description';
 import type { MatchNameRule } from './match-name';
 import type { MultilineBlocksRule } from './multiline-blocks';
-import type { NewlineAfterDescriptionRule } from './newline-after-description';
 import type { NoBadBlocksRule } from './no-bad-blocks';
 import type { NoBlankBlockDescriptionsRule } from './no-blank-block-descriptions';
 import type { NoDefaultsRule } from './no-defaults';
@@ -71,7 +70,6 @@ export type JSDocRules = CheckAccessRule &
   MatchDescriptionRule &
   MatchNameRule &
   MultilineBlocksRule &
-  NewlineAfterDescriptionRule &
   NoBadBlocksRule &
   NoBlankBlockDescriptionsRule &
   NoDefaultsRule &

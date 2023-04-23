@@ -4,9 +4,10 @@ import type { RuleConfig } from '../rule-config';
  * Config.
  */
 export interface TagLinesConfig {
+  applyToEndTag?: boolean;
   count?: number;
-  dropEndLines?: boolean;
-  noEndLines?: boolean;
+  endLines?: number | null;
+  startLines?: number | null;
   tags?: {
     /**
      */
