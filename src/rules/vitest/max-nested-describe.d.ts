@@ -3,9 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type MaxNestedDescribeOption = {
-  max: number;
-};
+export interface MaxNestedDescribeOption {
+  max?: number;
+}
 
 /**
  * Options.

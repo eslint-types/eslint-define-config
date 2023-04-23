@@ -3,11 +3,11 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type PreferLowercaseTitleOption = {
+export interface PreferLowercaseTitleOption {
   ignore?: ('describe' | 'test' | 'it')[];
   allowedPrefixes?: string[];
   ignoreTopLevelDescribe?: boolean;
-};
+}
 
 /**
  * Options.

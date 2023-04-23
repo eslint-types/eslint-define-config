@@ -3,12 +3,13 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type ValidTitleOption = {
+export interface ValidTitleOption {
   ignoreTypeOfDescribeName?: boolean;
   disallowedWords?: string[];
-  mustNotMatch?: string[];
-  mustMatch?: string[];
-};
+  /**
+   */
+  [k: string]: any;
+}
 
 /**
  * Options.

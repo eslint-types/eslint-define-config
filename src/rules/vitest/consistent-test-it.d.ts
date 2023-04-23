@@ -3,10 +3,10 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type ConsistentTestItOption = {
+export interface ConsistentTestItOption {
   fn?: 'test' | 'it';
   withinDescribe?: 'test' | 'it';
-};
+}
 
 /**
  * Options.

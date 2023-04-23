@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @see [expect-expect](https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/expect-expect.md)
  */
-export type ExpectExpectRuleConfig = RuleConfig;
+export type ExpectExpectRuleConfig = RuleConfig<[]>;
 
 /**
  * Enforce having expectation in test body.

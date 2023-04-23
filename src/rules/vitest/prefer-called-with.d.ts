@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @see [prefer-called-with](https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-called-with.md)
  */
-export type PreferCalledWithRuleConfig = RuleConfig;
+export type PreferCalledWithRuleConfig = RuleConfig<[]>;
 
 /**
  * Suggest using `toBeCalledWith()` or `toHaveBeenCalledWith()`.

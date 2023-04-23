@@ -3,9 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoStandaloneExpectOption = {
-  additionalTestBlockFunctions: ('it' | 'test')[];
-};
+export interface NoStandaloneExpectOption {
+  additionalTestBlockFunctions?: string[];
+}
 
 /**
  * Options.

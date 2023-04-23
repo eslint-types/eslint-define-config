@@ -3,10 +3,10 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type ConsistentTestFilenameOption = {
-  allTestPattern?: RegExp;
-  pattern?: RegExp;
-};
+export interface ConsistentTestFilenameOption {
+  pattern?: string;
+  allTestPattern?: string;
+}
 
 /**
  * Options.

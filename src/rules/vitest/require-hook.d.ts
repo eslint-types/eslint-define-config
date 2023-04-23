@@ -3,9 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type RequireHookOption = {
-  allowedFunctionCalls: string[];
-};
+export interface RequireHookOption {
+  allowedFunctionCalls?: string[];
+}
 
 /**
  * Options.

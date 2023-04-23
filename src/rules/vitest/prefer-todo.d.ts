@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @see [prefer-todo](https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-todo.md)
  */
-export type PreferTodoRuleConfig = RuleConfig;
+export type PreferTodoRuleConfig = RuleConfig<[]>;
 
 /**
  * Suggest using `test.todo`.

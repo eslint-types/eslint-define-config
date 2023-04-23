@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @see [no-alias-methods](https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-alias-methods.md)
  */
-export type NoAliasMethodsRuleConfig = RuleConfig;
+export type NoAliasMethodsRuleConfig = RuleConfig<[]>;
 
 /**
  * Disallow alias methods.

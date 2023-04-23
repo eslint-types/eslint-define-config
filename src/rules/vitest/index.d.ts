@@ -1,8 +1,6 @@
-import type { AssertionTypeRule } from './assertion-type';
 import type { ConsistentTestFilenameRule } from './consistent-test-filename';
 import type { ConsistentTestItRule } from './consistent-test-it';
 import type { ExpectExpectRule } from './expect-expect';
-import type { MaxExpectRule } from './max-expect';
 import type { MaxExpectsRule } from './max-expects';
 import type { MaxNestedDescribeRule } from './max-nested-describe';
 import type { NoAliasMethodsRule } from './no-alias-methods';
@@ -53,54 +51,52 @@ import type { ValidTitleRule } from './valid-title';
 /**
  * All Vitest rules.
  */
-export type VitestRules = AssertionTypeRule &
-  ConsistentTestFilenameRule &
-  ConsistentTestItRule &
-  ExpectExpectRule &
-  MaxExpectRule &
-  MaxExpectsRule &
+export type VitestRules = PreferLowercaseTitleRule &
   MaxNestedDescribeRule &
+  NoIdenticalTitleRule &
+  NoFocusedTestsRule &
+  NoConditionalTestsRule &
+  ExpectExpectRule &
+  ConsistentTestItRule &
+  PreferToBeRule &
+  NoHooksRule &
+  NoRestrictedViMethodsRule &
+  ConsistentTestFilenameRule &
+  MaxExpectsRule &
   NoAliasMethodsRule &
   NoCommentedOutTestsRule &
   NoConditionalExpectRule &
   NoConditionalInTestRule &
-  NoConditionalTestsRule &
   NoDisabledTestsRule &
   NoDoneCallbackRule &
   NoDuplicateHooksRule &
-  NoFocusedTestsRule &
-  NoHooksRule &
-  NoIdenticalTitleRule &
-  NoInterpolationInSnapshotsRule &
   NoLargeSnapshotsRule &
+  NoInterpolationInSnapshotsRule &
   NoMocksImportRule &
   NoRestrictedMatchersRule &
-  NoRestrictedViMethodsRule &
   NoStandaloneExpectRule &
   NoTestPrefixesRule &
   NoTestReturnStatementRule &
   PreferCalledWithRule &
-  PreferComparisonMatcherRule &
-  PreferEachRule &
-  PreferEqualityMatcherRule &
-  PreferExpectResolvesRule &
-  PreferHooksInOrderRule &
-  PreferHooksOnTopRule &
-  PreferLowercaseTitleRule &
-  PreferSnapshotHintRule &
-  PreferSpyOnRule &
-  PreferStrictEqualRule &
+  ValidTitleRule &
+  ValidExpectRule &
   PreferToBeFalsyRule &
   PreferToBeObjectRule &
   PreferToBeTruthyRule &
-  PreferToBeRule &
-  PreferToContainRule &
   PreferToHaveLengthRule &
-  PreferTodoRule &
+  PreferEqualityMatcherRule &
+  PreferStrictEqualRule &
+  PreferExpectResolvesRule &
+  PreferEachRule &
+  PreferHooksOnTopRule &
+  PreferHooksInOrderRule &
   PreferMockPromiseShorthandRule &
-  RequireHookRule &
-  RequireToThrowMessageRule &
-  RequireTopLevelDescribeRule &
+  PreferSnapshotHintRule &
   ValidDescribeCallbackRule &
-  ValidExpectRule &
-  ValidTitleRule;
+  RequireTopLevelDescribeRule &
+  RequireToThrowMessageRule &
+  RequireHookRule &
+  PreferTodoRule &
+  PreferSpyOnRule &
+  PreferComparisonMatcherRule &
+  PreferToContainRule;

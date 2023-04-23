@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @see [no-conditional-in-test](https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-conditional-in-test.md)
  */
-export type NoConditionalInTestRuleConfig = RuleConfig;
+export type NoConditionalInTestRuleConfig = RuleConfig<[]>;
 
 /**
  * Disallow conditional tests.

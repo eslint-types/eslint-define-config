@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @see [no-test-prefixes](https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-test-prefixes.md)
  */
-export type NoTestPrefixesRuleConfig = RuleConfig;
+export type NoTestPrefixesRuleConfig = RuleConfig<[]>;
 
 /**
  * Disallow using `test` as a prefix.

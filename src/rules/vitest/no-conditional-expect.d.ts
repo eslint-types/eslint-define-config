@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @see [no-conditional-expect](https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-conditional-expect.md)
  */
-export type NoConditionalExpectRuleConfig = RuleConfig;
+export type NoConditionalExpectRuleConfig = RuleConfig<[]>;
 
 /**
  * Disallow conditional expects.

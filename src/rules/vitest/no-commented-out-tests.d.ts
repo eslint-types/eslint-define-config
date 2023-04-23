@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @see [no-commented-out-tests](https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-commented-out-tests.md)
  */
-export type NoCommentedOutTestsRuleConfig = RuleConfig;
+export type NoCommentedOutTestsRuleConfig = RuleConfig<[]>;
 
 /**
  * Disallow commented out tests.

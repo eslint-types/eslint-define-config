@@ -3,9 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type RequireTopLevelDescribeOption = {
-  maxNumberOfTopLevelDescribes: number;
-};
+export interface RequireTopLevelDescribeOption {
+  maxNumberOfTopLevelDescribes?: number;
+}
 
 /**
  * Options.

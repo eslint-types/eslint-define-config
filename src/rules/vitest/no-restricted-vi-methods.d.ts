@@ -3,14 +3,14 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoRestrictedViMethodsOption = {
-  [key: string]: unknown;
-};
+export interface NoRestrictedViMethodsOption {
+  [k: string]: string | null;
+}
 
 /**
  * Options.
  */
-export type NoRestrictedViMethodsOptions = [NoRestrictedViMethodsOption];
+export type NoRestrictedViMethodsOptions = [NoRestrictedViMethodsOption?];
 
 /**
  * Disallow specific `vi.` methods.

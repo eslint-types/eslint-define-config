@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @see [prefer-equality-matcher](https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-equality-matcher.md)
  */
-export type PreferEqualityMatcherRuleConfig = RuleConfig;
+export type PreferEqualityMatcherRuleConfig = RuleConfig<[]>;
 
 /**
  * Suggest using the built-in quality matchers.

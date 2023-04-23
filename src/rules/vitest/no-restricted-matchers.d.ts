@@ -3,14 +3,14 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoRestrictedMatchersOption = {
-  [key: string]: unknown;
-};
+export interface NoRestrictedMatchersOption {
+  [k: string]: string | null;
+}
 
 /**
  * Options.
  */
-export type NoRestrictedMatchersOptions = [NoRestrictedMatchersOption];
+export type NoRestrictedMatchersOptions = [NoRestrictedMatchersOption?];
 
 /**
  * Disallow the use of certain matchers.

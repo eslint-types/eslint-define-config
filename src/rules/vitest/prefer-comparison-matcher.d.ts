@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @see [prefer-comparison-matcher](https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-comparison-matcher.md)
  */
-export type PreferComparisonMatcherRuleConfig = RuleConfig;
+export type PreferComparisonMatcherRuleConfig = RuleConfig<[]>;
 
 /**
  * Suggest using the built-in comparison matchers.

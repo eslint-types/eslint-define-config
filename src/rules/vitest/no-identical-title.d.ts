@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @see [no-identical-title](https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-identical-title.md)
  */
-export type NoIdenticalTitleRuleConfig = RuleConfig;
+export type NoIdenticalTitleRuleConfig = RuleConfig<[]>;
 
 /**
  * Disallow identical titles.

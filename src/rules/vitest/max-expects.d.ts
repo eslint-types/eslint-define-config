@@ -3,9 +3,9 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type MaxExpectsOption = {
-  max: number;
-};
+export interface MaxExpectsOption {
+  max?: number;
+}
 
 /**
  * Options.

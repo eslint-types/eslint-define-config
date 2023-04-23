@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @see [prefer-strict-equal](https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-strict-equal.md)
  */
-export type PreferStrictEqualRuleConfig = RuleConfig;
+export type PreferStrictEqualRuleConfig = RuleConfig<[]>;
 
 /**
  * Prefer strict equal over equal.

@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @see [prefer-hooks-on-top](https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-hooks-on-top.md)
  */
-export type PreferHooksOnTopRuleConfig = RuleConfig;
+export type PreferHooksOnTopRuleConfig = RuleConfig<[]>;
 
 /**
  * Suggest having hooks before any test cases.

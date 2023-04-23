@@ -3,12 +3,12 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type ValidExpectOption = {
+export interface ValidExpectOption {
   alwaysAwait?: boolean;
   asyncMatchers?: string[];
   minArgs?: number;
   maxArgs?: number;
-};
+}
 
 /**
  * Options.

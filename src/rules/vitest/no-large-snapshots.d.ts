@@ -3,11 +3,13 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
-export type NoLargeSnapshotsOption = {
+export interface NoLargeSnapshotsOption {
   maxSize?: number;
   inlineMaxSize?: number;
-  allowedSnapshots?: string[];
-};
+  allowedSnapshots?: {
+    [k: string]: any[];
+  };
+}
 
 /**
  * Options.

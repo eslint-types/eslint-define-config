@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @see [no-test-return-statement](https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-test-return-statement.md)
  */
-export type NoTestReturnStatementRuleConfig = RuleConfig;
+export type NoTestReturnStatementRuleConfig = RuleConfig<[]>;
 
 /**
  * Disallow return statements in tests.

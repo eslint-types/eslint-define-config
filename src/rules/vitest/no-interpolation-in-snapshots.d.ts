@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @see [no-interpolation-in-snapshots](https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-interpolation-in-snapshots.md)
  */
-export type NoInterpolationInSnapshotsRuleConfig = RuleConfig;
+export type NoInterpolationInSnapshotsRuleConfig = RuleConfig<[]>;
 
 /**
  * Disallow string interpolation in snapshots.

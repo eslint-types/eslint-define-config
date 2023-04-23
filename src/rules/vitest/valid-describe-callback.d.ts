@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @see [valid-describe-callback](https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/valid-describe-callback.md)
  */
-export type ValidDescribeCallbackRuleConfig = RuleConfig;
+export type ValidDescribeCallbackRuleConfig = RuleConfig<[]>;
 
 /**
  * Enforce valid describe callback.

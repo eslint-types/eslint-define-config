@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @see [preferMockPromiseShorthand](https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/preferMockPromiseShorthand.md)
  */
-export type PreferMockPromiseShorthandRuleConfig = RuleConfig;
+export type PreferMockPromiseShorthandRuleConfig = RuleConfig<[]>;
 
 /**
  * Prefer mock resolved/rejected shorthands for promises.
