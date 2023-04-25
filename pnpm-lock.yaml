@@ -76,6 +76,9 @@ devDependencies:
   eslint-plugin-react:
     specifier: ~7.32.2
     version: 7.32.2(eslint@8.39.0)
+  eslint-plugin-react-hooks:
+    specifier: ~4.6.0
+    version: 4.6.0(eslint@8.39.0)
   eslint-plugin-sonarjs:
     specifier: ~0.19.0
     version: 0.19.0(eslint@8.39.0)
@@ -2413,6 +2416,15 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0
+    dependencies:
+      eslint: 8.39.0
+    dev: true
+
+  /eslint-plugin-react-hooks@4.6.0(eslint@8.39.0):
+    resolution: {integrity: sha512-oFc7Itz9Qxh2x4gNHStv3BqJq54ExXmfC+a1NjAta66IAN87Wu0R/QArgIS9qKzX3dXKPI9H5crl9QchNMY9+g==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
     dependencies:
       eslint: 8.39.0
     dev: true
