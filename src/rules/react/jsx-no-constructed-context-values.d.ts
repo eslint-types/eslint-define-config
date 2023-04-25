@@ -1,17 +1,9 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- * Option.
- */
-export interface JsxNoConstructedContextValuesOption {
-  [k: string]: any;
-}
-
-/**
  * Options.
  */
-export type JsxNoConstructedContextValuesOptions =
-  JsxNoConstructedContextValuesOption;
+export type JsxNoConstructedContextValuesOptions = [];
 
 /**
  * Disallows JSX context provider values from taking values that will cause needless rerenders.
