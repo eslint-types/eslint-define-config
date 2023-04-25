@@ -39,6 +39,10 @@ export const PLUGIN_REGISTRY: Readonly<Record<string, Plugin>> = {
     name: 'Jsonc',
     module: 'eslint-plugin-jsonc',
   },
+  'jsx-a11y': {
+    name: 'JsxA11y',
+    module: 'eslint-plugin-jsx-a11y',
+  },
   mdx: {
     name: 'Mdx',
     module: 'eslint-plugin-mdx',
