@@ -8,6 +8,7 @@ import type { JsoncRules } from './jsonc';
 import type { NRules } from './n';
 import type { NodeRules } from './node';
 import type { PromiseRules } from './promise';
+import type { ReactRules } from './react';
 import type { RuleConfig } from './rule-config';
 import type { SonarJSRules } from './sonarjs';
 import type { SpellcheckRules } from './spellcheck';
@@ -34,6 +35,7 @@ export type Rules = Partial<
     NodeRules &
     NRules &
     PromiseRules &
+    ReactRules &
     SonarJSRules &
     SpellcheckRules &
     TypeScriptRules &

@@ -11,6 +11,7 @@ export type Plugin = LiteralUnion<
   | 'mdx'
   | 'prettier'
   | 'promise'
+  | 'react'
   | 'sonarjs'
   | 'spellcheck'
   | 'unicorn'
