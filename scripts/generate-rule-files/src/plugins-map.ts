@@ -55,6 +55,10 @@ export const PLUGIN_REGISTRY: Readonly<Record<string, Plugin>> = {
     name: 'Promise',
     module: 'eslint-plugin-promise',
   },
+  react: {
+    name: 'React',
+    module: 'eslint-plugin-react',
+  },
   sonarjs: {
     name: 'SonarJS',
     prefix: 'sonarjs',
