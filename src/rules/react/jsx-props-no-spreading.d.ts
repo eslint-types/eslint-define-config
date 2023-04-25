@@ -8,8 +8,6 @@ export type JsxPropsNoSpreadingOption = {
   custom?: 'enforce' | 'ignore';
   exceptions?: string[];
   [k: string]: any;
-} & {
-  [k: string]: any;
 };
 
 /**
