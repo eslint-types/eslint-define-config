@@ -13,6 +13,7 @@ import type { PromiseExtensions } from './eslint-plugin-promise';
 import type { ReactExtensions } from './eslint-plugin-react';
 import type { ReactHooksExtensions } from './eslint-plugin-react-hooks';
 import type { SonarjsExtensions } from './eslint-plugin-sonarjs';
+import type { TestingLibraryExtensions } from './eslint-plugin-testing-library';
 import type { UnicornExtensions } from './eslint-plugin-unicorn';
 import type { VitestExtensions } from './eslint-plugin-vitest';
 import type { VueExtensions } from './eslint-plugin-vue';
@@ -39,6 +40,7 @@ export type KnownExtensions = LiteralUnion<
   | ReactExtensions
   | ReactHooksExtensions
   | SonarjsExtensions
+  | TestingLibraryExtensions
   | TypescriptEslintExtensions
   | UnicornExtensions
   | VitestExtensions

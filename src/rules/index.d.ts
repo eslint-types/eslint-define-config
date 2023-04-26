@@ -14,6 +14,7 @@ import type { ReactHooksRules } from './react-hooks';
 import type { RuleConfig } from './rule-config';
 import type { SonarJSRules } from './sonarjs';
 import type { SpellcheckRules } from './spellcheck';
+import type { TestingLibraryRules } from './testing-library';
 import type { TypeScriptRules } from './typescript-eslint';
 import type { UnicornRules } from './unicorn';
 import type { VitestRules } from './vitest';
@@ -42,6 +43,7 @@ export type Rules = Partial<
     ReactRules &
     SonarJSRules &
     SpellcheckRules &
+    TestingLibraryRules &
     TypeScriptRules &
     UnicornRules &
     VitestRules &
