@@ -9,6 +9,7 @@ import type { NRules } from './n';
 import type { NodeRules } from './node';
 import type { PromiseRules } from './promise';
 import type { ReactRules } from './react';
+import type { ReactHooksRules } from './react-hooks';
 import type { RuleConfig } from './rule-config';
 import type { SonarJSRules } from './sonarjs';
 import type { SpellcheckRules } from './spellcheck';
@@ -35,6 +36,7 @@ export type Rules = Partial<
     NodeRules &
     NRules &
     PromiseRules &
+    ReactHooksRules &
     ReactRules &
     SonarJSRules &
     SpellcheckRules &
