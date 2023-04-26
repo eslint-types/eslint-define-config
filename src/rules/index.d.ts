@@ -5,6 +5,7 @@ import type { GraphQLRules } from './graphql-eslint';
 import type { ImportRules } from './import';
 import type { JSDocRules } from './jsdoc';
 import type { JsoncRules } from './jsonc';
+import type { JsxA11yRules } from './jsx-a11y';
 import type { NRules } from './n';
 import type { NodeRules } from './node';
 import type { PromiseRules } from './promise';
@@ -33,6 +34,7 @@ export type Rules = Partial<
     ImportRules &
     JSDocRules &
     JsoncRules &
+    JsxA11yRules &
     NodeRules &
     NRules &
     PromiseRules &
