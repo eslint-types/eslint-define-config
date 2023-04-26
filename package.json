@@ -8,7 +8,7 @@
     "clean": "rimraf .eslintcache dist pnpm-lock.yaml node_modules",
     "check": "tsc",
     "format": "prettier --cache --write .",
-    "lint": "eslint --cache --cache-strategy content .",
+    "lint": "eslint --cache --cache-strategy content --report-unused-disable-directives .",
     "typecheck": "vitest typecheck",
     "test": "vitest",
     "coverage": "vitest run --coverage",

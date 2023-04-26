@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-argument */
-
 import type { Rule } from 'eslint';
 import { describe, expect, it } from 'vitest';
 import { generateTypeFromSchema } from '../scripts/generate-rule-files/src/json-schema-to-ts';

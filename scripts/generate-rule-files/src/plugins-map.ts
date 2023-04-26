@@ -109,10 +109,9 @@ export async function loadPlugin(plugin: Plugin): Promise<Plugin> {
   const rules: PluginRules =
     plugin.module === 'eslint'
       ? Object.fromEntries(
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-argument, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
           new mod.Linter().getRules().entries(),
         )
-      : // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-        mod.rules ?? mod.default.rules;
+      : mod.rules ?? mod.default.rules;
   return { ...plugin, rules };
 }
