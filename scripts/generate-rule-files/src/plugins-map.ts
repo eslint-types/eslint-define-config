@@ -76,6 +76,10 @@ export const PLUGIN_REGISTRY: Readonly<Record<string, Plugin>> = {
     name: 'Spellcheck',
     module: 'eslint-plugin-spellcheck',
   },
+  'testing-library': {
+    name: 'TestingLibrary',
+    module: 'eslint-plugin-testing-library',
+  },
   unicorn: {
     name: 'Unicorn',
     module: 'eslint-plugin-unicorn',

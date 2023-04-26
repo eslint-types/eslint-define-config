@@ -16,6 +16,7 @@ export type Plugin = LiteralUnion<
   | 'react'
   | 'sonarjs'
   | 'spellcheck'
+  | 'testing-library'
   | 'unicorn'
   | 'vitest'
   | 'vue'

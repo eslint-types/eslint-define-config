@@ -88,6 +88,9 @@ devDependencies:
   eslint-plugin-spellcheck:
     specifier: ~0.0.20
     version: 0.0.20(eslint@8.39.0)
+  eslint-plugin-testing-library:
+    specifier: ~5.10.3
+    version: 5.10.3(eslint@8.39.0)(typescript@5.0.4)
   eslint-plugin-unicorn:
     specifier: ~46.0.0
     version: 46.0.0(eslint@8.39.0)
@@ -2564,6 +2567,19 @@ packages:
       globals: 13.20.0
       hunspell-spellchecker: 1.0.2
       lodash: 4.17.21
+    dev: true
+
+  /eslint-plugin-testing-library@5.10.3(eslint@8.39.0)(typescript@5.0.4):
+    resolution: {integrity: sha512-0yhsKFsjHLud5PM+f2dWr9K3rqYzMy4cSHs3lcmFYMa1CdSzRvHGgXvsFarBjZ41gU8jhTdMIkg8jHLxGJqLqw==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0, npm: '>=6'}
+    peerDependencies:
+      eslint: ^7.5.0 || ^8.0.0
+    dependencies:
+      '@typescript-eslint/utils': 5.59.0(eslint@8.39.0)(typescript@5.0.4)
+      eslint: 8.39.0
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
     dev: true
 
   /eslint-plugin-unicorn@46.0.0(eslint@8.39.0):
