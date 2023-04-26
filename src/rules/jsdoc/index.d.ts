@@ -17,6 +17,7 @@ import type { MatchNameRule } from './match-name';
 import type { MultilineBlocksRule } from './multiline-blocks';
 import type { NoBadBlocksRule } from './no-bad-blocks';
 import type { NoBlankBlockDescriptionsRule } from './no-blank-block-descriptions';
+import type { NoBlankBlocksRule } from './no-blank-blocks';
 import type { NoDefaultsRule } from './no-defaults';
 import type { NoMissingSyntaxRule } from './no-missing-syntax';
 import type { NoMultiAsterisksRule } from './no-multi-asterisks';
@@ -72,6 +73,7 @@ export type JSDocRules = CheckAccessRule &
   MultilineBlocksRule &
   NoBadBlocksRule &
   NoBlankBlockDescriptionsRule &
+  NoBlankBlocksRule &
   NoDefaultsRule &
   NoMissingSyntaxRule &
   NoMultiAsterisksRule &
