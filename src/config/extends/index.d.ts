@@ -11,6 +11,7 @@ import type { NodeExtensions } from './eslint-plugin-node';
 import type { PrettierExtensions } from './eslint-plugin-prettier';
 import type { PromiseExtensions } from './eslint-plugin-promise';
 import type { ReactExtensions } from './eslint-plugin-react';
+import type { ReactHooksExtensions } from './eslint-plugin-react-hooks';
 import type { SonarjsExtensions } from './eslint-plugin-sonarjs';
 import type { UnicornExtensions } from './eslint-plugin-unicorn';
 import type { VitestExtensions } from './eslint-plugin-vitest';
@@ -36,6 +37,7 @@ export type KnownExtensions = LiteralUnion<
   | PrettierExtensions
   | PromiseExtensions
   | ReactExtensions
+  | ReactHooksExtensions
   | SonarjsExtensions
   | TypescriptEslintExtensions
   | UnicornExtensions
