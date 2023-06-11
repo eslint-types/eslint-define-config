@@ -8,6 +8,7 @@ import type { JsoncRules } from './jsonc';
 import type { JsxA11yRules } from './jsx-a11y';
 import type { NRules } from './n';
 import type { NodeRules } from './node';
+import type { PerfectionistRules } from './perfectionist';
 import type { PromiseRules } from './promise';
 import type { ReactRules } from './react';
 import type { ReactHooksRules } from './react-hooks';
@@ -39,6 +40,7 @@ export type Rules = Partial<
     JsxA11yRules &
     NodeRules &
     NRules &
+    PerfectionistRules &
     PromiseRules &
     ReactHooksRules &
     ReactRules &

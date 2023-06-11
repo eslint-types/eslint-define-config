@@ -55,6 +55,10 @@ export const PLUGIN_REGISTRY: Readonly<Record<string, Plugin>> = {
     name: 'Node',
     module: 'eslint-plugin-node',
   },
+  perfectionist: {
+    name: 'Perfectionist',
+    module: 'eslint-plugin-perfectionist',
+  },
   promise: {
     name: 'Promise',
     module: 'eslint-plugin-promise',
