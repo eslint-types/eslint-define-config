@@ -1,13 +1,13 @@
 // @ts-check
-const { defineConfig } = require('./src');
+const { defineConfig } = require('.');
 const { readGitignoreFiles } = require('eslint-gitignore');
 
 module.exports = defineConfig({
   ignorePatterns: [
     ...readGitignoreFiles(),
+    'src/index.cjs',
     'src/index.js',
-    'src/index.mjs',
-    '.eslintrc.js', // Skip self linting
+    '.eslintrc.cjs', // Skip self linting
   ],
   root: true,
   env: {
