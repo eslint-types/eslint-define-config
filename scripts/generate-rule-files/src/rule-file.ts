@@ -5,11 +5,14 @@ import type { JSONSchema4 } from 'json-schema';
 import { execSync } from 'node:child_process';
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { upperCaseFirst } from 'upper-case-first';
 import type { Plugin } from '../contracts';
 import { format } from './format';
 import { JsDocBuilder } from './js-doc-builder';
 import { generateTypeFromSchema } from './json-schema-to-ts';
+
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 export class RuleFile {
   private content: string = '';

@@ -1,5 +1,8 @@
+import { createRequire } from 'node:module';
 import type { Options } from 'prettier';
 import { format as prettierFormat } from 'prettier';
+
+const require = createRequire(import.meta.url);
 
 /**
  * Our custom prettier configuration.

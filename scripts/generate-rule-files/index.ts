@@ -3,12 +3,15 @@ import { pascalCase } from 'change-case';
 import type { Rule } from 'eslint';
 import { existsSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import dedent from 'ts-dedent';
+import { fileURLToPath } from 'node:url';
+import { dedent } from 'ts-dedent';
 import type { Plugin, PluginRules } from './contracts';
 import { format } from './src/format';
 import { JsDocBuilder } from './src/js-doc-builder';
 import { PLUGIN_REGISTRY, loadPlugin } from './src/plugins-map';
 import { RuleFile } from './src/rule-file';
+
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 /**
  * Generate the `index.d.ts` file for the plugin's rules that will re-export all rules.
