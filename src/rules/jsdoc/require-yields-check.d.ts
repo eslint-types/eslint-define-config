@@ -24,7 +24,7 @@ export type RequireYieldsCheckOptions = [RequireYieldsCheckOption?];
 /**
  * Requires a yield statement in function body if a `@yields` tag is specified in jsdoc comment.
  *
- * @see [require-yields-check](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-yields-check)
+ * @see [require-yields-check](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-yields-check.md#repos-sticky-header)
  */
 export type RequireYieldsCheckRuleConfig =
   RuleConfig<RequireYieldsCheckOptions>;
@@ -32,13 +32,13 @@ export type RequireYieldsCheckRuleConfig =
 /**
  * Requires a yield statement in function body if a `@yields` tag is specified in jsdoc comment.
  *
- * @see [require-yields-check](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-yields-check)
+ * @see [require-yields-check](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-yields-check.md#repos-sticky-header)
  */
 export interface RequireYieldsCheckRule {
   /**
    * Requires a yield statement in function body if a `@yields` tag is specified in jsdoc comment.
    *
-   * @see [require-yields-check](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-yields-check)
+   * @see [require-yields-check](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-yields-check.md#repos-sticky-header)
    */
   'jsdoc/require-yields-check': RequireYieldsCheckRuleConfig;
 }

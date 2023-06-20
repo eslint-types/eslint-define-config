@@ -26,7 +26,7 @@ export type RequireDescriptionOptions = [RequireDescriptionOption?];
 /**
  * Requires that all functions have a description.
  *
- * @see [require-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-description)
+ * @see [require-description](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-description.md#repos-sticky-header)
  */
 export type RequireDescriptionRuleConfig =
   RuleConfig<RequireDescriptionOptions>;
@@ -34,13 +34,13 @@ export type RequireDescriptionRuleConfig =
 /**
  * Requires that all functions have a description.
  *
- * @see [require-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-description)
+ * @see [require-description](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-description.md#repos-sticky-header)
  */
 export interface RequireDescriptionRule {
   /**
    * Requires that all functions have a description.
    *
-   * @see [require-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-description)
+   * @see [require-description](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-description.md#repos-sticky-header)
    */
   'jsdoc/require-description': RequireDescriptionRuleConfig;
 }

@@ -23,20 +23,20 @@ export type NoMissingSyntaxOptions = [NoMissingSyntaxOption?];
 /**
  * Reports when certain comment structures are always expected.
  *
- * @see [no-missing-syntax](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-missing-syntax)
+ * @see [no-missing-syntax](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-missing-syntax.md#repos-sticky-header)
  */
 export type NoMissingSyntaxRuleConfig = RuleConfig<NoMissingSyntaxOptions>;
 
 /**
  * Reports when certain comment structures are always expected.
  *
- * @see [no-missing-syntax](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-missing-syntax)
+ * @see [no-missing-syntax](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-missing-syntax.md#repos-sticky-header)
  */
 export interface NoMissingSyntaxRule {
   /**
    * Reports when certain comment structures are always expected.
    *
-   * @see [no-missing-syntax](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-no-missing-syntax)
+   * @see [no-missing-syntax](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-missing-syntax.md#repos-sticky-header)
    */
   'jsdoc/no-missing-syntax': NoMissingSyntaxRuleConfig;
 }

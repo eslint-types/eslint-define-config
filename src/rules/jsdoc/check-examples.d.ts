@@ -33,20 +33,20 @@ export type CheckExamplesOptions = [CheckExamplesOption?];
 /**
  * Ensures that (JavaScript) examples within JSDoc adhere to ESLint rules.
  *
- * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
+ * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-examples.md#repos-sticky-header)
  */
 export type CheckExamplesRuleConfig = RuleConfig<CheckExamplesOptions>;
 
 /**
  * Ensures that (JavaScript) examples within JSDoc adhere to ESLint rules.
  *
- * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
+ * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-examples.md#repos-sticky-header)
  */
 export interface CheckExamplesRule {
   /**
    * Ensures that (JavaScript) examples within JSDoc adhere to ESLint rules.
    *
-   * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-examples)
+   * @see [check-examples](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-examples.md#repos-sticky-header)
    */
   'jsdoc/check-examples': CheckExamplesRuleConfig;
 }

@@ -18,20 +18,20 @@ export type CheckValuesOptions = [CheckValuesOption?];
 /**
  * This rule checks the values for a handful of tags: `@version`, `@since`, `@license` and `@author`.
  *
- * @see [check-values](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-values)
+ * @see [check-values](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-values.md#repos-sticky-header)
  */
 export type CheckValuesRuleConfig = RuleConfig<CheckValuesOptions>;
 
 /**
  * This rule checks the values for a handful of tags: `@version`, `@since`, `@license` and `@author`.
  *
- * @see [check-values](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-values)
+ * @see [check-values](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-values.md#repos-sticky-header)
  */
 export interface CheckValuesRule {
   /**
    * This rule checks the values for a handful of tags: `@version`, `@since`, `@license` and `@author`.
    *
-   * @see [check-values](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-values)
+   * @see [check-values](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-values.md#repos-sticky-header)
    */
   'jsdoc/check-values': CheckValuesRuleConfig;
 }

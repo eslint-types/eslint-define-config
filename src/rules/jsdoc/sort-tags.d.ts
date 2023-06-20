@@ -22,20 +22,20 @@ export type SortTagsOptions = [SortTagsOption?];
 /**
  * Sorts tags by a specified sequence according to tag name.
  *
- * @see [sort-tags](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-sort-tags)
+ * @see [sort-tags](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/sort-tags.md#repos-sticky-header)
  */
 export type SortTagsRuleConfig = RuleConfig<SortTagsOptions>;
 
 /**
  * Sorts tags by a specified sequence according to tag name.
  *
- * @see [sort-tags](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-sort-tags)
+ * @see [sort-tags](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/sort-tags.md#repos-sticky-header)
  */
 export interface SortTagsRule {
   /**
    * Sorts tags by a specified sequence according to tag name.
    *
-   * @see [sort-tags](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-sort-tags)
+   * @see [sort-tags](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/sort-tags.md#repos-sticky-header)
    */
   'jsdoc/sort-tags': SortTagsRuleConfig;
 }

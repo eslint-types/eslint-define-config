@@ -31,20 +31,20 @@ export type TagLinesOptions = [TagLinesOption?, TagLinesConfig?];
 /**
  * Enforces lines (or no lines) between tags.
  *
- * @see [tag-lines](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-tag-lines)
+ * @see [tag-lines](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/tag-lines.md#repos-sticky-header)
  */
 export type TagLinesRuleConfig = RuleConfig<TagLinesOptions>;
 
 /**
  * Enforces lines (or no lines) between tags.
  *
- * @see [tag-lines](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-tag-lines)
+ * @see [tag-lines](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/tag-lines.md#repos-sticky-header)
  */
 export interface TagLinesRule {
   /**
    * Enforces lines (or no lines) between tags.
    *
-   * @see [tag-lines](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-tag-lines)
+   * @see [tag-lines](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/tag-lines.md#repos-sticky-header)
    */
   'jsdoc/tag-lines': TagLinesRuleConfig;
 }

@@ -41,20 +41,20 @@ export type MatchDescriptionOptions = [MatchDescriptionOption?];
 /**
  * Enforces a regular expression pattern on descriptions.
  *
- * @see [match-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-match-description)
+ * @see [match-description](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/match-description.md#repos-sticky-header)
  */
 export type MatchDescriptionRuleConfig = RuleConfig<MatchDescriptionOptions>;
 
 /**
  * Enforces a regular expression pattern on descriptions.
  *
- * @see [match-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-match-description)
+ * @see [match-description](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/match-description.md#repos-sticky-header)
  */
 export interface MatchDescriptionRule {
   /**
    * Enforces a regular expression pattern on descriptions.
    *
-   * @see [match-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-match-description)
+   * @see [match-description](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/match-description.md#repos-sticky-header)
    */
   'jsdoc/match-description': MatchDescriptionRuleConfig;
 }

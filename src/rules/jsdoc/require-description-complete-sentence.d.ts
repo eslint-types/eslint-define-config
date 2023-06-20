@@ -19,7 +19,7 @@ export type RequireDescriptionCompleteSentenceOptions = [
 /**
  * Requires that block description, explicit `@description`, and `@param`/`@returns` tag descriptions are written in complete sentences.
  *
- * @see [require-description-complete-sentence](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-description-complete-sentence)
+ * @see [require-description-complete-sentence](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-description-complete-sentence.md#repos-sticky-header)
  */
 export type RequireDescriptionCompleteSentenceRuleConfig =
   RuleConfig<RequireDescriptionCompleteSentenceOptions>;
@@ -27,13 +27,13 @@ export type RequireDescriptionCompleteSentenceRuleConfig =
 /**
  * Requires that block description, explicit `@description`, and `@param`/`@returns` tag descriptions are written in complete sentences.
  *
- * @see [require-description-complete-sentence](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-description-complete-sentence)
+ * @see [require-description-complete-sentence](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-description-complete-sentence.md#repos-sticky-header)
  */
 export interface RequireDescriptionCompleteSentenceRule {
   /**
    * Requires that block description, explicit `@description`, and `@param`/`@returns` tag descriptions are written in complete sentences.
    *
-   * @see [require-description-complete-sentence](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-description-complete-sentence)
+   * @see [require-description-complete-sentence](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-description-complete-sentence.md#repos-sticky-header)
    */
   'jsdoc/require-description-complete-sentence': RequireDescriptionCompleteSentenceRuleConfig;
 }

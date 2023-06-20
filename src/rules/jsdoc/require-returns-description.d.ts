@@ -23,7 +23,7 @@ export type RequireReturnsDescriptionOptions = [
 /**
  * Requires that the `@returns` tag has a `description` value.
  *
- * @see [require-returns-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns-description)
+ * @see [require-returns-description](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-returns-description.md#repos-sticky-header)
  */
 export type RequireReturnsDescriptionRuleConfig =
   RuleConfig<RequireReturnsDescriptionOptions>;
@@ -31,13 +31,13 @@ export type RequireReturnsDescriptionRuleConfig =
 /**
  * Requires that the `@returns` tag has a `description` value.
  *
- * @see [require-returns-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns-description)
+ * @see [require-returns-description](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-returns-description.md#repos-sticky-header)
  */
 export interface RequireReturnsDescriptionRule {
   /**
    * Requires that the `@returns` tag has a `description` value.
    *
-   * @see [require-returns-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-returns-description)
+   * @see [require-returns-description](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-returns-description.md#repos-sticky-header)
    */
   'jsdoc/require-returns-description': RequireReturnsDescriptionRuleConfig;
 }

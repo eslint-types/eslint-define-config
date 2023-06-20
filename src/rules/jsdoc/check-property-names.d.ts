@@ -15,7 +15,7 @@ export type CheckPropertyNamesOptions = [CheckPropertyNamesOption?];
 /**
  * Ensures that property names in JSDoc are not duplicated on the same block and that nested properties have defined roots.
  *
- * @see [check-property-names](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-property-names)
+ * @see [check-property-names](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-property-names.md#repos-sticky-header)
  */
 export type CheckPropertyNamesRuleConfig =
   RuleConfig<CheckPropertyNamesOptions>;
@@ -23,13 +23,13 @@ export type CheckPropertyNamesRuleConfig =
 /**
  * Ensures that property names in JSDoc are not duplicated on the same block and that nested properties have defined roots.
  *
- * @see [check-property-names](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-property-names)
+ * @see [check-property-names](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-property-names.md#repos-sticky-header)
  */
 export interface CheckPropertyNamesRule {
   /**
    * Ensures that property names in JSDoc are not duplicated on the same block and that nested properties have defined roots.
    *
-   * @see [check-property-names](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-property-names)
+   * @see [check-property-names](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-property-names.md#repos-sticky-header)
    */
   'jsdoc/check-property-names': CheckPropertyNamesRuleConfig;
 }

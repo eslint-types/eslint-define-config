@@ -46,20 +46,20 @@ export type RequireJsdocOptions = [RequireJsdocOption?];
 /**
  * Require JSDoc comments.
  *
- * @see [require-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-jsdoc)
+ * @see [require-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-jsdoc.md#repos-sticky-header)
  */
 export type RequireJsdocRuleConfig = RuleConfig<RequireJsdocOptions>;
 
 /**
  * Require JSDoc comments.
  *
- * @see [require-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-jsdoc)
+ * @see [require-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-jsdoc.md#repos-sticky-header)
  */
 export interface RequireJsdocRule {
   /**
    * Require JSDoc comments.
    *
-   * @see [require-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-jsdoc)
+   * @see [require-jsdoc](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-jsdoc.md#repos-sticky-header)
    */
   'jsdoc/require-jsdoc': RequireJsdocRuleConfig;
 }

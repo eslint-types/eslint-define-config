@@ -35,20 +35,20 @@ export type RequireParamOptions = [RequireParamOption?];
 /**
  * Requires that all function parameters are documented.
  *
- * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param)
+ * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param.md#repos-sticky-header)
  */
 export type RequireParamRuleConfig = RuleConfig<RequireParamOptions>;
 
 /**
  * Requires that all function parameters are documented.
  *
- * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param)
+ * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param.md#repos-sticky-header)
  */
 export interface RequireParamRule {
   /**
    * Requires that all function parameters are documented.
    *
-   * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param)
+   * @see [require-param](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param.md#repos-sticky-header)
    */
   'jsdoc/require-param': RequireParamRuleConfig;
 }

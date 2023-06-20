@@ -23,7 +23,7 @@ export type RequireParamDescriptionOptions = [RequireParamDescriptionOption?];
 /**
  * Requires that each `@param` tag has a `description` value.
  *
- * @see [require-param-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param-description)
+ * @see [require-param-description](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param-description.md#repos-sticky-header)
  */
 export type RequireParamDescriptionRuleConfig =
   RuleConfig<RequireParamDescriptionOptions>;
@@ -31,13 +31,13 @@ export type RequireParamDescriptionRuleConfig =
 /**
  * Requires that each `@param` tag has a `description` value.
  *
- * @see [require-param-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param-description)
+ * @see [require-param-description](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param-description.md#repos-sticky-header)
  */
 export interface RequireParamDescriptionRule {
   /**
    * Requires that each `@param` tag has a `description` value.
    *
-   * @see [require-param-description](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-param-description)
+   * @see [require-param-description](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param-description.md#repos-sticky-header)
    */
   'jsdoc/require-param-description': RequireParamDescriptionRuleConfig;
 }

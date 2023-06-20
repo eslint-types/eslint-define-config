@@ -18,20 +18,20 @@ export type CheckTagNamesOptions = [CheckTagNamesOption?];
 /**
  * Reports invalid block tag names.
  *
- * @see [check-tag-names](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-tag-names)
+ * @see [check-tag-names](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-tag-names.md#repos-sticky-header)
  */
 export type CheckTagNamesRuleConfig = RuleConfig<CheckTagNamesOptions>;
 
 /**
  * Reports invalid block tag names.
  *
- * @see [check-tag-names](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-tag-names)
+ * @see [check-tag-names](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-tag-names.md#repos-sticky-header)
  */
 export interface CheckTagNamesRule {
   /**
    * Reports invalid block tag names.
    *
-   * @see [check-tag-names](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-tag-names)
+   * @see [check-tag-names](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-tag-names.md#repos-sticky-header)
    */
   'jsdoc/check-tag-names': CheckTagNamesRuleConfig;
 }

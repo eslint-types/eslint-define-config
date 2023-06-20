@@ -11,6 +11,7 @@ import type { CheckTypesRule } from './check-types';
 import type { CheckValuesRule } from './check-values';
 import type { EmptyTagsRule } from './empty-tags';
 import type { ImplementsOnClassesRule } from './implements-on-classes';
+import type { ImportsAsDependenciesRule } from './imports-as-dependencies';
 import type { InformativeDocsRule } from './informative-docs';
 import type { MatchDescriptionRule } from './match-description';
 import type { MatchNameRule } from './match-name';
@@ -67,6 +68,7 @@ export type JSDocRules = CheckAccessRule &
   CheckValuesRule &
   EmptyTagsRule &
   ImplementsOnClassesRule &
+  ImportsAsDependenciesRule &
   InformativeDocsRule &
   MatchDescriptionRule &
   MatchNameRule &

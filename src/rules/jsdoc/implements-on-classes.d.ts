@@ -21,7 +21,7 @@ export type ImplementsOnClassesOptions = [ImplementsOnClassesOption?];
 /**
  * Reports an issue with any non-constructor function using `@implements`.
  *
- * @see [implements-on-classes](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-implements-on-classes)
+ * @see [implements-on-classes](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/implements-on-classes.md#repos-sticky-header)
  */
 export type ImplementsOnClassesRuleConfig =
   RuleConfig<ImplementsOnClassesOptions>;
@@ -29,13 +29,13 @@ export type ImplementsOnClassesRuleConfig =
 /**
  * Reports an issue with any non-constructor function using `@implements`.
  *
- * @see [implements-on-classes](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-implements-on-classes)
+ * @see [implements-on-classes](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/implements-on-classes.md#repos-sticky-header)
  */
 export interface ImplementsOnClassesRule {
   /**
    * Reports an issue with any non-constructor function using `@implements`.
    *
-   * @see [implements-on-classes](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-implements-on-classes)
+   * @see [implements-on-classes](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/implements-on-classes.md#repos-sticky-header)
    */
   'jsdoc/implements-on-classes': ImplementsOnClassesRuleConfig;
 }

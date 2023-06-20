@@ -27,20 +27,20 @@ export type RequireExampleOptions = [RequireExampleOption?];
 /**
  * Requires that all functions have examples.
  *
- * @see [require-example](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-example)
+ * @see [require-example](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-example.md#repos-sticky-header)
  */
 export type RequireExampleRuleConfig = RuleConfig<RequireExampleOptions>;
 
 /**
  * Requires that all functions have examples.
  *
- * @see [require-example](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-example)
+ * @see [require-example](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-example.md#repos-sticky-header)
  */
 export interface RequireExampleRule {
   /**
    * Requires that all functions have examples.
    *
-   * @see [require-example](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-require-example)
+   * @see [require-example](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-example.md#repos-sticky-header)
    */
   'jsdoc/require-example': RequireExampleRuleConfig;
 }

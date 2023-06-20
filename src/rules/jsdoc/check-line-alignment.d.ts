@@ -32,7 +32,7 @@ export type CheckLineAlignmentOptions = [
 /**
  * Reports invalid alignment of JSDoc block lines.
  *
- * @see [check-line-alignment](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-line-alignment)
+ * @see [check-line-alignment](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-line-alignment.md#repos-sticky-header)
  */
 export type CheckLineAlignmentRuleConfig =
   RuleConfig<CheckLineAlignmentOptions>;
@@ -40,13 +40,13 @@ export type CheckLineAlignmentRuleConfig =
 /**
  * Reports invalid alignment of JSDoc block lines.
  *
- * @see [check-line-alignment](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-line-alignment)
+ * @see [check-line-alignment](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-line-alignment.md#repos-sticky-header)
  */
 export interface CheckLineAlignmentRule {
   /**
    * Reports invalid alignment of JSDoc block lines.
    *
-   * @see [check-line-alignment](https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-line-alignment)
+   * @see [check-line-alignment](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-line-alignment.md#repos-sticky-header)
    */
   'jsdoc/check-line-alignment': CheckLineAlignmentRuleConfig;
 }

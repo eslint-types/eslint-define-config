@@ -26,17 +26,23 @@ export type RequireAsteriskPrefixOptions = [
 ];
 
 /**
+ * Requires that each JSDoc line starts with an `*`.
  *
+ * @see [require-asterisk-prefix](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-asterisk-prefix.md#repos-sticky-header)
  */
 export type RequireAsteriskPrefixRuleConfig =
   RuleConfig<RequireAsteriskPrefixOptions>;
 
 /**
+ * Requires that each JSDoc line starts with an `*`.
  *
+ * @see [require-asterisk-prefix](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-asterisk-prefix.md#repos-sticky-header)
  */
 export interface RequireAsteriskPrefixRule {
   /**
+   * Requires that each JSDoc line starts with an `*`.
    *
+   * @see [require-asterisk-prefix](https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-asterisk-prefix.md#repos-sticky-header)
    */
   'jsdoc/require-asterisk-prefix': RequireAsteriskPrefixRuleConfig;
 }
