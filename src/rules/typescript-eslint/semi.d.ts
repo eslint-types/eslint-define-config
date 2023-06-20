@@ -18,6 +18,7 @@ export type SemiOption =
       'always',
       {
         omitLastInOneLineBlock?: boolean;
+        omitLastInOneLineClassBody?: boolean;
       },
     ];
 
