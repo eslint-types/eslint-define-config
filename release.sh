@@ -13,7 +13,7 @@ pnpm install
 pnpm run lint
 pnpm run test -- --silent
 pnpm audit
-pnpm run check
+pnpm run build
 
 # Publish
 npm publish --dry-run
