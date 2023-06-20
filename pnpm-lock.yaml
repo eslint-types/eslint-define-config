@@ -20,8 +20,8 @@ devDependencies:
     specifier: ~18.16.1
     version: 18.16.1
   '@types/prettier':
-    specifier: ~2.7.2
-    version: 2.7.2
+    specifier: ~2.7.3
+    version: 2.7.3
   '@typescript-eslint/eslint-plugin':
     specifier: ~5.59.1
     version: 5.59.1(@typescript-eslint/parser@5.59.1)(eslint@8.39.0)(typescript@5.0.4)
@@ -1167,8 +1167,8 @@ packages:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
     dev: true
 
-  /@types/prettier@2.7.2:
-    resolution: {integrity: sha512-KufADq8uQqo1pYKVIYzfKbJfBAc0sOeXqGbFaSpv8MRmC/zXgowNZmFcbngndGk922QDmOASEXUZCaY48gs4cg==}
+  /@types/prettier@2.7.3:
+    resolution: {integrity: sha512-+68kP9yzs4LMp7VNh8gdzMSPZFL44MLGqiHWvttYJe+6qnuVr4Ek9wSBQoveqY/r+LwjCcU29kNVkidwim+kYA==}
     dev: true
 
   /@types/semver@7.3.13:
@@ -3585,7 +3585,7 @@ packages:
       '@bcherny/json-schema-ref-parser': 10.0.5-fork
       '@types/json-schema': 7.0.11
       '@types/lodash': 4.14.194
-      '@types/prettier': 2.7.2
+      '@types/prettier': 2.7.3
       cli-color: 2.0.3
       get-stdin: 8.0.0
       glob: 7.2.3
