@@ -7,6 +7,7 @@ export interface PreferLowercaseTitleOption {
   ignore?: ('describe' | 'test' | 'it')[];
   allowedPrefixes?: string[];
   ignoreTopLevelDescribe?: boolean;
+  lowercaseFirstCharacterOnly?: boolean;
 }
 
 /**

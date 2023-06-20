@@ -5,6 +5,7 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface ValidTitleOption {
   ignoreTypeOfDescribeName?: boolean;
+  allowArguments?: boolean;
   disallowedWords?: string[];
   /**
    */
