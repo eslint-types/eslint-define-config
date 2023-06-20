@@ -21,6 +21,7 @@ import type { PreferExplicitAssertRule } from './prefer-explicit-assert';
 import type { PreferFindByRule } from './prefer-find-by';
 import type { PreferPresenceQueriesRule } from './prefer-presence-queries';
 import type { PreferQueryByDisappearanceRule } from './prefer-query-by-disappearance';
+import type { PreferQueryMatchersRule } from './prefer-query-matchers';
 import type { PreferScreenQueriesRule } from './prefer-screen-queries';
 import type { PreferUserEventRule } from './prefer-user-event';
 import type { PreferWaitForRule } from './prefer-wait-for';
@@ -52,6 +53,7 @@ export type TestingLibraryRules = AwaitAsyncQueryRule &
   PreferFindByRule &
   PreferPresenceQueriesRule &
   PreferQueryByDisappearanceRule &
+  PreferQueryMatchersRule &
   PreferScreenQueriesRule &
   PreferUserEventRule &
   PreferWaitForRule &
