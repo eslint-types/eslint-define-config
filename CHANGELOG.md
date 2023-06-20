@@ -1,6 +1,15 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.20.0...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.21.0...main)
+
+# 1.21.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.20.0...1.21.0)
+
+- Use esm by default ([#204])
+- Update rules for: [eslint, graphql-eslint, jsdoc, jsonc, testing-library, typescript-eslint, unicorn, vitest, vue]
+
+[#204]: https://github.com/Shinigami92/eslint-define-config/pull/204
 
 # 1.20.0
 
