@@ -18,6 +18,8 @@ export interface NoUnsupportedFeaturesOption {
     | 'v-memo'
     | 'v-bind-prop-modifier-shorthand'
     | 'v-bind-attr-modifier'
+    | 'define-options'
+    | 'define-slots'
   )[];
 }
 

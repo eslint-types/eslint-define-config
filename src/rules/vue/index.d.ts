@@ -44,6 +44,7 @@ import type { MatchComponentFileNameRule } from './match-component-file-name';
 import type { MatchComponentImportNameRule } from './match-component-import-name';
 import type { MaxAttributesPerLineRule } from './max-attributes-per-line';
 import type { MaxLenRule } from './max-len';
+import type { MaxLinesPerBlockRule } from './max-lines-per-block';
 import type { MultiWordComponentNamesRule } from './multi-word-component-names';
 import type { MultilineHtmlElementContentNewlineRule } from './multiline-html-element-content-newline';
 import type { MultilineTernaryRule } from './multiline-ternary';
@@ -56,6 +57,7 @@ import type { NoBareStringsInTemplateRule } from './no-bare-strings-in-template'
 import type { NoBooleanDefaultRule } from './no-boolean-default';
 import type { NoChildContentRule } from './no-child-content';
 import type { NoComputedPropertiesInDataRule } from './no-computed-properties-in-data';
+import type { NoConsoleRule } from './no-console';
 import type { NoConstantConditionRule } from './no-constant-condition';
 import type { NoCustomModifiersOnVModelRule } from './no-custom-modifiers-on-v-model';
 import type { NoDeprecatedDataObjectDeclarationRule } from './no-deprecated-data-object-declaration';
@@ -107,6 +109,7 @@ import type { NoReservedPropsRule } from './no-reserved-props';
 import type { NoRestrictedBlockRule } from './no-restricted-block';
 import type { NoRestrictedCallAfterAwaitRule } from './no-restricted-call-after-await';
 import type { NoRestrictedClassRule } from './no-restricted-class';
+import type { NoRestrictedComponentNamesRule } from './no-restricted-component-names';
 import type { NoRestrictedComponentOptionsRule } from './no-restricted-component-options';
 import type { NoRestrictedCustomEventRule } from './no-restricted-custom-event';
 import type { NoRestrictedHtmlElementsRule } from './no-restricted-html-elements';
@@ -114,6 +117,7 @@ import type { NoRestrictedPropsRule } from './no-restricted-props';
 import type { NoRestrictedStaticAttributeRule } from './no-restricted-static-attribute';
 import type { NoRestrictedSyntaxRule } from './no-restricted-syntax';
 import type { NoRestrictedVBindRule } from './no-restricted-v-bind';
+import type { NoRootVIfRule } from './no-root-v-if';
 import type { NoSetupPropsDestructureRule } from './no-setup-props-destructure';
 import type { NoSharedComponentDataRule } from './no-shared-component-data';
 import type { NoSideEffectsInComputedPropertiesRule } from './no-side-effects-in-computed-properties';
@@ -155,6 +159,7 @@ import type { OrderInComponentsRule } from './order-in-components';
 import type { PaddingLineBetweenBlocksRule } from './padding-line-between-blocks';
 import type { PaddingLineBetweenTagsRule } from './padding-line-between-tags';
 import type { PaddingLinesInComponentDefinitionRule } from './padding-lines-in-component-definition';
+import type { PreferDefineOptionsRule } from './prefer-define-options';
 import type { PreferImportFromVueRule } from './prefer-import-from-vue';
 import type { PreferPropTypeBooleanFirstRule } from './prefer-prop-type-boolean-first';
 import type { PreferSeparateStaticClassRule } from './prefer-separate-static-class';
@@ -168,6 +173,7 @@ import type { RequireDirectExportRule } from './require-direct-export';
 import type { RequireEmitValidatorRule } from './require-emit-validator';
 import type { RequireExplicitEmitsRule } from './require-explicit-emits';
 import type { RequireExposeRule } from './require-expose';
+import type { RequireMacroVariableNameRule } from './require-macro-variable-name';
 import type { RequireNamePropertyRule } from './require-name-property';
 import type { RequirePropCommentRule } from './require-prop-comment';
 import type { RequirePropTypeConstructorRule } from './require-prop-type-constructor';
@@ -175,6 +181,7 @@ import type { RequirePropTypesRule } from './require-prop-types';
 import type { RequireRenderReturnRule } from './require-render-return';
 import type { RequireSlotsAsFunctionsRule } from './require-slots-as-functions';
 import type { RequireToggleInsideTransitionRule } from './require-toggle-inside-transition';
+import type { RequireTypedRefRule } from './require-typed-ref';
 import type { RequireVForKeyRule } from './require-v-for-key';
 import type { RequireValidDefaultPropRule } from './require-valid-default-prop';
 import type { ReturnInComputedPropertyRule } from './return-in-computed-property';
@@ -199,6 +206,7 @@ import type { VOnStyleRule } from './v-on-style';
 import type { VSlotStyleRule } from './v-slot-style';
 import type { ValidAttributeNameRule } from './valid-attribute-name';
 import type { ValidDefineEmitsRule } from './valid-define-emits';
+import type { ValidDefineOptionsRule } from './valid-define-options';
 import type { ValidDefinePropsRule } from './valid-define-props';
 import type { ValidModelDefinitionRule } from './valid-model-definition';
 import type { ValidNextTickRule } from './valid-next-tick';
@@ -270,6 +278,7 @@ export type VueRules = ArrayBracketNewlineRule &
   MatchComponentImportNameRule &
   MaxAttributesPerLineRule &
   MaxLenRule &
+  MaxLinesPerBlockRule &
   MultiWordComponentNamesRule &
   MultilineHtmlElementContentNewlineRule &
   MultilineTernaryRule &
@@ -282,6 +291,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoBooleanDefaultRule &
   NoChildContentRule &
   NoComputedPropertiesInDataRule &
+  NoConsoleRule &
   NoConstantConditionRule &
   NoCustomModifiersOnVModelRule &
   NoDeprecatedDataObjectDeclarationRule &
@@ -333,6 +343,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoRestrictedBlockRule &
   NoRestrictedCallAfterAwaitRule &
   NoRestrictedClassRule &
+  NoRestrictedComponentNamesRule &
   NoRestrictedComponentOptionsRule &
   NoRestrictedCustomEventRule &
   NoRestrictedHtmlElementsRule &
@@ -340,6 +351,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoRestrictedStaticAttributeRule &
   NoRestrictedSyntaxRule &
   NoRestrictedVBindRule &
+  NoRootVIfRule &
   NoSetupPropsDestructureRule &
   NoSharedComponentDataRule &
   NoSideEffectsInComputedPropertiesRule &
@@ -381,6 +393,7 @@ export type VueRules = ArrayBracketNewlineRule &
   PaddingLineBetweenBlocksRule &
   PaddingLineBetweenTagsRule &
   PaddingLinesInComponentDefinitionRule &
+  PreferDefineOptionsRule &
   PreferImportFromVueRule &
   PreferPropTypeBooleanFirstRule &
   PreferSeparateStaticClassRule &
@@ -394,6 +407,7 @@ export type VueRules = ArrayBracketNewlineRule &
   RequireEmitValidatorRule &
   RequireExplicitEmitsRule &
   RequireExposeRule &
+  RequireMacroVariableNameRule &
   RequireNamePropertyRule &
   RequirePropCommentRule &
   RequirePropTypeConstructorRule &
@@ -401,6 +415,7 @@ export type VueRules = ArrayBracketNewlineRule &
   RequireRenderReturnRule &
   RequireSlotsAsFunctionsRule &
   RequireToggleInsideTransitionRule &
+  RequireTypedRefRule &
   RequireVForKeyRule &
   RequireValidDefaultPropRule &
   ReturnInComputedPropertyRule &
@@ -425,6 +440,7 @@ export type VueRules = ArrayBracketNewlineRule &
   VSlotStyleRule &
   ValidAttributeNameRule &
   ValidDefineEmitsRule &
+  ValidDefineOptionsRule &
   ValidDefinePropsRule &
   ValidModelDefinitionRule &
   ValidNextTickRule &

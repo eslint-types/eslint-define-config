@@ -8,7 +8,6 @@ export interface NoDeprecatedRouterLinkTagPropOption {
    * @minItems 1
    */
   components?: [string, ...string[]];
-  [k: string]: any;
 }
 
 /**
