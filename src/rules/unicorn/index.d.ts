@@ -63,6 +63,7 @@ import type { PreferArrayFlatMapRule } from './prefer-array-flat-map';
 import type { PreferArrayIndexOfRule } from './prefer-array-index-of';
 import type { PreferArraySomeRule } from './prefer-array-some';
 import type { PreferAtRule } from './prefer-at';
+import type { PreferBlobReadingMethodsRule } from './prefer-blob-reading-methods';
 import type { PreferCodePointRule } from './prefer-code-point';
 import type { PreferDatasetRule } from './prefer-dataset';
 import type { PreferDateNowRule } from './prefer-date-now';
@@ -188,6 +189,7 @@ export type UnicornRules = BetterRegexRule &
   PreferArrayIndexOfRule &
   PreferArraySomeRule &
   PreferAtRule &
+  PreferBlobReadingMethodsRule &
   PreferCodePointRule &
   PreferDateNowRule &
   PreferDefaultParametersRule &

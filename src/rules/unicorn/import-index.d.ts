@@ -17,7 +17,7 @@ export interface ImportIndexOption {
  *
  * @deprecated
  *
- * @see [import-index](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/deprecated-rules.md#import-index)
+ * @see [import-index](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v47.0.0/docs/deprecated-rules.md#import-index)
  */
 export type ImportIndexOptions = [ImportIndexOption?];
 
@@ -26,7 +26,7 @@ export type ImportIndexOptions = [ImportIndexOption?];
  *
  * @deprecated
  *
- * @see [import-index](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v42.0.0/docs/rules/import-index.md)
+ * @see [import-index](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v47.0.0/docs/deprecated-rules.md#import-index)
  */
 export type ImportIndexRuleConfig = RuleConfig<ImportIndexOptions>;
 
@@ -35,7 +35,7 @@ export type ImportIndexRuleConfig = RuleConfig<ImportIndexOptions>;
  *
  * @deprecated
  *
- * @see [import-index](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/deprecated-rules.md#import-index)
+ * @see [import-index](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v47.0.0/docs/deprecated-rules.md#import-index)
  */
 export interface ImportIndexRule {
   /**
@@ -43,7 +43,7 @@ export interface ImportIndexRule {
    *
    * @deprecated
    *
-   * @see [import-index](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v43.0.2/docs/deprecated-rules.md#import-index)
+   * @see [import-index](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v47.0.0/docs/deprecated-rules.md#import-index)
    */
   'unicorn/import-index': ImportIndexRuleConfig;
 }
