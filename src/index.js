@@ -1,8 +1,7 @@
-'use strict';
+export function defineConfig(config) {
+  return config;
+}
 
-exports.__esModule = true;
-exports.defineConfig = void 0;
-exports.defineFlatConfig = void 0;
-
-exports.defineConfig = (config) => config;
-exports.defineFlatConfig = (config) => config;
+export function defineFlatConfig(config) {
+  return config;
+}
