@@ -8,6 +8,7 @@ export interface NoIrregularWhitespaceOption {
   skipStrings?: boolean;
   skipTemplates?: boolean;
   skipRegExps?: boolean;
+  skipJSXText?: boolean;
 }
 
 /**
@@ -18,7 +19,7 @@ export type NoIrregularWhitespaceOptions = [NoIrregularWhitespaceOption?];
 /**
  * Disallow irregular whitespace.
  *
- * @see [no-irregular-whitespace](https://eslint.org/docs/rules/no-irregular-whitespace)
+ * @see [no-irregular-whitespace](https://eslint.org/docs/latest/rules/no-irregular-whitespace)
  */
 export type NoIrregularWhitespaceRuleConfig =
   RuleConfig<NoIrregularWhitespaceOptions>;
@@ -26,13 +27,13 @@ export type NoIrregularWhitespaceRuleConfig =
 /**
  * Disallow irregular whitespace.
  *
- * @see [no-irregular-whitespace](https://eslint.org/docs/rules/no-irregular-whitespace)
+ * @see [no-irregular-whitespace](https://eslint.org/docs/latest/rules/no-irregular-whitespace)
  */
 export interface NoIrregularWhitespaceRule {
   /**
    * Disallow irregular whitespace.
    *
-   * @see [no-irregular-whitespace](https://eslint.org/docs/rules/no-irregular-whitespace)
+   * @see [no-irregular-whitespace](https://eslint.org/docs/latest/rules/no-irregular-whitespace)
    */
   'no-irregular-whitespace': NoIrregularWhitespaceRuleConfig;
 }

@@ -20,20 +20,20 @@ export type ArrowParensOptions = [ArrowParensOption?, ArrowParensConfig?];
 /**
  * Require parentheses around arrow function arguments.
  *
- * @see [arrow-parens](https://eslint.org/docs/rules/arrow-parens)
+ * @see [arrow-parens](https://eslint.org/docs/latest/rules/arrow-parens)
  */
 export type ArrowParensRuleConfig = RuleConfig<ArrowParensOptions>;
 
 /**
  * Require parentheses around arrow function arguments.
  *
- * @see [arrow-parens](https://eslint.org/docs/rules/arrow-parens)
+ * @see [arrow-parens](https://eslint.org/docs/latest/rules/arrow-parens)
  */
 export interface ArrowParensRule {
   /**
    * Require parentheses around arrow function arguments.
    *
-   * @see [arrow-parens](https://eslint.org/docs/rules/arrow-parens)
+   * @see [arrow-parens](https://eslint.org/docs/latest/rules/arrow-parens)
    */
   'arrow-parens': ArrowParensRuleConfig;
 }

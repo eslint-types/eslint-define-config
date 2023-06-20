@@ -15,7 +15,7 @@ export type NoConstantConditionOptions = [NoConstantConditionOption?];
 /**
  * Disallow constant expressions in conditions.
  *
- * @see [no-constant-condition](https://eslint.org/docs/rules/no-constant-condition)
+ * @see [no-constant-condition](https://eslint.org/docs/latest/rules/no-constant-condition)
  */
 export type NoConstantConditionRuleConfig =
   RuleConfig<NoConstantConditionOptions>;
@@ -23,13 +23,13 @@ export type NoConstantConditionRuleConfig =
 /**
  * Disallow constant expressions in conditions.
  *
- * @see [no-constant-condition](https://eslint.org/docs/rules/no-constant-condition)
+ * @see [no-constant-condition](https://eslint.org/docs/latest/rules/no-constant-condition)
  */
 export interface NoConstantConditionRule {
   /**
    * Disallow constant expressions in conditions.
    *
-   * @see [no-constant-condition](https://eslint.org/docs/rules/no-constant-condition)
+   * @see [no-constant-condition](https://eslint.org/docs/latest/rules/no-constant-condition)
    */
   'no-constant-condition': NoConstantConditionRuleConfig;
 }

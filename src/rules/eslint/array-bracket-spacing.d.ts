@@ -25,7 +25,7 @@ export type ArrayBracketSpacingOptions = [
 /**
  * Enforce consistent spacing inside array brackets.
  *
- * @see [array-bracket-spacing](https://eslint.org/docs/rules/array-bracket-spacing)
+ * @see [array-bracket-spacing](https://eslint.org/docs/latest/rules/array-bracket-spacing)
  */
 export type ArrayBracketSpacingRuleConfig =
   RuleConfig<ArrayBracketSpacingOptions>;
@@ -33,13 +33,13 @@ export type ArrayBracketSpacingRuleConfig =
 /**
  * Enforce consistent spacing inside array brackets.
  *
- * @see [array-bracket-spacing](https://eslint.org/docs/rules/array-bracket-spacing)
+ * @see [array-bracket-spacing](https://eslint.org/docs/latest/rules/array-bracket-spacing)
  */
 export interface ArrayBracketSpacingRule {
   /**
    * Enforce consistent spacing inside array brackets.
    *
-   * @see [array-bracket-spacing](https://eslint.org/docs/rules/array-bracket-spacing)
+   * @see [array-bracket-spacing](https://eslint.org/docs/latest/rules/array-bracket-spacing)
    */
   'array-bracket-spacing': ArrayBracketSpacingRuleConfig;
 }

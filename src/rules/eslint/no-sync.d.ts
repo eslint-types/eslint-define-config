@@ -17,7 +17,7 @@ export type NoSyncOptions = [NoSyncOption?];
  *
  * @deprecated
  *
- * @see [no-sync](https://eslint.org/docs/rules/no-sync)
+ * @see [no-sync](https://eslint.org/docs/latest/rules/no-sync)
  */
 export type NoSyncRuleConfig = RuleConfig<NoSyncOptions>;
 
@@ -26,7 +26,7 @@ export type NoSyncRuleConfig = RuleConfig<NoSyncOptions>;
  *
  * @deprecated
  *
- * @see [no-sync](https://eslint.org/docs/rules/no-sync)
+ * @see [no-sync](https://eslint.org/docs/latest/rules/no-sync)
  */
 export interface NoSyncRule {
   /**
@@ -34,7 +34,7 @@ export interface NoSyncRule {
    *
    * @deprecated
    *
-   * @see [no-sync](https://eslint.org/docs/rules/no-sync)
+   * @see [no-sync](https://eslint.org/docs/latest/rules/no-sync)
    */
   'no-sync': NoSyncRuleConfig;
 }

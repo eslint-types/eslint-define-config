@@ -32,7 +32,7 @@ export type NoRestrictedModulesOptions = NoRestrictedModulesOption;
  *
  * @deprecated
  *
- * @see [no-restricted-modules](https://eslint.org/docs/rules/no-restricted-modules)
+ * @see [no-restricted-modules](https://eslint.org/docs/latest/rules/no-restricted-modules)
  */
 export type NoRestrictedModulesRuleConfig =
   RuleConfig<NoRestrictedModulesOptions>;
@@ -42,7 +42,7 @@ export type NoRestrictedModulesRuleConfig =
  *
  * @deprecated
  *
- * @see [no-restricted-modules](https://eslint.org/docs/rules/no-restricted-modules)
+ * @see [no-restricted-modules](https://eslint.org/docs/latest/rules/no-restricted-modules)
  */
 export interface NoRestrictedModulesRule {
   /**
@@ -50,7 +50,7 @@ export interface NoRestrictedModulesRule {
    *
    * @deprecated
    *
-   * @see [no-restricted-modules](https://eslint.org/docs/rules/no-restricted-modules)
+   * @see [no-restricted-modules](https://eslint.org/docs/latest/rules/no-restricted-modules)
    */
   'no-restricted-modules': NoRestrictedModulesRuleConfig;
 }

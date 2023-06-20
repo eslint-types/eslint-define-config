@@ -60,20 +60,20 @@ export type MaxLenOptions = [MaxLenOption?, MaxLenConfig?, MaxLenSetting?];
 /**
  * Enforce a maximum line length.
  *
- * @see [max-len](https://eslint.org/docs/rules/max-len)
+ * @see [max-len](https://eslint.org/docs/latest/rules/max-len)
  */
 export type MaxLenRuleConfig = RuleConfig<MaxLenOptions>;
 
 /**
  * Enforce a maximum line length.
  *
- * @see [max-len](https://eslint.org/docs/rules/max-len)
+ * @see [max-len](https://eslint.org/docs/latest/rules/max-len)
  */
 export interface MaxLenRule {
   /**
    * Enforce a maximum line length.
    *
-   * @see [max-len](https://eslint.org/docs/rules/max-len)
+   * @see [max-len](https://eslint.org/docs/latest/rules/max-len)
    */
   'max-len': MaxLenRuleConfig;
 }

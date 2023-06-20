@@ -23,7 +23,7 @@ export type NoUnderscoreDangleOptions = [NoUnderscoreDangleOption?];
 /**
  * Disallow dangling underscores in identifiers.
  *
- * @see [no-underscore-dangle](https://eslint.org/docs/rules/no-underscore-dangle)
+ * @see [no-underscore-dangle](https://eslint.org/docs/latest/rules/no-underscore-dangle)
  */
 export type NoUnderscoreDangleRuleConfig =
   RuleConfig<NoUnderscoreDangleOptions>;
@@ -31,13 +31,13 @@ export type NoUnderscoreDangleRuleConfig =
 /**
  * Disallow dangling underscores in identifiers.
  *
- * @see [no-underscore-dangle](https://eslint.org/docs/rules/no-underscore-dangle)
+ * @see [no-underscore-dangle](https://eslint.org/docs/latest/rules/no-underscore-dangle)
  */
 export interface NoUnderscoreDangleRule {
   /**
    * Disallow dangling underscores in identifiers.
    *
-   * @see [no-underscore-dangle](https://eslint.org/docs/rules/no-underscore-dangle)
+   * @see [no-underscore-dangle](https://eslint.org/docs/latest/rules/no-underscore-dangle)
    */
   'no-underscore-dangle': NoUnderscoreDangleRuleConfig;
 }

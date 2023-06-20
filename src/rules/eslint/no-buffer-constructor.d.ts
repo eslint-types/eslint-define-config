@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @deprecated
  *
- * @see [no-buffer-constructor](https://eslint.org/docs/rules/no-buffer-constructor)
+ * @see [no-buffer-constructor](https://eslint.org/docs/latest/rules/no-buffer-constructor)
  */
 export type NoBufferConstructorRuleConfig = RuleConfig<[]>;
 
@@ -14,7 +14,7 @@ export type NoBufferConstructorRuleConfig = RuleConfig<[]>;
  *
  * @deprecated
  *
- * @see [no-buffer-constructor](https://eslint.org/docs/rules/no-buffer-constructor)
+ * @see [no-buffer-constructor](https://eslint.org/docs/latest/rules/no-buffer-constructor)
  */
 export interface NoBufferConstructorRule {
   /**
@@ -22,7 +22,7 @@ export interface NoBufferConstructorRule {
    *
    * @deprecated
    *
-   * @see [no-buffer-constructor](https://eslint.org/docs/rules/no-buffer-constructor)
+   * @see [no-buffer-constructor](https://eslint.org/docs/latest/rules/no-buffer-constructor)
    */
   'no-buffer-constructor': NoBufferConstructorRuleConfig;
 }

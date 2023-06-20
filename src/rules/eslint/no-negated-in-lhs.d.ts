@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @deprecated
  *
- * @see [no-negated-in-lhs](https://eslint.org/docs/rules/no-negated-in-lhs)
+ * @see [no-negated-in-lhs](https://eslint.org/docs/latest/rules/no-negated-in-lhs)
  */
 export type NoNegatedInLhsRuleConfig = RuleConfig<[]>;
 
@@ -14,7 +14,7 @@ export type NoNegatedInLhsRuleConfig = RuleConfig<[]>;
  *
  * @deprecated
  *
- * @see [no-negated-in-lhs](https://eslint.org/docs/rules/no-negated-in-lhs)
+ * @see [no-negated-in-lhs](https://eslint.org/docs/latest/rules/no-negated-in-lhs)
  */
 export interface NoNegatedInLhsRule {
   /**
@@ -22,7 +22,7 @@ export interface NoNegatedInLhsRule {
    *
    * @deprecated
    *
-   * @see [no-negated-in-lhs](https://eslint.org/docs/rules/no-negated-in-lhs)
+   * @see [no-negated-in-lhs](https://eslint.org/docs/latest/rules/no-negated-in-lhs)
    */
   'no-negated-in-lhs': NoNegatedInLhsRuleConfig;
 }

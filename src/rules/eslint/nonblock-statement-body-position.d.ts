@@ -29,7 +29,7 @@ export type NonblockStatementBodyPositionOptions = [
 /**
  * Enforce the location of single-line statements.
  *
- * @see [nonblock-statement-body-position](https://eslint.org/docs/rules/nonblock-statement-body-position)
+ * @see [nonblock-statement-body-position](https://eslint.org/docs/latest/rules/nonblock-statement-body-position)
  */
 export type NonblockStatementBodyPositionRuleConfig =
   RuleConfig<NonblockStatementBodyPositionOptions>;
@@ -37,13 +37,13 @@ export type NonblockStatementBodyPositionRuleConfig =
 /**
  * Enforce the location of single-line statements.
  *
- * @see [nonblock-statement-body-position](https://eslint.org/docs/rules/nonblock-statement-body-position)
+ * @see [nonblock-statement-body-position](https://eslint.org/docs/latest/rules/nonblock-statement-body-position)
  */
 export interface NonblockStatementBodyPositionRule {
   /**
    * Enforce the location of single-line statements.
    *
-   * @see [nonblock-statement-body-position](https://eslint.org/docs/rules/nonblock-statement-body-position)
+   * @see [nonblock-statement-body-position](https://eslint.org/docs/latest/rules/nonblock-statement-body-position)
    */
   'nonblock-statement-body-position': NonblockStatementBodyPositionRuleConfig;
 }

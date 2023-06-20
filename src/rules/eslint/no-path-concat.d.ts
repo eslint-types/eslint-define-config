@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @deprecated
  *
- * @see [no-path-concat](https://eslint.org/docs/rules/no-path-concat)
+ * @see [no-path-concat](https://eslint.org/docs/latest/rules/no-path-concat)
  */
 export type NoPathConcatRuleConfig = RuleConfig<[]>;
 
@@ -14,7 +14,7 @@ export type NoPathConcatRuleConfig = RuleConfig<[]>;
  *
  * @deprecated
  *
- * @see [no-path-concat](https://eslint.org/docs/rules/no-path-concat)
+ * @see [no-path-concat](https://eslint.org/docs/latest/rules/no-path-concat)
  */
 export interface NoPathConcatRule {
   /**
@@ -22,7 +22,7 @@ export interface NoPathConcatRule {
    *
    * @deprecated
    *
-   * @see [no-path-concat](https://eslint.org/docs/rules/no-path-concat)
+   * @see [no-path-concat](https://eslint.org/docs/latest/rules/no-path-concat)
    */
   'no-path-concat': NoPathConcatRuleConfig;
 }

@@ -28,7 +28,7 @@ export type PreferReflectOptions = [PreferReflectOption?];
  *
  * @deprecated
  *
- * @see [prefer-reflect](https://eslint.org/docs/rules/prefer-reflect)
+ * @see [prefer-reflect](https://eslint.org/docs/latest/rules/prefer-reflect)
  */
 export type PreferReflectRuleConfig = RuleConfig<PreferReflectOptions>;
 
@@ -37,7 +37,7 @@ export type PreferReflectRuleConfig = RuleConfig<PreferReflectOptions>;
  *
  * @deprecated
  *
- * @see [prefer-reflect](https://eslint.org/docs/rules/prefer-reflect)
+ * @see [prefer-reflect](https://eslint.org/docs/latest/rules/prefer-reflect)
  */
 export interface PreferReflectRule {
   /**
@@ -45,7 +45,7 @@ export interface PreferReflectRule {
    *
    * @deprecated
    *
-   * @see [prefer-reflect](https://eslint.org/docs/rules/prefer-reflect)
+   * @see [prefer-reflect](https://eslint.org/docs/latest/rules/prefer-reflect)
    */
   'prefer-reflect': PreferReflectRuleConfig;
 }

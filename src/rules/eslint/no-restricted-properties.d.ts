@@ -24,7 +24,7 @@ export type NoRestrictedPropertiesOptions = NoRestrictedPropertiesOption;
 /**
  * Disallow certain properties on certain objects.
  *
- * @see [no-restricted-properties](https://eslint.org/docs/rules/no-restricted-properties)
+ * @see [no-restricted-properties](https://eslint.org/docs/latest/rules/no-restricted-properties)
  */
 export type NoRestrictedPropertiesRuleConfig =
   RuleConfig<NoRestrictedPropertiesOptions>;
@@ -32,13 +32,13 @@ export type NoRestrictedPropertiesRuleConfig =
 /**
  * Disallow certain properties on certain objects.
  *
- * @see [no-restricted-properties](https://eslint.org/docs/rules/no-restricted-properties)
+ * @see [no-restricted-properties](https://eslint.org/docs/latest/rules/no-restricted-properties)
  */
 export interface NoRestrictedPropertiesRule {
   /**
    * Disallow certain properties on certain objects.
    *
-   * @see [no-restricted-properties](https://eslint.org/docs/rules/no-restricted-properties)
+   * @see [no-restricted-properties](https://eslint.org/docs/latest/rules/no-restricted-properties)
    */
   'no-restricted-properties': NoRestrictedPropertiesRuleConfig;
 }

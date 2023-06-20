@@ -28,20 +28,20 @@ export type SortImportsOptions = [SortImportsOption?];
 /**
  * Enforce sorted import declarations within modules.
  *
- * @see [sort-imports](https://eslint.org/docs/rules/sort-imports)
+ * @see [sort-imports](https://eslint.org/docs/latest/rules/sort-imports)
  */
 export type SortImportsRuleConfig = RuleConfig<SortImportsOptions>;
 
 /**
  * Enforce sorted import declarations within modules.
  *
- * @see [sort-imports](https://eslint.org/docs/rules/sort-imports)
+ * @see [sort-imports](https://eslint.org/docs/latest/rules/sort-imports)
  */
 export interface SortImportsRule {
   /**
    * Enforce sorted import declarations within modules.
    *
-   * @see [sort-imports](https://eslint.org/docs/rules/sort-imports)
+   * @see [sort-imports](https://eslint.org/docs/latest/rules/sort-imports)
    */
   'sort-imports': SortImportsRuleConfig;
 }

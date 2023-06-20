@@ -37,7 +37,7 @@ export type PreferDestructuringOptions = [
 /**
  * Require destructuring from arrays and/or objects.
  *
- * @see [prefer-destructuring](https://eslint.org/docs/rules/prefer-destructuring)
+ * @see [prefer-destructuring](https://eslint.org/docs/latest/rules/prefer-destructuring)
  */
 export type PreferDestructuringRuleConfig =
   RuleConfig<PreferDestructuringOptions>;
@@ -45,13 +45,13 @@ export type PreferDestructuringRuleConfig =
 /**
  * Require destructuring from arrays and/or objects.
  *
- * @see [prefer-destructuring](https://eslint.org/docs/rules/prefer-destructuring)
+ * @see [prefer-destructuring](https://eslint.org/docs/latest/rules/prefer-destructuring)
  */
 export interface PreferDestructuringRule {
   /**
    * Require destructuring from arrays and/or objects.
    *
-   * @see [prefer-destructuring](https://eslint.org/docs/rules/prefer-destructuring)
+   * @see [prefer-destructuring](https://eslint.org/docs/latest/rules/prefer-destructuring)
    */
   'prefer-destructuring': PreferDestructuringRuleConfig;
 }

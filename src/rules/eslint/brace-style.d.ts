@@ -20,20 +20,20 @@ export type BraceStyleOptions = [BraceStyleOption?, BraceStyleConfig?];
 /**
  * Enforce consistent brace style for blocks.
  *
- * @see [brace-style](https://eslint.org/docs/rules/brace-style)
+ * @see [brace-style](https://eslint.org/docs/latest/rules/brace-style)
  */
 export type BraceStyleRuleConfig = RuleConfig<BraceStyleOptions>;
 
 /**
  * Enforce consistent brace style for blocks.
  *
- * @see [brace-style](https://eslint.org/docs/rules/brace-style)
+ * @see [brace-style](https://eslint.org/docs/latest/rules/brace-style)
  */
 export interface BraceStyleRule {
   /**
    * Enforce consistent brace style for blocks.
    *
-   * @see [brace-style](https://eslint.org/docs/rules/brace-style)
+   * @see [brace-style](https://eslint.org/docs/latest/rules/brace-style)
    */
   'brace-style': BraceStyleRuleConfig;
 }

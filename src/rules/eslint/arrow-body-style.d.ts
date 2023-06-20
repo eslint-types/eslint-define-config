@@ -23,20 +23,20 @@ export type ArrowBodyStyleOptions = ArrowBodyStyleOption;
 /**
  * Require braces around arrow function bodies.
  *
- * @see [arrow-body-style](https://eslint.org/docs/rules/arrow-body-style)
+ * @see [arrow-body-style](https://eslint.org/docs/latest/rules/arrow-body-style)
  */
 export type ArrowBodyStyleRuleConfig = RuleConfig<ArrowBodyStyleOptions>;
 
 /**
  * Require braces around arrow function bodies.
  *
- * @see [arrow-body-style](https://eslint.org/docs/rules/arrow-body-style)
+ * @see [arrow-body-style](https://eslint.org/docs/latest/rules/arrow-body-style)
  */
 export interface ArrowBodyStyleRule {
   /**
    * Require braces around arrow function bodies.
    *
-   * @see [arrow-body-style](https://eslint.org/docs/rules/arrow-body-style)
+   * @see [arrow-body-style](https://eslint.org/docs/latest/rules/arrow-body-style)
    */
   'arrow-body-style': ArrowBodyStyleRuleConfig;
 }

@@ -50,20 +50,20 @@ export type IndentOptions = [IndentOption?, IndentConfig?];
 /**
  * Enforce consistent indentation.
  *
- * @see [indent](https://eslint.org/docs/rules/indent)
+ * @see [indent](https://eslint.org/docs/latest/rules/indent)
  */
 export type IndentRuleConfig = RuleConfig<IndentOptions>;
 
 /**
  * Enforce consistent indentation.
  *
- * @see [indent](https://eslint.org/docs/rules/indent)
+ * @see [indent](https://eslint.org/docs/latest/rules/indent)
  */
 export interface IndentRule {
   /**
    * Enforce consistent indentation.
    *
-   * @see [indent](https://eslint.org/docs/rules/indent)
+   * @see [indent](https://eslint.org/docs/latest/rules/indent)
    */
   indent: IndentRuleConfig;
 }

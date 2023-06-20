@@ -38,7 +38,7 @@ export type CapitalizedCommentsOptions = [
 /**
  * Enforce or disallow capitalization of the first letter of a comment.
  *
- * @see [capitalized-comments](https://eslint.org/docs/rules/capitalized-comments)
+ * @see [capitalized-comments](https://eslint.org/docs/latest/rules/capitalized-comments)
  */
 export type CapitalizedCommentsRuleConfig =
   RuleConfig<CapitalizedCommentsOptions>;
@@ -46,13 +46,13 @@ export type CapitalizedCommentsRuleConfig =
 /**
  * Enforce or disallow capitalization of the first letter of a comment.
  *
- * @see [capitalized-comments](https://eslint.org/docs/rules/capitalized-comments)
+ * @see [capitalized-comments](https://eslint.org/docs/latest/rules/capitalized-comments)
  */
 export interface CapitalizedCommentsRule {
   /**
    * Enforce or disallow capitalization of the first letter of a comment.
    *
-   * @see [capitalized-comments](https://eslint.org/docs/rules/capitalized-comments)
+   * @see [capitalized-comments](https://eslint.org/docs/latest/rules/capitalized-comments)
    */
   'capitalized-comments': CapitalizedCommentsRuleConfig;
 }

@@ -28,7 +28,7 @@ export type ValidJsdocOptions = [ValidJsdocOption?];
  *
  * @deprecated
  *
- * @see [valid-jsdoc](https://eslint.org/docs/rules/valid-jsdoc)
+ * @see [valid-jsdoc](https://eslint.org/docs/latest/rules/valid-jsdoc)
  */
 export type ValidJsdocRuleConfig = RuleConfig<ValidJsdocOptions>;
 
@@ -37,7 +37,7 @@ export type ValidJsdocRuleConfig = RuleConfig<ValidJsdocOptions>;
  *
  * @deprecated
  *
- * @see [valid-jsdoc](https://eslint.org/docs/rules/valid-jsdoc)
+ * @see [valid-jsdoc](https://eslint.org/docs/latest/rules/valid-jsdoc)
  */
 export interface ValidJsdocRule {
   /**
@@ -45,7 +45,7 @@ export interface ValidJsdocRule {
    *
    * @deprecated
    *
-   * @see [valid-jsdoc](https://eslint.org/docs/rules/valid-jsdoc)
+   * @see [valid-jsdoc](https://eslint.org/docs/latest/rules/valid-jsdoc)
    */
   'valid-jsdoc': ValidJsdocRuleConfig;
 }

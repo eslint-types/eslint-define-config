@@ -20,20 +20,20 @@ export type FuncStyleOptions = [FuncStyleOption?, FuncStyleConfig?];
 /**
  * Enforce the consistent use of either `function` declarations or expressions.
  *
- * @see [func-style](https://eslint.org/docs/rules/func-style)
+ * @see [func-style](https://eslint.org/docs/latest/rules/func-style)
  */
 export type FuncStyleRuleConfig = RuleConfig<FuncStyleOptions>;
 
 /**
  * Enforce the consistent use of either `function` declarations or expressions.
  *
- * @see [func-style](https://eslint.org/docs/rules/func-style)
+ * @see [func-style](https://eslint.org/docs/latest/rules/func-style)
  */
 export interface FuncStyleRule {
   /**
    * Enforce the consistent use of either `function` declarations or expressions.
    *
-   * @see [func-style](https://eslint.org/docs/rules/func-style)
+   * @see [func-style](https://eslint.org/docs/latest/rules/func-style)
    */
   'func-style': FuncStyleRuleConfig;
 }

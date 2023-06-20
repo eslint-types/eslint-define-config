@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @deprecated
  *
- * @see [no-new-require](https://eslint.org/docs/rules/no-new-require)
+ * @see [no-new-require](https://eslint.org/docs/latest/rules/no-new-require)
  */
 export type NoNewRequireRuleConfig = RuleConfig<[]>;
 
@@ -14,7 +14,7 @@ export type NoNewRequireRuleConfig = RuleConfig<[]>;
  *
  * @deprecated
  *
- * @see [no-new-require](https://eslint.org/docs/rules/no-new-require)
+ * @see [no-new-require](https://eslint.org/docs/latest/rules/no-new-require)
  */
 export interface NoNewRequireRule {
   /**
@@ -22,7 +22,7 @@ export interface NoNewRequireRule {
    *
    * @deprecated
    *
-   * @see [no-new-require](https://eslint.org/docs/rules/no-new-require)
+   * @see [no-new-require](https://eslint.org/docs/latest/rules/no-new-require)
    */
   'no-new-require': NoNewRequireRuleConfig;
 }

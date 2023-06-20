@@ -23,7 +23,7 @@ export type ComputedPropertySpacingOptions = [
 /**
  * Enforce consistent spacing inside computed property brackets.
  *
- * @see [computed-property-spacing](https://eslint.org/docs/rules/computed-property-spacing)
+ * @see [computed-property-spacing](https://eslint.org/docs/latest/rules/computed-property-spacing)
  */
 export type ComputedPropertySpacingRuleConfig =
   RuleConfig<ComputedPropertySpacingOptions>;
@@ -31,13 +31,13 @@ export type ComputedPropertySpacingRuleConfig =
 /**
  * Enforce consistent spacing inside computed property brackets.
  *
- * @see [computed-property-spacing](https://eslint.org/docs/rules/computed-property-spacing)
+ * @see [computed-property-spacing](https://eslint.org/docs/latest/rules/computed-property-spacing)
  */
 export interface ComputedPropertySpacingRule {
   /**
    * Enforce consistent spacing inside computed property brackets.
    *
-   * @see [computed-property-spacing](https://eslint.org/docs/rules/computed-property-spacing)
+   * @see [computed-property-spacing](https://eslint.org/docs/latest/rules/computed-property-spacing)
    */
   'computed-property-spacing': ComputedPropertySpacingRuleConfig;
 }

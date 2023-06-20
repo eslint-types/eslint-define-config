@@ -18,6 +18,7 @@ export type SemiOption =
       'always',
       {
         omitLastInOneLineBlock?: boolean;
+        omitLastInOneLineClassBody?: boolean;
       },
     ];
 
@@ -29,20 +30,20 @@ export type SemiOptions = SemiOption;
 /**
  * Require or disallow semicolons instead of ASI.
  *
- * @see [semi](https://eslint.org/docs/rules/semi)
+ * @see [semi](https://eslint.org/docs/latest/rules/semi)
  */
 export type SemiRuleConfig = RuleConfig<SemiOptions>;
 
 /**
  * Require or disallow semicolons instead of ASI.
  *
- * @see [semi](https://eslint.org/docs/rules/semi)
+ * @see [semi](https://eslint.org/docs/latest/rules/semi)
  */
 export interface SemiRule {
   /**
    * Require or disallow semicolons instead of ASI.
    *
-   * @see [semi](https://eslint.org/docs/rules/semi)
+   * @see [semi](https://eslint.org/docs/latest/rules/semi)
    */
   semi: SemiRuleConfig;
 }

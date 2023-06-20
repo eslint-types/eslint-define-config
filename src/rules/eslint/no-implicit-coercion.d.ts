@@ -19,7 +19,7 @@ export type NoImplicitCoercionOptions = [NoImplicitCoercionOption?];
 /**
  * Disallow shorthand type conversions.
  *
- * @see [no-implicit-coercion](https://eslint.org/docs/rules/no-implicit-coercion)
+ * @see [no-implicit-coercion](https://eslint.org/docs/latest/rules/no-implicit-coercion)
  */
 export type NoImplicitCoercionRuleConfig =
   RuleConfig<NoImplicitCoercionOptions>;
@@ -27,13 +27,13 @@ export type NoImplicitCoercionRuleConfig =
 /**
  * Disallow shorthand type conversions.
  *
- * @see [no-implicit-coercion](https://eslint.org/docs/rules/no-implicit-coercion)
+ * @see [no-implicit-coercion](https://eslint.org/docs/latest/rules/no-implicit-coercion)
  */
 export interface NoImplicitCoercionRule {
   /**
    * Disallow shorthand type conversions.
    *
-   * @see [no-implicit-coercion](https://eslint.org/docs/rules/no-implicit-coercion)
+   * @see [no-implicit-coercion](https://eslint.org/docs/latest/rules/no-implicit-coercion)
    */
   'no-implicit-coercion': NoImplicitCoercionRuleConfig;
 }

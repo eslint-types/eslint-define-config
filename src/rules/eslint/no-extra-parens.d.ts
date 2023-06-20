@@ -31,20 +31,20 @@ export type NoExtraParensOptions = NoExtraParensOption;
 /**
  * Disallow unnecessary parentheses.
  *
- * @see [no-extra-parens](https://eslint.org/docs/rules/no-extra-parens)
+ * @see [no-extra-parens](https://eslint.org/docs/latest/rules/no-extra-parens)
  */
 export type NoExtraParensRuleConfig = RuleConfig<NoExtraParensOptions>;
 
 /**
  * Disallow unnecessary parentheses.
  *
- * @see [no-extra-parens](https://eslint.org/docs/rules/no-extra-parens)
+ * @see [no-extra-parens](https://eslint.org/docs/latest/rules/no-extra-parens)
  */
 export interface NoExtraParensRule {
   /**
    * Disallow unnecessary parentheses.
    *
-   * @see [no-extra-parens](https://eslint.org/docs/rules/no-extra-parens)
+   * @see [no-extra-parens](https://eslint.org/docs/latest/rules/no-extra-parens)
    */
   'no-extra-parens': NoExtraParensRuleConfig;
 }

@@ -15,7 +15,7 @@ export type NewlineAfterVarOptions = [NewlineAfterVarOption?];
  *
  * @deprecated
  *
- * @see [newline-after-var](https://eslint.org/docs/rules/newline-after-var)
+ * @see [newline-after-var](https://eslint.org/docs/latest/rules/newline-after-var)
  */
 export type NewlineAfterVarRuleConfig = RuleConfig<NewlineAfterVarOptions>;
 
@@ -24,7 +24,7 @@ export type NewlineAfterVarRuleConfig = RuleConfig<NewlineAfterVarOptions>;
  *
  * @deprecated
  *
- * @see [newline-after-var](https://eslint.org/docs/rules/newline-after-var)
+ * @see [newline-after-var](https://eslint.org/docs/latest/rules/newline-after-var)
  */
 export interface NewlineAfterVarRule {
   /**
@@ -32,7 +32,7 @@ export interface NewlineAfterVarRule {
    *
    * @deprecated
    *
-   * @see [newline-after-var](https://eslint.org/docs/rules/newline-after-var)
+   * @see [newline-after-var](https://eslint.org/docs/latest/rules/newline-after-var)
    */
   'newline-after-var': NewlineAfterVarRuleConfig;
 }

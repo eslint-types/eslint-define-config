@@ -20,20 +20,20 @@ export type NoMagicNumbersOptions = [NoMagicNumbersOption?];
 /**
  * Disallow magic numbers.
  *
- * @see [no-magic-numbers](https://eslint.org/docs/rules/no-magic-numbers)
+ * @see [no-magic-numbers](https://eslint.org/docs/latest/rules/no-magic-numbers)
  */
 export type NoMagicNumbersRuleConfig = RuleConfig<NoMagicNumbersOptions>;
 
 /**
  * Disallow magic numbers.
  *
- * @see [no-magic-numbers](https://eslint.org/docs/rules/no-magic-numbers)
+ * @see [no-magic-numbers](https://eslint.org/docs/latest/rules/no-magic-numbers)
  */
 export interface NoMagicNumbersRule {
   /**
    * Disallow magic numbers.
    *
-   * @see [no-magic-numbers](https://eslint.org/docs/rules/no-magic-numbers)
+   * @see [no-magic-numbers](https://eslint.org/docs/latest/rules/no-magic-numbers)
    */
   'no-magic-numbers': NoMagicNumbersRuleConfig;
 }

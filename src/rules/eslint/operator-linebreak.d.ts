@@ -25,20 +25,20 @@ export type OperatorLinebreakOptions = [
 /**
  * Enforce consistent linebreak style for operators.
  *
- * @see [operator-linebreak](https://eslint.org/docs/rules/operator-linebreak)
+ * @see [operator-linebreak](https://eslint.org/docs/latest/rules/operator-linebreak)
  */
 export type OperatorLinebreakRuleConfig = RuleConfig<OperatorLinebreakOptions>;
 
 /**
  * Enforce consistent linebreak style for operators.
  *
- * @see [operator-linebreak](https://eslint.org/docs/rules/operator-linebreak)
+ * @see [operator-linebreak](https://eslint.org/docs/latest/rules/operator-linebreak)
  */
 export interface OperatorLinebreakRule {
   /**
    * Enforce consistent linebreak style for operators.
    *
-   * @see [operator-linebreak](https://eslint.org/docs/rules/operator-linebreak)
+   * @see [operator-linebreak](https://eslint.org/docs/latest/rules/operator-linebreak)
    */
   'operator-linebreak': OperatorLinebreakRuleConfig;
 }

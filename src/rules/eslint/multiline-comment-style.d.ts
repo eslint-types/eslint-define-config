@@ -23,7 +23,7 @@ export type MultilineCommentStyleOptions = MultilineCommentStyleOption;
 /**
  * Enforce a particular style for multiline comments.
  *
- * @see [multiline-comment-style](https://eslint.org/docs/rules/multiline-comment-style)
+ * @see [multiline-comment-style](https://eslint.org/docs/latest/rules/multiline-comment-style)
  */
 export type MultilineCommentStyleRuleConfig =
   RuleConfig<MultilineCommentStyleOptions>;
@@ -31,13 +31,13 @@ export type MultilineCommentStyleRuleConfig =
 /**
  * Enforce a particular style for multiline comments.
  *
- * @see [multiline-comment-style](https://eslint.org/docs/rules/multiline-comment-style)
+ * @see [multiline-comment-style](https://eslint.org/docs/latest/rules/multiline-comment-style)
  */
 export interface MultilineCommentStyleRule {
   /**
    * Enforce a particular style for multiline comments.
    *
-   * @see [multiline-comment-style](https://eslint.org/docs/rules/multiline-comment-style)
+   * @see [multiline-comment-style](https://eslint.org/docs/latest/rules/multiline-comment-style)
    */
   'multiline-comment-style': MultilineCommentStyleRuleConfig;
 }

@@ -142,7 +142,7 @@ export type PaddingLineBetweenStatementsOptions =
 /**
  * Require or disallow padding lines between statements.
  *
- * @see [padding-line-between-statements](https://eslint.org/docs/rules/padding-line-between-statements)
+ * @see [padding-line-between-statements](https://eslint.org/docs/latest/rules/padding-line-between-statements)
  */
 export type PaddingLineBetweenStatementsRuleConfig =
   RuleConfig<PaddingLineBetweenStatementsOptions>;
@@ -150,13 +150,13 @@ export type PaddingLineBetweenStatementsRuleConfig =
 /**
  * Require or disallow padding lines between statements.
  *
- * @see [padding-line-between-statements](https://eslint.org/docs/rules/padding-line-between-statements)
+ * @see [padding-line-between-statements](https://eslint.org/docs/latest/rules/padding-line-between-statements)
  */
 export interface PaddingLineBetweenStatementsRule {
   /**
    * Require or disallow padding lines between statements.
    *
-   * @see [padding-line-between-statements](https://eslint.org/docs/rules/padding-line-between-statements)
+   * @see [padding-line-between-statements](https://eslint.org/docs/latest/rules/padding-line-between-statements)
    */
   'padding-line-between-statements': PaddingLineBetweenStatementsRuleConfig;
 }

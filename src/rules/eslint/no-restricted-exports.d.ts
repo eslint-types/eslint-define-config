@@ -26,7 +26,7 @@ export type NoRestrictedExportsOptions = [NoRestrictedExportsOption?];
 /**
  * Disallow specified names in exports.
  *
- * @see [no-restricted-exports](https://eslint.org/docs/rules/no-restricted-exports)
+ * @see [no-restricted-exports](https://eslint.org/docs/latest/rules/no-restricted-exports)
  */
 export type NoRestrictedExportsRuleConfig =
   RuleConfig<NoRestrictedExportsOptions>;
@@ -34,13 +34,13 @@ export type NoRestrictedExportsRuleConfig =
 /**
  * Disallow specified names in exports.
  *
- * @see [no-restricted-exports](https://eslint.org/docs/rules/no-restricted-exports)
+ * @see [no-restricted-exports](https://eslint.org/docs/latest/rules/no-restricted-exports)
  */
 export interface NoRestrictedExportsRule {
   /**
    * Disallow specified names in exports.
    *
-   * @see [no-restricted-exports](https://eslint.org/docs/rules/no-restricted-exports)
+   * @see [no-restricted-exports](https://eslint.org/docs/latest/rules/no-restricted-exports)
    */
   'no-restricted-exports': NoRestrictedExportsRuleConfig;
 }

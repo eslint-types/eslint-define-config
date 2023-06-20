@@ -18,20 +18,20 @@ export type NoShadowOptions = [NoShadowOption?];
 /**
  * Disallow variable declarations from shadowing variables declared in the outer scope.
  *
- * @see [no-shadow](https://eslint.org/docs/rules/no-shadow)
+ * @see [no-shadow](https://eslint.org/docs/latest/rules/no-shadow)
  */
 export type NoShadowRuleConfig = RuleConfig<NoShadowOptions>;
 
 /**
  * Disallow variable declarations from shadowing variables declared in the outer scope.
  *
- * @see [no-shadow](https://eslint.org/docs/rules/no-shadow)
+ * @see [no-shadow](https://eslint.org/docs/latest/rules/no-shadow)
  */
 export interface NoShadowRule {
   /**
    * Disallow variable declarations from shadowing variables declared in the outer scope.
    *
-   * @see [no-shadow](https://eslint.org/docs/rules/no-shadow)
+   * @see [no-shadow](https://eslint.org/docs/latest/rules/no-shadow)
    */
   'no-shadow': NoShadowRuleConfig;
 }

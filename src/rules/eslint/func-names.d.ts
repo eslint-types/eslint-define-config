@@ -22,20 +22,20 @@ export type FuncNamesOptions = FuncNamesOption;
 /**
  * Require or disallow named `function` expressions.
  *
- * @see [func-names](https://eslint.org/docs/rules/func-names)
+ * @see [func-names](https://eslint.org/docs/latest/rules/func-names)
  */
 export type FuncNamesRuleConfig = RuleConfig<FuncNamesOptions>;
 
 /**
  * Require or disallow named `function` expressions.
  *
- * @see [func-names](https://eslint.org/docs/rules/func-names)
+ * @see [func-names](https://eslint.org/docs/latest/rules/func-names)
  */
 export interface FuncNamesRule {
   /**
    * Require or disallow named `function` expressions.
    *
-   * @see [func-names](https://eslint.org/docs/rules/func-names)
+   * @see [func-names](https://eslint.org/docs/latest/rules/func-names)
    */
   'func-names': FuncNamesRuleConfig;
 }

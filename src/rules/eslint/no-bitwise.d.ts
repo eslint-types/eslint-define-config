@@ -30,20 +30,20 @@ export type NoBitwiseOptions = [NoBitwiseOption?];
 /**
  * Disallow bitwise operators.
  *
- * @see [no-bitwise](https://eslint.org/docs/rules/no-bitwise)
+ * @see [no-bitwise](https://eslint.org/docs/latest/rules/no-bitwise)
  */
 export type NoBitwiseRuleConfig = RuleConfig<NoBitwiseOptions>;
 
 /**
  * Disallow bitwise operators.
  *
- * @see [no-bitwise](https://eslint.org/docs/rules/no-bitwise)
+ * @see [no-bitwise](https://eslint.org/docs/latest/rules/no-bitwise)
  */
 export interface NoBitwiseRule {
   /**
    * Disallow bitwise operators.
    *
-   * @see [no-bitwise](https://eslint.org/docs/rules/no-bitwise)
+   * @see [no-bitwise](https://eslint.org/docs/latest/rules/no-bitwise)
    */
   'no-bitwise': NoBitwiseRuleConfig;
 }

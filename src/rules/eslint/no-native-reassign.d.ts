@@ -17,7 +17,7 @@ export type NoNativeReassignOptions = [NoNativeReassignOption?];
  *
  * @deprecated
  *
- * @see [no-native-reassign](https://eslint.org/docs/rules/no-native-reassign)
+ * @see [no-native-reassign](https://eslint.org/docs/latest/rules/no-native-reassign)
  */
 export type NoNativeReassignRuleConfig = RuleConfig<NoNativeReassignOptions>;
 
@@ -26,7 +26,7 @@ export type NoNativeReassignRuleConfig = RuleConfig<NoNativeReassignOptions>;
  *
  * @deprecated
  *
- * @see [no-native-reassign](https://eslint.org/docs/rules/no-native-reassign)
+ * @see [no-native-reassign](https://eslint.org/docs/latest/rules/no-native-reassign)
  */
 export interface NoNativeReassignRule {
   /**
@@ -34,7 +34,7 @@ export interface NoNativeReassignRule {
    *
    * @deprecated
    *
-   * @see [no-native-reassign](https://eslint.org/docs/rules/no-native-reassign)
+   * @see [no-native-reassign](https://eslint.org/docs/latest/rules/no-native-reassign)
    */
   'no-native-reassign': NoNativeReassignRuleConfig;
 }

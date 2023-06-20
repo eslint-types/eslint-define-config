@@ -25,20 +25,20 @@ export type MaxStatementsOptions = [MaxStatementsOption?, MaxStatementsConfig?];
 /**
  * Enforce a maximum number of statements allowed in function blocks.
  *
- * @see [max-statements](https://eslint.org/docs/rules/max-statements)
+ * @see [max-statements](https://eslint.org/docs/latest/rules/max-statements)
  */
 export type MaxStatementsRuleConfig = RuleConfig<MaxStatementsOptions>;
 
 /**
  * Enforce a maximum number of statements allowed in function blocks.
  *
- * @see [max-statements](https://eslint.org/docs/rules/max-statements)
+ * @see [max-statements](https://eslint.org/docs/latest/rules/max-statements)
  */
 export interface MaxStatementsRule {
   /**
    * Enforce a maximum number of statements allowed in function blocks.
    *
-   * @see [max-statements](https://eslint.org/docs/rules/max-statements)
+   * @see [max-statements](https://eslint.org/docs/latest/rules/max-statements)
    */
   'max-statements': MaxStatementsRuleConfig;
 }

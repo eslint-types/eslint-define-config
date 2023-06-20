@@ -18,20 +18,20 @@ export type CurlyOptions = CurlyOption;
 /**
  * Enforce consistent brace style for all control statements.
  *
- * @see [curly](https://eslint.org/docs/rules/curly)
+ * @see [curly](https://eslint.org/docs/latest/rules/curly)
  */
 export type CurlyRuleConfig = RuleConfig<CurlyOptions>;
 
 /**
  * Enforce consistent brace style for all control statements.
  *
- * @see [curly](https://eslint.org/docs/rules/curly)
+ * @see [curly](https://eslint.org/docs/latest/rules/curly)
  */
 export interface CurlyRule {
   /**
    * Enforce consistent brace style for all control statements.
    *
-   * @see [curly](https://eslint.org/docs/rules/curly)
+   * @see [curly](https://eslint.org/docs/latest/rules/curly)
    */
   curly: CurlyRuleConfig;
 }

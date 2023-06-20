@@ -25,7 +25,7 @@ export type LogicalAssignmentOperatorsOptions =
 /**
  * Require or disallow logical assignment operator shorthand.
  *
- * @see [logical-assignment-operators](https://eslint.org/docs/rules/logical-assignment-operators)
+ * @see [logical-assignment-operators](https://eslint.org/docs/latest/rules/logical-assignment-operators)
  */
 export type LogicalAssignmentOperatorsRuleConfig =
   RuleConfig<LogicalAssignmentOperatorsOptions>;
@@ -33,13 +33,13 @@ export type LogicalAssignmentOperatorsRuleConfig =
 /**
  * Require or disallow logical assignment operator shorthand.
  *
- * @see [logical-assignment-operators](https://eslint.org/docs/rules/logical-assignment-operators)
+ * @see [logical-assignment-operators](https://eslint.org/docs/latest/rules/logical-assignment-operators)
  */
 export interface LogicalAssignmentOperatorsRule {
   /**
    * Require or disallow logical assignment operator shorthand.
    *
-   * @see [logical-assignment-operators](https://eslint.org/docs/rules/logical-assignment-operators)
+   * @see [logical-assignment-operators](https://eslint.org/docs/latest/rules/logical-assignment-operators)
    */
   'logical-assignment-operators': LogicalAssignmentOperatorsRuleConfig;
 }

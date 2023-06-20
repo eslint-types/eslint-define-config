@@ -20,7 +20,7 @@ export type LinesAroundDirectiveOptions = [LinesAroundDirectiveOption?];
  *
  * @deprecated
  *
- * @see [lines-around-directive](https://eslint.org/docs/rules/lines-around-directive)
+ * @see [lines-around-directive](https://eslint.org/docs/latest/rules/lines-around-directive)
  */
 export type LinesAroundDirectiveRuleConfig =
   RuleConfig<LinesAroundDirectiveOptions>;
@@ -30,7 +30,7 @@ export type LinesAroundDirectiveRuleConfig =
  *
  * @deprecated
  *
- * @see [lines-around-directive](https://eslint.org/docs/rules/lines-around-directive)
+ * @see [lines-around-directive](https://eslint.org/docs/latest/rules/lines-around-directive)
  */
 export interface LinesAroundDirectiveRule {
   /**
@@ -38,7 +38,7 @@ export interface LinesAroundDirectiveRule {
    *
    * @deprecated
    *
-   * @see [lines-around-directive](https://eslint.org/docs/rules/lines-around-directive)
+   * @see [lines-around-directive](https://eslint.org/docs/latest/rules/lines-around-directive)
    */
   'lines-around-directive': LinesAroundDirectiveRuleConfig;
 }

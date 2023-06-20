@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @deprecated
  *
- * @see [global-require](https://eslint.org/docs/rules/global-require)
+ * @see [global-require](https://eslint.org/docs/latest/rules/global-require)
  */
 export type GlobalRequireRuleConfig = RuleConfig<[]>;
 
@@ -14,7 +14,7 @@ export type GlobalRequireRuleConfig = RuleConfig<[]>;
  *
  * @deprecated
  *
- * @see [global-require](https://eslint.org/docs/rules/global-require)
+ * @see [global-require](https://eslint.org/docs/latest/rules/global-require)
  */
 export interface GlobalRequireRule {
   /**
@@ -22,7 +22,7 @@ export interface GlobalRequireRule {
    *
    * @deprecated
    *
-   * @see [global-require](https://eslint.org/docs/rules/global-require)
+   * @see [global-require](https://eslint.org/docs/latest/rules/global-require)
    */
   'global-require': GlobalRequireRuleConfig;
 }

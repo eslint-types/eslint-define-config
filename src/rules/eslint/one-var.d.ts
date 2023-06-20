@@ -24,20 +24,20 @@ export type OneVarOptions = [OneVarOption?];
 /**
  * Enforce variables to be declared either together or separately in functions.
  *
- * @see [one-var](https://eslint.org/docs/rules/one-var)
+ * @see [one-var](https://eslint.org/docs/latest/rules/one-var)
  */
 export type OneVarRuleConfig = RuleConfig<OneVarOptions>;
 
 /**
  * Enforce variables to be declared either together or separately in functions.
  *
- * @see [one-var](https://eslint.org/docs/rules/one-var)
+ * @see [one-var](https://eslint.org/docs/latest/rules/one-var)
  */
 export interface OneVarRule {
   /**
    * Enforce variables to be declared either together or separately in functions.
    *
-   * @see [one-var](https://eslint.org/docs/rules/one-var)
+   * @see [one-var](https://eslint.org/docs/latest/rules/one-var)
    */
   'one-var': OneVarRuleConfig;
 }

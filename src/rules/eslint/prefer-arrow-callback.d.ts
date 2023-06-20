@@ -16,7 +16,7 @@ export type PreferArrowCallbackOptions = [PreferArrowCallbackOption?];
 /**
  * Require using arrow functions for callbacks.
  *
- * @see [prefer-arrow-callback](https://eslint.org/docs/rules/prefer-arrow-callback)
+ * @see [prefer-arrow-callback](https://eslint.org/docs/latest/rules/prefer-arrow-callback)
  */
 export type PreferArrowCallbackRuleConfig =
   RuleConfig<PreferArrowCallbackOptions>;
@@ -24,13 +24,13 @@ export type PreferArrowCallbackRuleConfig =
 /**
  * Require using arrow functions for callbacks.
  *
- * @see [prefer-arrow-callback](https://eslint.org/docs/rules/prefer-arrow-callback)
+ * @see [prefer-arrow-callback](https://eslint.org/docs/latest/rules/prefer-arrow-callback)
  */
 export interface PreferArrowCallbackRule {
   /**
    * Require using arrow functions for callbacks.
    *
-   * @see [prefer-arrow-callback](https://eslint.org/docs/rules/prefer-arrow-callback)
+   * @see [prefer-arrow-callback](https://eslint.org/docs/latest/rules/prefer-arrow-callback)
    */
   'prefer-arrow-callback': PreferArrowCallbackRuleConfig;
 }

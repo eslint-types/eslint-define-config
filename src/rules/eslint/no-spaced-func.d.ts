@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @deprecated
  *
- * @see [no-spaced-func](https://eslint.org/docs/rules/no-spaced-func)
+ * @see [no-spaced-func](https://eslint.org/docs/latest/rules/no-spaced-func)
  */
 export type NoSpacedFuncRuleConfig = RuleConfig<[]>;
 
@@ -14,7 +14,7 @@ export type NoSpacedFuncRuleConfig = RuleConfig<[]>;
  *
  * @deprecated
  *
- * @see [no-spaced-func](https://eslint.org/docs/rules/no-spaced-func)
+ * @see [no-spaced-func](https://eslint.org/docs/latest/rules/no-spaced-func)
  */
 export interface NoSpacedFuncRule {
   /**
@@ -22,7 +22,7 @@ export interface NoSpacedFuncRule {
    *
    * @deprecated
    *
-   * @see [no-spaced-func](https://eslint.org/docs/rules/no-spaced-func)
+   * @see [no-spaced-func](https://eslint.org/docs/latest/rules/no-spaced-func)
    */
   'no-spaced-func': NoSpacedFuncRuleConfig;
 }

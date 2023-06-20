@@ -24,20 +24,20 @@ export type NoUnusedVarsOptions = [NoUnusedVarsOption?];
 /**
  * Disallow unused variables.
  *
- * @see [no-unused-vars](https://eslint.org/docs/rules/no-unused-vars)
+ * @see [no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars)
  */
 export type NoUnusedVarsRuleConfig = RuleConfig<NoUnusedVarsOptions>;
 
 /**
  * Disallow unused variables.
  *
- * @see [no-unused-vars](https://eslint.org/docs/rules/no-unused-vars)
+ * @see [no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars)
  */
 export interface NoUnusedVarsRule {
   /**
    * Disallow unused variables.
    *
-   * @see [no-unused-vars](https://eslint.org/docs/rules/no-unused-vars)
+   * @see [no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars)
    */
   'no-unused-vars': NoUnusedVarsRuleConfig;
 }

@@ -20,7 +20,7 @@ export type LineCommentPositionOptions = [LineCommentPositionOption?];
 /**
  * Enforce position of line comments.
  *
- * @see [line-comment-position](https://eslint.org/docs/rules/line-comment-position)
+ * @see [line-comment-position](https://eslint.org/docs/latest/rules/line-comment-position)
  */
 export type LineCommentPositionRuleConfig =
   RuleConfig<LineCommentPositionOptions>;
@@ -28,13 +28,13 @@ export type LineCommentPositionRuleConfig =
 /**
  * Enforce position of line comments.
  *
- * @see [line-comment-position](https://eslint.org/docs/rules/line-comment-position)
+ * @see [line-comment-position](https://eslint.org/docs/latest/rules/line-comment-position)
  */
 export interface LineCommentPositionRule {
   /**
    * Enforce position of line comments.
    *
-   * @see [line-comment-position](https://eslint.org/docs/rules/line-comment-position)
+   * @see [line-comment-position](https://eslint.org/docs/latest/rules/line-comment-position)
    */
   'line-comment-position': LineCommentPositionRuleConfig;
 }

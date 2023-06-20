@@ -20,7 +20,7 @@ export type NoMixedRequiresOptions = [NoMixedRequiresOption?];
  *
  * @deprecated
  *
- * @see [no-mixed-requires](https://eslint.org/docs/rules/no-mixed-requires)
+ * @see [no-mixed-requires](https://eslint.org/docs/latest/rules/no-mixed-requires)
  */
 export type NoMixedRequiresRuleConfig = RuleConfig<NoMixedRequiresOptions>;
 
@@ -29,7 +29,7 @@ export type NoMixedRequiresRuleConfig = RuleConfig<NoMixedRequiresOptions>;
  *
  * @deprecated
  *
- * @see [no-mixed-requires](https://eslint.org/docs/rules/no-mixed-requires)
+ * @see [no-mixed-requires](https://eslint.org/docs/latest/rules/no-mixed-requires)
  */
 export interface NoMixedRequiresRule {
   /**
@@ -37,7 +37,7 @@ export interface NoMixedRequiresRule {
    *
    * @deprecated
    *
-   * @see [no-mixed-requires](https://eslint.org/docs/rules/no-mixed-requires)
+   * @see [no-mixed-requires](https://eslint.org/docs/latest/rules/no-mixed-requires)
    */
   'no-mixed-requires': NoMixedRequiresRuleConfig;
 }

@@ -18,7 +18,7 @@ export type NoUnusedExpressionsOptions = [NoUnusedExpressionsOption?];
 /**
  * Disallow unused expressions.
  *
- * @see [no-unused-expressions](https://eslint.org/docs/rules/no-unused-expressions)
+ * @see [no-unused-expressions](https://eslint.org/docs/latest/rules/no-unused-expressions)
  */
 export type NoUnusedExpressionsRuleConfig =
   RuleConfig<NoUnusedExpressionsOptions>;
@@ -26,13 +26,13 @@ export type NoUnusedExpressionsRuleConfig =
 /**
  * Disallow unused expressions.
  *
- * @see [no-unused-expressions](https://eslint.org/docs/rules/no-unused-expressions)
+ * @see [no-unused-expressions](https://eslint.org/docs/latest/rules/no-unused-expressions)
  */
 export interface NoUnusedExpressionsRule {
   /**
    * Disallow unused expressions.
    *
-   * @see [no-unused-expressions](https://eslint.org/docs/rules/no-unused-expressions)
+   * @see [no-unused-expressions](https://eslint.org/docs/latest/rules/no-unused-expressions)
    */
   'no-unused-expressions': NoUnusedExpressionsRuleConfig;
 }

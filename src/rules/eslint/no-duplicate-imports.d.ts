@@ -15,7 +15,7 @@ export type NoDuplicateImportsOptions = [NoDuplicateImportsOption?];
 /**
  * Disallow duplicate module imports.
  *
- * @see [no-duplicate-imports](https://eslint.org/docs/rules/no-duplicate-imports)
+ * @see [no-duplicate-imports](https://eslint.org/docs/latest/rules/no-duplicate-imports)
  */
 export type NoDuplicateImportsRuleConfig =
   RuleConfig<NoDuplicateImportsOptions>;
@@ -23,13 +23,13 @@ export type NoDuplicateImportsRuleConfig =
 /**
  * Disallow duplicate module imports.
  *
- * @see [no-duplicate-imports](https://eslint.org/docs/rules/no-duplicate-imports)
+ * @see [no-duplicate-imports](https://eslint.org/docs/latest/rules/no-duplicate-imports)
  */
 export interface NoDuplicateImportsRule {
   /**
    * Disallow duplicate module imports.
    *
-   * @see [no-duplicate-imports](https://eslint.org/docs/rules/no-duplicate-imports)
+   * @see [no-duplicate-imports](https://eslint.org/docs/latest/rules/no-duplicate-imports)
    */
   'no-duplicate-imports': NoDuplicateImportsRuleConfig;
 }

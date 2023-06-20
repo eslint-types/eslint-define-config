@@ -16,7 +16,7 @@ export type GroupedAccessorPairsOptions = [GroupedAccessorPairsOption?];
 /**
  * Require grouped accessor pairs in object literals and classes.
  *
- * @see [grouped-accessor-pairs](https://eslint.org/docs/rules/grouped-accessor-pairs)
+ * @see [grouped-accessor-pairs](https://eslint.org/docs/latest/rules/grouped-accessor-pairs)
  */
 export type GroupedAccessorPairsRuleConfig =
   RuleConfig<GroupedAccessorPairsOptions>;
@@ -24,13 +24,13 @@ export type GroupedAccessorPairsRuleConfig =
 /**
  * Require grouped accessor pairs in object literals and classes.
  *
- * @see [grouped-accessor-pairs](https://eslint.org/docs/rules/grouped-accessor-pairs)
+ * @see [grouped-accessor-pairs](https://eslint.org/docs/latest/rules/grouped-accessor-pairs)
  */
 export interface GroupedAccessorPairsRule {
   /**
    * Require grouped accessor pairs in object literals and classes.
    *
-   * @see [grouped-accessor-pairs](https://eslint.org/docs/rules/grouped-accessor-pairs)
+   * @see [grouped-accessor-pairs](https://eslint.org/docs/latest/rules/grouped-accessor-pairs)
    */
   'grouped-accessor-pairs': GroupedAccessorPairsRuleConfig;
 }

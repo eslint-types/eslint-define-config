@@ -13,20 +13,20 @@ export type StrictOptions = [StrictOption?];
 /**
  * Require or disallow strict mode directives.
  *
- * @see [strict](https://eslint.org/docs/rules/strict)
+ * @see [strict](https://eslint.org/docs/latest/rules/strict)
  */
 export type StrictRuleConfig = RuleConfig<StrictOptions>;
 
 /**
  * Require or disallow strict mode directives.
  *
- * @see [strict](https://eslint.org/docs/rules/strict)
+ * @see [strict](https://eslint.org/docs/latest/rules/strict)
  */
 export interface StrictRule {
   /**
    * Require or disallow strict mode directives.
    *
-   * @see [strict](https://eslint.org/docs/rules/strict)
+   * @see [strict](https://eslint.org/docs/latest/rules/strict)
    */
   strict: StrictRuleConfig;
 }

@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @deprecated
  *
- * @see [no-process-env](https://eslint.org/docs/rules/no-process-env)
+ * @see [no-process-env](https://eslint.org/docs/latest/rules/no-process-env)
  */
 export type NoProcessEnvRuleConfig = RuleConfig<[]>;
 
@@ -14,7 +14,7 @@ export type NoProcessEnvRuleConfig = RuleConfig<[]>;
  *
  * @deprecated
  *
- * @see [no-process-env](https://eslint.org/docs/rules/no-process-env)
+ * @see [no-process-env](https://eslint.org/docs/latest/rules/no-process-env)
  */
 export interface NoProcessEnvRule {
   /**
@@ -22,7 +22,7 @@ export interface NoProcessEnvRule {
    *
    * @deprecated
    *
-   * @see [no-process-env](https://eslint.org/docs/rules/no-process-env)
+   * @see [no-process-env](https://eslint.org/docs/latest/rules/no-process-env)
    */
   'no-process-env': NoProcessEnvRuleConfig;
 }

@@ -26,20 +26,20 @@ export type NoEmptyFunctionOptions = [NoEmptyFunctionOption?];
 /**
  * Disallow empty functions.
  *
- * @see [no-empty-function](https://eslint.org/docs/rules/no-empty-function)
+ * @see [no-empty-function](https://eslint.org/docs/latest/rules/no-empty-function)
  */
 export type NoEmptyFunctionRuleConfig = RuleConfig<NoEmptyFunctionOptions>;
 
 /**
  * Disallow empty functions.
  *
- * @see [no-empty-function](https://eslint.org/docs/rules/no-empty-function)
+ * @see [no-empty-function](https://eslint.org/docs/latest/rules/no-empty-function)
  */
 export interface NoEmptyFunctionRule {
   /**
    * Disallow empty functions.
    *
-   * @see [no-empty-function](https://eslint.org/docs/rules/no-empty-function)
+   * @see [no-empty-function](https://eslint.org/docs/latest/rules/no-empty-function)
    */
   'no-empty-function': NoEmptyFunctionRuleConfig;
 }

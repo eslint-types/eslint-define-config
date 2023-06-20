@@ -23,7 +23,7 @@ export type LinesBetweenClassMembersOptions = [
 /**
  * Require or disallow an empty line between class members.
  *
- * @see [lines-between-class-members](https://eslint.org/docs/rules/lines-between-class-members)
+ * @see [lines-between-class-members](https://eslint.org/docs/latest/rules/lines-between-class-members)
  */
 export type LinesBetweenClassMembersRuleConfig =
   RuleConfig<LinesBetweenClassMembersOptions>;
@@ -31,13 +31,13 @@ export type LinesBetweenClassMembersRuleConfig =
 /**
  * Require or disallow an empty line between class members.
  *
- * @see [lines-between-class-members](https://eslint.org/docs/rules/lines-between-class-members)
+ * @see [lines-between-class-members](https://eslint.org/docs/latest/rules/lines-between-class-members)
  */
 export interface LinesBetweenClassMembersRule {
   /**
    * Require or disallow an empty line between class members.
    *
-   * @see [lines-between-class-members](https://eslint.org/docs/rules/lines-between-class-members)
+   * @see [lines-between-class-members](https://eslint.org/docs/latest/rules/lines-between-class-members)
    */
   'lines-between-class-members': LinesBetweenClassMembersRuleConfig;
 }

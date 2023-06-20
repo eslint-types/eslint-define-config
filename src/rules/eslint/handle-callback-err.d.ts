@@ -15,7 +15,7 @@ export type HandleCallbackErrOptions = [HandleCallbackErrOption?];
  *
  * @deprecated
  *
- * @see [handle-callback-err](https://eslint.org/docs/rules/handle-callback-err)
+ * @see [handle-callback-err](https://eslint.org/docs/latest/rules/handle-callback-err)
  */
 export type HandleCallbackErrRuleConfig = RuleConfig<HandleCallbackErrOptions>;
 
@@ -24,7 +24,7 @@ export type HandleCallbackErrRuleConfig = RuleConfig<HandleCallbackErrOptions>;
  *
  * @deprecated
  *
- * @see [handle-callback-err](https://eslint.org/docs/rules/handle-callback-err)
+ * @see [handle-callback-err](https://eslint.org/docs/latest/rules/handle-callback-err)
  */
 export interface HandleCallbackErrRule {
   /**
@@ -32,7 +32,7 @@ export interface HandleCallbackErrRule {
    *
    * @deprecated
    *
-   * @see [handle-callback-err](https://eslint.org/docs/rules/handle-callback-err)
+   * @see [handle-callback-err](https://eslint.org/docs/latest/rules/handle-callback-err)
    */
   'handle-callback-err': HandleCallbackErrRuleConfig;
 }

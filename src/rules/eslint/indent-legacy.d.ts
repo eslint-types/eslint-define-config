@@ -48,7 +48,7 @@ export type IndentLegacyOptions = [IndentLegacyOption?, IndentLegacyConfig?];
  *
  * @deprecated
  *
- * @see [indent-legacy](https://eslint.org/docs/rules/indent-legacy)
+ * @see [indent-legacy](https://eslint.org/docs/latest/rules/indent-legacy)
  */
 export type IndentLegacyRuleConfig = RuleConfig<IndentLegacyOptions>;
 
@@ -57,7 +57,7 @@ export type IndentLegacyRuleConfig = RuleConfig<IndentLegacyOptions>;
  *
  * @deprecated
  *
- * @see [indent-legacy](https://eslint.org/docs/rules/indent-legacy)
+ * @see [indent-legacy](https://eslint.org/docs/latest/rules/indent-legacy)
  */
 export interface IndentLegacyRule {
   /**
@@ -65,7 +65,7 @@ export interface IndentLegacyRule {
    *
    * @deprecated
    *
-   * @see [indent-legacy](https://eslint.org/docs/rules/indent-legacy)
+   * @see [indent-legacy](https://eslint.org/docs/latest/rules/indent-legacy)
    */
   'indent-legacy': IndentLegacyRuleConfig;
 }

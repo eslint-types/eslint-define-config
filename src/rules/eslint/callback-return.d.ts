@@ -15,7 +15,7 @@ export type CallbackReturnOptions = [CallbackReturnOption?];
  *
  * @deprecated
  *
- * @see [callback-return](https://eslint.org/docs/rules/callback-return)
+ * @see [callback-return](https://eslint.org/docs/latest/rules/callback-return)
  */
 export type CallbackReturnRuleConfig = RuleConfig<CallbackReturnOptions>;
 
@@ -24,7 +24,7 @@ export type CallbackReturnRuleConfig = RuleConfig<CallbackReturnOptions>;
  *
  * @deprecated
  *
- * @see [callback-return](https://eslint.org/docs/rules/callback-return)
+ * @see [callback-return](https://eslint.org/docs/latest/rules/callback-return)
  */
 export interface CallbackReturnRule {
   /**
@@ -32,7 +32,7 @@ export interface CallbackReturnRule {
    *
    * @deprecated
    *
-   * @see [callback-return](https://eslint.org/docs/rules/callback-return)
+   * @see [callback-return](https://eslint.org/docs/latest/rules/callback-return)
    */
   'callback-return': CallbackReturnRuleConfig;
 }

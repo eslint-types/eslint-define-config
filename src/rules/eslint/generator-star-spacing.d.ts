@@ -36,7 +36,7 @@ export type GeneratorStarSpacingOptions = [GeneratorStarSpacingOption?];
 /**
  * Enforce consistent spacing around `*` operators in generator functions.
  *
- * @see [generator-star-spacing](https://eslint.org/docs/rules/generator-star-spacing)
+ * @see [generator-star-spacing](https://eslint.org/docs/latest/rules/generator-star-spacing)
  */
 export type GeneratorStarSpacingRuleConfig =
   RuleConfig<GeneratorStarSpacingOptions>;
@@ -44,13 +44,13 @@ export type GeneratorStarSpacingRuleConfig =
 /**
  * Enforce consistent spacing around `*` operators in generator functions.
  *
- * @see [generator-star-spacing](https://eslint.org/docs/rules/generator-star-spacing)
+ * @see [generator-star-spacing](https://eslint.org/docs/latest/rules/generator-star-spacing)
  */
 export interface GeneratorStarSpacingRule {
   /**
    * Enforce consistent spacing around `*` operators in generator functions.
    *
-   * @see [generator-star-spacing](https://eslint.org/docs/rules/generator-star-spacing)
+   * @see [generator-star-spacing](https://eslint.org/docs/latest/rules/generator-star-spacing)
    */
   'generator-star-spacing': GeneratorStarSpacingRuleConfig;
 }

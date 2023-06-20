@@ -13,20 +13,20 @@ export type IdDenylistOptions = IdDenylistOption;
 /**
  * Disallow specified identifiers.
  *
- * @see [id-denylist](https://eslint.org/docs/rules/id-denylist)
+ * @see [id-denylist](https://eslint.org/docs/latest/rules/id-denylist)
  */
 export type IdDenylistRuleConfig = RuleConfig<IdDenylistOptions>;
 
 /**
  * Disallow specified identifiers.
  *
- * @see [id-denylist](https://eslint.org/docs/rules/id-denylist)
+ * @see [id-denylist](https://eslint.org/docs/latest/rules/id-denylist)
  */
 export interface IdDenylistRule {
   /**
    * Disallow specified identifiers.
    *
-   * @see [id-denylist](https://eslint.org/docs/rules/id-denylist)
+   * @see [id-denylist](https://eslint.org/docs/latest/rules/id-denylist)
    */
   'id-denylist': IdDenylistRuleConfig;
 }

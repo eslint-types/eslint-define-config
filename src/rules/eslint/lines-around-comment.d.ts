@@ -29,7 +29,7 @@ export type LinesAroundCommentOptions = [LinesAroundCommentOption?];
 /**
  * Require empty lines around comments.
  *
- * @see [lines-around-comment](https://eslint.org/docs/rules/lines-around-comment)
+ * @see [lines-around-comment](https://eslint.org/docs/latest/rules/lines-around-comment)
  */
 export type LinesAroundCommentRuleConfig =
   RuleConfig<LinesAroundCommentOptions>;
@@ -37,13 +37,13 @@ export type LinesAroundCommentRuleConfig =
 /**
  * Require empty lines around comments.
  *
- * @see [lines-around-comment](https://eslint.org/docs/rules/lines-around-comment)
+ * @see [lines-around-comment](https://eslint.org/docs/latest/rules/lines-around-comment)
  */
 export interface LinesAroundCommentRule {
   /**
    * Require empty lines around comments.
    *
-   * @see [lines-around-comment](https://eslint.org/docs/rules/lines-around-comment)
+   * @see [lines-around-comment](https://eslint.org/docs/latest/rules/lines-around-comment)
    */
   'lines-around-comment': LinesAroundCommentRuleConfig;
 }

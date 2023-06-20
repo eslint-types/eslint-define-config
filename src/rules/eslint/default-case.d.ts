@@ -15,20 +15,20 @@ export type DefaultCaseOptions = [DefaultCaseOption?];
 /**
  * Require `default` cases in `switch` statements.
  *
- * @see [default-case](https://eslint.org/docs/rules/default-case)
+ * @see [default-case](https://eslint.org/docs/latest/rules/default-case)
  */
 export type DefaultCaseRuleConfig = RuleConfig<DefaultCaseOptions>;
 
 /**
  * Require `default` cases in `switch` statements.
  *
- * @see [default-case](https://eslint.org/docs/rules/default-case)
+ * @see [default-case](https://eslint.org/docs/latest/rules/default-case)
  */
 export interface DefaultCaseRule {
   /**
    * Require `default` cases in `switch` statements.
    *
-   * @see [default-case](https://eslint.org/docs/rules/default-case)
+   * @see [default-case](https://eslint.org/docs/latest/rules/default-case)
    */
   'default-case': DefaultCaseRuleConfig;
 }

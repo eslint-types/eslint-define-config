@@ -15,7 +15,7 @@ export type IdBlacklistOptions = IdBlacklistOption;
  *
  * @deprecated
  *
- * @see [id-blacklist](https://eslint.org/docs/rules/id-blacklist)
+ * @see [id-blacklist](https://eslint.org/docs/latest/rules/id-blacklist)
  */
 export type IdBlacklistRuleConfig = RuleConfig<IdBlacklistOptions>;
 
@@ -24,7 +24,7 @@ export type IdBlacklistRuleConfig = RuleConfig<IdBlacklistOptions>;
  *
  * @deprecated
  *
- * @see [id-blacklist](https://eslint.org/docs/rules/id-blacklist)
+ * @see [id-blacklist](https://eslint.org/docs/latest/rules/id-blacklist)
  */
 export interface IdBlacklistRule {
   /**
@@ -32,7 +32,7 @@ export interface IdBlacklistRule {
    *
    * @deprecated
    *
-   * @see [id-blacklist](https://eslint.org/docs/rules/id-blacklist)
+   * @see [id-blacklist](https://eslint.org/docs/latest/rules/id-blacklist)
    */
   'id-blacklist': IdBlacklistRuleConfig;
 }

@@ -13,20 +13,20 @@ export type SemiStyleOptions = [SemiStyleOption?];
 /**
  * Enforce location of semicolons.
  *
- * @see [semi-style](https://eslint.org/docs/rules/semi-style)
+ * @see [semi-style](https://eslint.org/docs/latest/rules/semi-style)
  */
 export type SemiStyleRuleConfig = RuleConfig<SemiStyleOptions>;
 
 /**
  * Enforce location of semicolons.
  *
- * @see [semi-style](https://eslint.org/docs/rules/semi-style)
+ * @see [semi-style](https://eslint.org/docs/latest/rules/semi-style)
  */
 export interface SemiStyleRule {
   /**
    * Enforce location of semicolons.
    *
-   * @see [semi-style](https://eslint.org/docs/rules/semi-style)
+   * @see [semi-style](https://eslint.org/docs/latest/rules/semi-style)
    */
   'semi-style': SemiStyleRuleConfig;
 }

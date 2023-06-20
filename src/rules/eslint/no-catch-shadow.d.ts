@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @deprecated
  *
- * @see [no-catch-shadow](https://eslint.org/docs/rules/no-catch-shadow)
+ * @see [no-catch-shadow](https://eslint.org/docs/latest/rules/no-catch-shadow)
  */
 export type NoCatchShadowRuleConfig = RuleConfig<[]>;
 
@@ -14,7 +14,7 @@ export type NoCatchShadowRuleConfig = RuleConfig<[]>;
  *
  * @deprecated
  *
- * @see [no-catch-shadow](https://eslint.org/docs/rules/no-catch-shadow)
+ * @see [no-catch-shadow](https://eslint.org/docs/latest/rules/no-catch-shadow)
  */
 export interface NoCatchShadowRule {
   /**
@@ -22,7 +22,7 @@ export interface NoCatchShadowRule {
    *
    * @deprecated
    *
-   * @see [no-catch-shadow](https://eslint.org/docs/rules/no-catch-shadow)
+   * @see [no-catch-shadow](https://eslint.org/docs/latest/rules/no-catch-shadow)
    */
   'no-catch-shadow': NoCatchShadowRuleConfig;
 }

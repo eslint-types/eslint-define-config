@@ -16,7 +16,7 @@ export type ArrayCallbackReturnOptions = [ArrayCallbackReturnOption?];
 /**
  * Enforce `return` statements in callbacks of array methods.
  *
- * @see [array-callback-return](https://eslint.org/docs/rules/array-callback-return)
+ * @see [array-callback-return](https://eslint.org/docs/latest/rules/array-callback-return)
  */
 export type ArrayCallbackReturnRuleConfig =
   RuleConfig<ArrayCallbackReturnOptions>;
@@ -24,13 +24,13 @@ export type ArrayCallbackReturnRuleConfig =
 /**
  * Enforce `return` statements in callbacks of array methods.
  *
- * @see [array-callback-return](https://eslint.org/docs/rules/array-callback-return)
+ * @see [array-callback-return](https://eslint.org/docs/latest/rules/array-callback-return)
  */
 export interface ArrayCallbackReturnRule {
   /**
    * Enforce `return` statements in callbacks of array methods.
    *
-   * @see [array-callback-return](https://eslint.org/docs/rules/array-callback-return)
+   * @see [array-callback-return](https://eslint.org/docs/latest/rules/array-callback-return)
    */
   'array-callback-return': ArrayCallbackReturnRuleConfig;
 }

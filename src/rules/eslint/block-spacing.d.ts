@@ -13,20 +13,20 @@ export type BlockSpacingOptions = [BlockSpacingOption?];
 /**
  * Disallow or enforce spaces inside of blocks after opening block and before closing block.
  *
- * @see [block-spacing](https://eslint.org/docs/rules/block-spacing)
+ * @see [block-spacing](https://eslint.org/docs/latest/rules/block-spacing)
  */
 export type BlockSpacingRuleConfig = RuleConfig<BlockSpacingOptions>;
 
 /**
  * Disallow or enforce spaces inside of blocks after opening block and before closing block.
  *
- * @see [block-spacing](https://eslint.org/docs/rules/block-spacing)
+ * @see [block-spacing](https://eslint.org/docs/latest/rules/block-spacing)
  */
 export interface BlockSpacingRule {
   /**
    * Disallow or enforce spaces inside of blocks after opening block and before closing block.
    *
-   * @see [block-spacing](https://eslint.org/docs/rules/block-spacing)
+   * @see [block-spacing](https://eslint.org/docs/latest/rules/block-spacing)
    */
   'block-spacing': BlockSpacingRuleConfig;
 }

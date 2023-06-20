@@ -24,7 +24,7 @@ export type ObjectCurlySpacingOptions = [
 /**
  * Enforce consistent spacing inside braces.
  *
- * @see [object-curly-spacing](https://eslint.org/docs/rules/object-curly-spacing)
+ * @see [object-curly-spacing](https://eslint.org/docs/latest/rules/object-curly-spacing)
  */
 export type ObjectCurlySpacingRuleConfig =
   RuleConfig<ObjectCurlySpacingOptions>;
@@ -32,13 +32,13 @@ export type ObjectCurlySpacingRuleConfig =
 /**
  * Enforce consistent spacing inside braces.
  *
- * @see [object-curly-spacing](https://eslint.org/docs/rules/object-curly-spacing)
+ * @see [object-curly-spacing](https://eslint.org/docs/latest/rules/object-curly-spacing)
  */
 export interface ObjectCurlySpacingRule {
   /**
    * Enforce consistent spacing inside braces.
    *
-   * @see [object-curly-spacing](https://eslint.org/docs/rules/object-curly-spacing)
+   * @see [object-curly-spacing](https://eslint.org/docs/latest/rules/object-curly-spacing)
    */
   'object-curly-spacing': ObjectCurlySpacingRuleConfig;
 }

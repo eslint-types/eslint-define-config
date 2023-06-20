@@ -23,7 +23,7 @@ export type RequireJsdocOptions = [RequireJsdocOption?];
  *
  * @deprecated
  *
- * @see [require-jsdoc](https://eslint.org/docs/rules/require-jsdoc)
+ * @see [require-jsdoc](https://eslint.org/docs/latest/rules/require-jsdoc)
  */
 export type RequireJsdocRuleConfig = RuleConfig<RequireJsdocOptions>;
 
@@ -32,7 +32,7 @@ export type RequireJsdocRuleConfig = RuleConfig<RequireJsdocOptions>;
  *
  * @deprecated
  *
- * @see [require-jsdoc](https://eslint.org/docs/rules/require-jsdoc)
+ * @see [require-jsdoc](https://eslint.org/docs/latest/rules/require-jsdoc)
  */
 export interface RequireJsdocRule {
   /**
@@ -40,7 +40,7 @@ export interface RequireJsdocRule {
    *
    * @deprecated
    *
-   * @see [require-jsdoc](https://eslint.org/docs/rules/require-jsdoc)
+   * @see [require-jsdoc](https://eslint.org/docs/latest/rules/require-jsdoc)
    */
   'require-jsdoc': RequireJsdocRuleConfig;
 }

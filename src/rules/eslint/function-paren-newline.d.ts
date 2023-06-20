@@ -17,7 +17,7 @@ export type FunctionParenNewlineOptions = [FunctionParenNewlineOption?];
 /**
  * Enforce consistent line breaks inside function parentheses.
  *
- * @see [function-paren-newline](https://eslint.org/docs/rules/function-paren-newline)
+ * @see [function-paren-newline](https://eslint.org/docs/latest/rules/function-paren-newline)
  */
 export type FunctionParenNewlineRuleConfig =
   RuleConfig<FunctionParenNewlineOptions>;
@@ -25,13 +25,13 @@ export type FunctionParenNewlineRuleConfig =
 /**
  * Enforce consistent line breaks inside function parentheses.
  *
- * @see [function-paren-newline](https://eslint.org/docs/rules/function-paren-newline)
+ * @see [function-paren-newline](https://eslint.org/docs/latest/rules/function-paren-newline)
  */
 export interface FunctionParenNewlineRule {
   /**
    * Enforce consistent line breaks inside function parentheses.
    *
-   * @see [function-paren-newline](https://eslint.org/docs/rules/function-paren-newline)
+   * @see [function-paren-newline](https://eslint.org/docs/latest/rules/function-paren-newline)
    */
   'function-paren-newline': FunctionParenNewlineRuleConfig;
 }

@@ -290,20 +290,20 @@ export type KeywordSpacingOptions = [KeywordSpacingOption?];
 /**
  * Enforce consistent spacing before and after keywords.
  *
- * @see [keyword-spacing](https://eslint.org/docs/rules/keyword-spacing)
+ * @see [keyword-spacing](https://eslint.org/docs/latest/rules/keyword-spacing)
  */
 export type KeywordSpacingRuleConfig = RuleConfig<KeywordSpacingOptions>;
 
 /**
  * Enforce consistent spacing before and after keywords.
  *
- * @see [keyword-spacing](https://eslint.org/docs/rules/keyword-spacing)
+ * @see [keyword-spacing](https://eslint.org/docs/latest/rules/keyword-spacing)
  */
 export interface KeywordSpacingRule {
   /**
    * Enforce consistent spacing before and after keywords.
    *
-   * @see [keyword-spacing](https://eslint.org/docs/rules/keyword-spacing)
+   * @see [keyword-spacing](https://eslint.org/docs/latest/rules/keyword-spacing)
    */
   'keyword-spacing': KeywordSpacingRuleConfig;
 }

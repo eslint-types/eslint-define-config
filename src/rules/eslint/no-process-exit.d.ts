@@ -5,7 +5,7 @@ import type { RuleConfig } from '../rule-config';
  *
  * @deprecated
  *
- * @see [no-process-exit](https://eslint.org/docs/rules/no-process-exit)
+ * @see [no-process-exit](https://eslint.org/docs/latest/rules/no-process-exit)
  */
 export type NoProcessExitRuleConfig = RuleConfig<[]>;
 
@@ -14,7 +14,7 @@ export type NoProcessExitRuleConfig = RuleConfig<[]>;
  *
  * @deprecated
  *
- * @see [no-process-exit](https://eslint.org/docs/rules/no-process-exit)
+ * @see [no-process-exit](https://eslint.org/docs/latest/rules/no-process-exit)
  */
 export interface NoProcessExitRule {
   /**
@@ -22,7 +22,7 @@ export interface NoProcessExitRule {
    *
    * @deprecated
    *
-   * @see [no-process-exit](https://eslint.org/docs/rules/no-process-exit)
+   * @see [no-process-exit](https://eslint.org/docs/latest/rules/no-process-exit)
    */
   'no-process-exit': NoProcessExitRuleConfig;
 }

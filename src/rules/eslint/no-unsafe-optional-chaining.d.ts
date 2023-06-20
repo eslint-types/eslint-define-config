@@ -15,7 +15,7 @@ export type NoUnsafeOptionalChainingOptions = [NoUnsafeOptionalChainingOption?];
 /**
  * Disallow use of optional chaining in contexts where the `undefined` value is not allowed.
  *
- * @see [no-unsafe-optional-chaining](https://eslint.org/docs/rules/no-unsafe-optional-chaining)
+ * @see [no-unsafe-optional-chaining](https://eslint.org/docs/latest/rules/no-unsafe-optional-chaining)
  */
 export type NoUnsafeOptionalChainingRuleConfig =
   RuleConfig<NoUnsafeOptionalChainingOptions>;
@@ -23,13 +23,13 @@ export type NoUnsafeOptionalChainingRuleConfig =
 /**
  * Disallow use of optional chaining in contexts where the `undefined` value is not allowed.
  *
- * @see [no-unsafe-optional-chaining](https://eslint.org/docs/rules/no-unsafe-optional-chaining)
+ * @see [no-unsafe-optional-chaining](https://eslint.org/docs/latest/rules/no-unsafe-optional-chaining)
  */
 export interface NoUnsafeOptionalChainingRule {
   /**
    * Disallow use of optional chaining in contexts where the `undefined` value is not allowed.
    *
-   * @see [no-unsafe-optional-chaining](https://eslint.org/docs/rules/no-unsafe-optional-chaining)
+   * @see [no-unsafe-optional-chaining](https://eslint.org/docs/latest/rules/no-unsafe-optional-chaining)
    */
   'no-unsafe-optional-chaining': NoUnsafeOptionalChainingRuleConfig;
 }
