@@ -8,6 +8,7 @@ export interface NoIrregularWhitespaceOption {
   skipStrings?: boolean;
   skipTemplates?: boolean;
   skipRegExps?: boolean;
+  skipJSXText?: boolean;
 }
 
 /**

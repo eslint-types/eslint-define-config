@@ -26,6 +26,7 @@ export type SortKeysOption =
               natural?: boolean;
             };
         minKeys?: number;
+        allowLineSeparatedGroups?: boolean;
       },
       ...{
         pathPattern: string;
@@ -48,6 +49,7 @@ export type SortKeysOption =
               natural?: boolean;
             };
         minKeys?: number;
+        allowLineSeparatedGroups?: boolean;
       }[],
     ]
   | []
@@ -58,6 +60,7 @@ export type SortKeysOption =
         caseSensitive?: boolean;
         natural?: boolean;
         minKeys?: number;
+        allowLineSeparatedGroups?: boolean;
       },
     ];
 
