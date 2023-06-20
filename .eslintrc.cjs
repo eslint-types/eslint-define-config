@@ -1,5 +1,5 @@
 // @ts-check
-const { defineConfig } = require('./src');
+const { defineConfig } = require('.');
 const { readGitignoreFiles } = require('eslint-gitignore');
 
 module.exports = defineConfig({
