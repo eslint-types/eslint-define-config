@@ -1,7 +1,7 @@
-diff --git b/src/rules/typescript-eslint/lines-between-class-members.d.ts a/src/rules/typescript-eslint/lines-between-class-members.d.ts
+diff --git a/src/rules/typescript-eslint/lines-between-class-members.d.ts b/src/rules/typescript-eslint/lines-between-class-members.d.ts
 index 46caad7..afdd87e 100644
---- b/src/rules/typescript-eslint/lines-between-class-members.d.ts
-+++ a/src/rules/typescript-eslint/lines-between-class-members.d.ts
+--- a/src/rules/typescript-eslint/lines-between-class-members.d.ts
++++ b/src/rules/typescript-eslint/lines-between-class-members.d.ts
 @@ -1,16 +1,23 @@
 +import type {
 +  LinesBetweenClassMembersConfig as BaseConfig,

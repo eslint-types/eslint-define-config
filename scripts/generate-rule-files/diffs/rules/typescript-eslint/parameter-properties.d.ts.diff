@@ -1,7 +1,7 @@
-diff --git b/src/rules/typescript-eslint/parameter-properties.d.ts a/src/rules/typescript-eslint/parameter-properties.d.ts
+diff --git a/src/rules/typescript-eslint/parameter-properties.d.ts b/src/rules/typescript-eslint/parameter-properties.d.ts
 index 6b0f176..591a9a4 100644
---- b/src/rules/typescript-eslint/parameter-properties.d.ts
-+++ a/src/rules/typescript-eslint/parameter-properties.d.ts
+--- a/src/rules/typescript-eslint/parameter-properties.d.ts
++++ b/src/rules/typescript-eslint/parameter-properties.d.ts
 @@ -3,12 +3,37 @@ import type { RuleConfig } from '../rule-config';
  /**
   * Option.

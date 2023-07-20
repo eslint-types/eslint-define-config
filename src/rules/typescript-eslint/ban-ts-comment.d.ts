@@ -38,7 +38,7 @@ export interface BanTsCommentOption {
 /**
  * Options.
  */
-export type BanTsCommentOptions = [BanTsCommentOption?];
+export type BanTsCommentOptions = [BanTsCommentOption];
 
 /**
  * Disallow `@ts-<directive>` comments or require descriptions after directives.

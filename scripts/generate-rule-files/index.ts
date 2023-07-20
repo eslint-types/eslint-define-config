@@ -13,13 +13,18 @@ import { RuleFile } from './src/rule-file';
 
 const __dirname: string = fileURLToPath(new URL('.', import.meta.url));
 
+interface FailedRule {
+  ruleName: string;
+  err: unknown;
+}
+
 /**
  * Generate the `index.d.ts` file for the plugin's rules that will re-export all rules.
  */
 async function generateRuleIndexFile(
   pluginDirectory: string,
   { rules, name }: Plugin,
-  failedRules: string[],
+  failedRules: FailedRule[],
 ): Promise<void> {
   if (!rules) {
     throw new Error(
@@ -28,7 +33,8 @@ async function generateRuleIndexFile(
   }
 
   const generatedRules: string[] = Object.keys(rules).filter(
-    (ruleName) => !failedRules.includes(ruleName),
+    (ruleName) =>
+      !failedRules.some((failedRule) => failedRule.ruleName === ruleName),
   );
 
   /**
@@ -68,7 +74,7 @@ async function generateRuleIndexFile(
  */
 function printGenerationReport(
   rules: Array<[string, Rule.RuleModule]>,
-  failedRules: string[],
+  failedRules: FailedRule[],
 ): void {
   const msg: string = `  ✅ Generated ${
     rules.length - failedRules.length
@@ -78,6 +84,9 @@ function printGenerationReport(
 
   if (failedRules.length) {
     logger.log(logger.colors.red(`  ❌ Failed ${failedRules.length} rules`));
+    failedRules.forEach(({ ruleName, err }) => {
+      logger.log(logger.colors.red(`    - ${ruleName}: ${String(err)}`));
+    });
   }
 
   logger.log('');
@@ -89,8 +98,8 @@ function printGenerationReport(
 async function generateRulesFiles(
   plugin: Plugin,
   pluginDirectory: string,
-): Promise<{ failedRules: string[] }> {
-  const failedRules: string[] = [];
+): Promise<{ failedRules: FailedRule[] }> {
+  const failedRules: FailedRule[] = [];
 
   const pluginRules: PluginRules | undefined = plugin.rules;
   if (!pluginRules) {
@@ -114,7 +123,7 @@ async function generateRulesFiles(
       ruleFile.writeGeneratedContent();
       ruleFile.applyPatch();
     } catch (err) {
-      failedRules.push(ruleName);
+      failedRules.push({ ruleName, err });
     }
   }
 

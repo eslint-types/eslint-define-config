@@ -1,7 +1,7 @@
-diff --git b/src/rules/typescript-eslint/ban-ts-comment.d.ts a/src/rules/typescript-eslint/ban-ts-comment.d.ts
-index 111f9c9..5d489f8 100644
---- b/src/rules/typescript-eslint/ban-ts-comment.d.ts
-+++ a/src/rules/typescript-eslint/ban-ts-comment.d.ts
+diff --git a/src/rules/typescript-eslint/ban-ts-comment.d.ts b/src/rules/typescript-eslint/ban-ts-comment.d.ts
+index 111f9c9..6015012 100644
+--- a/src/rules/typescript-eslint/ban-ts-comment.d.ts
++++ b/src/rules/typescript-eslint/ban-ts-comment.d.ts
 @@ -3,12 +3,42 @@ import type { RuleConfig } from '../rule-config';
  /**
   * Option.
@@ -43,7 +43,7 @@ index 111f9c9..5d489f8 100644
   * Options.
   */
 -export type BanTsCommentOptions = BanTsCommentOption;
-+export type BanTsCommentOptions = [BanTsCommentOption?];
++export type BanTsCommentOptions = [BanTsCommentOption];
  
  /**
   * Disallow `@ts-<directive>` comments or require descriptions after directives.

@@ -1,7 +1,7 @@
-diff --git b/src/rules/typescript-eslint/array-type.d.ts a/src/rules/typescript-eslint/array-type.d.ts
-index 98cd312..fe661fc 100644
---- b/src/rules/typescript-eslint/array-type.d.ts
-+++ a/src/rules/typescript-eslint/array-type.d.ts
+diff --git a/src/rules/typescript-eslint/array-type.d.ts b/src/rules/typescript-eslint/array-type.d.ts
+index 98cd312..e40ebb3 100644
+--- a/src/rules/typescript-eslint/array-type.d.ts
++++ b/src/rules/typescript-eslint/array-type.d.ts
 @@ -3,12 +3,16 @@ import type { RuleConfig } from '../rule-config';
  /**
   * Option.
@@ -17,7 +17,7 @@ index 98cd312..fe661fc 100644
   * Options.
   */
 -export type ArrayTypeOptions = ArrayTypeOption;
-+export type ArrayTypeOptions = [ArrayTypeOption?];
++export type ArrayTypeOptions = [ArrayTypeOption];
  
  /**
   * Require consistently using either `T[]` or `Array<T>` for arrays.

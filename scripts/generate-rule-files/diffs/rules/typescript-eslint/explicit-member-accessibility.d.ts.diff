@@ -1,7 +1,7 @@
-diff --git b/src/rules/typescript-eslint/explicit-member-accessibility.d.ts a/src/rules/typescript-eslint/explicit-member-accessibility.d.ts
+diff --git a/src/rules/typescript-eslint/explicit-member-accessibility.d.ts b/src/rules/typescript-eslint/explicit-member-accessibility.d.ts
 index b585e26..1711d51 100644
---- b/src/rules/typescript-eslint/explicit-member-accessibility.d.ts
-+++ a/src/rules/typescript-eslint/explicit-member-accessibility.d.ts
+--- a/src/rules/typescript-eslint/explicit-member-accessibility.d.ts
++++ b/src/rules/typescript-eslint/explicit-member-accessibility.d.ts
 @@ -3,13 +3,24 @@ import type { RuleConfig } from '../rule-config';
  /**
   * Option.

@@ -4,10 +4,17 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface PreferNullishCoalescingOption {
-  ignoreConditionalTests?: boolean;
-  ignoreTernaryTests?: boolean;
-  ignoreMixedLogicalExpressions?: boolean;
   allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean;
+  ignoreConditionalTests?: boolean;
+  ignoreMixedLogicalExpressions?: boolean;
+  ignorePrimitives?: {
+    bigint?: boolean;
+    boolean?: boolean;
+    number?: boolean;
+    string?: boolean;
+    [k: string]: any;
+  };
+  ignoreTernaryTests?: boolean;
 }
 
 /**

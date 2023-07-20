@@ -12,7 +12,7 @@ export interface ArrayTypeOption {
 /**
  * Options.
  */
-export type ArrayTypeOptions = [ArrayTypeOption?];
+export type ArrayTypeOptions = [ArrayTypeOption];
 
 /**
  * Require consistently using either `T[]` or `Array<T>` for arrays.
