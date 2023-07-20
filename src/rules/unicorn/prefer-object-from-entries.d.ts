@@ -15,7 +15,7 @@ export type PreferObjectFromEntriesOptions = [PreferObjectFromEntriesOption?];
 /**
  * Prefer using `Object.fromEntries(…)` to transform a list of key-value pairs into an object.
  *
- * @see [prefer-object-from-entries](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v47.0.0/docs/rules/prefer-object-from-entries.md)
+ * @see [prefer-object-from-entries](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v48.0.0/docs/rules/prefer-object-from-entries.md)
  */
 export type PreferObjectFromEntriesRuleConfig =
   RuleConfig<PreferObjectFromEntriesOptions>;
@@ -23,13 +23,13 @@ export type PreferObjectFromEntriesRuleConfig =
 /**
  * Prefer using `Object.fromEntries(…)` to transform a list of key-value pairs into an object.
  *
- * @see [prefer-object-from-entries](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v47.0.0/docs/rules/prefer-object-from-entries.md)
+ * @see [prefer-object-from-entries](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v48.0.0/docs/rules/prefer-object-from-entries.md)
  */
 export interface PreferObjectFromEntriesRule {
   /**
    * Prefer using `Object.fromEntries(…)` to transform a list of key-value pairs into an object.
    *
-   * @see [prefer-object-from-entries](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v47.0.0/docs/rules/prefer-object-from-entries.md)
+   * @see [prefer-object-from-entries](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v48.0.0/docs/rules/prefer-object-from-entries.md)
    */
   'unicorn/prefer-object-from-entries': PreferObjectFromEntriesRuleConfig;
 }

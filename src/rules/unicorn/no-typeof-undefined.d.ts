@@ -15,20 +15,20 @@ export type NoTypeofUndefinedOptions = [NoTypeofUndefinedOption?];
 /**
  * Disallow comparing `undefined` using `typeof`.
  *
- * @see [no-typeof-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v47.0.0/docs/rules/no-typeof-undefined.md)
+ * @see [no-typeof-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v48.0.0/docs/rules/no-typeof-undefined.md)
  */
 export type NoTypeofUndefinedRuleConfig = RuleConfig<NoTypeofUndefinedOptions>;
 
 /**
  * Disallow comparing `undefined` using `typeof`.
  *
- * @see [no-typeof-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v47.0.0/docs/rules/no-typeof-undefined.md)
+ * @see [no-typeof-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v48.0.0/docs/rules/no-typeof-undefined.md)
  */
 export interface NoTypeofUndefinedRule {
   /**
    * Disallow comparing `undefined` using `typeof`.
    *
-   * @see [no-typeof-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v47.0.0/docs/rules/no-typeof-undefined.md)
+   * @see [no-typeof-undefined](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v48.0.0/docs/rules/no-typeof-undefined.md)
    */
   'unicorn/no-typeof-undefined': NoTypeofUndefinedRuleConfig;
 }

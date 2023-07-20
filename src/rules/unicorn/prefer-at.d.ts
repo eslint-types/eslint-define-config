@@ -16,20 +16,20 @@ export type PreferAtOptions = [PreferAtOption?];
 /**
  * Prefer `.at()` method for index access and `String#charAt()`.
  *
- * @see [prefer-at](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v47.0.0/docs/rules/prefer-at.md)
+ * @see [prefer-at](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v48.0.0/docs/rules/prefer-at.md)
  */
 export type PreferAtRuleConfig = RuleConfig<PreferAtOptions>;
 
 /**
  * Prefer `.at()` method for index access and `String#charAt()`.
  *
- * @see [prefer-at](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v47.0.0/docs/rules/prefer-at.md)
+ * @see [prefer-at](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v48.0.0/docs/rules/prefer-at.md)
  */
 export interface PreferAtRule {
   /**
    * Prefer `.at()` method for index access and `String#charAt()`.
    *
-   * @see [prefer-at](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v47.0.0/docs/rules/prefer-at.md)
+   * @see [prefer-at](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v48.0.0/docs/rules/prefer-at.md)
    */
   'unicorn/prefer-at': PreferAtRuleConfig;
 }

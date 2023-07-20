@@ -17,7 +17,7 @@ export type ConsistentFunctionScopingOptions = [
 /**
  * Move function definitions to the highest possible scope.
  *
- * @see [consistent-function-scoping](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v47.0.0/docs/rules/consistent-function-scoping.md)
+ * @see [consistent-function-scoping](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v48.0.0/docs/rules/consistent-function-scoping.md)
  */
 export type ConsistentFunctionScopingRuleConfig =
   RuleConfig<ConsistentFunctionScopingOptions>;
@@ -25,13 +25,13 @@ export type ConsistentFunctionScopingRuleConfig =
 /**
  * Move function definitions to the highest possible scope.
  *
- * @see [consistent-function-scoping](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v47.0.0/docs/rules/consistent-function-scoping.md)
+ * @see [consistent-function-scoping](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v48.0.0/docs/rules/consistent-function-scoping.md)
  */
 export interface ConsistentFunctionScopingRule {
   /**
    * Move function definitions to the highest possible scope.
    *
-   * @see [consistent-function-scoping](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v47.0.0/docs/rules/consistent-function-scoping.md)
+   * @see [consistent-function-scoping](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v48.0.0/docs/rules/consistent-function-scoping.md)
    */
   'unicorn/consistent-function-scoping': ConsistentFunctionScopingRuleConfig;
 }

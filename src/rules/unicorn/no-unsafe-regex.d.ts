@@ -1,22 +1,25 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- * Disallow unsafe regular expressions.
  *
- * @see [no-unsafe-regex](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v47.0.0/docs/rules/no-unsafe-regex.md)
+ * @deprecated
+ *
+ * @see [no-unsafe-regex](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v48.0.0/docs/deprecated-rules.md#no-unsafe-regex)
  */
 export type NoUnsafeRegexRuleConfig = RuleConfig<[]>;
 
 /**
- * Disallow unsafe regular expressions.
  *
- * @see [no-unsafe-regex](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v47.0.0/docs/rules/no-unsafe-regex.md)
+ * @deprecated
+ *
+ * @see [no-unsafe-regex](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v48.0.0/docs/deprecated-rules.md#no-unsafe-regex)
  */
 export interface NoUnsafeRegexRule {
   /**
-   * Disallow unsafe regular expressions.
    *
-   * @see [no-unsafe-regex](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v47.0.0/docs/rules/no-unsafe-regex.md)
+   * @deprecated
+   *
+   * @see [no-unsafe-regex](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v48.0.0/docs/deprecated-rules.md#no-unsafe-regex)
    */
   'unicorn/no-unsafe-regex': NoUnsafeRegexRuleConfig;
 }

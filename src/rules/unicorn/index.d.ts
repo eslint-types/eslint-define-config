@@ -9,7 +9,6 @@ import type { EscapeCaseRule } from './escape-case';
 import type { ExpiringTodoCommentsRule } from './expiring-todo-comments';
 import type { ExplicitLengthCheckRule } from './explicit-length-check';
 import type { FilenameCaseRule } from './filename-case';
-import type { ImportIndexRule } from './import-index';
 import type { ImportStyleRule } from './import-style';
 import type { NewForBuiltinsRule } from './new-for-builtins';
 import type { NoAbusiveEslintDisableRule } from './no-abusive-eslint-disable';
@@ -88,7 +87,6 @@ import type { PreferModuleRule } from './prefer-module';
 import type { PreferNativeCoercionFunctionsRule } from './prefer-native-coercion-functions';
 import type { PreferNegativeIndexRule } from './prefer-negative-index';
 import type { PreferNodeAppendRule } from './prefer-node-append';
-import type { PreferNodeProtocolRule } from './prefer-node-protocol';
 import type { PreferNodeRemoveRule } from './prefer-node-remove';
 import type { PreferNumberPropertiesRule } from './prefer-number-properties';
 import type { PreferObjectFromEntriesRule } from './prefer-object-from-entries';
@@ -171,7 +169,6 @@ export type UnicornRules = BetterRegexRule &
   NoUnnecessaryAwaitRule &
   NoUnreadableArrayDestructuringRule &
   NoUnreadableIifeRule &
-  NoUnsafeRegexRule &
   NoUnusedPropertiesRule &
   NoUselessFallbackInSpreadRule &
   NoUselessLengthCheckRule &
@@ -209,7 +206,6 @@ export type UnicornRules = BetterRegexRule &
   PreferModuleRule &
   PreferNativeCoercionFunctionsRule &
   PreferNegativeIndexRule &
-  PreferNodeProtocolRule &
   PreferNumberPropertiesRule &
   PreferObjectFromEntriesRule &
   PreferOptionalCatchBindingRule &
@@ -238,10 +234,10 @@ export type UnicornRules = BetterRegexRule &
   TemplateIndentRule &
   TextEncodingIdentifierCaseRule &
   ThrowNewErrorRule &
-  ImportIndexRule &
   NoArrayInstanceofRule &
   NoFnReferenceInIteratorRule &
   NoReduceRule &
+  NoUnsafeRegexRule &
   PreferDatasetRule &
   PreferEventKeyRule &
   PreferExponentiationOperatorRule &
