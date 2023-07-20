@@ -12,6 +12,7 @@ export type NoExtraParensOption =
       'all',
       {
         conditionalAssign?: boolean;
+        ternaryOperandBinaryExpressions?: boolean;
         nestedBinaryExpressions?: boolean;
         returnAssign?: boolean;
         ignoreJSX?: 'none' | 'all' | 'single-line' | 'multi-line';
