@@ -20,6 +20,7 @@ export interface MatchDescriptionOption {
       };
   matchDescription?: string;
   message?: string;
+  nonemptyTags?: boolean;
   tags?: {
     /**
      */
