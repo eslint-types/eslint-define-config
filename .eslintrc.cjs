@@ -78,7 +78,9 @@ module.exports = defineConfig({
       files: ['src/rules/**/*.d.ts'],
       rules: {
         '@typescript-eslint/array-type': 'off',
+        '@typescript-eslint/no-duplicate-type-constituents': 'off',
         '@typescript-eslint/no-explicit-any': 'off',
+        '@typescript-eslint/no-redundant-type-constituents': 'off',
       },
     },
   ],

@@ -59,6 +59,7 @@ export interface ReactSettings extends Partial<Record<string, unknown>> {
          * For rules that check exact prop wrappers.
          */
         exact?: boolean;
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         [k: string]: any;
       }
   >;
@@ -73,6 +74,7 @@ export interface ReactSettings extends Partial<Record<string, unknown>> {
     | {
         property: string;
         object?: string;
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         [k: string]: any;
       }
   >;
