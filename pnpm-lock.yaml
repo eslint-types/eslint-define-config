@@ -105,7 +105,7 @@ devDependencies:
     specifier: ~0.6.0
     version: 0.6.0(eslint-plugin-vue@9.15.1)(vue-eslint-parser@9.3.1)
   eslint-plugin-yml:
-    specifier: ^1.8.0
+    specifier: ~1.8.0
     version: 1.8.0(eslint@8.45.0)
   expect-type:
     specifier: ~0.16.0
