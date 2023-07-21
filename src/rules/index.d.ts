@@ -21,6 +21,7 @@ import type { VitestRules } from './vitest';
 import type { VueRules } from './vue';
 import type { VueI18nRules } from './vue-i18n';
 import type { VuePugRules } from './vue-pug';
+import type { YmlRules } from './yml';
 
 /**
  * Rules.
@@ -50,5 +51,6 @@ export type Rules = Partial<
     VueRules &
     VueI18nRules &
     VuePugRules &
+    YmlRules &
     Record<string, RuleConfig>
 >;

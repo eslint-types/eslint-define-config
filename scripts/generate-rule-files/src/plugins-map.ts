@@ -101,6 +101,10 @@ export const PLUGIN_REGISTRY: Readonly<Record<string, Plugin>> = {
     name: 'VuePug',
     module: 'eslint-plugin-vue-pug',
   },
+  yml: {
+    name: 'Yml',
+    module: 'eslint-plugin-yml',
+  },
 } as const;
 
 export async function loadPlugin(plugin: Plugin): Promise<Plugin> {
