@@ -5,12 +5,8 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface RequireDefaultPropsOption {
   forbidDefaultForRequired?: boolean;
-  classes?: {
-    [k: string]: any;
-  };
-  functions?: {
-    [k: string]: any;
-  };
+  classes?: 'defaultProps' | 'ignore';
+  functions?: 'defaultArguments' | 'defaultProps' | 'ignore';
   ignoreFunctionalComponents?: boolean;
 }
 

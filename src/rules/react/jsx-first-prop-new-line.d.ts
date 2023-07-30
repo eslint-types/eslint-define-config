@@ -7,7 +7,8 @@ export type JsxFirstPropNewLineOption =
   | 'always'
   | 'never'
   | 'multiline'
-  | 'multiline-multiprop';
+  | 'multiline-multiprop'
+  | 'multiprop';
 
 /**
  * Options.
