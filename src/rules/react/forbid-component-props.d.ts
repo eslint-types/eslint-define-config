@@ -10,7 +10,14 @@ export interface ForbidComponentPropsOption {
         propName?: string;
         allowedFor?: string[];
         message?: string;
-        [k: string]: any;
+      }
+    | {
+        propName?: string;
+        /**
+         * @minItems 1
+         */
+        disallowedFor: [string, ...string[]];
+        message?: string;
       }
   )[];
   [k: string]: any;

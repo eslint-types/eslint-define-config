@@ -5,6 +5,7 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface DisplayNameOption {
   ignoreTranspilerName?: boolean;
+  checkContextObjects?: boolean;
 }
 
 /**
