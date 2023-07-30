@@ -13,20 +13,20 @@ export interface NoUseVIfWithVForOption {
 export type NoUseVIfWithVForOptions = [NoUseVIfWithVForOption?];
 
 /**
- * Disallow use v-if on the same element as v-for.
+ * Disallow using `v-if` on the same element as `v-for`.
  *
  * @see [no-use-v-if-with-v-for](https://eslint.vuejs.org/rules/no-use-v-if-with-v-for.html)
  */
 export type NoUseVIfWithVForRuleConfig = RuleConfig<NoUseVIfWithVForOptions>;
 
 /**
- * Disallow use v-if on the same element as v-for.
+ * Disallow using `v-if` on the same element as `v-for`.
  *
  * @see [no-use-v-if-with-v-for](https://eslint.vuejs.org/rules/no-use-v-if-with-v-for.html)
  */
 export interface NoUseVIfWithVForRule {
   /**
-   * Disallow use v-if on the same element as v-for.
+   * Disallow using `v-if` on the same element as `v-for`.
    *
    * @see [no-use-v-if-with-v-for](https://eslint.vuejs.org/rules/no-use-v-if-with-v-for.html)
    */

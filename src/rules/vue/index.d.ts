@@ -5,6 +5,7 @@ import type { ArrowSpacingRule } from './arrow-spacing';
 import type { AttributeHyphenationRule } from './attribute-hyphenation';
 import type { AttributesOrderRule } from './attributes-order';
 import type { BlockLangRule } from './block-lang';
+import type { BlockOrderRule } from './block-order';
 import type { BlockSpacingRule } from './block-spacing';
 import type { BlockTagNewlineRule } from './block-tag-newline';
 import type { BraceStyleRule } from './brace-style';
@@ -69,6 +70,7 @@ import type { NoDeprecatedFilterRule } from './no-deprecated-filter';
 import type { NoDeprecatedFunctionalTemplateRule } from './no-deprecated-functional-template';
 import type { NoDeprecatedHtmlElementIsRule } from './no-deprecated-html-element-is';
 import type { NoDeprecatedInlineTemplateRule } from './no-deprecated-inline-template';
+import type { NoDeprecatedModelDefinitionRule } from './no-deprecated-model-definition';
 import type { NoDeprecatedPropsDefaultThisRule } from './no-deprecated-props-default-this';
 import type { NoDeprecatedRouterLinkTagPropRule } from './no-deprecated-router-link-tag-prop';
 import type { NoDeprecatedScopeAttributeRule } from './no-deprecated-scope-attribute';
@@ -137,6 +139,7 @@ import type { NoUnusedPropertiesRule } from './no-unused-properties';
 import type { NoUnusedRefsRule } from './no-unused-refs';
 import type { NoUnusedVarsRule } from './no-unused-vars';
 import type { NoUseComputedPropertyLikeMethodRule } from './no-use-computed-property-like-method';
+import type { NoUseVElseWithVForRule } from './no-use-v-else-with-v-for';
 import type { NoUseVIfWithVForRule } from './no-use-v-if-with-v-for';
 import type { NoUselessConcatRule } from './no-useless-concat';
 import type { NoUselessMustachesRule } from './no-useless-mustaches';
@@ -181,6 +184,7 @@ import type { RequirePropTypesRule } from './require-prop-types';
 import type { RequireRenderReturnRule } from './require-render-return';
 import type { RequireSlotsAsFunctionsRule } from './require-slots-as-functions';
 import type { RequireToggleInsideTransitionRule } from './require-toggle-inside-transition';
+import type { RequireTypedObjectPropRule } from './require-typed-object-prop';
 import type { RequireTypedRefRule } from './require-typed-ref';
 import type { RequireVForKeyRule } from './require-v-for-key';
 import type { RequireValidDefaultPropRule } from './require-valid-default-prop';
@@ -239,6 +243,7 @@ export type VueRules = ArrayBracketNewlineRule &
   AttributeHyphenationRule &
   AttributesOrderRule &
   BlockLangRule &
+  BlockOrderRule &
   BlockSpacingRule &
   BlockTagNewlineRule &
   BraceStyleRule &
@@ -303,6 +308,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoDeprecatedFunctionalTemplateRule &
   NoDeprecatedHtmlElementIsRule &
   NoDeprecatedInlineTemplateRule &
+  NoDeprecatedModelDefinitionRule &
   NoDeprecatedPropsDefaultThisRule &
   NoDeprecatedRouterLinkTagPropRule &
   NoDeprecatedScopeAttributeRule &
@@ -371,6 +377,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoUnusedRefsRule &
   NoUnusedVarsRule &
   NoUseComputedPropertyLikeMethodRule &
+  NoUseVElseWithVForRule &
   NoUseVIfWithVForRule &
   NoUselessConcatRule &
   NoUselessMustachesRule &
@@ -415,6 +422,7 @@ export type VueRules = ArrayBracketNewlineRule &
   RequireRenderReturnRule &
   RequireSlotsAsFunctionsRule &
   RequireToggleInsideTransitionRule &
+  RequireTypedObjectPropRule &
   RequireTypedRefRule &
   RequireVForKeyRule &
   RequireValidDefaultPropRule &
