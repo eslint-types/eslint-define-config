@@ -95,6 +95,7 @@
     "eslint-plugin-vitest": "~0.2.6",
     "eslint-plugin-vue": "~9.15.1",
     "eslint-plugin-vue-pug": "~0.6.0",
+    "eslint-plugin-yml": "~1.8.0",
     "expect-type": "~0.16.0",
     "graphql": "~16.7.1",
     "json-schema": "~0.4.0",
