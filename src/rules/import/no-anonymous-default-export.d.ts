@@ -46,7 +46,7 @@ export type NoAnonymousDefaultExportOptions = [NoAnonymousDefaultExportOption?];
 /**
  * Forbid anonymous values as default exports.
  *
- * @see [no-anonymous-default-export](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-anonymous-default-export.md)
+ * @see [no-anonymous-default-export](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/no-anonymous-default-export.md)
  */
 export type NoAnonymousDefaultExportRuleConfig =
   RuleConfig<NoAnonymousDefaultExportOptions>;
@@ -54,13 +54,13 @@ export type NoAnonymousDefaultExportRuleConfig =
 /**
  * Forbid anonymous values as default exports.
  *
- * @see [no-anonymous-default-export](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-anonymous-default-export.md)
+ * @see [no-anonymous-default-export](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/no-anonymous-default-export.md)
  */
 export interface NoAnonymousDefaultExportRule {
   /**
    * Forbid anonymous values as default exports.
    *
-   * @see [no-anonymous-default-export](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-anonymous-default-export.md)
+   * @see [no-anonymous-default-export](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/no-anonymous-default-export.md)
    */
   'import/no-anonymous-default-export': NoAnonymousDefaultExportRuleConfig;
 }

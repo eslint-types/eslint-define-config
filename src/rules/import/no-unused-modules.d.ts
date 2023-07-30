@@ -5,10 +5,10 @@ import type { RuleConfig } from '../rule-config';
  */
 export type NoUnusedModulesOption = (
   | {
-      [k: string]: any;
-    }
-  | {
       unusedExports: true;
+      src?: {
+        [k: string]: any;
+      };
       [k: string]: any;
     }
   | {
@@ -18,16 +18,12 @@ export type NoUnusedModulesOption = (
 ) & {
   /**
    * files/paths to be analyzed (only for unused exports)
-   *
-   * @minItems 1
    */
-  src?: [string, ...string[]];
+  src?: string[];
   /**
    * files/paths for which unused exports will not be reported (e.g module entry points)
-   *
-   * @minItems 1
    */
-  ignoreExports?: [string, ...string[]];
+  ignoreExports?: string[];
   /**
    * report modules without any exports
    */
@@ -47,20 +43,20 @@ export type NoUnusedModulesOptions = [NoUnusedModulesOption?];
 /**
  * Forbid modules without exports, or exports without matching import in another module.
  *
- * @see [no-unused-modules](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-unused-modules.md)
+ * @see [no-unused-modules](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/no-unused-modules.md)
  */
 export type NoUnusedModulesRuleConfig = RuleConfig<NoUnusedModulesOptions>;
 
 /**
  * Forbid modules without exports, or exports without matching import in another module.
  *
- * @see [no-unused-modules](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-unused-modules.md)
+ * @see [no-unused-modules](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/no-unused-modules.md)
  */
 export interface NoUnusedModulesRule {
   /**
    * Forbid modules without exports, or exports without matching import in another module.
    *
-   * @see [no-unused-modules](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-unused-modules.md)
+   * @see [no-unused-modules](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/no-unused-modules.md)
    */
   'import/no-unused-modules': NoUnusedModulesRuleConfig;
 }

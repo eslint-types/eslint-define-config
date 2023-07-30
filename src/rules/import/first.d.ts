@@ -13,20 +13,20 @@ export type FirstOptions = [FirstOption?];
 /**
  * Ensure all imports appear before other statements.
  *
- * @see [first](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/first.md)
+ * @see [first](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/first.md)
  */
 export type FirstRuleConfig = RuleConfig<FirstOptions>;
 
 /**
  * Ensure all imports appear before other statements.
  *
- * @see [first](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/first.md)
+ * @see [first](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/first.md)
  */
 export interface FirstRule {
   /**
    * Ensure all imports appear before other statements.
    *
-   * @see [first](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/first.md)
+   * @see [first](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/first.md)
    */
   'import/first': FirstRuleConfig;
 }

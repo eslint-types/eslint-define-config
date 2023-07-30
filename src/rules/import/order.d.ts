@@ -45,20 +45,20 @@ export type OrderOptions = [OrderOption?];
 /**
  * Enforce a convention in module import order.
  *
- * @see [order](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/order.md)
+ * @see [order](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/order.md)
  */
 export type OrderRuleConfig = RuleConfig<OrderOptions>;
 
 /**
  * Enforce a convention in module import order.
  *
- * @see [order](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/order.md)
+ * @see [order](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/order.md)
  */
 export interface OrderRule {
   /**
    * Enforce a convention in module import order.
    *
-   * @see [order](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/order.md)
+   * @see [order](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/order.md)
    */
   'import/order': OrderRuleConfig;
 }

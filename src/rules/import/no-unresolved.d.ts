@@ -23,20 +23,20 @@ export type NoUnresolvedOptions = [NoUnresolvedOption?];
 /**
  * Ensure imports point to a file/module that can be resolved.
  *
- * @see [no-unresolved](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-unresolved.md)
+ * @see [no-unresolved](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/no-unresolved.md)
  */
 export type NoUnresolvedRuleConfig = RuleConfig<NoUnresolvedOptions>;
 
 /**
  * Ensure imports point to a file/module that can be resolved.
  *
- * @see [no-unresolved](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-unresolved.md)
+ * @see [no-unresolved](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/no-unresolved.md)
  */
 export interface NoUnresolvedRule {
   /**
    * Ensure imports point to a file/module that can be resolved.
    *
-   * @see [no-unresolved](https://github.com/import-js/eslint-plugin-import/blob/v2.27.5/docs/rules/no-unresolved.md)
+   * @see [no-unresolved](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/no-unresolved.md)
    */
   'import/no-unresolved': NoUnresolvedRuleConfig;
 }
