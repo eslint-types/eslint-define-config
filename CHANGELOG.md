@@ -1,6 +1,15 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.21.0...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.22.0...main)
+
+# 1.22.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.21.0...1.22.0)
+
+- Add support for yml ([#218])
+- Update rules for: [eslint, graphql-eslint, import, jsdoc, typescript-eslint, unicorn, vue]
+
+[#218]: https://github.com/Shinigami92/eslint-define-config/pull/218
 
 # 1.21.0
 
