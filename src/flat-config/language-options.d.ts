@@ -1,9 +1,5 @@
-import type {
-  EcmaVersion,
-  Parser,
-  ParserOptions,
-  SourceType,
-} from '../parser-options';
+import type { Linter } from 'eslint';
+import type { EcmaVersion, ParserOptions, SourceType } from '../parser-options';
 
 /**
  * An object containing settings related to how JavaScript is configured for linting
@@ -43,7 +39,7 @@ export interface LanguageOptions {
    *
    * @see [Configuring a custom parser and its options](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new#configuring-a-custom-parser-and-its-options)
    */
-  parser?: Parser;
+  parser?: Linter.ParserModule;
 
   /**
    * An object specifying additional options that are passed directly to the `parser()` method on the parser. The available options are parser-dependent.
