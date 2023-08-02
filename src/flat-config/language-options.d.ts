@@ -33,7 +33,7 @@ export interface LanguageOptions {
   >;
 
   /**
-   * Either an object containing a `parse()` method or a string indicating the name of a parser inside of a plugin (i.e., `"pluginName/parserName"`).
+   * An object containing a parse() or parseForESLint() method.
    *
    * @default "@/espree"
    *
