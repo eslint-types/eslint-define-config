@@ -1,5 +1,19 @@
-import type { Linter } from 'eslint';
-import type { EcmaVersion, ParserOptions, SourceType } from '../parser-options';
+import type {
+  EcmaVersion,
+  Parser,
+  ParserOptions,
+  SourceType,
+} from '../parser-options';
+
+export type ParserModule =
+  | {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      parse(text: string, options?: any): any;
+    }
+  | {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      parseForESLint(text: string, options?: any): any;
+    };
 
 /**
  * An object containing settings related to how JavaScript is configured for linting
@@ -33,13 +47,13 @@ export interface LanguageOptions {
   >;
 
   /**
-   * An object containing a parse() or parseForESLint() method.
+   * Either an object containing a `parse()` method or a string indicating the name of a parser inside of a plugin (i.e., `"pluginName/parserName"`).
    *
    * @default "@/espree"
    *
    * @see [Configuring a custom parser and its options](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new#configuring-a-custom-parser-and-its-options)
    */
-  parser?: Linter.ParserModule;
+  parser?: Parser | ParserModule;
 
   /**
    * An object specifying additional options that are passed directly to the `parser()` method on the parser. The available options are parser-dependent.
