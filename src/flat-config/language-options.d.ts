@@ -5,6 +5,16 @@ import type {
   SourceType,
 } from '../parser-options';
 
+export type ParserModule =
+  | {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      parse(text: string, options?: any): any;
+    }
+  | {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      parseForESLint(text: string, options?: any): any;
+    };
+
 /**
  * An object containing settings related to how JavaScript is configured for linting
  */
@@ -43,7 +53,7 @@ export interface LanguageOptions {
    *
    * @see [Configuring a custom parser and its options](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new#configuring-a-custom-parser-and-its-options)
    */
-  parser?: Parser;
+  parser?: Parser | ParserModule;
 
   /**
    * An object specifying additional options that are passed directly to the `parser()` method on the parser. The available options are parser-dependent.
