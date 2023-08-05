@@ -1,6 +1,17 @@
 # Next
 
-[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.22.0...main)
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.23.0...main)
+
+# 1.23.0
+
+[diff](https://github.com/Shinigami92/eslint-define-config/compare/1.22.0...1.23.0)
+
+- Fix `languageOptions.parser` should be an object ([#220])
+- Fix `sourceType` in flat config can be `commonjs` ([#222])
+- Update rules for: [sonarjs]
+
+[#220]: https://github.com/Shinigami92/eslint-define-config/pull/220
+[#222]: https://github.com/Shinigami92/eslint-define-config/pull/222
 
 # 1.22.0
 
