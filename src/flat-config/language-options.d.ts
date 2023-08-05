@@ -34,7 +34,7 @@ export interface LanguageOptions {
    *
    * @see [Configuring the JavaScript source type](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new#configuring-the-javascript-source-type)
    */
-  sourceType?: SourceType;
+  sourceType?: SourceType | 'commonjs';
 
   /**
    * An object specifying additional objects that should be added to the global scope during linting.
