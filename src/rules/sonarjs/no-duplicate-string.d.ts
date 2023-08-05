@@ -8,7 +8,11 @@ export type NoDuplicateStringConfig = 'sonar-runtime';
 /**
  * Option.
  */
-export type NoDuplicateStringOption = number;
+export interface NoDuplicateStringOption {
+  threshold?: number;
+  ignoreStrings?: string;
+  [k: string]: any;
+}
 
 /**
  * Options.
