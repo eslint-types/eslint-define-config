@@ -70,7 +70,7 @@ export interface FlatESLintConfigItem {
  *
  * @see [Using predefined configurations](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new#using-predefined-configurations)
  *
- * @deprecated The predefined string configurations are deprecated and will be replaced by the @eslint/js package's 'recommended' config.
+ * @deprecated The predefined string configurations are deprecated and will be replaced by the @eslint/js package.
  */
 export type PredefinedConfig = 'eslint:recommended' | 'eslint:all';
 
