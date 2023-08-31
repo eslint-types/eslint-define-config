@@ -1,7 +1,7 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Rule File > Main schema 1`] = `
-"import type { RuleConfig } from '../rule-config';
+"import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Option.
@@ -37,7 +37,7 @@ export interface MyRuleRule {
 `;
 
 exports[`Rule File > Object schema 1`] = `
-"import type { RuleConfig } from '../rule-config';
+"import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Option.
@@ -75,7 +75,7 @@ export interface MyRuleRule {
 `;
 
 exports[`Rule File > Side schemas 1`] = `
-"import type { RuleConfig } from '../rule-config';
+"import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Config.
@@ -116,7 +116,7 @@ export interface MyRuleRule {
 `;
 
 exports[`Rule File > Third schemas 1`] = `
-"import type { RuleConfig } from '../rule-config';
+"import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Setting.
