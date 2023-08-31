@@ -1,4 +1,4 @@
-import type { RemarkRule } from './remark';
+import type { RemarkRule } from './remark.d.ts';
 
 /**
  * All Mdx rules.

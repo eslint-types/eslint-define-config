@@ -3,7 +3,7 @@ import type {
   Parser,
   ParserOptions,
   SourceType,
-} from '../parser-options';
+} from '../parser-options.d.ts';
 
 export type ParserModule =
   | {

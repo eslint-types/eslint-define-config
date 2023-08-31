@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Disallow the use of side effects in `waitFor`.

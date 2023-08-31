@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Disallow comments from being inserted as text nodes.

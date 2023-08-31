@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Loops with at most one iteration should be refactored.

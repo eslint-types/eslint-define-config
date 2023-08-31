@@ -1,4 +1,4 @@
-import type { LiteralUnion } from './utility-types';
+import type { LiteralUnion } from './utility-types.d.ts';
 
 // Some types copied from `@types/eslint` `Linter.ParserOptions`
 

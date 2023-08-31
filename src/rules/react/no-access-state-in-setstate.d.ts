@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Disallow when this.state is accessed within setState.

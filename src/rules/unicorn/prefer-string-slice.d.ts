@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Prefer `String#slice()` over `String#substr()` and `String#substring()`.

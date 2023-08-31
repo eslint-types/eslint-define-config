@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * A GraphQL operation is only valid if all variables encountered, both directly and via fragment spreads, are defined by that operation.

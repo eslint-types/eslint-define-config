@@ -1,4 +1,4 @@
-import type { LiteralUnion } from '../../utility-types';
+import type { LiteralUnion } from '../../utility-types.d.ts';
 
 /**
  * React settings.

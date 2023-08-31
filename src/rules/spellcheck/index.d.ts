@@ -1,4 +1,4 @@
-import type { SpellCheckerRule } from './spell-checker';
+import type { SpellCheckerRule } from './spell-checker.d.ts';
 
 /**
  * All Spellcheck rules.

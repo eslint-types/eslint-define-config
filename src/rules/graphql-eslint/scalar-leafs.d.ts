@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * A GraphQL document is valid only if all leaf fields (fields without sub selections) are of scalar or enum types.

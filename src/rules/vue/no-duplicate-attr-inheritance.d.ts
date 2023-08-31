@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Enforce `inheritAttrs` to be set to `false` when using `v-bind="$attrs"`.

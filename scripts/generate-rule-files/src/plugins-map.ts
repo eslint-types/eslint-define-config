@@ -1,4 +1,4 @@
-import type { Plugin, PluginRules } from '../contracts';
+import type { Plugin, PluginRules } from '../contracts/index.js';
 
 /**
  * Map of plugins for which the script will generate rule files.

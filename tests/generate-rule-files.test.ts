@@ -1,7 +1,7 @@
 import type { Rule } from 'eslint';
 import { describe, expect, it } from 'vitest';
-import { generateTypeFromSchema } from '../scripts/generate-rule-files/src/json-schema-to-ts';
-import { RuleFile } from '../scripts/generate-rule-files/src/rule-file';
+import { generateTypeFromSchema } from '../scripts/generate-rule-files/src/json-schema-to-ts.js';
+import { RuleFile } from '../scripts/generate-rule-files/src/rule-file.js';
 
 describe('Json schema to TS', () => {
   it('Should clean comments', async () => {

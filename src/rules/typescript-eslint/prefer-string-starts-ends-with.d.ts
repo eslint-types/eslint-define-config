@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Enforce using `String#startsWith` and `String#endsWith` over other equivalent methods of checking substrings.

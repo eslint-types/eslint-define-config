@@ -1,7 +1,7 @@
 import type { ESLint, Linter } from 'eslint';
-import type { Rules } from '../rules';
-import type { LanguageOptions } from './language-options';
-import type { LinterOptions } from './linter-options';
+import type { Rules } from '../rules/index.d.ts';
+import type { LanguageOptions } from './language-options.d.ts';
+import type { LinterOptions } from './linter-options.d.ts';
 
 /**
  * Flat ESLint Configuration.
@@ -74,5 +74,5 @@ export type PredefinedConfig = 'eslint:recommended' | 'eslint:all';
 
 export type FlatESLintConfig = FlatESLintConfigItem | PredefinedConfig;
 
-export * from './language-options';
-export * from './linter-options';
+export type * from './language-options.d.ts';
+export type * from './linter-options.d.ts';

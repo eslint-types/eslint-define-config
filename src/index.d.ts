@@ -1,5 +1,5 @@
-import type { ESLintConfig } from './config';
-import type { FlatESLintConfig } from './flat-config';
+import type { ESLintConfig } from './config/index.d.ts';
+import type { FlatESLintConfig } from './flat-config/index.d.ts';
 
 /**
  * Define an ESLint config.
@@ -31,7 +31,7 @@ export function defineFlatConfig(
   config: ReadonlyArray<FlatESLintConfig>,
 ): FlatESLintConfig[];
 
-export * from './config';
-export * from './flat-config';
-export * from './parser-options';
-export * from './rules';
+export type * from './config/index.d.ts';
+export type * from './flat-config/index.d.ts';
+export type * from './parser-options.d.ts';
+export type * from './rules/index.d.ts';

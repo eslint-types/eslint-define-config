@@ -1,6 +1,6 @@
 import { describe, expectTypeOf, test } from 'vitest';
-import type { ESLintConfig, FlatESLintConfig } from '../src';
-import { defineConfig, defineFlatConfig } from '../src';
+import type { ESLintConfig, FlatESLintConfig } from '../src/index.d.ts';
+import { defineConfig, defineFlatConfig } from '../src/index.js';
 
 describe('define', () => {
   test('define empty config', () => {

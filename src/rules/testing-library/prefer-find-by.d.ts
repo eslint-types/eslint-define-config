@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Suggest using `find(All)By*` query instead of `waitFor` + `get(All)By*` to wait for elements.

@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Disallow using deprecated the `is` attribute on HTML elements (in Vue.js 3.0.0+).

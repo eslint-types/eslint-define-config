@@ -1,18 +1,18 @@
-import type { AlwaysReturnRule } from './always-return';
-import type { AvoidNewRule } from './avoid-new';
-import type { CatchOrReturnRule } from './catch-or-return';
-import type { NoCallbackInPromiseRule } from './no-callback-in-promise';
-import type { NoMultipleResolvedRule } from './no-multiple-resolved';
-import type { NoNativeRule } from './no-native';
-import type { NoNestingRule } from './no-nesting';
-import type { NoNewStaticsRule } from './no-new-statics';
-import type { NoPromiseInCallbackRule } from './no-promise-in-callback';
-import type { NoReturnInFinallyRule } from './no-return-in-finally';
-import type { NoReturnWrapRule } from './no-return-wrap';
-import type { ParamNamesRule } from './param-names';
-import type { PreferAwaitToCallbacksRule } from './prefer-await-to-callbacks';
-import type { PreferAwaitToThenRule } from './prefer-await-to-then';
-import type { ValidParamsRule } from './valid-params';
+import type { AlwaysReturnRule } from './always-return.d.ts';
+import type { AvoidNewRule } from './avoid-new.d.ts';
+import type { CatchOrReturnRule } from './catch-or-return.d.ts';
+import type { NoCallbackInPromiseRule } from './no-callback-in-promise.d.ts';
+import type { NoMultipleResolvedRule } from './no-multiple-resolved.d.ts';
+import type { NoNativeRule } from './no-native.d.ts';
+import type { NoNestingRule } from './no-nesting.d.ts';
+import type { NoNewStaticsRule } from './no-new-statics.d.ts';
+import type { NoPromiseInCallbackRule } from './no-promise-in-callback.d.ts';
+import type { NoReturnInFinallyRule } from './no-return-in-finally.d.ts';
+import type { NoReturnWrapRule } from './no-return-wrap.d.ts';
+import type { ParamNamesRule } from './param-names.d.ts';
+import type { PreferAwaitToCallbacksRule } from './prefer-await-to-callbacks.d.ts';
+import type { PreferAwaitToThenRule } from './prefer-await-to-then.d.ts';
+import type { ValidParamsRule } from './valid-params.d.ts';
 
 /**
  * All Promise rules.

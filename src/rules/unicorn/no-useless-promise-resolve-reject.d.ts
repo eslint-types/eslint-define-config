@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Disallow returning/yielding `Promise.resolve/reject()` in async functions or promise callbacks.

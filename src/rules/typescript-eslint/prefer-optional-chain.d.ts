@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Enforce using concise optional chain expressions instead of chained logical ands, negated logical ors, or empty objects.

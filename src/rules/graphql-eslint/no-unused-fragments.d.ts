@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * A GraphQL document is only valid if all fragment definitions are spread within operations, or spread within other fragments spread within operations.

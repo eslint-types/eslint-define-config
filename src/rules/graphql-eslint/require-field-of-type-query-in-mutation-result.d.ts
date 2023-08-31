@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Allow the client in one round-trip not only to call mutation but also to get a wagon of data to update their application.

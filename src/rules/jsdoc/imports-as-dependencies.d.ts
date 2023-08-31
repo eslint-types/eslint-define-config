@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Reports if JSDoc `import()` statements point to a package which is not listed in `dependencies` or `devDependencies`.

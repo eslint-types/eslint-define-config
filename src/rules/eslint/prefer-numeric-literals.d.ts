@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals.

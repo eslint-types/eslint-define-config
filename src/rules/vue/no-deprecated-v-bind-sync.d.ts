@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Disallow use of deprecated `.sync` modifier on `v-bind` directive (in Vue.js 3.0.0+).

@@ -1,8 +1,8 @@
 import type {
   LinesBetweenClassMembersConfig as BaseConfig,
   LinesBetweenClassMembersOption,
-} from '../eslint/lines-between-class-members';
-import type { RuleConfig } from '../rule-config';
+} from '../eslint/lines-between-class-members.d.ts';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Config.

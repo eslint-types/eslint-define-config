@@ -1,4 +1,4 @@
-import type { RuleLevel } from './rule-severity';
+import type { RuleLevel } from './rule-severity.d.ts';
 
 // Synced to https://github.com/DefinitelyTyped/DefinitelyTyped/blob/042141ce5f77f36df01c344ad09f32feda26c4fd/types/eslint/helpers.d.ts#L1-L3
 

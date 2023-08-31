@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Checks for duplicate fields in selection set, variables in operation definition, or in arguments set of a field.

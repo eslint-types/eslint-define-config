@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Reports against syntax not valid for the mode (e.g., Google Closure Compiler in non-Closure mode).

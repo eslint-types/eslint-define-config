@@ -1,9 +1,9 @@
-import type { Parser, ParserOptions } from '../parser-options';
-import type { Rules } from '../rules';
-import type { Environments } from './env';
-import type { Extends } from './extends';
-import type { Plugin } from './plugin';
-import type { Settings } from './settings';
+import type { Parser, ParserOptions } from '../parser-options.d.ts';
+import type { Rules } from '../rules/index.d.ts';
+import type { Environments } from './env.d.ts';
+import type { Extends } from './extends/index.d.ts';
+import type { Plugin } from './plugin.d.ts';
+import type { Settings } from './settings/index.d.ts';
 
 /**
  * OverrideConfigData.

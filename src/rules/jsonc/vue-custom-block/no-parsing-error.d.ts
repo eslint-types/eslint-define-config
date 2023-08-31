@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../../rule-config';
+import type { RuleConfig } from '../../rule-config.d.ts';
 
 /**
  * Disallow parsing errors in Vue custom blocks.

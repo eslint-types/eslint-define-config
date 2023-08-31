@@ -1,10 +1,10 @@
-import type { Parser, ParserOptions } from '../parser-options';
-import type { Rules } from '../rules';
-import type { Environments } from './env';
-import type { Extends } from './extends';
-import type { Overrides } from './overrides';
-import type { Plugin } from './plugin';
-import type { Settings } from './settings';
+import type { Parser, ParserOptions } from '../parser-options.d.ts';
+import type { Rules } from '../rules/index.d.ts';
+import type { Environments } from './env.d.ts';
+import type { Extends } from './extends/index.d.ts';
+import type { Overrides } from './overrides.d.ts';
+import type { Plugin } from './plugin.d.ts';
+import type { Settings } from './settings/index.d.ts';
 
 /**
  * ESLint Configuration.
@@ -114,8 +114,8 @@ export interface ESLintConfig {
   reportUnusedDisableDirectives?: boolean;
 }
 
-export * from './env';
-export * from './extends';
-export * from './overrides';
-export * from './plugin';
-export * from './settings';
+export type * from './env.d.ts';
+export type * from './extends/index.d.ts';
+export type * from './overrides.d.ts';
+export type * from './plugin.d.ts';
+export type * from './settings/index.d.ts';

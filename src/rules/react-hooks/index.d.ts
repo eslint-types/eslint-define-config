@@ -1,5 +1,5 @@
-import type { ExhaustiveDepsRule } from './exhaustive-deps';
-import type { RulesOfHooksRule } from './rules-of-hooks';
+import type { ExhaustiveDepsRule } from './exhaustive-deps.d.ts';
+import type { RulesOfHooksRule } from './rules-of-hooks.d.ts';
 
 /**
  * All ReactHooks rules.

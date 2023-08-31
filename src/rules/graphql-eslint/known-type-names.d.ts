@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * A GraphQL document is only valid if referenced types (specifically variable definitions and fragment conditions) are defined by the type schema.

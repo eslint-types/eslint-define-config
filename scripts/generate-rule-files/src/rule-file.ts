@@ -7,10 +7,10 @@ import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { URL, fileURLToPath } from 'node:url';
 import { upperCaseFirst } from 'upper-case-first';
-import type { Plugin } from '../contracts';
-import { format } from './format';
-import { JsDocBuilder } from './js-doc-builder';
-import { generateTypeFromSchema } from './json-schema-to-ts';
+import type { Plugin } from '../contracts/index.js';
+import { format } from './format.js';
+import { JsDocBuilder } from './js-doc-builder.js';
+import { generateTypeFromSchema } from './json-schema-to-ts.js';
 
 const __dirname: string = fileURLToPath(new URL('.', import.meta.url));
 
@@ -56,7 +56,7 @@ export class RuleFile {
     const ruleConfigImportPath: string = `${'../'.repeat(
       nestedDepth,
     )}rule-config`;
-    this.content += `import type { RuleConfig } from '${ruleConfigImportPath}'\n\n`;
+    this.content += `import type { RuleConfig } from '${ruleConfigImportPath}.d.ts'\n\n`;
   }
 
   /**

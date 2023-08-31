@@ -5,11 +5,11 @@ import { existsSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { URL, fileURLToPath } from 'node:url';
 import { dedent } from 'ts-dedent';
-import type { Plugin, PluginRules } from './contracts';
-import { format } from './src/format';
-import { JsDocBuilder } from './src/js-doc-builder';
-import { PLUGIN_REGISTRY, loadPlugin } from './src/plugins-map';
-import { RuleFile } from './src/rule-file';
+import type { Plugin, PluginRules } from './contracts/index.js';
+import { format } from './src/format.js';
+import { JsDocBuilder } from './src/js-doc-builder.js';
+import { PLUGIN_REGISTRY, loadPlugin } from './src/plugins-map.js';
+import { RuleFile } from './src/rule-file.js';
 
 const __dirname: string = fileURLToPath(new URL('.', import.meta.url));
 
@@ -41,7 +41,10 @@ async function generateRuleIndexFile(
    * Build all the import statements for the rules.
    */
   const rulesImports: string = generatedRules
-    .map((name) => `import type { ${pascalCase(name)}Rule } from './${name}';`)
+    .map(
+      (name) =>
+        `import type { ${pascalCase(name)}Rule } from './${name}.d.ts';`,
+    )
     .join('\n');
 
   /**

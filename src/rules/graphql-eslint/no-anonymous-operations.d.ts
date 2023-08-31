@@ -1,4 +1,4 @@
-import type { RuleConfig } from '../rule-config';
+import type { RuleConfig } from '../rule-config.d.ts';
 
 /**
  * Require name for your GraphQL operations. This is useful since most GraphQL client libraries are using the operation name for caching purposes.

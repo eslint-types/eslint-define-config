@@ -1,4 +1,4 @@
-import type { DeprecationRule } from './deprecation';
+import type { DeprecationRule } from './deprecation.d.ts';
 
 /**
  * All Deprecation rules.
