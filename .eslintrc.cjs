@@ -26,12 +26,13 @@ module.exports = defineConfig({
   },
   plugins: ['@typescript-eslint', 'prettier'],
   rules: {
-    curly: ['error'],
-    'linebreak-style': ['error', 'unix'],
-    'no-case-declarations': 'warn',
-    quotes: ['error', 'single', { avoidEscape: true }],
-    semi: ['error', 'always'],
-
+    ...defineRules('eslint', {
+      curly: ['error'],
+      'linebreak-style': ['error', 'unix'],
+      'no-case-declarations': 'warn',
+      quotes: ['error', 'single', { avoidEscape: true }],
+      semi: ['error', 'always'],
+    }),
     ...defineRules('@typescript-eslint', {
       'array-type': ['error', { default: 'array-simple', readonly: 'generic' }],
       'ban-ts-comment': 'error',
