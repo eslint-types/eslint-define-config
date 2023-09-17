@@ -1,5 +1,7 @@
 import type { ESLintConfig } from './config';
 import type { FlatESLintConfig } from './flat-config';
+import type { Rules } from './rules';
+import type { RuleConfig } from './rules/rule-config';
 
 /**
  * Define an ESLint config.
@@ -37,7 +39,24 @@ export function defineFlatConfig(config: unknown): unknown {
   return config;
 }
 
-export type * from './config';
-export type * from './flat-config';
-export type * from './parser-options';
-export type * from './rules';
+export function defineRules(
+  pluginName: string,
+  rules: Record<string, RuleConfig>,
+): Rules {
+  if (pluginName === 'eslint') {
+    return rules;
+  }
+
+  return Object.entries(rules).reduce<Record<string, RuleConfig>>(
+    (prev, [key, value]) => {
+      prev[`${pluginName}/${key}`] = value;
+      return prev;
+    },
+    {},
+  );
+}
+
+export * from './config';
+export * from './flat-config';
+export * from './parser-options';
+export * from './rules';
