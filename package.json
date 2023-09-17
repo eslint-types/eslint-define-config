@@ -4,7 +4,7 @@
   "description": "Provide a defineConfig function for .eslintrc.js files",
   "scripts": {
     "clean": "rimraf .eslintcache dist pnpm-lock.yaml node_modules",
-    "build": "tsc",
+    "build": "tsup-node",
     "format": "prettier --cache --write .",
     "lint": "eslint --cache --cache-strategy content --report-unused-disable-directives .",
     "typecheck": "vitest typecheck",
@@ -15,15 +15,15 @@
     "preflight": "pnpm install && run-s format lint build test typecheck"
   },
   "type": "module",
-  "main": "src/index.cjs",
-  "module": "src/index.js",
-  "types": "src/index.d.ts",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./src/index.d.ts",
-      "import": "./src/index.js",
-      "require": "./src/index.cjs",
-      "default": "./src/index.js"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
     }
   },
   "keywords": [
@@ -106,6 +106,7 @@
     "prettier-plugin-organize-imports": "~3.2.3",
     "rimraf": "~5.0.1",
     "ts-dedent": "~2.2.0",
+    "tsup": "~7.2.0",
     "tsx": "~3.12.7",
     "typescript": "~5.1.6",
     "upper-case-first": "~2.0.2",
