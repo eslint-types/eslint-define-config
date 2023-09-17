@@ -1,5 +1,5 @@
 // @ts-check
-const { defineConfig } = require('.');
+const { defineConfig, defineRules } = require('.');
 const { readGitignoreFiles } = require('eslint-gitignore');
 
 module.exports = defineConfig({
@@ -32,43 +32,42 @@ module.exports = defineConfig({
     quotes: ['error', 'single', { avoidEscape: true }],
     semi: ['error', 'always'],
 
-    '@typescript-eslint/array-type': [
-      'error',
-      { default: 'array-simple', readonly: 'generic' },
-    ],
-    '@typescript-eslint/ban-ts-comment': 'error',
-    '@typescript-eslint/consistent-type-imports': 'error',
-    '@typescript-eslint/explicit-module-boundary-types': 'error',
-    '@typescript-eslint/naming-convention': [
-      'error',
-      {
-        format: ['PascalCase'],
-        selector: ['class', 'interface', 'typeAlias', 'typeParameter'],
-        leadingUnderscore: 'forbid',
-        trailingUnderscore: 'forbid',
-      },
-    ],
-    '@typescript-eslint/no-inferrable-types': 'off',
-    '@typescript-eslint/no-unsafe-argument': 'error',
-    '@typescript-eslint/no-unsafe-assignment': 'off',
-    '@typescript-eslint/no-unsafe-call': 'off',
-    '@typescript-eslint/no-unsafe-member-access': 'off',
-    '@typescript-eslint/no-unsafe-return': 'error',
-    '@typescript-eslint/padding-line-between-statements': [
-      'error',
-      { blankLine: 'always', prev: 'block-like', next: '*' },
-    ],
-    '@typescript-eslint/prefer-nullish-coalescing': 'warn',
-    '@typescript-eslint/prefer-optional-chain': 'warn',
-    '@typescript-eslint/prefer-readonly': 'warn',
-    '@typescript-eslint/restrict-template-expressions': [
-      'error',
-      { allowNumber: true, allowBoolean: true },
-    ],
-    '@typescript-eslint/typedef': [
-      'warn',
-      { memberVariableDeclaration: true, variableDeclaration: true },
-    ],
+    ...defineRules('@typescript-eslint', {
+      'array-type': ['error', { default: 'array-simple', readonly: 'generic' }],
+      'ban-ts-comment': 'error',
+      'consistent-type-imports': 'error',
+      'explicit-module-boundary-types': 'error',
+      'naming-convention': [
+        'error',
+        {
+          format: ['PascalCase'],
+          selector: ['class', 'interface', 'typeAlias', 'typeParameter'],
+          leadingUnderscore: 'forbid',
+          trailingUnderscore: 'forbid',
+        },
+      ],
+      'no-inferrable-types': 'off',
+      'no-unsafe-argument': 'error',
+      'no-unsafe-assignment': 'off',
+      'no-unsafe-call': 'off',
+      'no-unsafe-member-access': 'off',
+      'no-unsafe-return': 'error',
+      'padding-line-between-statements': [
+        'error',
+        { blankLine: 'always', prev: 'block-like', next: '*' },
+      ],
+      'prefer-nullish-coalescing': 'warn',
+      'prefer-optional-chain': 'warn',
+      'prefer-readonly': 'warn',
+      'restrict-template-expressions': [
+        'error',
+        { allowNumber: true, allowBoolean: true },
+      ],
+      typedef: [
+        'warn',
+        { memberVariableDeclaration: true, variableDeclaration: true },
+      ],
+    }),
   },
   overrides: [
     {
