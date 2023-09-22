@@ -14,9 +14,18 @@ export interface RequireReturnsOption {
         forceRequireReturn?: boolean;
       }
   )[];
+  enableFixer?: boolean;
   exemptedBy?: string[];
   forceRequireReturn?: boolean;
   forceReturnsWithAsync?: boolean;
+  publicOnly?:
+    | boolean
+    | {
+        ancestorsOnly?: boolean;
+        cjs?: boolean;
+        esm?: boolean;
+        window?: boolean;
+      };
 }
 
 /**

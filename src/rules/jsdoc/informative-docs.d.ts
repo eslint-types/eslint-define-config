@@ -4,7 +4,12 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface InformativeDocsOption {
-  aliases?: string[];
+  aliases?: {
+    /**
+     */
+    [k: string]: string[];
+  };
+  excludedTags?: string[];
   uselessWords?: string[];
 }
 
