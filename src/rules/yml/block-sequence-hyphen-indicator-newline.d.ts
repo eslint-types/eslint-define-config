@@ -5,6 +5,7 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface BlockSequenceHyphenIndicatorNewlineConfig {
   nestedHyphen?: 'always' | 'never';
+  blockMapping?: 'always' | 'never';
 }
 
 /**
