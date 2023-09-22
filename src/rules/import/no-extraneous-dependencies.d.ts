@@ -21,7 +21,7 @@ export type NoExtraneousDependenciesOptions = [NoExtraneousDependenciesOption?];
 /**
  * Forbid the use of extraneous packages.
  *
- * @see [no-extraneous-dependencies](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/no-extraneous-dependencies.md)
+ * @see [no-extraneous-dependencies](https://github.com/import-js/eslint-plugin-import/blob/v2.28.1/docs/rules/no-extraneous-dependencies.md)
  */
 export type NoExtraneousDependenciesRuleConfig =
   RuleConfig<NoExtraneousDependenciesOptions>;
@@ -29,13 +29,13 @@ export type NoExtraneousDependenciesRuleConfig =
 /**
  * Forbid the use of extraneous packages.
  *
- * @see [no-extraneous-dependencies](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/no-extraneous-dependencies.md)
+ * @see [no-extraneous-dependencies](https://github.com/import-js/eslint-plugin-import/blob/v2.28.1/docs/rules/no-extraneous-dependencies.md)
  */
 export interface NoExtraneousDependenciesRule {
   /**
    * Forbid the use of extraneous packages.
    *
-   * @see [no-extraneous-dependencies](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/no-extraneous-dependencies.md)
+   * @see [no-extraneous-dependencies](https://github.com/import-js/eslint-plugin-import/blob/v2.28.1/docs/rules/no-extraneous-dependencies.md)
    */
   'import/no-extraneous-dependencies': NoExtraneousDependenciesRuleConfig;
 }

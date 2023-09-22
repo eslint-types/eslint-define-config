@@ -16,7 +16,7 @@ export type NewlineAfterImportOptions = [NewlineAfterImportOption?];
 /**
  * Enforce a newline after import statements.
  *
- * @see [newline-after-import](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/newline-after-import.md)
+ * @see [newline-after-import](https://github.com/import-js/eslint-plugin-import/blob/v2.28.1/docs/rules/newline-after-import.md)
  */
 export type NewlineAfterImportRuleConfig =
   RuleConfig<NewlineAfterImportOptions>;
@@ -24,13 +24,13 @@ export type NewlineAfterImportRuleConfig =
 /**
  * Enforce a newline after import statements.
  *
- * @see [newline-after-import](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/newline-after-import.md)
+ * @see [newline-after-import](https://github.com/import-js/eslint-plugin-import/blob/v2.28.1/docs/rules/newline-after-import.md)
  */
 export interface NewlineAfterImportRule {
   /**
    * Enforce a newline after import statements.
    *
-   * @see [newline-after-import](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/newline-after-import.md)
+   * @see [newline-after-import](https://github.com/import-js/eslint-plugin-import/blob/v2.28.1/docs/rules/newline-after-import.md)
    */
   'import/newline-after-import': NewlineAfterImportRuleConfig;
 }

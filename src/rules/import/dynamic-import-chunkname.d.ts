@@ -17,7 +17,7 @@ export type DynamicImportChunknameOptions = [DynamicImportChunknameOption?];
 /**
  * Enforce a leading comment with the webpackChunkName for dynamic imports.
  *
- * @see [dynamic-import-chunkname](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/dynamic-import-chunkname.md)
+ * @see [dynamic-import-chunkname](https://github.com/import-js/eslint-plugin-import/blob/v2.28.1/docs/rules/dynamic-import-chunkname.md)
  */
 export type DynamicImportChunknameRuleConfig =
   RuleConfig<DynamicImportChunknameOptions>;
@@ -25,13 +25,13 @@ export type DynamicImportChunknameRuleConfig =
 /**
  * Enforce a leading comment with the webpackChunkName for dynamic imports.
  *
- * @see [dynamic-import-chunkname](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/dynamic-import-chunkname.md)
+ * @see [dynamic-import-chunkname](https://github.com/import-js/eslint-plugin-import/blob/v2.28.1/docs/rules/dynamic-import-chunkname.md)
  */
 export interface DynamicImportChunknameRule {
   /**
    * Enforce a leading comment with the webpackChunkName for dynamic imports.
    *
-   * @see [dynamic-import-chunkname](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/dynamic-import-chunkname.md)
+   * @see [dynamic-import-chunkname](https://github.com/import-js/eslint-plugin-import/blob/v2.28.1/docs/rules/dynamic-import-chunkname.md)
    */
   'import/dynamic-import-chunkname': DynamicImportChunknameRuleConfig;
 }

@@ -17,7 +17,7 @@ export type ConsistentTypeSpecifierStyleOptions = [
 /**
  * Enforce or ban the use of inline type-only markers for named imports.
  *
- * @see [consistent-type-specifier-style](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/consistent-type-specifier-style.md)
+ * @see [consistent-type-specifier-style](https://github.com/import-js/eslint-plugin-import/blob/v2.28.1/docs/rules/consistent-type-specifier-style.md)
  */
 export type ConsistentTypeSpecifierStyleRuleConfig =
   RuleConfig<ConsistentTypeSpecifierStyleOptions>;
@@ -25,13 +25,13 @@ export type ConsistentTypeSpecifierStyleRuleConfig =
 /**
  * Enforce or ban the use of inline type-only markers for named imports.
  *
- * @see [consistent-type-specifier-style](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/consistent-type-specifier-style.md)
+ * @see [consistent-type-specifier-style](https://github.com/import-js/eslint-plugin-import/blob/v2.28.1/docs/rules/consistent-type-specifier-style.md)
  */
 export interface ConsistentTypeSpecifierStyleRule {
   /**
    * Enforce or ban the use of inline type-only markers for named imports.
    *
-   * @see [consistent-type-specifier-style](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/consistent-type-specifier-style.md)
+   * @see [consistent-type-specifier-style](https://github.com/import-js/eslint-plugin-import/blob/v2.28.1/docs/rules/consistent-type-specifier-style.md)
    */
   'import/consistent-type-specifier-style': ConsistentTypeSpecifierStyleRuleConfig;
 }
