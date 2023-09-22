@@ -6,6 +6,10 @@ import type { RuleConfig } from '../rule-config';
 export interface NoMissingImportOption {
   allowModules?: string[];
   resolvePaths?: string[];
+  typescriptExtensionMap?:
+    | any[][]
+    | ('react' | 'react-jsx' | 'react-jsxdev' | 'react-native' | 'preserve');
+  tsconfigPath?: string;
 }
 
 /**
