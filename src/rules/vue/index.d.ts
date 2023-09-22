@@ -104,6 +104,7 @@ import type { NoParsingErrorRule } from './no-parsing-error';
 import type { NoPotentialComponentOptionTypoRule } from './no-potential-component-option-typo';
 import type { NoRefAsOperandRule } from './no-ref-as-operand';
 import type { NoRefObjectDestructureRule } from './no-ref-object-destructure';
+import type { NoRefObjectReactivityLossRule } from './no-ref-object-reactivity-loss';
 import type { NoRequiredPropWithDefaultRule } from './no-required-prop-with-default';
 import type { NoReservedComponentNamesRule } from './no-reserved-component-names';
 import type { NoReservedKeysRule } from './no-reserved-keys';
@@ -121,6 +122,7 @@ import type { NoRestrictedSyntaxRule } from './no-restricted-syntax';
 import type { NoRestrictedVBindRule } from './no-restricted-v-bind';
 import type { NoRootVIfRule } from './no-root-v-if';
 import type { NoSetupPropsDestructureRule } from './no-setup-props-destructure';
+import type { NoSetupPropsReactivityLossRule } from './no-setup-props-reactivity-loss';
 import type { NoSharedComponentDataRule } from './no-shared-component-data';
 import type { NoSideEffectsInComputedPropertiesRule } from './no-side-effects-in-computed-properties';
 import type { NoSpacesAroundEqualSignsInAttributeRule } from './no-spaces-around-equal-signs-in-attribute';
@@ -342,6 +344,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoPotentialComponentOptionTypoRule &
   NoRefAsOperandRule &
   NoRefObjectDestructureRule &
+  NoRefObjectReactivityLossRule &
   NoRequiredPropWithDefaultRule &
   NoReservedComponentNamesRule &
   NoReservedKeysRule &
@@ -359,6 +362,7 @@ export type VueRules = ArrayBracketNewlineRule &
   NoRestrictedVBindRule &
   NoRootVIfRule &
   NoSetupPropsDestructureRule &
+  NoSetupPropsReactivityLossRule &
   NoSharedComponentDataRule &
   NoSideEffectsInComputedPropertiesRule &
   NoSpacesAroundEqualSignsInAttributeRule &
