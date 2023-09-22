@@ -25,9 +25,9 @@ export interface RestrictPlusOperandsOption {
    */
   allowRegExp?: boolean;
   /**
-   * Whether to check compound assignments such as `+=`.
+   * Whether to skip compound assignments such as `+=`.
    */
-  checkCompoundAssignments?: boolean;
+  skipCompoundAssignments?: boolean;
 }
 
 /**

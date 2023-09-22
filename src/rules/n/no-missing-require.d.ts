@@ -7,6 +7,10 @@ export interface NoMissingRequireOption {
   allowModules?: string[];
   tryExtensions?: string[];
   resolvePaths?: string[];
+  typescriptExtensionMap?:
+    | any[][]
+    | ('react' | 'react-jsx' | 'react-jsxdev' | 'react-native' | 'preserve');
+  tsconfigPath?: string;
 }
 
 /**

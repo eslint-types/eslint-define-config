@@ -13,7 +13,7 @@ jobs:
     name: 'Test: node-20, ubuntu-latest'
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
@@ -38,6 +38,9 @@ jobs:
       - name: Check
         run: pnpm run build
 
+      - name: Check scripts
+        run: pnpm run ts-check
+
       - name: Test types
         run: pnpm run typecheck
 
@@ -49,7 +52,7 @@ jobs:
     name: 'Lint: node-20, ubuntu-latest'
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -76,7 +79,7 @@ jobs:
     name: 'Audit: node-20, ubuntu-latest'
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 

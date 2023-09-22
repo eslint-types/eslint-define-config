@@ -1,20 +1,26 @@
 import type { RuleConfig } from '../rule-config';
 
 /**
- * Disallow destructuring of `props` passed to `setup`.
+ * Disallow usages that lose the reactivity of `props` passed to `setup`.
+ *
+ * @deprecated
  *
  * @see [no-setup-props-destructure](https://eslint.vuejs.org/rules/no-setup-props-destructure.html)
  */
 export type NoSetupPropsDestructureRuleConfig = RuleConfig<[]>;
 
 /**
- * Disallow destructuring of `props` passed to `setup`.
+ * Disallow usages that lose the reactivity of `props` passed to `setup`.
+ *
+ * @deprecated
  *
  * @see [no-setup-props-destructure](https://eslint.vuejs.org/rules/no-setup-props-destructure.html)
  */
 export interface NoSetupPropsDestructureRule {
   /**
-   * Disallow destructuring of `props` passed to `setup`.
+   * Disallow usages that lose the reactivity of `props` passed to `setup`.
+   *
+   * @deprecated
    *
    * @see [no-setup-props-destructure](https://eslint.vuejs.org/rules/no-setup-props-destructure.html)
    */

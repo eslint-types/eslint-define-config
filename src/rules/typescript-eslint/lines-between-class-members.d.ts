@@ -1,15 +1,35 @@
-import type {
-  LinesBetweenClassMembersConfig as BaseConfig,
-  LinesBetweenClassMembersOption,
-} from '../eslint/lines-between-class-members';
 import type { RuleConfig } from '../rule-config';
 
 /**
  * Config.
  */
-export interface LinesBetweenClassMembersConfig extends BaseConfig {
+export interface LinesBetweenClassMembersConfig {
+  exceptAfterSingleLine?: boolean;
   exceptAfterOverload?: boolean;
 }
+
+/**
+ * Option.
+ */
+export type LinesBetweenClassMembersOption =
+  | {
+      /**
+       * @minItems 1
+       */
+      enforce: [
+        {
+          blankLine: 'always' | 'never';
+          prev: 'method' | 'field' | '*';
+          next: 'method' | 'field' | '*';
+        },
+        ...{
+          blankLine: 'always' | 'never';
+          prev: 'method' | 'field' | '*';
+          next: 'method' | 'field' | '*';
+        }[],
+      ];
+    }
+  | ('always' | 'never');
 
 /**
  * Options.

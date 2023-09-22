@@ -10,7 +10,25 @@ export interface LinesBetweenClassMembersConfig {
 /**
  * Option.
  */
-export type LinesBetweenClassMembersOption = 'always' | 'never';
+export type LinesBetweenClassMembersOption =
+  | {
+      /**
+       * @minItems 1
+       */
+      enforce: [
+        {
+          blankLine: 'always' | 'never';
+          prev: 'method' | 'field' | '*';
+          next: 'method' | 'field' | '*';
+        },
+        ...{
+          blankLine: 'always' | 'never';
+          prev: 'method' | 'field' | '*';
+          next: 'method' | 'field' | '*';
+        }[],
+      ];
+    }
+  | ('always' | 'never');
 
 /**
  * Options.

@@ -4,7 +4,7 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface NoInvalidVoidTypeOption {
-  allowInGenericTypeArguments?: boolean | string[];
+  allowInGenericTypeArguments?: boolean | [string, ...string[]];
   allowAsThisParameter?: boolean;
 }
 

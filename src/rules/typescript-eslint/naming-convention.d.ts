@@ -3,47 +3,38 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
+export type FormatOptionsConfig = PredefinedFormats[] | null;
+export type PredefinedFormats =
+  | 'camelCase'
+  | 'strictCamelCase'
+  | 'PascalCase'
+  | 'StrictPascalCase'
+  | 'snake_case'
+  | 'UPPER_CASE';
+export type UnderscoreOptions =
+  | 'forbid'
+  | 'allow'
+  | 'require'
+  | 'requireDouble'
+  | 'allowDouble'
+  | 'allowSingleOrDouble';
+export type PrefixSuffixConfig = string[];
+export type TypeModifiers =
+  | 'boolean'
+  | 'string'
+  | 'number'
+  | 'function'
+  | 'array';
 export type NamingConventionOption = (
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: (
         | 'default'
         | 'variableLike'
@@ -86,48 +77,17 @@ export type NamingConventionOption = (
         | 'override'
         | 'async'
       )[];
-      types?: ('boolean' | 'string' | 'number' | 'function' | 'array')[];
+      types?: TypeModifiers[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'default';
       modifiers?: (
         | 'const'
@@ -148,88 +108,26 @@ export type NamingConventionOption = (
       )[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'variableLike';
       modifiers?: ('unused' | 'async')[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'variable';
       modifiers?: (
         | 'const'
@@ -239,135 +137,42 @@ export type NamingConventionOption = (
         | 'unused'
         | 'async'
       )[];
-      types?: ('boolean' | 'string' | 'number' | 'function' | 'array')[];
+      types?: TypeModifiers[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'function';
       modifiers?: ('exported' | 'global' | 'unused' | 'async')[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'parameter';
       modifiers?: ('destructured' | 'unused')[];
-      types?: ('boolean' | 'string' | 'number' | 'function' | 'array')[];
+      types?: TypeModifiers[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'memberLike';
       modifiers?: (
         | 'abstract'
@@ -383,45 +188,14 @@ export type NamingConventionOption = (
       )[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'classProperty';
       modifiers?: (
         | 'abstract'
@@ -434,180 +208,56 @@ export type NamingConventionOption = (
         | 'static'
         | 'override'
       )[];
-      types?: ('boolean' | 'string' | 'number' | 'function' | 'array')[];
+      types?: TypeModifiers[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'objectLiteralProperty';
       modifiers?: ('public' | 'requiresQuotes')[];
-      types?: ('boolean' | 'string' | 'number' | 'function' | 'array')[];
+      types?: TypeModifiers[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'typeProperty';
       modifiers?: ('public' | 'readonly' | 'requiresQuotes')[];
-      types?: ('boolean' | 'string' | 'number' | 'function' | 'array')[];
+      types?: TypeModifiers[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'parameterProperty';
       modifiers?: ('private' | 'protected' | 'public' | 'readonly')[];
-      types?: ('boolean' | 'string' | 'number' | 'function' | 'array')[];
+      types?: TypeModifiers[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'property';
       modifiers?: (
         | 'abstract'
@@ -621,48 +271,17 @@ export type NamingConventionOption = (
         | 'override'
         | 'async'
       )[];
-      types?: ('boolean' | 'string' | 'number' | 'function' | 'array')[];
+      types?: TypeModifiers[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'classMethod';
       modifiers?: (
         | 'abstract'
@@ -677,131 +296,38 @@ export type NamingConventionOption = (
       )[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'objectLiteralMethod';
       modifiers?: ('public' | 'requiresQuotes' | 'async')[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'typeMethod';
       modifiers?: ('public' | 'requiresQuotes')[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'method';
       modifiers?: (
         | 'abstract'
@@ -816,45 +342,14 @@ export type NamingConventionOption = (
       )[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'accessor';
       modifiers?: (
         | 'abstract'
@@ -865,310 +360,98 @@ export type NamingConventionOption = (
         | 'static'
         | 'override'
       )[];
-      types?: ('boolean' | 'string' | 'number' | 'function' | 'array')[];
+      types?: TypeModifiers[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'enumMember';
       modifiers?: 'requiresQuotes'[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'typeLike';
       modifiers?: ('abstract' | 'exported' | 'unused')[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'class';
       modifiers?: ('abstract' | 'exported' | 'unused')[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'interface';
       modifiers?: ('exported' | 'unused')[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'typeAlias';
       modifiers?: ('exported' | 'unused')[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'enum';
       modifiers?: ('exported' | 'unused')[];
     }
   | {
-      format:
-        | (
-            | 'camelCase'
-            | 'strictCamelCase'
-            | 'PascalCase'
-            | 'StrictPascalCase'
-            | 'snake_case'
-            | 'UPPER_CASE'
-          )[]
-        | null;
-      custom?: {
-        match: boolean;
-        regex: string;
-        [k: string]: any;
-      };
-      leadingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      trailingUnderscore?:
-        | 'forbid'
-        | 'allow'
-        | 'require'
-        | 'requireDouble'
-        | 'allowDouble'
-        | 'allowSingleOrDouble';
-      prefix?: string[];
-      suffix?: string[];
+      format: FormatOptionsConfig;
+      custom?: MatchRegexConfig;
+      leadingUnderscore?: UnderscoreOptions;
+      trailingUnderscore?: UnderscoreOptions;
+      prefix?: PrefixSuffixConfig;
+      suffix?: PrefixSuffixConfig;
       failureMessage?: string;
-      filter?:
-        | string
-        | {
-            match: boolean;
-            regex: string;
-            [k: string]: any;
-          };
+      filter?: string | MatchRegexConfig;
       selector: 'typeParameter';
       modifiers?: 'unused'[];
     }
 )[];
+
+export interface MatchRegexConfig {
+  match: boolean;
+  regex: string;
+}
 
 /**
  * Options.

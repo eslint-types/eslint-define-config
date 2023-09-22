@@ -9,7 +9,7 @@ export interface NoFloatingPromisesOption {
    */
   ignoreVoid?: boolean;
   /**
-   * Whether to ignore async IIFEs (Immediately Invocated Function Expressions).
+   * Whether to ignore async IIFEs (Immediately Invoked Function Expressions).
    */
   ignoreIIFE?: boolean;
 }

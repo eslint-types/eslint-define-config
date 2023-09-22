@@ -7,6 +7,7 @@ import type { BanTypesRule } from './ban-types';
 import type { BlockSpacingRule } from './block-spacing';
 import type { BraceStyleRule } from './brace-style';
 import type { ClassLiteralPropertyStyleRule } from './class-literal-property-style';
+import type { ClassMethodsUseThisRule } from './class-methods-use-this';
 import type { CommaDangleRule } from './comma-dangle';
 import type { CommaSpacingRule } from './comma-spacing';
 import type { ConsistentGenericConstructorsRule } from './consistent-generic-constructors';
@@ -147,6 +148,7 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   BlockSpacingRule &
   BraceStyleRule &
   ClassLiteralPropertyStyleRule &
+  ClassMethodsUseThisRule &
   CommaDangleRule &
   CommaSpacingRule &
   ConsistentGenericConstructorsRule &

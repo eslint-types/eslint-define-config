@@ -15,7 +15,7 @@ export type PreferDefaultExportOptions = [PreferDefaultExportOption?];
 /**
  * Prefer a default export if module exports a single name or multiple names.
  *
- * @see [prefer-default-export](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/prefer-default-export.md)
+ * @see [prefer-default-export](https://github.com/import-js/eslint-plugin-import/blob/v2.28.1/docs/rules/prefer-default-export.md)
  */
 export type PreferDefaultExportRuleConfig =
   RuleConfig<PreferDefaultExportOptions>;
@@ -23,13 +23,13 @@ export type PreferDefaultExportRuleConfig =
 /**
  * Prefer a default export if module exports a single name or multiple names.
  *
- * @see [prefer-default-export](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/prefer-default-export.md)
+ * @see [prefer-default-export](https://github.com/import-js/eslint-plugin-import/blob/v2.28.1/docs/rules/prefer-default-export.md)
  */
 export interface PreferDefaultExportRule {
   /**
    * Prefer a default export if module exports a single name or multiple names.
    *
-   * @see [prefer-default-export](https://github.com/import-js/eslint-plugin-import/blob/v2.28.0/docs/rules/prefer-default-export.md)
+   * @see [prefer-default-export](https://github.com/import-js/eslint-plugin-import/blob/v2.28.1/docs/rules/prefer-default-export.md)
    */
   'import/prefer-default-export': PreferDefaultExportRuleConfig;
 }

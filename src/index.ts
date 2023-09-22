@@ -7,7 +7,9 @@ import type { FlatESLintConfig } from './flat-config';
  * @param config ESLint config.
  * @returns ESLint config.
  */
-export function defineConfig(config: ESLintConfig): ESLintConfig;
+export function defineConfig(config: ESLintConfig): ESLintConfig {
+  return config;
+}
 
 /**
  * Define an item of Flat ESLint config.
@@ -31,7 +33,11 @@ export function defineFlatConfig(
   config: ReadonlyArray<FlatESLintConfig>,
 ): FlatESLintConfig[];
 
-export * from './config';
-export * from './flat-config';
-export * from './parser-options';
-export * from './rules';
+export function defineFlatConfig(config: unknown): unknown {
+  return config;
+}
+
+export type * from './config';
+export type * from './flat-config';
+export type * from './parser-options';
+export type * from './rules';

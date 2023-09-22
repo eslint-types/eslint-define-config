@@ -1,8 +1,11 @@
+import type { AwaitAsyncEventsRule } from './await-async-events';
+import type { AwaitAsyncQueriesRule } from './await-async-queries';
 import type { AwaitAsyncQueryRule } from './await-async-query';
 import type { AwaitAsyncUtilsRule } from './await-async-utils';
 import type { AwaitFireEventRule } from './await-fire-event';
 import type { ConsistentDataTestidRule } from './consistent-data-testid';
 import type { NoAwaitSyncEventsRule } from './no-await-sync-events';
+import type { NoAwaitSyncQueriesRule } from './no-await-sync-queries';
 import type { NoAwaitSyncQueryRule } from './no-await-sync-query';
 import type { NoContainerRule } from './no-container';
 import type { NoDebuggingUtilsRule } from './no-debugging-utils';
@@ -11,6 +14,7 @@ import type { NoGlobalRegexpFlagInQueryRule } from './no-global-regexp-flag-in-q
 import type { NoManualCleanupRule } from './no-manual-cleanup';
 import type { NoNodeAccessRule } from './no-node-access';
 import type { NoPromiseInFireEventRule } from './no-promise-in-fire-event';
+import type { NoRenderInLifecycleRule } from './no-render-in-lifecycle';
 import type { NoRenderInSetupRule } from './no-render-in-setup';
 import type { NoUnnecessaryActRule } from './no-unnecessary-act';
 import type { NoWaitForEmptyCallbackRule } from './no-wait-for-empty-callback';
@@ -30,11 +34,14 @@ import type { RenderResultNamingConventionRule } from './render-result-naming-co
 /**
  * All TestingLibrary rules.
  */
-export type TestingLibraryRules = AwaitAsyncQueryRule &
+export type TestingLibraryRules = AwaitAsyncEventsRule &
+  AwaitAsyncQueriesRule &
+  AwaitAsyncQueryRule &
   AwaitAsyncUtilsRule &
   AwaitFireEventRule &
   ConsistentDataTestidRule &
   NoAwaitSyncEventsRule &
+  NoAwaitSyncQueriesRule &
   NoAwaitSyncQueryRule &
   NoContainerRule &
   NoDebuggingUtilsRule &
@@ -43,6 +50,7 @@ export type TestingLibraryRules = AwaitAsyncQueryRule &
   NoManualCleanupRule &
   NoNodeAccessRule &
   NoPromiseInFireEventRule &
+  NoRenderInLifecycleRule &
   NoRenderInSetupRule &
   NoUnnecessaryActRule &
   NoWaitForEmptyCallbackRule &
