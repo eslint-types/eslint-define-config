@@ -5,28 +5,52 @@ import type { RuleConfig } from '../rule-config';
  */
 export type NoRestrictedImportsOption =
   | (
-      | any
+      | string
       | {
+          name: string;
+          message?: string;
+          importNames?: string[];
+          /**
+           * Disallow value imports, but allow type-only imports.
+           */
           allowTypeImports?: boolean;
-          [k: string]: any;
         }
     )[]
-  | {
-      paths?: (
-        | any
-        | {
-            allowTypeImports?: boolean;
-            [k: string]: any;
-          }
-      )[];
-      patterns?:
-        | any
-        | {
-            allowTypeImports?: boolean;
-            [k: string]: any;
-          }[];
-      [k: string]: any;
-    }[];
+  | []
+  | [
+      {
+        paths?: (
+          | string
+          | {
+              name: string;
+              message?: string;
+              importNames?: string[];
+              /**
+               * Disallow value imports, but allow type-only imports.
+               */
+              allowTypeImports?: boolean;
+            }
+        )[];
+        patterns?:
+          | string[]
+          | {
+              /**
+               * @minItems 1
+               */
+              importNames?: [string, ...string[]];
+              /**
+               * @minItems 1
+               */
+              group: [string, ...string[]];
+              message?: string;
+              caseSensitive?: boolean;
+              /**
+               * Disallow value imports, but allow type-only imports.
+               */
+              allowTypeImports?: boolean;
+            }[];
+      },
+    ];
 
 /**
  * Options.

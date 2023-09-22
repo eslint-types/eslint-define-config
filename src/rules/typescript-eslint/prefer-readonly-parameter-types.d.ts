@@ -4,6 +4,23 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface PreferReadonlyParameterTypesOption {
+  allow?: (
+    | string
+    | {
+        from: 'file';
+        name: string | [string, ...string[]];
+        path?: string;
+      }
+    | {
+        from: 'lib';
+        name: string | [string, ...string[]];
+      }
+    | {
+        from: 'package';
+        name: string | [string, ...string[]];
+        package: string;
+      }
+  )[];
   checkParameterProperties?: boolean;
   ignoreInferredTypes?: boolean;
   treatMethodsAsReadonly?: boolean;
