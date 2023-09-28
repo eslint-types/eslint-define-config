@@ -23,6 +23,9 @@ import type { VueI18nRules } from './vue-i18n';
 import type { VuePugRules } from './vue-pug';
 import type { YmlRules } from './yml';
 
+export * from './rule-config'
+export * from './rule-severity'
+
 /**
  * Rules.
  *
