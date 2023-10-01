@@ -4,10 +4,14 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface SortInterfacesOption {
+  'custom-groups'?: {
+    [k: string]: any;
+  };
   type?: 'alphabetical' | 'natural' | 'line-length';
   order?: 'asc' | 'desc';
   'ignore-case'?: boolean;
-  'ignore-pattern'?: any[];
+  'ignore-pattern'?: string[];
+  groups?: any[];
 }
 
 /**

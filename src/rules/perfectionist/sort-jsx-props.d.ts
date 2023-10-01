@@ -4,13 +4,13 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface SortJsxPropsOption {
+  'custom-groups'?: {
+    [k: string]: any;
+  };
   type?: 'alphabetical' | 'natural' | 'line-length';
   order?: 'asc' | 'desc';
-  'always-on-top'?: any[];
+  groups?: any[];
   'ignore-case'?: boolean;
-  shorthand?: 'first' | 'last' | 'ignore';
-  callback?: 'first' | 'last' | 'ignore';
-  multiline?: 'first' | 'last' | 'ignore';
 }
 
 /**

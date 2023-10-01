@@ -4,9 +4,13 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface SortObjectTypesOption {
+  'custom-groups'?: {
+    [k: string]: any;
+  };
   type?: 'alphabetical' | 'natural' | 'line-length';
   order?: 'asc' | 'desc';
   'ignore-case'?: boolean;
+  groups?: any[];
 }
 
 /**

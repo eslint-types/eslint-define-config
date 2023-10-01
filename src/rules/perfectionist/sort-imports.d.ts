@@ -4,13 +4,20 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface SortImportsOption {
+  'custom-groups'?: {
+    type?: {
+      [k: string]: any;
+    };
+    value?: {
+      [k: string]: any;
+    };
+  };
   type?: 'alphabetical' | 'natural' | 'line-length';
   order?: 'asc' | 'desc';
   'ignore-case'?: boolean;
   groups?: any[];
-  'internal-pattern'?: any[];
+  'internal-pattern'?: string[];
   'newlines-between'?: 'ignore' | 'always' | 'never';
-  'read-tsconfig'?: boolean;
 }
 
 /**

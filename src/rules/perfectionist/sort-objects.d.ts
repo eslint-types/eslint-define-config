@@ -4,10 +4,15 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface SortObjectsOption {
+  'custom-groups'?: {
+    [k: string]: any;
+  };
+  'partition-by-comment'?: boolean | string | any[];
+  'styled-components'?: boolean;
   type?: 'alphabetical' | 'natural' | 'line-length';
   order?: 'asc' | 'desc';
   'ignore-case'?: boolean;
-  'always-on-top'?: any[];
+  groups?: any[];
 }
 
 /**

@@ -7,6 +7,7 @@ export interface SortUnionTypesOption {
   type?: 'alphabetical' | 'natural' | 'line-length';
   order?: 'asc' | 'desc';
   'ignore-case'?: boolean;
+  'nullable-last'?: boolean;
 }
 
 /**
