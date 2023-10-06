@@ -106,16 +106,6 @@ _Click on the thumbnail to play the video_
 Add a `declare module` to your plugin package like this:
 
 ```ts
-type RuleLevel = 0 | 1 | 2 | 'off' | 'warn' | 'error';
-
-type Prepend<Tuple extends any[], Addend> = ((_: Addend, ..._1: Tuple) => any) extends (..._: infer Result) => any ? Result : never;
-
-type RuleLevelAndOptions<Options extends any[] = any[]> = Prepend<Partial<Options>, RuleLevel>;
-
-type RuleEntry<Options extends any[] = any[]> = RuleLevel | RuleLevelAndOptions<Options>;
-
-type RuleConfig<Options extends any[] = any[]> = RuleEntry<Options>;
-
 declare module 'eslint-define-config' {
   type RuleLevel = 0 | 1 | 2 | 'off' | 'warn' | 'error';
 
