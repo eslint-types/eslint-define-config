@@ -28,29 +28,28 @@ import type { YmlRules } from './yml';
  *
  * @see [Rules](https://eslint.org/docs/user-guide/configuring/rules)
  */
-export type Rules = Partial<
-  DeprecationRules &
-    EslintRules &
-    EslintCommentsRules &
-    GraphQLRules &
-    ImportRules &
-    JSDocRules &
-    JsoncRules &
-    JsxA11yRules &
-    NodeRules &
-    NRules &
-    PromiseRules &
-    ReactHooksRules &
-    ReactRules &
-    SonarJSRules &
-    SpellcheckRules &
-    TestingLibraryRules &
-    TypeScriptRules &
-    UnicornRules &
-    VitestRules &
-    VueRules &
-    VueI18nRules &
-    VuePugRules &
-    YmlRules &
-    Record<string, RuleConfig>
->;
+export interface Rules
+  extends DeprecationRules,
+    EslintRules,
+    EslintCommentsRules,
+    GraphQLRules,
+    ImportRules,
+    JSDocRules,
+    JsoncRules,
+    JsxA11yRules,
+    NodeRules,
+    NRules,
+    PromiseRules,
+    ReactHooksRules,
+    ReactRules,
+    SonarJSRules,
+    SpellcheckRules,
+    TestingLibraryRules,
+    TypeScriptRules,
+    UnicornRules,
+    VitestRules,
+    VueRules,
+    VueI18nRules,
+    VuePugRules,
+    YmlRules,
+    Record<string, RuleConfig> {}

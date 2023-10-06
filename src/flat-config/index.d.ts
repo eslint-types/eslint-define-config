@@ -54,7 +54,7 @@ export interface FlatESLintConfigItem {
    *
    * @see [Configuring rules](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new#configuring-rules)
    */
-  rules?: Rules;
+  rules?: Partial<Rules>;
 
   /**
    * An object containing name-value pairs of information that should be available to all rules.

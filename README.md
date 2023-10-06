@@ -47,6 +47,10 @@ pnpm add --save-dev eslint eslint-define-config
 
 ```ts
 // @ts-check
+
+// To activate auto-suggestions for Rules of specific plugins, you need to add a `/// <reference types="eslint-plugin-PLUGIN_NAME" />` comment.
+/// <reference types="@typescript-eslint/eslint-plugin" />
+
 const { defineConfig } = require('eslint-define-config');
 
 module.exports = defineConfig({
@@ -96,6 +100,52 @@ _Click on the thumbnail to play the video_
 <a href="https://user-images.githubusercontent.com/7195563/112726158-4a19e780-8f1c-11eb-8cc6-4ea6c100137f.mp4" target="_blank">
   <img src="https://user-images.githubusercontent.com/7195563/112726343-30c56b00-8f1d-11eb-9b92-260c530caf1b.png" alt="Video" width="600px"/>
 </a>
+
+## Want to support your own plugin?
+
+Add a `declare module` to your plugin package like this:
+
+```ts
+type RuleLevel = 0 | 1 | 2 | 'off' | 'warn' | 'error';
+
+type Prepend<Tuple extends any[], Addend> = ((_: Addend, ..._1: Tuple) => any) extends (..._: infer Result) => any ? Result : never;
+
+type RuleLevelAndOptions<Options extends any[] = any[]> = Prepend<Partial<Options>, RuleLevel>;
+
+type RuleEntry<Options extends any[] = any[]> = RuleLevel | RuleLevelAndOptions<Options>;
+
+type RuleConfig<Options extends any[] = any[]> = RuleEntry<Options>;
+
+declare module 'eslint-define-config' {
+  type RuleLevel = 0 | 1 | 2 | 'off' | 'warn' | 'error';
+
+  type Prepend<Tuple extends any[], Addend> = ((_: Addend, ..._1: Tuple) => any) extends (..._: infer Result) => any ? Result : never;
+
+  type RuleLevelAndOptions<Options extends any[] = any[]> = Prepend<Partial<Options>, RuleLevel>;
+
+  type RuleEntry<Options extends any[] = any[]> = RuleLevel | RuleLevelAndOptions<Options>;
+
+  type RuleConfig<Options extends any[] = any[]> = RuleEntry<Options>;
+
+  export interface Rules {
+    /**
+     * Require consistently using either `T[]` or `Array<T>` for arrays.
+     *
+     * @see [array-type](https://typescript-eslint.io/rules/array-type)
+     */
+    '@typescript-eslint/array-type': RuleConfig<
+      [
+        {
+          default?: 'array' | 'generic' | 'array-simple';
+          readonly?: 'array' | 'generic' | 'array-simple';
+        },
+      ]
+    >;
+
+    // ... more Rules
+  }
+}
+```
 
 # Credits
 
