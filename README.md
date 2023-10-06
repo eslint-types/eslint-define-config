@@ -107,30 +107,18 @@ Add a `declare module` to your plugin package like this:
 
 ```ts
 declare module 'eslint-define-config' {
-  type RuleLevel = 0 | 1 | 2 | 'off' | 'warn' | 'error';
-
-  type Prepend<Tuple extends any[], Addend> = ((_: Addend, ..._1: Tuple) => any) extends (..._: infer Result) => any ? Result : never;
-
-  type RuleLevelAndOptions<Options extends any[] = any[]> = Prepend<Partial<Options>, RuleLevel>;
-
-  type RuleEntry<Options extends any[] = any[]> = RuleLevel | RuleLevelAndOptions<Options>;
-
-  type RuleConfig<Options extends any[] = any[]> = RuleEntry<Options>;
-
-  export interface Rules {
+  export interface CustomRuleOptions {
     /**
      * Require consistently using either `T[]` or `Array<T>` for arrays.
      *
      * @see [array-type](https://typescript-eslint.io/rules/array-type)
      */
-    '@typescript-eslint/array-type': RuleConfig<
-      [
-        {
-          default?: 'array' | 'generic' | 'array-simple';
-          readonly?: 'array' | 'generic' | 'array-simple';
-        },
-      ]
-    >;
+    '@typescript-eslint/array-type': [
+      {
+        default?: 'array' | 'generic' | 'array-simple';
+        readonly?: 'array' | 'generic' | 'array-simple';
+      },
+    ];
 
     // ... more Rules
   }
