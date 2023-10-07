@@ -6,6 +6,7 @@ import type { RuleConfig } from '../rule-config';
 export interface ArrayCallbackReturnOption {
   allowImplicit?: boolean;
   checkForEach?: boolean;
+  allowVoid?: boolean;
 }
 
 /**

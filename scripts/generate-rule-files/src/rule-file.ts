@@ -6,7 +6,6 @@ import { execSync } from 'node:child_process';
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { URL, fileURLToPath } from 'node:url';
-import { upperCaseFirst } from 'upper-case-first';
 import type { Plugin } from '../contracts';
 import { format } from './format';
 import { JsDocBuilder } from './js-doc-builder';
@@ -63,9 +62,9 @@ export class RuleFile {
    * Build the rule description to append to the JSDoc.
    */
   public buildDescription(): string {
-    let description: string = upperCaseFirst(
-      this.rule.meta?.docs?.description ?? '',
-    );
+    let description: string = this.rule.meta?.docs?.description ?? '';
+
+    description = description.charAt(0).toUpperCase() + description.slice(1);
 
     if (description.length > 0 && !description.endsWith('.')) {
       description += '.';
