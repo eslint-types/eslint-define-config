@@ -113,7 +113,7 @@
     "tsx": "~3.12.10",
     "typescript": "~5.2.2",
     "upper-case-first": "~2.0.2",
-    "vitest": "~0.34.5",
+    "vitest": "~0.34.6",
     "vue-eslint-parser": "~9.3.1"
   },
   "packageManager": "pnpm@8.7.6",
