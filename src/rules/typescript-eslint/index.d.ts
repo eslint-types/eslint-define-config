@@ -38,7 +38,6 @@ import type { NoConfusingNonNullAssertionRule } from './no-confusing-non-null-as
 import type { NoConfusingVoidExpressionRule } from './no-confusing-void-expression';
 import type { NoDupeClassMembersRule } from './no-dupe-class-members';
 import type { NoDuplicateEnumValuesRule } from './no-duplicate-enum-values';
-import type { NoDuplicateImportsRule } from './no-duplicate-imports';
 import type { NoDuplicateTypeConstituentsRule } from './no-duplicate-type-constituents';
 import type { NoDynamicDeleteRule } from './no-dynamic-delete';
 import type { NoEmptyFunctionRule } from './no-empty-function';
@@ -50,7 +49,6 @@ import type { NoExtraSemiRule } from './no-extra-semi';
 import type { NoExtraneousClassRule } from './no-extraneous-class';
 import type { NoFloatingPromisesRule } from './no-floating-promises';
 import type { NoForInArrayRule } from './no-for-in-array';
-import type { NoImplicitAnyCatchRule } from './no-implicit-any-catch';
 import type { NoImpliedEvalRule } from './no-implied-eval';
 import type { NoImportTypeSideEffectsRule } from './no-import-type-side-effects';
 import type { NoInferrableTypesRule } from './no-inferrable-types';
@@ -67,7 +65,6 @@ import type { NoNamespaceRule } from './no-namespace';
 import type { NoNonNullAssertedNullishCoalescingRule } from './no-non-null-asserted-nullish-coalescing';
 import type { NoNonNullAssertedOptionalChainRule } from './no-non-null-asserted-optional-chain';
 import type { NoNonNullAssertionRule } from './no-non-null-assertion';
-import type { NoParameterPropertiesRule } from './no-parameter-properties';
 import type { NoRedeclareRule } from './no-redeclare';
 import type { NoRedundantTypeConstituentsRule } from './no-redundant-type-constituents';
 import type { NoRequireImportsRule } from './no-require-imports';
@@ -124,7 +121,6 @@ import type { RestrictTemplateExpressionsRule } from './restrict-template-expres
 import type { ReturnAwaitRule } from './return-await';
 import type { SemiRule } from './semi';
 import type { SortTypeConstituentsRule } from './sort-type-constituents';
-import type { SortTypeUnionIntersectionMembersRule } from './sort-type-union-intersection-members';
 import type { SpaceBeforeBlocksRule } from './space-before-blocks';
 import type { SpaceBeforeFunctionParenRule } from './space-before-function-paren';
 import type { SpaceInfixOpsRule } from './space-infix-ops';
@@ -179,7 +175,6 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   NoConfusingVoidExpressionRule &
   NoDupeClassMembersRule &
   NoDuplicateEnumValuesRule &
-  NoDuplicateImportsRule &
   NoDuplicateTypeConstituentsRule &
   NoDynamicDeleteRule &
   NoEmptyFunctionRule &
@@ -191,7 +186,6 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   NoExtraneousClassRule &
   NoFloatingPromisesRule &
   NoForInArrayRule &
-  NoImplicitAnyCatchRule &
   NoImpliedEvalRule &
   NoImportTypeSideEffectsRule &
   NoInferrableTypesRule &
@@ -208,7 +202,6 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   NoNonNullAssertedNullishCoalescingRule &
   NoNonNullAssertedOptionalChainRule &
   NoNonNullAssertionRule &
-  NoParameterPropertiesRule &
   NoRedeclareRule &
   NoRedundantTypeConstituentsRule &
   NoRequireImportsRule &
@@ -265,7 +258,6 @@ export type TypeScriptRules = AdjacentOverloadSignaturesRule &
   ReturnAwaitRule &
   SemiRule &
   SortTypeConstituentsRule &
-  SortTypeUnionIntersectionMembersRule &
   SpaceBeforeBlocksRule &
   SpaceBeforeFunctionParenRule &
   SpaceInfixOpsRule &

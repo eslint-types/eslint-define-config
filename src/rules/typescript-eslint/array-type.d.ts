@@ -4,15 +4,20 @@ import type { RuleConfig } from '../rule-config';
  * Option.
  */
 export interface ArrayTypeOption {
+  /**
+   * The array type expected for mutable cases.
+   */
   default?: 'array' | 'generic' | 'array-simple';
+  /**
+   * The array type expected for readonly cases. If omitted, the value for `default` will be used.
+   */
   readonly?: 'array' | 'generic' | 'array-simple';
-  [k: string]: any;
 }
 
 /**
  * Options.
  */
-export type ArrayTypeOptions = [ArrayTypeOption];
+export type ArrayTypeOptions = [ArrayTypeOption?];
 
 /**
  * Require consistently using either `T[]` or `Array<T>` for arrays.

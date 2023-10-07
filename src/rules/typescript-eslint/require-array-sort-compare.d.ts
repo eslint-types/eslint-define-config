@@ -8,7 +8,6 @@ export interface RequireArraySortCompareOption {
    * Whether to ignore arrays in which all elements are strings.
    */
   ignoreStringArrays?: boolean;
-  [k: string]: any;
 }
 
 /**

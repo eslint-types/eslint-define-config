@@ -161,6 +161,7 @@ import type { NoNewSymbolRule } from './no-new-symbol';
 import type { NoNewWrappersRule } from './no-new-wrappers';
 import type { NoNonoctalDecimalEscapeRule } from './no-nonoctal-decimal-escape';
 import type { NoObjCallsRule } from './no-obj-calls';
+import type { NoObjectConstructorRule } from './no-object-constructor';
 import type { NoOctalRule } from './no-octal';
 import type { NoOctalEscapeRule } from './no-octal-escape';
 import type { NoParamReassignRule } from './no-param-reassign';
@@ -455,6 +456,7 @@ export type EslintRules = AccessorPairsRule &
   NoNewWrappersRule &
   NoNonoctalDecimalEscapeRule &
   NoObjCallsRule &
+  NoObjectConstructorRule &
   NoOctalRule &
   NoOctalEscapeRule &
   NoParamReassignRule &

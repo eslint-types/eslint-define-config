@@ -7,8 +7,6 @@ export interface ValidTitleOption {
   ignoreTypeOfDescribeName?: boolean;
   allowArguments?: boolean;
   disallowedWords?: string[];
-  /**
-   */
   [k: string]: any;
 }
 

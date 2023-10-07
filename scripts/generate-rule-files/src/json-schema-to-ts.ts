@@ -45,6 +45,9 @@ export async function generateTypeFromSchema(
   schema: JSONSchema4,
   typeName: string,
 ): Promise<string> {
+  schema = JSON.parse(
+    JSON.stringify(schema).replace(/#\/items\/0\/\$defs\//g, '#/$defs/'),
+  );
   let result: string = await compile(schema, typeName, {
     format: false,
     bannerComment: '',

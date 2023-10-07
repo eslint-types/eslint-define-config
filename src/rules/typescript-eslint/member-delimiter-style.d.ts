@@ -3,38 +3,33 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
+export type MultiLineOption = 'none' | 'semi' | 'comma';
+export type SingleLineOption = 'semi' | 'comma';
+
 export interface MemberDelimiterStyleOption {
   multiline?: {
-    delimiter?: 'none' | 'semi' | 'comma';
+    delimiter?: MultiLineOption;
     requireLast?: boolean;
   };
   singleline?: {
-    delimiter?: 'semi' | 'comma';
+    delimiter?: SingleLineOption;
     requireLast?: boolean;
   };
   overrides?: {
-    interface?: {
-      multiline?: {
-        delimiter?: 'none' | 'semi' | 'comma';
-        requireLast?: boolean;
-      };
-      singleline?: {
-        delimiter?: 'semi' | 'comma';
-        requireLast?: boolean;
-      };
-    };
-    typeLiteral?: {
-      multiline?: {
-        delimiter?: 'none' | 'semi' | 'comma';
-        requireLast?: boolean;
-      };
-      singleline?: {
-        delimiter?: 'semi' | 'comma';
-        requireLast?: boolean;
-      };
-    };
+    interface?: DelimiterConfig;
+    typeLiteral?: DelimiterConfig;
   };
   multilineDetection?: 'brackets' | 'last-member';
+}
+export interface DelimiterConfig {
+  multiline?: {
+    delimiter?: MultiLineOption;
+    requireLast?: boolean;
+  };
+  singleline?: {
+    delimiter?: SingleLineOption;
+    requireLast?: boolean;
+  };
 }
 
 /**

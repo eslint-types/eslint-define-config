@@ -28,7 +28,6 @@ export interface RestrictTemplateExpressionsOption {
    * Whether to allow `never` typed values in template expressions.
    */
   allowNever?: boolean;
-  [k: string]: any;
 }
 
 /**

@@ -5,7 +5,6 @@ import type { RuleConfig } from '../rule-config';
  */
 export interface PreferReadonlyOption {
   onlyInlineLambdas?: boolean;
-  [k: string]: any;
 }
 
 /**
