@@ -3,14 +3,16 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
+export type AccessibilityLevel = 'explicit' | 'no-public' | 'off';
+
 export interface ExplicitMemberAccessibilityOption {
-  accessibility?: 'explicit' | 'no-public' | 'off';
+  accessibility?: AccessibilityLevel;
   overrides?: {
-    accessors?: 'explicit' | 'no-public' | 'off';
-    constructors?: 'explicit' | 'no-public' | 'off';
-    methods?: 'explicit' | 'no-public' | 'off';
-    properties?: 'explicit' | 'no-public' | 'off';
-    parameterProperties?: 'explicit' | 'no-public' | 'off';
+    accessors?: AccessibilityLevel;
+    constructors?: AccessibilityLevel;
+    methods?: AccessibilityLevel;
+    properties?: AccessibilityLevel;
+    parameterProperties?: AccessibilityLevel;
   };
   ignoredMethodNames?: string[];
 }

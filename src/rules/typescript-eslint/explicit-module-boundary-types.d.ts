@@ -26,7 +26,6 @@ export interface ExplicitModuleBoundaryTypesOption {
    * Whether to ignore type annotations on the variable of a function expresion.
    */
   allowTypedFunctionExpressions?: boolean;
-  shouldTrackReferences?: boolean;
 }
 
 /**

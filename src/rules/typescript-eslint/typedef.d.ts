@@ -12,7 +12,6 @@ export interface TypedefOption {
   propertyDeclaration?: boolean;
   variableDeclaration?: boolean;
   variableDeclarationIgnoreFunction?: boolean;
-  [k: string]: any;
 }
 
 /**

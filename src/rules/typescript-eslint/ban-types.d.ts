@@ -3,17 +3,29 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
+export type BanConfig =
+  | null
+  | false
+  | true
+  | string
+  | {
+      /**
+       * Custom error message
+       */
+      message?: string;
+      /**
+       * Type to autofix replace with. Note that autofixers can be applied automatically - so you need to be careful with this option.
+       */
+      fixWith?: string;
+      /**
+       * Types to suggest replacing with.
+       */
+      suggest?: string[];
+    };
+
 export interface BanTypesOption {
   types?: {
-    [k: string]:
-      | null
-      | boolean
-      | string
-      | {
-          message?: string;
-          fixWith?: string;
-          suggest?: string[];
-        };
+    [k: string]: BanConfig;
   };
   extendDefaults?: boolean;
 }
