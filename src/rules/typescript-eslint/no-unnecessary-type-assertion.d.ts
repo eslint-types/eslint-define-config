@@ -8,7 +8,6 @@ export interface NoUnnecessaryTypeAssertionOption {
    * A list of type names to ignore.
    */
   typesToIgnore?: string[];
-  [k: string]: any;
 }
 
 /**

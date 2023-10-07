@@ -3,30 +3,17 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
+export type Modifier =
+  | 'readonly'
+  | 'private'
+  | 'protected'
+  | 'public'
+  | 'private readonly'
+  | 'protected readonly'
+  | 'public readonly';
+
 export interface ParameterPropertiesOption {
-  /**
-   * @minItems 1
-   */
-  allow?: [
-    (
-      | 'readonly'
-      | 'private'
-      | 'protected'
-      | 'public'
-      | 'private readonly'
-      | 'protected readonly'
-      | 'public readonly'
-    ),
-    ...(
-      | 'readonly'
-      | 'private'
-      | 'protected'
-      | 'public'
-      | 'private readonly'
-      | 'protected readonly'
-      | 'public readonly'
-    )[],
-  ];
+  allow?: Modifier[];
   prefer?: 'class-property' | 'parameter-property';
 }
 

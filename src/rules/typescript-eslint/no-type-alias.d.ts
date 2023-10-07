@@ -66,6 +66,8 @@ export type NoTypeAliasOptions = [NoTypeAliasOption?];
 /**
  * Disallow type aliases.
  *
+ * @deprecated
+ *
  * @see [no-type-alias](https://typescript-eslint.io/rules/no-type-alias)
  */
 export type NoTypeAliasRuleConfig = RuleConfig<NoTypeAliasOptions>;
@@ -73,11 +75,15 @@ export type NoTypeAliasRuleConfig = RuleConfig<NoTypeAliasOptions>;
 /**
  * Disallow type aliases.
  *
+ * @deprecated
+ *
  * @see [no-type-alias](https://typescript-eslint.io/rules/no-type-alias)
  */
 export interface NoTypeAliasRule {
   /**
    * Disallow type aliases.
+   *
+   * @deprecated
    *
    * @see [no-type-alias](https://typescript-eslint.io/rules/no-type-alias)
    */

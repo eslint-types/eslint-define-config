@@ -29,7 +29,6 @@ export interface SortTypeConstituentsOption {
     | 'tuple'
     | 'union'
   )[];
-  [k: string]: any;
 }
 
 /**

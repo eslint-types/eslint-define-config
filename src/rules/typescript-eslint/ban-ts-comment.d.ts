@@ -3,42 +3,25 @@ import type { RuleConfig } from '../rule-config';
 /**
  * Option.
  */
+export type DirectiveConfigSchema =
+  | boolean
+  | 'allow-with-description'
+  | {
+      descriptionFormat?: string;
+    };
+
 export interface BanTsCommentOption {
-  'ts-expect-error'?:
-    | boolean
-    | 'allow-with-description'
-    | {
-        descriptionFormat?: string;
-        [k: string]: any;
-      };
-  'ts-ignore'?:
-    | boolean
-    | 'allow-with-description'
-    | {
-        descriptionFormat?: string;
-        [k: string]: any;
-      };
-  'ts-nocheck'?:
-    | boolean
-    | 'allow-with-description'
-    | {
-        descriptionFormat?: string;
-        [k: string]: any;
-      };
-  'ts-check'?:
-    | boolean
-    | 'allow-with-description'
-    | {
-        descriptionFormat?: string;
-        [k: string]: any;
-      };
+  'ts-expect-error'?: DirectiveConfigSchema;
+  'ts-ignore'?: DirectiveConfigSchema;
+  'ts-nocheck'?: DirectiveConfigSchema;
+  'ts-check'?: DirectiveConfigSchema;
   minimumDescriptionLength?: number;
 }
 
 /**
  * Options.
  */
-export type BanTsCommentOptions = [BanTsCommentOption];
+export type BanTsCommentOptions = [BanTsCommentOption?];
 
 /**
  * Disallow `@ts-<directive>` comments or require descriptions after directives.

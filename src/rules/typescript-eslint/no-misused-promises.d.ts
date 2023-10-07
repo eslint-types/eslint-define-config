@@ -15,7 +15,6 @@ export interface NoMisusedPromisesOption {
         variables?: boolean;
       };
   checksSpreads?: boolean;
-  [k: string]: any;
 }
 
 /**

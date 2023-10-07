@@ -199,7 +199,7 @@ export class RuleFile {
    * Create the directory of the rule file if it doesn't exist.
    */
   private createRuleDirectory(): void {
-    const subPath: string = dirname(this.rulePath.toLowerCase());
+    const subPath: string = dirname(this.rulePath);
     if (!existsSync(subPath)) {
       mkdirSync(subPath, { recursive: true });
     }
