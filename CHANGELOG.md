@@ -1,6 +1,28 @@
 # Next
 
-[diff](https://github.com/eslint-types/eslint-define-config/compare/1.23.0...main)
+[diff](https://github.com/eslint-types/eslint-define-config/compare/1.24.0...main)
+
+# 1.24.0
+
+[diff](https://github.com/eslint-types/eslint-define-config/compare/1.23.0...1.24.0)
+
+**This will be the last v1 version.**
+
+We are working on a new custom plugin support for v2.  
+Read more about that here: _Support augmented global properties_ [#233]
+
+In preparation for this, the project was moved into a new GitHub organization called [eslint-types](https://github.com/eslint-types/eslint-define-config).
+
+The v2 version is already available via the npm dist-tag "alpha". So if you already want to advance custom support with your own plugin, don't hold back and start incorporating it into your plugin.
+
+**Other changes**
+
+- Support for `@typescript-eslint` v6
+- Updated several rules (please see diff)
+- Deprecate predefined config of flat config ([#227])
+
+[#227]: https://github.com/eslint-types/eslint-define-config/pull/227
+[#233]: https://github.com/eslint-types/eslint-define-config/issues/233
 
 # 1.23.0
 
