@@ -1,7 +1,7 @@
 import type { ESLintConfig } from './config';
 import type { FlatESLintConfig } from './flat-config';
 import type { Rules as AllRules } from './rules';
-import { RuleConfig } from './rules/rule-config';
+import type { RuleConfig } from './rules/rule-config';
 
 /**
  * Define an ESLint config.
@@ -42,7 +42,7 @@ export function defineFlatConfig<
   Strict extends boolean = false,
 >(
   config: ReadonlyArray<FlatESLintConfig<Rules, Strict>>,
-): FlatESLintConfig<Rules, Strict>[];
+): Array<FlatESLintConfig<Rules, Strict>>;
 
 export function defineFlatConfig(config: unknown): unknown {
   return config;

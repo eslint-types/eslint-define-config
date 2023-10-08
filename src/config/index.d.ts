@@ -1,6 +1,6 @@
 import type { Parser, ParserOptions } from '../parser-options';
 import type { Rules as AllRules } from '../rules';
-import { RuleConfig } from '../rules/rule-config';
+import type { RuleConfig } from '../rules/rule-config';
 import type { Environments } from './env';
 import type { Extends } from './extends';
 import type { Overrides } from './overrides';

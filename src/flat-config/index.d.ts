@@ -1,6 +1,6 @@
 import type { ESLint, Linter } from 'eslint';
 import type { Rules as AllRules } from '../rules';
-import { RuleConfig } from '../rules/rule-config';
+import type { RuleConfig } from '../rules/rule-config';
 import type { LanguageOptions } from './language-options';
 import type { LinterOptions } from './linter-options';
 
