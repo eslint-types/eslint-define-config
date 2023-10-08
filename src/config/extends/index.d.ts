@@ -1,51 +1,51 @@
 import type { LiteralUnion } from '../../utility-types';
-import type { EslintExtensions } from './eslint';
-import type { EslintCommentsExtensions } from './eslint-plugin-eslint-comment';
-import type { GraphqlExtensions } from './eslint-plugin-graphql';
-import type { ImportExtensions } from './eslint-plugin-import';
-import type { JsdocExtensions } from './eslint-plugin-jsdoc';
-import type { JsoncExtensions } from './eslint-plugin-jsonc';
-import type { MdxExtensions } from './eslint-plugin-mdx';
-import type { NExtensions } from './eslint-plugin-n';
-import type { NodeExtensions } from './eslint-plugin-node';
-import type { PrettierExtensions } from './eslint-plugin-prettier';
-import type { PromiseExtensions } from './eslint-plugin-promise';
-import type { ReactExtensions } from './eslint-plugin-react';
-import type { ReactHooksExtensions } from './eslint-plugin-react-hooks';
-import type { SonarjsExtensions } from './eslint-plugin-sonarjs';
-import type { TestingLibraryExtensions } from './eslint-plugin-testing-library';
-import type { UnicornExtensions } from './eslint-plugin-unicorn';
-import type { VitestExtensions } from './eslint-plugin-vitest';
-import type { VueExtensions } from './eslint-plugin-vue';
-import type { VuePugExtensions } from './eslint-plugin-vue-pug';
-import type { IntlifyVueI18nExtensions } from './intlify-vue-i18n';
-import type { TypescriptEslintExtensions } from './typescript-eslint';
+import type { EslintExtends } from './eslint';
+import type { EslintCommentsExtends } from './eslint-plugin-eslint-comment';
+import type { GraphqlExtends } from './eslint-plugin-graphql';
+import type { ImportExtends } from './eslint-plugin-import';
+import type { JsdocExtends } from './eslint-plugin-jsdoc';
+import type { JsoncExtends } from './eslint-plugin-jsonc';
+import type { MdxExtends } from './eslint-plugin-mdx';
+import type { NExtends } from './eslint-plugin-n';
+import type { NodeExtends } from './eslint-plugin-node';
+import type { PrettierExtends } from './eslint-plugin-prettier';
+import type { PromiseExtends } from './eslint-plugin-promise';
+import type { ReactExtends } from './eslint-plugin-react';
+import type { ReactHooksExtends } from './eslint-plugin-react-hooks';
+import type { SonarjsExtends } from './eslint-plugin-sonarjs';
+import type { TestingLibraryExtends } from './eslint-plugin-testing-library';
+import type { UnicornExtends } from './eslint-plugin-unicorn';
+import type { VitestExtends } from './eslint-plugin-vitest';
+import type { VueExtends } from './eslint-plugin-vue';
+import type { VuePugExtends } from './eslint-plugin-vue-pug';
+import type { IntlifyVueI18nExtends } from './intlify-vue-i18n';
+import type { TypescriptEslintExtends } from './typescript-eslint';
 
 /**
- * All known extensions.
+ * All known extends.
  */
-export type KnownExtensions = LiteralUnion<
-  | EslintCommentsExtensions
-  | EslintExtensions
-  | GraphqlExtensions
-  | ImportExtensions
-  | IntlifyVueI18nExtensions
-  | JsdocExtensions
-  | JsoncExtensions
-  | MdxExtensions
-  | NExtensions
-  | NodeExtensions
-  | PrettierExtensions
-  | PromiseExtensions
-  | ReactExtensions
-  | ReactHooksExtensions
-  | SonarjsExtensions
-  | TestingLibraryExtensions
-  | TypescriptEslintExtensions
-  | UnicornExtensions
-  | VitestExtensions
-  | VueExtensions
-  | VuePugExtensions
+export type KnownExtends = LiteralUnion<
+  | EslintCommentsExtends
+  | EslintExtends
+  | GraphqlExtends
+  | ImportExtends
+  | IntlifyVueI18nExtends
+  | JsdocExtends
+  | JsoncExtends
+  | MdxExtends
+  | NExtends
+  | NodeExtends
+  | PrettierExtends
+  | PromiseExtends
+  | ReactExtends
+  | ReactHooksExtends
+  | SonarjsExtends
+  | TestingLibraryExtends
+  | TypescriptEslintExtends
+  | UnicornExtends
+  | VitestExtends
+  | VueExtends
+  | VuePugExtends
 >;
 
 /**
@@ -53,4 +53,4 @@ export type KnownExtensions = LiteralUnion<
  *
  * @see [Extends](https://eslint.org/docs/user-guide/configuring/configuration-files#extending-configuration-files)
  */
-export type Extends = KnownExtensions | KnownExtensions[];
+export type Extends = KnownExtends | KnownExtends[];

@@ -1,9 +1,9 @@
 /**
- * Eslint MDX extensions.
+ * Eslint MDX extends.
  *
- * @see [Eslint MDX extensions](https://github.com/mdx-js/eslint-mdx/tree/master/packages/eslint-plugin-mdx)
+ * @see [Eslint MDX extends](https://github.com/mdx-js/eslint-mdx/tree/master/packages/eslint-plugin-mdx)
  */
-export type MdxExtensions =
+export type MdxExtends =
   | 'plugin:mdx/base'
   | 'plugin:mdx/code-blocks'
   | 'plugin:mdx/overrides'

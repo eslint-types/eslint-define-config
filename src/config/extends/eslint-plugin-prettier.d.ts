@@ -1,6 +1,6 @@
 /**
- * Eslint Prettier extensions.
+ * Eslint Prettier extends.
  *
- * @see [Eslint Prettier extensions](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration)
+ * @see [Eslint Prettier extends](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration)
  */
-export type PrettierExtensions = 'plugin:prettier/recommended' | 'prettier';
+export type PrettierExtends = 'plugin:prettier/recommended' | 'prettier';

@@ -1,9 +1,9 @@
 /**
- * Eslint React extensions.
+ * Eslint React extends.
  *
- * @see [Eslint React extensions](https://github.com/jsx-eslint/eslint-plugin-react)
+ * @see [Eslint React extends](https://github.com/jsx-eslint/eslint-plugin-react)
  */
-export type ReactExtensions =
+export type ReactExtends =
   | 'plugin:react/all'
   | 'plugin:react/jsx-runtime'
   | 'plugin:react/recommended';

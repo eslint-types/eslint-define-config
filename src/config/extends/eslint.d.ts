@@ -1,4 +1,4 @@
 /**
- * Eslint extensions.
+ * Eslint extends.
  */
-export type EslintExtensions = 'eslint:recommended' | 'eslint:all';
+export type EslintExtends = 'eslint:recommended' | 'eslint:all';

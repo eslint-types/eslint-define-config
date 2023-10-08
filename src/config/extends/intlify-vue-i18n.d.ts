@@ -1,6 +1,6 @@
 /**
- * Eslint Intlify VueI18n extensions.
+ * Eslint Intlify VueI18n extends.
  *
- * @see [Eslint Intlify VueI18n extensions](https://eslint-plugin-vue-i18n.intlify.dev/started.html)
+ * @see [Eslint Intlify VueI18n extends](https://eslint-plugin-vue-i18n.intlify.dev/started.html)
  */
-export type IntlifyVueI18nExtensions = 'plugin:@intlify/vue-i18n/recommended';
+export type IntlifyVueI18nExtends = 'plugin:@intlify/vue-i18n/recommended';

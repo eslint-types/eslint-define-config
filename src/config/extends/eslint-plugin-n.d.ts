@@ -1,9 +1,9 @@
 /**
- * Eslint N (Node) extensions.
+ * Eslint N (Node) extends.
  *
- * @see [Eslint N extensions](https://github.com/eslint-community/eslint-plugin-n#-configs)
+ * @see [Eslint N extends](https://github.com/eslint-community/eslint-plugin-n#-configs)
  */
-export type NExtensions =
+export type NExtends =
   | 'plugin:n/recommended'
   | 'plugin:n/recommended-module'
   | 'plugin:n/recommended-script';

@@ -1,8 +1,6 @@
 /**
- * Eslint Vitest extensions.
+ * Eslint Vitest extends.
  *
- * @see [Eslint Vitest extensions](https://eslint.vuejs.org/user-guide/#usage)
+ * @see [Eslint Vitest extends](https://eslint.vuejs.org/user-guide/#usage)
  */
-export type VitestExtensions =
-  | 'plugin:vitest/all'
-  | 'plugin:vitest/recommended';
+export type VitestExtends = 'plugin:vitest/all' | 'plugin:vitest/recommended';

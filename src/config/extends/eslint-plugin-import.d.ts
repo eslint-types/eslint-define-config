@@ -1,9 +1,9 @@
 /**
- * Eslint import extensions.
+ * Eslint import extends.
  *
- * @see [Eslint import extensions](https://github.com/benmosher/eslint-plugin-import#installation)
+ * @see [Eslint import extends](https://github.com/benmosher/eslint-plugin-import#installation)
  */
-export type ImportExtensions =
+export type ImportExtends =
   | 'plugin:import/errors'
   | 'plugin:import/warnings'
   | 'plugin:import/typescript';

@@ -1,9 +1,9 @@
 /**
- * Eslint TestingLibrary extensions.
+ * Eslint TestingLibrary extends.
  *
- * @see [Eslint TestingLibrary extensions](https://github.com/testing-library/eslint-plugin-testing-library)
+ * @see [Eslint TestingLibrary extends](https://github.com/testing-library/eslint-plugin-testing-library)
  */
-export type TestingLibraryExtensions =
+export type TestingLibraryExtends =
   | 'plugin:testing-library/angular'
   | 'plugin:testing-library/dom'
   | 'plugin:testing-library/marko'

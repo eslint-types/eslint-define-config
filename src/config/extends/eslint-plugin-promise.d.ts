@@ -1,6 +1,6 @@
 /**
- * Eslint promise extensions.
+ * Eslint promise extends.
  *
- * @see [Eslint promise extensions](https://github.com/eslint-community/eslint-plugin-promise#usage)
+ * @see [Eslint promise extends](https://github.com/eslint-community/eslint-plugin-promise#usage)
  */
-export type PromiseExtensions = 'plugin:promise/recommended';
+export type PromiseExtends = 'plugin:promise/recommended';

@@ -1,9 +1,9 @@
 /**
- * Eslint Vue extensions.
+ * Eslint Vue extends.
  *
- * @see [Eslint Vue extensions](https://eslint.vuejs.org/user-guide/#usage)
+ * @see [Eslint Vue extends](https://eslint.vuejs.org/user-guide/#usage)
  */
-export type VueExtensions =
+export type VueExtends =
   | 'plugin:vue/base'
   | 'plugin:vue/vue3-essential'
   | 'plugin:vue/vue3-strongly-recommended'

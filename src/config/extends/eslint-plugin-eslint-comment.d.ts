@@ -1,6 +1,6 @@
 /**
- * Eslint EslintComments extensions.
+ * Eslint EslintComments extends.
  *
- * @see [Eslint EslintComments extensions](https://mysticatea.github.io/eslint-plugin-eslint-comments/#%F0%9F%93%96-usage)
+ * @see [Eslint EslintComments extends](https://mysticatea.github.io/eslint-plugin-eslint-comments/#%F0%9F%93%96-usage)
  */
-export type EslintCommentsExtensions = 'plugin:eslint-comments/recommended';
+export type EslintCommentsExtends = 'plugin:eslint-comments/recommended';

@@ -1,9 +1,9 @@
 /**
- * Typescript eslint extensions.
+ * Typescript eslint extends.
  *
- * @see [Typescript eslint extensions](https://typescript-eslint.io/linting/configs#recommended-configurations)
+ * @see [Typescript eslint extends](https://typescript-eslint.io/linting/configs#recommended-configurations)
  */
-export type TypescriptEslintExtensions =
+export type TypescriptEslintExtends =
   | 'plugin:@typescript-eslint/recommended'
   | 'plugin:@typescript-eslint/recommended-requiring-type-checking'
   | 'plugin:@typescript-eslint/strict';

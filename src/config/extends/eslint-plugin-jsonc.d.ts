@@ -1,9 +1,9 @@
 /**
- * Eslint Jsonc extensions.
+ * Eslint Jsonc extends.
  *
- * @see [Eslint Jsonc extensions](https://github.com/ota-meshi/eslint-plugin-jsonc#configuration)
+ * @see [Eslint Jsonc extends](https://github.com/ota-meshi/eslint-plugin-jsonc#configuration)
  */
-export type JsoncExtensions =
+export type JsoncExtends =
   | 'plugin:jsdoc/base'
   | 'plugin:jsdoc/recommended'
   | 'plugin:jsonc/recommended-with-json'

@@ -1,6 +1,6 @@
 /**
- * Eslint JSDoc extensions.
+ * Eslint JSDoc extends.
  *
- * @see [Eslint JSDoc extensions](https://github.com/gajus/eslint-plugin-jsdoc#configuration)
+ * @see [Eslint JSDoc extends](https://github.com/gajus/eslint-plugin-jsdoc#configuration)
  */
-export type JsdocExtensions = 'plugin:jsdoc/recommended';
+export type JsdocExtends = 'plugin:jsdoc/recommended';

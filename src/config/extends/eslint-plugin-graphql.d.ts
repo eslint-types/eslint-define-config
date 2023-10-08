@@ -1,9 +1,9 @@
 /**
- * Eslint GraphQL extensions.
+ * Eslint GraphQL extends.
  *
- * @see [Eslint GraphQL extensions](https://the-guild.dev/graphql/eslint/docs/configs)
+ * @see [Eslint GraphQL extends](https://the-guild.dev/graphql/eslint/docs/configs)
  */
-export type GraphqlExtensions =
+export type GraphqlExtends =
   | 'plugin:@graphql-eslint/operations-all'
   | 'plugin:@graphql-eslint/operations-recommended'
   | 'plugin:@graphql-eslint/relay'

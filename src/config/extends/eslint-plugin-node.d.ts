@@ -1,9 +1,9 @@
 /**
- * Eslint Node extensions.
+ * Eslint Node extends.
  *
- * @see [Eslint Node extensions](https://github.com/mysticatea/eslint-plugin-node#-configs)
+ * @see [Eslint Node extends](https://github.com/mysticatea/eslint-plugin-node#-configs)
  */
-export type NodeExtensions =
+export type NodeExtends =
   | 'plugin:node/recommended'
   | 'plugin:node/recommended-module'
   | 'plugin:node/recommended-script';

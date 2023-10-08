@@ -1,9 +1,9 @@
 /**
- * Eslint Vue Pug extensions.
+ * Eslint Vue Pug extends.
  *
- * @see [Eslint Vue Pug extensions](https://github.com/rashfael/eslint-plugin-vue-pug#usage)
+ * @see [Eslint Vue Pug extends](https://github.com/rashfael/eslint-plugin-vue-pug#usage)
  */
-export type VuePugExtensions =
+export type VuePugExtends =
   | 'plugin:vue-pug/base'
   | 'plugin:vue-pug/vue3-essential'
   | 'plugin:vue-pug/vue3-strongly-recommended'
