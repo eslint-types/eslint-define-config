@@ -1,5 +1,6 @@
 import type { ESLint, Linter } from 'eslint';
-import type { Rules } from '../rules';
+import type { Rules as AllRules } from '../rules';
+import { RuleConfig } from '../rules/rule-config';
 import type { LanguageOptions } from './language-options';
 import type { LinterOptions } from './linter-options';
 
@@ -8,7 +9,10 @@ import type { LinterOptions } from './linter-options';
  *
  * @see [Configuration Files (New)](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new)
  */
-export interface FlatESLintConfigItem {
+export interface FlatESLintConfigItem<
+  Rules extends Record<string, RuleConfig> = AllRules,
+  Strict extends boolean = false,
+> {
   /**
    * An array of glob patterns indicating the files that the configuration object should apply to. If not specified, the configuration object applies to all files.
    *
@@ -54,7 +58,9 @@ export interface FlatESLintConfigItem {
    *
    * @see [Configuring rules](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new#configuring-rules)
    */
-  rules?: Rules;
+  rules?: Strict extends true
+    ? Partial<Rules>
+    : Partial<Rules & Record<string, RuleConfig>>;
 
   /**
    * An object containing name-value pairs of information that should be available to all rules.
@@ -74,7 +80,10 @@ export interface FlatESLintConfigItem {
  */
 export type PredefinedConfig = 'eslint:recommended' | 'eslint:all';
 
-export type FlatESLintConfig = FlatESLintConfigItem | PredefinedConfig;
+export type FlatESLintConfig<
+  Rules extends Record<string, RuleConfig> = AllRules,
+  Strict extends boolean = false,
+> = FlatESLintConfigItem<Rules, Strict> | PredefinedConfig;
 
 export * from './language-options';
 export * from './linter-options';

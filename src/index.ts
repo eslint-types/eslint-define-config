@@ -1,5 +1,7 @@
 import type { ESLintConfig } from './config';
 import type { FlatESLintConfig } from './flat-config';
+import type { Rules as AllRules } from './rules';
+import { RuleConfig } from './rules/rule-config';
 
 /**
  * Define an ESLint config.
@@ -7,7 +9,10 @@ import type { FlatESLintConfig } from './flat-config';
  * @param config ESLint config.
  * @returns ESLint config.
  */
-export function defineConfig(config: ESLintConfig): ESLintConfig {
+export function defineConfig<
+  Rules extends Record<string, RuleConfig> = AllRules,
+  Strict extends boolean = false,
+>(config: ESLintConfig<Rules, Strict>): ESLintConfig {
   return config;
 }
 
@@ -19,7 +24,10 @@ export function defineConfig(config: ESLintConfig): ESLintConfig {
  * @param config an item of Flat ESLint config.
  * @returns an item of Flat ESLint config.
  */
-export function defineFlatConfig(config: FlatESLintConfig): FlatESLintConfig;
+export function defineFlatConfig<
+  Rules extends Record<string, RuleConfig> = AllRules,
+  Strict extends boolean = false,
+>(config: FlatESLintConfig<Rules, Strict>): FlatESLintConfig<Rules, Strict>;
 
 /**
  * Define a flat ESLint config.
@@ -29,9 +37,12 @@ export function defineFlatConfig(config: FlatESLintConfig): FlatESLintConfig;
  * @param config Flat ESLint config.
  * @returns Flat ESLint config.
  */
-export function defineFlatConfig(
-  config: ReadonlyArray<FlatESLintConfig>,
-): FlatESLintConfig[];
+export function defineFlatConfig<
+  Rules extends Record<string, RuleConfig> = AllRules,
+  Strict extends boolean = false,
+>(
+  config: ReadonlyArray<FlatESLintConfig<Rules, Strict>>,
+): FlatESLintConfig<Rules, Strict>[];
 
 export function defineFlatConfig(config: unknown): unknown {
   return config;
