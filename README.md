@@ -49,6 +49,8 @@ pnpm add --save-dev eslint eslint-define-config
 // @ts-check
 
 // To activate auto-suggestions for Rules of specific plugins, you need to add a `/// <reference types="eslint-plugin-PLUGIN_NAME" />` comment.
+// ⚠️ This feature is very new and requires the support of the respective plugin owners.
+
 /// <reference types="@typescript-eslint/eslint-plugin" />
 
 const { defineConfig } = require('eslint-define-config');
@@ -103,6 +105,8 @@ _Click on the thumbnail to play the video_
 
 ## Want to support your own plugin?
 
+:warning: **This feature is very new and requires the support of the respective plugin owners**
+
 Add a `declare module` to your plugin package like this:
 
 ```ts
@@ -124,6 +128,14 @@ declare module 'eslint-define-config' {
   }
 }
 ```
+
+There are other interfaces that can be extended.
+
+- `CustomExtensions`
+- `CustomParserOptions`
+- `CustomParsers`
+- `CustomPlugins`
+- `CustomSettings`
 
 # Credits
 
