@@ -131,7 +131,7 @@ declare module 'eslint-define-config' {
 
 There are other interfaces that can be extended.
 
-- `CustomExtensions`
+- `CustomExtends`
 - `CustomParserOptions`
 - `CustomParsers`
 - `CustomPlugins`
