@@ -23,6 +23,31 @@ import type { VueI18nRules } from './vue-i18n';
 import type { VuePugRules } from './vue-pug';
 import type { YmlRules } from './yml';
 
+export type { DeprecationRules } from './deprecation';
+export type { EslintRules } from './eslint';
+export type { EslintCommentsRules } from './eslint-comments';
+export type { GraphQLRules } from './graphql-eslint';
+export type { ImportRules } from './import';
+export type { JSDocRules } from './jsdoc';
+export type { JsoncRules } from './jsonc';
+export type { JsxA11yRules } from './jsx-a11y';
+export type { NRules } from './n';
+export type { NodeRules } from './node';
+export type { PromiseRules } from './promise';
+export type { ReactRules } from './react';
+export type { ReactHooksRules } from './react-hooks';
+export type { RuleConfig } from './rule-config';
+export type { SonarJSRules } from './sonarjs';
+export type { SpellcheckRules } from './spellcheck';
+export type { TestingLibraryRules } from './testing-library';
+export type { TypeScriptRules } from './typescript-eslint';
+export type { UnicornRules } from './unicorn';
+export type { VitestRules } from './vitest';
+export type { VueRules } from './vue';
+export type { VueI18nRules } from './vue-i18n';
+export type { VuePugRules } from './vue-pug';
+export type { YmlRules } from './yml';
+
 /**
  * Rules.
  *
