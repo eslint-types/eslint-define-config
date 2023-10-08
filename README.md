@@ -48,10 +48,10 @@ pnpm add --save-dev eslint eslint-define-config
 ```ts
 // @ts-check
 
-// To activate auto-suggestions for Rules of specific plugins, you need to add a `/// <reference types="eslint-plugin-PLUGIN_NAME" />` comment.
+// To activate auto-suggestions for Rules of specific plugins, you need to add a `/// <reference types="eslint-plugin-PLUGIN_NAME/define-config-support" />` comment.
 // ⚠️ This feature is very new and requires the support of the respective plugin owners.
 
-/// <reference types="@typescript-eslint/eslint-plugin" />
+/// <reference types="@typescript-eslint/eslint-plugin/define-config-support" />
 
 const { defineConfig } = require('eslint-define-config');
 
