@@ -5,11 +5,11 @@
   <a href="https://www.npmjs.com/package/eslint-define-config" target="_blank">
     <img alt="Downloads" src="https://img.shields.io/npm/dt/eslint-define-config.svg">
   </a>
-  <a href="https://github.com/Shinigami92/eslint-define-config/actions/workflows/ci.yml">
-    <img alt="Build Status" src="https://github.com/Shinigami92/eslint-define-config/actions/workflows/ci.yml/badge.svg?branch=main">
+  <a href="https://github.com/eslint-types/eslint-define-config/actions/workflows/ci.yml">
+    <img alt="Build Status" src="https://github.com/eslint-types/eslint-define-config/actions/workflows/ci.yml/badge.svg?branch=main">
   </a>
-  <a href="https://github.com/Shinigami92/eslint-define-config/blob/main/LICENSE">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/Shinigami92/eslint-define-config.svg">
+  <a href="https://github.com/eslint-types/eslint-define-config/blob/main/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/eslint-types/eslint-define-config.svg">
   </a>
   <a href="https://prettier.io" target="_blank">
     <img alt="Code Style: Prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg">
