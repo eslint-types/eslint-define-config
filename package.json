@@ -98,7 +98,7 @@
     "eslint-plugin-vitest": "~0.3.2",
     "eslint-plugin-vue": "~9.17.0",
     "eslint-plugin-vue-pug": "~0.6.0",
-    "eslint-plugin-yml": "~1.9.0",
+    "eslint-plugin-yml": "~1.10.0",
     "expect-type": "~0.17.3",
     "graphql": "~16.8.1",
     "json-schema": "~0.4.0",
@@ -113,7 +113,7 @@
     "tsx": "~3.13.0",
     "typescript": "~5.2.2",
     "vitest": "~0.34.6",
-    "vue-eslint-parser": "~9.3.1"
+    "vue-eslint-parser": "~9.3.2"
   },
   "packageManager": "pnpm@8.8.0",
   "engines": {
