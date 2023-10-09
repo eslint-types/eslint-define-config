@@ -1,6 +1,16 @@
 # Next
 
-[diff](https://github.com/eslint-types/eslint-define-config/compare/1.24.0...main)
+[diff](https://github.com/eslint-types/eslint-define-config/compare/1.24.1...main)
+
+# 1.24.1
+
+[diff](https://github.com/eslint-types/eslint-define-config/compare/1.24.0...1.24.1)
+
+**Hotfix**
+
+- Fix missing build files in `package.json` ([#242])
+
+[#242]: https://github.com/eslint-types/eslint-define-config/issues/242
 
 # 1.24.0
 
