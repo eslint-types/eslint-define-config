@@ -60,6 +60,7 @@
   "bugs": "https://github.com/eslint-types/eslint-define-config/issues",
   "license": "MIT",
   "files": [
+    "dist",
     "src",
     "tsconfig.json"
   ],
