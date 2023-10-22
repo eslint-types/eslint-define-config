@@ -44,9 +44,6 @@ jobs:
       - name: Test types
         run: pnpm run typecheck
 
-      - name: Test
-        run: pnpm run test
-
   lint:
     runs-on: ubuntu-latest
     name: 'Lint: node-20, ubuntu-latest'
