@@ -1,16 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Config.
- */
-export interface PreferDestructuringConfig {
-  enforceForRenamedProperties?: boolean;
-}
-
-/**
- * Option.
- */
-export type PreferDestructuringOption =
+export type Schema0 =
   | {
       VariableDeclarator?: {
         array?: boolean;
@@ -26,32 +14,8 @@ export type PreferDestructuringOption =
       object?: boolean;
     };
 
-/**
- * Options.
- */
-export type PreferDestructuringOptions = [
-  PreferDestructuringOption?,
-  PreferDestructuringConfig?,
-];
-
-/**
- * Require destructuring from arrays and/or objects.
- *
- * @see [prefer-destructuring](https://eslint.org/docs/latest/rules/prefer-destructuring)
- */
-export type PreferDestructuringRuleConfig =
-  RuleConfig<PreferDestructuringOptions>;
-
-/**
- * Require destructuring from arrays and/or objects.
- *
- * @see [prefer-destructuring](https://eslint.org/docs/latest/rules/prefer-destructuring)
- */
-export interface PreferDestructuringRule {
-  /**
-   * Require destructuring from arrays and/or objects.
-   *
-   * @see [prefer-destructuring](https://eslint.org/docs/latest/rules/prefer-destructuring)
-   */
-  'prefer-destructuring': PreferDestructuringRuleConfig;
+export interface Schema1 {
+  enforceForRenamedProperties?: boolean;
 }
+
+export type PreferDestructuringRuleOptions = [Schema0?, Schema1?];

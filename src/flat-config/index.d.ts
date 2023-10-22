@@ -8,7 +8,7 @@ import type { LinterOptions } from './linter-options';
  *
  * @see [Configuration Files (New)](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new)
  */
-export interface FlatESLintConfigItem {
+export interface FlatESLintConfig {
   /**
    * An array of glob patterns indicating the files that the configuration object should apply to. If not specified, the configuration object applies to all files.
    *
@@ -64,17 +64,6 @@ export interface FlatESLintConfigItem {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   settings?: Record<string, any>;
 }
-
-/**
- * Predefined configurations.
- *
- * @see [Using predefined configurations](https://eslint.org/docs/latest/user-guide/configuring/configuration-files-new#using-predefined-configurations)
- *
- * @deprecated The predefined string configurations are deprecated and will be replaced by the @eslint/js package.
- */
-export type PredefinedConfig = 'eslint:recommended' | 'eslint:all';
-
-export type FlatESLintConfig = FlatESLintConfigItem | PredefinedConfig;
 
 export * from './language-options';
 export * from './linter-options';

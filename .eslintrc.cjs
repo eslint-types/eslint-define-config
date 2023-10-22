@@ -36,19 +36,28 @@ module.exports = defineConfig({
       'error',
       { default: 'array-simple', readonly: 'generic' },
     ],
-    '@typescript-eslint/ban-ts-comment': 'error',
     '@typescript-eslint/consistent-type-imports': 'error',
     '@typescript-eslint/explicit-module-boundary-types': 'error',
     '@typescript-eslint/naming-convention': [
       'error',
       {
         format: ['PascalCase'],
-        selector: ['class', 'interface', 'typeAlias', 'typeParameter'],
+        selector: ['class', 'interface', 'typeAlias', 'enumMember'],
+        leadingUnderscore: 'forbid',
+        trailingUnderscore: 'forbid',
+      },
+      {
+        format: ['PascalCase'],
+        selector: ['typeParameter'],
+        prefix: ['T'],
         leadingUnderscore: 'forbid',
         trailingUnderscore: 'forbid',
       },
     ],
-    '@typescript-eslint/no-inferrable-types': 'off',
+    '@typescript-eslint/no-inferrable-types': [
+      'error',
+      { ignoreParameters: true },
+    ],
     '@typescript-eslint/no-unsafe-argument': 'error',
     '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/no-unsafe-call': 'off',
@@ -58,17 +67,12 @@ module.exports = defineConfig({
       'error',
       { blankLine: 'always', prev: 'block-like', next: '*' },
     ],
-    '@typescript-eslint/prefer-nullish-coalescing': 'warn',
-    '@typescript-eslint/prefer-optional-chain': 'warn',
-    '@typescript-eslint/prefer-readonly': 'warn',
+    '@typescript-eslint/prefer-regexp-exec': 'error',
     '@typescript-eslint/restrict-template-expressions': [
       'error',
       { allowNumber: true, allowBoolean: true },
     ],
-    '@typescript-eslint/typedef': [
-      'warn',
-      { memberVariableDeclaration: true, variableDeclaration: true },
-    ],
+    '@typescript-eslint/unbound-method': 'off',
   },
   overrides: [
     {

@@ -1,39 +1,7 @@
-import type { RuleConfig } from '../rule-config';
+export type Schema0 = '1tbs' | 'stroustrup' | 'allman';
 
-/**
- * Config.
- */
-export interface BraceStyleConfig {
+export interface Schema1 {
   allowSingleLine?: boolean;
 }
 
-/**
- * Option.
- */
-export type BraceStyleOption = '1tbs' | 'stroustrup' | 'allman';
-
-/**
- * Options.
- */
-export type BraceStyleOptions = [BraceStyleOption?, BraceStyleConfig?];
-
-/**
- * Enforce consistent brace style for blocks.
- *
- * @see [brace-style](https://eslint.org/docs/latest/rules/brace-style)
- */
-export type BraceStyleRuleConfig = RuleConfig<BraceStyleOptions>;
-
-/**
- * Enforce consistent brace style for blocks.
- *
- * @see [brace-style](https://eslint.org/docs/latest/rules/brace-style)
- */
-export interface BraceStyleRule {
-  /**
-   * Enforce consistent brace style for blocks.
-   *
-   * @see [brace-style](https://eslint.org/docs/latest/rules/brace-style)
-   */
-  'brace-style': BraceStyleRuleConfig;
-}
+export type BraceStyleRuleOptions = [Schema0?, Schema1?];

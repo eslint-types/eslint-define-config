@@ -1,43 +1,7 @@
-import type { RuleConfig } from '../rule-config';
+export type Schema0 = 'always' | 'never';
 
-/**
- * Config.
- */
-export interface ComputedPropertySpacingConfig {
+export interface Schema1 {
   enforceForClassMembers?: boolean;
 }
 
-/**
- * Option.
- */
-export type ComputedPropertySpacingOption = 'always' | 'never';
-
-/**
- * Options.
- */
-export type ComputedPropertySpacingOptions = [
-  ComputedPropertySpacingOption?,
-  ComputedPropertySpacingConfig?,
-];
-
-/**
- * Enforce consistent spacing inside computed property brackets.
- *
- * @see [computed-property-spacing](https://eslint.org/docs/latest/rules/computed-property-spacing)
- */
-export type ComputedPropertySpacingRuleConfig =
-  RuleConfig<ComputedPropertySpacingOptions>;
-
-/**
- * Enforce consistent spacing inside computed property brackets.
- *
- * @see [computed-property-spacing](https://eslint.org/docs/latest/rules/computed-property-spacing)
- */
-export interface ComputedPropertySpacingRule {
-  /**
-   * Enforce consistent spacing inside computed property brackets.
-   *
-   * @see [computed-property-spacing](https://eslint.org/docs/latest/rules/computed-property-spacing)
-   */
-  'computed-property-spacing': ComputedPropertySpacingRuleConfig;
-}
+export type ComputedPropertySpacingRuleOptions = [Schema0?, Schema1?];

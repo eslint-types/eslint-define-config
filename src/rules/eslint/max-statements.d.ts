@@ -1,44 +1,12 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Config.
- */
-export interface MaxStatementsConfig {
-  ignoreTopLevelFunctions?: boolean;
-}
-
-/**
- * Option.
- */
-export type MaxStatementsOption =
+export type Schema0 =
   | number
   | {
       maximum?: number;
       max?: number;
     };
 
-/**
- * Options.
- */
-export type MaxStatementsOptions = [MaxStatementsOption?, MaxStatementsConfig?];
-
-/**
- * Enforce a maximum number of statements allowed in function blocks.
- *
- * @see [max-statements](https://eslint.org/docs/latest/rules/max-statements)
- */
-export type MaxStatementsRuleConfig = RuleConfig<MaxStatementsOptions>;
-
-/**
- * Enforce a maximum number of statements allowed in function blocks.
- *
- * @see [max-statements](https://eslint.org/docs/latest/rules/max-statements)
- */
-export interface MaxStatementsRule {
-  /**
-   * Enforce a maximum number of statements allowed in function blocks.
-   *
-   * @see [max-statements](https://eslint.org/docs/latest/rules/max-statements)
-   */
-  'max-statements': MaxStatementsRuleConfig;
+export interface Schema1 {
+  ignoreTopLevelFunctions?: boolean;
 }
+
+export type MaxStatementsRuleOptions = [Schema0?, Schema1?];

@@ -3,6 +3,6 @@
  *
  * @see [copied from issue](https://github.com/microsoft/TypeScript/issues/29729#issuecomment-471566609)
  */
-export type LiteralUnion<Union extends Base, Base = string> =
-  | Union
-  | (Base & { zz_IGNORE_ME?: never });
+export type LiteralUnion<TUnion extends TBase, TBase = string> =
+  | TUnion
+  | (TBase & { zz_IGNORE_ME?: never });

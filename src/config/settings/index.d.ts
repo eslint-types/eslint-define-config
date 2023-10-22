@@ -1,10 +1,3 @@
-import type { ImportSettings } from './import';
-import type { JSDocSettings } from './jsdoc';
-import type { JsxA11ySettings } from './jsx-a11y';
-import type { MdxSettings } from './mdx';
-import type { NodeSettings } from './node';
-import type { ReactSettings } from './react';
-
 /**
  * This is a special exported interface for other packages to declare
  * additional settings that should bail out for eslint settings. For example
@@ -26,11 +19,5 @@ export interface CustomSettings {}
  * Settings.
  */
 export interface Settings
-  extends ImportSettings,
-    JSDocSettings,
-    JsxA11ySettings,
-    MdxSettings,
-    NodeSettings,
-    ReactSettings,
-    Partial<CustomSettings>,
+  extends Partial<CustomSettings>,
     Partial<Record<string, unknown>> {}

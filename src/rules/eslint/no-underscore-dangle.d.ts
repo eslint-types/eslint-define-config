@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export interface NoUnderscoreDangleOption {
+export interface Schema0 {
   allow?: string[];
   allowAfterThis?: boolean;
   allowAfterSuper?: boolean;
@@ -15,29 +10,4 @@ export interface NoUnderscoreDangleOption {
   allowInObjectDestructuring?: boolean;
 }
 
-/**
- * Options.
- */
-export type NoUnderscoreDangleOptions = [NoUnderscoreDangleOption?];
-
-/**
- * Disallow dangling underscores in identifiers.
- *
- * @see [no-underscore-dangle](https://eslint.org/docs/latest/rules/no-underscore-dangle)
- */
-export type NoUnderscoreDangleRuleConfig =
-  RuleConfig<NoUnderscoreDangleOptions>;
-
-/**
- * Disallow dangling underscores in identifiers.
- *
- * @see [no-underscore-dangle](https://eslint.org/docs/latest/rules/no-underscore-dangle)
- */
-export interface NoUnderscoreDangleRule {
-  /**
-   * Disallow dangling underscores in identifiers.
-   *
-   * @see [no-underscore-dangle](https://eslint.org/docs/latest/rules/no-underscore-dangle)
-   */
-  'no-underscore-dangle': NoUnderscoreDangleRuleConfig;
-}
+export type NoUnderscoreDangleRuleOptions = [Schema0?];

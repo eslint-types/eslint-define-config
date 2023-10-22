@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export type NoParamReassignOption =
+export type Schema0 =
   | {
       props?: false;
     }
@@ -13,28 +8,4 @@ export type NoParamReassignOption =
       ignorePropertyModificationsForRegex?: string[];
     };
 
-/**
- * Options.
- */
-export type NoParamReassignOptions = [NoParamReassignOption?];
-
-/**
- * Disallow reassigning `function` parameters.
- *
- * @see [no-param-reassign](https://eslint.org/docs/latest/rules/no-param-reassign)
- */
-export type NoParamReassignRuleConfig = RuleConfig<NoParamReassignOptions>;
-
-/**
- * Disallow reassigning `function` parameters.
- *
- * @see [no-param-reassign](https://eslint.org/docs/latest/rules/no-param-reassign)
- */
-export interface NoParamReassignRule {
-  /**
-   * Disallow reassigning `function` parameters.
-   *
-   * @see [no-param-reassign](https://eslint.org/docs/latest/rules/no-param-reassign)
-   */
-  'no-param-reassign': NoParamReassignRuleConfig;
-}
+export type NoParamReassignRuleOptions = [Schema0?];

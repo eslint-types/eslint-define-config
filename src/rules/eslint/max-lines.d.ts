@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export type MaxLinesOption =
+export type Schema0 =
   | number
   | {
       max?: number;
@@ -11,28 +6,4 @@ export type MaxLinesOption =
       skipBlankLines?: boolean;
     };
 
-/**
- * Options.
- */
-export type MaxLinesOptions = [MaxLinesOption?];
-
-/**
- * Enforce a maximum number of lines per file.
- *
- * @see [max-lines](https://eslint.org/docs/latest/rules/max-lines)
- */
-export type MaxLinesRuleConfig = RuleConfig<MaxLinesOptions>;
-
-/**
- * Enforce a maximum number of lines per file.
- *
- * @see [max-lines](https://eslint.org/docs/latest/rules/max-lines)
- */
-export interface MaxLinesRule {
-  /**
-   * Enforce a maximum number of lines per file.
-   *
-   * @see [max-lines](https://eslint.org/docs/latest/rules/max-lines)
-   */
-  'max-lines': MaxLinesRuleConfig;
-}
+export type MaxLinesRuleOptions = [Schema0?];

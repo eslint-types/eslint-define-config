@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export type NoExtraParensOption =
+export type Schema0 =
   | []
   | ['functions']
   | []
@@ -24,28 +19,4 @@ export type NoExtraParensOption =
       },
     ];
 
-/**
- * Options.
- */
-export type NoExtraParensOptions = NoExtraParensOption;
-
-/**
- * Disallow unnecessary parentheses.
- *
- * @see [no-extra-parens](https://eslint.org/docs/latest/rules/no-extra-parens)
- */
-export type NoExtraParensRuleConfig = RuleConfig<NoExtraParensOptions>;
-
-/**
- * Disallow unnecessary parentheses.
- *
- * @see [no-extra-parens](https://eslint.org/docs/latest/rules/no-extra-parens)
- */
-export interface NoExtraParensRule {
-  /**
-   * Disallow unnecessary parentheses.
-   *
-   * @see [no-extra-parens](https://eslint.org/docs/latest/rules/no-extra-parens)
-   */
-  'no-extra-parens': NoExtraParensRuleConfig;
-}
+export type NoExtraParensRuleOptions = [Schema0?];

@@ -1,34 +1,5 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export interface DefaultCaseOption {
+export interface Schema0 {
   commentPattern?: string;
 }
 
-/**
- * Options.
- */
-export type DefaultCaseOptions = [DefaultCaseOption?];
-
-/**
- * Require `default` cases in `switch` statements.
- *
- * @see [default-case](https://eslint.org/docs/latest/rules/default-case)
- */
-export type DefaultCaseRuleConfig = RuleConfig<DefaultCaseOptions>;
-
-/**
- * Require `default` cases in `switch` statements.
- *
- * @see [default-case](https://eslint.org/docs/latest/rules/default-case)
- */
-export interface DefaultCaseRule {
-  /**
-   * Require `default` cases in `switch` statements.
-   *
-   * @see [default-case](https://eslint.org/docs/latest/rules/default-case)
-   */
-  'default-case': DefaultCaseRuleConfig;
-}
+export type DefaultCaseRuleOptions = [Schema0?];

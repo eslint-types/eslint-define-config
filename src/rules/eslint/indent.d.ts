@@ -1,9 +1,6 @@
-import type { RuleConfig } from '../rule-config';
+export type Schema0 = 'tab' | number;
 
-/**
- * Config.
- */
-export interface IndentConfig {
+export interface Schema1 {
   SwitchCase?: number;
   VariableDeclarator?:
     | (number | ('first' | 'off'))
@@ -37,33 +34,4 @@ export interface IndentConfig {
   ignoreComments?: boolean;
 }
 
-/**
- * Option.
- */
-export type IndentOption = 'tab' | number;
-
-/**
- * Options.
- */
-export type IndentOptions = [IndentOption?, IndentConfig?];
-
-/**
- * Enforce consistent indentation.
- *
- * @see [indent](https://eslint.org/docs/latest/rules/indent)
- */
-export type IndentRuleConfig = RuleConfig<IndentOptions>;
-
-/**
- * Enforce consistent indentation.
- *
- * @see [indent](https://eslint.org/docs/latest/rules/indent)
- */
-export interface IndentRule {
-  /**
-   * Enforce consistent indentation.
-   *
-   * @see [indent](https://eslint.org/docs/latest/rules/indent)
-   */
-  indent: IndentRuleConfig;
-}
+export type IndentRuleOptions = [Schema0?, Schema1?];

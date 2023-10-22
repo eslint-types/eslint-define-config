@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export type ObjectCurlyNewlineOption =
+export type Schema0 =
   | (
       | ('always' | 'never')
       | {
@@ -43,29 +38,4 @@ export type ObjectCurlyNewlineOption =
           };
     };
 
-/**
- * Options.
- */
-export type ObjectCurlyNewlineOptions = [ObjectCurlyNewlineOption?];
-
-/**
- * Enforce consistent line breaks after opening and before closing braces.
- *
- * @see [object-curly-newline](https://eslint.org/docs/latest/rules/object-curly-newline)
- */
-export type ObjectCurlyNewlineRuleConfig =
-  RuleConfig<ObjectCurlyNewlineOptions>;
-
-/**
- * Enforce consistent line breaks after opening and before closing braces.
- *
- * @see [object-curly-newline](https://eslint.org/docs/latest/rules/object-curly-newline)
- */
-export interface ObjectCurlyNewlineRule {
-  /**
-   * Enforce consistent line breaks after opening and before closing braces.
-   *
-   * @see [object-curly-newline](https://eslint.org/docs/latest/rules/object-curly-newline)
-   */
-  'object-curly-newline': ObjectCurlyNewlineRuleConfig;
-}
+export type ObjectCurlyNewlineRuleOptions = [Schema0?];
