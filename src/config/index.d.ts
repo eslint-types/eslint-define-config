@@ -83,7 +83,7 @@ export interface ESLintConfig {
    *
    * @see [Rules](https://eslint.org/docs/latest/user-guide/configuring/rules)
    */
-  rules?: Rules;
+  rules?: Partial<Rules>;
 
   /**
    * Overrides.

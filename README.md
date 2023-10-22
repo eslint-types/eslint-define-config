@@ -47,6 +47,12 @@ pnpm add --save-dev eslint eslint-define-config
 
 ```ts
 // @ts-check
+
+// To activate auto-suggestions for Rules of specific plugins, you need to add a `/// <reference types="eslint-plugin-PLUGIN_NAME/define-config-support" />` comment.
+// ⚠️ This feature is very new and requires the support of the respective plugin owners.
+
+/// <reference types="@typescript-eslint/eslint-plugin/define-config-support" />
+
 const { defineConfig } = require('eslint-define-config');
 
 module.exports = defineConfig({
@@ -96,6 +102,40 @@ _Click on the thumbnail to play the video_
 <a href="https://user-images.githubusercontent.com/7195563/112726158-4a19e780-8f1c-11eb-8cc6-4ea6c100137f.mp4" target="_blank">
   <img src="https://user-images.githubusercontent.com/7195563/112726343-30c56b00-8f1d-11eb-9b92-260c530caf1b.png" alt="Video" width="600px"/>
 </a>
+
+## Want to support your own plugin?
+
+:warning: **This feature is very new and requires the support of the respective plugin owners**
+
+Add a `declare module` to your plugin package like this:
+
+```ts
+declare module 'eslint-define-config' {
+  export interface CustomRuleOptions {
+    /**
+     * Require consistently using either `T[]` or `Array<T>` for arrays.
+     *
+     * @see [array-type](https://typescript-eslint.io/rules/array-type)
+     */
+    '@typescript-eslint/array-type': [
+      {
+        default?: 'array' | 'generic' | 'array-simple';
+        readonly?: 'array' | 'generic' | 'array-simple';
+      },
+    ];
+
+    // ... more Rules
+  }
+}
+```
+
+There are other interfaces that can be extended.
+
+- `CustomExtends`
+- `CustomParserOptions`
+- `CustomParsers`
+- `CustomPlugins`
+- `CustomSettings`
 
 # Credits
 

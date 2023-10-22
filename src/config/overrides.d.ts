@@ -80,7 +80,7 @@ export interface Override {
    *
    * @see [Rules](https://eslint.org/docs/user-guide/configuring/rules)
    */
-  rules?: Rules;
+  rules?: Partial<Rules>;
 
   /**
    * Settings.

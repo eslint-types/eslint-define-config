@@ -24,33 +24,66 @@ import type { VuePugRules } from './vue-pug';
 import type { YmlRules } from './yml';
 
 /**
+ * This is a special exported interface for other packages to declare
+ * additional types that should bail out for eslint rules. For example
+ * `@typescript-eslint/eslint-plugin` can declare it like so in its `d.ts`:
+ *
+ * ```ts
+ * declare module 'eslint-define-config' {
+ *   export interface CustomRuleOptions {
+ *     /**
+ *      * Require consistently using either `T[]` or `Array<T>` for arrays.
+ *      *
+ *      * \@see [array-type](https://typescript-eslint.io/rules/array-type)
+ *      *\/
+ *     '@typescript-eslint/array-type': [
+ *       {
+ *         default?: 'array' | 'generic' | 'array-simple';
+ *         readonly?: 'array' | 'generic' | 'array-simple';
+ *       },
+ *     ];
+ *
+ *     // ... more Rules
+ *   }
+ * }
+ * ```
+ */
+export interface CustomRuleOptions {}
+
+type CustomRules = {
+  [TRuleName in keyof CustomRuleOptions]: RuleConfig<
+    CustomRuleOptions[TRuleName]
+  >;
+};
+
+/**
  * Rules.
  *
  * @see [Rules](https://eslint.org/docs/user-guide/configuring/rules)
  */
-export type Rules = Partial<
-  DeprecationRules &
-    EslintRules &
-    EslintCommentsRules &
-    GraphQLRules &
-    ImportRules &
-    JSDocRules &
-    JsoncRules &
-    JsxA11yRules &
-    NodeRules &
-    NRules &
-    PromiseRules &
-    ReactHooksRules &
-    ReactRules &
-    SonarJSRules &
-    SpellcheckRules &
-    TestingLibraryRules &
-    TypeScriptRules &
-    UnicornRules &
-    VitestRules &
-    VueRules &
-    VueI18nRules &
-    VuePugRules &
-    YmlRules &
-    Record<string, RuleConfig>
->;
+export interface Rules
+  extends CustomRules,
+    DeprecationRules,
+    EslintRules,
+    EslintCommentsRules,
+    GraphQLRules,
+    ImportRules,
+    JSDocRules,
+    JsoncRules,
+    JsxA11yRules,
+    NodeRules,
+    NRules,
+    PromiseRules,
+    ReactHooksRules,
+    ReactRules,
+    SonarJSRules,
+    SpellcheckRules,
+    TestingLibraryRules,
+    TypeScriptRules,
+    UnicornRules,
+    VitestRules,
+    VueRules,
+    VueI18nRules,
+    VuePugRules,
+    YmlRules,
+    Record<string, RuleConfig> {}

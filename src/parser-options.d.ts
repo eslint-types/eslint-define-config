@@ -132,20 +132,80 @@ export type DebugLevel =
   | boolean
   | Array<'eslint' | 'typescript' | 'typescript-eslint'>;
 
+/**
+ * This is a special exported interface for other packages to declare
+ * additional parsers that should bail out for eslint parsers. For example
+ * `'@typescript-eslint/eslint-plugin'` can declare it like so in its `d.ts`:
+ *
+ * ```ts
+ * declare module 'eslint-define-config' {
+ *   export interface CustomParsers {
+ *     '@typescript-eslint/parser': void;
+ *   }
+ * }
+ * ```
+ */
+export interface CustomParsers {}
+
 /** Parser. */
 export type Parser = LiteralUnion<
   | 'babel-eslint'
   | '@typescript-eslint/parser'
   | 'jsonc-eslint-parser'
   | 'vue-eslint-parser'
+  // eslint-disable-next-line @typescript-eslint/no-redundant-type-constituents
+  | keyof CustomParsers
 >;
+
+/**
+ * This is a special exported interface for other packages to declare
+ * additional parser options that should bail out for eslint parser options. For example
+ * `@typescript-eslint/eslint-plugin` can declare it like so in its `d.ts`:
+ *
+ * ```ts
+ * declare module 'eslint-define-config' {
+ *   export interface CustomParserOptions {
+ *     /**
+ *      * This option allows you to provide the root directory for relative tsconfig paths specified in the `project` option above.
+ *      *
+ *      * \@see [tsconfigRootDir](https://typescript-eslint.io/architecture/parser/#tsconfigrootdir)
+ *      *\/
+ *     tsconfigRootDir?: string;
+ *
+ *     useJSXTextNode?: boolean;
+ *
+ *     /**
+ *      * This option allows you to toggle the warning that the parser will give you if you use a version of TypeScript which is not explicitly supported.
+ *      *
+ *      * \@default true
+ *      *
+ *      * \@see [warnOnUnsupportedTypeScriptVersion](https://typescript-eslint.io/architecture/parser/#warnonunsupportedtypescriptversion)
+ *      *\/
+ *     warnOnUnsupportedTypeScriptVersion?: boolean;
+ *
+ *     /**
+ *      * This option allow you to tell parser to act as if `emitDecoratorMetadata: true` is set in `tsconfig.json`, but without [type-aware linting](https://typescript-eslint.io/linting/typed-linting).
+ *      * In other words, you don't have to specify `parserOptions.project` in this case, making the linting process faster.
+ *      *
+ *      * \@default undefined
+ *      *
+ *      * \@see [emitDecoratorMetadata](https://typescript-eslint.io/architecture/parser/#emitdecoratormetadata)
+ *      *\/
+ *     emitDecoratorMetadata?: boolean;
+ *   }
+ * }
+ * ```
+ */
+export interface CustomParserOptions {}
 
 /**
  * Parser options.
  *
  * @see [Specifying Parser Options](https://eslint.org/docs/user-guide/configuring/language-options#specifying-parser-options)
  */
-export interface ParserOptions extends Partial<Record<string, unknown>> {
+export interface ParserOptions
+  extends Partial<CustomParserOptions>,
+    Partial<Record<string, unknown>> {
   /**
    * Accepts any valid ECMAScript version number or `'latest'`:
    *
