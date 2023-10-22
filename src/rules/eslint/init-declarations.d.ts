@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export type InitDeclarationsOption =
+export type Schema0 =
   | []
   | ['always']
   | []
@@ -15,28 +10,4 @@ export type InitDeclarationsOption =
       },
     ];
 
-/**
- * Options.
- */
-export type InitDeclarationsOptions = InitDeclarationsOption;
-
-/**
- * Require or disallow initialization in variable declarations.
- *
- * @see [init-declarations](https://eslint.org/docs/latest/rules/init-declarations)
- */
-export type InitDeclarationsRuleConfig = RuleConfig<InitDeclarationsOptions>;
-
-/**
- * Require or disallow initialization in variable declarations.
- *
- * @see [init-declarations](https://eslint.org/docs/latest/rules/init-declarations)
- */
-export interface InitDeclarationsRule {
-  /**
-   * Require or disallow initialization in variable declarations.
-   *
-   * @see [init-declarations](https://eslint.org/docs/latest/rules/init-declarations)
-   */
-  'init-declarations': InitDeclarationsRuleConfig;
-}
+export type InitDeclarationsRuleOptions = [Schema0?];

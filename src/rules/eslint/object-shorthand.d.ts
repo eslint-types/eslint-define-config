@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export type ObjectShorthandOption =
+export type Schema0 =
   | []
   | [
       | 'always'
@@ -33,28 +28,4 @@ export type ObjectShorthandOption =
       },
     ];
 
-/**
- * Options.
- */
-export type ObjectShorthandOptions = ObjectShorthandOption;
-
-/**
- * Require or disallow method and property shorthand syntax for object literals.
- *
- * @see [object-shorthand](https://eslint.org/docs/latest/rules/object-shorthand)
- */
-export type ObjectShorthandRuleConfig = RuleConfig<ObjectShorthandOptions>;
-
-/**
- * Require or disallow method and property shorthand syntax for object literals.
- *
- * @see [object-shorthand](https://eslint.org/docs/latest/rules/object-shorthand)
- */
-export interface ObjectShorthandRule {
-  /**
-   * Require or disallow method and property shorthand syntax for object literals.
-   *
-   * @see [object-shorthand](https://eslint.org/docs/latest/rules/object-shorthand)
-   */
-  'object-shorthand': ObjectShorthandRuleConfig;
-}
+export type ObjectShorthandRuleOptions = [Schema0?];

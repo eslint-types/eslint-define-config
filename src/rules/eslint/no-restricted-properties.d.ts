@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export type NoRestrictedPropertiesOption = (
+export type Schema0 = (
   | {
       object: string;
       property?: string;
@@ -16,29 +11,4 @@ export type NoRestrictedPropertiesOption = (
     }
 )[];
 
-/**
- * Options.
- */
-export type NoRestrictedPropertiesOptions = NoRestrictedPropertiesOption;
-
-/**
- * Disallow certain properties on certain objects.
- *
- * @see [no-restricted-properties](https://eslint.org/docs/latest/rules/no-restricted-properties)
- */
-export type NoRestrictedPropertiesRuleConfig =
-  RuleConfig<NoRestrictedPropertiesOptions>;
-
-/**
- * Disallow certain properties on certain objects.
- *
- * @see [no-restricted-properties](https://eslint.org/docs/latest/rules/no-restricted-properties)
- */
-export interface NoRestrictedPropertiesRule {
-  /**
-   * Disallow certain properties on certain objects.
-   *
-   * @see [no-restricted-properties](https://eslint.org/docs/latest/rules/no-restricted-properties)
-   */
-  'no-restricted-properties': NoRestrictedPropertiesRuleConfig;
-}
+export type NoRestrictedPropertiesRuleOptions = [Schema0?];

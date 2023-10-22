@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export interface NoMagicNumbersOption {
+export interface Schema0 {
   detectObjects?: boolean;
   enforceConst?: boolean;
   ignore?: (number | string)[];
@@ -12,28 +7,4 @@ export interface NoMagicNumbersOption {
   ignoreClassFieldInitialValues?: boolean;
 }
 
-/**
- * Options.
- */
-export type NoMagicNumbersOptions = [NoMagicNumbersOption?];
-
-/**
- * Disallow magic numbers.
- *
- * @see [no-magic-numbers](https://eslint.org/docs/latest/rules/no-magic-numbers)
- */
-export type NoMagicNumbersRuleConfig = RuleConfig<NoMagicNumbersOptions>;
-
-/**
- * Disallow magic numbers.
- *
- * @see [no-magic-numbers](https://eslint.org/docs/latest/rules/no-magic-numbers)
- */
-export interface NoMagicNumbersRule {
-  /**
-   * Disallow magic numbers.
-   *
-   * @see [no-magic-numbers](https://eslint.org/docs/latest/rules/no-magic-numbers)
-   */
-  'no-magic-numbers': NoMagicNumbersRuleConfig;
-}
+export type NoMagicNumbersRuleOptions = [Schema0?];

@@ -1,9 +1,6 @@
-import type { RuleConfig } from '../rule-config';
+export type Schema0 = 'always' | 'never';
 
-/**
- * Config.
- */
-export interface SpacedCommentConfig {
+export interface Schema1 {
   exceptions?: string[];
   markers?: string[];
   line?: {
@@ -17,33 +14,4 @@ export interface SpacedCommentConfig {
   };
 }
 
-/**
- * Option.
- */
-export type SpacedCommentOption = 'always' | 'never';
-
-/**
- * Options.
- */
-export type SpacedCommentOptions = [SpacedCommentOption?, SpacedCommentConfig?];
-
-/**
- * Enforce consistent spacing after the `//` or `/*` in a comment.
- *
- * @see [spaced-comment](https://eslint.org/docs/latest/rules/spaced-comment)
- */
-export type SpacedCommentRuleConfig = RuleConfig<SpacedCommentOptions>;
-
-/**
- * Enforce consistent spacing after the `//` or `/*` in a comment.
- *
- * @see [spaced-comment](https://eslint.org/docs/latest/rules/spaced-comment)
- */
-export interface SpacedCommentRule {
-  /**
-   * Enforce consistent spacing after the `//` or `/*` in a comment.
-   *
-   * @see [spaced-comment](https://eslint.org/docs/latest/rules/spaced-comment)
-   */
-  'spaced-comment': SpacedCommentRuleConfig;
-}
+export type SpacedCommentRuleOptions = [Schema0?, Schema1?];

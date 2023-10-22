@@ -1,9 +1,6 @@
-import type { RuleConfig } from '../rule-config';
+export type Schema0 = 'always' | 'never';
 
-/**
- * Config.
- */
-export type CapitalizedCommentsConfig =
+export type Schema1 =
   | {
       ignorePattern?: string;
       ignoreInlineComments?: boolean;
@@ -22,37 +19,4 @@ export type CapitalizedCommentsConfig =
       };
     };
 
-/**
- * Option.
- */
-export type CapitalizedCommentsOption = 'always' | 'never';
-
-/**
- * Options.
- */
-export type CapitalizedCommentsOptions = [
-  CapitalizedCommentsOption?,
-  CapitalizedCommentsConfig?,
-];
-
-/**
- * Enforce or disallow capitalization of the first letter of a comment.
- *
- * @see [capitalized-comments](https://eslint.org/docs/latest/rules/capitalized-comments)
- */
-export type CapitalizedCommentsRuleConfig =
-  RuleConfig<CapitalizedCommentsOptions>;
-
-/**
- * Enforce or disallow capitalization of the first letter of a comment.
- *
- * @see [capitalized-comments](https://eslint.org/docs/latest/rules/capitalized-comments)
- */
-export interface CapitalizedCommentsRule {
-  /**
-   * Enforce or disallow capitalization of the first letter of a comment.
-   *
-   * @see [capitalized-comments](https://eslint.org/docs/latest/rules/capitalized-comments)
-   */
-  'capitalized-comments': CapitalizedCommentsRuleConfig;
-}
+export type CapitalizedCommentsRuleOptions = [Schema0?, Schema1?];

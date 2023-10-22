@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export type NoUseBeforeDefineOption =
+export type Schema0 =
   | 'nofunc'
   | {
       functions?: boolean;
@@ -12,28 +7,4 @@ export type NoUseBeforeDefineOption =
       allowNamedExports?: boolean;
     };
 
-/**
- * Options.
- */
-export type NoUseBeforeDefineOptions = [NoUseBeforeDefineOption?];
-
-/**
- * Disallow the use of variables before they are defined.
- *
- * @see [no-use-before-define](https://eslint.org/docs/latest/rules/no-use-before-define)
- */
-export type NoUseBeforeDefineRuleConfig = RuleConfig<NoUseBeforeDefineOptions>;
-
-/**
- * Disallow the use of variables before they are defined.
- *
- * @see [no-use-before-define](https://eslint.org/docs/latest/rules/no-use-before-define)
- */
-export interface NoUseBeforeDefineRule {
-  /**
-   * Disallow the use of variables before they are defined.
-   *
-   * @see [no-use-before-define](https://eslint.org/docs/latest/rules/no-use-before-define)
-   */
-  'no-use-before-define': NoUseBeforeDefineRuleConfig;
-}
+export type NoUseBeforeDefineRuleOptions = [Schema0?];

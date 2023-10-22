@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export type ArrowBodyStyleOption =
+export type Schema0 =
   | []
   | ['always' | 'never']
   | []
@@ -15,28 +10,4 @@ export type ArrowBodyStyleOption =
       },
     ];
 
-/**
- * Options.
- */
-export type ArrowBodyStyleOptions = ArrowBodyStyleOption;
-
-/**
- * Require braces around arrow function bodies.
- *
- * @see [arrow-body-style](https://eslint.org/docs/latest/rules/arrow-body-style)
- */
-export type ArrowBodyStyleRuleConfig = RuleConfig<ArrowBodyStyleOptions>;
-
-/**
- * Require braces around arrow function bodies.
- *
- * @see [arrow-body-style](https://eslint.org/docs/latest/rules/arrow-body-style)
- */
-export interface ArrowBodyStyleRule {
-  /**
-   * Require braces around arrow function bodies.
-   *
-   * @see [arrow-body-style](https://eslint.org/docs/latest/rules/arrow-body-style)
-   */
-  'arrow-body-style': ArrowBodyStyleRuleConfig;
-}
+export type ArrowBodyStyleRuleOptions = [Schema0?];

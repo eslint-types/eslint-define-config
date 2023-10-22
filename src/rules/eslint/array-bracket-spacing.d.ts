@@ -1,45 +1,9 @@
-import type { RuleConfig } from '../rule-config';
+export type Schema0 = 'always' | 'never';
 
-/**
- * Config.
- */
-export interface ArrayBracketSpacingConfig {
+export interface Schema1 {
   singleValue?: boolean;
   objectsInArrays?: boolean;
   arraysInArrays?: boolean;
 }
 
-/**
- * Option.
- */
-export type ArrayBracketSpacingOption = 'always' | 'never';
-
-/**
- * Options.
- */
-export type ArrayBracketSpacingOptions = [
-  ArrayBracketSpacingOption?,
-  ArrayBracketSpacingConfig?,
-];
-
-/**
- * Enforce consistent spacing inside array brackets.
- *
- * @see [array-bracket-spacing](https://eslint.org/docs/latest/rules/array-bracket-spacing)
- */
-export type ArrayBracketSpacingRuleConfig =
-  RuleConfig<ArrayBracketSpacingOptions>;
-
-/**
- * Enforce consistent spacing inside array brackets.
- *
- * @see [array-bracket-spacing](https://eslint.org/docs/latest/rules/array-bracket-spacing)
- */
-export interface ArrayBracketSpacingRule {
-  /**
-   * Enforce consistent spacing inside array brackets.
-   *
-   * @see [array-bracket-spacing](https://eslint.org/docs/latest/rules/array-bracket-spacing)
-   */
-  'array-bracket-spacing': ArrayBracketSpacingRuleConfig;
-}
+export type ArrayBracketSpacingRuleOptions = [Schema0?, Schema1?];

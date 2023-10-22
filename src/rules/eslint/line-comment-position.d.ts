@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export type LineCommentPositionOption =
+export type Schema0 =
   | ('above' | 'beside')
   | {
       position?: 'above' | 'beside';
@@ -12,29 +7,4 @@ export type LineCommentPositionOption =
       applyDefaultIgnorePatterns?: boolean;
     };
 
-/**
- * Options.
- */
-export type LineCommentPositionOptions = [LineCommentPositionOption?];
-
-/**
- * Enforce position of line comments.
- *
- * @see [line-comment-position](https://eslint.org/docs/latest/rules/line-comment-position)
- */
-export type LineCommentPositionRuleConfig =
-  RuleConfig<LineCommentPositionOptions>;
-
-/**
- * Enforce position of line comments.
- *
- * @see [line-comment-position](https://eslint.org/docs/latest/rules/line-comment-position)
- */
-export interface LineCommentPositionRule {
-  /**
-   * Enforce position of line comments.
-   *
-   * @see [line-comment-position](https://eslint.org/docs/latest/rules/line-comment-position)
-   */
-  'line-comment-position': LineCommentPositionRuleConfig;
-}
+export type LineCommentPositionRuleOptions = [Schema0?];

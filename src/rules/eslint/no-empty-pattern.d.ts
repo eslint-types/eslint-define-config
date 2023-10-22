@@ -1,34 +1,5 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export interface NoEmptyPatternOption {
+export interface Schema0 {
   allowObjectPatternsAsParameters?: boolean;
 }
 
-/**
- * Options.
- */
-export type NoEmptyPatternOptions = [NoEmptyPatternOption?];
-
-/**
- * Disallow empty destructuring patterns.
- *
- * @see [no-empty-pattern](https://eslint.org/docs/latest/rules/no-empty-pattern)
- */
-export type NoEmptyPatternRuleConfig = RuleConfig<NoEmptyPatternOptions>;
-
-/**
- * Disallow empty destructuring patterns.
- *
- * @see [no-empty-pattern](https://eslint.org/docs/latest/rules/no-empty-pattern)
- */
-export interface NoEmptyPatternRule {
-  /**
-   * Disallow empty destructuring patterns.
-   *
-   * @see [no-empty-pattern](https://eslint.org/docs/latest/rules/no-empty-pattern)
-   */
-  'no-empty-pattern': NoEmptyPatternRuleConfig;
-}
+export type NoEmptyPatternRuleOptions = [Schema0?];

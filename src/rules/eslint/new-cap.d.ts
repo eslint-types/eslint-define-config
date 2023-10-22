@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export interface NewCapOption {
+export interface Schema0 {
   newIsCap?: boolean;
   capIsNew?: boolean;
   newIsCapExceptions?: string[];
@@ -13,28 +8,4 @@ export interface NewCapOption {
   properties?: boolean;
 }
 
-/**
- * Options.
- */
-export type NewCapOptions = [NewCapOption?];
-
-/**
- * Require constructor names to begin with a capital letter.
- *
- * @see [new-cap](https://eslint.org/docs/latest/rules/new-cap)
- */
-export type NewCapRuleConfig = RuleConfig<NewCapOptions>;
-
-/**
- * Require constructor names to begin with a capital letter.
- *
- * @see [new-cap](https://eslint.org/docs/latest/rules/new-cap)
- */
-export interface NewCapRule {
-  /**
-   * Require constructor names to begin with a capital letter.
-   *
-   * @see [new-cap](https://eslint.org/docs/latest/rules/new-cap)
-   */
-  'new-cap': NewCapRuleConfig;
-}
+export type NewCapRuleOptions = [Schema0?];

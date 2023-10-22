@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export type KeySpacingOption =
+export type Schema0 =
   | {
       align?:
         | ('colon' | 'value')
@@ -56,28 +51,4 @@ export type KeySpacingOption =
       };
     };
 
-/**
- * Options.
- */
-export type KeySpacingOptions = [KeySpacingOption?];
-
-/**
- * Enforce consistent spacing between keys and values in object literal properties.
- *
- * @see [key-spacing](https://eslint.org/docs/latest/rules/key-spacing)
- */
-export type KeySpacingRuleConfig = RuleConfig<KeySpacingOptions>;
-
-/**
- * Enforce consistent spacing between keys and values in object literal properties.
- *
- * @see [key-spacing](https://eslint.org/docs/latest/rules/key-spacing)
- */
-export interface KeySpacingRule {
-  /**
-   * Enforce consistent spacing between keys and values in object literal properties.
-   *
-   * @see [key-spacing](https://eslint.org/docs/latest/rules/key-spacing)
-   */
-  'key-spacing': KeySpacingRuleConfig;
-}
+export type KeySpacingRuleOptions = [Schema0?];

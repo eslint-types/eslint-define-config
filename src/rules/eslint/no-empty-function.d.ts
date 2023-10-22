@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export interface NoEmptyFunctionOption {
+export interface Schema0 {
   allow?: (
     | 'functions'
     | 'arrowFunctions'
@@ -18,28 +13,4 @@ export interface NoEmptyFunctionOption {
   )[];
 }
 
-/**
- * Options.
- */
-export type NoEmptyFunctionOptions = [NoEmptyFunctionOption?];
-
-/**
- * Disallow empty functions.
- *
- * @see [no-empty-function](https://eslint.org/docs/latest/rules/no-empty-function)
- */
-export type NoEmptyFunctionRuleConfig = RuleConfig<NoEmptyFunctionOptions>;
-
-/**
- * Disallow empty functions.
- *
- * @see [no-empty-function](https://eslint.org/docs/latest/rules/no-empty-function)
- */
-export interface NoEmptyFunctionRule {
-  /**
-   * Disallow empty functions.
-   *
-   * @see [no-empty-function](https://eslint.org/docs/latest/rules/no-empty-function)
-   */
-  'no-empty-function': NoEmptyFunctionRuleConfig;
-}
+export type NoEmptyFunctionRuleOptions = [Schema0?];

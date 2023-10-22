@@ -1,39 +1,7 @@
-import type { RuleConfig } from '../rule-config';
+export type Schema0 = 'always' | 'as-needed';
 
-/**
- * Config.
- */
-export interface ArrowParensConfig {
+export interface Schema1 {
   requireForBlockBody?: boolean;
 }
 
-/**
- * Option.
- */
-export type ArrowParensOption = 'always' | 'as-needed';
-
-/**
- * Options.
- */
-export type ArrowParensOptions = [ArrowParensOption?, ArrowParensConfig?];
-
-/**
- * Require parentheses around arrow function arguments.
- *
- * @see [arrow-parens](https://eslint.org/docs/latest/rules/arrow-parens)
- */
-export type ArrowParensRuleConfig = RuleConfig<ArrowParensOptions>;
-
-/**
- * Require parentheses around arrow function arguments.
- *
- * @see [arrow-parens](https://eslint.org/docs/latest/rules/arrow-parens)
- */
-export interface ArrowParensRule {
-  /**
-   * Require parentheses around arrow function arguments.
-   *
-   * @see [arrow-parens](https://eslint.org/docs/latest/rules/arrow-parens)
-   */
-  'arrow-parens': ArrowParensRuleConfig;
-}
+export type ArrowParensRuleOptions = [Schema0?, Schema1?];

@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export type SemiOption =
+export type Schema0 =
   | []
   | ['never']
   | [
@@ -22,28 +17,4 @@ export type SemiOption =
       },
     ];
 
-/**
- * Options.
- */
-export type SemiOptions = SemiOption;
-
-/**
- * Require or disallow semicolons instead of ASI.
- *
- * @see [semi](https://eslint.org/docs/latest/rules/semi)
- */
-export type SemiRuleConfig = RuleConfig<SemiOptions>;
-
-/**
- * Require or disallow semicolons instead of ASI.
- *
- * @see [semi](https://eslint.org/docs/latest/rules/semi)
- */
-export interface SemiRule {
-  /**
-   * Require or disallow semicolons instead of ASI.
-   *
-   * @see [semi](https://eslint.org/docs/latest/rules/semi)
-   */
-  semi: SemiRuleConfig;
-}
+export type SemiRuleOptions = [Schema0?];

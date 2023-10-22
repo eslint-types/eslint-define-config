@@ -16,25 +16,4 @@ import type { LiteralUnion } from '../utility-types';
 export interface CustomPlugins {}
 
 /** Plugin. */
-export type Plugin = LiteralUnion<
-  | '@graphql-eslint'
-  | '@typescript-eslint'
-  | 'deprecation'
-  | 'import'
-  | 'inclusive-language'
-  | 'jsdoc'
-  | 'jsx-a11y'
-  | 'mdx'
-  | 'prettier'
-  | 'promise'
-  | 'react-hooks'
-  | 'react'
-  | 'sonarjs'
-  | 'spellcheck'
-  | 'testing-library'
-  | 'unicorn'
-  | 'vitest'
-  | 'vue'
-  // eslint-disable-next-line @typescript-eslint/no-redundant-type-constituents
-  | keyof CustomPlugins
->;
+export type Plugin = LiteralUnion<keyof CustomPlugins>;

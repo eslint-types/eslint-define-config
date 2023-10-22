@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export type EqeqeqOption =
+export type Schema0 =
   | []
   | ['always']
   | [
@@ -15,28 +10,4 @@ export type EqeqeqOption =
   | []
   | ['smart' | 'allow-null'];
 
-/**
- * Options.
- */
-export type EqeqeqOptions = EqeqeqOption;
-
-/**
- * Require the use of `===` and `!==`.
- *
- * @see [eqeqeq](https://eslint.org/docs/latest/rules/eqeqeq)
- */
-export type EqeqeqRuleConfig = RuleConfig<EqeqeqOptions>;
-
-/**
- * Require the use of `===` and `!==`.
- *
- * @see [eqeqeq](https://eslint.org/docs/latest/rules/eqeqeq)
- */
-export interface EqeqeqRule {
-  /**
-   * Require the use of `===` and `!==`.
-   *
-   * @see [eqeqeq](https://eslint.org/docs/latest/rules/eqeqeq)
-   */
-  eqeqeq: EqeqeqRuleConfig;
-}
+export type EqeqeqRuleOptions = [Schema0?];

@@ -1,44 +1,8 @@
-import type { RuleConfig } from '../rule-config';
+export type Schema0 = 'always' | 'never';
 
-/**
- * Config.
- */
-export interface ObjectCurlySpacingConfig {
+export interface Schema1 {
   arraysInObjects?: boolean;
   objectsInObjects?: boolean;
 }
 
-/**
- * Option.
- */
-export type ObjectCurlySpacingOption = 'always' | 'never';
-
-/**
- * Options.
- */
-export type ObjectCurlySpacingOptions = [
-  ObjectCurlySpacingOption?,
-  ObjectCurlySpacingConfig?,
-];
-
-/**
- * Enforce consistent spacing inside braces.
- *
- * @see [object-curly-spacing](https://eslint.org/docs/latest/rules/object-curly-spacing)
- */
-export type ObjectCurlySpacingRuleConfig =
-  RuleConfig<ObjectCurlySpacingOptions>;
-
-/**
- * Enforce consistent spacing inside braces.
- *
- * @see [object-curly-spacing](https://eslint.org/docs/latest/rules/object-curly-spacing)
- */
-export interface ObjectCurlySpacingRule {
-  /**
-   * Enforce consistent spacing inside braces.
-   *
-   * @see [object-curly-spacing](https://eslint.org/docs/latest/rules/object-curly-spacing)
-   */
-  'object-curly-spacing': ObjectCurlySpacingRuleConfig;
-}
+export type ObjectCurlySpacingRuleOptions = [Schema0?, Schema1?];

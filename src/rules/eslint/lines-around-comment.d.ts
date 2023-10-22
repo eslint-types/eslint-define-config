@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export interface LinesAroundCommentOption {
+export interface Schema0 {
   beforeBlockComment?: boolean;
   afterBlockComment?: boolean;
   beforeLineComment?: boolean;
@@ -21,29 +16,4 @@ export interface LinesAroundCommentOption {
   afterHashbangComment?: boolean;
 }
 
-/**
- * Options.
- */
-export type LinesAroundCommentOptions = [LinesAroundCommentOption?];
-
-/**
- * Require empty lines around comments.
- *
- * @see [lines-around-comment](https://eslint.org/docs/latest/rules/lines-around-comment)
- */
-export type LinesAroundCommentRuleConfig =
-  RuleConfig<LinesAroundCommentOptions>;
-
-/**
- * Require empty lines around comments.
- *
- * @see [lines-around-comment](https://eslint.org/docs/latest/rules/lines-around-comment)
- */
-export interface LinesAroundCommentRule {
-  /**
-   * Require empty lines around comments.
-   *
-   * @see [lines-around-comment](https://eslint.org/docs/latest/rules/lines-around-comment)
-   */
-  'lines-around-comment': LinesAroundCommentRuleConfig;
-}
+export type LinesAroundCommentRuleOptions = [Schema0?];

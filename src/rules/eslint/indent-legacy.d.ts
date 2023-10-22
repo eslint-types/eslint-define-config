@@ -1,9 +1,6 @@
-import type { RuleConfig } from '../rule-config';
+export type Schema0 = 'tab' | number;
 
-/**
- * Config.
- */
-export interface IndentLegacyConfig {
+export interface Schema1 {
   SwitchCase?: number;
   VariableDeclarator?:
     | number
@@ -11,61 +8,26 @@ export interface IndentLegacyConfig {
         var?: number;
         let?: number;
         const?: number;
-        [k: string]: any;
+        [k: string]: unknown;
       };
   outerIIFEBody?: number;
   MemberExpression?: number;
   FunctionDeclaration?: {
     parameters?: number | 'first';
     body?: number;
-    [k: string]: any;
+    [k: string]: unknown;
   };
   FunctionExpression?: {
     parameters?: number | 'first';
     body?: number;
-    [k: string]: any;
+    [k: string]: unknown;
   };
   CallExpression?: {
     parameters?: number | 'first';
-    [k: string]: any;
+    [k: string]: unknown;
   };
   ArrayExpression?: number | 'first';
   ObjectExpression?: number | 'first';
 }
 
-/**
- * Option.
- */
-export type IndentLegacyOption = 'tab' | number;
-
-/**
- * Options.
- */
-export type IndentLegacyOptions = [IndentLegacyOption?, IndentLegacyConfig?];
-
-/**
- * Enforce consistent indentation.
- *
- * @deprecated
- *
- * @see [indent-legacy](https://eslint.org/docs/latest/rules/indent-legacy)
- */
-export type IndentLegacyRuleConfig = RuleConfig<IndentLegacyOptions>;
-
-/**
- * Enforce consistent indentation.
- *
- * @deprecated
- *
- * @see [indent-legacy](https://eslint.org/docs/latest/rules/indent-legacy)
- */
-export interface IndentLegacyRule {
-  /**
-   * Enforce consistent indentation.
-   *
-   * @deprecated
-   *
-   * @see [indent-legacy](https://eslint.org/docs/latest/rules/indent-legacy)
-   */
-  'indent-legacy': IndentLegacyRuleConfig;
-}
+export type IndentLegacyRuleOptions = [Schema0?, Schema1?];

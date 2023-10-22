@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export interface KeywordSpacingOption {
+export interface Schema0 {
   before?: boolean;
   after?: boolean;
   overrides?: {
@@ -282,28 +277,4 @@ export interface KeywordSpacingOption {
   };
 }
 
-/**
- * Options.
- */
-export type KeywordSpacingOptions = [KeywordSpacingOption?];
-
-/**
- * Enforce consistent spacing before and after keywords.
- *
- * @see [keyword-spacing](https://eslint.org/docs/latest/rules/keyword-spacing)
- */
-export type KeywordSpacingRuleConfig = RuleConfig<KeywordSpacingOptions>;
-
-/**
- * Enforce consistent spacing before and after keywords.
- *
- * @see [keyword-spacing](https://eslint.org/docs/latest/rules/keyword-spacing)
- */
-export interface KeywordSpacingRule {
-  /**
-   * Enforce consistent spacing before and after keywords.
-   *
-   * @see [keyword-spacing](https://eslint.org/docs/latest/rules/keyword-spacing)
-   */
-  'keyword-spacing': KeywordSpacingRuleConfig;
-}
+export type KeywordSpacingRuleOptions = [Schema0?];

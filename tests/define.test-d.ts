@@ -26,24 +26,4 @@ describe('define', () => {
       }),
     ).toEqualTypeOf<FlatESLintConfig>();
   });
-
-  test('define predefined flat ESLint config', () => {
-    expectTypeOf(
-      defineFlatConfig('eslint:recommended'),
-    ).toEqualTypeOf<FlatESLintConfig>();
-  });
-
-  test('define flat ESLint config', () => {
-    expectTypeOf(
-      defineFlatConfig([
-        'eslint:recommended',
-        {
-          ignores: [],
-          plugins: {},
-          rules: {},
-          settings: {},
-        },
-      ]),
-    ).toEqualTypeOf<FlatESLintConfig[]>();
-  });
 });

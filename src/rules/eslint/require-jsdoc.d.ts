@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export interface RequireJsdocOption {
+export interface Schema0 {
   require?: {
     ClassDeclaration?: boolean;
     MethodDefinition?: boolean;
@@ -13,34 +8,4 @@ export interface RequireJsdocOption {
   };
 }
 
-/**
- * Options.
- */
-export type RequireJsdocOptions = [RequireJsdocOption?];
-
-/**
- * Require JSDoc comments.
- *
- * @deprecated
- *
- * @see [require-jsdoc](https://eslint.org/docs/latest/rules/require-jsdoc)
- */
-export type RequireJsdocRuleConfig = RuleConfig<RequireJsdocOptions>;
-
-/**
- * Require JSDoc comments.
- *
- * @deprecated
- *
- * @see [require-jsdoc](https://eslint.org/docs/latest/rules/require-jsdoc)
- */
-export interface RequireJsdocRule {
-  /**
-   * Require JSDoc comments.
-   *
-   * @deprecated
-   *
-   * @see [require-jsdoc](https://eslint.org/docs/latest/rules/require-jsdoc)
-   */
-  'require-jsdoc': RequireJsdocRuleConfig;
-}
+export type RequireJsdocRuleOptions = [Schema0?];

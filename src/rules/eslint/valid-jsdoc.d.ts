@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export interface ValidJsdocOption {
+export interface Schema0 {
   prefer?: {
     [k: string]: string;
   };
@@ -18,34 +13,4 @@ export interface ValidJsdocOption {
   requireParamType?: boolean;
 }
 
-/**
- * Options.
- */
-export type ValidJsdocOptions = [ValidJsdocOption?];
-
-/**
- * Enforce valid JSDoc comments.
- *
- * @deprecated
- *
- * @see [valid-jsdoc](https://eslint.org/docs/latest/rules/valid-jsdoc)
- */
-export type ValidJsdocRuleConfig = RuleConfig<ValidJsdocOptions>;
-
-/**
- * Enforce valid JSDoc comments.
- *
- * @deprecated
- *
- * @see [valid-jsdoc](https://eslint.org/docs/latest/rules/valid-jsdoc)
- */
-export interface ValidJsdocRule {
-  /**
-   * Enforce valid JSDoc comments.
-   *
-   * @deprecated
-   *
-   * @see [valid-jsdoc](https://eslint.org/docs/latest/rules/valid-jsdoc)
-   */
-  'valid-jsdoc': ValidJsdocRuleConfig;
-}
+export type ValidJsdocRuleOptions = [Schema0?];

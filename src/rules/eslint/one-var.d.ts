@@ -1,9 +1,4 @@
-import type { RuleConfig } from '../rule-config';
-
-/**
- * Option.
- */
-export type OneVarOption =
+export type Schema0 =
   | ('always' | 'never' | 'consecutive')
   | {
       separateRequires?: boolean;
@@ -16,28 +11,4 @@ export type OneVarOption =
       uninitialized?: 'always' | 'never' | 'consecutive';
     };
 
-/**
- * Options.
- */
-export type OneVarOptions = [OneVarOption?];
-
-/**
- * Enforce variables to be declared either together or separately in functions.
- *
- * @see [one-var](https://eslint.org/docs/latest/rules/one-var)
- */
-export type OneVarRuleConfig = RuleConfig<OneVarOptions>;
-
-/**
- * Enforce variables to be declared either together or separately in functions.
- *
- * @see [one-var](https://eslint.org/docs/latest/rules/one-var)
- */
-export interface OneVarRule {
-  /**
-   * Enforce variables to be declared either together or separately in functions.
-   *
-   * @see [one-var](https://eslint.org/docs/latest/rules/one-var)
-   */
-  'one-var': OneVarRuleConfig;
-}
+export type OneVarRuleOptions = [Schema0?];
