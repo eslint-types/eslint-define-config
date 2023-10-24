@@ -11,4 +11,4 @@ export type Schema0 = (
     }
 )[];
 
-export type NoRestrictedPropertiesRuleOptions = [Schema0?];
+export type NoRestrictedPropertiesRuleOptions = Schema0;

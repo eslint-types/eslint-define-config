@@ -10,4 +10,4 @@ export type Schema0 =
       },
     ];
 
-export type MultilineCommentStyleRuleOptions = [Schema0?];
+export type MultilineCommentStyleRuleOptions = Schema0;

@@ -28,4 +28,4 @@ export type Schema0 =
       },
     ];
 
-export type ObjectShorthandRuleOptions = [Schema0?];
+export type ObjectShorthandRuleOptions = Schema0;

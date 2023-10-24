@@ -35,4 +35,4 @@ export type Schema0 =
       },
     ];
 
-export type NoRestrictedImportsRuleOptions = [Schema0?];
+export type NoRestrictedImportsRuleOptions = Schema0;
