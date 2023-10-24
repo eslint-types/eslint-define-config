@@ -12,4 +12,4 @@ export type Schema0 =
       },
     ];
 
-export type QuotePropsRuleOptions = [Schema0?];
+export type QuotePropsRuleOptions = Schema0;

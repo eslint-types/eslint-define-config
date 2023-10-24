@@ -34,12 +34,19 @@ for (const [ruleName, ruleDefinition] of Object.entries(rules ?? {})) {
     }),
   );
 
+  const optionTypes = options.map((_, index) => `Schema${index}?`);
+  const ruleOptionTypeValue = Array.isArray(meta.schema)
+    ? `[${optionTypes.join(', ')}]`
+    : meta.schema
+    ? 'Schema0'
+    : '[]';
+
   await writeFile(
     join(__dirname, '..', 'src', 'rules', 'eslint', `${ruleName}.d.ts`),
     `${options.join('\n')}
-export type ${pascalCase(ruleName)}RuleOptions = [${options
-      .map((_, index) => `Schema${index}?`)
-      .join(', ')}]
+export type ${pascalCase(ruleName)}RuleOptions = ${
+      ruleName === 'no-constructor-return' ? '[Schema0?]' : ruleOptionTypeValue
+    };
 `,
     {
       encoding: 'utf8',

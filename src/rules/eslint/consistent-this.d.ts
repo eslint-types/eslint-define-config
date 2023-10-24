@@ -1,3 +1,3 @@
 export type Schema0 = string[];
 
-export type ConsistentThisRuleOptions = [Schema0?];
+export type ConsistentThisRuleOptions = Schema0;

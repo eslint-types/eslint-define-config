@@ -10,4 +10,4 @@ export type Schema0 =
   | []
   | ['smart' | 'allow-null'];
 
-export type EqeqeqRuleOptions = [Schema0?];
+export type EqeqeqRuleOptions = Schema0;

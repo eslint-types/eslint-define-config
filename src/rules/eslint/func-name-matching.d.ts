@@ -16,4 +16,4 @@ export type Schema0 =
       },
     ];
 
-export type FuncNameMatchingRuleOptions = [Schema0?];
+export type FuncNameMatchingRuleOptions = Schema0;

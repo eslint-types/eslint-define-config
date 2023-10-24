@@ -9,4 +9,4 @@ export type Schema0 =
     ];
 export type Value = 'always' | 'as-needed' | 'never';
 
-export type FuncNamesRuleOptions = [Schema0?];
+export type FuncNamesRuleOptions = Schema0;

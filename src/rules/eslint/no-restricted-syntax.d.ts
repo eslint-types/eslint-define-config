@@ -9,4 +9,4 @@ export type Schema0 = (
     }
 )[];
 
-export type NoRestrictedSyntaxRuleOptions = [Schema0?];
+export type NoRestrictedSyntaxRuleOptions = Schema0;

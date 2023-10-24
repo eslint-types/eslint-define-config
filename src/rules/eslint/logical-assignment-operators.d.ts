@@ -11,4 +11,4 @@ export type Schema0 = (
 ) &
   unknown[];
 
-export type LogicalAssignmentOperatorsRuleOptions = [Schema0?];
+export type LogicalAssignmentOperatorsRuleOptions = Schema0;

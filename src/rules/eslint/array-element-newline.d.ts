@@ -14,4 +14,4 @@ export type BasicConfig =
       minItems?: number | null;
     };
 
-export type ArrayElementNewlineRuleOptions = [Schema0?];
+export type ArrayElementNewlineRuleOptions = Schema0;

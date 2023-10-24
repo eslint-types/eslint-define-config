@@ -10,4 +10,4 @@ export type Schema0 =
       },
     ];
 
-export type FuncCallSpacingRuleOptions = [Schema0?];
+export type FuncCallSpacingRuleOptions = Schema0;

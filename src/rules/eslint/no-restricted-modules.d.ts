@@ -17,4 +17,4 @@ export type Schema0 =
       patterns?: string[];
     }[];
 
-export type NoRestrictedModulesRuleOptions = [Schema0?];
+export type NoRestrictedModulesRuleOptions = Schema0;

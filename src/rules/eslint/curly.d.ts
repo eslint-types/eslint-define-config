@@ -5,4 +5,4 @@ export type Schema0 =
   | ['multi' | 'multi-line' | 'multi-or-nest']
   | ['multi' | 'multi-line' | 'multi-or-nest', 'consistent'];
 
-export type CurlyRuleOptions = [Schema0?];
+export type CurlyRuleOptions = Schema0;
