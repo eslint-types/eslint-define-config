@@ -63,6 +63,7 @@
     "tsconfig.json"
   ],
   "devDependencies": {
+    "@eslint-types/typescript-eslint": "~6.9.0",
     "@types/eslint": "~8.44.3",
     "@types/json-schema": "~7.0.13",
     "@types/node": "~20.8.3",
@@ -72,6 +73,7 @@
     "change-case": "~4.1.2",
     "eslint": "~8.51.0",
     "eslint-config-prettier": "~9.0.0",
+    "eslint-define-config": "link:./",
     "eslint-gitignore": "~0.1.0",
     "eslint-plugin-prettier": "~5.0.0",
     "expect-type": "~0.17.3",

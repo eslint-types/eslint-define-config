@@ -1,6 +1,8 @@
 // @ts-check
-const { defineConfig } = require('.');
+const { defineConfig } = require('eslint-define-config');
 const { readGitignoreFiles } = require('eslint-gitignore');
+
+/// <reference types="@eslint-types/typescript-eslint" />
 
 module.exports = defineConfig({
   ignorePatterns: [
