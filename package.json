@@ -63,6 +63,7 @@
     "tsconfig.json"
   ],
   "devDependencies": {
+    "@eslint-types/prettier": "~5.0.1",
     "@eslint-types/typescript-eslint": "~6.9.0",
     "@types/eslint": "~8.44.3",
     "@types/json-schema": "~7.0.13",

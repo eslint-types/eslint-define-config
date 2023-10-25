@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  '@eslint-types/prettier':
+    specifier: ~5.0.1
+    version: 5.0.1
   '@eslint-types/typescript-eslint':
     specifier: ~6.9.0
     version: 6.9.0
@@ -340,6 +343,10 @@ packages:
   /@eslint-community/regexpp@4.10.0:
     resolution: {integrity: sha512-Cu96Sd2By9mCNTx2iyKOmq10v22jUVQv0lQnlGNy16oE9589yE+QADPbrMGCkA51cKZSg3Pu/aTJVTGfL/qjUA==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
+    dev: true
+
+  /@eslint-types/prettier@5.0.1:
+    resolution: {integrity: sha512-/PIVMKj/C94J8PxAh2DR677DrUWCHSNOFA+4fBuVx6E4xr4hRnGDnciXCac7u9DiPQLXAkNTB82z5rjJIcRqJw==}
     dev: true
 
   /@eslint-types/typescript-eslint@6.9.0:

@@ -2,6 +2,7 @@
 const { defineConfig } = require('eslint-define-config');
 const { readGitignoreFiles } = require('eslint-gitignore');
 
+/// <reference types="@eslint-types/prettier" />
 /// <reference types="@eslint-types/typescript-eslint" />
 
 module.exports = defineConfig({
