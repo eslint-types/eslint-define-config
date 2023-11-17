@@ -1,6 +1,15 @@
 # Next
 
-[diff](https://github.com/eslint-types/eslint-define-config/compare/1.24.1...main)
+[diff](https://github.com/eslint-types/eslint-define-config/compare/2.0.0...main)
+
+# 2.0.0
+
+[diff](https://github.com/eslint-types/eslint-define-config/compare/1.24.1...2.0.0)
+
+**BREAKING CHANGES**
+
+There is a whole new way to support plugins.  
+Please read the [README](./README.md) for more information.
 
 # 1.24.1
 
