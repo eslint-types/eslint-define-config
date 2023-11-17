@@ -64,7 +64,7 @@
   ],
   "devDependencies": {
     "@eslint-types/prettier": "~5.0.1-1",
-    "@eslint-types/typescript-eslint": "~6.9.1",
+    "@eslint-types/typescript-eslint": "~6.11.0",
     "@types/eslint": "~8.44.7",
     "@types/json-schema": "~7.0.15",
     "@types/node": "~20.9.1",
