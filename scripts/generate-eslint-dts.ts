@@ -38,8 +38,8 @@ for (const [ruleName, ruleDefinition] of Object.entries(rules ?? {})) {
   const ruleOptionTypeValue = Array.isArray(meta.schema)
     ? `[${optionTypes.join(', ')}]`
     : meta.schema
-    ? 'Schema0'
-    : '[]';
+      ? 'Schema0'
+      : '[]';
 
   await writeFile(
     join(__dirname, '..', 'src', 'rules', 'eslint', `${ruleName}.d.ts`),
