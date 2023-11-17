@@ -23,13 +23,6 @@
 
 Provide a `defineConfig` function for `.eslintrc.js`, and a `defineFlatConfig` function for `eslint.config.js` files.
 
-> This project is written by a human and only partially automatically generated!  
-> Some rules are even enhanced by hand!  
-> Unfortunately, this has the disadvantage that not everything is immediately defined. For example, if a rule is not defined, it falls back to a basic definition.  
-> However, the advantage is that you get documentation for pretty much everything in the code and usually get a direct link to the respective plugin or eslint rule. The types are also strictly typed.
->
-> So if you are missing something like a rule or a plugin that should also be supported or a rule definition is e.g. out of date, feel free to open an issue or PR for it.
-
 # Installation
 
 ```bash
@@ -43,17 +36,18 @@ pnpm add --save-dev eslint eslint-define-config
 
 # Usage
 
+By default only `eslint`'s rules are supported. To activate auto-suggestions for Rules of specific plugins, you need to install the respective types for that plugin.  
+Plugins can either support their own types, or they could be supported by the community in the [`@eslint-types`](https://github.com/eslint-types/define-config-plugin-types) repository.
+
+A list of community supported plugins can be found [here](https://www.npmjs.com/org/eslint-types).
+
 `.eslintrc.js`
 
 ```ts
 // @ts-check
-
-// To activate auto-suggestions for Rules of specific plugins, you need to add a `/// <reference types="eslint-plugin-PLUGIN_NAME/define-config-support" />` comment.
-// ⚠️ This feature is very new and requires the support of the respective plugin owners.
-
-/// <reference types="@typescript-eslint/eslint-plugin/define-config-support" />
-
 const { defineConfig } = require('eslint-define-config');
+
+/// <reference types="@eslint-types/typescript-eslint" />
 
 module.exports = defineConfig({
   root: true,
@@ -70,6 +64,8 @@ module.exports = defineConfig({
 ```ts
 // @ts-check
 const { defineFlatConfig } = require('eslint-define-config');
+
+/// <reference types="@eslint-types/typescript-eslint" />
 
 module.exports = defineFlatConfig([
   'eslint:recommended',
