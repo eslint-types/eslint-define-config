@@ -1,6 +1,14 @@
 # Next
 
-[diff](https://github.com/eslint-types/eslint-define-config/compare/2.0.0...main)
+[diff](https://github.com/eslint-types/eslint-define-config/compare/2.1.0...main)
+
+# 2.1.0
+
+[diff](https://github.com/eslint-types/eslint-define-config/compare/2.0.0...2.1.0)
+
+- Update eslint rule ([4ac1033])
+
+[4ac1033]: https://github.com/eslint-types/eslint-define-config/commit/4ac1033746e027f74d55218445d09624b53acb24
 
 # 2.0.0
 
