@@ -6,11 +6,11 @@ settings:
 
 devDependencies:
   '@eslint-types/prettier':
-    specifier: ~5.0.1-1
-    version: 5.0.1-1
+    specifier: ~5.1.2
+    version: 5.1.2
   '@eslint-types/typescript-eslint':
-    specifier: ~6.12.0
-    version: 6.12.0
+    specifier: ~6.16.0
+    version: 6.16.0
   '@types/eslint':
     specifier: ~8.56.0
     version: 8.56.0
@@ -376,12 +376,12 @@ packages:
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
     dev: true
 
-  /@eslint-types/prettier@5.0.1-1:
-    resolution: {integrity: sha512-z6B+TnNPZn9GiwfGBgkyE2eK8tnvnzE4Uy/4EkJHB0GJwin8jYD9RMAAwJauKQgUnJ42/Iox6k7BVnHpSbcmBg==}
+  /@eslint-types/prettier@5.1.2:
+    resolution: {integrity: sha512-C81jbseWJUUjGAwmX7dwNSAen8Uq6il1+6uW5vyr/rOTNezU8BvZRo+wP1lw8gsjFhG1AQ4eqXhnLE9e2tv9kQ==}
     dev: true
 
-  /@eslint-types/typescript-eslint@6.12.0:
-    resolution: {integrity: sha512-N8cbOYjyFl2BFgDhDgHhTGpgiMkFg0CoITG5hdBm9ZGmcEgUvFBnHvHG7qJl3qVEmFnoKUdfSAcr7MRb2/Jxvw==}
+  /@eslint-types/typescript-eslint@6.16.0:
+    resolution: {integrity: sha512-gLmHCSeeNtHfWJtAO5pBr4hD0aV60GyPDKJQm2JxlBJBoytJoKezan4Ak7FE9BsewaB+W3JQwsllspirHbHKLw==}
     dev: true
 
   /@eslint/eslintrc@2.1.4:
