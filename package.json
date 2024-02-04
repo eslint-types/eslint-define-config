@@ -81,7 +81,7 @@
     "json-schema": "~0.4.0",
     "json-schema-to-typescript": "~13.1.2",
     "npm-run-all2": "~6.1.1",
-    "prettier": "3.2.4",
+    "prettier": "3.2.5",
     "prettier-plugin-organize-imports": "~3.2.4",
     "rimraf": "~5.0.5",
     "tsup": "~8.0.1",
