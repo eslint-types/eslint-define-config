@@ -1,6 +1,5 @@
 import type { EslintRules } from './eslint';
 import type { RuleConfig } from './rule-config';
-export * from './rule-config';
 
 /**
  * This is a special exported interface for other packages to declare
@@ -44,3 +43,5 @@ export interface Rules
   extends CustomRules,
     EslintRules,
     Record<string, RuleConfig> {}
+
+export * from './rule-config';
