@@ -45,3 +45,4 @@ export interface Rules
     Record<string, RuleConfig> {}
 
 export * from './rule-config';
+export * from './eslint';
