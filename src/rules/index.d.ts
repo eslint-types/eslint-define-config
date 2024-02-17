@@ -1,5 +1,6 @@
 import type { EslintRules } from './eslint';
 import type { RuleConfig } from './rule-config';
+export * from './rule-config';
 
 /**
  * This is a special exported interface for other packages to declare
