@@ -6,7 +6,7 @@ export interface Schema0 {
   /**
    * @minItems 0
    */
-  allow?: [] | [string];
+  allow?: [] | string[];
 }
 
 export type CamelcaseRuleOptions = [Schema0?];
