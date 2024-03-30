@@ -13,5 +13,5 @@ const baseOptions: Options = {
 
 export default defineConfig([
   { ...baseOptions, format: 'esm', dts: true },
-  { ...baseOptions, format: 'cjs', dts: false },
+  { ...baseOptions, format: 'cjs', dts: true },
 ]);
