@@ -59,9 +59,7 @@
   "bugs": "https://github.com/eslint-types/eslint-define-config/issues",
   "license": "MIT",
   "files": [
-    "dist",
-    "src",
-    "tsconfig.json"
+    "dist"
   ],
   "devDependencies": {
     "@eslint-types/prettier": "~5.1.3",
