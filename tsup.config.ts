@@ -8,10 +8,11 @@ const baseOptions: Options = {
   target: ['es2022', 'node18'],
   minify: true,
   sourcemap: false,
+  dts: true,
   splitting: true,
 };
 
 export default defineConfig([
-  { ...baseOptions, format: 'esm', dts: true },
-  { ...baseOptions, format: 'cjs', dts: true },
+  { ...baseOptions, format: 'esm' },
+  { ...baseOptions, format: 'cjs' },
 ]);
