@@ -5,6 +5,7 @@ on:
 
 jobs:
   release:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     name: Release
     steps:
@@ -12,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v3
 
       - name: Set node version to 20
         uses: actions/setup-node@v4
@@ -29,4 +30,6 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish
-        run: pnpm publish --access public --tag latest
+        run: |
+          PACKAGE_DIST_TAG=$(node -e "console.log(/^\d+\.\d+\.\d+(\-(\w+)\.\d+)$/.exec(require('./package.json').version)?.[2] || 'latest')")
+          pnpm publish --access public --tag $PACKAGE_DIST_TAG
