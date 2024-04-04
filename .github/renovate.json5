@@ -1,11 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
+    "config:best-practices",
     "schedule:earlyMondays",
     "group:allNonMajor",
-    ":prHourlyLimitNone",
-    "helpers:pinGitHubActionDigests"
+    ":prHourlyLimitNone"
   ],
   "labels": ["dependencies"],
   "lockFileMaintenance": {
@@ -35,12 +34,16 @@
       "rangeStrategy": "replace"
     },
     {
-      "groupName": "typescript-eslint",
-      "matchPackagePrefixes": ["@typescript-eslint/"]
+      "groupName": "eslint",
+      "matchPackagePrefixes": [
+        "@eslint-types/",
+        "@typescript-eslint/",
+        "eslint"
+      ]
     },
     {
       "groupName": "vitest",
-      "matchPackageNames": ["@vitest/coverage-v8", "@vitest/ui", "vitest"]
+      "matchPackagePrefixes": ["@vitest/", "vitest"]
     },
     {
       "groupName": "prettier",
