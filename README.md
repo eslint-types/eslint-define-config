@@ -64,8 +64,8 @@ module.exports = defineConfig({
 ```ts
 // @ts-check
 const { defineFlatConfig } = require('eslint-define-config');
-const js = require('@eslint/js')
-const customConfig = require('./custom-config.js')
+const js = require('@eslint/js');
+const customConfig = require('./custom-config.js');
 
 /// <reference types="@eslint-types/typescript-eslint" />
 
