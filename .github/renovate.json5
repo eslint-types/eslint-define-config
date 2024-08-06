@@ -1,61 +1,61 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: [
     "config:best-practices",
     "schedule:earlyMondays",
     "group:allNonMajor",
-    ":prHourlyLimitNone"
+    ":prHourlyLimitNone",
   ],
-  "labels": ["dependencies"],
-  "lockFileMaintenance": {
-    "enabled": true
+  labels: ["dependencies"],
+  lockFileMaintenance: {
+    enabled: true,
   },
-  "reviewersFromCodeOwners": true,
-  "rangeStrategy": "bump",
-  "packageRules": [
+  reviewersFromCodeOwners: true,
+  rangeStrategy: "bump",
+  packageRules: [
     {
-      "groupName": "devDependencies",
-      "matchDepTypes": ["devDependencies"],
-      "rangeStrategy": "bump"
+      groupName: "devDependencies",
+      matchDepTypes: ["devDependencies"],
+      rangeStrategy: "bump",
     },
     {
-      "groupName": "dependencies",
-      "matchDepTypes": ["dependencies"],
-      "rangeStrategy": "replace"
+      groupName: "dependencies",
+      matchDepTypes: ["dependencies"],
+      rangeStrategy: "replace",
     },
     {
-      "groupName": "peerDependencies",
-      "matchDepTypes": ["peerDependencies"],
-      "rangeStrategy": "widen"
+      groupName: "peerDependencies",
+      matchDepTypes: ["peerDependencies"],
+      rangeStrategy: "widen",
     },
     {
-      "groupName": "engines",
-      "matchDepTypes": ["engines"],
-      "rangeStrategy": "replace"
+      groupName: "engines",
+      matchDepTypes: ["engines"],
+      rangeStrategy: "replace",
     },
     {
-      "groupName": "eslint",
-      "matchPackagePrefixes": [
-        "@eslint-types/",
-        "@typescript-eslint/",
-        "eslint"
-      ]
+      groupName: "eslint",
+      matchPackageNames: [
+        "@eslint-types/{/,}**",
+        "@typescript-eslint/{/,}**",
+        "eslint{/,}**",
+      ],
     },
     {
-      "groupName": "vitest",
-      "matchPackagePrefixes": ["@vitest/", "vitest"]
+      groupName: "vitest",
+      matchPackageNames: ["@vitest/{/,}**", "vitest{/,}**"],
     },
     {
-      "groupName": "prettier",
-      "matchPackageNames": ["prettier"]
+      groupName: "prettier",
+      matchPackageNames: ["prettier"],
     },
     {
-      "groupName": "typescript",
-      "matchPackageNames": ["typescript"]
-    }
+      groupName: "typescript",
+      matchPackageNames: ["typescript"],
+    },
   ],
-  "vulnerabilityAlerts": {
-    "labels": ["security"],
-    "assigneesFromCodeOwners": true
-  }
+  vulnerabilityAlerts: {
+    labels: ["security"],
+    assigneesFromCodeOwners: true,
+  },
 }
